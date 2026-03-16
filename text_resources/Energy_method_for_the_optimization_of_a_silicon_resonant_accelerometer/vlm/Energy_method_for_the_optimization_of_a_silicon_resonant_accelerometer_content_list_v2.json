@@ -1,0 +1,2845 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Energy method for the optimization of a silicon resonant accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                114,
+                65,
+                880,
+                125
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Jing Zhang, Qin Shi, Yan Su, An-Ping Qiu "
+                    }
+                ]
+            },
+            "bbox": [
+                336,
+                171,
+                658,
+                186
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "School of Mechanical Engineering, Nanjing University of Science and Technology "
+                    }
+                ]
+            },
+            "bbox": [
+                216,
+                188,
+                776,
+                201
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Nanjing 210094, P.R. China "
+                    }
+                ]
+            },
+            "bbox": [
+                401,
+                203,
+                594,
+                216
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "appiu@mail.njust.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                411,
+                217,
+                584,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—This study investigated the application of energy-consume concept on a silicon resonant accelerometer (SRA) to address design issues. Constrained by micro-fabrication technology, structure of the SRA is formed by resonators, microlever mechanisms, proof mass and multi flexures. They are referred to as compliant mechanisms. Based on the energy conservation law, an energy theoretical model on the structure of the sensor has been built and structural parameters were obtained using this novel method. Sensitivity of the structure after optimization has been increased from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "127\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "157.4\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while the energy transmitted to the force resonators has been increased from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "24.33\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to nearly  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Results of closed-form and tests exhibited in good agreement. The bias stability  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\sigma)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " removing the start time was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.7\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity nonlinearity within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 40\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "136.6\\mathrm{ppm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The SRA showed very good properties after optimization. This indicates that this energy-consume method has a good potential on MEMS sensors geometrical design. "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                256,
+                484,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords—SRA; energy method; optimization; MEMS "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                491,
+                430,
+                504
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                206,
+                521,
+                349,
+                534
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The SRA belongs to the generic category of accelerometers known as Vibrating Beam Accelerometers(VBA), which senses acceleration by measuring the change in the resonant frequency of beam oscillators under the inertial loading of a proof mass [1]. SRA is very attractive for high-precision measurement. It can be found in numerous applications such as inertial navigation systems, gaming, smartphones and mobile devices [2]. Compared with traditional accelerometers, SRA is considered attractively for its wide dynamic range and high sensitivity, as well as for its ease of integration into digital systems. The dies of SRA are fabricated using silicon-on-insulator(SOI) processing and wafer-level vacuum packaging, which offer higher aspect ratio MEMS structure, reduce cross-axis sensitivity and increase the robustness of the sensors. These benefits have drawn researchers' extensive attention. In recent years, many mechanical resonant accelerometers have been reported on their design and fabrication [2-5]. Sandia National Laboratories have focused on the mass and the spring constant of an optical resonant accelerometer [6]. Xudong Zou et al. have optimized tilt accelerometer to get a design trade-off between sensitivity, resolution and robustness [7, 8]. Susan X. P. Su et al. have provided the theory for a two-stage microleverage mechanism amplification factor [9]. These studies mainly optimized separate parts or physical parameters "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                538,
+                484,
+                850
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of resonant accelerometers. However, they did not treat the separate parts as an integral energy transmit system, and did not analyzed boundary conditions of the micro-lever which closely related to the amplification factor of SRA structure. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                256,
+                937,
+                308
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, the structure of SRA is regarded as an energy transmission system, and each part consumes and transmits energy. This study is aim at optimizing the SRA structure to operate at a high energy transmission efficiency from proof mass to resonators. Based on the energy conservation law, an energy theoretical model on the structure of the sensor has been built by calculating forces and moments on each sensitive part. Micro-lever mechanisms were optimized with low energy loss, and it also addressed the boundary condition issue. This energy method is very important for the design of resonant accelerometers, because it can help the designers to avoid unnecessary energy loss of the structure and to preserve the high quality factor of the resonator. Currently this part of the work has not been reported. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                315,
+                937,
+                496
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Moreover, it provides insight into modeling of some other performance parameters like cross-axis sensitivity, environmental vibration output, temperature shift and output with residual stress. These will be reported in future. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                504,
+                937,
+                555
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. DEVICE DESIGN "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                653,
+                573,
+                786,
+                585
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The SRA reported in this work uses a pair of structurally symmetric double-ended tuning fork (DETF) resonant sensing element, the resonant frequencies of which shift proportionally with the applied axial force resulting from any axial acceleration applied on the resonant sensor. The sensitive structure of SRA is shown as a schematic in Fig. 1. Additionally, the DETFs are joined via four single-stage microlevers to the proof mass. The proof mass is supported by four flexures which are linked to the frame mounted on the silicon substrate by four anchors. These flexures restrain the proof mass to move along the input axis. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                591,
+                937,
+                733
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the sensor is subjected to acceleration about the input axis, the suspended proof mass displaces, inducing either tension or compression in the DETFs, which produces a measurable natural frequency shift of the two resonators by equal magnitudes but in opposite directions. This differential arrangement enables a first-order cancellation of common parasitic sensitivities such as temperature. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                739,
+                937,
+                831
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                95,
+                965,
+                897,
+                975
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/82f0a0f5571d812931d297340bd4c507ad3222696c44891b2d3af4c1406ff9db.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Schematic view of the SRA with a frame structure "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                82,
+                64,
+                467,
+                378
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e2772986c564d55964cf46698aeb425fc479d577f76d46f2433cbb0c08023ece.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. Schematic view of the SRA wafer level packaging "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                58,
+                420,
+                482,
+                513
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9633eaf94211f2f1834220d505fa3a5e9dc33f45291e9878d92fe657a851291b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. SEM photo of the mechanical sensitive structure and its surface area is around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{mm}^2"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                84,
+                549,
+                455,
+                785
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The SRA has been fabricated with SOI processing and wafer-level vacuum packaging. The main characteristic of SOI process is using the silicon-to-silicon direct bonding (SSDB) and high-aspect ratio ICP (Inductively Coupled Plasma) etching technology [10, 11]. This process offers  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "80\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick high-aspect ratio MEMS structure, which will reduce cross-axis sensitivity and increase the robustness of the sensors. The process cross-section is schematically represented in Fig. 2 and the SEM photo of the mechanical sensitive structure of SRA is shown in Fig. 3. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                62,
+                941,
+                201
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Energy method "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                534,
+                219,
+                643,
+                232
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the structure of SRA, the proof mass can be regarded as rigid, ignoring its energy consumption. Bending stiffness of the connecting mass in fig. 1 is apparently much higher than other beams, so its stiffness can also be ignored. Since the connecting mass is symmetrical to the y axis, bending moment and horizontal force transferred from output beams will counteract through it. As a result, only axial force can be transferred to the DETFs and cause vertical displacements. In order to simplify the calculation, the flexure is hence regarded as a vertical spring  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Since the structure is symmetrical to both x axis and y axis, one quarter of the structure has been analyzed as the study object. The simplified schematic diagram about inertial forces which applied to the SRA is shown in Fig. 4. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                235,
+                939,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It can be shown (see Appendix A Eq. (A.4)) that sensitivity of the SRA is closely related to the natural frequency of the DETF, the effective amplification factor and the proof mass. When inertial forces are transmitting in the sensor, the consumption of energy is "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                423,
+                941,
+                491
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "U _ {\\text {l o s s}} = 4 \\left(U _ {1} + U _ {2} + \\sum_ {j = 4} ^ {7} U _ {j} + U _ {K _ {1}}\\right) \\tag {2.1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/268985fc4b64ef1399b201a067b45bd386ba40d040f0db7ad429f1cdc4b6c412.jpg"
+                }
+            },
+            "bbox": [
+                652,
+                497,
+                939,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{\\mathrm{i}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been shown in Appendix A. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                530,
+                793,
+                546
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0270ca03a75c89045ee9de472cea9b4500f33a15010c1274e29ab1353be7047e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. the equivalent micro-lever model under loading "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                598,
+                549,
+                877,
+                812
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                900,
+                977
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/dd2c351b37979961c24404559b6510c8829b7a9c9d6018b27087d8cd385fab64.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE I. SENSITIVE STRUCTURE DIMENSIONS OF THE SRA COMPARED TO THE EARLIER STRUCTURE "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively represents length and width.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "r, i, o"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively represents length of the resonant beam, the input beam, the output system and the pivot beam. "
+                    }
+                ],
+                "html": "<table><tr><td>Variableb</td><td>lr(μm)</td><td>wr(μm)</td><td>li(μm)</td><td>wi(μm)</td><td>lo(μm)</td><td>wo(μm)</td><td>lp(μm)</td><td>wp(μm)</td><td>lin(μm)</td><td>Iout(μm)</td><td>wb(μm)</td><td>lb(μm)</td><td>Sg(Hz/g)</td></tr><tr><td>Size range</td><td>100-1500</td><td>5-6</td><td>50-480</td><td>4-10</td><td>20-350</td><td>4.5-10</td><td>10-350</td><td>4-10</td><td>200-1650</td><td>&gt;(wo+wp)/2</td><td>lin/10&lt;wc&lt;lin/2</td><td>2lin-10</td><td></td></tr><tr><td>Optimal value</td><td>805</td><td>5</td><td>200</td><td>4</td><td>33</td><td>4</td><td>35</td><td>4</td><td>1093</td><td>28</td><td>1220</td><td>2172</td><td>157.4</td></tr><tr><td>Earlier structure</td><td>1000</td><td>8</td><td>300</td><td>6</td><td>60</td><td>4</td><td>270</td><td>6</td><td>644</td><td>19</td><td>500</td><td>1696</td><td>127.33</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                48,
+                93,
+                947,
+                220
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "During the energy transmission, the maximum sensitivity of SRA can be obtained when minimizes the consumption of energy in the system. Therefore, the consumption of energy  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{loss}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is used as an objective function to obtain the optimized geometry of the structure. The Nelder-Mead method is used as the algorithm [12]. The SRA geometry dimensions after optimization are shown in Table I. Limited by the layout size and processing level and based on the energy-transmit concept, several dimensions has been corrected slightly. The final sensitivity is increased to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "157.4\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                237,
+                487,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting the geometry parameters of SRA into Eq. (A.3), (A.5) and (2.1); then, the physical relations between the energy consume of the micro-lever mechanism  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{\\mathrm{loss}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the effective amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A^{*}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be obtained as "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                374,
+                485,
+                427
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "U _ {\\text {l o s s}} = \\frac {(1 7 4 4 3 1 - 4 2 6 2 8 1 A ^ {*} + 2 9 4 2 2 A ^ {* 2} - 7 2 4 A ^ {* 3} + 6 . 0 6 A ^ {* 4}) \\times 1 0 ^ {- 2 0}}{0 . 0 2 9 - 0 . 0 7 A ^ {*} + 0 . 0 0 1 3 A ^ {* 2}} \\tag {2.2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c3bdcf7b4bd8a3e6fbb7a9be2a1683797844e26c3bb2b39de7bdfb589c6e51d8.jpg"
+                }
+            },
+            "bbox": [
+                80,
+                433,
+                482,
+                461
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig.5 shows the increase of the effective amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A^{*}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can help to cut the energy consume of the micro-lever mechanism  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{\\mathrm{loss}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so that can improve the sensitivity of SRA and increased energy preserved in the DETF. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                467,
+                485,
+                522
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The energy consumed in each component of this sensitive structure and the comparison with the earlier structure are shown in Table II. The DETF resonators consume  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "59.6\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the total energy, more than twice over the earlier structure. This means that micro-lever mechanisms with boundary conditions are optimized with low energy loss and show high force transmission efficiency from proof mass to resonators, which contributes to the high quality factor preservation of the resonator. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                527,
+                485,
+                644
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/c564e3c54a871d70dc590d73a9314bec299672bf3d0cf27abb115455773bf2d7.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE II. ENERGY CONSUMED IN EACH COMPONENT OF THE SRA "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Component</td><td>Earlier structure (%)</td><td>This work (%)</td></tr><tr><td>DETF</td><td>24.33</td><td>59.6</td></tr><tr><td>Flexure</td><td>9.5</td><td>15.8</td></tr><tr><td>Input beam</td><td>22.16</td><td>5.3</td></tr><tr><td>Output beam</td><td>3.93</td><td>2.6</td></tr><tr><td>Pivot beam</td><td>8.5</td><td>2.5</td></tr><tr><td>Lever arm(in)</td><td>1.1</td><td>6.2</td></tr><tr><td>Lever arm(out)</td><td>0.04</td><td>0.2</td></tr><tr><td>Connecting mass</td><td>30.47</td><td>7.9</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                68,
+                682,
+                475,
+                813
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/56e63dc337152266957950c0431e20449a652a5b1c609ebc76b7b5a793cfeefa.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. The physical relations between the energy consume of the micro-lever mechanism Uloss and the effective amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{A}^*"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                237,
+                942,
+                415
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. EXPERIMENTS FOR THE SRA "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                608,
+                473,
+                845,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The tests were performed in air in the Nanjing University of Sci&Tech Micro Inertial Technology Lab. One SRA prototype (A2-1) has been chosen to test. This prototype was adopted self-excited oscillation loop with automatic gain control (AGC) as drive circuit, and the packaged SRA dies were finally placed in a ceramic cartridge. The ceramic cartridge package was put on a socket which was wire-connected to the off-chip circuit on a PC board. The output was connected to the oscilloscope during our tests. In the laboratory, the PC board was mounted in a temperature controller which has a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "360^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " position turntable (see fig. 6).  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " after power-preheated, adjust the position of the turntable to none acceleration input in A2-1. In this working state, the output data of this prototype was recorded at a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " sampling rate and the measurement data for each point of time did not exceed 30s, and then calculated the mean value. One resonant frequency was measured  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22119.2\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the other was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22124.5\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The gaps between the normalize frequency own to the thermal stress and residual stress during process. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                490,
+                939,
+                738
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting the measured frequency into Eq. (A.4), the theoretical sensitivity turns out to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "160.7\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The PC board of A2-1 was then adjusted vertically on the rotating platform of the temperature controller. It was subjected to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the resonant frequency for the pull resonator was found to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22197.8\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " while the push resonator was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22045.7\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The increased frequency of the pull resonator was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "78.6\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the decreased frequency of the push resonator was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "78.8\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The total "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                744,
+                941,
+                850
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "frequency shift was hence translated to a sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "157.4\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", only  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.1\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " lower than the calculation of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "160.7\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                62,
+                485,
+                90
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7 shows experimental points and a linear fitting of the measured differential frequency for the acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sin (\\theta)g"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". We did this test making reference to [13]. The rotating angle  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was adjusted to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "45^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "65^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "75^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "85^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "90^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "95^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "105^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "115^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "135^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "155^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "165^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "175^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "180^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "185^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "195^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "205^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "225^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "245^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "255^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "265^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "270^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "275^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "285^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "295^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "315^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "335^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "345^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "355^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively. A good linearity is observed in this range of operation. By fitting the 32 sets of the differential frequency, the sensitivity turns out to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "167.51\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". All of these above have helped to confirm the theory we reported. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                96,
+                485,
+                236
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The prototype was then mounted on a precision centrifuge, making sure its sensitive axis parallel to the load axis of the centrifuge and slip ring was connected to the power supply and data acquisition system. After started the centrifuge, the whole accelerometer was kept powered for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and its output was recorded each  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " interval. The testing results were shown in Fig. 8, and the nonlinearity of the datum within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 40\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "136.6\\mathrm{ppm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                241,
+                485,
+                347
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c64596c1795d06cc0c84e82e11f912768ca3f4ee8365220a566ef26076a96141.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. The PC board was mounted in the temperature controller with a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "360^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " position turntable "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                100,
+                353,
+                443,
+                542
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7e186f5f62c0ffb09264ae24c117d337f70c9a06d079c423fd166559b4738758.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. Variation of the differential resonant frequency for A2-1 at the 32 positions. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                595,
+                465,
+                800
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/349e9f009a91db4ae41d22b493357bed088b0a7fc44cf08be59eeaa8fa48868f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. Tested resonant frequency output for A2-1 versus input acceleration within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 40\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                66,
+                934,
+                242
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b22417113ced17efd00ba66b01dead54fd9496c2c9d97d6367e04915178f2c9d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9. A sample of measured frequency versus elapsed time and its compensated result. "
+                    }],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                295,
+                951,
+                467
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/458663a8303b65dd37efd3dd4c2b21c86bb816ef7169a2ee326a3d90e8f59ad8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 10. A sample of measured output frequency versus temperature shift. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                542,
+                521,
+                915,
+                694
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The short-time bias of A2-1 has been measured on the rotating platform within 16min as shown in Fig. 9. There is a frequency drift which is believed to be caused by the temperature drift. The bias stability is obtained to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.7\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " after high-pass filter. In order to avoid temperature influence, the sample have been put on the rotating platform under  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " constantly. The A2-1's input axis was kept horizontal to insure that the input accelerometer was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and then the whole accelerometer was kept on power for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In the working "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                729,
+                939,
+                850
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                897,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "state, the output data of this prototype was recorded at 1Hz sampling rate for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Fig.10. shows measured output frequency versus temperature shift. It should be noted that the testing results are prone to temperature shifts. Therefore, how temperature and residual stresses influence the SRA's performance remains to be elucidated, which and this will be explored in the future work. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                62,
+                485,
+                154
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. CONCLUSIONS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                201,
+                190,
+                346,
+                203
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper we apply energy-transmit concept in a silicon resonant accelerometer (SRA) to address design issues. The structure of SRA is regarded as an energy transmission system, and each part consumes and transmits energy. Based on the energy conservation law, micro-lever mechanisms with boundary conditions are optimized to consume low energy and show high force transmission efficiency from proof mass to resonators. Using this energy method, the sensitivity of the structure after optimization has been increased from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "127\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "157.4\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while the energy transmitted to the force resonators has been increased from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "24.33\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to nearly  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Results of closed-form and tests exhibited in good agreement. The bias stability  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\sigma)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " removing the start time was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.7\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity nolinarity within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 40\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "136.6\\mathrm{ppm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                207,
+                485,
+                394
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to avoid any energy loss and to preserve the high quality factor of the resonator, building the energy transmission mechanism of the SRA shows great significance. Table III shows the comparison of the previous accelerometers with this work. The SRA reported stands out for its high-sensitivity and a much higher dynamic range, owing to the geometrical optimization. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                399,
+                485,
+                492
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "V. APPENDIX A "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                211,
+                508,
+                341,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For each DETF, the natural frequency of the basic lateral vibration mode is expressed as [14] "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                524,
+                485,
+                554
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {0} = \\frac {1}{2 \\pi} \\sqrt {\\frac {1 6 . 5 5 E t \\left(\\frac {w}{l}\\right) ^ {3}}{0 . 3 9 7 \\rho w t l + \\rho m _ {s}}} \\tag {A.1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6717b0fc0a6da5ff46afe9755f55dd6d0cd7c576df102bac00dfd4b7267aa4ac.jpg"
+                }
+            },
+            "bbox": [
+                201,
+                560,
+                485,
+                608
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the Young's modulus,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the density of single-crystal silicon, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l, w, t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length, width and thickness of resonant beam respectively.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{\\mathrm{s}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the mass of the comb-drive structure. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                614,
+                487,
+                667
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " along the input axis is applied to the device, the force from the proof mass is magnified by microlever and then transferred to the DETFs. The effective amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A^{*}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is hence defined as the ratio of axial force for DETF beam to axial force for input beam. Therefore, the resonant beam frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under acceleration can be found by energy analysis [15] as "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                672,
+                485,
+                764
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f = \\frac {1}{2 \\pi} \\sqrt {\\frac {K _ {\\text {e f f}}}{M _ {\\text {e f f}}}} = \\frac {1}{2 \\pi} \\sqrt {\\frac {1 6 . 5 5 E t \\left(\\frac {w}{l}\\right) ^ {3} \\pm 4 . 8 5 \\frac {A ^ {*} m _ {1} a}{4 l}}{0 . 3 9 7 \\rho w t l + m _ {s}}} = f _ {0} \\sqrt {1 \\pm \\frac {C _ {1} A ^ {*} m _ {1} \\rho a l ^ {2}}{E w ^ {3} t}} \\tag {A.2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d70219f323df8e2596bb2dddcb73f4af3b798f82d7b3cd58315e5a1e19a0dc5d.jpg"
+                }
+            },
+            "bbox": [
+                87,
+                777,
+                489,
+                821
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/12b26c61e498a03874c543cd9f76196b43ff2d2f45ded759e52e02dc62ab9375.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE III. COMPARISON OF RESONANT ACCELERometers "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Reference</td><td>[3]</td><td>[6]</td><td>[7, 8]</td><td>[9]</td><td>This work</td></tr><tr><td>Proof-mass (μg)</td><td>1.33</td><td>33600</td><td>408.1</td><td>12.84</td><td>1271.4</td></tr><tr><td>Resonant frequency (kHz)</td><td>173</td><td>0.036</td><td>135.25</td><td>131</td><td>26</td></tr><tr><td>Sensitivity (Hz/g)</td><td>30</td><td>590V/g</td><td>8.7Hz/ deg</td><td>158</td><td>157.4</td></tr><tr><td>Effective amplification factor</td><td>26</td><td>N-A</td><td>17</td><td>80</td><td>26.7</td></tr><tr><td>Input range (g)</td><td>±10</td><td>N-A</td><td>±20°</td><td>±1</td><td>±40</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                512,
+                78,
+                937,
+                203
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_{\\text{eff}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective mass and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{\\text{eff}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial effective stiffness of the DETF,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the mass of the proof mass,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A^*"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the amplification factor of the sensitive structure (recalled effective amplification factor) and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents a constant algebra. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                220,
+                939,
+                288
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Since the structure is symmetrical to both  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axis and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axis, one quarter of the structure has been analyzed. Fig. 4 shows the equivalent model of a quarter of structure. The effective amplification factor can be obtained as "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                293,
+                939,
+                347
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A ^ {*} = \\frac {F _ {y o}}{m _ {1} a / 4} \\tag {A.3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/87e826be2520cde92fcd5d1cc851e77d9cde0cf88454b0de7bad87da8b6bc619.jpg"
+                }
+            },
+            "bbox": [
+                684,
+                353,
+                937,
+                385
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\gamma o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the vertical force at the end of DETF. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                391,
+                847,
+                406
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = ng"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the applied acceleration in number of g) into Equation (A.3) and taking the derivative of the frequency shift  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the sensitivity can be expressed in terms of frequency (unit in Hz/g) "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                412,
+                939,
+                466
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {g} = \\frac {d \\Delta f}{d n} \\approx f _ {0} \\frac {C _ {1} A ^ {*} m _ {1} \\rho l ^ {2}}{E w ^ {3} t} \\mathrm {g} \\tag {A.4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ef833ff228e0ca5946593a491f8fd5ac46bdd7d30dc39533f4f604159a78b233.jpg"
+                }
+            },
+            "bbox": [
+                643,
+                472,
+                937,
+                500
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Supposing an inertial load  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied to the SRA, the ends of the input beam and output beam are loaded with vertical force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{yi}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at input),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{yo}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at output), the horizontal force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{xi}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at input),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{xo}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at output), and the bending moment  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at input),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (at output). The axial force and moment of each beam on the micro-lever in Fig. 4 are shown in Table IV, the energy of each part includes axial deformation energy and bending deformation energy, the energy model of this quarter structure (excluding the flexures) is "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                505,
+                939,
+                625
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "U _ {0} = \\sum_ {j = 1} ^ {7} U _ {j} = \\sum_ {j = 1} ^ {7} \\left(\\frac {1}{2} \\int_ {0} ^ {t _ {j}} \\frac {F _ {j} ^ {2}}{E A _ {j}} d x + \\int_ {0} ^ {t _ {j}} \\frac {M _ {j} ^ {2}}{2 E I _ {j}} d x\\right) \\tag {A.5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d1a0c4446c5ffa146a9bfbd27163145fc3ce295dc415e9009f21d8de6390468f.jpg"
+                }
+            },
+            "bbox": [
+                600,
+                631,
+                937,
+                665
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{j}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the energy of each part of this quarter structure,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I_{\\mathrm{j}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{\\mathrm{j}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the beam inertia moment bending in the x-y plane of each portion and the cross-sectional area of each portion respectively. According to the theory of Castigliano's method [16], the displacements and the rotation angle of the input beam and of the end of the resonant beam can be expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                666,
+                939,
+                745
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "d _ {\\xi i, o} = \\sum_ {j = 1} ^ {7} \\left(\\int_ {0} ^ {l _ {i}} \\frac {F _ {j}}{E A _ {j}} \\frac {\\partial F _ {j}}{\\partial F _ {\\xi i , o}} d x + \\int_ {0} ^ {l _ {i}} \\frac {M _ {j}}{E I _ {j}} \\frac {\\partial M _ {j}}{\\partial F _ {\\xi i , o}} d x\\right) \\tag {A.6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/15ad72fd12220fc288659579bf554c21b1cd00ea73af8f9d4e6aa05129457dbd.jpg"
+                }
+            },
+            "bbox": [
+                600,
+                751,
+                937,
+                783
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\theta_ {i, \\mathrm {o}} = \\sum_ {j = 1} ^ {7} \\left(\\int_ {0} ^ {l _ {i}} \\frac {F _ {j}}{E A _ {j}} \\frac {\\partial F _ {j}}{\\partial M _ {i , \\mathrm {o}}} d x + \\int_ {0} ^ {l _ {i}} \\frac {M _ {j}}{E I _ {j}} \\frac {\\partial M _ {j}}{\\partial M _ {i , \\mathrm {o}}} d x\\right) \\tag {A.7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/59dc2a0125293357adf2337e968aa3e816403f3547d7c80ec80f122b3bc16761.jpg"
+                }
+            },
+            "bbox": [
+                603,
+                783,
+                937,
+                815
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where subscript  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "o"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represent the input beam and the resonant beam respectively, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\xi"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the coordinate axis x or y. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                815,
+                939,
+                843
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/36b46f576df11d55117f8941b236d99965d77365225cd2a6478142b3caa8b235.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE IV. THE AXIAL FORCE AND MOMENT OF EACH BEAM ON THE QUARTER STRUCTURE "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "b.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively represents length and width, subscript  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 \\sim 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": " correspond to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "j"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", lever represents the lever arm with in and out represent the input arm and output arm respectively. "
+                    }
+                ],
+                "html": "<table><tr><td>\\( \\mathbf{Be}\\mathbf{a}\\mathbf{m}^{\\mathbf{a}} \\)</td><td>Axial force \\( F_j \\)</td><td>Moment \\( M_j (j=1~7) \\)</td></tr><tr><td>1</td><td>\\( F_1=-F_{yi} \\)</td><td>\\( M_1(x)=M_i+F_{xi}x \\)</td></tr><tr><td>2</td><td>\\( F_2=F_{xi} \\)</td><td>\\( M_2(x)=M_1(l_1)+F_{xi}w_{lever}/2+F_{yi}x \\)</td></tr><tr><td>3</td><td>\\( F_3=F_{yo} \\)</td><td>\\( M_3(x)=0 \\)</td></tr><tr><td>4</td><td>\\( F_4=F_{xo} \\)</td><td>\\( M_4(x)=M_o+F_{yo}x \\)</td></tr><tr><td>5</td><td>\\( F_5=F_{yo} \\)</td><td>\\( M_5(x)=M_4(l_4/2)-F_{xo}(x+w_4/2) \\)</td></tr><tr><td>6</td><td>\\( F_6=F_{xi}+F_{xo} \\)</td><td>\\( M_6(x)=M_5(l_5)+M_2(L_{in}-L_{out})-F_{xR}w_{lever}/2+(F_{yin}+F_{yo})x \\)</td></tr><tr><td>7</td><td>\\( F_7=(F_{yi}+F_{yo}) \\)</td><td>\\( M_7(x)=M_6(L_{out})+(F_{xi}+F_{xo})w_{lever}/2+(F_{xi}+F_{xo})x \\)</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                55,
+                87,
+                485,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Applying the force to the proof leads to the following equation: "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                280,
+                484,
+                308
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {m _ {1} a}{4} = F _ {y i} + K _ {1} d _ {y i} \\tag {A.8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2063c17ad455a454b9840637062d88350457b89ae8265156b9302913fab9bb42.jpg"
+                }
+            },
+            "bbox": [
+                233,
+                315,
+                484,
+                340
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Because the proof mass can be regarded as rigid, boundary conditions at the end of input beam and output beam can be expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                347,
+                485,
+                387
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "d _ {x i} = d _ {z i} = 0 \\tag {A.9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/93ae5ecc0945954f6ed18f90baf5144f8fcf1e60c3083824c749a434d06f65aa.jpg"
+                }
+            },
+            "bbox": [
+                242,
+                394,
+                482,
+                410
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "d _ {y i} = \\left(m _ {1} a - 4 F _ {y i}\\right) / 4 K _ {1} \\tag {A.10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f27ab3f10f2240b1610c95355dc11f1d570c7cd14f0023d37ceaa56ec6f967cf.jpg"
+                }
+            },
+            "bbox": [
+                216,
+                419,
+                484,
+                438
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "d _ {x o} = d _ {y o} = d _ {z o} = 0 \\tag {A.11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/be42f2ba9b20fa34808f6bc2a4279472101103ffc3a37a1631907cb772330769.jpg"
+                }
+            },
+            "bbox": [
+                223,
+                445,
+                484,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to the Eq. (A.5)~(A.8) and the boundary conditions Eq. (A.9)~(A.11), the parameters  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{xi}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{yi}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_i"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{yo}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{x0}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_o"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be solved; then, the effective amplification factor can be obtained by substituting  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{yo}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " into Eq. (A.3). "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                470,
+                485,
+                524
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When inertial forces are transmitting in the sensor, the consumption of energy is "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                529,
+                485,
+                555
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "U _ {\\text {l o s s}} = 4 \\left(U _ {1} + U _ {2} + \\sum_ {j = 4} ^ {7} U _ {j} + U _ {K _ {1}}\\right) \\tag {A.12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e9436f8efaba524ffd616bb5ae4f44a0649ba6cb69c6711df61c1327bd19cd52.jpg"
+                }
+            },
+            "bbox": [
+                186,
+                564,
+                484,
+                597
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where the energy of one flexure is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{K_1} = \\frac{1}{2} K_1 d_{yi}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                600,
+                394,
+                628
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                200,
+                668,
+                341,
+                681
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors would like to thank Prof. An-Ping Qiu for invaluable advice on the research and initial suggestion for the temperature sensors, Prof. Qin Shi for the mechanical structure "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                685,
+                485,
+                725
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "design, and the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13^{\\text{th}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Research Institute of China Electronics Technology Group Corporation for the SOI-MEMS process. They would also like to thank Dr. Shao-dong Jiang for discussions on the FEA software simulation, Dr. Guo-ming Xia and Dr. Ran Shi for discussions on the experimental testing. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                62,
+                939,
+                129
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                678,
+                144,
+                769,
+                157
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] R. Hopkins, et al., \"The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications,\" Technology Digest, p. 4, 2006. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] J. Marek and U. M. Gómez, \"MEMS (Micro-Electro-Mechanical Systems) for Automotive and Consumer Electronics,\" Chips A Guide to the Future of Nanoelectronics the Frontiers Collection, p. 293, 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] A. A. Seshia, et al., \"A vacuum packaged surface micromachined resonant accelerometer,\" Microelectromechanical Systems, Journal of, vol. 11, pp. 784-793, 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] J. Chae, et al., \"A CMOS-compatible high aspect ratio silicon-on-glass in-plane micro-accelerometer,\" Journal of Micromechanics and Microengineering, vol. 15, p. 336, 2005. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] K. Fan, et al., \"A silicon micromachined high-shock accelerometer with a bonded hinge structure,\" Journal of Micromechanics & Microengineering, vol. 17, pp. 1206-1210, 2007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] U. Krishnamoorthy, et al., \"In-plane MEMS-based nano-g accelerometer with sub-wavelength optical resonant sensor,\" Sensors and Actuators A: Physical, vol. 145, pp. 283-290, 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] X. Zou, et al., \"JMEMS Letters-A Seismic-Grade Resonant MEMS Accelerometer,\" 2014. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] X. Zou, et al., \"Micro-electro-mechanical resonant tilt sensor,\" in Frequency Control Symposium (FCS), 2012 IEEE International, 2012, pp. 1-4. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] S. X. Su, et al., \"A resonant accelerometer with two-stage microleverage mechanisms fabricated by SOI-MEMS technology,\" Sensors Journal, IEEE, vol. 5, pp. 1214-1223, 2005. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] T. J. Brosnihan, et al., \"Embedded interconnect and electrical isolation for high-aspect-ratio, SOI inertial instruments,\" in Solid State Sensors and Actuators, 1997. TRANSDUCERS'97 Chicago., 1997 International Conference on, 1997, pp. 637-640. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] S. Renard, \"SOI micromachining technologies for MEMS,\" in Micromachining and Microfabrication, 2000, pp. 193-199. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] J. A. Nelder and R. Mead, \"A simplex method for function minimization,\" The computer journal, vol. 7, pp. 308-313, 1965. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] IEEE, \"1293-1998 - IEEE Standard Specification Format Guide and Test Procedure for Linear, Single-Axis, Non-Gyroscopic Accelerometers,\" IEEE, 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] C. M. Harris, et al., Harris' shock and vibration handbook vol. 5: McGraw-Hill New York, 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] T.-A. W. Roessig, \"Integrated MEMS tuning fork oscillators for sensor applications,\" University of California, Berkeley, 1998. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] J. H. Argyris and S. Kelsey, Energy theorems and structural analysis vol. 960: Springer, 1960. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                176,
+                939,
+                681
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:12 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ]
+]

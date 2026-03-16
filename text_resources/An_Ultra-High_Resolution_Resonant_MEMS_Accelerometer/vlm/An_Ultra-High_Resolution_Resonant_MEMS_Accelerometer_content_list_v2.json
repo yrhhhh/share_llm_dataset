@@ -1,0 +1,1687 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "AN ULTRA-HIGH RESOLUTION RESONANT MEMS ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                97,
+                63,
+                900,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Milind Pandit<sup>1</sup>, Arif Mustafazade<sup>1,3</sup>, Chun Zhao<sup>1</sup>, Guillermo Sobreviela<sup>1</sup>, Xudong Zou<sup>2</sup>, Philipp Steinmann<sup>3</sup>, and Ashwin Seshia<sup>1</sup> "
+                    }
+                ]
+            },
+            "bbox": [
+                109,
+                80,
+                885,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Dept. of Engineering, Nanoscience Centre, 11 JJ Thomson Avenue, Cambridge, UK "
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                115,
+                843,
+                131
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{2}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Institute of Electronics, Chinese Academy of Sciences, China "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{3}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Silicon Microgravity Ltd., Cambridge Innovation Park, Waterbeach, Cambridge, UK "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                131,
+                845,
+                164
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                181,
+                200,
+                195
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper reports initial results on the implementation of a high-resolution resonant MEMS accelerometer with a noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.5\\mathrm{ng}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a differential frequency readout configuration. The differential readout scheme provides for rejection of common mode environmental effects to first order. This prototype sensor demonstrates the best bias stability and noise floor of all MEMS resonant accelerometer configurations reported till date. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                197,
+                483,
+                319
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                334,
+                252,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Ultra-high resolution accelerometers with sub-  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias stability and noise floor have applications in inertial navigation, seismology and geophysical measurements. MEMS based accelerometers have significant advantages relative to more traditional counterparts due to their low cost, small form factor, and potential for low power operation. Current implementations of high-end MEMS accelerometers have largely relied on capacitive or optical transduction techniques. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                350,
+                483,
+                473
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Optical transduction techniques [1] have seen significant recent progress; but they are still limited in terms of integration potential and compatibility with harsh environment applications. Capacitive accelerometers rely on capacitive transduction of the displacement of an inertial mass. These have recently demonstrated groundbreaking resolution and noise floor [2],[3]. However, the physics of the approach limits scalability due to the direct relationship between the mass of the sensor and the sensitivity, and the inverse-squared relationship with the mechanical bandwidth of the accelerometer. These trends run counter to the benefits offered by miniaturization and can limit inherent device robustness. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                473,
+                483,
+                663
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant accelerometers [4],[5] on the other hand transduce the inertial force on a proof mass as a shift in the natural frequency of a coupled resonator offering high sensitivity without similarly compromising on bandwidth or size. However, historically they have been limited by effects such as temperature sensitivity, the requirement for vacuum packaging, and the complexity of the closed-loop readout interface. Several ovenization [6] and temperature compensation [7] techniques have been studied in the context of resonant accelerometers but stabilities nearing 10 nano-g or below have not yet been reported. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                665,
+                483,
+                828
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work demonstrates for the first time, initial results for a MEMS RXL with a dynamic range of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+/-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.5\\mathrm{ng}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that elevates the MEMS RXL to the performance regime comparable to other high-end accelerometers. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                829,
+                483,
+                896
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The paper first describes the device and the "
+                    }
+                ]
+            },
+            "bbox": [
+                116,
+                897,
+                483,
+                910
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "experimental setup used in this work. The results of the scale factor, temperature sensitivity and stability tests are provided, including a discussion on the future roadmap for development. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                180,
+                909,
+                236
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b816fd30a1aa60d35a4e64a250f1014b4e382215324e1110ef234faafb06f9bf.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "DEVICE "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 1: Schematic of the differential resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                280,
+                927,
+                461
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A schematic of a differential resonant accelerometer (DRXL) is shown in Fig. 1. The device consists of two clamped-clamped (C-C) beams situated on either side of a proof mass. The proof mass is connected to the vibrating beams through a force amplification lever. Each resonator experiences a differential axial force due to input gravitational acceleration resulting in a frequency shift [5], [6]. The device is wafer level vacuum packaged in order to reduce air damping leading to a quality factor of 60000 and the natural frequency of the beams operated in the second transverse mode of vibration is approximately  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "420\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                514,
+                910,
+                678
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Common mode rejection in this device is realized by utilizing the frequency difference between the two resonators. Temperature sensitivities often limit the accuracy of measurements but a first-order cancellation in the bias is provided by the differential output. The output frequencies for each of the two resonators may be most simply expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                678,
+                910,
+                776
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {I} = f _ {O I} \\left(1 + \\mathrm {T C F} _ {\\mathrm {R} 1}\\right) + \\mathrm {S} _ {\\mathrm {g} ^ {+}} d g; \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/702b9a513afa984083a545609d35dc4a9071cff6a53090599821165a47553e4b.jpg"
+                }
+            },
+            "bbox": [
+                537,
+                788,
+                898,
+                803
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {2} = f _ {0 2} \\left(1 + \\mathrm {T C F} _ {\\mathrm {R} 2}\\right) - \\mathrm {S} _ {\\mathrm {g}}. d g;",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/db02544e8813ec7287ed901a3120e2f2757cff0b1512d7ab5b89db738831f20e.jpg"
+                }
+            },
+            "bbox": [
+                538,
+                804,
+                718,
+                816
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scale factors  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{S}_{\\mathrm{g}^{+}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{S_g})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are generally very similar. For measurements at the low-end of the dynamic range the bias sensitivity to temperature is the dominant effect especially as the two frequencies are often offset to limit cross-talk. Differences in the temperature coefficients  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{TCF_{R1}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{TCF_{R2}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as well as temperature "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                829,
+                910,
+                912
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-1-7281-1610-5/19/$31.00 ©2019 IEEE "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                944,
+                326,
+                954
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "664 "
+                    }
+                ]
+            },
+            "bbox": [
+                486,
+                945,
+                510,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "MEMS 2019, Seoul, KOREA, 27-31 January 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                632,
+                944,
+                910,
+                956
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 20:31:34 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                880,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "gradients across the chip can lead to residual temperature drift in the differential output. As a result, in any practical implementation, only a partial cancellation of the temperature drift is achieved through a differential measurement. Thus, in order to reduce the effect of this temperature induced drift, the sensor along with the front-end electronics is ovenized in a temperature controlled enclosure. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                63,
+                486,
+                172
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "EXPERIMENTAL SETUP "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                186,
+                326,
+                200
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The readout circuitry consists of a simple transimpedance amplifier to convert the motional current to a voltage and a Zurich Instruments MFLI that is used to run closed loop experiments with an in-built Phase-Locked Loop (PLL) function with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " measurement bandwidth. Time synchronization between the instruments is ensured by employing the same reference clock base. A bias voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied to the body and substrate of the accelerometer in order to facilitate the capacitive transduction. The resonators are operated in the linear regime [8] of the second in-plane transverse mode of the C-C beam with measurements conducted at a low noise test site. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                203,
+                484,
+                379
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f85f74f1e46772358e4ddabe21bf167a16659e17ba6e61bafd02f1e295b6a245.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2: Schematic of the experimental setup with packaged chip (inset). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                85,
+                380,
+                494,
+                565
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplifiers and the chip are both enclosed in a temperature-controlled enclosure where the temperature is set at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " using a Stanford Research Systems (SRS) controller. A PT1000 platinum resistance temperature sensor is used to measure the temperature of the chamber and thermo-electric elements are used to maintain the specified temperature. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                621,
+                486,
+                720
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                734,
+                183,
+                749
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Scale Factor "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                751,
+                181,
+                763
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An estimate of the device scale factor is carried out by placing the sensor module on a tilt table, with the sensitive axis oriented at specified angles (between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " -  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "90^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") with respect to the vertical (equivalent to applying a gravitational loading between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{-1g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " steps. Similarly, it is tilted in the opposite direction to reach a full range of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The frequency shift induced by this change in acceleration is shown in Fig. 3 along with a linear fit (in green). "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                764,
+                486,
+                889
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c92aa4e711a9c88943d67cd2f0104c1eba0661f8a14cb35e19b17cad9e595309.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3: Scale factor characterization of the resonant accelerometer using a tilt table test. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                66,
+                907,
+                262
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The frequency sensitivity of resonator 1 to tilt-induced gravitational loading is measured to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2802\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " while that of resonator 2 is of the opposite sign  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-2808\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The net differential scale factor of the device is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5610\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with very good linearity exhibited over the entire  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " dynamic range. These measurements of scale factor are in good agreement with model predictions. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                312,
+                910,
+                409
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Temperature coefficient "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                508,
+                420,
+                690,
+                434
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Using the SRS temperature controller, the temperature of the controlled region (as shown in Fig. 2) is ramped up from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with steps of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mathrm{m}^{\\circ}\\mathrm{C / s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thus allowing appropriate time for the sensor to settle at each temperature step. The variation of the individual resonator frequencies and their frequency difference over temperature has been plotted in Fig. 4. The TCF is obtained by calculating the slope of the curves. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                435,
+                910,
+                545
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1c2775be678b200141469f7b7c2d8e6ef35aa64be0f9e6ac16a7e32e32f21c47.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4: Temperature sensitivity characterization of the resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                548,
+                904,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The slope of the two resonant frequencies (represented as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{TCF_{R1}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{TCF_{R2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") are seen to be very close but not identical to each other. Thus, the frequency difference has a residual temperature dependence (represented at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{TCF_{DF}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). Due to this partial cancellation, the temperature induced drifts in a frequency difference output (even in an ovenized system) is not completely removed. These effects are seen in the noise floor and bias stability analysis. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                788,
+                910,
+                910
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "665 "
+                    }
+                ]
+            },
+            "bbox": [
+                486,
+                944,
+                510,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 20:31:34 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                883,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Bias Stability "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                63,
+                188,
+                77
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The frequency difference output taken over an hour at a low noise test site is shown in Fig. 5 following drift correction. Some of the excursions from the mean can be explained by variations in the temperature around the sensor in the enclosure. Since the area of the enclosed space is large  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(7\\mathrm{cm}\\times 15\\mathrm{cm}\\times 5\\mathrm{cm})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the temperature gradients between the bottom surface (where the thermoelectric device is placed) and the top of the enclosure can be substantial. Thus, although the temperature is nominally controlled to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+/-1\\mathrm{m}^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the thermometer (PT1000) location, the temperature gradient at the chip would likely to be far greater than this value. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                77,
+                486,
+                242
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ee14cff97b62db35b4d081b80ed46fdd4ff895f930acf141391a2e3e687e0d3d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5: Measured output bias over a period of an hour at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20^{\\circ}C"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                95,
+                258,
+                471,
+                470
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To obtain an estimate of the bias stability of the device, a modified Allan Variance analysis on the differential frequency dataset is conducted. The resulting curve is divided by the differential sensitivity (as shown in Eq. 3) to estimate the input referred bias stability as shown in Fig. 6. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                520,
+                486,
+                604
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/51e1155141f28351f29e51360a5f5fc82172cd9812f9626a5e8b3f6bf22d997f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6: Modified Allan Variance of the differential frequency output sensor obtained at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20^{\\circ}C"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " PLL bandwidth. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                109,
+                618,
+                461,
+                822
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The bias instability metric is a key determinant of the resolution of the device. As seen in Fig. 6, a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.5\\mathrm{ng}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at an integration time of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5\\mathrm{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is achieved from "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                871,
+                486,
+                914
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "this data set. At larger integration times, the stability worsens, and this can be attributed to the residual temperature sensitivity of the response. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                63,
+                910,
+                105
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Noise Floor "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                508,
+                120,
+                599,
+                133
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To characterize the noise floor of the sensor, an FFT is done on the data shown in Fig. 5. This FFT is then converted to input-referred noise floor by dividing by the differential frequency sensitivity of the sensor to input acceleration. The results are shown in Fig. 7 where a noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is shown. The low frequency noise exhibits a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 / \\mathrm{f}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " characteristic for this device, likely due to residual temperature effects. The corner frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{f_c})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of this implementation is seen to be at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.25\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " offset frequency. The noise floor was seen to reduce further as the PLL bandwidth was reduced to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.5\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                134,
+                910,
+                285
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bc0030e1c33836ea7b442548de2f0ced24d6fbc4acb05c402c038dc746aeb451.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7: Noise Spectral Density at the low noise site measured at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20^{\\circ}C"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " PLL bandwidth. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                518,
+                299,
+                897,
+                518
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DISCUSSION AND FUTURE WORK "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                508,
+                571,
+                846,
+                587
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work reports a state of the art resonant accelerometer utilizing differential frequency readout with a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.5\\mathrm{ng}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". These metrics are compared in a state-of-the-art table (Table 1) highlighting the noise floor and bias instability measured by various groups using the resonant accelerometer approach. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                588,
+                910,
+                686
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/bf1ea38d687c2e8ed936312ecf0707e225f599aa74c77130fb7bf393b7cc6bf2.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1: Comparison of metrics for high-performance resonant accelerometers. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Work</td><td>Noise floor</td><td>Bias Stability</td></tr><tr><td>D.D. Shin, et al. [9]</td><td>-</td><td>160 ng</td></tr><tr><td>J. Zhao, et al. [10]</td><td>1000 ng/√Hz</td><td>230 ng</td></tr><tr><td>X. Zou, et al. [7]</td><td>150 ng/√Hz</td><td>-</td></tr><tr><td>Y. Yin, et al. [11]</td><td>380 ng/√Hz</td><td>95 ng</td></tr><tr><td>This work</td><td>17.8 ng/√Hz</td><td>17.5 ng</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                511,
+                724,
+                910,
+                812
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "These initial results demonstrate the potential for MEMS RXLs to demonstrate similar performance to macroscale state of the art accelerometers. The differential frequency output metric enables rejection of first-order variations in the bias but the stability at longer integration times is limited by residual temperature effects, including "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                825,
+                910,
+                908
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "666 "
+                    }
+                ]
+            },
+            "bbox": [
+                486,
+                945,
+                510,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 20:31:34 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                883,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the TCF mismatch between the resonators. The FFT of the MEMS RXL data shows consequent increase in low frequency noise, therefore not enabling resolution of the micro-seismic peaks due to ocean waves in the 1 to 20 second period range. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                63,
+                486,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Further development of the technology is underway to address the limitations outlined in this paper. This includes passive and active temperature compensation schemes, including chip-level ovenization and further temperature correction. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                131,
+                484,
+                200
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGEMENTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                214,
+                329,
+                228
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work is supported by funding from Innovate UK and Natural Environment Research Council. "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                230,
+                484,
+                258
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                272,
+                225,
+                285
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] U. Krishnamoorthy et al., \"In-plane MEMS-based nano-g accelerometer with sub-wavelength optical resonant sensor,\" Sensors and Actuators A: Physical, vol. 145-146, pp. 283-290, Jul. 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] W. T. Pike, L. M. Standley, S. B. Calcutt, A. G. Mukherjee, “A broad-band silicon microseismometer with 0.25 ng/rt-Hz performance” in 2018 IEEE Micro Electro Mechanical Systems (MEMS), 2018, pp. 113-116. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] J. Laine and D. Mougenot, “A high-sensitivity MEMS-based accelerometer,” The Leading Edge, vol. 33, no. 11, pp. 1234–1242, Nov. 2014. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] A. A. Seshia, M. Palaniapan. T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, S. Montague, \"A Vacuum Packaged Surface Micromachined Resonant Accelerometer\" Journal of Microelectromechanical Systems, vol. 11, no. 6, 2002, pp. 784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] T. A. Roessig, R. T. Howe, A. P. Pisano, J. H. Smith, \"Surface-micromachined resonant accelerometer\" in Proceedings of International Solid State Sensors and Actuators Conference (Transducers '97), 1997, vol. 2, pp. 859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] W. Park et al., \"Wafer-scale film encapsulation of micromachined accelerometers,\" TRANSDUCERS '03. 12th International Conference on Solid-State Sensors, Actuators and Microsystems. Digest of Technical Papers (Cat. No.03TH8664), Boston, MA, USA, 2003, pp. 1903-1906 vol.2. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] X. Zou, P. Thiruvenkatanathan and A. A. Seshia, \"A Seismic-Grade Resonant MEMS Accelerometer,\" in Journal of Microelectromechanical Systems, vol. 23, no. 4, pp. 768-770, Aug. 2014. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] X. Zou and A. A. Seshia, \"Non-Linear Frequency Noise Modulation in a Resonant MEMS Accelerometer,\" in IEEE Sensors Journal, vol. 17, no. 13, pp. 4122-4127, 1 July 1, 2017. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] D. D. Shin, C. H. Ahn, Y. Chen, D. L. Christensen, I. B. Flader and T. W. Kenny, \"Environmentally robust differential resonant accelerometer in a wafer-scale encapsulation process,\" 2017 IEEE 30th International Conference on Micro Electro Mechanical Systems (MEMS), Las Vegas, NV, 2017, pp. 17-20. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10]J. Zhao et al., \"A 0.23-  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu"
+                            },
+                            {
+                                "type": "text",
+                                "content": "g Bias Instability and 1- "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu"
+                            },
+                            {
+                                "type": "text",
+                                "content": "g/ "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\sqrt{Hz}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Acceleration Noise Density Silicon "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                287,
+                486,
+                903
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Oscillating Accelerometer With Embedded Frequency-to-Digital Converter in PLL,\" in IEEE Journal of Solid-State Circuits, vol. 52, no. 4, pp. 1053-1065, April 2017 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] Y. Yin, Z. Fang, F. Han, B. Yan, J. Dong, and Q. Wu, \"Design and test of a micromachined resonant accelerometer with high scale factor and low noise,\" Sensors and Actuators A: Physical, vol. 268, pp. 52 - 60, 2017. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                63,
+                910,
+                186
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CONTACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                510,
+                200,
+                616,
+                214
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "*M. Pandit, tel: +44-1223760304; mnp26@cam.ac.uk "
+                    }
+                ]
+            },
+            "bbox": [
+                540,
+                216,
+                905,
+                231
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "667 "
+                    }
+                ]
+            },
+            "bbox": [
+                486,
+                945,
+                510,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 20:31:34 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                109,
+                963,
+                880,
+                976
+            ]
+        }
+    ]
+]

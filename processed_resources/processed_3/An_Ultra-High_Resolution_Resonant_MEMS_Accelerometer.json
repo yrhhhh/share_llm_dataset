@@ -1,0 +1,270 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Milind Pandit<sup>1</sup>, Arif Mustafazade<sup>1,3</sup>, Chun Zhao<sup>1</sup>, Guillermo Sobreviela<sup>1</sup>, Xudong Zou<sup>2</sup>, Philipp Steinmann<sup>3</sup>, and Ashwin Seshia<sup>1</sup>\n^{1} Dept. of Engineering, Nanoscience Centre, 11 JJ Thomson Avenue, Cambridge, UK\n- ^{2}  Institute of Electronics, Chinese Academy of Sciences, China\n- ^{3} Silicon Microgravity Ltd., Cambridge Innovation Park, Waterbeach, Cambridge, UK",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "This paper reports initial results on the implementation of a high-resolution resonant MEMS accelerometer with a noise floor of   17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}  and a bias stability of   17.5\\mathrm{ng}  with a differential frequency readout configuration. The differential readout scheme provides for rejection of common mode environmental effects to first order. This prototype sensor demonstrates the best bias stability and noise floor of all MEMS resonant accelerometer configurations reported till date.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "Ultra-high resolution accelerometers with sub-   \\mu \\mathrm{g}  bias stability and noise floor have applications in inertial navigation, seismology and geophysical measurements. MEMS based accelerometers have significant advantages relative to more traditional counterparts due to their low cost, small form factor, and potential for low power operation. Current implementations of high-end MEMS accelerometers have largely relied on capacitive or optical transduction techniques.\nOptical transduction techniques [1] have seen significant recent progress; but they are still limited in terms of integration potential and compatibility with harsh environment applications. Capacitive accelerometers rely on capacitive transduction of the displacement of an inertial mass. These have recently demonstrated groundbreaking resolution and noise floor [2],[3]. However, the physics of the approach limits scalability due to the direct relationship between the mass of the sensor and the sensitivity, and the inverse-squared relationship with the mechanical bandwidth of the accelerometer. These trends run counter to the benefits offered by miniaturization and can limit inherent device robustness.\nResonant accelerometers [4],[5] on the other hand transduce the inertial force on a proof mass as a shift in the natural frequency of a coupled resonator offering high sensitivity without similarly compromising on bandwidth or size. However, historically they have been limited by effects such as temperature sensitivity, the requirement for vacuum packaging, and the complexity of the closed-loop readout interface. Several ovenization [6] and temperature compensation [7] techniques have been studied in the context of resonant accelerometers but stabilities nearing 10 nano-g or below have not yet been reported.\nThis work demonstrates for the first time, initial results for a MEMS RXL with a dynamic range of   +/-1\\mathrm{g}  and a bias stability of   17.5\\mathrm{ng}  that elevates the MEMS RXL to the performance regime comparable to other high-end accelerometers.\nThe paper first describes the device and the\nexperimental setup used in this work. The results of the scale factor, temperature sensitivity and stability tests are provided, including a discussion on the future roadmap for development.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "DEVICE  Figure 1: Schematic of the differential resonant accelerometer..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/b816fd30a1aa60d35a4e64a250f1014b4e382215324e1110ef234faafb06f9bf.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "A schematic of a differential resonant accelerometer (DRXL) is shown in Fig. 1. The device consists of two clamped-clamped (C-C) beams situated on either side of a proof mass. The proof mass is connected to the vibrating beams through a force amplification lever. Each resonator experiences a differential axial force due to input gravitational acceleration resulting in a frequency shift [5], [6]. The device is wafer level vacuum packaged in order to reduce air damping leading to a quality factor of 60000 and the natural frequency of the beams operated in the second transverse mode of vibration is approximately   420\\mathrm{kHz} .\nCommon mode rejection in this device is realized by utilizing the frequency difference between the two resonators. Temperature sensitivities often limit the accuracy of measurements but a first-order cancellation in the bias is provided by the differential output. The output frequencies for each of the two resonators may be most simply expressed as\n$$\nf _ {I} = f _ {O I} \\left(1 + \\mathrm {T C F} _ {\\mathrm {R} 1}\\right) + \\mathrm {S} _ {\\mathrm {g} ^ {+}} d g; \\tag {1}\n$$\n$$\nf _ {2} = f _ {0 2} \\left(1 + \\mathrm {T C F} _ {\\mathrm {R} 2}\\right) - \\mathrm {S} _ {\\mathrm {g}}. d g;\n$$\nThe scale factors   (\\mathrm{S}_{\\mathrm{g}^{+}})  and   (\\mathrm{S_g})  are generally very similar. For measurements at the low-end of the dynamic range the bias sensitivity to temperature is the dominant effect especially as the two frequencies are often offset to limit cross-talk. Differences in the temperature coefficients   (\\mathrm{TCF_{R1}})  and   (\\mathrm{TCF_{R2}})  as well as temperature\ngradients across the chip can lead to residual temperature drift in the differential output. As a result, in any practical implementation, only a partial cancellation of the temperature drift is achieved through a differential measurement. Thus, in order to reduce the effect of this temperature induced drift, the sensor along with the front-end electronics is ovenized in a temperature controlled enclosure.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "DEVICE  Figure 1: Schematic of the differential resonant accelerometer..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/b816fd30a1aa60d35a4e64a250f1014b4e382215324e1110ef234faafb06f9bf.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "The readout circuitry consists of a simple transimpedance amplifier to convert the motional current to a voltage and a Zurich Instruments MFLI that is used to run closed loop experiments with an in-built Phase-Locked Loop (PLL) function with   5\\mathrm{Hz}  measurement bandwidth. Time synchronization between the instruments is ensured by employing the same reference clock base. A bias voltage of   10\\mathrm{V}  is applied to the body and substrate of the accelerometer in order to facilitate the capacitive transduction. The resonators are operated in the linear regime [8] of the second in-plane transverse mode of the C-C beam with measurements conducted at a low noise test site.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "Figure 2: Schematic of the experimental setup with packaged chip (inset)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/f85f74f1e46772358e4ddabe21bf167a16659e17ba6e61bafd02f1e295b6a245.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The amplifiers and the chip are both enclosed in a temperature-controlled enclosure where the temperature is set at   20^{\\circ}\\mathrm{C}  using a Stanford Research Systems (SRS) controller. A PT1000 platinum resistance temperature sensor is used to measure the temperature of the chamber and thermo-electric elements are used to maintain the specified temperature.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_8",
+    "content": "An estimate of the device scale factor is carried out by placing the sensor module on a tilt table, with the sensitive axis oriented at specified angles (between   0^{\\circ}  -   90^{\\circ} ) with respect to the vertical (equivalent to applying a gravitational loading between   0\\mathrm{-1g} ) in   10^{\\circ}  steps. Similarly, it is tilted in the opposite direction to reach a full range of   \\pm 1\\mathrm{g} . The frequency shift induced by this change in acceleration is shown in Fig. 3 along with a linear fit (in green).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "Figure 3: Scale factor characterization of the resonant accelerometer using a tilt table test..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/c92aa4e711a9c88943d67cd2f0104c1eba0661f8a14cb35e19b17cad9e595309.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Figure 3: Scale factor characterization of the resonant accelerometer using a tilt table test..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/c92aa4e711a9c88943d67cd2f0104c1eba0661f8a14cb35e19b17cad9e595309.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "The frequency sensitivity of resonator 1 to tilt-induced gravitational loading is measured to be   2802\\mathrm{Hz / g}  while that of resonator 2 is of the opposite sign   -2808\\mathrm{Hz / g} . The net differential scale factor of the device is   5610\\mathrm{Hz / g}  with very good linearity exhibited over the entire   \\pm 1\\mathrm{g}  dynamic range. These measurements of scale factor are in good agreement with model predictions.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_11",
+    "content": "Using the SRS temperature controller, the temperature of the controlled region (as shown in Fig. 2) is ramped up from   25^{\\circ}\\mathrm{C}  to   50^{\\circ}\\mathrm{C}  with steps of   4\\mathrm{m}^{\\circ}\\mathrm{C / s}  thus allowing appropriate time for the sensor to settle at each temperature step. The variation of the individual resonator frequencies and their frequency difference over temperature has been plotted in Fig. 4. The TCF is obtained by calculating the slope of the curves.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2: Schematic of the experimental setup with packaged chip (inset)..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/f85f74f1e46772358e4ddabe21bf167a16659e17ba6e61bafd02f1e295b6a245.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Figure 4: Temperature sensitivity characterization of the resonant accelerometer..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/1c2775be678b200141469f7b7c2d8e6ef35aa64be0f9e6ac16a7e32e32f21c47.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "Figure 4: Temperature sensitivity characterization of the resonant accelerometer..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/1c2775be678b200141469f7b7c2d8e6ef35aa64be0f9e6ac16a7e32e32f21c47.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "The slope of the two resonant frequencies (represented as   \\mathrm{TCF_{R1}}  and   \\mathrm{TCF_{R2}} ) are seen to be very close but not identical to each other. Thus, the frequency difference has a residual temperature dependence (represented at   \\mathrm{TCF_{DF}} ). Due to this partial cancellation, the temperature induced drifts in a frequency difference output (even in an ovenized system) is not completely removed. These effects are seen in the noise floor and bias stability analysis.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_14",
+    "content": "The frequency difference output taken over an hour at a low noise test site is shown in Fig. 5 following drift correction. Some of the excursions from the mean can be explained by variations in the temperature around the sensor in the enclosure. Since the area of the enclosed space is large   (7\\mathrm{cm}\\times 15\\mathrm{cm}\\times 5\\mathrm{cm}) , the temperature gradients between the bottom surface (where the thermoelectric device is placed) and the top of the enclosure can be substantial. Thus, although the temperature is nominally controlled to   +/-1\\mathrm{m}^{\\circ}  at the thermometer (PT1000) location, the temperature gradient at the chip would likely to be far greater than this value.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Figure 5: Measured output bias over a period of an hour at   20^{\\circ}C ..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/ee14cff97b62db35b4d081b80ed46fdd4ff895f930acf141391a2e3e687e0d3d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "Figure 5: Measured output bias over a period of an hour at   20^{\\circ}C ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/ee14cff97b62db35b4d081b80ed46fdd4ff895f930acf141391a2e3e687e0d3d.jpg"
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "To obtain an estimate of the bias stability of the device, a modified Allan Variance analysis on the differential frequency dataset is conducted. The resulting curve is divided by the differential sensitivity (as shown in Eq. 3) to estimate the input referred bias stability as shown in Fig. 6.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6: Modified Allan Variance of the differential frequency output sensor obtained at   20^{\\circ}C  with   5\\mathrm{Hz}  PLL bandwidth..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/51e1155141f28351f29e51360a5f5fc82172cd9812f9626a5e8b3f6bf22d997f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "Figure 6: Modified Allan Variance of the differential frequency output sensor obtained at   20^{\\circ}C  with   5\\mathrm{Hz}  PLL bandwidth..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/51e1155141f28351f29e51360a5f5fc82172cd9812f9626a5e8b3f6bf22d997f.jpg"
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "The bias instability metric is a key determinant of the resolution of the device. As seen in Fig. 6, a bias stability of   17.5\\mathrm{ng}  at an integration time of   0.5\\mathrm{s}  is achieved from\nthis data set. At larger integration times, the stability worsens, and this can be attributed to the residual temperature sensitivity of the response.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6: Modified Allan Variance of the differential frequency output sensor obtained at   20^{\\circ}C  with   5\\mathrm{Hz}  PLL bandwidth..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/51e1155141f28351f29e51360a5f5fc82172cd9812f9626a5e8b3f6bf22d997f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "To characterize the noise floor of the sensor, an FFT is done on the data shown in Fig. 5. This FFT is then converted to input-referred noise floor by dividing by the differential frequency sensitivity of the sensor to input acceleration. The results are shown in Fig. 7 where a noise floor of   17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}  is shown. The low frequency noise exhibits a   1 / \\mathrm{f}^2  characteristic for this device, likely due to residual temperature effects. The corner frequency   (\\mathrm{f_c})  of this implementation is seen to be at   0.25\\mathrm{Hz}  offset frequency. The noise floor was seen to reduce further as the PLL bandwidth was reduced to   2.5\\mathrm{Hz} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Figure 5: Measured output bias over a period of an hour at   20^{\\circ}C ..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/ee14cff97b62db35b4d081b80ed46fdd4ff895f930acf141391a2e3e687e0d3d.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Figure 7: Noise Spectral Density at the low noise site measured at   20^{\\circ}C  with   5\\mathrm{Hz}  PLL bandwidth..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/bc0030e1c33836ea7b442548de2f0ced24d6fbc4acb05c402c038dc746aeb451.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "Figure 7: Noise Spectral Density at the low noise site measured at   20^{\\circ}C  with   5\\mathrm{Hz}  PLL bandwidth..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/bc0030e1c33836ea7b442548de2f0ced24d6fbc4acb05c402c038dc746aeb451.jpg"
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "This work reports a state of the art resonant accelerometer utilizing differential frequency readout with a bias stability of   17.5\\mathrm{ng}  and a noise floor of   17.8\\mathrm{ng} / \\sqrt{\\mathrm{Hz}} . These metrics are compared in a state-of-the-art table (Table 1) highlighting the noise floor and bias instability measured by various groups using the resonant accelerometer approach.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "Figure 3: Scale factor characterization of the resonant accelerometer using a tilt table test..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/c92aa4e711a9c88943d67cd2f0104c1eba0661f8a14cb35e19b17cad9e595309.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1: Comparison of metrics for high-performance resonant accelerometers..",
+        "image_source": [
+          "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/bf1ea38d687c2e8ed936312ecf0707e225f599aa74c77130fb7bf393b7cc6bf2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "Table 1: Comparison of metrics for high-performance resonant accelerometers..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/An_Ultra-High_Resolution_Resonant_MEMS_Accelerometer/vlm/images/bf1ea38d687c2e8ed936312ecf0707e225f599aa74c77130fb7bf393b7cc6bf2.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "These initial results demonstrate the potential for MEMS RXLs to demonstrate similar performance to macroscale state of the art accelerometers. The differential frequency output metric enables rejection of first-order variations in the bias but the stability at longer integration times is limited by residual temperature effects, including\nthe TCF mismatch between the resonators. The FFT of the MEMS RXL data shows consequent increase in low frequency noise, therefore not enabling resolution of the micro-seismic peaks due to ocean waves in the 1 to 20 second period range.\nFurther development of the technology is underway to address the limitations outlined in this paper. This includes passive and active temperature compensation schemes, including chip-level ovenization and further temperature correction.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_24",
+    "content": "This work is supported by funding from Innovate UK and Natural Environment Research Council.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_25",
+    "content": "- [1] U. Krishnamoorthy et al., \"In-plane MEMS-based nano-g accelerometer with sub-wavelength optical resonant sensor,\" Sensors and Actuators A: Physical, vol. 145-146, pp. 283-290, Jul. 2008.\n- [2] W. T. Pike, L. M. Standley, S. B. Calcutt, A. G. Mukherjee, “A broad-band silicon microseismometer with 0.25 ng/rt-Hz performance” in 2018 IEEE Micro Electro Mechanical Systems (MEMS), 2018, pp. 113-116.\n- [3] J. Laine and D. Mougenot, “A high-sensitivity MEMS-based accelerometer,” The Leading Edge, vol. 33, no. 11, pp. 1234–1242, Nov. 2014.\n- [4] A. A. Seshia, M. Palaniapan. T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, S. Montague, \"A Vacuum Packaged Surface Micromachined Resonant Accelerometer\" Journal of Microelectromechanical Systems, vol. 11, no. 6, 2002, pp. 784-793.\n- [5] T. A. Roessig, R. T. Howe, A. P. Pisano, J. H. Smith, \"Surface-micromachined resonant accelerometer\" in Proceedings of International Solid State Sensors and Actuators Conference (Transducers '97), 1997, vol. 2, pp. 859-862.\n- [6] W. Park et al., \"Wafer-scale film encapsulation of micromachined accelerometers,\" TRANSDUCERS '03. 12th International Conference on Solid-State Sensors, Actuators and Microsystems. Digest of Technical Papers (Cat. No.03TH8664), Boston, MA, USA, 2003, pp. 1903-1906 vol.2.\n- [7] X. Zou, P. Thiruvenkatanathan and A. A. Seshia, \"A Seismic-Grade Resonant MEMS Accelerometer,\" in Journal of Microelectromechanical Systems, vol. 23, no. 4, pp. 768-770, Aug. 2014.\n- [8] X. Zou and A. A. Seshia, \"Non-Linear Frequency Noise Modulation in a Resonant MEMS Accelerometer,\" in IEEE Sensors Journal, vol. 17, no. 13, pp. 4122-4127, 1 July 1, 2017.\n- [9] D. D. Shin, C. H. Ahn, Y. Chen, D. L. Christensen, I. B. Flader and T. W. Kenny, \"Environmentally robust differential resonant accelerometer in a wafer-scale encapsulation process,\" 2017 IEEE 30th International Conference on Micro Electro Mechanical Systems (MEMS), Las Vegas, NV, 2017, pp. 17-20.\n- [10]J. Zhao et al., \"A 0.23-   \\mu g Bias Instability and 1-  \\mu g/  \\sqrt{Hz}  Acceleration Noise Density Silicon",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_26",
+    "content": "- Oscillating Accelerometer With Embedded Frequency-to-Digital Converter in PLL,\" in IEEE Journal of Solid-State Circuits, vol. 52, no. 4, pp. 1053-1065, April 2017\n- [11] Y. Yin, Z. Fang, F. Han, B. Yan, J. Dong, and Q. Wu, \"Design and test of a micromachined resonant accelerometer with high scale factor and low noise,\" Sensors and Actuators A: Physical, vol. 268, pp. 52 - 60, 2017.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_27",
+    "content": "*M. Pandit, tel: +44-1223760304; mnp26@cam.ac.uk",
+    "block_type": "text"
+  }
+]

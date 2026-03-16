@@ -1,0 +1,551 @@
+Article
+
+# Coupled Double Closed-Loop Control for an MEMS Resonant Accelerometer
+
+Heng Liu *Jiale Wu and Yu Zhang
+
+School of Electronic & Information Engineering, Nanjing University of Information & Technology, Nanjing 210044, China
+
+* Correspondence: ghost80boy@163.com
+
+Abstract: There is mutual coupling between amplitude control and frequency tracking control in the closed-loop control of micromechanical resonant sensors, which restricts sensor performance. This paper introduces the principle of an in-plane vibration micromechanical resonant accelerometer with electrostatic stiffness. The characteristic parameters of the microaccelerometer were obtained through computer-aided dimension measurement and an open-loop frequency sweep test of the fabricated microstructure. An accurate numerical model was established based on the accelerometer's dynamic principle and characteristic parameters. We established the double closed-loop driving analysis model of amplitude automatic gain control and resonant frequency phase-locked tracking. We used the averaging method to analyze the steady-state equilibrium point and the stable condition. We concluded that the integral coefficient can improve the startup overshoot when the amplitude automatic gain control loop satisfies the stability condition. Under the constraint of frequency tracking, the sizeable coefficient of the integrator can improve the system instability of the amplitude control loop. The theoretical analysis and simulation were helpful in the design and debugging of the system circuit.
+
+![](images/34dd6371f737e71976425ef0fbd0aa6e9106639e82efe07eb6559ede362931e3.jpg)
+
+# check for updates
+
+Citation: Liu, H.; Wu, J.; Zhang, Y.
+
+Coupled Double Closed-Loop
+
+Control for an MEMS Resonant
+
+Accelerometer. Micromachines 2022,
+
+13, 1612. https://doi.org/10.3390/
+
+mi13101612
+
+Academic Editor: Ha Duong Ngo
+
+Received: 21 August 2022
+
+Accepted: 21 September 2022
+
+Published: 27 September 2022
+
+Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+![](images/055538db260b2741923bba0c281f264544a491f08df8ace75a924599483a45d5.jpg)
+
+Copyright: © 2022 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+
+Keywords: resonant accelerometer; constant amplitude; frequency tracking; loop coupling; averaging method
+
+# 1. Introduction
+
+Micromechanical resonant sensors have the advantages of small volumes, low power consumption, and mass production. They are also characterized by their output frequency and have outstanding anti-interference performance. They are widely used in measuring mass, acceleration, pressure, and so on [1-3]. Micromechanical resonant sensors must satisfy the whole system phase and amplitude balance condition [4,5]. This requires the closed-loop system to ensure the constancy of the oscillation amplitude of the resonator and its frequency tuning to resonance [6,7]. Three problems need to be discussed and studied in closed-loop control for micromechanical resonant sensors. First, the mathematical modeling of the dynamics of micromechanical resonators is of significant theoretical and applied interest. The core of the micromechanical resonant sensor is the resonator. In system dynamics analysis, the microresonator is equivalent to a second-order linear system [8]. However, it is reported that the microresonator is no longer equivalent to a second-order system under large amplitude vibration and behaves as a nonlinear higher-order oscillator [2,9,10]. The numerical modeling of the microresonator is not scientific enough and does not combine with the actual manufacturing size [11,12]. Take the micromechanical resonant accelerometer as an example. The resonant frequency is more significant than $15\mathrm{kHz}$ [13], and the quality factor of the vacuum package is more prominent than 500 [14]. Establishing a numerical model based on the actual manufacturing microstructure and packaging test results is more valuable.
+
+Second, dual closed-loop control is necessary to ensure a constant vibration amplitude and resonant frequency tracking. As a rule, constant vibration amplitude is solved using
+
+automatic gain control (AGC) technology [15,16]. The electrostatic driving force is related to the AC driving voltage and the DC driving voltage. Automatic gain control also includes the automatic gain control of the AC voltage amplitude (AGC-AC) and the automatic gain control of the DC voltage (AGC-DC). The former depends on a more nonlinear integrated chip circuit, so it is common to use the automatic gain control of DC voltage at present. When the quality factor is relatively significant $(Q > 500)$ , the resonator has outstanding frequency selection characteristics and can be driven by self-excitation [17-19]. However, the interface circuit generates a phase shift, so the self-excited drive requires a phase compensation circuit [17-19]. The phase shift is related to the excitation frequency, and it is not easy to achieve an accurate phase balance of different sensors. Many designs use a phase-locked loop (PLL) to maintain the phase balance [20-22]. Both digital and analog phase-locked loops can realize effective frequency tracking [20-22]. However, the auto gain control loop and frequency tracking loop are coupled, and the stability conditions of the whole system are also restricted. There has been no previous coupling analysis and simulation verification.
+
+Third, when the amplitude of the micromechanical resonator is large, the microstructure vibrates unsteadily in the nonlinear region [3,23,24]. Maintaining the microstructure's stable resonance is a problem to be solved by the closed-loop measurement and control circuit. In many works, the nonlinear dynamics and bifurcations of the operating modes of the PLL circuit and AGC circuit are studied [25,26]. There are also known works devoted to studying the nonlinear dynamics of micromechanical resonators in control loops that implement the amplitude and phase stabilization of oscillations. The relevance of the latter direction is especially significant in the context of the tasks of designing architectures and ensuring stable dynamic modes of operation of high-quality sensitive elements of micromechanical inertial navigation systems, where the stability of reaching the required amplitudes of stationary oscillations in the presence of inevitable mechanical and other nonlinearities affects the accuracy of the sensor.
+
+Micromechanical resonant accelerometers have the advantage of high-resolution measurement and are widely used in measuring slight acceleration and displacement [1]. The principle of a silicon-based electrostatic-stiffness-type in-plane resonant accelerometer is introduced in this paper, and the fabrication is realized by inductive coupled plasma (ICP) deep etching and anodic bonding technology. The geometric dimensions of the accelerometer were obtained by computer-vision-aided testing. The resonant frequency and quality factor were obtained by the open-loop frequency sweep test after the accelerometer was vacuum-packaged. The nonlinear phenomenon of the resonant amplitude and frequency coupling of the microstructure beam were observed. Based on the above tests, an accurate numerical simulation model of a micromechanical accelerometer was established. The numerical analysis model of the double closed-loop drive circuit with automatic gain control and phase-locked control was established. The stability condition and steady-state behavior of the accelerometer under the condition of the cubic stiffness coefficient were analyzed by the averaging method. The independent decoupling analysis method was adopted for the coupling of dual loops, and the numerical simulation was used to experiment. The purpose was to solve the nonlinear problem of the system. The stability region of the system was analyzed and estimated, and the simulation and experiment were carried out to improve the stability of the accelerometer.
+
+# 2. MEMS Resonant Accelerometer and Open-Loop Experiment
+
+The structure layer of the accelerometer is divided into two identical single-beam resonant accelerometers at the middle symmetry point in the $Y$ -axis direction, as shown in Figure 1. Tasking the upper part as an example, the structure layer includes a sensitive proof mass with some damping holes, four single-stage folded beams supporting the suspended proof mass, a detection plate capacitor pair, two fixed-drive comb capacitor pairs, a tuning fork resonant beam, and some fixed anchors (two anchors at the detection
+
+end, two anchors for the driving comb, and two anchors for the double-end tuning fork). The $Y$ -axis direction is the drive and detection direction.
+
+![](images/3ffbce41a4fc5138754abaa1dbb8720f14ed325014dce4cd395ce012a62272ee.jpg)  
+Figure 1. Structural diagram of an accelerometer.
+
+An equivalent diagram of an accelerometer is shown in Figure 2. Folded beams and proof mass connect with the detection voltage, $V_{s}$ , $V$ . Both the driving combs link with driving voltage, $V_{d} + V_{a}\sin \omega t$ , $V$ . The tuning fork beam potential is 0. The dynamic equation of the resonant beam is [8]:
+
+$$
+m \ddot {y} + \xi \dot {y} + k _ {m} y = F _ {d} + F _ {e} \tag {1}
+$$
+
+![](images/8af354cb9bf68d50bcc23d81f45aeb17b419772f4fdff3a3a64bea7525e2610d.jpg)  
+Figure 2. Equivalent diagram of an accelerometer.
+
+In Equation (1), $y$ is the modal displacement of the tuning fork beam, $m$ ; $F_{d}$ is the electrostatic driving force, $N$ ; $k_{m}$ is the effective mechanical stiffness of the tuning fork beam, $N / m$ ; $m$ is the equivalent mass, $kg$ ; and the damping coefficient is $\xi$ . The electrostatic force of the detection plate capacitance acting on the resonant beam is $F_{e}$ , $N / m$ . The total capacitance of the detection plate is:
+
+$$
+C _ {s} = \frac {\varepsilon N h l}{d _ {0} - y _ {1}} = \frac {\varepsilon S}{d _ {0} - y _ {1}} \tag {2}
+$$
+
+In Equation (2), $N$ represents the pairs of the parallel plate capacitance; $d_0$ is the initial distance between two plates of the detection capacitor, $m$ ; $y_1$ is the displacement of the folded beam in the $Y$ -axis direction, $m$ ; $\varepsilon$ is the dielectric constant; $h$ is the overlapping
+
+thickness of the capacitor plates along the $Z$ -axis direction, $m$ ; $l$ is the overlap length of a single capacitor along the $Y$ -axis direction, $m$ ; and $S = Nhl$ is the equivalent area of the two plates of the detection capacitor, $m^2$ .
+
+The electrostatic force, $F_{e}$ , is:
+
+$$
+F _ {e} = \sum \frac {1}{2} \frac {\partial C _ {s}}{\partial y _ {1}} V _ {s} ^ {2} = \frac {N \varepsilon l h V _ {s} ^ {2}}{2} \left(\frac {1}{d _ {0} ^ {2}} + \frac {2 y _ {1}}{d _ {0} ^ {3}} + O \left(y _ {1} ^ {2}\right)\right) \tag {3}
+$$
+
+The total capacitance of the drive comb, $C_d$ , $F$ , is:
+
+$$
+C _ {d} = \frac {N _ {0} \varepsilon h \left(l _ {0} + y\right)}{d _ {1}} \tag {4}
+$$
+
+In Equation (4), $N_0$ represents the pairs of the capacitance of the driving comb; $l_0$ is the overlapping length of the combs along the $Y$ -axis direction, $m$ ; $d_1$ is the distance between the comb and the next comb in the $X$ -axis direction, $m$ ; $V_d$ is the DC driving voltage, $V$ ; and $V_a \sin \omega t$ is the AC driving voltage. The electrostatic driving force, $F_d$ , is:
+
+$$
+F _ {d} = \sum \frac {1}{2} \frac {\partial C _ {d}}{\partial y} \left(V _ {d} + V _ {a} \sin \omega t\right) ^ {2} = \frac {1}{2} \frac {N _ {0} \varepsilon h}{d _ {1}} \left(V _ {d} + V _ {a} \sin \omega t\right) ^ {2} \tag {5}
+$$
+
+Substituting Equations (3) and (5) into Equation (1) and ignoring the higher-order terms of the electrostatic force, we obtain:
+
+$$
+\mathrm {m} \ddot {y} + \xi \dot {y} + K _ {\text {e f f}} y = \frac {N _ {0} \varepsilon h}{2 d _ {1}} \left(V _ {d} + V _ {a} \sin \omega t\right) ^ {2} + \frac {\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}} \tag {6}
+$$
+
+In Equation (6), the equivalent stiffness of the resonant beam, $k_{eff}$ , is:
+
+$$
+k _ {e f f} = k _ {m} - \frac {\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}} \tag {7}
+$$
+
+According to Equation (7), when the detection terminal is loaded with voltage, $V_{s}$ , the resonant frequency decreases when the equivalent stiffness of the resonant beam decreases, and the reduction is related to $V_{s}$ and $d_{0}$ . The resonant accelerometer can be designed by establishing the relationship between the acceleration, $a$ , in the $Y$ -axis direction and the initial distance, $d_{0}$ .
+
+According to Figure 2, the folded beams and the resonant beam were under an acceleration excitation, which made the solution for the distance, $d_0$ , more complicated. The equivalent stiffness, $k_{s}$ , was much smaller than the modal stiffness, $k_{m}$ , and the detection proof mass, $m_{s}$ , was much larger than that of the resonant beam, $m$ . Under the action of the electrostatic driving force, the resonant beam performed a high-frequency sinusoidal periodic vibration about the fixed equilibrium position, and the equivalent low-frequency displacement was 0.
+
+When the acceleration in the $Y$ -axis direction is 0, the detection capacitance system can be calculated as:
+
+$$
+\frac {1}{2} \frac {\varepsilon S V _ {s} ^ {2}}{\left(d _ {0} - \Delta d\right) ^ {2}} = k _ {s} \cdot \Delta d \tag {8}
+$$
+
+When the acceleration in the $Y$ -axis direction is not 0, the following holds true:
+
+$$
+\frac {1}{2} \frac {\varepsilon S V _ {s} ^ {2}}{\left(d _ {0} - \left(y _ {1} + \Delta d\right)\right) ^ {2}} = k _ {s} \left(y _ {1} + \Delta d\right) - m _ {s} \cdot a \tag {9}
+$$
+
+In Equations (8) and (9), $\Delta \mathrm{d}$ and $y_{1}$ are the displacements of the folded beam and the proof mass in the $Y$ -axis direction when the acceleration is 0 and not $0, m, m$ , respectively. The actual design should consider the pull-in effect of the plate capacitor; that is, the value
+
+$d_0$ should be as large as possible, but if it is too large, the detection of the output signal becomes difficult. Generally, it satisfies $y_{1} + \Delta d \ll d_{0}$ . After expansion with the Taylor series, the relationship between displacement, $y_{1} + \Delta d$ , and acceleration, $a$ , can be obtained as follows:
+
+$$
+y _ {1} + \Delta d = \frac {m _ {s} \cdot a}{k _ {s} - \frac {\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}} + \frac {\frac {\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}}}{k _ {s} - \frac {\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}} \tag {10}
+$$
+
+The resonant frequency, $f_{e}$ , of the resonant beam is:
+
+$$
+f _ {e} = \frac {1}{2 \pi} \sqrt {\frac {k _ {m} - \frac {\varepsilon S V _ {s} ^ {2}}{\left(d _ {0} - y _ {1}\right) ^ {3} \left(1 - \frac {- \Delta d}{d _ {0} - y _ {1}}\right) ^ {3}}}{m}} \tag {11}
+$$
+
+where
+
+$$
+\Delta \mathbf {d} = \frac {\frac {\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}}}{k _ {s} - \frac {\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}}, y _ {1} = \frac {m _ {s} \cdot a}{k _ {s} - \frac {\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}}
+$$
+
+Sensitivity, $\eta$ , is expressed as:
+
+$$
+| \eta | \approx \frac {\delta f _ {e}}{\delta a} \approx \frac {3 \varepsilon S V _ {s} ^ {2} / 2 \pi}{\sqrt {\left(k _ {m} d _ {0} ^ {4} - \varepsilon S V _ {s} ^ {2} d _ {0}\right) \cdot m}} \frac {m _ {s}}{2 k _ {s} d _ {0} ^ {2} - 3 \varepsilon S V _ {s} ^ {2} / d _ {0}} \tag {12}
+$$
+
+In Equation (12), the sensitivity can be improved by adjusting the loading voltage, $V_{s}$ , but the sensitivity is nonlinear with $V_{s}$ . The greater the stiffness of the folded beam, $k_{s}$ , the smaller the sensitivity. It is necessary to configure the parameters reasonably in the structural design. The preceding analysis was conducted under the condition $k_{s} \ll k$ ; that is, the influence of the tuning fork beam on the resonant frequency by the electrostatic force and inertial force can be ignored.
+
+The microaccelerometer uses monocrystalline silicon doped with concentrated boron as the structural layer material, and the bond material is Pyrex7740 glass. An inductively coupled plasma (ICP) deep silicon etching process is used to obtain a much greater etching depth-to-width ratio for the microstructure. Process flow: in step 1, the monocrystalline silicon wafer is cleaned, and the bonding platform is etched; in step 2, monocrystalline silicon is doped with concentrated boron by a diffusion process to increase the conductivity of the structure; in step 3, Au is sputtered on the Pyrex7740 glass as an electrode; in step 4, the glass and silicon are bonded; in step 5, the back of the bonded silicon wafer is drily etched, and the structural layer is thinned; in step 6, the back of the silicon wafer is etched with the deep silicon etching process. The gap between the structure and the substrate is easy to control. The process flow has fewer pollution impurities, only three masks, and photolithography. The process flow is shown in Figure 3, and Figure 4 shows the accelerometer core and the corresponding package. A computer vision method directly marked the length and width dimensions. Table 1 shows the structural parameters that were designed and measured.
+
+The quality factor and resonant frequency are essential parameters for the microaccelerometer. In Figure 5, the microaccelerometer has eight electrodes, among which the fourth and fifth electrodes are the resonant beam electrodes, the first electrode is the detection electrode of the lower single beam, and the second and third electrodes are the corresponding driving electrodes; the eighth electrode is the detection electrode of the single beam, and the sixth and seventh electrodes are the corresponding detection electrodes.
+
+![](images/4f41026a9e32206f18eb66695ea85328aa63e1b28395aebd11efd2748d16aa8d.jpg)  
+(1)
+
+![](images/0707a7bd536dd9f44137fc761bc140ec77fd2818882e181e540f3de75e3f4d41.jpg)  
+(2）
+
+![](images/0578985a0d2d7a237947ee487d8c7185fde9b521d13ad4ba792c7fca23b563f2.jpg)  
+Silicon
+
+![](images/c5fb116ecc3d57984f4af41051c5dbfc31aeea2dfabe17a55697a8885cecd5df.jpg)  
+（3）
+
+![](images/40f29fcc3d6b1962e66199efc6cc2ecb07a2ff317e21e35617c4089e3a5e7481.jpg)  
+(4)
+
+![](images/8f9d4e71b31b30880ff5e077ce7ac7055e2ea55860a3c20de2453780d748c562.jpg)  
+Au
+
+![](images/5f78f182fe90f17d99feb80e1361025746e96688c4c3fba62f7aa66d4cac504a.jpg)  
+（5）
+
+![](images/4ac790a1f0244b0f2949fdb08afae850dee5b781510be89c14ac745477c16bd0.jpg)  
+(6)
+
+![](images/f88c6520924a602eb196492070b82570dc254468ad69c00eb632cc53916f78a6.jpg)  
+Glasses
+
+![](images/7b2e64389f27d0f29c6f20a1d9199886b629a70991d5462313f24dbd738c1e47.jpg)  
+Figure 3. Bulk silicon technological process. (1) clean the monocrystalline silicon wafer and etch the bonding platform; (2) dope with concentrated boron via a diffusion process;(3) sputter Au on the borosil-icate glass; (4) bond the glass and silicon through the anode; (5) dry-etched with excess silicon; (6) etch the back of the silicon wafer.   
+Figure 4. The design of the MEMS accelerometer.
+
+Table 1. Structural parameters of the accelerometer.   
+
+<table><tr><td>Parameters</td><td>Units</td><td>Design</td><td>Measurement</td></tr><tr><td>Length of fold beam</td><td>micron</td><td>500</td><td>472.5</td></tr><tr><td>Width of fold beam</td><td>micron</td><td>8</td><td>7.04</td></tr><tr><td>Spacing of fold beams</td><td>micron</td><td>14</td><td>16.2</td></tr><tr><td>Length of connecting beam</td><td>micron</td><td>160</td><td>148.4</td></tr><tr><td>Width of connecting beam</td><td>micron</td><td>9</td><td>7.5</td></tr><tr><td>Spacing of connecting beams</td><td>micron</td><td>4</td><td>4.95</td></tr><tr><td>Length of drive comb</td><td>micron</td><td>40</td><td>38.5</td></tr><tr><td>Width of drive comb</td><td>micron</td><td>5</td><td>4.79</td></tr><tr><td>Spacing of drive combs</td><td>micron</td><td>2</td><td>2.5</td></tr><tr><td>Pairs of drive combs</td><td>pair</td><td>19</td><td>19</td></tr><tr><td>Length of DETF</td><td>micron</td><td>700</td><td>661.6</td></tr><tr><td>Width of DETF</td><td>micron</td><td>8</td><td>7.4</td></tr><tr><td>Length of detection plate capacitor</td><td>micron</td><td>50</td><td>45.2</td></tr><tr><td>Width of detection plate capacitor</td><td>micron</td><td>6</td><td>4.87</td></tr><tr><td>Spacing of detection capacitor 1</td><td>micron</td><td>2</td><td>2.46</td></tr><tr><td>Spacing of detection capacitor 2</td><td>micron</td><td>10</td><td>10.56</td></tr><tr><td>Total pairs of detection capacitors</td><td></td><td>40</td><td>40</td></tr><tr><td>Length of proof mass</td><td>micron</td><td>620</td><td>609</td></tr><tr><td>Width of proof mass</td><td>micron</td><td>700</td><td>683</td></tr><tr><td>Length of damping hole</td><td>micron</td><td>10</td><td>12.41</td></tr><tr><td>Width of damping hole</td><td>micron</td><td>10</td><td>12.93</td></tr><tr><td>Number of damping holes</td><td></td><td>110</td><td>110</td></tr><tr><td>Structure layer thickness</td><td>micron</td><td>40</td><td>40.4</td></tr></table>
+
+![](images/a9ad9a2a34e3df8a77442b1ea08eb9b6acd318aa27e95de63de9ce0cc3616676.jpg)  
+Figure 5. Open-loop parameter measurement circuit. The lower electrode connected to sensing voltage; The lower electrode connected to driving voltage; The electrode connected to the tuning fork beam; The upper electrode connected to driving voltage; The upper electrode connected to sensing voltage.
+
+Taking a single-beam accelerometer as the experiment, the AC driving voltage, $V_{a}(t)$ , is provided by the first channel of the Agilent35670A dynamic signal analyzer, and the DC driving voltage, $V_{d}$ , is provided by the DC regulated power supply. The open-loop test circuit includes the accelerometer core, charge amplifier, isolated DC amplifier, band-pass filter, analog multiplier, low-pass filter, and high-frequency sinusoidal wave generation module. The detection electrode (the first electrode) is connected to the detection voltage, $V_{S}$ , through the charge amplifier, and the signal filtered by the low-pass filter is connected to the second channel of the Agilent35670A. To eliminate the same frequency interference of parasitic capacitance, a high-frequency sine wave modulation and analog multiplier demodulation are adopted. The high-frequency sine wave is connected to the resonant beam electrode (the fourth electrode). Figure 6 shows the amplitude-frequency curve obtained by the accelerometer open-loop test when the acceleration is 0, the $X$ axis is the frequency of the AC driving voltage, and the $Y$ axis is the ratio of voltage magnitude (0.001/div). The test shows that under the condition of a vacuum package (20-30 mTorr), when the frequency sweep range is 33-40 kHz, the frequency sweep is 250 points. When the voltage is 3 V, there is no amplitude, and frequency curve jump is shown in Figure 6a. The corresponding resonance frequency is 35.16 kHz, and the quality factor is 1476. When the voltage is 5 V, the corresponding resonance frequency is 35.746 kHz, and there is a jump in the amplitude and frequency curve, as shown in Figure 6b. As the voltage increases, the corresponding resonance frequency increases, and the vibration amplitude also increases.
+
+![](images/e08e8a8ffb9d404f44252b1834c34888d4ca6c2479389d4bd14611506be58598.jpg)  
+Figure 6. Amplitude-frequency curve of single resonant beam. In the amplitude-frequency curve (a) there is no jump; (b) there is a jump.
+
+An amplitude jump is observed on the right side of the resonant point. Further experimental analysis shows that the larger the driving voltage is, the amplitude-frequency curve has the characteristics of the duffing equation, and a nonlinear coupling relationship
+
+is observed between the vibration amplitude and the resonant frequency. The dynamic characteristics of a single-beam resonant accelerometer have the attributes of the duffing equation [25]:
+
+$$
+m \ddot {x} + c \dot {x} + k _ {m} x + k _ {3} x ^ {3} = F _ {d} (t) \tag {13}
+$$
+
+In Equation (13), $c$ is the damping coefficient, $k_{3}$ is the nonlinear stiffness coefficient, and the value of $k_{3}$ is related to $k_{m}$ and the width of the tuning fork beam [27]. The electrostatic driving force is $F_{d}(t)$ . For Equation (13), the normalization can be expressed as:
+
+$$
+\ddot {x} + \mu \dot {x} + \alpha x + \beta x ^ {3} = F _ {d} (t) / m \tag {14}
+$$
+
+In Equation (14), $\mu = c / m$ , $\alpha = k_{m} / m$ , and $\beta = k_{3} / m$ . Combined with the microstructure size measurement of computer vision and the open-loop test experiment, the relevant parameters of the accelerometer are shown in Table 2.
+
+Table 2. Accelerometer structural parameters and circuit parameters.   
+
+<table><tr><td>Parameter</td><td>Value</td><td>Parameter</td><td>Value</td></tr><tr><td>k</td><td>152.84 N/m</td><td>Cd0</td><td>0.88 pF</td></tr><tr><td>ks</td><td>5.1 N/m</td><td>k3</td><td>2.093 × 1012N/m3</td></tr><tr><td>m</td><td>3.312 ug</td><td>Cs0</td><td>0.39 pF</td></tr><tr><td>ms</td><td>20.196 ug</td><td>d1</td><td>2.5 um</td></tr><tr><td>Vs</td><td>2 V</td><td>Q</td><td>1476</td></tr><tr><td>s</td><td>0.08 mm × mm</td><td>d0</td><td>2.46 um</td></tr><tr><td>k1</td><td>1,000,000</td><td>h</td><td>40.4 um</td></tr><tr><td>N0</td><td>38</td><td>ε</td><td>8.854 × 10-12</td></tr></table>
+
+According to Table 2 and Equations (1)-(13), the numerical simulation model of the accelerometer based on Matlab/Simulink was established, as shown in Figure 7. The resonance frequency of the microstructure obtained by the open-loop test is $35.16\mathrm{kHz}$ , and the theoretical calculation of the resonance frequency is $34.546\mathrm{kHz}$ . Two factors mainly cause the gap between the two. First, the theoretical analysis is based on an ideal model, ignoring the influence of some connecting beams. Second, there is human error in the manual calibration measurement.
+
+![](images/fa07c4c98077f1d7cb32fdbafab0bdf41bab9b1ede8756f10d4015e4a8defb39.jpg)  
+Figure 7. Numerical model of single-beam resonant accelerometer.
+
+# 3. Closed-Loop Drive Control of MEMS Resonant Accelerometer
+
+The double closed-loop control circuit block diagram is shown in Figure 8. The hybrid control of the amplitude and frequency includes two loops: a constant amplitude control
+
+loop and a resonant frequency tracking control loop, where $x(t)$ is the displacement of the resonant beam, $m$ ; $k_{1}$ is the displacement detection amplification gain; $\tau$ is the time constant of the first-order low-pass filter, $S$ ; $A$ is the detection amplitude of the displacement signal, $V$ ; $V_{R}$ is the DC reference voltage, $V$ ; and the negative sign is because the actual circuit uses an inverse adder to complete the difference calculation. $k_{p}$ and $k_{I}$ are the proportional and integral coefficients, respectively; $k_{2}$ is the conversion coefficient of the voltage and electrostatic force, $F / V^{2}$ , and $r(t)$ is the equivalent electrostatic force generated by electric noise, $N$ , which is far less than the steady-state electrostatic driving force, $F_{d}(t)$ , when stable.
+
+![](images/8b3b90ea69d933d3dcc0bbb962174e5ea8638ee91664bc71f95dde0af3efb20c.jpg)  
+Figure 8. Block diagram of resonant microaccelerometer.
+
+The two loops are coupled to each other and assumed to be in a stable state during the analysis. Under the condition that the output voltage amplitude of the voltage-controlled oscillator (VCO) is constant, the range of DC driving voltage is determined according to the detection ability of the interface circuit, and the DC voltage of the frequency tracking loop is determined. Finally, other parameters of the amplitude control loop are determined. In the double closed-loop design process, the frequency tracking loop is first analyzed, and the driving DC voltage is assumed to be constant, so the stability condition of the phase-locked loop is solved, and the critical integral controller coefficient is determined. In the amplitude control loop, the DC reference voltage and other electrical parameters are adjusted to meet the stability conditions of the frequency tracking loop.
+
+# 3.1. Frequency Tracking Control Based on Phase-Locked Technology
+
+The frequency tracking control loop includes an accelerometer core, a charge amplifier, an analog multiplier, a low-pass filter, an integral controller, and a VCO. In the initial state, the DC driving voltage is constant, the AC voltage is generated by the VCO, and the initial frequency is set according to the design resonant frequency. When the phase error between the detected displacement signal and the driving AC voltage is not $90^{\circ}$ , the integral controller accumulates the phase error to adjust the input voltage of the VCO [22]. When the whole system is stable, the output frequency of the VCO is consistent with the resonant frequency of the resonant beam, and the analysis model is shown in Figure 9.
+
+![](images/280b27c1e57eef1d1bb076f0b68f5fdc0d59f45a7a1c30bc228134ea4a536c61.jpg)  
+Figure 9. Frequency tracking control of resonant microaccelerometer. This rectangle represents voltage controlled oscillator (VCO).
+
+In Figure 9, $\varsigma$ is the time constant of the first-order low-pass filter, $S$ ; $k_{II}$ is the integral coefficient, and it is affected by controller design; $y$ is the input voltage of the integrator, $V$ ; $z$ is the control voltage of the VCO, $V$ ; $k_{vco}$ is the conversion coefficient of the VCO, $\pi / V$ ; and $V_a$ and $\omega_0$ are the output voltage amplitude and initial oscillation frequency of the VCO, respectively. The quality factor of the accelerometer is more than 500, and the electrostatic force is simplified as:
+
+$$
+F _ {d} (t) = k _ {2} \cdot V _ {d} \cdot V _ {a} \cos (\omega t + \phi) = F \cos (\theta (t)). \tag {15}
+$$
+
+In Equation (15), $k_{2}$ is the voltage-electrostatic force conversion coefficient, $F / V^{2}$ , which is related to the driving comb capacitance parameters, $\omega$ is the frequency of the VCO, $\varphi$ is the initial phase, $\theta(t)$ is the real-time phase, $F$ is the amplitude of the driving force, the frequency tracking loop driving voltage amplitude is constant, and $F$ is also constant. For voltage-controlled oscillators:
+
+$$
+\dot {\theta} = \omega_ {0} + k _ {v c o} z. \tag {16}
+$$
+
+For the integral controller of the phase angle difference:
+
+$$
+\dot {z} = k _ {I I} y. \tag {17}
+$$
+
+For the analog multiplier phase discriminators:
+
+$$
+\dot {y} = \varsigma \left(k _ {1} \cdot x (t) \cdot V _ {a} \cos (\theta (t)) - y\right). \tag {18}
+$$
+
+According to the modeling of the above modules, the system dynamic equation is:
+
+$$
+\left\{ \begin{array}{l} \left(m \ddot {x} + c \dot {x} + k x + k _ {3} x ^ {3}\right) = F \cos \theta = I \cos \theta \\ \dot {\theta} = \omega_ {0} + k _ {v c o} \cdot z \\ \dot {z} = k _ {I I} \cdot y \\ \dot {y} = \varsigma \left(k _ {1} \cdot x \cdot V _ {a} \cos \theta - y\right) \end{array} . \right. \tag {19}
+$$
+
+It is assumed that the displacement of the resonant beam is $x(t)$ :
+
+$$
+x (t) = a (t) \cos (\theta (t) + \phi (t)), \tag {20}
+$$
+
+where $a(t)$ and $\phi (t)$ are the amplitude and phase of the vibration displacement, respectively. Under the condition of stability, both are slowly varying parameters. The vibration velocity of the resonant beam can be obtained by differentiating the displacement:
+
+$$
+\dot {x} (t) = - a (t) \dot {\theta} \sin (\theta + \phi) + \dot {a} (t) \cos (\theta + \phi) - a (t) \dot {\phi} \sin (\theta + \phi). \tag {21}
+$$
+
+As the amplitude and phase are slowly changing parameters:
+
+$$
+\dot {a} (t) \cos (\theta + \phi) - a (t) \dot {\phi} \sin (\theta + \phi) = 0. \tag {22}
+$$
+
+Thus, the vibration acceleration is:
+
+$$
+\ddot {x} (t) = - \dot {a} (t) \dot {\theta} \sin (\theta + \phi) - a (t) \dot {\theta} (\dot {\theta} + \dot {\phi}) \cos (\theta + \phi). \tag {23}
+$$
+
+Substituting $\ddot{x}(t), \dot{x}(t)$ , and $x(t)$ into Equation (19) and combining it with Equation (22), the averaging method can be used to simplify:
+
+$$
+\dot {a} (t) = - \frac {1}{2 \omega} [ I \sin (\phi) + a (t) (\mu \omega + k _ {I I} k _ {v c o} y) ], \tag {24}
+$$
+
+$$
+\dot {\phi} (t) = - \frac {1}{2 \omega} \left[ \frac {I}{a (t)} \cos (\phi) + [ \omega^ {2} - (\alpha + 3 / 4 \beta a ^ {2} (t)) ] \right], \tag {25}
+$$
+
+$$
+\dot {\omega} = k _ {I I} \cdot k _ {v c o} \cdot y, \tag {26}
+$$
+
+$$
+\dot {y} = \varsigma \left(\frac {1}{2} k _ {1} \cdot \bar {a} (t) \cdot V _ {a} \cos \phi - y\right). \tag {27}
+$$
+
+For the solution of the equilibrium point, let the derivative of each parameter with respect to time $t$ be 0. Then:
+
+$$
+\overline {{a}} = \frac {I}{\mu \overline {{\omega}}}, \overline {{\phi}} = - \frac {\pi}{2}, \overline {{y}} = 0,
+$$
+
+$$
+\overline {{\omega}} = \sqrt {\frac {1}{2} \left(\alpha + \sqrt {\alpha^ {2} + 3 \beta I ^ {2} / \mu^ {2}}\right)}.
+$$
+
+According to the expressions of $\overline{a}$ and $\overline{\omega}$ , the amplitude of the steady state is related not only to $I$ but also to $\mu$ and $\beta$ . The larger $\mu$ and $\beta$ are, the smaller their amplitude is. To analyze the stability of the loop, the equation was linearized at the equilibrium point, and the Jacobian matrix was obtained:
+
+$$
+\left[ \begin{array}{l} \dot {a} (t) \\ \dot {\phi} (t) \\ \dot {\omega} (t) \\ \dot {y} (t) \end{array} \right] = \left[ \begin{array}{c c c c} - \frac {\mu}{2} & 0 & - \frac {I}{2 \bar {\omega} ^ {2}} & - \frac {\bar {a} k _ {v c o} k _ {I I}}{2 \bar {\omega}} \\ \frac {3 \bar {a} \beta}{4 \bar {\omega}} & - \frac {\mu}{2} & - 1 & 0 \\ 0 & 0 & 0 & k _ {I I} k _ {v c o} \\ 0 & \frac {\varsigma k _ {1} \bar {a}}{2} & 0 & - \varsigma \end{array} \right] \left[ \begin{array}{l} a (t) \\ \phi (t) \\ \omega (t) \\ y (t) \end{array} \right]. \tag {28}
+$$
+
+The characteristic root equation that corresponds to the system is:
+
+$$
+n _ {0} \lambda^ {4} + n _ {1} \lambda^ {3} + n _ {2} \lambda^ {2} + n _ {3} \lambda + n _ {4} = 0. \tag {29}
+$$
+
+In Equation (29), $\lambda$ is the eigenvalue. $n_0, n_1, n_2, n_3, n_4$ are the coefficients of the corresponding items, which can be expressed as:
+
+$$
+M = k _ {1} \cdot k _ {I I} \cdot k _ {v c o} \cdot \varsigma > 0
+$$
+
+$$
+n _ {0} = 1 > 0
+$$
+
+$$
+n _ {1} = \mu + \varsigma > 0
+$$
+
+$$
+n _ {2} = \mu \left(\frac {\mu}{4} + \varsigma\right) > 0
+$$
+
+$$
+n _ {3} = \frac {\mu^ {2} \zeta}{4} + \frac {M \cdot I}{2 \mu \cdot \bar {\omega}} > 0
+$$
+
+$$
+n _ {4} = \frac {M \cdot I}{4 \bar {\omega}} > 0
+$$
+
+According to the Routh criterion, to make the system stable, it is necessary to satisfy:
+
+$$
+\left(n _ {1} \cdot n _ {2} - n _ {0} \cdot n _ {3}\right) \cdot n _ {3} - n _ {1} ^ {2} \cdot n _ {4} > 0. \tag {30}
+$$
+
+By solving Equation (30), we can obtain:
+
+$$
+k _ {I I} <   \frac {\mu^ {2} \bar {\omega}}{2 I \cdot k _ {1} \cdot k _ {v c o}} (\varsigma + \mu). \tag {31}
+$$
+
+The integral coefficient, $k_{II}$ , in the controller must meet Equation (31). The critical integral coefficient, $k_{II}$ , is related to the DC driving voltage, $V_{d}$ , which is coupled with the amplitude control loop. When the driving voltage increases, $I$ increases and the $k_{II}$ critical value decreases. The same changes apply to $k_{vco}$ and $k_{1}$ . When $\beta$ is greater than 0, that is, under the condition of stiffness "hardening," the resonant frequency and the critical
+
+integral coefficient increase. Under the same conditions, the stability of the system does not change when $\beta$ increases. The smaller the integral coefficient, the smaller the absolute value of the corresponding eigenvalue, the slower the dynamic response of the system, and the longer the stability time of frequency tracking.
+
+# 3.2. Amplitude Automatic Gain Control
+
+The amplitude automatic gain control and phase tracking control are coupled. In the analysis, the DC amplitude automatic gain control (AGC-DC) based on vibration displacement detection was mainly analyzed, and the frequency tracking loop was assumed to be frequency-locking. The dynamic equation of the amplitude control loop in Figure 8 is expressed as:
+
+$$
+\left\{ \begin{array}{l} m \left(\ddot {x} + \omega_ {n} / Q \dot {x} + \omega_ {n} ^ {2} x\right) + k _ {3} x ^ {3} = F _ {d} (t) \\ \dot {A} = \frac {1}{\tau} \left(| k _ {1} x | - A\right) \\ \dot {V} _ {d} = k _ {p} \left(\dot {V} _ {R} - \dot {A}\right) + k _ {I} \left(V _ {R} - A\right) \end{array} , \right. \tag {32}
+$$
+
+where $\omega_{n} = \sqrt{k_{m} / m}$ , which is the natural frequency of the resonant beam, and $Q = \sqrt{k_{m} \cdot m} / c$ , which is the quality factor because the quality factor, $Q$ , is large, which simplifies to $\frac{1}{2} k_{3} \cdot a^{2}(t) \cdot x$ for $k_{3} \cdot x^{3}$ . By substituting Equations (20), (21) and (23) into Equation (32) and combining with Equation (22), the following equations are obtained:
+
+$$
+\dot {\phi} (t) = \frac {k _ {3} \cdot a ^ {2} (t) \cos^ {2} (\theta + \phi)}{2 m \omega_ {n}} + \left[ \frac {k _ {2} \cdot V _ {d} \cdot V _ {a}}{a (t) m \omega_ {n}} - \frac {\omega_ {n}}{Q} \right] \cdot \sin (\theta + \phi) \cos (\theta + \phi) \tag {33}
+$$
+
+$$
+\dot {a} (t) = \frac {k _ {3} \cdot a ^ {3} (t) \sin (\theta + \phi) \cos (\theta + \phi)}{2 m \omega_ {n}} + \left[ \frac {k _ {2} \cdot V _ {d} \cdot V _ {a}}{m \omega_ {n}} - \frac {\omega_ {n}}{Q} a (t) \right] \cdot \sin^ {2} (\theta + \phi) \tag {34}
+$$
+
+$$
+\dot {A} = \frac {1}{\tau} \left(\frac {2}{\pi} k _ {1} a (t) - A\right) \tag {35}
+$$
+
+$$
+\dot {V} _ {d} = - k _ {p} \dot {A} + k _ {I} \left(V _ {R} - A\right) \tag {36}
+$$
+
+When $k_{3}$ is small and $Q$ is large, the system still has weak nonlinear characteristics. By using the characteristics of the slow time-varying system, the stability of the system constituted by Equation (32) was analyzed, and the equilibrium point was solved as follows:
+
+$$
+\left\{ \begin{array}{l} \bar {a} (t) = \frac {\pi V _ {R}}{2 k _ {1}} \\ \bar {A} = V _ {R} \\ \bar {V} _ {d} = \frac {\pi m \omega_ {n} ^ {2} V _ {R}}{2 k _ {1} k _ {2} Q} \end{array} . \right. \tag {37}
+$$
+
+Equation (32) is approximately linearized near the equilibrium point:
+
+$$
+\left[ \begin{array}{c} \dot {a} (t) \\ \dot {A} (t) \\ \dot {V} _ {d} (t) \end{array} \right] = \left[ \begin{array}{c c c} - \frac {\omega_ {n}}{2 Q} & 0 & \frac {k _ {1} k _ {2}}{2 m \omega_ {n}} \\ \frac {2 k _ {1}}{\tau \pi} & - \frac {1}{\tau} & 0 \\ - \frac {2 k _ {1} k _ {p}}{\tau \pi} & \frac {k _ {p} - \tau k _ {I I I}}{\tau} & 0 \end{array} \right] \left[ \begin{array}{c} a (t) \\ A (t) \\ V _ {d} (t) \end{array} \right]. \tag {38}
+$$
+
+The corresponding characteristic equation is:
+
+$$
+\lambda^ {3} + (\frac {\omega_ {n}}{2 Q} + \frac {1}{\tau}) \lambda^ {2} + (\frac {\omega_ {n}}{2 Q} \frac {1}{\tau} + \frac {k}{2 m \omega_ {n}} \frac {2 k _ {1} k _ {p}}{\tau}) \lambda + \frac {k _ {1} k _ {2}}{2 m \omega_ {n}} \frac {2 k _ {1}}{\tau \pi} (\frac {2 k _ {p}}{\tau} - k _ {I}) = 0. \qquad (3 9)
+$$
+
+According to the Routh criterion, the corresponding system stability should meet the following conditions:
+
+$$
+\Delta = \frac {k _ {1} k _ {2}}{2 m \omega_ {n}} \frac {2 k _ {1}}{\tau \pi} \left(\frac {2 k _ {p}}{\tau} - k _ {I}\right) > 0. \tag {40}
+$$
+
+That is, the following condition needs to be met:
+
+$$
+k _ {I} <   \frac {2 k _ {p}}{\tau}. \tag {41}
+$$
+
+The pole distribution of the system is changed by different $k_{p}, k_{I}$ , and $\tau$ values so that the system has different dynamic performances. The analysis of the equilibrium point suggests that the steady state value of the vibration amplitude, $a(t)$ , is independent of the quality factor and frequency, the amplitude keeps the original value under the condition where the acceleration changes, and the control method can achieve a constant amplitude vibration.
+
+# 4. Simulation Verification
+
+The numerical simulation model of the resonant accelerometer based on Matlab/Simulink (MathWorks Ink. Natick, Massachusetts, U.S.) is shown in Figure 10. When the simulation time was $2.2\mathrm{s}$ , the acceleration changed from 0 to $49\mathrm{m}^2/\mathrm{s}$ , as shown in Figure 11.
+
+![](images/e8e2cb71059848b18a98c5e1c0ddf09d9306a81ae96de0d38dcf3763268de391.jpg)  
+Figure 10. Simulation model of double closed-loop control for a resonant accelerometer.
+
+![](images/ca3540984c0faaa87eb7300f5c4addadad5c35cb40875a4cd68a50b08175279c.jpg)  
+Figure 11. Loaded acceleration signal.
+
+In the simulation of the frequency tracking loop, the $V_{R}$ of the DC reference voltage was $0.5\mathrm{V}$ , and the steady-state DC driving voltage, $V_{d}$ , was calculated to be $0.067\mathrm{V}$ according to Table 2 and Equation (37). According to Equation (31), the critical value of $k_{II}$ in the phase-locked loop was 39.6. When $k_{II}$ was 2, smaller than the critical value, the frequency tracking took a long time to reach stability without frequency jitter, as shown in Figure 12. When $k_{II}$ was 60, larger than the critical value, the time for frequency tracking to reach stability was short, but obvious jitter appeared, as shown in Figure 13.
+
+![](images/bb550b7de9146b403b5003e20f3cb5480d301ac8c490a476c9bfa8f9f1b2a497.jpg)  
+Figure 12. Frequency tracking control under single closed loop ( $k_{II} = 2$ ).
+
+![](images/93f923702a17ece782ff954d4042be983863f81dca8c4d4460f530cf2c68c763.jpg)  
+Figure 13. Jitter of the frequency tracking under single closed loop ( $k_{II} = 60$ ).
+
+When the value of $k_{II}$ was 2 and the amplitude closed-loop control was added, the $k_p, k_I$ , and the filter time constant, $\tau$ , became 1.0, 100, and 0.002, which met Equation (41). The DC reference voltage, $V_R$ , was set as $0.5\mathrm{V}$ , and the excitation acceleration remained unchanged. According to Equation (26), the amplified steady-state vibration amplitude, $k_1$ a $(k_1 \cdot \overline{a})$ , was $0.785\mathrm{V}$ , $A$ was $0.5\mathrm{V}$ , and $V_d$ was $0.067\mathrm{V}$ . Figures 14-16 show the simulation results. The simulation steady-state value was completely consistent with the theoretical calculation.
+
+![](images/166711bd106d9deaa30f00d4a002d55afa507c15302a605993b8c93ada7647c6.jpg)  
+Figure 14. Vibration amplitude under double closed loop ( $k_{I} = 100$ , $k_{II} = 2$ ).
+
+Under the condition that the parameters of the amplitude control loop remain unchanged, jitter of frequency tracking occurred when $k_{II}$ was changed to 60, which affected the DC driving voltage, $V_{d}$ , in the amplitude loop. The average value of $V_{d}$ changed to 0.95, thereby showing the characteristics of sinusoidal jitter, as shown in Figure 17.
+
+![](images/95e6c5dd859e9300eef2c1766a6cd9139dd19aa7e962a784297982fe09a7a91a.jpg)  
+Figure 15. Detection voltage under double closed loop ( $k_{I} = 100$ , $k_{II} = 2$ ).
+
+![](images/90197cd7c547ccf38c7456d191a565268c8ea2d02acaefcc41d8a9644bda9f55.jpg)  
+Figure 16. DC driving voltage under double closed loop ( $k_{I} = 100$ , $k_{II} = 2$ ).
+
+![](images/a7354f909db4372e9b9a91d7a346efe1debee5e15f95f701e92263212dff552f.jpg)  
+Figure 17. Amplitude fluctuation under double closed loop ( $k_{I} = 100$ , $k_{II} = 60$ ).
+
+Figure 18 shows the amplifying amplitude signal when $k_{II}$ was changed to 2 and $k_I$ was changed from 100 to 236. Compared with Figure 14, the amplitude overshoot after starting was suppressed better.
+
+![](images/311342852be3b67bb27847a5c9f55e8aaf2b42ebbdee193e9fc81734fc4cf4ab.jpg)  
+Figure 18. Vibration amplitude when frequency meets requirements ( $k_{I} = 236$ , $k_{II} = 2$ ).
+
+The value of $k_{I}$ was further changed to 240, and the value of $k_{II}$ remained unchanged. Under this condition, double closed loop control could achieve stable track resonant frequency and a constant amplitude of the accelerometer before acceleration jumping. After acceleration jumping, the decrease in the resonance frequency caused the DC drive voltage to change to a negative value, the absolute value increased continuously, and the vibration amplitude increased continuously, as shown in Figure 19. At the same time, the frequency tracking loop diverged, as shown in Figure 20. The frequency increased continuously, and the system showed instability. When $k_{I}$ was kept unchanged and $k_{II}$ was increased to 20, the system could be stabilized again. However, the amplitude control loop resulted in a large frequency jump of the frequency tracking loop in the start-up stage, as shown in Figure 21, which also led to vibration amplitude jitter, as shown in Figure 22. After the action of the double closed loop, the system asymptotically recovered to stability.
+
+![](images/01d289cf7bc6c1ac14abdc81e21c12735a274120c62245fe5f74d495d86eafac.jpg)  
+Figure 19. Vibration amplitude when the frequency met the requirements $(k_{I} = 240, k_{II} = 2)$ .
+
+![](images/8b73cd40e58e7f0542cf666b14121494beca1adf6e054ec1f538b34a861c0abd.jpg)  
+Figure 20. Frequency tracking under double closed loop ( $k_{I} = 240$ , $k_{II} = 2$ ).
+
+![](images/e37e0f3873e05d334d987e2a00ea4c2b6a89ac63aaac6e5c64ad0c0135143aa6.jpg)  
+Figure 21. Frequency tracking under double closed loop ( $k_{I} = 240$ , $k_{II} = 20$ ).
+
+![](images/f99445b11174c165f673b670df433e0c6280660bacd22cf287df665c32fdbd60.jpg)  
+Figure 22. Vibration amplitude of double closed loop ( $k_{I} = 240$ , $k_{II} = 20$ ).
+
+Figure 23 is a vibration output signal of a resonant beam controlled by a double closed loop, and the vibration amplitude is constant. The signal frequency spectrum in Figure 23 was analyzed after linear transformation. The frequency of the resonance signal was $35.20\mathrm{kHz}$ , and the resonance frequency was consistent with the open-loop frequency sweep test experiment shown in Figure 24. When we adjusted the DC reference voltage, the vibration amplitude of the microstructure changed accordingly. The system could not start vibration when the DC reference voltage was too small. Changing the time constant of the filter could adjust the starting time of the system. The experimental debugging conclusion is consistent with the theoretical analysis.
+
+![](images/8960e48710646ba5956411a77a5eb9cb1c1dd30f12ce1bc7b065e2daef567b2e.jpg)  
+Figure 23. Vibration amplitude of double closed loop.
+
+![](images/fbac042b7354fcdb985d7b259f3f7a21497286b6c7b74700932d7b2a469cc2a7.jpg)  
+Figure 24. Spectrum of the vibration amplitude signal.
+
+# 5. Conclusions
+
+Due to the nonlinear coupling problem between the micromechanical resonant accelerometer's vibration amplitude and the resonance frequency, the numerical model of dual closed-loop control was established. The accelerometer's stability condition and steady-state equilibrium point were obtained using the averaging method. The following conclusions are brought to guide circuit design and debugging:
+
+First, the amplitude control loop and frequency tracking loop are coupled. When the DC reference voltage, $V_{R}$ , is constant, the DC driving voltage, $V_{d}$ , is calculated according to Equation (37), and the critical integral coefficient, $k_{II}$ , of the frequency tracking loop is calculated by combining $V_{d}$ and Equation (31). If $k_{II}$ is too small, the frequency tracking stability time is too long. If $k_{II}$ is too large, jitter will appear in frequency tracking, and the steady-state equilibrium point of the vibration amplitude is related to the frequency.
+
+Second, when the amplitude of the AC driving voltage in the frequency tracking loop is constant for the amplitude control loop, the integral coefficient, $k_{I}$ , in the proportional integral controller must satisfy Equation (41); otherwise, the system becomes unstable. Increasing $k_{I}$ can improve the vibration starting overshoot, but Equation (41) is a necessary and insufficient condition for the system's stability. After adding the PI controller, the steady state value of the vibration amplitude is independent of the resonant frequency and the quality factor.
+
+Third, when the amplitude control loop satisfies Equation (41) in double closed-loop control, the integral coefficient of the frequency tracking loop increases when the critical condition is satisfied, thereby improving the stability of the amplitude control loop; the instability of the amplitude control loop causes great jitter on the frequency tracking loop. In the double closed-loop design, the convergence of the transition process should be considered as well as the steady-state equilibrium point.
+
+Author Contributions: Design and experiment, H.L. and J.W.; simulation, Y.Z.; writing—original draft preparation, H.L.; writing—review and editing, H.L. All authors have read and agreed to the published version of the manuscript.
+
+Funding: This work was funded by the National Key Research and Development Program (2019YFC1804704) and the Postgraduate Research & Practice Innovation Program of Jiangsu Province (SJCX22_0339).
+
+Data Availability Statement: All data are true and reliable.
+
+Conflicts of Interest: The authors declare no conflict of interest.
+
+# References
+
+1. Wang, S.; Wei, X.; Zhao, Y.; Jiang, Z.; Shen, Y. A MEMS resonant accelerometer for low-frequency detection. Sens. Actuators A 2018, 283, 151-158. [CrossRef]   
+2. Li, L.; Liu, H.; Shao, M.; Ma, C. A Novel Frequency Stabilization Approach for Mass Detection in Nonlinear Mechanically Coupled Resonant Sensors. Micromachines 2021, 12, 178. [CrossRef] [PubMed]   
+3. Brunner, D.; Yoo, H.; Schitter, G. Linear Modeling and Control of Comb-Actuated Resonant MEMS Mirror with Nonlinear Dynamics. IEEE Trans. Ind. Electron. 2021, 68, 3315-3323. [CrossRef]   
+4. Yang, B.; Wang, X.; Dai, B.; Liu, X. A New Z-axis Resonant Micro-Accelerometer Based on Electrostatic Stiffness. Sensors 2015, 15, 687-702. [CrossRef] [PubMed]   
+5. Zhu, F.; Chen, J.; Guo, H.; Liu, M.; Han, S. A Drive Control Method for Silicon Micro-gyrosopes. Sens. Mater. 2020, 32, 1797-1810. [CrossRef]   
+6. Chen, F.; Yuan, Z.; Chang, H.; Yuan, G. Design and implementation of an optimized double closed-loop control system for MEMS vibratory gyroscope. IEEE Sens. J. 2014, 14, 184-196. [CrossRef]   
+7. Tsai, N.; Sue, C. Experimental analysis and characterization of electrostatic-drive tri-axis micro-gyroscope. Sens. Actuators A 2010, 158, 231-239. [CrossRef]   
+8. Liu, H.; Meng, R. Self-oscillation loop design and measurement for an MEMS resonant accelerometer. Int. J. Adapt. Control Signal Processing 2013, 27, 859-872.   
+9. Su, Y.; Xu, P.; Han, G.; Si, C.; Ning, J.; Yang, F. The Characteristics and Locking Process of Nonlinear MEMS Gyroscopes. Micromachines 2020, 11, 233. [CrossRef] [PubMed]
+
+10. Ulrike, N.; Michael, C.; Jan, E.M.; Peter, D.S. Nonlinear dynamical system model for drive mode amplitude instabilities in MEMS gyroscopes. In Proceedings of the 2019 IEEE International Symposium on Inertial Sensors and Systems (INERTIAL), Naples, FL, USA, 1–5 April 2019.   
+11. Luo, S.; Ma, H.; Li, F.; Ouakad, H.M. Dynamical analysis and chaos control of MEMS resonators by using the analog circuit. Nonlinear Dyn. 2022, 108, 97-112. [CrossRef]   
+12. Ehsan, M.; Aghil, Y.; Hossein, N.; Farid, T. Study of nonlinear dynamics and chaos in MEMS/NEMS resonators. Commun. Nonlinear Sci. Numer. Simul. 2015, 22, 611-622.   
+13. Yin, Y.; Fang, Z.; Han, F.; Yan, B.; Dong, J.; Wu, Q. Design and test of a micromachined resonant accelerometer with high scale factor and low noise. Sens. Actuators A 2017, 268, 52-60. [CrossRef]   
+14. Wang, Y.; Zhang, J.; Yao, Z. A MEMS resonant accelerometer with high performance of temperature based on electrostatic spring softening and continuous ring-down technique. IEEE Sens. J. 2018, 18, 7023-7031. [CrossRef]   
+15. Marco, B.; Giorgio, M.; Christian, P.; Andrea, D.; Carlo, V. On amplitude-gain-control optimization for Lissajous frequency modulated MEMS gyroscopes. IEEE Sens. 2021, 1-4. [CrossRef]   
+16. Tomas, M.; Peter, G.S.; Farbod, A.; Murali, K.G. Method to determine the closed-loop precision of resonant sensors from open-loop measurements. IEEE Sens. J. 2020, 20, 14262-14272.   
+17. Miller, J.M.L.; Shin, D.D.; Kwon, H.K.; Shaw, S.W.; Kenny, T.W. Phase control of self-excited parametric resonators. Phys. Rev. Appl. 2019, 12, 044053-044060. [CrossRef]   
+18. Higuchi, E.; Yabuno, H.; Yamamoto, Y.; Matsumoto, S. Experimental amplitude and frequency control of a self-excited microcantilever by linear and nonlinear feedback. J. Micromech. Microeng. 2022, 32, 034001-034002. [CrossRef]   
+19. An, L.; Yabuno, H. Self-excited oscillation produced by a phase shift: Linear and nonlinear instabilities. Nonlinear Dyn. 2022, 107, 587-597. [CrossRef]   
+20. Hossein, S.H.; Amir, D.M. Resonance tracking of nonlinear MEMS resonators. IEEE/ASME Trans. Mechatron. 2012, 17, 617-621.   
+21. Hutomo, S.W.; Zhang, Q.; Stephan, M.; Wang, A.; Peiner, E. A phase locked loop frequency tracking system for portable microelectromechanical piezoresistive cantilever mass sensors. Microsyst. Technol. 2014, 20, 559-569.   
+22. Xu, J.; Li, H.; Wang, X.; Liu, D.; Feng, L. Stability design of resonance frequency tracking system for sensing resonator. IEEE Sens. J. 2020, 20, 2570-2577. [CrossRef]   
+23. Antonio, D.; Zanette, D.H.; López, D. Frequency stabilization in nonlinear micromechanical oscillators. Nat. Commun. 2012, 3, 806-811. [CrossRef] [PubMed]   
+24. Li, H.; Xu, J.; Wang, X.; Liu, D.; Feng, L. High-Bandwidth Tracking Method of Resonant Frequency for Sensing Resonators. J. Lightwave Technol. 2020, 38, 898-904. [CrossRef]   
+25. Indeitsev, D.A.; Belyaev, Y.V.; Lukin, A.V.; Popov, I.A. Nonlinear dynamics of MEMS resonator in PLL-AGC self-oscillation loop. Nonlinear Dyn. 2021, 104, 3187-3204. [CrossRef]   
+26. Lukin, A.V. Method for determining the stability regions of stationary oscillations of a nonlinear MEMS resonator under the action of phase-locked-loop and automatic gain control systems. In Proceedings of the 28th Saint Petersburg International Conference on Integrated Navigation Systems (ICINS), St. Petersburg, Russia, 31 May–2 June 2021.   
+27. Wang, X.; Zheng, X.; Wu, H.; Pang, Q.; Shen, Y.; Ma, Z.; Jin, Z. A Micromechanical Mode-Matched Gyroscope Using Stiffness Nonlinearity and Electrostatic Tuning. In Proceedings of the 2021 IEEE 34th International Conference on Micro Electro Mechanical Systems (MEMS), Gainesville, FL, USA, 25-29 January 2021; pp. 806-809. [CrossRef]

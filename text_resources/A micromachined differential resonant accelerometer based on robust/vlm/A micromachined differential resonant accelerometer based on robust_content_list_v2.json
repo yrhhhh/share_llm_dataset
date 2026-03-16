@@ -1,0 +1,2704 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A micromachined differential resonant accelerometer based on robust structural design "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                220,
+                813,
+                264
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8a45a06ba847aa5608135cf47aac20d138b911e797ab06ed98a0aceec7c539ae.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                845,
+                221,
+                946,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Usung Park<sup>b</sup>, Jaewook Rhim<sup>b</sup>, Jong Up Jeon<sup>c</sup>, Joonwon Kim<sup>a,*</sup> "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                272,
+                583,
+                291
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{a}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Department of Mechanical Engineering, Pohang University of Science and Technology, Pohang 790-784, Republic of Korea "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>b</sup>Agency for Defense Development, Daejeon 305-152, Republic of Korea "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{c}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Department of Mechanical Engineering, University of Ulsan, Ulsan 680-749, Republic of Korea "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                296,
+                670,
+                331
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE INFO "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                356,
+                230,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Article history: "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                380,
+                144,
+                393
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received 20 January 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                393,
+                203,
+                403
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received in revised form 3 June 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                403,
+                263,
+                414
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted 7 June 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                414,
+                183,
+                424
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Available online 14 June 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                424,
+                225,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                450,
+                122,
+                460
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Inertial sensor "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                461,
+                144,
+                471
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachining "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                472,
+                154,
+                482
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Silicon-on-insulator (SOI) "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                482,
+                201,
+                493
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micro-electro-mechanical systems (MEMS) "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                494,
+                290,
+                504
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                342,
+                356,
+                458,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper describes design, fabrication, and testing of a micromachined differential resonant accelerometer (DRA), which is one of the most common solid proof mass accelerometers; it exploits a correlation between acceleration and shifts in the resonant frequency of oscillating beams loaded axially. The effective and simplified structure of the DRA amplifies the induced inertial force resulting from applied acceleration, while retaining structural stability and robustness. Mathematical and numerical analyses were conducted to optimize the detailed structures of the DRA under appropriate operating conditions. An experimentally measured differential scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "188.5\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " showed good agreement with the results of the analysis. Utilizing a silicon-on-insulator wafer provided uniform material properties and thickness of the structural layer, resulting in bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a Q factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.37\\times 10^{6}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                380,
+                946,
+                490
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2014 Elsevier B.V. All rights reserved. "
+                    }
+                ]
+            },
+            "bbox": [
+                710,
+                490,
+                944,
+                503
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                562,
+                174,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A resonant accelerometer is a device that exploits shifts in the resonant frequency of an oscillator to measure linear acceleration [1,2]. The main advantage of a resonant accelerometer is its inherently digitized output; it does not need analog-to-digital conversion, which is a potential source of errors. Because a resonant accelerometer is an open-loop system, it has lower power consumption than a closed-loop accelerometer with a servo system. The proof mass of a resonant accelerometer is always constrained even when unpowered, so resonant accelerometers are rugged and can tolerate high levels of handling and storage shocks [3]. "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                588,
+                492,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachining allows miniaturization of traditional electromechanical sensors, including resonant accelerometers. This possibly ensures the advantages of low cost, low power consumption, small size, and high shock tolerance. However, the reduction in size of sensing elements creates challenges for attaining good accuracy. In general, as size decreases, the scale factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " decreases, noise increases, and driving force decreases. Although high-precision "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                721,
+                492,
+                814
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "accelerometers have been already developed, most have not yet been evaluated completely as strategic and navigation grade [2]. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                562,
+                946,
+                588
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Therefore, resonant accelerometers based on microelectro-mechanical systems (MEMS) have been widely studied to improve their accuracy, and finding ways to increase  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has become the priority in many of these research efforts since the feasibility and operations of a MEMS resonant accelerometer have been successfully demonstrated [4]. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                588,
+                946,
+                668
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SF can be increased by two basic approaches: (1) enlarging the area of a proof mass to increase the inertial force at a given acceleration and (2) narrowing and lengthening oscillating beams to increase their frequency shift at a given inertial force. In addition, another method was used to increase SF even in a device of limited size; micro-levers were designed to amplify an inertial force at a given acceleration. Micro-leverage mechanisms have been adopted in many devices [5-8] and systematically analyzed [9]. To further increase SF, a multistage micro-leverage mechanism has been designed [10]. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                668,
+                946,
+                799
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, although micro-leverage mechanisms effectively amplified the inertial force in previous research, they increase the complexity of the manufacturing process, and decrease the device's structural stability. Therefore this report proposes a micromachined differential resonant accelerometer (DRA) that does not incorporate complicated leverages, and that maintains its structural stability and robustness. Mathematical and numerical analyses were conducted to optimize the DRA's structures under "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                800,
+                946,
+                906
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                386,
+                55,
+                623,
+                68
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Contents lists available at ScienceDirect Microelectronic Engineering journal homepage: www.elsevier.com/locate/mee "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                81,
+                946,
+                187
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "* Corresponding author. Address: Department of Mechanical Engineering, Pohang University of Science and Technology, San 31 Hyoja-dong Nam-gu, Pohang, Kyungbuk 790-784, Republic of Korea. Tel.: +82 54 279 2185; fax: +82 54 279 5899. E-mail address: joonwon@postech.ac.kr (J. Kim). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                861,
+                495,
+                907
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "http://dx.doi.org/10.1016/j.mee.2014.06.008 "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                916,
+                295,
+                929
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "0167-9317/ © 2014 Elsevier B.V. All rights reserved. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                929,
+                334,
+                941
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/705cda724841b8e55edcda3f265d90078e2333c004e3a44e0575e7b73454912c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                178,
+                81,
+                472,
+                401
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c33d138398982fa93947f826697005a7f04fe563125eceb1d1bbbb3b2b7d0f77.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                81,
+                801,
+                399
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e4abcb48a7630cc51ab6982da1b3ce4a9469a0914ca5a54aa72953f05d0d078f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Schematic of the proposed accelerometer. Horizontal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\times"
+                    },
+                    {
+                        "type": "text",
+                        "content": " vertical dimensions are in micrometers. (O: fixed points). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                184,
+                414,
+                764,
+                554
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5de9dcef0bdcca032336896c104805017ff5d69ce29bcbf1c8ce61380414645f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                213,
+                606,
+                401,
+                815
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8d00708edb8868d1eb6e442d833ae8b387160a13afafd4fda318bc9d2e166fe3.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                408,
+                607,
+                527,
+                815
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/16d1e1c6e2205c87cdfc81d3259f2bb365eb408012ed6e83b1a3164ccbb5419c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                529,
+                607,
+                645,
+                815
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/09c1ab7a0b3e6e2e9a1ad7b4419af54c1933db66a775c4a43c9b71cb25db8404.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. (a) Exaggerated displacement of com-drive under input acceleration and (b) 6th resonance mode (c) 7th resonance mode (in-phase mode), (d) 8th resonance mode (out-of-phase mode) of the accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                648,
+                607,
+                764,
+                815
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "appropriate operating conditions. A specialized fabrication process developed to realize the proposed accelerometer is presented; this process considers high-aspect-ratio structures for a large area, decreases cross-axis sensitivity, and increases structural stability, robustness, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Resonance characteristics, the performance and noise characteristics of the fabricated accelerometer were measured and analyzed using numerical simulation. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                857,
+                478,
+                950
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Design analysis "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                857,
+                626,
+                871
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1. Device configuration "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                883,
+                660,
+                897
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The proposed accelerometer is configured with a symmetrical pair of parts that consist of a proof mass and an attached double-ended tuning fork (DETF) oscillator which are driven "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                910,
+                929,
+                950
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6 "
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                56,
+                62,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                56,
+                638,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a7d0976f21b9e1f9b58a400dec436c43ab8b1849bf975188509d13289ef93715.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                213,
+                81,
+                472,
+                211
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/44abb7ff3578d05226af30b528bb5ec829a2c7c210cc7d9ae6148b8f7d4fbce5.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                532,
+                81,
+                789,
+                211
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ee9e330608c5e6d7d119e40f96f8685ccc35da35bcdac6c07c31aae465efe0a0.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                213,
+                233,
+                468,
+                364
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/11a27b910e6bcbc3c647a920917c3700be82c5facd7db2fce2d02858ce5e7ec9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                532,
+                226,
+                794,
+                368
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4bd31ee1db7f9ecd220846c83a22aaa40495a2092dbcd9b9c59cce3550147057.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                213,
+                385,
+                505,
+                517
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d9ae8694fbccd53dc91ed3e8f470ad60d85c2c0b073b8bdfbcc835d855ef17ac.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(f)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                532,
+                385,
+                791,
+                575
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dc1fb26502a58e05bfbe3ab72a73f993f36b9cbd674d9a612f01ba0461cf2bca.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(a)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                245,
+                593,
+                468,
+                728
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cd85741c9163c05fd335b6b67006551851a6add61e7c9d4e5ba381dc465e7d33.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(g)"
+                },
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. Fabrication process of the accelerometer. (a) Glass wafer, (b) etch shallow recesses, (c) metallization, (d) SOI wafer, (e) gap formation, (f) bonding, and (g) etch backside of SOI wafer and form detailed structures. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                547,
+                593,
+                794,
+                735
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "electrostatically at a resonant frequency (Fig. 1). When accelerated along an input axis, the proof mass applies forces to an oscillator, which causes a change in its resonant frequency. The frequency change is measured to indicate the applied acceleration. A significant feature of our accelerometer is that a proof mass is employed as leverage to amplify an inertial force without the need for additional beams; an amplified axial-load is transferred from the proof mass to the oscillator. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                791,
+                492,
+                897
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To cancel out common mode errors in the accelerometer, such as thermal mismatches, cross-sensitivity and nonlinearity, a differential matched oscillator configuration is used [4,5,7-11]. The separated proof masses for the oscillator on each side can increase "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                899,
+                495,
+                952
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "error due to imprecision during manufacturing, but decrease feed-though noise between two oscillators and problems from lock-in [11]. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                791,
+                947,
+                834
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2. Mathematical and numerical modeling "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                517,
+                846,
+                786,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The oscillator consists of three kinds of beams, each of which is related to respective properties of the accelerometer: oscillating beam, base beam and ligament (Fig. 1). The oscillating beam dominantly determines the resonant frequency in an out-of-phase driving mode; this component was designed from the equation of the lateral stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of an axially loaded beam [7]. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                872,
+                947,
+                952
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                56,
+                653,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7 "
+                    }
+                ]
+            },
+            "bbox": [
+                934,
+                56,
+                944,
+                66
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9a94a01f383599b6f238441fda7e16e87e7bd1456568c6c7000e09a486b32afa.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(a)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                208,
+                84,
+                485,
+                250
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/893fea0dc2f7c6cffec93d62175f4fdbaa9e90cd0a8c9a89ccd59dae45d2bc33.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(b)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                489,
+                81,
+                769,
+                250
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4491e5466422c8abe3c6204d906ef51507c34bc977c802a606bc5d561dbccef0.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(c)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                208,
+                252,
+                487,
+                419
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6161c85945c7e610277a994108caf9ee57ae8fce5086ce73847674f6a29de8fd.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(d)"
+                },
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. (a) Optical image, and SEM images of the fabricated accelerometer: (b) anchor, (c) oscillator and (d) comb teeth. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                490,
+                252,
+                769,
+                419
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8fe815f465f780c887f279aca2c41a7f18a2ce9d7ef81ba54c35c9ca3823c9ee.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. Electronics block diagram for the proposed accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                201,
+                471,
+                783,
+                718
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K = \\frac {2 4 \\mathrm {E l}}{l ^ {3}} - \\frac {1 2 P}{5 l};",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/bfb74a209662e1981345436de0d78b78ac375b8b2ae326a3ce26e2bb00dbd942.jpg"
+                }
+            },
+            "bbox": [
+                48,
+                759,
+                159,
+                789
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "then the resonant frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the oscillator can be expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                50,
+                794,
+                478,
+                808
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\omega = \\sqrt {\\frac {K}{m}} = \\sqrt {\\frac {2 4 \\mathrm {E l}}{m l ^ {3}}} \\sqrt {1 - \\frac {l ^ {2} P}{1 0 \\mathrm {E l}}} = \\omega_ {0} \\sqrt {1 - \\frac {l ^ {2} P}{1 0 \\mathrm {E l}}} \\\\ \\cong \\omega_ {0} \\left(1 + \\frac {1}{2} \\frac {l ^ {2}}{1 0 E I} P\\right), \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9f0a38c97a03fa92b45a0e584d375bdeb9177fe7dbe2eeff31f50571a020848f.jpg"
+                }
+            },
+            "bbox": [
+                48,
+                814,
+                347,
+                887
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is obtained as "
+                    }
+                ]
+            },
+            "bbox": [
+                50,
+                894,
+                189,
+                906
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\mathrm {S F} = \\frac {\\Delta \\omega}{\\Delta a} = = \\omega_ {0} \\frac {1}{4 0} \\frac {l ^ {2} M}{E l} C = \\frac {3 \\sqrt {2}}{1 0} \\sqrt {\\frac {\\rho l}{A _ {0} E w ^ {3}}} A _ {p} c, \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d761d3bb1855585f2d1d6ef9d8400d5e81b07c290f4e1db692421ca85f26ed12.jpg"
+                }
+            },
+            "bbox": [
+                48,
+                912,
+                477,
+                949
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                761,
+                547,
+                771
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length of the oscillating beam "
+                    }
+                ]
+            },
+            "bbox": [
+                521,
+                774,
+                766,
+                786
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is Young's Modulus of Elasticity "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                786,
+                742,
+                800
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "P"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial compressive load (applied to the oscillating beam by the proof mass) "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                800,
+                929,
+                825
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "m = \\rho A_{0}t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the oscillator mass "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                827,
+                724,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the thickness of the structure "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                839,
+                739,
+                852
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_0 = \\sqrt{\\frac{24\\mathrm{EI}}{m^3}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the unloaded resonance frequency of the oscillator "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                854,
+                929,
+                873
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "M = \\rho A_{p}t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the mass of proof mass "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                873,
+                754,
+                887
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "l = \\frac{tw^3}{12}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the area moment of inertia of the oscillating beam "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                889,
+                907,
+                904
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the density of the structure "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                907,
+                732,
+                920
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective area of the oscillator mass "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                920,
+                811,
+                933
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective area of the proof mass "
+                    }
+                ]
+            },
+            "bbox": [
+                522,
+                933,
+                788,
+                947
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8 "
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                58,
+                60,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                56,
+                638,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/98064c9b42b5cf6e653b71eb615f3469bc3d67c22c000437ebec5766f1ae1b6e.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(a)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                230,
+                81,
+                774,
+                276
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f5fd3f7baae03093cb10e496f7380c2a00d9752c6331baac13e85b65f520ad97.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(b)"
+                },
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. (a) Test setup for the open-loop test and (b) changes of resonance frequency from simple tumble test. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                228,
+                284,
+                781,
+                494
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f9e10b1159814ae683ca497860c4438b3d0adf3fec2117e02f685fa7eac039aa.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(a)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                233,
+                563,
+                773,
+                718
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b1fa3493f3f12b70380a56f5bf93fe92de697c56f0d80fc2e63c0274eaaedd07.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(b)"
+                },
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. (a) Test setup for the closed-loop test and (b) the accelerometer with the circuit mounted on the rate table. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                230,
+                730,
+                781,
+                896
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                56,
+                653,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9 "
+                    }
+                ]
+            },
+            "bbox": [
+                934,
+                58,
+                944,
+                66
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "c"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the amplifying ratio of load  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the width of the oscillating beam "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                81,
+                319,
+                109
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to Eq. (1),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " dominantly influences  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; a narrower beam width allows a higher  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Therefore the minimum beam width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " which can be manufactured with appropriate yield was chosen, then  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was adjusted to obtain the desired resonant frequency. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                119,
+                477,
+                187
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The base beam and ligament transfer force and anchor the structure on a substrate respectively; these were designed by finite element analysis using commercial software ANSYS ver. 11.0 with consideration of three major design conditions: increasing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", decreasing the displacement of oscillators under external acceleration, and enlarging the difference in frequency from one driving mode to another (Fig. 2). Increasing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " increases the accelerometer's sensitivity to input acceleration; decreasing the displacement of oscillators increases the uniformity of the oscillating amplitude of the DETF. The frequency difference between the driving mode and the near modes should be set as wide as possible to assure wide dynamic range and stable self-oscillation. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                187,
+                477,
+                345
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Iterative simulations were used to design the geometries of the proof mass and other anchors to decrease out-of-plane deflection while satisfying the above conditions. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                345,
+                477,
+                385
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Fabrication "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                50,
+                404,
+                147,
+                417
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A specialized fabrication process (Fig. 3) that considers high-aspect-ratio structures for a large area was developed to decrease cross-axis sensitivity, and increase structural stability, robustness, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In addition, the increase of the thickness causes increase in the overlap area in the comb-drive, which means increase of capacitance change at the same oscillator amplitude. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                430,
+                477,
+                509
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fabrication process begins with a 4-inch Pyrex #7740 wafer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(500\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick) (Fig. 3a-c), which was selected because its thermal expansion coefficient matches that of silicon, and a silicon-on-insulator (SOI) wafer (device layer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "= 50~{\\mu\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " buried oxide layer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "= 1\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and handling layer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "= 500~{\\mu\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick) (Fig. 3d and e). The SOI wafer is appropriate for fabrication of thick silicon microstructures with high aspect ratio due to the ease of increasing the device layer thickness while maintaining uniform height and mechanical properties. Moreover, the bonded SOI wafer in this fabrication process enables patterning of electrodes under silicon structures, and out-of-plane electrical interconnection [12,13]. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                510,
+                477,
+                654
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Support columns were formed under the suspended silicon layer (i.e. the proof mass) in Fig. 3e to decrease its bowing during the bonding step (Fig. 3f) and breakage during the 2nd deep reactive ion etching (DRIE) step (Fig. 3g) caused by the pressure difference when columns were removed. An additional metal shield layer under precise silicon structures (e.g. comb-drive) dramatically decreased notching during the 2nd DRIE step (Fig. 3g) and prevented bonding in undesired areas [14]. In addition, after finishing fabrication, the metal shield layer is connected to a ground electrode and therefore also functions as an electrical noise shield. The fabrication process provided precise structures at micrometer scales (Fig. 4). "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                655,
+                478,
+                814
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Measurements and results "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                50,
+                832,
+                248,
+                846
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The signal processing unit for the self-oscillation of the fabricated DRA consists of the sensing parts and the driving parts (Fig. 5). To decrease feed-through noise from the driving combs (i.e., outer fixing comb) to the sensing comb (i.e., inner fixing comb), the output voltages to driving combs were set to opposite polarity with the same magnitude and ground electrodes guard all signal electrodes in the DRA and the circuit [15]. "
+                    }
+                ]
+            },
+            "bbox": [
+                48,
+                858,
+                478,
+                952
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fabricated devices that were well-defined mechanically and electrically were selected for further testing. Their resonance frequencies and other resonance characteristics were investigated using a HP Dynamic Signal Analyzer 35670A, dc power supply, and the sensing part of the circuit in Fig. 5 (Fig. 6a). "
+                    }
+                ]
+            },
+            "bbox": [
+                499,
+                81,
+                929,
+                148
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Devices of which resonance characteristics and changes of resonance frequency had been confirmed in a simple tumble test (Fig. 6b) were mounted on a metal package and hermetically enclosed for use in further experiments (Fig. 6). To maintain the pressure level in the vacuum cavity, agetter material was deposited on the bottom surface of the lid of the package to absorb outgassed materials.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was measured using a frequency counter with "
+                    }
+                ]
+            },
+            "bbox": [
+                499,
+                148,
+                929,
+                240
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/fe0900d34d05c836343147cf46c62a6b885da24aee65f31794e3c4a3b46cd4c0.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(a)"
+                }],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                273,
+                915,
+                508
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1543acbe587852bef61dcce62eaf5015fc6beed5889108228558985c90935262.jpg"
+                },
+                "image_caption": [{
+                    "type": "text",
+                    "content":"(b)"
+                },
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. (a) Input acceleration vs. output frequency change from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-19\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+19\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and (b) input acceleration vs. output frequency change from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Each point is the mean of 100 output signals. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                510,
+                910,
+                745
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/fc124895e59cc173419045060054f83dcdd67863c0e037b7dd0328164c8774f7.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1 Test results and comparisons with the analysis results. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Measurement</td><td>Test results</td><td>Analysis</td><td>Difference (%)</td></tr><tr><td>Resonant frequency of the left (kHz)</td><td>25.9</td><td>26.1</td><td>0.78</td></tr><tr><td>Resonant frequency of the right (kHz)</td><td>26.3</td><td>26.1</td><td>1.01</td></tr><tr><td>Scale factor (Hz/g)</td><td>188.5</td><td>176.1</td><td>6.58</td></tr><tr><td>Bias stability (for 1 h, μg)</td><td>~100</td><td>-</td><td>-</td></tr><tr><td>Q-factor (million)</td><td>~0.37</td><td>-</td><td>-</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                502,
+                841,
+                929,
+                944
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "10 "
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                56,
+                68,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014)5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                342,
+                56,
+                638,
+                69
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/7527fe9b42d083b430511dc126e4771ceadee518d74959266b6512503b2a1b5b.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2 Test results and comparisons with the results of the literature. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameters</td><td>T.A. Roessig et al. [4]</td><td>Gibbons [5]</td><td>Aikele et al. [6]</td><td>Michel [7]</td><td>Su et al. [10]</td><td>This work</td></tr><tr><td>Scale factor (Hz/g)</td><td>2.4</td><td>4</td><td>70</td><td>100</td><td>160</td><td>188</td></tr><tr><td>Resonant frequency (kHz)</td><td>175</td><td>27</td><td>400</td><td>20</td><td>13</td><td>26</td></tr><tr><td>Oscillating beam width (μm)</td><td>2</td><td>4</td><td>3</td><td>7</td><td>2</td><td>3</td></tr><tr><td>Thickness (μm)</td><td>2</td><td>12</td><td>-</td><td>50</td><td>50</td><td>40</td></tr><tr><td>Q-factor</td><td>72,000</td><td>100,000</td><td>60,000</td><td>100,000</td><td>-</td><td>370,000</td></tr><tr><td>Leverage mechanism</td><td>1st</td><td>X</td><td>1st</td><td>1st</td><td>2nd</td><td>-</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                67,
+                105,
+                946,
+                199
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "a circuit that included a self-resonating and driving part based on the sensing part (Fig. 5) on a rate table. The driving voltage was set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with the bias voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the sampling rate of the output signal was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". All experiments were conducted in a constant-temperature chamber at room temperature (Fig. 7a and b). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                221,
+                492,
+                287
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SF derived from the differential frequency shift output as a function of the applied acceleration (i.e. the linear trend line) was about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "188.3\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (adjusted  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R^2 = 0.99996"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Fig. 8a and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "188.5\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (adjusted  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R^2 = 0.99997"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Fig. 8b). The SF of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "188.5\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " differed by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6.6\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from the FEA result (Table 1). Because the width of the oscillating beam is the factor which has the greatest effect on resonant frequency and SF (Eq.(1)), the major cause of errors in these values was probably imprecise manufacturing, especially during the final DRIE step (Fig. 3g). The proposed device was compared with previously-reported devices (Table 2). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                287,
+                492,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fluctuation (noise) of the output signal without an input acceleration was measured to analyze bias stability of the fabricated DRA. The test setup of the noise test is similar to the test setup of the closed-loop test but the rate table was not rotated because the noise test does not need an input acceleration. Bias stability can be interpreted as drift of the dc component of an output signal and is characterized by the standard deviation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the output measured periodically for a specified time [16-18]. The measured bias stability was about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a period of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of continuous operation during  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                419,
+                495,
+                553
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Conclusion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                567,
+                161,
+                578
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, we introduced design analyses for a proposed accelerometer that we then fabricated; we presented the results of experiments that were conducted using this device. With a driving resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 26\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the fabricated accelerometer shows a linear  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "SF"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "188\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and it shows good with the analysis results. A bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a Q-factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.37\\times 10^{6}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " were measured also. These results testify to the DRA's high structural "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                593,
+                495,
+                686
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and mechanical stability, and its potential to replace conventional macro-electromechanical devices in high-end applications. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                221,
+                947,
+                249
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                517,
+                264,
+                648,
+                279
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This research was financially supported by a Grant to MEMS Research Center for National Defense funded by DAPA/ADD. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                291,
+                947,
+                319
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                519,
+                334,
+                596,
+                346
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] N. Yazdi, F. Ayazi, K. Najafi, Proc. IEEE 86 (1998) 1640-1659. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] N. Barbour, G. Schmidt, IEEE Sens. J. 1 (2001) 332-339. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] A. Lawrence, Modern inertial technology: navigation, guidance, and control, second ed., Springer, New York, 1998. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] T.A. Roessig, R.T. Howe, A.P. Pisano, J.H. Smith, in: Proceedings of the Transducers '97, Chicago, IL, June, 1997, pp. 859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] K.A. Gibbons, A micromechanical silicon oscillating accelerometer (Master's thesis), Department of Mechanical Engineering, Massachusetts Institute of Technology, 1997. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] M. Aikele, K. Bauer, W. Ficker, F. Neubauer, U. Prechtel, J. Schalk, H. Seidel, Sens. Actuators A: Phys. 92 (2001) 161-167. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] N.S. Michel, Force multiplier in a microelectromechanical silicon oscillating accelerometer (Master's thesis), Department of Mechanical Engineering, Massachusetts Institute of Technology, 2000. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, S. Montague, J. Microelectromech. Syst. 11 (2002) 784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] X.-P.S. Su, H.S. Yang, Sens. Actuators A: Phys. 87 (2001) 146-156. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] X.-P.S. Su, H.S. Yang, A.M. Agogino, IEEE Sens. J. 5 (2005) 1214-1223. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] O. Le Traon, D. Janiaud, B. Lecorre, M. Pernice, S. Muller, J.-Y. Tridera, in: Proceedings of the IEEE Sensors '05, Irvine, CA, October, 2005, pp. 648-651. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] Z. Li, Y. Hao, D. Zhang, T. Li, G. Wu, Sens. Actuators A: Phys. 96 (2002) 34-42. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] W.D. Sawyer, M.S. Prince, G.J. Brown, J. Micromech. Microeng. 15 (2005) 1588 (SOA fabrication). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] T. Matsuura, M. Chabloz, J. Jiao, Y. Yoshida, K. Tsutsumi, Sens. Actuators A: Phys. 89 (2001) 71-75. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] H.-W. Park, Y.-K. Kim, H.-G. Jeong, J.W. Song, J.-M. Kim, Sens. Actuators A: Phys. 170 (2011) 131-138. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] IEEE Standard for Inertial Sensor Terminology, IEEE Std. 528-2001, 2001. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[17] IEEE Standard IEEE Recommended Practice for Inertial Sensor Test Equipment Instrumentation Data Acquisition and Analysis, IEEE Std. 1554-2005, 2005. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[18] IEEE Standard Specification Format Guide and Test Procedure for Linear, Single-Axis, Nongyrosopic Accelerometers, IEEE Std. 1293-1998, 2008. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                521,
+                359,
+                946,
+                682
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "U. Park et al./Microelectronic Engineering 129 (2014) 5-11 "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                56,
+                653,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11 "
+                    }
+                ]
+            },
+            "bbox": [
+                929,
+                58,
+                946,
+                66
+            ]
+        }
+    ]
+]

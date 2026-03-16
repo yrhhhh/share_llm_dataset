@@ -1,0 +1,2447 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Comparison of Two Types of Micromechanical Silicon Resonant Accelerometer Structures "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                249,
+                852,
+                296
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Libin HUANG, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Qingyun LI, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Hui YANG, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Liye ZHAO "
+                    }
+                ]
+            },
+            "bbox": [
+                176,
+                312,
+                820,
+                333
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>1</sup> Key Laboratory of Micro-Inertial Instrument and Advanced Navigation Technology, Ministry of Education, Nanjing 210096, China "
+                    }
+                ]
+            },
+            "bbox": [
+                178,
+                333,
+                818,
+                363
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " School of Instrument Science and Engineering, Southeast University, "
+                    }
+                ]
+            },
+            "bbox": [
+                235,
+                363,
+                761,
+                378
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Nanjing 210096, China "
+                    }
+                ]
+            },
+            "bbox": [
+                411,
+                378,
+                586,
+                393
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Tel.: (86) 25-83793559 "
+                    }
+                ]
+            },
+            "bbox": [
+                411,
+                394,
+                586,
+                408
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "E-mail: huanglibin@seu.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                381,
+                409,
+                616,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received: 6 December 2013 /Accepted: 29 December 2013 /Published: 30 December 2013 "
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                453,
+                850,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract: Micromechanical silicon resonant accelerometer (MSRA) is a popular research topic in the field of high-precision micromechanical accelerometers because it outputs frequency signal that has strong anti-interference ability, high stability, and resolution. The principal component of a MSRA is the resonator. In this study, a comparative analysis is performed on single-beam and double-beam MSRAs that are structurally similar. The simulation and experimental results show that even though the single-beam MSRA has a higher scale factor compared to the double-beam MSRA, its performance is inferior in terms of bias stability and temperature characteristics. Copyright © 2013 IFSA. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                497,
+                882,
+                595
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: Resonant accelerometer, Micro electro mechanical system (MEMS), Structural design, Single-beam, Double-beam. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                606,
+                880,
+                635
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                678,
+                250,
+                694
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A micromechanical silicon resonant accelerometer (MSRA) is a typical micro electro mechanical system (MEMS) inertial device. Its basic operating principle is based on the force-frequency characteristics of the resonant beam. The changes in the beam's resonant frequency can be used to determine the value of input acceleration. As the output signal of the MSRA is a frequency signal, it is less prone to the interference of environmental noise and errors during transmission and processing, making high-precise measurement feasible. Consequently, MSRA has become an important development direction in the field of micromechanical accelerometers. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                718,
+                485,
+                910
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The principal component of an MSRA is the resonator, which is the sensitive element. Generally, in terms of their structure forms, resonators can comprise either a single-beam form, double-beam form (or called double-ended tuning fork, DETF), or triple-beam form. Given the structural complexity of the triple-beam resonator, it is rarely used in practical applications. In the comparison of single-beam and DETF resonators, the latter exhibits a higher quality factor, as it comprises a pair of parallel beams that are amalgamated at the base. When appropriate excitation modes are used to generate in-plane antiphase vibrations of the two resonant beams, the force and torque produced at the base of the resonant beams (the amalgamation zone) offset each other. Thus, there is minimal energy coupling between the external environment and the entire structure. As a "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                676,
+                882,
+                910
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                250,
+                28,
+                744,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IFSA www.sensorsportal.com "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                60,
+                262,
+                116
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers "
+                    }
+                ]
+            },
+            "bbox": [
+                458,
+                62,
+                878,
+                90
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2013 by IFSA http://www.sensorsportal.com "
+                    }
+                ]
+            },
+            "bbox": [
+                631,
+                93,
+                880,
+                127
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "554 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                942,
+                149,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Article number P_RP_0043 "
+                    }
+                ]
+            },
+            "bbox": [
+                717,
+                941,
+                880,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "result, the energy loss of the vibration system is very small and the vibration system possesses a high quality factor [1]. Hence, in recent years, the DETF structure has seen wide usage, including in studies conducted by the Draper Laboratory (United States) [2]; University of California, Berkeley [3-6]; Seoul National University [7-9]; and various research institutions in China, such as Peking University [10], Tianjin University [11], Beijing University of Aeronautics and Astronautics [12], Chongqing University, China Academy of Engineering Physics [13, 14], Nanjing University of Science and Technology [15] and Tsinghua University [16]. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                62,
+                482,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Compared with the single-beam structure, the DETF structure has higher processing requirement. This is because the two beams of the DETF structure must be perfectly symmetrical in order to maximize their advantages during operation. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                239,
+                482,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "S. P. Beeby and M. J. Tudor utilized ANSYS simulation to compare energy loss during vibration at the bases of several widely used single-beam, DETF, and triple-beam resonators [1]. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                308,
+                482,
+                364
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reference [16] performed a comparison between single-beam and DETF MSRAs by using theoretical analyses, finite element simulations, and experimental validation. The findings showed that the scale factor for the single-beam structure was greater than that of the DETF structure. With the increase in environmental pressure during operation, the quality factor Q of the DETF structure gradually converged with that of the single-beam structure. Owing to the limitations of existing domestic microprocessing technologies, a certain degree of error in the resonant frequencies of the two processed DETF beams increased difficulty in the design of the peripheral circuits. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                364,
+                482,
+                554
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Although the studies mentioned above have made a reasonable number of comparisons between the single-beam and DETF structures, they are not comprehensive. In particular, there has been no comparison made from the perspective of system performance and a clear conclusion could not be arrived. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                555,
+                482,
+                649
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this study, a single-beam and a DETF MSRA are designed. The two accelerometers are compared through simulation analysis and testing of system performance. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                650,
+                482,
+                705
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Structural Design of the Two Accelerometers "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                736,
+                374,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The structure of an MSRA comprises resonators, proof mass, lever amplification mechanisms, and support beams. A differential structure is applied in the overall structure. Two resonators of identical dimensions are placed in a symmetrical arrangement. Under the effect of acceleration, the proof mass converts the acceleration to an inertial force, which then acts on the input beam of the lever. After amplification by the lever, the force acts on the "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                782,
+                482,
+                904
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonator. When one resonator is under pressure, its resonant frequency is reduced. Meanwhile tensile force is exerted on the other resonator, thereby increasing its resonant frequency. The difference in frequencies between the two resonators can then be used to calculate the magnitude of the input acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                62,
+                880,
+                157
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "All the structural components of the two accelerometers, except the resonators, are identical. The schematic diagrams of the single-beam and DETF MSRAs are shown in Fig.1 and Fig.2, respectively. The thickness of the entire structural layer is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60~\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the height of the anchor is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20~\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The critical dimensions of the two accelerometers are listed in Table 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                157,
+                880,
+                267
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9e5b8a0ea416de9acf92b8374781e87d42d7ba8166f77a65cfdf913ae4a81282.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Schematic diagram of single-beam MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                294,
+                878,
+                517
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cde913ade4cf121ccaea069ae9376803721251d61409f9c191553db89052e62c.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. Schematic diagram of DETF MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                565,
+                875,
+                786
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ANSYS is used to perform mode analysis of the two accelerometer structures. The working modes of the resonators of the single-beam and DETF MSRAs are shown in Fig. 3 and Fig. 4, respectively. The operating frequencies of the upper and lower "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                837,
+                880,
+                907
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                248,
+                28,
+                744,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "555 "
+                    }
+                ]
+            },
+            "bbox": [
+                848,
+                942,
+                880,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonators of the single-beam MSRA are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41917\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41910\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", whereas those of the DETF MSRA are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41926\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41915\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. The negligible difference between the operating frequencies of the upper and lower resonators in both the accelerometers is caused by cumulative calculation errors. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                62,
+                487,
+                159
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/68582cc74e38e91fedce1c9ae18b43aab56fef41a159d75b9d3f984d3194e496.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. The parameters of the accelerometers. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameter</td><td>Length (μm)</td><td>Width (μm)</td><td>Depth (μm)</td></tr><tr><td>Resonant beam</td><td>1100</td><td>8</td><td>60</td></tr><tr><td>Comb</td><td>20</td><td>4</td><td>60</td></tr><tr><td>Microleverage</td><td>950</td><td>50</td><td>60</td></tr><tr><td>Input beam</td><td>50</td><td>10</td><td>60</td></tr><tr><td>Output beam</td><td>60</td><td>10</td><td>60</td></tr><tr><td>Pivot beam</td><td>80</td><td>10</td><td>60</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                119,
+                207,
+                482,
+                312
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3840768b5a779b9dab1857e6fd6d3fe1504fb4c26a5e673397fbce4e3ce61892.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3 (a). Working mode of single-beam MSRA of the lower resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                161,
+                333,
+                440,
+                570
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/15cc913bf7c736b2898d1fbe73c826e28bd8e70b4ff335512efc481af75cfdf3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3 (b). Working mode of single-beam MSRA of the upper resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                161,
+                627,
+                443,
+                876
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/857daad3b4452a424d182e17e97389ba18a33c518958dea261e5b401a44c6b73.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4 (a). Working mode of DETF MSRA of the lower resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                556,
+                62,
+                838,
+                313
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/32a729633b032cb3873b113f387ac356eeb3a43823aba2adbdc53077f12e6080.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4 (b). Working modes of DETF MSRA of the upper resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                556,
+                382,
+                838,
+                631
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Different accelerations are applied to the accelerometers to obtain their frequency changes under various input accelerations in order to calculate of their scale factors. The scale factors of the single-beam and DETF MSRAs are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "144.86\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "80.922\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. When the dimensions of the resonant beam, comb structure, and leverage mechanism are identical, the scale factor of the single-beam MSRA is evidently much higher than that of the DETF MSRA. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                700,
+                880,
+                836
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Ideally, the differential structure of the accelerometer should eliminate the common-mode errors caused by temperature. However, the effect of the differential structure is weakened when processing errors cause the upper and lower "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                837,
+                880,
+                906
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                250,
+                28,
+                746,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "556 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                942,
+                149,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonators within the structure to be imperfectly symmetrical. The analysis is finished in batches of accelerometer structures and the result reveals that there are negligible differences between the two DETF beams. However, there are perceptible differences between the resonant frequencies of the upper and lower resonators for the majority of those structures. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                62,
+                482,
+                171
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The MSRA is fabricated by silicon-on-glass (SOG) technology. In the process, anodic bonding technology is used to bind the silicon and glass wafers. The silicon and glass wafers act as the structural and substrate layers, respectively, of the MEMS device. Because of the mismatching thermal expansion coefficients of silicon and glass, thermal stress will be produced when temperature changes. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                172,
+                482,
+                281
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is assumed that the beam of the upper resonator is over-etched by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.05\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In this state, the working frequencies of the two resonators of the single-beam MSRA become  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41673\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41914\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. For the DETF MSRA, the working frequencies of the two resonators become  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41695\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "41928\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. Thermal simulation analyses are separately performed on the two accelerometers. The respective thermal analysis models are shown in Fig. 5. The silicon structural layer, which is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick, is represented by the pale blue portion. The glass layer, which is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick, is represented by the dark blue portion. Fig. 6 shows the stress distributions of the two accelerometers when the ambient temperature decreases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-40^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Fig. 7 is the stress distributions of the two accelerometers when the ambient temperature increases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+60^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                282,
+                482,
+                541
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7c2aa03eb4842bea4bb6717bb0d1a65137fe5329e9a8bc2c0c44681e6b39e17a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5 (a). Thermal analysis model of the two accelerometers: Single-beam MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                164,
+                561,
+                436,
+                871
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d6f262eef5804c6b5310f0ab0eb02f856228f7f9ab26188ba98893616ebb4501.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5 (b). Thermal analysis model of the two accelerometers: DETF MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                576,
+                62,
+                826,
+                345
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0724bd35ada2fba2afe1c596b09640a239586aa20f4776da3ba66b80433921db.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6 (a). The stress distributions of the two accelerometers when the ambient temperature decreases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-40^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": single-beam MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                408,
+                875,
+                597
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/383a967eb75c371dbebecb85f98318a5c2251e010d9bbce71b5061cb48a3faf7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6 (b). The stress distributions of the two accelerometers when the ambient temperature decreases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-40^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": DETF MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                669,
+                877,
+                864
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                248,
+                28,
+                746,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "557 "
+                    }
+                ]
+            },
+            "bbox": [
+                848,
+                942,
+                878,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1c485ff76ad9ace639125d767cddc99cc4000e82b1eadfd44679a135272becc9.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7 (a). The stress distributions of the two accelerometers when the ambient temperature increases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+60^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": single-beam MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                122,
+                62,
+                480,
+                252
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/447f7615dfd37a260a01630a8fdbe2662e3f84fece0c9b01b521cd4fbd6afa9a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7 (b). The stress distributions of the two accelerometers when the ambient temperature increases from room temperature to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+60^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": DETF MSRA. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                122,
+                320,
+                480,
+                514
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/6c12eaa835a2e4544d64d9923cfd66679c3189a1bc6c4f266905ee719e7df596.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2. Resonant frequency of the single-beam accelerometer at different temperatures. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Temperature (℃)</td><td>-40</td><td>20</td><td>60</td></tr><tr><td>Frequency of the Upper Resonator (Hz)</td><td>39007</td><td>41673</td><td>43224</td></tr><tr><td>Frequency of the Lower Resonator (Hz)</td><td>39355</td><td>41914</td><td>43531</td></tr><tr><td>Differential Frequency (Hz)</td><td>348</td><td>241</td><td>307</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                117,
+                618,
+                485,
+                704
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/f456b189f7e6814bd69210ba2e4f1535f9823a55b75db19b767a4e68945f12e0.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3. Resonant frequency of the DETF accelerometer at different temperatures. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Temperature (℃)</td><td>-40</td><td>20</td><td>60</td></tr><tr><td>Frequency of the Upper Resonator (Hz)</td><td>39806</td><td>41695</td><td>42910</td></tr><tr><td>Frequency of the Lower Resonator (Hz)</td><td>40035</td><td>41928</td><td>43128</td></tr><tr><td>Differential Frequency (Hz)</td><td>229</td><td>233</td><td>218</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                117,
+                763,
+                485,
+                847
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The thermal stress is imposed on the structure as pre-stress, and a structural dynamic analysis is performed on the structure. The working frequencies "
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                869,
+                485,
+                910
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of the resonator in the single-beam and DETF structures at different temperatures are listed in Tables 2 and 3, respectively. It can be observed from these two tables that when the dimensions of the upper and lower resonators are asymmetrical, their differential outputs vary with changes in temperature. Across the entire range of temperatures, the differential outputs of the single-beam and DETF MSRAs vary by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "107\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and their temperature coefficients are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7.3864\\mathrm{mg} / {}^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8536\\mathrm{mg} / {}^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. The simulation results show that when the upper and lower resonators asymmetrical, the effect of temperature on the DETF MSRA is less than that on the single-beam MSRA. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                62,
+                882,
+                255
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Experimental Tests and Results "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                510,
+                277,
+                808,
+                295
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The MSRAs are fabricated by using the SOG technique. Fig. 8 shows that the local structures of the two accelerometers under the 3D video microscope. The accelerometer structures are encapsulated using ceramic vacuum packaging. Three structures are selected from each of the two types of packaged accelerometers used for experimental purposes. Open-loop tests are conducted on the six accelerometers. The test data are displayed in Table 4 (S1, S2 and S3 are single-beam accelerometers; D1, D2 and D3 are DETF accelerometers). "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                306,
+                880,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The prototypes of both types of accelerometers are assembled using the same circuit. Testing results of the accelerometers are as following. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                456,
+                880,
+                498
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7d687e6cc0eca5dfb6fbb3306a8a4171fe0e380f25f0543304a10eb1986d13ca.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) Single-beam MSRA "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                519,
+                678,
+                675
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d2c70a19fe3464c4d59aaf2fa6381e467acfadd9a6dee04583d6faf3504ccb37.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) DETF MSRA "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. The local structure of the two accelerometers under the 3D video microscope. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                705,
+                517,
+                878,
+                675
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/51b88355522096208268444e3d6c91f906186115ef17dfe4b9161e89d05b0fce.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 4. Open-loop test results of accelerometer structures. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Number</td><td>Resonant frequency of the upper resonator (kHz)</td><td>Resonant frequency of the lower resonator (kHz)</td><td>Differential frequency (Hz)</td></tr><tr><td>S1</td><td>38.879</td><td>38.894</td><td>15</td></tr><tr><td>S2</td><td>39.896</td><td>39.947</td><td>51</td></tr><tr><td>S3</td><td>38.886</td><td>38.950</td><td>64</td></tr><tr><td>D1</td><td>41.140</td><td>41.216</td><td>76</td></tr><tr><td>D2</td><td>41.152</td><td>41.189</td><td>37</td></tr><tr><td>D3</td><td>41.293</td><td>41.195</td><td>98</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                512,
+                777,
+                880,
+                909
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                250,
+                28,
+                746,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "558 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                942,
+                147,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1. Scale Factor "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                62,
+                252,
+                78
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The accelerometer is installed on the precision dividing head at room temperature. First, the accelerometer is electrically pre-heated. After that there is an input of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " into the accelerometer. The output data of the accelerometer is recorded at a sampling frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The measurement time at each point does not exceed 30 s. The measurements are averaged. The scale factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is calculated according to Equation (1): "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                91,
+                485,
+                216
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K _ {1} = \\frac {U _ {+ 1 g} - U _ {- 1 g}}{2} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3c33fccc7cd81456eeb450eab16356a50037cd32362d1af0e7cc2f90c64dc307.jpg"
+                }
+            },
+            "bbox": [
+                225,
+                229,
+                482,
+                263
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{+lg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U_{-lg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the output of the accelerometer when the acceleration input is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+1 \\, \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1 \\, \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. The Scale factors of accelerometers are shown in Table 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                277,
+                485,
+                333
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a25f999b1287725379dda0e3a690bd212501087185d9389639694cf6b1b19fdc.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 5. Scale factors of accelerometers. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Number</td><td>Scale factor (Hz/g)</td></tr><tr><td>S1</td><td>135.2021</td></tr><tr><td>S2</td><td>133.121</td></tr><tr><td>S3</td><td>135.7746</td></tr><tr><td>D1</td><td>84.67296</td></tr><tr><td>D2</td><td>80.18871</td></tr><tr><td>D3</td><td>83.48448</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                193,
+                383,
+                408,
+                477
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2. Bias Stability "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                503,
+                258,
+                519
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The accelerometer is installed on the precision dividing head. The input shaft of the accelerometer is in the horizontal position, which is nearly  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". After the accelerometer is electrically pre-heated for 20 min at room temperature, the prototype is tested for 60 min at a sampling rate of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The standard deviation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\sigma)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is calculated as the stability index. Figs. 9-14 show the bias stability measurement curves of different accelerometers. The values of the Bias stability are listed in Table 6. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                530,
+                485,
+                669
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0bd7fff0de0455a890ace6bfdc8d301a55be7b2cca63a0072cd7dac6f890c0f5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9. The bias stability measurement curve of S1. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                124,
+                704,
+                475,
+                885
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0f13f26551c81f88b011d1ad58695414f5ab4e02bf6da9ee22ee990591bc9636.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 10. The bias stability measurement curve of S2. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                526,
+                65,
+                865,
+                232
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/fdcdbeb7a80b84f0e86071f9afdf7d650a18686b43e3f45cfe24f8078442827b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 11. The bias stability measurement curve of S3. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                277,
+                867,
+                448
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0a6892ba603081d4d084bfbe010fd048d12033cb183adac368500201f94d40e0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 12. The bias stability measurement curve of D1. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                492,
+                865,
+                663
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dd1bfecd744651d1f00d6149e3cd079b9ff71ab9c2c4706f3c332eaf5d9067ed.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 13. The bias stability measurement curve of D2. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                706,
+                867,
+                882
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                248,
+                28,
+                746,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "559 "
+                    }
+                ]
+            },
+            "bbox": [
+                848,
+                942,
+                880,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/96cc4dcab0b4d7c11862fc05a11b37912c03e9c78478d5c4926b3af06d4715fc.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 14. The bias stability measurement curve of D3. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                131,
+                65,
+                473,
+                232
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/e511d078a73a042282ef3e5638702932909ab9c89eb4339b1aa740ebda7ea0c9.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 6. Bias stability of accelerometers. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Number</td><td>Bias stability (μg)</td></tr><tr><td>S1</td><td>64.30</td></tr><tr><td>S2</td><td>73.62</td></tr><tr><td>S3</td><td>121</td></tr><tr><td>D1</td><td>36.51</td></tr><tr><td>D2</td><td>41.05</td></tr><tr><td>D3</td><td>47.14</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                196,
+                309,
+                405,
+                402
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.3. Full Temperature Test "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                428,
+                332,
+                445
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The accelerometer is placed in a temperature-controlled oven, where the temperature is maintained at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-40^{\\circ}\\mathrm{C}, -20^{\\circ}\\mathrm{C}, 0^{\\circ}\\mathrm{C}, +20^{\\circ}\\mathrm{C}, +40^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+60^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", each for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then, the differential frequency of the accelerometer at each temperature is measured. The output data is recorded at a sampling frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The measurement time at each temperature is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30\\mathrm{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The average value of 30 samples is considered the output at each temperature. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                458,
+                485,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The bias temperature coefficient,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B_{t}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is defined as "
+                    }
+                ]
+            },
+            "bbox": [
+                139,
+                583,
+                480,
+                597
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "B _ {t} = \\frac {B _ {\\text {m a x}} - B _ {\\text {m i n}}}{1 0 0}, \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1b5a9116eff164c0088afb33e75085d239da8d984e0685018a0997f32853eccb.jpg"
+                }
+            },
+            "bbox": [
+                231,
+                615,
+                482,
+                646
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B_{\\text{max}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B_{\\text{min}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the maximum and minimum differential output values, respectively, during the entire process of varying the temperature. The  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B_{t}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the six accelerometers are listed in Table 7. "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                663,
+                485,
+                739
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/d9c3e9d0e2d73dc39865be6ebb8c126fc4255f3ebee29cbc8c5726e38a022cff.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 7. Bias temperature coefficient of accelerometers. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Number</td><td>Bias temperature coefficient (Hz/°C)</td><td>Bias temperature coefficient (mg/°C)</td></tr><tr><td>S1</td><td>0.59044</td><td>4.367</td></tr><tr><td>S2</td><td>0.9</td><td>6.7607</td></tr><tr><td>S3</td><td>0.93391</td><td>6.8783</td></tr><tr><td>D1</td><td>0.10603</td><td>1.2522</td></tr><tr><td>D2</td><td>0.13598</td><td>1.6957</td></tr><tr><td>D3</td><td>0.20305</td><td>2.4321</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                112,
+                793,
+                489,
+                899
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Conclusion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                64,
+                633,
+                78
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this study, a comparative analysis is performed on single-beam and DETF MSRAs that are structurally similar. It can be concluded from the simulation analyses that in the case when the critical dimensions are identical, the scale factor of the single-beam MSRA is significantly higher than that of the DETF MSRA. When the upper and lower resonators are not completely symmetrical, the effect of temperature on the DETF MSRA is less than that on the single-beam MSRA. The experimental test results of the two accelerometer prototypes show that even though the scale factor of the single-ended MSRA is significantly higher than that of the DETF MSRA, the performance of the former is lower than that of the latter in full temperature experiment. In addition, the bias stability of the single-beam MSRA is also not as good as that of the DETF MSRA. "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                92,
+                880,
+                326
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                353,
+                684,
+                370
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work was supported by the National Natural Science Foundation of China (No. 61101021), the Jiangsu Provincial Natural Science Foundation of China (No. BK2010401), the Foundation (No. KL201103) of Key Laboratory of Micro-Inertial Instrument and Advanced Navigation Technology, Ministry of Education, China and the Fundamental Research Funds for the Central Universities (3222003102). "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                382,
+                880,
+                505
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                533,
+                611,
+                548
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1]. S. P. Beeby, M. J. Tudor, Modeling and optimization of micro-machined silicon resonators, journal of Micromechanics and Microengineering, Vol. 5, Issue, 1995, pp. 103-105. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2]. Ralph Hopkins, Joseph Miola, Roy Setterlund, The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications, *The Draper Technological Digest*, 2006, pp. 6-13. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3]. Trey A. Roessig, Roger T. Howe, Albert P. Pisano, Surface-micromachined resonant accelerometer, in Proceedings of the International Conference on Solid-State Sensors and Actuators, 1997, pp. 859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4]. Ashwin A. Seshia, Moorthi Palaniapan, Trey A. Roessig. A vacuum packaged surface micromachined resonant accelerometer, Journal of Microelectromechanical Systems, Vol. 11, Issue 6, 2002, pp. 784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5]. Ashwin Arunkumar Seshia, Integrated micromechanical resonant sensors for inertial measurement systems, PhD Thesis, Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, USA, 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6]. X.-P. S. Su, H. S. Yang, Single-stage microleverage mechanism optimization in a resonant accelerometer, Structural and Multidisciplinary Optimization, Vol. 21, Issue 3, April 2001, pp. 246-252. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                560,
+                880,
+                906
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                250,
+                28,
+                746,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "560 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                942,
+                147,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7]. Hyeon Cheol Kim, Seonho Seok, Ilwhan Kim, et al. Inertial-grade out-of-plane and in-plane differential resonant silicon accelerometers (DRXLs), in Proceedings of the  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "13^{\\text{th}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " International Conference on Solid-State Sensors, Actuators and Microsystems, 2005, pp. 172-175. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8]. Chul Hyun, Jang Gyu Lee, Taesam Kang, Precise oscillation loop for a resonant type MEMS inertial sensors, in Proceedings of the SICE-ICASE International Joint Conference, 2006, pp. 1953-1958. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9]. Seonho Seok, Hak Kim, and Kukjin Chun, An inertial-grade laterally-driven MEMS differential resonant accelerometer, in Proceedings of the IEEE International Conference on Sensors, 24-27 October 2004, Vol. 2, pp. 654-657. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10]. Jia Yubin, Hao Yilong, Zhang Rong, Double tuning-fork resonant accelerometer, in Proceedings of the  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "7^{\\text{th}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " International Conference on Solid-State and Integrated Circuits Technology, Vol. 3, 18-21 October 2004, pp. 1812-1815. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11]. Zhong Ying, Zhang Guoxiong, et al., Silicon micromachined tuning fork resonator, Chinese Journal of Science Instrument, Vol. 26, Issue 8, 2005, pp. 782-785. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                62,
+                485,
+                357
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12]. Ren Jie, Fan Shang-Chun, Wang Lu-Da, Critical technologies in design of micromechanical resonant accelerometer, Chinese Journal of Sensors and Actuators, Vol. 21, Issue 4, 2008, pp. 593-595. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13]. He Gao-Fa, Tang Yi-Ke, He Xiao-Ping, Wu Ying, Design of resonant micro accelerometer and analysis of fabricating error, Transducers and Microsystem Technology, Vol. 28, Issue 1, 2009, pp. 10-12. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14]. He Gao-Fa, Tang Yi-Ke, Zhou Chuan-De, He Xiao-Ping, Wu Ying, Design and fabrication of a novel resonator for resonant accelerometer, Journal of Chongqing University, Vol. 32, Issue 9, 2009, pp. 997-1001. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15]. Dong Jinhu, Research on the temperature characteristic of the silicon resonant accelerometer, College of Mechanical Engineering, Nanjing University of Science and Technology, Nanjing, 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16]. Dong Jingxin, Cao Yu, Wan Caixin, Hu Hao, Comparison of two resonant structures in silicon oscillating accelerometers, Journal of Tsinghua University (Science and Technology), Vol. 50, Issue 11, 2010, pp. 1825-1828. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                62,
+                880,
+                346
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2013 Copyright ©, International Frequency Sensor Association (IFSA). All rights reserved.  \n(http://www.sensorsportal.com) "
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                396,
+                673,
+                423
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors & Transducers, Vol. 161, Issue 12, December 2013, pp. 554-561 "
+                    }
+                ]
+            },
+            "bbox": [
+                248,
+                28,
+                747,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "561 "
+                    }
+                ]
+            },
+            "bbox": [
+                848,
+                942,
+                878,
+                956
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reproduced with permission of the copyright owner. Further reproduction prohibited without permission. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                64,
+                892,
+                107
+            ]
+        }
+    ]
+]

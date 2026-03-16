@@ -1,0 +1,894 @@
+[
+    {
+        "type": "text",
+        "text": "A novel resonant silicon accelerometer in bulk-micromachining technology ",
+        "text_level": 1,
+        "bbox": [
+            70,
+            164,
+            919,
+            218
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Chr. Burrer *, J. Esteve ",
+        "bbox": [
+            378,
+            233,
+            614,
+            251
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centro Nacional de Microelectrónica (CSIC), Campus U.A.B., 08193 Bellaterra, Barcelona, Spain ",
+        "bbox": [
+            197,
+            254,
+            792,
+            266
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract ",
+        "text_level": 1,
+        "bbox": [
+            51,
+            314,
+            110,
+            326
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The fabrication and characterization of a resonant accelerometer made in bulk-micromachining technology are reported. The device consists of a silicon seismic mass suspended by two hinges from one side. Between them, a load sensitive silicon beam is located, clamped to the bulk and to the mass. The beam is driven electrothermally and sensed piezoresistively. A double-diffusion electrochemical etch stop process was employed in order to fabricate a sensor structure, permitting elongation and compression of the beam under an out-of-plane load, with a single wafer bulk-micromachining fabrication process. Initial device measurements show a sensitivity of $200\\mathrm{Hz}g^{-1}$ to out-of-plane accelerations at a beam oscillation frequency of 90 kHz. Operation of the sensor in a closed-loop circuit with an external automatic gain control circuit was successfully verified. ",
+        "bbox": [
+            51,
+            343,
+            936,
+            445
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Accelerometers; Silicon; Bulk micromachining ",
+        "bbox": [
+            51,
+            462,
+            408,
+            475
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction ",
+        "text_level": 1,
+        "bbox": [
+            51,
+            519,
+            170,
+            533
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Mechanical structures that rely upon the resonant principle have been known for many years to be an attractive method for measuring physical parameters [1,2]. One of the most commonly found silicon resonators is a string clamped at both ends, which is sensitive to axial loads. This load can be made proportional to physical parameters such as acceleration, force, flow or pressure. ",
+        "bbox": [
+            51,
+            556,
+            473,
+            684
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The advantages of a resonant sensor over other sensing principles are primarily its high potential sensitivity together with its quasidigital output. The latter implies that electrical drift or noise have only a second order influence on the measurement, moreover the interfacing to a digital system is greatly simplified. ",
+        "bbox": [
+            51,
+            685,
+            473,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Several principles for driving and sensing a resonant element exist, such as piezoresistive, piezoelectric, electrothermal, capacitive and optical methods. For bulk-micromachined sensors, the couple electrothermal drive and piezoresistive sensing especially, is very attractive [3,4]. Excitation via a periodic heating force is simple and effective, and requires only a power-dissipating resistance on the vibrating element, which can be a diffused, implanted or deposited polysilicon resistor. ",
+        "bbox": [
+            51,
+            782,
+            473,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The same or another resistor is used for piezoresistive detection [5]. ",
+        "bbox": [
+            515,
+            518,
+            936,
+            550
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The accelerometer presented is based on the operation principle above. The device structure is outlined and the fabrication process is explained. Characterization of the device is split into two parts. First, the resonance qualities of the oscillating element, a clamped-clamped silicon beam, are shown. Then the first sensitivity measurements—in static mode—are presented. The results coincide well with the predicted values. ",
+        "bbox": [
+            515,
+            551,
+            936,
+            692
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Device structure and operation theory ",
+        "text_level": 1,
+        "bbox": [
+            515,
+            731,
+            836,
+            747
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The photograph in Fig. 1(a) shows a 3D view of the sensor, consisting of a seismic mass suspended by two hinges and one central triple beam. A second matched triple beam is located in the stiff bulk. From the cross sections in Fig. 1(b) it can be seen that the hinges are thicker than the beam, by a factor of four. Under an out-of-plane acceleration, the mass-hinge system moves similar to a cantilever type accelerometer. Since the neutral axis of the beam does not correspond with those of the hinges, either stretching or compression of the beam occurs. The mechanical load is converted into a change of resonance frequency of the beam. A triple beam was chosen, as it benefits from a high- $Q$ - ",
+        "bbox": [
+            515,
+            765,
+            936,
+            973
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "SEVIER ",
+        "bbox": [
+            51,
+            51,
+            151,
+            135
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Sensors and Actuators A 46-47 (1995) 185-189 ",
+        "bbox": [
+            323,
+            120,
+            667,
+            132
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "SENSORS ACTUATORS PHYSICAL ",
+        "bbox": [
+            786,
+            47,
+            940,
+            128
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "* Corresponding author. ",
+        "bbox": [
+            63,
+            962,
+            216,
+            974
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "0924-4247/95/$09 50 © 1995 Elsevier Science S.A. All rights reserved. ",
+        "bbox": [
+            49,
+            991,
+            491,
+            1000
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/78982654e3ba4728534d4195e771d68be957962475008c81f26bbd7018ef12c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            91,
+            86,
+            433,
+            292
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6994106436d38e296dab4035bd4070dcdb140d1e8da778633257c689fe97a2c5.jpg",
+        "image_caption": [
+            "Fig. 1. (a) SEM photograph of a device chip; (b) schematic cross section of the sensor structure. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            110,
+            303,
+            399,
+            424
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/1c6915de5bb30a1279a24f03b43b8f74ceab21faf9a98b47a8e300f304f27f1d.jpg",
+        "image_caption": [
+            "Fig. 2. Analytically calculated sensitivity and resonance frequency of the spring-mass system as a function of the hinge-beam ratio for a given sensor dimension. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            65,
+            473,
+            461,
+            634
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "mode amongst its three basic resonance modes [6]. Beam geometries were determined so that the first-mode basic resonance frequency at zero load applied is about $90\\mathrm{kHz}$ ",
+        "bbox": [
+            47,
+            694,
+            473,
+            758
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The resistors for driving and sensing are located at the extremes of the central beam, where, when oscillating, the stress distribution reaches a maximum. The sense resistor is connected on-chip to a Wheatstone bridge, giving a voltage output. ",
+        "bbox": [
+            47,
+            759,
+            473,
+            839
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A second beam in the bulk, insensitive to accelerations, forms a differential pair with the sensing beam. Subtracting the output frequencies of the resonators, and assuming ideal matching, packaging and temperature induced frequency shifts are eliminated to a first order. ",
+        "bbox": [
+            47,
+            839,
+            473,
+            933
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "As seen in Fig. 1, the hinges are shorter than the beam. Fig. 2 plots sensitivity and resonance frequency of the spring-mass system versus hinge-beam length ",
+        "bbox": [
+            47,
+            934,
+            475,
+            983
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "ratio for a given sensor dimension, calculated analytically. With smaller ratios the increase in frequency is more pronounced than the loss in sensitivity, resulting in the highest sensitivity-frequency product. The chosen ratio of 0.5 leads to a theoretical resonance frequency of $1.9\\mathrm{kHz}$ . ",
+        "bbox": [
+            508,
+            86,
+            936,
+            181
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Overall dimensions of the chip are $4\\mathrm{mm}\\times 4\\mathrm{mm}\\times 1.3$ mm, with mass dimensions of $1.55\\mathrm{mm}\\times 2\\mathrm{mm}$ on the upper side, a beam length of $700~\\mu \\mathrm{m}$ and a hinge length of $350~\\mu \\mathrm{m}$ . ",
+        "bbox": [
+            508,
+            182,
+            936,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. Fabrication process ",
+        "text_level": 1,
+        "bbox": [
+            508,
+            279,
+            691,
+            296
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The starting material was $300\\mu \\mathrm{m}$ thick (100)-oriented double polished $100~\\mathrm{mm}$ p-wafers. First, gaps of a few microns depth were etched with a TMAH solution on the wafer backside in the seismic mass regions. In this way, for packaging, the device wafer can be bonded directly onto a plain glass substrate. This step is optional. Next, deep $\\mathfrak{n}^+$ -regions were fabricated by a $\\mathrm{POCl}_3$ prediffusion and a subsequent long high-temperature drive-in. These regions formed the etch stop layer for the hinges during the final electrochemically controlled wet etching. Then a shallow n-well was implanted and driven-in, which represented the etch-stop layer for the thin resonating beam. The implant and anneal parameters were taken from a standard CMOS process. Together with this second well drive-in, the $\\mathfrak{n}^+$ -regions extended to a junction depth of about $21\\mu \\mathrm{m}$ . Now the wafer backside was masked for the wet etching. Finally the resistors were implanted and the wafer metallized and passivated. ",
+        "bbox": [
+            508,
+            310,
+            936,
+            613
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To minimize temperature dependent residual stresses in the beam caused by passivation films, a thin oxide between substrate and metal tracks was selected. The passivation oxide also served as a mask for the final membrane dry etch and the layer thickness was dimensioned so that it would almost be consumed during the dry etch. Instead of the oxide photoresist can also be used as masking for this etch. ",
+        "bbox": [
+            508,
+            614,
+            936,
+            742
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The final anisotropic wet etching was done in a KOH solution in combination with a four-electrode etch stop method, leaving non-homogeneous membranes [7]. After the anisotropic wet etching the membranes were dry etched from the wafer frontside. ",
+        "bbox": [
+            508,
+            742,
+            936,
+            822
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Fig. 3 shows a photo of a chip backside before the membrane etch. The flat membrane with the two hinge contours is clearly visible. The membrane profile in Fig. 4(a) reveals a thickness difference of about $16\\mu \\mathrm{m}$ , agreeing very well with the depth difference of the two junctions. The small hillocks close to the hinges originate from the compensation structures [8], that, when etched away, leave about $1\\mu \\mathrm{m}$ high traces on the membrane surface. However they do not influence the proper function of the device. An enlarged hinge profile in ",
+        "bbox": [
+            508,
+            822,
+            936,
+            983
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "186 ",
+        "bbox": [
+            51,
+            57,
+            73,
+            68
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 46-47 (1995) 185-189 ",
+        "bbox": [
+            274,
+            56,
+            711,
+            70
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2b3f8188427582bed4fa871df157161ed9a6f61c51187a583236924058f636bf.jpg",
+        "image_caption": [
+            "Fig. 3. SEM photograph of the backside of an accelerometer chip, with the unetched membrane and the hinge contours visible. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            100,
+            75,
+            441,
+            278
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Fig. 4(b) indicates that the spatial transition from the thick to thin membrane is about $40~\\mu \\mathrm{m}$ . ",
+        "bbox": [
+            49,
+            344,
+            478,
+            378
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A future integration of this fabrication process into a standard CMOS process is possible, as a recently fabricated integrated pressure sensor with the same etch stop technology demonstrates [9]. ",
+        "bbox": [
+            49,
+            378,
+            478,
+            443
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4. Experimental results ",
+        "text_level": 1,
+        "bbox": [
+            515,
+            72,
+            705,
+            89
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.1. Resonator ",
+        "text_level": 1,
+        "bbox": [
+            515,
+            104,
+            632,
+            118
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For testing the resonance qualities of the resonator beams, an HP4195 network analyzer was used. It permits the measurement of the transfer function of an oscillating beam, which can be considered as an electrical two-port with the drive resistor corresponding to its input and the sense resistor corresponding to its output. As the heating effect of an electrical voltage applied to a resistor varies as the square of the voltage, the sinusoidal output signal from the analyzer was superimposed on a d.c. bias and then applied to the drive resistor. ",
+        "bbox": [
+            512,
+            136,
+            943,
+            312
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Since the sense resistor formed part of a Wheatstone bridge, its voltage-output signal could be fed directly to the analyzer input. The resonator measurements were performed on the beams that are, as seen in Fig. 1(a), located in the bulk. ",
+        "bbox": [
+            512,
+            312,
+            943,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Fig. 5(a) presents a Bode plot of a transfer function for a resonator beam. In this case the Wheatstone supply voltage was $5\\mathrm{V}$ and the d.c. excitation bias 9 ",
+        "bbox": [
+            512,
+            394,
+            943,
+            443
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e3ed5c37442942ba25c6e75be9d978c43eef71c79b6821b199af125f7dd65f2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            172,
+            468,
+            823,
+            703
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/06fbd5d025e8dc920f6c3402dad66414d626dd2b06bcd1e819bc4736e7ceb266.jpg",
+        "image_caption": [
+            "Fig. 4. (a) Profile of the membrane with the two hinge contours, measured with a profilometer; (b) enlarged profile of a hinge contour. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            172,
+            712,
+            823,
+            947
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 46-47 (1995) 185-189 ",
+        "bbox": [
+            279,
+            42,
+            720,
+            56
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "187 ",
+        "bbox": [
+            919,
+            43,
+            943,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/8946d58827e44e47f150d204a1c749ddf8c41143a387a63c583d6bc04412d3b5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            61,
+            88,
+            461,
+            192
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/658ddbafe2f5b82338eb5bfa07e02ee81d10e87ce82c9f611d9bb4fa2fe7ba28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            56,
+            196,
+            455,
+            316
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e1bea03bb927023ba87483cab3ee66ab64ccd3961d7e74059ec9b82184d10b0.jpg",
+        "image_caption": [
+            "Fig. 5. (a) Bode plot of the transfer function of a $700\\mu \\mathrm{m}$ long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a). "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            89,
+            333,
+            434,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "V, which results in an excitation power of $23\\mathrm{mW}$ . The three gain peaks correspond to the three basic resonance modes of the triple beam. The first peak goes along with the typical $180^{\\circ}$ phase shift. In the other peaks, the phase shift is less pronounced. Fig. 5(b) shows the same curves in a polar diagram representation. It can be observed that the large circle, corresponding to the first peak in Fig. 5(a), passes practically through the origin, while the smaller circles are slightly shifted away and turned. It indicates that the electrical cross-talk, represented by the vector from the origin to the starting and endpoint of the circles, is almost negligible compared to the circle diameter. This was achieved by placing the metal pads, that were found to be a dominant part of the capacitive coupling between drive and sense resistors, close together and by heavily doping the underlying silicon substrate. During operation of the resonator it was grounded. ",
+        "bbox": [
+            45,
+            647,
+            475,
+            934
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The designed triple beam consists of a central beam and two outer ones, the central one twice as wide as the outer ones. They are joined together via decoupling ",
+        "bbox": [
+            47,
+            934,
+            478,
+            985
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "zones, each of them occupying $7.5\\%$ of the total beam length. In the resonance mode with the lowest frequency, the common mode, all beams oscillate in phase. The second mode is asymmetrical, the outer beams oscillate in anti-phase and the central beam rests. The differential mode, which corresponds to the highest frequency, is described by a $180^{\\circ}$ phase shift oscillation between central and outer beams. It exhibits the highest Q-factor and offers theoretically the highest resolution when used in a sensor. Measurements on various samples yielded a quality factor of about 200 for the common mode, 310 for the asymmetric and 400 for the differential mode. ",
+        "bbox": [
+            505,
+            85,
+            936,
+            293
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "However, when operating the resonator in closed-loop operation via an off-chip self-oscillating circuit, the oscillation tuned into the common mode frequency. This was expected, since for the characteristics of the electronic circuit used the common mode resonance exhibited the highest gain in the Bode plots. ",
+        "bbox": [
+            507,
+            295,
+            936,
+            392
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The off-chip circuit consisted basically of a high input-impedance amplifier, required for the on-chip Wheatstone bridge output signal, a second amplifier stage and a phase-shifter. The gain of the second amplifier was controlled automatically (AGC). Gain and phase were adjusted in order to fulfil the two conditions required for continuous oscillation: ",
+        "bbox": [
+            507,
+            390,
+            936,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\varphi_ {\\text {r e s o n a t o r}} + \\varphi_ {\\text {c i r c u i t}} = k 2 \\pi \\quad k = 1, 2, 3, \\dots\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            515,
+            813,
+            533
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left| H (\\omega) _ {\\text {r e s o n a t o r}} \\right| \\left| H (\\omega) _ {\\text {c i r c u i t}} \\right| = 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            512,
+            538,
+            725,
+            558
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$\\varphi$ is the phase angle and $H(\\omega)$ is the transfer function of the respective system. ",
+        "bbox": [
+            507,
+            567,
+            934,
+            598
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In closed-loop operation, the lowest d.c. excitation bias required was $8\\mathrm{V}$ , corresponding to an excitation power of $18.5\\mathrm{mW}$ . With this bias value, the a.c. amplitude was maintained at $1\\mathrm{V}$ . ",
+        "bbox": [
+            507,
+            598,
+            936,
+            662
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.2. Accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            508,
+            687,
+            654,
+            702
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Static sensitivity measurements were performed in closed-loop operation, i.e. the sensor beam was maintained in self-oscillation. The output frequency was measured directly with an HP universal counter. ",
+        "bbox": [
+            507,
+            727,
+            938,
+            790
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "By turning the device in the gravitation field, an acceleration from $+1g$ $(0^{\\circ})$ to $-1g$ $(180^{\\circ})$ can be simulated. Fig. 6 plots the resonance frequency versus the inclination angle to the horizontal. For comparison the dotted line shows an ideal sine. The small shift of the curve is caused by the non-symmetry of the device structure. ",
+        "bbox": [
+            507,
+            791,
+            938,
+            902
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Several devices were measured, sensitivities ranging between 200 and $215\\mathrm{Hz}g^{-1}$ . The analytically predicted value was $220\\mathrm{Hz}g^{-1}$ , slightly above the measured one. For a $50\\mathrm{g}$ device this corresponds to a $\\Delta f_{\\mathrm{r}}$ of $11\\%$ at full scale acceleration. ",
+        "bbox": [
+            508,
+            902,
+            940,
+            980
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "188 ",
+        "bbox": [
+            47,
+            57,
+            70,
+            68
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 46-47 (1995) 185-189 ",
+        "bbox": [
+            269,
+            56,
+            709,
+            70
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b1f1f420725259b90d262d4a1f3826ee849adb3fc67d50f7ccf22d0495afb31.jpg",
+        "image_caption": [
+            "Fig. 6. Measured static sensitivity of a sensor. The device was turned in the gravitation field. An angle of $0^{\\circ}$ corresponds to an acceleration of $+1g$ and $180^{\\circ}$ to $-1g$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            65,
+            77,
+            464,
+            261
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5. Conclusions ",
+        "text_level": 1,
+        "bbox": [
+            47,
+            334,
+            169,
+            349
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A resonant accelerometer in bulk-micromachining has been designed, fabricated and characterized. The fabrication process includes an electrochemical etch stop at a double diffusion, permitting the fabrication of membranes with different thicknesses. This feature was made use of in the design; a resonant sensor structure could be manufactured that combines sensitivity to out-of-plane accelerations with a 'standard' single-wafer bulk micromachining process. ",
+        "bbox": [
+            47,
+            372,
+            475,
+            517
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The resonant element is a clamped-clamped silicon triple beam, which is driven electrothermally and sensed piezoresistively. Electrical measurements of the beam reveal quality factors from 200 to 400 of the different basic resonance modes. When operating the beam in a closed-loop configuration with an off-chip self-oscillating circuit, the power consumption is about $20\\mathrm{mW}$ . ",
+        "bbox": [
+            47,
+            517,
+            475,
+            630
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Static sensitivity measurements of the device give a sensitivity of $200\\mathrm{Hz}g^{-1}$ , very close to the theoretical value. ",
+        "bbox": [
+            47,
+            630,
+            475,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            75,
+            663,
+            91
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The authors thank the CNM clean room staff for the wafer processing, M. Duch and A. Moreno for the post-processing and device encapsulation. The authors also acknowledge F. Larmer from R. Bosch GmbH for his support and advice during the whole work. This project has been funded by the CICYT project ROB1140/91-C01-01. Chr. Burrer is financially supported by Robert Bosch GmbH, Stuttgart, Germany. ",
+        "bbox": [
+            512,
+            109,
+            941,
+            241
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            279,
+            600,
+            293
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] R.F. Wilfinger, P.D. Bardell and D.S. Chhabra, The resonistor: a frequency selective device utilizing the mechanical resonance of a silicon substrate, IBM J. Res. Dev., 12 (1968) 113-118. ",
+            "[2] R.M. Langdon, Resonator sensors—a review, J. Phys. E: Sci. Instrum., 18 (1985) 103-115. ",
+            "[3] D.W. Satchell and J.C. Greenwood, A thermally-excited silicon accelerometer, Sensors and Actuators, 17 (1989) 241-245. ",
+            "[4] S. Bouwstra, R. Legtenberg, H.A.C. Tilmans and M. Elwenspoek, Resonating microbridge mass flow sensor, Sensors and Actuators, A21-A23 (1990) 332-335. ",
+            "[5] M.B. Othman and A. Brunnschweiler, Electrothermally excited silicon beam mechanical resonators, *Electron. Lett.*, 23 (14) (1987) 728-730. ",
+            "[6] Chr. Burrer and J. Esteve, Thermally driven micromechanical bridge resonators, Sensors and Actuators A, 41-42 (1994) 680-684. ",
+            "[7] S. Marco, J. Samitier, J.R. Morante, A. Götz and J. Esteve, Three-dimensional structures obtained by double diffusion and electrochemical etch stop, J. Micromech. Microeng., 3 (1993) 141-142. ",
+            "[8] M. Bao, Chr. Burrer, J. Bausells and S. Marco, Etching front control of $< 110>$ strips for corner compensation, Sensors and Actuators A, 37-38 (1993) 727-732. ",
+            "[9] C. Cané, F. Campabadal, J. Esteve, M. Lozano, A. Götz, J. Santander, Chr. Burrer, J.A. Plaza, L. Pahun and S. Marco, A technology for the monolithic fabrication of a pressure sensor and related circuitry, Sensors and Actuators A, 46-47 (1995) 133-136. "
+        ],
+        "bbox": [
+            521,
+            312,
+            940,
+            674
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 46-47 (1995) 185-189 ",
+        "bbox": [
+            276,
+            45,
+            716,
+            57
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "189 ",
+        "bbox": [
+            915,
+            45,
+            940,
+            54
+        ],
+        "page_idx": 4
+    }
+]

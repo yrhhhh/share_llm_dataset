@@ -1,0 +1,165 @@
+# Folded Silicon Resonant Accelerometer with Temperature Compensation
+
+Lin He, Yong-Ping Xu, and Anping Qiu*
+
+Dept of Electrical & Computer Engineering, National University of Singapore,
+
+4 Engineering Dr 3, Singapore 117576. Email: g0202660@nus.edu.sg and elexuyp@nus.edu.sg
+
+*Dept of Instrument Science & Engineering, Southeast University, Nanjing, P.R.China
+
+Email: qiuap@seu.edu.cn
+
+# Abstract
+
+In this paper, a novel folded silicon resonant accelerometer is proposed. The proposed structure is able to release the stress arising from the mismatch of thermal expansion between silicon structure and glass substrate and to compensate the variation of the natural frequency with temperature. The analysis has shown that both bias and scale factor stability can be improved with the proposed structure. The concept is verified by the simulation and the results show that the temperature dependence of common-mode output frequency can be greatly reduced.
+
+# Keywords
+
+Silicon accelerometer, resonant accelerometer, temperature compensation, MEMS, resonator.
+
+# INTRODUCTION
+
+The micromachined silicon accelerometers can be divided into two categories. One converts the acceleration into quasi-DC quantities, such as capacitance and resistance[1], while the other, such as resonant type silicon accelerometer, translates the acceleration into a change of the resonant frequency of mechanical resonators[2]. As both are based on the mechanical structures, they are inevitably subject to the effect of temperature, which characterized by the bias and scale factor stability. In some applications, such as the inertial navigation system (INS), the requirements for the above two parameters are very stringent and must be carefully considered in the design of accelerometers.
+
+This paper concerns about the design of the silicon resonant accelerometer that is based on a Dissolved Wafer Process [3] which combines boron etch stop with dry reactive ion etch (DRIE) to form the required micro mechanical structure. Its simplicity and ability to achieve high aspect ratio is ideal for silicon inertia sensors. However, one step of this process involves the bonding of the silicon structure to a glass substrate at approximately $400\sim 500^{\circ}\mathrm{C}$ . Since the glass has larger thermal expansion coefficient than that of silicon, it introduces compressive stress when the device is cooled down to room temperature. The resulting stress can be very large and causes the structure to crack if the accelerometer is badly designed.
+
+A silicon resonant accelerometer usually contains two resonators that are placed to have differential load. When the device is under acceleration, one of the resonator increases its natural frequency while the other decreases. This differential design implies that common-mode error sources from
+
+measurement are cancelled to the first order. However, the extent of cancellation is limited by the mismatch between them and an offset or bias is introduced. In some cases, it is desirable that both offset and scale factor to be as stable as possible.
+
+We present a novel folded structure for silicon resonant accelerometer that allows the residue stress to be released through the rotation of the proof mass. This structure also exhibits good bias and scale factor stabilities over wide temperature range.
+
+# PRINCIPLE
+
+Assuming a small vibration amplitude, the effective stiffness of a fixed-fixed beam is given by[4]:
+
+$$
+K _ {\text {e f f}} = \frac {E I}{L ^ {3}} \int_ {0} ^ {1} \left(\frac {d ^ {2} \phi_ {i}}{d \varepsilon^ {2}}\right) ^ {2} d \varepsilon + \frac {F}{L} \int_ {0} ^ {1} \left(\frac {d \phi_ {i}}{d \varepsilon}\right) ^ {2} d \varepsilon \tag {1}
+$$
+
+where $\mathrm{E}$ is Young's modulus, $\mathrm{I}$ is beam inertia, $\mathrm{L}$ is beam length, $\mathrm{F}$ is the force acting on the beam, $\phi_{i}$ is the normalized vibration shape of a specific vibration mode, and $\varepsilon$ is the normalized location on the beam. For simplicity,
+
+$$
+K _ {\text {e f f}} = C _ {1} \frac {E I}{L ^ {3}} + C _ {2} \frac {F}{L} \tag {2}
+$$
+
+where $C_1$ and $C_2$ are defined as follows:
+
+$$
+C _ {1} = \int_ {0} ^ {1} \left(\frac {d ^ {2} \phi_ {i}}{d \varepsilon^ {2}}\right) ^ {2} d \varepsilon \quad C _ {2} = \int_ {0} ^ {1} \left(\frac {d \phi_ {i}}{d \varepsilon}\right) ^ {2} d \varepsilon
+$$
+
+For a given vibration mode, both $C_1$ and $C_2$ are constant[4]. Note that Young's modulus E, beam length L and beam inertia I are temperature dependent. As a result, for the fixed-fixed beam resonator that is free of any load, its stiffness at temperature T is given by
+
+$$
+K _ {0} (T) = C _ {1} \frac {E (T) I (T)}{L (T) ^ {3}} = \frac {C _ {1} E (T) w (T) ^ {3} h (T)}{1 2 L (T) ^ {3}} = \frac {C _ {1} w \left(T _ {0}\right) ^ {3}}{1 2 L \left(T _ {0}\right) ^ {3}} E (T) h (T) \tag {3}
+$$
+
+where $w$ is the width of resonant beam, $h$ is the thickness, $T_0$ is ambient temperature, and isotropic temperature dependence of the beam dimension is assumed, that is,
+
+$$
+\frac {w (T) ^ {3}}{L (T) ^ {3}} \equiv \frac {w \left(T _ {0}\right) ^ {3}}{L \left(T _ {0}\right) ^ {3}} \tag {4}
+$$
+
+since
+
+$$
+\frac {\partial w}{w _ {0} \partial T} \equiv \frac {\partial L}{L _ {0} \partial T} \equiv \frac {\partial h}{h _ {0} \partial T} \tag {5}
+$$
+
+Thus, the temperature dependence of the stiffness can be expressed as
+
+$$
+\frac {\partial K _ {0} (T)}{K _ {0} \left(T _ {0}\right) \partial T} = \frac {\partial E}{E \left(T _ {0}\right) \partial T} + \frac {\partial h}{h \left(T _ {0}\right) \partial T} \approx \frac {\partial E}{E \left(T _ {0}\right) \partial T} \tag {6}
+$$
+
+For single crystal silicon, $\partial h / h(T_0)\partial T$ (typically, 2.6ppm) is much smaller than $\partial E / E(T_0)\partial T$ (typically, -50ppm) and thus can be neglected. The stiffness $\mathrm{K}_0$ has a negative temperature coefficient (TC). To compensate this temperature effect, a force $F_{c}$ that is common to both resonators, but has a positive TC can be introduced. To facilitate the analysis, we define a common-mode effective stiffness $\mathrm{K_c}$ as
+
+$$
+K _ {c} = C _ {1} \frac {E I}{L ^ {3}} + C _ {2} \frac {F _ {c}}{L} \tag {7}
+$$
+
+and hence
+
+$$
+\begin{array}{l} \frac {\partial K _ {c} (T)}{\partial T} = \frac {\partial \left[ K _ {0} (T) + C _ {2} \frac {F _ {c} (T)}{L (T)} \right]}{\partial T} \\ = \frac {\partial K _ {0} (T)}{\partial T} + C _ {2} \frac {F _ {c} (T _ {0})}{L (T _ {0})} \left[ \frac {\partial F _ {c} (T)}{F _ {c} (T _ {0}) \partial T} - \frac {\partial L (T)}{L (T _ {0}) \partial T} \right] \\ \approx K _ {0} (T) \frac {\partial E}{E \left(T _ {0}\right) \partial T} + C _ {2} \frac {1}{L \left(T _ {0}\right)} \frac {\partial F _ {c} (T)}{\partial T} - \frac {C _ {2} F _ {c} \left(T _ {0}\right) \partial L (T)}{L \left(T _ {0}\right) ^ {2} \partial T} \tag {8} \\ \end{array}
+$$
+
+Setting (8) to zero, yield the condition for the effective stiffness to have zero TC
+
+$$
+\frac {\partial F _ {c} (T)}{\partial T} = - \frac {K _ {0} (T) L \left(T _ {0}\right)}{C _ {2}} \frac {\partial E}{E \left(T _ {0}\right) \partial T} + F _ {c} \left(T _ {0}\right) \frac {\partial L (T)}{L \left(T _ {0}\right) \partial T} \tag {9}
+$$
+
+As indicated above, if such a common-mode force can be realized, the resonator's effective stiffness can be made independent of temperature. Consequently, the offset frequency, which is defined as the difference between two resonators' frequencies without acceleration load, is also temperature independent.
+
+Now we investigate the temperature stability of scale factor with the compensation method discussed above. Assuming that an acceleration load generates a pair of differential load $\pm F_{\mathrm{d}}$ to the temperature compensated resonators, their differential output is given by:
+
+$$
+\begin{array}{l} \Delta f = \left(\frac {C _ {1} \frac {E I}{L ^ {3}} + C _ {2} \frac {F _ {c} + F _ {d}}{L}}{m}\right) ^ {1 / 2} - \left(\frac {C _ {1} \frac {E I}{L ^ {3}} + C _ {2} \frac {F _ {c} - F _ {d}}{L}}{m}\right) ^ {1 / 2} \\ = \left(\frac {K _ {c} + C _ {2} F _ {d} / L}{m}\right) ^ {1 / 2} - \left(\frac {K _ {c} - C _ {2} F _ {d} / L}{m}\right) ^ {1 / 2} \\ = \left(\frac {K _ {c}}{m}\right) ^ {1 / 2} \left[ \left(1 + \frac {C _ {2} F _ {d} / L}{K _ {c}}\right) ^ {1 / 2} - \left(1 - \frac {C _ {2} F _ {d} / L}{K _ {c}}\right) ^ {1 / 2} \right] \\ \approx \left(\frac {K _ {c}}{m}\right) ^ {1 / 2} \cdot \frac {C _ {2} F _ {d} / L}{K _ {c}} \\ = f _ {c} \frac {C _ {2} F _ {d} / L}{K _ {c}} \tag {10} \\ \end{array}
+$$
+
+![](images/3bedab0653a6959770b38187f2c5274c023b3ee1dc374bb964b1be0eb99d9370.jpg)  
+Figure 1. Proposed silicon resonant accelerometer with folded structure.
+
+Where $\mathrm{C}_2\mathrm{F_d} / \mathrm{L} \ll \mathrm{K_c}$ is assumed. As $\mathrm{F_d}$ is almost temperature independent and the TC of $\mathrm{L}$ is much smaller than that of $\mathrm{E}$ , the above expression indicates that TC of scale factor is closely related to the TC of $K_{c}$ or common-mode frequency $f_{c}$ . If the common-mode frequency is temperature compensated, both the bias frequency (offset) and the scale factor will be stabilized accordingly.
+
+# The proposed folded resonant accelerometer
+
+The mismatch of thermal expansion between glass and silicon is utilized to realize the common-mode force $F_{C}$ that has the desired thermal sensitivity given by (9). As the silicon structure is bonded to the glass substrate via anchors, when temperature changes, due to the mismatch of thermal expansion between glass and silicon, the substrate forces the silicon structure to follow its expansion, and introduces a relative displacement that is common to both resonators. Hence a common-mode force $F_{c}$ associated with this displacement is generated.
+
+The proposed accelerometer with folded structure is shown in Fig.1. It has two resonators placed off the axis with one folded back. The resonator is connected to the proof mass through a leverage to amplify the force acting on it. The proof mass is supported by two pairs of suspension beam.
+
+Assuming that the expansion of glass substrate is not affected by the silicon structure on top of it, for the proposed structure shown in Fig.1, the relative displacement is given by
+
+$$
+d (T) = \left(n X _ {1} - X _ {2}\right) \bullet \left(\alpha_ {g} - \alpha_ {s}\right) \bullet \left(T - T _ {b}\right) \tag {11}
+$$
+
+where $X_{1}, X_{2}$ are the distances between the anchors as shown in Fig.1, $\alpha_{\mathrm{g}}$ and $\alpha_{\mathrm{s}}$ are the thermal expansion coefficient of glass and silicon, respectively, $T_{b}$ is the temperature
+
+![](images/3f324ed8eda3c05a00f0bd6849c424a69ca38b373a7f2e56e9e44edf5a7da59f.jpg)  
+Figure 2. Equivalent model for the proposed accelerometer (only half side is shown, M is the proof mass).
+
+under which the bonding process is done, $n$ is the force amplification ratio. Fig.2 is an equivalent model of the proposed accelerometer, where $K_{L}$ is the bending stiffness of the leverage that is used for force amplification and $K_{S}$ is the bending stiffness of the suspension beam, $M$ is the proof mass. Taking into account the force amplification effect, the thermally induced force acting on the resonator is given by:
+
+$$
+F _ {c} (T) = n F _ {L} (T) = \frac {n K _ {s} K _ {L}}{K _ {L} + K _ {s}} d (T) \tag {12}
+$$
+
+From (11) and (12), it is obvious that the desired temperature sensitivity can be achieved through adjusting $(nX_{1} - X_{2})$ and $K_{s}$ .
+
+# SIMULATION RESULTS
+
+The silicon structure is designed to be $20\mu \mathrm{m}$ thick and its overall size is $2\times 2\mathrm{mm}^2$ . The suspension beam is $6\mu \mathrm{m}\times 450\mu \mathrm{m}$ . $\mathrm{X}_1$ and $\mathrm{X}_2$ are $400\mu \mathrm{m}$ and $950\mu \mathrm{m}$ , respectively. Force amplification ratio $n$ is set to be around 9. Finite Element analysis tool ANSYS is used for the simulation, with the values of material property taken from [3]. The frequency change as the function of acceleration input $(T_0 = 27^{\circ}\mathrm{C})$ is shown in Fig.3. Fig.4 is the output of resonant frequency versus temperature at zero acceleration input, which shows that the common-mode output frequency has a TC of -8ppm. Fig.5 is the distribution of residue stress at room temperature, in which the deformation is exaggerated for clear illustration. The SEM photo of the released device is given in Fig.6, which shows good stress releasing.
+
+![](images/013b74cc79f951db1c6b64d130781f08b69c90fa46ab90ccf804640aa07f9da1.jpg)
+
+![](images/4ac3649a6b98ad2890de1a3cc94fe639d38e4f44bc516fdb798f70ffb6603e34.jpg)  
+Figure 3. Simulated resonant freq output (Hz) versus input acceleration (g).   
+Figure 4. simulated resonant frequency (Hz) versus temperature $(^{\circ}\mathrm{C})$ .
+
+![](images/d13a43507609bd35c34e1a1cabaed6f2148f40d22d61f0040c75fcbc5f92e66c.jpg)  
+Figure 5. Simulated residue stress at room temperature (exaggerated view).
+
+![](images/db2b2278dbe580f6e851a3e12fbd07225572b6fbabbb2b3ca18972c55cfe296b.jpg)  
+Figure 6. SEM photo of the released accelerometer..
+
+# CONCLUSION
+
+A novel folded structure is proposed for silicon resonant accelerometers based on the Dissolved Wafer Process. The structure uses the combination of the stress generated by the mismatch of the expansions between the silicon and glass substrate as a common-mode force, and the folded structure to compensate the temperature effect due to the Young's modulus. The folded structure also helps release the residue stress caused by the bonding process. Simulation has verified the proposed concept and shown that for a given condition, the temperature coefficient can be reduced to $-8\mathrm{ppm}$ . Thus, good temperature stability for both bias
+
+frequency and scale factor can be achieved.
+
+# ACKNOWLEDGEMENT
+
+The authors would like to thank National University of Singapore for providing the scholarship and financial support under project R-263-000-289-112, and the $13^{\mathrm{th}}$ Institute of Ministry of Information Industry, China, for fabrication of the accelerometer.
+
+# REFERENCES
+
+[1] N.Yazdi, F.Ayazi, and K.Najafi, "Micromechined Inertial Sensors", Proc. of IEEE, Vol. 86, No. 8, pp.1640-1659, 1998.   
+[2] Helsel, M., et al., "A navigation grade micromachined silicon accelerometer", Proc. IEEE Position Location and Navigation Symp., Las Vegas, pp. 51-58, 1994.   
+[3] Y. Gianchandani and K. Najafi, “A bulk silicon dissolved wafer process for micro-electro-mechanical devices”, IEEE/ASME J. MEMS, Vol. 1, No. 2, pp. 77-85, 1992.   
+[4] Roessig, "Integrated MEMS Tuning Fork Oscillators for Sensor Application," PhD Thesis, University of California, Berkeley, (1998).   
+[5] Petersen, K.E., "Silicon as a mechanical material", Proc. IEEE. Vol. 70, No. 5, pp.420-457, 1982.

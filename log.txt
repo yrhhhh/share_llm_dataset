@@ -1,0 +1,632 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Yagang Wang, Student Member, IEEE, Jing Zhang, Zhichao Yao, Chen Lin, Tong Zhou, Member, IEEE, Yan Su, and Jian Zhao, Member, IEEE",
+    "analysis": "author list and affiliations",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_1",
+    "content": "Abstract—Temperature fluctuations seriously damage the performance of resonant accelerometers. Two approaches have been proposed in this paper to address this problem. In structural design, an electrostatic softening spring is utilized to modulate the external acceleration on the frequency of resonator's antiphase modal without any stress transmission and thus improve the thermal robustness of the accelerometer. In control circuit, a continuous ring-down technique is employed for real-time quality factor (utilized as a virtual thermometer) monitoring, which attenuates measuring hysteresis and improves the precision of temperature compensation. A prototype is implemented to verify the proposed approaches. Experiments show that this accelerometer is insensitive to stress and has better performance of temperature compared with the vibration beam resonant accelerometer. The bias stability of acceleration output was improved from 35.2 to   0.08\\mathrm{mg}  with real-time quality factor compensation ranging from   -40^{\\circ}\\mathrm{C}  to   +40^{\\circ}\\mathrm{C} .",
+    "analysis": "technical MEMS-related information about temperature compensation in resonant accelerometers, including structural design and control circuit approaches, experimental results, and performance improvements",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_2",
+    "content": "Index Terms—Resonant accelerometer, electrostatic spring softening, continuous ring-down, quality factor, temperature compensation.",
+    "analysis": "index terms related to MEMS accelerometers, including technical aspects like electrostatic spring softening and continuous ring-down",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_3",
+    "content": "MEMS accelerometer is an important building block of micro inertial measurement unit (MIMU) for the measurement of acceleration. It is widely employed in many applications such as mobile devices, gaming, automobile and healthcare [1], [2]. Compared with traditional accelerometers, MEMS accelerometers have the advantages of small size, high reliability, low power consumption and low cost [3]. However, the poor performance of MEMS accelerometers",
+    "analysis": "overview of MEMS accelerometers, their importance, applications, and advantages over traditional accelerometers, with a mention of poor performance issues",
+    "correlation": 0.7
+  },
+  {
+    "id": "doc_4",
+    "content": "Manuscript received June 10, 2018; accepted June 28, 2018. Date of publication July 3, 2018; date of current version August 10, 2018. This work was supported in part by the China Postdoctoral Science Foundation under Grant 2018M631470, in part by the Natural Science Foundation Project under Grant 51375244, and in part by the Provincial Nature Science Foundation, China, under Project BK20170850. The associate editor coordinating the review of this paper and approving it for publication was Prof. Weileun Fang. (Corresponding author: Yan Su.)",
+    "analysis": "manuscript submission and acceptance dates, funding acknowledgments, and corresponding author information",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_5",
+    "content": "Y. Wang, J. Zhang, Z. Yao, C. Lin, T. Zhou, and Y. Su are with the School of Mechanical Engineering, Nanjing University of Science and Technology, Nanjing 210094, China (e-mail: wangyagang112@njust.edu.cn; zhangjing.nust@gmail.com; njustyzc@126.com; njustlinchen@126.com; zhoutong@njust.edu.cn; suyan@njust.edu.cn).",
+    "analysis": "This paragraph contains affiliations and contact information for the authors, which is non-technical metadata.",
+    "correlation": 0
+  },
+  {
+    "id": "doc_6",
+    "content": "J. Zhao is with the Department of Electronic Engineering and the Beijing Innovation Center for Future Chips, Tsinghua University, Beijing 100084, China (e-mail: zhaojianycc@mail.tsinghua.edu.cn).",
+    "analysis": "This paragraph contains affiliation and contact information for one of the authors, which is non-technical metadata.",
+    "correlation": 0
+  },
+  {
+    "id": "doc_7",
+    "content": "Digital Object Identifier 10.1109/JSEN.2018.2852647",
+    "analysis": "This paragraph contains a Digital Object Identifier, which is non-technical metadata.",
+    "correlation": 0
+  },
+  {
+    "id": "doc_8",
+    "content": "restricts its applications in inertial navigation systems. MEMS accelerometers with high performance still need further development. Bias stability, which is the critical factor to decide navigation accuracy, is defined as the accelerometer output   (1\\sigma  value) measured over a specified period under zero input acceleration. For long-term bias stability, temperature drift and low frequency noise (flicker noise) are two key limiting factors.",
+    "analysis": "This paragraph discusses the limitations of MEMS accelerometers in inertial navigation systems, including bias stability, temperature drift, and low frequency noise. It provides technical information about MEMS devices and their performance.",
+    "correlation": 1
+  },
+  {
+    "id": "doc_9",
+    "content": "MEMS accelerometers have different operating principles, including capacitive [4], [5] and resonant [6]-[10] accelerometers. For capacitive accelerometers, the gap of the plate capacitor changes while the acceleration applied. By measuring the change of capacitance, acceleration applied can be acquired. With development of several years, MEMS capacitive accelerometers have been widely used in many applications. However, the output of MEMS capacitive accelerometer is amplitude modulation, which is susceptible to circuit noise (especially flicker noise) and restricts its ultimate stability. Resonant accelerometers, also known as silicon vibration beam accelerometer, are realized by detecting the frequency changes of vibration beams induced by the inertia forces caused by external accelerations. Besides the vibration beam, electrostatic spring softening and momentum of inertia were also proposed for frequency modulation of the displacement caused by acceleration [11]-[15]. Compared with capacitive accelerometers, frequency output enables resonant accelerometers to be less vulnerable to circuit noise and more potential to achieve high performance. The bias instability of MEMS resonant accelerometers reported so far was improved to   0.23\\mu \\mathrm{g} , which has reached navigation-grade performance [7].",
+    "analysis": "This paragraph describes the operating principles of MEMS accelerometers, including capacitive and resonant types, and compares their performance and susceptibility to noise. It provides detailed technical information about MEMS devices and their applications.",
+    "correlation": 1
+  },
+  {
+    "id": "doc_10",
+    "content": "Unfortunately, the temperature fluctuation results in drift of resonant frequency and damages the long-term bias stability of MEMS resonant accelerometers. Take our previously designed resonant accelerometer as an example, temperature frequency coefficient (TCF) is measured around   -300\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  at low temperature and   -80\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  at high temperature [16]. Varying stress with temperature [17], [18] and temperature coefficient of silicon properties [19], [20] are the main contributions to this problem. To eliminate the varying stress caused by temperature, some isolation methods have been utilized to",
+    "analysis": "The paragraph discusses the impact of temperature fluctuations on MEMS resonant accelerometers, including the temperature frequency coefficient and the main contributions to the problem. It also mentions methods to address these issues.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_11",
+    "content": "prevent external stress transmitting into sensing element, such as isolation beams inside the structure [17], [21] and isolation platform in the package [22], [23]. The temperature coefficients of silicon properties are inherent problem of MEMS device, for which compensation is the only way. In [24] and [25] composite materials were employed in the structural design to neutralize temperature coefficient of silicon properties. Unfortunately, challenge for fabrication and difficulty to maintain precision restrict its application. More commonly, the temperature of structure is acquired through thermometer and then compensation is conducted in circuits. However, the distance between thermometer and accelerometer induces the hysteresis between real temperature and measured temperature, which will introduce unwanted errors during temperature compensation and thus deteriorates the performance. Even with on-chip temperature indicators such as redundant temperature sensitive resonator [26], there is still some distance between the thermometer and accelerometer, it will become the bottle neck for high performance MEMS accelerometers. Fortunately, quality factor, a parameter of resonator was proven to be an ideal candidate as the temperature indicator, and it has no distance to accelerometer [27]. For continuous temperature compensation, real-time quality factor monitoring is also required. In [28], an amplitude modulation (AM) approach based on the measurement of amplification coefficient of resonator has been proposed for real-time quality factor monitoring. Unfortunately, AM approach suffers from circuit gain variation, as a result, it is difficult to achieve high precision quality factor measurement. Another two approaches include single ring-down approach and frequency sweeping method, measure the quality factor in frequency domain, in which the amplitude fluctuation is attenuated but they are not suitable for real-time quality factor monitoring. Realtime quality factor monitoring with high precision is still a key challenge for temperature compensation in resonant accelerometers.",
+    "analysis": "The paragraph continues the discussion on temperature compensation methods for MEMS resonant accelerometers, including isolation methods, composite materials, and real-time quality factor monitoring. It also highlights the challenges and limitations of various approaches.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_12",
+    "content": "In this paper, a resonant MEMS accelerometer based on the electrostatic spring softening has been implemented, which modulates displacement of proof masses caused by inertial force on the resonant frequency of resonator without any stress transmission. It acts as a vibrating capacitive accelerometer but with frequency modulation. The structure was optimized considering modal optimization and scale factor maximization. Furthermore, control system is updated based on continuous ring-down technique to monitor real-time quality factor for temperature compensation, which attenuates measuring hysteresis and improves the precision of temperature compensation. Frequency digital converter based on reset counter was employed for real-time quality factor monitoring, which reduces the quantization noise and improves the precision of quality factor measurement.",
+    "analysis": "The paragraph describes the implementation of a resonant MEMS accelerometer based on electrostatic spring softening, its structural optimization, and the use of a control system for real-time quality factor monitoring. It also mentions the benefits of the approach in terms of temperature compensation and precision.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_13",
+    "content": "The rest of this paper is organized as follows. Section II focuses on the structural design based on the electrostatic spring softening. Section III presents the design of control circuits based on the continuous ring-down technique. The key specifications of the accelerometer: measuring range, scale factor, Allan variance and quality factor are presented in section IV. Section IV also includes evaluation of temperature",
+    "analysis": "The paragraph provides an overview of the paper's organization, outlining the sections that will cover the structural design, control circuits, and key specifications of the accelerometer. This is a section outline and does not contain technical MEMS-related information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_14",
+    "content": "Fig. 1. Schematic diagram of accelerometer principle (  \\mathbf{k}_1 : effective spring of beams connected proof masses to anchor,   \\mathbf{k}_2 : effective spring of beams for proof masses connection together,   \\mathbf{k}_{\\mathrm{e}} : electrostatic softening spring)..",
+    "analysis": "The paragraph appears to be a figure caption explaining the schematic diagram of the accelerometer principle, including the effective springs and electrostatic softening spring. This is relevant technical MEMS-related information.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_15",
+    "content": "performance and verification of proposed temperature compensation method. Final remarks are proposed in section V.",
+    "analysis": "The paragraph discusses the performance and verification of a temperature compensation method, which is relevant to MEMS devices.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_16",
+    "content": "The resonant accelerometer consists of two similar silicon MEMS resonators. Each resonator consists of two proof masses for acceleration sensing and some beams for connection. Each mass includes one pair of differential inter-digitated drive combs, one pair of differential inter-digitated sense combs and turning electrode parallel plate capacitors [11]. The schematic diagram of the structure is shown in Figure 2(a). When a DC voltage (V) is applied on the parallel plates (as shown in Figure 2(b)), electrostatic softening spring will be induced for the resonator, whose stiffness is susceptible to the cube of the capacitive gap. While acceleration applied along the X-axis, the two proof masses of the resonator move in the same direction as shown in Figure 2(c) and the capacitive gap   (d_{1}, d_{2})  changes. Consequently, stiffness of electrostatic softening spring changes, which results in the change of anti-phase resonant frequency of resonator as shown in Figure 2(d). The parallel plates of two resonators are placed on the opposite direction (see Figure 2(b)), which means the frequency of two resonators will change towards opposite direction when acceleration applied. Through the frequency difference of two resonators, the acceleration applied can be calculated. As analyzed above, the principle of accelerometer can be simplified in Figure 1.",
+    "analysis": "The paragraph provides detailed technical information about the structure and operating principle of a MEMS resonant accelerometer, including components and their functions.",
+    "correlation": 0.95
+  },
+  {
+    "id": "doc_17",
+    "content": "The anti-phase natural frequency of the resonator, computed through finite element analysis, is designed as   3666.1\\mathrm{Hz} . While the minimum frequency of interference mode, a motion along Z-axis, is equal to   8370.1\\mathrm{Hz} . The driving mode is the first order mode, which is beneficial to excite resonator. Large difference between the interference mode and the working mode helps to reduce its influence on the performance of the accelerometer.",
+    "analysis": "The paragraph describes the natural frequency and interference mode of the resonator, which are important technical details for understanding the performance of the MEMS accelerometer.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_18",
+    "content": "Parallel plate capacitors are optimized to maximize the scale factor, which can be expressed as:",
+    "analysis": "The paragraph mentions the optimization of parallel plate capacitors to maximize the scale factor, which is a technical aspect related to MEMS devices.",
+    "correlation": 0.85
+  },
+  {
+    "id": "doc_19",
+    "content": "$$\nS F = \\frac {\\omega_ {n 1} - \\omega_ {n 2}}{a} \\tag {1}\n$$",
+    "analysis": "The paragraph presents an equation for the scale factor, which is a technical parameter relevant to the performance of the MEMS accelerometer.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_20",
+    "content": "(a).",
+    "analysis": "The text is a placeholder or a section title without technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_21",
+    "content": "",
+    "analysis": "The text is empty and does not contain any information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_22",
+    "content": "(b).",
+    "analysis": "The text is a placeholder or a section title without technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_23",
+    "content": "(c).",
+    "analysis": "The text is a placeholder or a section title without technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_24",
+    "content": "(d).",
+    "analysis": "The text is a placeholder or a section title without technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_25",
+    "content": "Fig. 2. (a) Schematic diagram of structure. (b) Close-up view of turning electrode parallel plate capacitors. (c) Two proof masses moves on the same direction. (d) Anti-phase mode of resonator.  Fig. 3. Scale factor as function of the big gap   d_{1} ..",
+    "analysis": "Figure captions explaining MEMS devices or experiments, including a schematic diagram of the structure, close-up view of turning electrode parallel plate capacitors, proof masses movement, and anti-phase mode of the resonator.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_26",
+    "content": "where   SF  is scale factor,   \\omega_{n1}  and   \\omega_{n2}  are the frequencies of two resonators. Take electrostatic spring softening into consideration, the resonant frequency of each resonator is written as:",
+    "analysis": "Technical explanation of the scale factor and resonant frequencies of two resonators, including the consideration of electrostatic spring softening.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_27",
+    "content": "$$\n\\omega_ {n} = \\sqrt {\\frac {k - k _ {e}}{m}} \\tag {2}\n$$",
+    "analysis": "Equation for the resonant frequency of each resonator, considering mechanical stiffness and electrostatic softening spring.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_28",
+    "content": "where   k  is the mechanical stiffness of resonator,   k_{e}  is the stiffness of electrostatic softening spring,   m  is equivalent mass.   k  and   m  can be obtained through finite element analysis.   k_{e}  is defined as:",
+    "analysis": "Explanation of the parameters in the equation, including mechanical stiffness, electrostatic softening spring, and equivalent mass, and how they can be obtained through finite element analysis.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_29",
+    "content": "$$\nk _ {e} = \\frac {\\partial F _ {e}}{\\partial x} = 2 \\times N \\varepsilon_ {0} t b V ^ {2} \\left[ \\frac {1}{(d _ {2} + x) ^ {3}} + \\frac {1}{(d _ {1} - x) ^ {3}} \\right] (3)\n$$",
+    "analysis": "Equation for the stiffness of the electrostatic softening spring, with detailed parameters and their relationships.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_30",
+    "content": "where   F_{e}  is static electricity force,   x  is the displacement of proof masses when acceleration applied,   N  is the number of parallel plate capacitors,   \\varepsilon_0  is dielectric constant,   t  is the thickness of structure,   b  is the length of parallel plate capacitors,   V  is the tuning voltage applied on the parallel plate capacitors,   d_{1}, d_{2}  is the gap of parallel plate capacitors (as shown in Figure 2(b)). The displacement of proof masses   x  can be acquired by solving the equation among beam force, static electricity force and inertial force. Among the parameters related to the stiffness of electrostatic softening spring,   t  is",
+    "analysis": "The paragraph provides technical information about the static electricity force, displacement of proof masses, and the parameters involved in the parallel plate capacitors. It includes equations and detailed explanations of the physical principles, which are relevant to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_31",
+    "content": "TABLEI DESIGNED PARAMETERS FOR EACH PROOF MASS.",
+    "analysis": "This is a section title for a table listing designed parameters for each proof mass. It does not contain any technical content or detailed information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_32",
+    "content": "80\\mu \\mathrm{m}  according to fabrication technique and   b  is supposed to as bigger as possible.   N  and   d_{1}, d_{2}  are mutual restraint in a fixed size layout. Considering fabrication technique, the small gap   d_{2}  is chosen to be   6\\mu \\mathrm{m} . Through multiple calculations based on the equations above built in the MATLAB,   d_{1}  is chosen to be   10\\mu \\mathrm{m}  to maximize the scaling factor as shown in Figure 3. The relevant geometric dimensions of each proof mass are reported in Table I.",
+    "analysis": "The paragraph discusses the design parameters for the proof masses, including fabrication constraints and the choice of specific dimensions. It also mentions the use of MATLAB for calculations and refers to a figure, providing technical details relevant to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_33",
+    "content": "The control circuits consist of analog front-end circuit, digital analog conversion circuit and digital circuit as shown in Figure 4(a). The output of the resonator is amplified by a trans-impedance amplifier and then some common errors are eliminated through differentiator in analog front-end circuit. Digital circuit includes continuous ring-down circuit and quality factor, frequency readout circuit.",
+    "analysis": "The paragraph describes the control circuits of the MEMS device, including the analog front-end circuit, digital-to-analog conversion circuit, and digital circuit. It explains the function of each part and how they work together, which is highly relevant to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_34",
+    "content": "Each resonator of accelerometer can be treated as a second order spring-mass-damping system. Quality factor is defined",
+    "analysis": "The paragraph introduces the concept of treating each resonator as a second-order spring-mass-damping system and defines the quality factor. This is technical information related to the operating principles of MEMS devices.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_35",
+    "content": "",
+    "analysis": "This text is empty and does not contain any information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_36",
+    "content": "Fig. 4. (a) Schematic the control circuits consisting of analog front-end circuit, ADC, DAC and digital circuit. (b) Signals in digital circuit..",
+    "analysis": "This text describes a schematic of control circuits including analog front-end, ADC, DAC, and digital circuit, and mentions signals in the digital circuit. It is related to MEMS but lacks specific technical details about MEMS devices or systems.",
+    "correlation": 0.4
+  },
+  {
+    "id": "doc_37",
+    "content": "as the energy stored in the system over the energy dissipated per radian, which represents the damping of the system. Various mechanisms contribute to the energy loss of MEMS resonators, such as thermo-elastic dissipation (TED), air-damping, and anchor loss. These mechanisms are susceptible to temperature, thus quality factor varies with temperature [27]–[29]. Consequently, quality factor is an ideal candidate as the temperature indicator for the resonator, which realizes zero-distance temperature measurement. In order to obtain the real temperature continuously and precisely, continuous ring-down technique is proposed to monitor real-time quality factor [32].",
+    "analysis": "This paragraph discusses the quality factor of MEMS resonators, including energy loss mechanisms such as thermo-elastic dissipation, air-damping, and anchor loss. It also explains how the quality factor can be used as a temperature indicator and mentions continuous ring-down technique for real-time monitoring. This is highly relevant to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_38",
+    "content": "The s-domain transfer function of resonator can be expressed as:",
+    "analysis": "This text introduces the s-domain transfer function of a resonator, which is a technical aspect of MEMS. It is relevant to MEMS modeling and analysis.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_39",
+    "content": "$$\nH (s) = K _ {m} \\frac {1}{\\frac {s ^ {2}}{\\omega_ {n} ^ {2}} + \\frac {s}{\\omega_ {n} Q} + 1}, \\quad Q = \\frac {1}{2 \\varsigma} \\tag {4}\n$$",
+    "analysis": "This text provides the mathematical expression for the s-domain transfer function of a resonator, including the quality factor. It is a technical equation relevant to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_40",
+    "content": "where   K_{m}  is amplification coefficient of resonator,   \\omega_{n}  is angular frequency,   Q  is quality factor and   \\zeta  is damping coefficient. The amplitude function of the resonator can be simplified into [31]:",
+    "analysis": "The paragraph contains technical MEMS-related information, specifically the definition of parameters used in the amplitude function of a resonator, which is a key component in many MEMS devices.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_41",
+    "content": "$$\nH _ {A m p} (s) = K _ {m} \\omega_ {n} \\frac {1}{s + \\frac {\\omega_ {n}}{2 Q}} \\tag {5}\n$$",
+    "analysis": "The paragraph contains an equation for the amplitude function of a resonator, which is directly related to the technical aspects of MEMS devices and their behavior.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_42",
+    "content": "When the drive signal   (Dr)  applies on resonator (which is called ring), the resonator begins to vibrate at its resonant frequency, which can be considered as a step response. The vibration amplitude   (Amp)  can be written as:",
+    "analysis": "The paragraph describes the behavior of a resonator when a drive signal is applied, which is a common scenario in MEMS devices. It provides a step response and the resulting vibration amplitude, which are important for understanding MEMS performance.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_43",
+    "content": "$$\nA m p (t) = \\frac {2 K _ {f b} K _ {m} K _ {a} Q}{1 + 2 K _ {f b} K _ {m} K _ {a} Q} \\left(1 - e ^ {- \\left(\\frac {\\omega_ {n}}{2 Q} + K _ {m} K _ {a} K _ {f b} \\omega_ {n}\\right) t}\\right) \\tag {6}\n$$",
+    "analysis": "The paragraph contains an equation for the vibration amplitude of a resonator over time, which is a critical aspect of MEMS device operation. The equation includes various parameters that are relevant to MEMS design and analysis.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_44",
+    "content": "where   K_{a}  is the amplification coefficient of analog front-end circuit,   K_{fb}  is the amplification coefficient of feedback amplifier. Here two parameters are defined to expressed",
+    "analysis": "The paragraph defines additional parameters used in the equations for the resonator's behavior, such as the amplification coefficients of the analog front-end circuit and feedback amplifier. These parameters are essential for the technical understanding of MEMS devices.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_45",
+    "content": "(a).",
+    "analysis": "The text is a placeholder and does not contain any technical information about MEMS.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_46",
+    "content": "(b).",
+    "analysis": "The text is a placeholder and does not contain any technical information about MEMS.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_47",
+    "content": "(d).",
+    "analysis": "The text is a placeholder and does not contain any technical information about MEMS.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_48",
+    "content": "(c).",
+    "analysis": "The text is a placeholder and does not contain any technical information about MEMS.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_49",
+    "content": "(e)  Fig. 5. Sensors Implementation: (a) X-ray photo of the structure. (b) Perspective drawing of the MEMS chip. (c) Process cross-section for three layers of the MEMS chip. (d) Photo of the ceramic cartridge with MEMS chip attached inside. (e) View of the readout circuit implementation..",
+    "analysis": "The text describes the implementation of sensors including X-ray photos, perspective drawings, process cross-sections, and readout circuits, all related to MEMS chips. This is highly relevant technical information about MEMS devices and their fabrication.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_50",
+    "content": "succinctly:",
+    "analysis": "The text is a placeholder and does not contain any technical MEMS-related information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_51",
+    "content": "$$\n\\alpha = \\frac {2 K _ {f b} K _ {m} K _ {a} Q}{1 + 2 K _ {f b} K _ {m} K _ {a} Q} \\beta = \\frac {\\omega_ {n}}{2 Q} + K _ {m} K _ {a} K _ {f b} \\omega_ {n}\n$$",
+    "analysis": "The text contains equations that could be related to the modeling or simulation of MEMS devices, but without additional context, it is difficult to determine their specific relevance to MEMS.",
+    "correlation": 0.5
+  },
+  {
+    "id": "doc_52",
+    "content": "Consider positive axis, make natural logarithm process and choose two fixed points. Then the period of down   t_{ring}  can be obtained by:",
+    "analysis": "The text describes a mathematical process for obtaining a period, which could be relevant to MEMS if it pertains to the analysis of a MEMS device's behavior, but it lacks specific MEMS context.",
+    "correlation": 0.5
+  },
+  {
+    "id": "doc_53",
+    "content": "$$\nt _ {\\text {r i n g}} = \\left(t _ {2} - t _ {1}\\right) = \\frac {\\operatorname {I n} \\left(\\operatorname {A m p} _ {2} - a\\right) - \\operatorname {I n} \\left(\\operatorname {A m p} _ {1} - a\\right)}{\\beta} \\tag {7}\n$$",
+    "analysis": "The text contains an equation for calculating the ring time, which could be relevant to the analysis of a MEMS resonator, but it lacks specific MEMS context.",
+    "correlation": 0.5
+  },
+  {
+    "id": "doc_54",
+    "content": "When drive signal   (Dr)  removes (which is called down), the free vibration of resonator decays due to damping effect. The vibration amplitude   (Amp)  can be written as:",
+    "analysis": "The text describes the free vibration decay of a resonator due to damping, which is a common topic in MEMS, particularly in resonant MEMS devices. This is likely to be highly relevant to MEMS.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_55",
+    "content": "$$\nA m p (t) = \\pm \\frac {e ^ {- \\varsigma \\omega_ {n} t}}{\\sqrt {1 - \\varsigma^ {2}}}, \\quad \\varsigma = \\frac {1}{2 Q} \\tag {8}\n$$",
+    "analysis": "The equation describes the amplitude of a damped oscillation, which is relevant to MEMS devices, particularly in the context of resonant sensors or actuators. The equation includes parameters such as damping ratio and natural frequency, which are important in the analysis of MEMS systems.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_56",
+    "content": "Consider positive axis, make natural logarithm process and choose two fixed points. Then the period of down   t_{down}  can be obtained by:",
+    "analysis": "This paragraph explains a process for determining the period of a down cycle using natural logarithm and fixed points. This is likely related to the analysis of a MEMS device's behavior, such as in a resonant sensor or actuator.",
+    "correlation": 0.7
+  },
+  {
+    "id": "doc_57",
+    "content": "$$\nt _ {d o w n} = \\left(t _ {2} - t _ {1}\\right) = \\frac {2 Q}{\\omega_ {n}} \\left(\\text {I n A m p} _ {1} - \\text {I n A m p} _ {2}\\right) \\tag {9}\n$$",
+    "analysis": "The equation provides a method to calculate the time period of a down cycle, which is relevant to MEMS devices, especially in the context of resonant sensors or actuators. The equation involves quality factor (Q) and natural frequency, which are key parameters in MEMS analysis.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_58",
+    "content": "Consequently, the frequency of continuous ring-down   \\mathrm{f_Q}  can be repressed as:",
+    "analysis": "This paragraph introduces the concept of the frequency of continuous ring-down, which is a relevant parameter in the analysis of MEMS devices, particularly in resonant systems. The following equation will likely provide a way to calculate this frequency.",
+    "correlation": 0.7
+  },
+  {
+    "id": "doc_59",
+    "content": "$$\nf _ {Q} = \\frac {1}{t _ {\\text {d o w n}} + t _ {\\text {r i n g}}} \\tag {10}\n$$",
+    "analysis": "The equation defines the frequency of continuous ring-down, which is a key parameter in the analysis of MEMS devices, especially in resonant systems. This frequency is important for understanding the behavior and performance of MEMS resonators.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_60",
+    "content": "Since the period of ring   t_{ring}  and period of down   t_{down}  are both related to quality factor, frequency of continuous ring-down   f_{Q}  can represent quality factor. The measurement of quality factor is finally translated into the measurement of the frequency of continuous ring-down. In addition, quality factor is frequency modulated with this technique, which increases the robustness against the gain variation in circuit blocks.",
+    "analysis": "The paragraph discusses the relationship between the periods of ring and down, the frequency of continuous ring-down, and the quality factor. It also mentions the robustness of this technique against gain variation in circuit blocks.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_61",
+    "content": "Continuous ring-down circuit is supposed to read the sense signal   (Se)  from ADC and provide drive signal   (Dr)  for DAC. It includes an amplitude detector, a relay, a switch and an",
+    "analysis": "This paragraph describes the function of a continuous ring-down circuit, including its components and how it reads and provides signals to ADC and DAC.",
+    "correlation": 0.7
+  },
+  {
+    "id": "doc_62",
+    "content": "amplifier as shown in Figure 4 (a). Relay constantly compares amplitude   (Amp)  obtained from the amplitude detector with the upper limit   (Ul)  and lower limit   (Ll)  and produces a control signal for the switch. The continuous ring-down driving principle works as follows: when the vibration amplitude   (Amp)  of the resonator delays to lower limit, the switch close, switch signal   (Sw)  turns into \"1\", the feedback drive signal   (Dr)  applies on the resonator. While when the vibration amplitude   (Amp)  of the resonator reaches to upper limit, the switch close, switch signal   (Sw)  turns into \"0\", the feedback drive signal   (Dr)  removes. This process repeats constantly and continuous ring-down driving circuits is implemented. When the switch is close, amplifier enhances amplitude of drive signal to ensure sense signal reach the upper limit quickly and steadily. The signals of continuous ring-down show in Figure 4(b). The switch signal   (Sw)  is utilized as input of quality factor readout circuits for quality factor measurement.",
+    "analysis": "The paragraph explains the working principle of the continuous ring-down driving circuit, including the role of the relay, switch, and amplifier, and how the feedback drive signal is applied and removed based on the vibration amplitude.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_63",
+    "content": "With continuous ring-down technique, quality factor consequently translated into the measurement of the switch signal's frequency. Frequency digital converter (FDC) based on the principle of reset counter is designed for quality factor measurement. Principle of this FDC shows in Figure 4(a) and signals show in Figure 4(b) [32], [33]. Reset counter continuously records the number of crystal oscillator reference clock's (CLK) rising edge. When each rising edge of the switch's signal arrives, difference   (D)  between counter's values and previous value recorded by register will be calculated, which reflects the ratio between frequency of the switch signal and the frequency of reference clock. The frequency of reference clock is known, thus frequency of the switch can be acquired. Through a decimation filter, the digital number   (D)  is decimated to increase resolution. The quantization noise of the FDC is first-order noise-shaped, which means noise floor will be limited in the digital output spectrum at low",
+    "analysis": "This paragraph details the use of a frequency digital converter (FDC) for measuring the quality factor, explaining the principle of the FDC and how it calculates the frequency of the switch signal.",
+    "correlation": 0.85
+  },
+  {
+    "id": "doc_64",
+    "content": "Fig. 6. Frequency difference of the resonators for input accelerations in the range of   \\pm 1\\mathrm{g}  with different tuning voltage..",
+    "analysis": "The text is a figure caption describing the frequency difference of resonators for input accelerations with different tuning voltages. This is relevant to MEMS devices and their performance characteristics.",
+    "correlation": 0.75
+  },
+  {
+    "id": "doc_65",
+    "content": "frequencies. This FDC is quite suitable for quality factor readout as the frequency of switch signal (continuous ring-down) is about   0.5\\mathrm{Hz} . When sense signal   (Se)  goes through a zero-crossing comparator, a square wave   (Sq)  with the same frequency of sense signal generates, which is utilized as an input of frequency readout circuit. Frequency readout circuit is the same as the quality factor readout circuit based on the principle of reset counter.",
+    "analysis": "The text describes a frequency readout circuit and its components, including the sense signal, zero-crossing comparator, and square wave generation. It is related to MEMS devices and their operating principles.",
+    "correlation": 0.8
+  },
+  {
+    "id": "doc_66",
+    "content": "The structure is manufactured using Deep Reactive Ion Etching on SOI wafer with a standard   80\\mu \\mathrm{m}  SOI process, which enhances the scale factor and lower the mechanical Brownian noise level. Photo of the structure shows in Figure 5(a) including resonators in middle and pads around. The actual MEMS chip size is equal to   6.6^{*}6.6^{*}0.6~\\mathrm{mm}^3 . It is realized with three layers including the cover layer, the structure layer and the base layer, whose cross-section shows in Figure 5(c). The cover layer and the structure layer are joined by Au/Si eutectic bonding, forming a hermetic cavity. This process is named as on-wafer-level vacuum packaging technique [34], which is beneficial to maintain the vacuum for the resonator and enhance its quality factor. The MEMS chip including three layers is attached inside a ceramic cartridge with epoxy as shown in Figure 5(d). Each electrode pad is drawn to structure with lead pads on cover layer as shown in Figure 5(b) and connected to the corresponding pins of the ceramic cartridge with gold wires as shown in Figure 5(d). The control circuit is implemented in Figure 5(e). The analog front-end circuit on which packaged MEMS chip is welded and digital analog conversion circuit are printed circuit boards (PCBs). Main chips are chosen from ANALOG DEVICES. The sampling rate of analog-to-digital converter (ADC) and digital-to-analog converter (DAC) is chosen to be   700\\mathrm{kHz}  and their data is in a 16-bit word format. Digital control circuit is implemented in a Diginent Nexys4 DDR board, based on the latest Artix-7 FPGA from Xilinx.",
+    "analysis": "The text provides detailed information about the manufacturing process of a MEMS structure, including deep reactive ion etching, the SOI wafer process, and the on-wafer-level vacuum packaging technique. It also describes the physical dimensions and layers of the MEMS chip, as well as the control circuit implementation.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_67",
+    "content": "The accelerometer was mounted on a horizontal axis rotation table and the frequency differences between two",
+    "analysis": "The text mentions an accelerometer mounted on a horizontal axis rotation table and refers to frequency differences, which is related to MEMS applications and experimental setups.",
+    "correlation": 0.7
+  },
+  {
+    "id": "doc_68",
+    "content": "",
+    "analysis": "The text is empty and does not contain any technical or non-technical information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_69",
+    "content": "(a)  (b).",
+    "analysis": "The text contains placeholders for figures (a) and (b), which do not provide any technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_70",
+    "content": "Fig. 7. (a) Output of the accelerometer collected for two hours. (b) Allan variance of output of the accelerometer.  Fig. 8. Set-up for temperature experiments of accelerometers..",
+    "analysis": "Figure captions explaining MEMS devices or experiments, specifically the output of an accelerometer and Allan variance.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_71",
+    "content": "resonators are recorded under different tilt angles. Since the scale factor can be adjusted by tuning the voltage applied on the parallel plate capacitors, this experiment was also repeated with three different tuning voltages (3.9, 5 and 6V). Experiments reveal linear response to acceleration with tunable scale factors of   2.5\\mathrm{Hz / g} ,   5\\mathrm{Hz / g}  and   10.4\\mathrm{Hz / g} , respectively as shown in Figure 6, which corresponds to the theoretical calculation:   2.55\\mathrm{Hz / g} ,   4.94\\mathrm{Hz / g}  and   9.85\\mathrm{Hz / g} , respectively. It should be noted that all the further experimental data was derived using a more conservative value of   5\\mathrm{Hz / g}  in order to obtain a balance between scale factor and its nonlinearity.",
+    "analysis": "Technical MEMS-related information, including experimental setup, results, and theoretical calculations for resonators under different tilt angles and tuning voltages.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_72",
+    "content": "For evaluation of bias stability of the accelerometer at room temperature, the accelerometer was placed on a stable marble foundation with zero acceleration input and the output is collected for 120 minutes with a sampling rate of   250\\mathrm{Hz}  as shown in Figure 7(a). Then the Allan variance of the data is calculated   4.3\\mu \\mathrm{g}  bias instability as shown in Figure 7(b). In the same circumstance, quality factor is 4231 and 4073 through ring-down testing for two resonators respectively. Table II summarizes the measured performance of the accelerometer and the comparison with the previously reported resonant accelerometers.",
+    "analysis": "Technical MEMS-related information, including evaluation of bias stability, experimental setup, and performance metrics of the accelerometer.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_73",
+    "content": "",
+    "analysis": "Empty or placeholder text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_74",
+    "content": "",
+    "analysis": "Empty or placeholder text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_75",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_76",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_77",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_78",
+    "content": "Fig. 9. (a) TCF of NRA1 (SF:   5\\mathrm{Hz / g} ). (b) TCF of NRA1 (SF:   10.4\\mathrm{Hz / g} ). (c) TCF of NRA2. (d) TCF of VBA1. (e) TCF of VBA2. (f) TCF of VBA3..",
+    "analysis": "Figure captions explaining MEMS devices or experiments",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_79",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_80",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_81",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_82",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_83",
+    "content": "",
+    "analysis": "",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_84",
+    "content": "Fig. 10. Results of temperature cycling experiments: (a) Collection of frequencies, quality factors and temperature. (b) Sense signal at   40^{\\circ}\\mathrm{C}  and   -40^{\\circ}\\mathrm{C} . (c) Relationship between frequency difference, quality factor and temperature. (d) Acceleration output comparison..",
+    "analysis": "Fig. 10. Results of temperature cycling experiments: (a) Collection of frequencies, quality factors and temperature. (b) Sense signal at -40C and -40C. (c) Relationship between frequency difference, quality factor and temperature. (d) Acceleration output comparison.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_85",
+    "content": "In order to evaluate the performance of temperature of the accelerometer, we compare the proposed accelerometer (NRA) and a vibration beam resonant accelerometer (VBA) [11] in the following testing. The resonant frequency and scale factor of this vibration beam resonant accelerometer are   25567\\mathrm{Hz}  and   31.56\\mathrm{Hz / g}  respectively. Experimental systems are built in Figure 8. Analog front-end circuits on which packaged MEMS chips are welded and a thermometer were put in the temperature chamber and installed on a horizontal axis turntable. Temperature is set at different points and stays for two hours at each point to ensure uniformity. Frequencies of the accelerometers and temperature were recorded. Based on",
+    "analysis": "This paragraph describes the experimental setup and procedure for evaluating the performance of a MEMS accelerometer, including technical details such as resonant frequency, scale factor, and temperature testing. It fits into the 'should be retained' category.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_86",
+    "content": "the data collected, temperature coefficient of frequency (TCF) defined as frequency change over temperature change is calculated as shown in Figure 9.",
+    "analysis": "This paragraph discusses the calculation of the temperature coefficient of frequency (TCF) based on the collected data, which is a technical aspect related to MEMS accelerometers. It should be retained.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_87",
+    "content": "The TCF of NRA is closed to the TCF of silicon resonant systems typically   -30~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  as shown in Figure 9(a), (b), (c). As to VBA, TCF is deviated from   -30~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and changes drastically varying temperature as shown in Figure 9 (d), (e), (f). Besides the temperature coefficient of the silicon properties, package stress also plays a huge role, which causes the TCF of VBA changing drastically varying temperature. These two resonant accelerometers were fabricated with the same standard SOI process and packaged with the same technique. Both accelerometers have not deliberately designed to ensure package-stress isolated. It is obvious to find that",
+    "analysis": "This paragraph provides detailed technical information about the TCF of the NRA and VBA, including the impact of package stress on the TCF. It also compares the performance of the two accelerometers, which is relevant to MEMS. It should be retained.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_88",
+    "content": "TABLE II PERFORMANCE COMPARISON BETWEEN THE PROPOSED NRA AND PREVIOUSLY REPORTED RESONANT ACCELERometers.",
+    "analysis": "This is a section title without any technical content. It should not be retained.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_89",
+    "content": "- Not mentioned.",
+    "analysis": "This text is a placeholder or a note indicating that no content is mentioned. It should not be retained.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_90",
+    "content": "VB: vibration beams, ES: electrostatic spring.",
+    "analysis": "The text provides abbreviations for MEMS-related terms, specifically vibration beams and electrostatic spring. This is technical information related to MEMS.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_91",
+    "content": "the NRA is insensitive to stress compared with VBA thinks to its principle as mentioned in the abstract. In most cases, the frequency difference between two differential resonators reflects the input acceleration, while the common mode errors such as temperature effect can be efficiently cancelled, and scale factor can also be doubled. TCF of frequency difference is decreased to   1.4\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  for NRA.",
+    "analysis": "The text discusses the insensitivity of NRA to stress compared to VBA, frequency difference between differential resonators, and temperature effects. It also mentions the scale factor and TCF of frequency difference, which are all technical MEMS-related information.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_92",
+    "content": "For verification of temperature compensation based on real-time quality factor via continuous ring-down technique, temperature cycling experiments were conducted. The temperature of thermal chamber was set to change from   -40^{\\circ}\\mathrm{C}  to   40^{\\circ}\\mathrm{C}  on cycles and data is collected by upper computer as shown in Figure 10(a). The waveforms of the sense signal of Resonator 1 at two different temperatures are recorded and shows in Figure 10(b). The frequency of continuous ring-down is different at different temperature, through which quality factor can be acquired.",
+    "analysis": "The text describes temperature cycling experiments conducted to verify temperature compensation based on real-time quality factor via continuous ring-down technique. It includes details about the experimental setup and data collection, which are technical MEMS-related information.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_93",
+    "content": "Figure10(c) shows that quality factor (average value of two resonators) has a better correlation with frequency difference, while the relationship between frequency difference and temperature measured by thermometer has hysteresis. Finally, frequency difference (acceleration output) is compensated with linear compensation by quality factor and temperature. The acceleration output attains high stability relatively after quality factor compensation, while acceleration output after temperature compensation is still unstable due to hysteresis as shown in Figure 10(d). The bias stability of acceleration   (1\\sigma  value) is improved from   35.2\\mathrm{mg}  to   0.08\\mathrm{mg}  after compensation over   -40^{\\circ}\\mathrm{C}  to   40^{\\circ}\\mathrm{C} , which is   36\\times  better than that based on external thermometer.",
+    "analysis": "The text explains the relationship between quality factor and frequency difference, as well as the hysteresis in the relationship between frequency difference and temperature. It also discusses the compensation methods and the improvement in bias stability after compensation, which are all technical MEMS-related information.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_94",
+    "content": "In this paper, a resonant MEMS accelerometer based on electrostatic spring softening effect and continuous ring-down technique has been implemented. Through electrostatic softening spring, the displacement of proof masses caused by external acceleration is modulated on the frequency of resonator's anti-phase modal without any stress transmission. In control circuit, a method of temperature compensation based on the measurement of real-time quality factor via continuous",
+    "analysis": "The text introduces a resonant MEMS accelerometer based on electrostatic spring softening effect and continuous ring-down technique. It explains the modulation of proof mass displacement and the method of temperature compensation, which are technical MEMS-related information.",
+    "correlation": 1.0
+  },
+  {
+    "id": "doc_95",
+    "content": "ring-down is proposed, which attenuates measuring hysteresis and improves the precision of temperature compensation. The key specifications of this accelerometer were tested such as measuring range, scale factor, Allan variance and quality factor. Experimental results show that this accelerometer has a better performance of temperature compared with vibration beam resonant accelerometer. The stability of acceleration output was improved from   35.2\\mathrm{mg}  to   0.08\\mathrm{mg}  with quality factor compensation ranging from   -40^{\\circ}\\mathrm{C}  to   +40^{\\circ}\\mathrm{C} , which is   36\\times  better than that based on external thermometer.",
+    "analysis": "The paragraph discusses the performance and specifications of a MEMS accelerometer, including temperature compensation and experimental results. It contains technical information about MEMS devices.",
+    "correlation": 0.9
+  },
+  {
+    "id": "doc_96",
+    "content": "- [1] M. W. Judy, \"Evolution of integrated inertial MEMS technology,\" in Proc. Solid-State Sens., Actuator Microsyst. Workshop, 2004, pp. 27-32.\n- [2] J. Marek, “MEMS for automotive and consumer electronics,” in IEEE Int. Conf. Solid-State Circuits Conf. (ISSCC) Dig. Tech. Papers, Feb. 2010, pp. 9–17.\n- [3] M. S. Weinberg et al., \"Micromachining inertial instruments,\" in Proc. Micromachining Microfabrication Process Technol. II, Int. Soc. Opt. Photon., vol. 2879, 1996, pp. 26-36, doi: 10.1117/12.251201.\n- [4] J. Chae, H. Kulah, and K. Najafi, \"An in-plane high-sensitivity, low-noise micro-g silicon accelerometer,\" in Proc. IEEE 16th Int. Conf. MICRO Electro Mech. Syst. (MEMS), Kyoto, Japan, Jan. 2003, pp. 466-469.\n- [5] M. A. Perez and A. M. Shkel, \"Design and demonstration of a bulk micromachined Fabry-Pérot   \\mu g-resolution accelerometer,\" IEEE Sensors J., vol. 7, no. 12, pp. 1653-1662, Dec. 2007.\n- [6] R. Hopkins, J. Miola, R. Setterlund, B. Dow, and W. Sawyer, \"The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications,\" in Proc. Nat. Tech. Annu. Meeting Inst. Navigat., 2005, pp. 970-979.\n- [7] J. Zhao et al., \"A   0.23\\mu \\mathrm{g}  bias instability and   1.6~\\mu \\mathrm{g} / \\mathrm{Hz}^{1 / 2}  resolution silicon oscillating accelerometer with build-in   \\Sigma -\\Delta  frequency-to-digital converter,\" in Proc. IEEE VLSI Circuits, Jun. 2016, pp. 1-2.\n- [8] G. Vigevani, F. T. Goericke, A. P. Pisano, I. I. Izyumin, and B. E. Boser, \"Microleverage DETF aluminum nitride resonating accelerometer,\" in Proc. IEEE Freq. Control Symp., May 2012, pp. 1-4.\n- [9] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, and B. Simoni, \"A resonant microaccelerometer with high sensitivity operating in an oscillating circuit,\" J. Microelectromech. Syst., vol. 19, no. 5, pp. 1140-1152, 2010.\n- [10] Y. Zhao et al., \"A sub-   \\mu g bias-instability MEMS oscillating accelerometer with an ultra-low-noise read-out circuit in CMOS,\" IEEE J. Solid-State Circuits, vol. 50, no. 9, pp. 2113-2126, Sep. 2015.\n- [11] A. A. Trusov, S. A. Zotov, B. R. Simon, and A. M. Shkel, \"Silicon accelerometer with differential frequency modulation and continuous self-calibration,\" in Proc. IEEE Int. Conf. MICRO Electro Mech.Syst., Jan.2013,pp.29-32.\n- [12] C. Comi, A. Corigliano, G. Langfelder, V. Zega, and S. Zerbini, \"Sensitivity and temperature behavior of a novel z-axis differential resonant micro accelerometer,\" J. Micromech. Microeng., vol. 26, no. 3, p. 035006, 2016.\n- [13] C. Comi, A. Corigliano, A. Ghisi, and S. Zerbini, “A resonant micro accelerometer based on electrostatic stiffness variation,” Meccanica, vol. 48, no. 8, pp. 1893–1900, 2013.\n- [14] B.-L. Lee, C.-H. Oh, S. Lee, Y.-S. Oh, and K.-J. Chun, \"A vacuum packaged differential resonant accelerometer using gap sensitive electrostatic stiffness changing effect,\" in Proc. 13th Int. Conf. MICRO Electro Mech. Syst., Jan. 2000, pp. 352-357.\n- [15] O. Tabata and T. Yamamoto, “Two-axis detection resonant accelerometer based on rigidity change,” Sens. Actuators A, Phys., vol. 75, no. 1, pp. 53-59, 1999.\n- [16] J. Zhang, Y. Wang, V. Zega, Y. Su, and A. Corigliano, \"Nonlinear dynamics under varying temperature conditions of the resonating beams of a differential resonant accelerometer,\" J. Micromech. Microeng., vol. 28, no. 7, p. 075004, 2018.\n- [17] J. H. Dong, A. P. Qiu, and R. Shi, \"Temperature influence mechanism of micromechanical silicon oscillating accelerometer,\" in Proc. IEEE Power Eng. Automat. Conf., Sep. 2011, pp. 385-389.\n- [18] R. Melamud et al., \"Effects of stress on the temperature coefficient of frequency in double clamped resonators,\" in IEEE Int. Conf. Solid-State Sens., Actuators Microsyst. Dig. Tech. Papers (Transducers), vol. 1, Jun. 2005, pp. 392-395.",
+    "analysis": "This is a list of bibliographic references. It does not contain any technical MEMS-related information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_97",
+    "content": "- [19] G. J. Liu, T. Jiang, Q. Jiang, and A. Wang, \"Characterization of a MEMS accelerometer considering environmental temperature fluctuations,\" Mater. Sci. Forum, vols. 697-698, pp. 801-804, Sep. 2011.\n- [20] R. Yang, Z. Wang, J. Lee, K. Ladhane, D. J. Young, and P. X. L. Feng, \"Temperature dependence of torsional and flexural modes in 6H-SiC microdisk resonators,\" in Proc. IEEE Int. Freq. Control Symp. (FCS), May 2014, pp. 1-3.\n- [21] G. Xia, Q. Shi, A. Qiu, X. Yu, and Z. Pei, \"An on-chip thermal stress evaluation method for silicon resonant accelerometer,\" in Proc. IEEE Sensors, Oct. 2016, pp. 1-3.\n- [22] C. M. Jha, M. A. Hopcroft, and S. A. Chandorkar, \"Thermal isolation of encapsulated MEMS resonators,\" J. Microelectromech. Syst., vol. 17, no. 1, pp. 175-184, 2008.\n- [23] S.-H. Lee, S. W. Lee, and K. Najafi, \"A generic environment-resistant packaging technology for MEMS,\" in Proc. IEEE Int. Solid-State Sens., Actuators Microsyst. Conf. (TRANSDUCERS), Jun. 2007, pp. 335-338.\n- [24] R. Tabrizian, G. Casinovi, and F. Ayazi, \"Temperature-stable silicon oxide (SiOx) micromechanical resonators,\" IEEE Trans. Electron Devices, vol. 60, no. 8, pp. 2656-2663, Aug. 2013.\n- [25] D. R. Myers, R. G. Azevedo, L. Chen, M. Mehregany, and A. P. Pisano, \"Passive substrate temperature compensation of doubly anchored double-ended tuning forks,\" J. Microelectromech. Syst., vol. 21, no. 6, pp. 1321-1328, 2012.\n- [26] T. Kose, K. Azgin, and T. Akin, \"Temperature compensation of a capacitive MEMS accelerometer by using a MEMS oscillator,\" in Proc. IEEE Int. Symp. Inertial Sensors Syst., Feb. 2016, pp. 33-36.\n- [27] B. Kim et al., \"Temperature dependence of quality factor in MEMS resonators,\" J. Microelectromech. Syst., vol. 17, no. 3, pp. 755-766, 2008.\n- [28] M. A. Hopcroft et al., \"Temperature compensation of a MEMS resonator using quality factor as a thermometer,\" in Proc. IEEE Int. Conf. MICRO Electro Mech. Syst. (MEMS), Istanbul, Turkey, Jan. 2006, pp. 222-225.\n- [29] W. E. Newell, “Miniaturization of tuning forks,” Science, vol. 161, no. 3848, pp. 1320–1326, 1968.\n- [30] Y. Wang, L. Geng, J. Zhang, Y. Su, C. Yu, and J. Zhao, \"A virtual thermometer with low measuring hysteresis for high performance MEMS resonant sensors,\" in Proc. IEEE Sensors, Oct. 2017, pp. 1-3.\n- [31] L. Aaltonen and K. A. I. Halonen, \"An analog drive loop for a capacitive MEMS gyroscope,\" Analog Integr. Circuits Signal Process., vol. 63, no. 3, pp. 465-476, 2010.\n- [32] J. V. Rethy and G. Gielen, \"An energy-efficient capacitance-controlled oscillator-based sensor interface for MEMS sensors,\" in Proc. IEEE Solid-State Circuits Conf. (A-SSCC), Nov. 2013, pp. 405-408.\n- [33] J. Kim, T.-K. Jang, Y.-G. Yoon, and S. Cho, \"Analysis and design of voltage-controlled oscillator based analog-to-digital converter,\" IEEE Trans. Circuits Syst. I, Reg. Papers, vol. 57, no. 1, pp. 18-30, Jan. 2010.\n- [34] M. M. Torunbalci, S. E. Alper, and T. Akin, \"Wafer level hermetic encapsulation of MEMS inertial sensors using SOI cap wafers with vertical feedthroughs,\" in Proc. Int. Symp. Inertial Sensors Syst. (ISISS), Feb. 2014, pp. 1-2.",
+    "analysis": "This is another list of bibliographic references. It does not contain any technical MEMS-related information.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_98",
+    "content": "Yagang Wang (S'17) was born in Nantong, Jiangsu Province, China, in 1993. He received the B.S. degree from the School of Mechanical Engineering, Nanjing University of Science and Technology, in 2016, where he is currently pursuing the M.S.E. degree with the MEMS Inertial Technology Research Center. His research interests include the design of MEMS resonant accelerometer, control system analysis, and temperature characteristic of MEMS resonant accelerometer..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Despite mentioning MEMS, it is not technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_99",
+    "content": "Jing Zhang was born in Bayannur, Inner Mongolia, China, in 1990. She received the B.S. degree from the School of Science, Nanjing University of Science and Technology (NJUST), in 2012, where she is currently pursuing the Ph.D. degree with the MEMS Inertial Technology Research Center. Her research interests include the analysis and design of microsystems, MEMS structure design, mechanics, and MEMS processing..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Despite mentioning MEMS, it is not technical content.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_100",
+    "content": "Zhichao Yao was born in Shuozhou, Shanxi Province, China, in 1994. He received the B.S. degree from the School of Mechanical Engineering, Nanjing University of Science and Technology, in 2015, where he is currently pursuing the Ph.D. degree with the MEMS Inertial Technology Research Center. His research interests include the design of MEMS resonant gyroscope, energy dissipation characteristics, and vibration isolation of MEMS resonators..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Even though MEMS is mentioned in the research interests, it is still a low correlation text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_101",
+    "content": "Chen Lin was born in Changzhou, Jiangsu Province, China, in 1990. He received the B.S. degree from the School of Mechanical Engineering, Nanjing University of Science and Technology, in 2013, where he is currently pursuing the Ph.D. degree with the MEMS Inertial Technology Research Center. His research interests include the design of MEMS resonant gyroscope, vibration modeling, and energy dissipation characteristics of MEMS resonators..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Even though MEMS is mentioned in the research interests, it is still a low correlation text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_102",
+    "content": "Tong Zhou (M'17) was born in Xuzhou, Jiangsu Province, China, in 1985. He received the M.S. degree in detection technology and automatic equipment from Soochow University, Suzhou, China, in 2010, and the Ph.D. degree from the School of Mechanical Engineering, Nanjing University of Science and Technology, China. Since 2016, he has been a Lecturer with the School of Mechanical Engineering, Nanjing University of Science and Technology. His research interests include analog integrated circuits and system design, mixed-signal  integrated circuits design, and infrared readout integrated circuits design..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. The research interests do not specifically mention MEMS, making it a low correlation text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_103",
+    "content": "Yan Su was born in Suzhou, Jiangsu Province, China in 1967. He received the M.S.E. and Ph.D. degrees in instrumentation science and technology from Southeast University in 1996 and 2001, respectively. From 2001 to 2005, he was with Southeast University as an Associate Professor and a Professor. Since 2005, he has been a Professor with the School of Mechanical Engineering, Nanjing University of Science and Technology, China. His research interests include MEMS inertial sensors, biosensors, infrared sensors, and inertial navigation systems..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Even though MEMS is mentioned in the research interests, it is still a low correlation text.",
+    "correlation": 0.0
+  },
+  {
+    "id": "doc_104",
+    "content": "Jian Zhao (S'14-M'18) was born in Hanzhong, Shanxi Province, China, in 1989. He received the B.S. and Ph.D. degrees from the Nanjing University of Science and Technology, Nanjing, China, in 2011 and 2017, respectively. From 2012 to 2015, he was a Visiting Scholar with the VLSI and Signal Processing Laboratory, National University of Singapore, where he was involved in the design of CMOS readout circuits for silicon oscillating accelerometers and MEMS gyroscopes. He has been with the Department of Electronic Engineering, Tsinghua  University, since 2017, where he is currently a Research Associate. His research interests are integrated circuits for MEMS sensors and wireless body area networks..",
+    "analysis": "This is an author biography. It includes the author's birthplace, education history, and research interests. Even though MEMS is mentioned in the research interests, it is still a low correlation text.",
+    "correlation": 0.0
+  }
+]

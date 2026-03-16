@@ -1,0 +1,276 @@
+Article
+
+# An Improved Difference Temperature Compensation Method for MEMS Resonant Accelerometers
+
+Pengcheng Cai $^{1,2}$ , Xingyin Xiong $^{1}$ , Kunfeng Wang $^{1,2}$ , Jiawei Wang $^{1,2}$ and Xudong Zou $^{1,2,*}$
+
+<sup>1</sup> The State Key Laboratory of Transducer Technology, Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100190, China; caipengcheng16@mails.ucas.ac.cn (P.C.); xyxiong@mail.ie.ac.cn (X.X.); wangkunfeng17@mails.ucas.ac.cn (K.W.); jiaweiw0901@foxmail.com (J.W.)   
+$^{2}$ School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing 100049, China   
+* Correspondence: zouxd@aircas.ac.cn; Tel.: +86-10-58887528
+
+Abstract: Resonant accelerometers are promising because of their wide dynamic range and long-term stability. With quasi-digital frequency output, the outputs of resonant accelerometers are less vulnerable to the noise from circuits and ambience. Differential structure is usually adopted in a resonant accelerometer to achieve higher sensitivity to acceleration and to reduce common noise at the same time. Ideally, a resonant accelerometer is only sensitive to external acceleration. However, temperature has a great impact on resonant accelerometers, causing unexcepted frequency drift. In order to cancel out the frequency drift caused by temperature change, an improved temperature compensation method for differential vibrating accelerometers without additional temperature sensors is presented in this paper. Experiment results demonstrate that the temperature sensitivity of the prototype sensor is reduced from $43.16\mathrm{ppm} / {}^{\circ}\mathrm{C}$ to $0.83\mathrm{ppm} / {}^{\circ}\mathrm{C}$ within the temperature range of $-10^{\circ}\mathrm{C}$ to $70^{\circ}\mathrm{C}$ using the proposed method.
+
+![](images/c61267339d60bbe7a96be72c003e17226b6167d57a3eb738ff949a6bf22f60a2.jpg)
+
+Citation: Cai, P.; Xiong, X.; Wang, K.; Wang, J.; Zou, X. An Improved
+
+Difference Temperature
+
+Compensation Method for MEMS
+
+Resonant Accelerometers.
+
+Micromachines 2021, 12, 1022.
+
+https://doi.org/10.3390/mi12091022
+
+Academic Editor: Weidong Wang
+
+Received: 29 July 2021
+
+Accepted: 22 August 2021
+
+Published: 27 August 2021
+
+Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+![](images/d84d413b57abda1efcb75db8987c10e57e589cd01dd623469f48c038528db900.jpg)
+
+Copyright: © 2021 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+
+Keywords: resonant accelerometer; temperature compensation; difference
+
+# 1. Introduction
+
+Microelectromechanical systems (MEMS) accelerometers have been widely used in many applications, such as mobile devices, gaming, automobile and healthcare [1,2] for its advantages of small volume, light weight, low power consumption and low cost [3]. However, MEMS accelerometers still need further development for high precision applications, such as inertial navigation, tilt measurement and geophysical measurements [4-9]. Among various kinds of MEMS accelerometers, silicon resonant accelerometers are promising for high sensitivity, large linear range, low bias instability and so on [10-13]. A silicon resonant accelerometer converts external acceleration input into modulated frequency output as the acceleration will change the stiffness of resonator. With frequency modulation output, the signal is easy to measure and not vulnerable to the circuit noise [14,15].
+
+To reduce common noise and improve the sensitivity to external acceleration, differential structure is often adopted. Ideally, the frequency of the resonator is only sensitive to the external acceleration. However, the material of differential vibrating accelerometers, normally single crystalline silicon, is temperature dependent, causing the device to be sensitive to temperature as well [16,17]. Moreover, the temperature sensitivity of the two resonators in an accelerometer may be different due to process and fabrication tolerances. To improve the performance against temperature, two typical approaches are explored. One way is to keep the temperature in the accelerometer stable with an inner oven [18-21]. Salvia presented a real time temperature compensation for MEMS oscillators using an integrated oven, achieving a frequency stability of $\pm 1$ ppm from $-20^{\circ}\mathrm{C}$ to $+80^{\circ}\mathrm{C}$ . Yang adopted a micro oven-control system to keep temperature in inertial sensors, providing the temperature-induced root of sum of squares bias error $1.920\mathrm{mg}$ from $-40^{\circ}\mathrm{C}$
+
+to $85^{\circ}\mathrm{C}$ for three-axis accelerometers in their Invensense MPU-6050. Another way is to remove the side effects caused by temperature change with thermal compensation [22-24]. In [22], an integrated temperature sensor is set to sense the temperature and the compensation algorithm is implemented in FPGA. The zero bias is reduced from $345\mathrm{mg}$ to $1.9\mathrm{mg}$ over the temperature range from $-10^{\circ}\mathrm{C}$ to $80^{\circ}\mathrm{C}$ . The work presented in [23] uses an additional resonator to sense the temperature and the result is used to make temperature compensation. Temperature is captured and a temperature compensation algorithm is implemented to make electrostatic stiffness control to cancel out the side effects caused by temperature change in [24], achieving about 100 times the improvement compared to without compensation. In the first way, an oven is needed additionally, and a heating controller as well. The heating controller and the oven form a closed loop for temperature, where the heating controller can sense the temperature and control the oven power, making the temperature a constant, thus removing the side effects caused by temperature change. An inner oven means not only a more complex system, but also higher power consumption. The second way is a usual alternative method to cancel the thermal affection. Aiming to compensate the impact of temperature fluctuation, a thermometer used to make a real-time measurement of temperature and a compensation algorithm used to cancel the side effect of temperature are required in the second method. The main drawback of using a temperature sensor is that temperature measurement error and thermal lags are inevitable. Besides the two typical methods mentioned above, there are some other novel approaches proposed to improve performance. Behbahani et al. proposed a wafer-level technique that can tune the frequency of axisymmetric resonators precisely and reduce the frequency mismatches of a subset of the wafer's resonators greatly [25]. An in situ bias drift compensation by using multiple rate measurements derived from a single resonator has been proved to be effective for reducing bias drifts caused by temperature in work [26]. These novel approaches are either in need of additional process steps or difficult to be applied on MEMS resonant accelerometers.
+
+To overcome the drawbacks mentioned above, we proposed an improved approach called proportional difference to accomplish the thermal compensation in a differential vibrating accelerometer with recognition of approximate linear drift in frequency caused by temperature change.
+
+# 2. Architecture and Temperature Sensitivity Analysis of the Sensor
+
+The schematic of the accelerometer is shown in Figure 1. Two double-ended tune fork resonators are connected to the proof mass through a pair of micro-lever force amplifiers on each side. The two resonators are driven and sensed by parallel-plate capacitor at two sides of the resonators. External acceleration will generate a force through the proof mass. This force is applied on and amplified by the micro-lever, and then acts on the resonator of each side, causing stiffness change of resonators and making their resonant frequency change with the external acceleration. As the force direction is opposite for the two resonators, a differential effect is achieved.
+
+The device is fabricated using silicon-on-insulator (SOI) foundry process and vacuum packaged by wafer-level package. Some parameters of the accelerometer are summarized in the Table 1.
+
+![](images/0ce6f3a8c1ffe2e5464c49a82d513547957ecbc8492bd84cc976dc8d7ea08386.jpg)  
+Figure 1. Schematic of the accelerometer.
+
+Table 1. Parameters of the accelerometer.   
+
+<table><tr><td>Parameter</td><td>Value</td></tr><tr><td>Device thickness</td><td>40 μm</td></tr><tr><td>Length of CC resonant beam</td><td>400 μm</td></tr><tr><td>Width of CC resonant beam</td><td>6 μm</td></tr><tr><td>Gap of resonant beam</td><td>2 μm</td></tr><tr><td>Quality of proof mass</td><td>1.50 mg</td></tr><tr><td>Quality factor</td><td>15,600</td></tr><tr><td>Resonant frequency 1 (at 30 °C)</td><td>197.2495 kHz</td></tr><tr><td>Resonant frequency 2 (at 30 °C)</td><td>195.6092 kHz</td></tr><tr><td>Scale factor of resonator 1</td><td>512 Hz/g</td></tr><tr><td>Scale factor of resonator 2</td><td>508 Hz/g</td></tr></table>
+
+The resonant frequency of the resonator is affected by temperature for many factors, where the temperature sensitivity of elasticity is considered mainly responsible for temperature drift in frequency in our accelerometer. In general, the elasticity of a material is represented by the Young's modulus $(E)$ . The change in Young's modulus with temperature is designated as temperature coefficient of elasticity $(TCE)$ and the expression of the temperature-dependent Young's modulus can be given by:
+
+$$
+E = E (2 9 8. 1 5 K) \left(1 - 6. 3 8 2 \times 1 0 ^ {- 5} \Delta T - 5. 1 9 9 \times 1 0 ^ {- 9} \Delta T ^ {2}\right) \tag {1}
+$$
+
+The change of temperature will also lead to thermal expansion of the silicon, which can be expressed by thermal expansion coefficient (TEC).
+
+$$
+T E C (T) = - 4 \times 1 0 ^ {- 1 2} T ^ {2} + 8 \times 1 0 ^ {- 9} T + 4. 7 \times 1 0 ^ {- 7} \tag {2}
+$$
+
+The size of the resonant beam will change with temperature, which can be calculated by:
+
+$$
+L (T) = L _ {0} + L _ {0} \left(T - T _ {0}\right) \bullet T E C (T) \tag {3}
+$$
+
+$$
+w (T) = w _ {0} + w _ {0} \left(T - T _ {0}\right) \bullet T E C (T) \tag {4}
+$$
+
+$$
+h (T) = h _ {0} + h _ {0} \left(T - T _ {0}\right) \bullet T E C (T) \tag {5}
+$$
+
+where $L$ is the length of the beam, $w$ is the width of the beam and $h$ is the height or thickness of the beam. Then, the resonant frequency can be estimated as following with considering of the effect caused by temperature.
+
+$$
+\begin{array}{l} f = \frac {\beta^ {2}}{2 \pi L ^ {2}} \sqrt {\frac {E I}{\rho A}} \\ = f \left(T _ {0}\right) + \frac {\beta^ {2}}{2 \pi L ^ {2}} \sqrt {\frac {E \left(T _ {0}\right) I}{\rho A}} \frac {1}{2 E \left(T _ {0}\right)} \frac {\partial E}{\partial T} \Delta T + \frac {\beta^ {2}}{2 \pi L ^ {2}} \sqrt {\frac {E \left(T _ {0}\right) I}{\rho A}} \left(- \frac {5}{2} \frac {1}{L} \frac {\partial L (T)}{\partial T} + \frac {1}{h} \frac {\partial h (T)}{\partial T} + \frac {1}{2} \frac {\partial w (T)}{T}\right) \Delta T \tag {6} \\ \approx f (T _ {0}) + \frac {\beta^ {2}}{2 \pi L ^ {2}} \sqrt {\frac {E (T _ {0}) I}{\rho A}} \frac {1}{2 E (T _ {0})} \frac {\partial E}{\partial T} \Delta T = f (T _ {0}) + k _ {E} (T _ {0}) \Delta T \\ \end{array}
+$$
+
+where $E$ is Young's modulus of the material, $I$ is moment of inertia, $A$ is the cross-sectional area of the beam, $\rho$ is the material density. Both change in Young's modulus and in geometry with temperature can cause drift in resonant frequency. The sensitivity to temperature is nearly $-8\mathrm{Hz} / {}^{\circ}\mathrm{C}$ due to the change of Young's modulus with temperature and $-0.1\mathrm{Hz} / {}^{\circ}\mathrm{C}$ for thermal expansion in geometry size. The temperature sensitivity caused by change of Young's modulus $k_{E}$ is also relative to the geometry as:
+
+$$
+k _ {E} = k _ {E} \left(L _ {0}, w _ {0}, h _ {0}\right) + \frac {\beta^ {2}}{2 \pi L _ {0} ^ {2}} \sqrt {\frac {E \left(T _ {0}\right) I _ {0}}{\rho A _ {0}}} \frac {1}{2 E \left(T _ {0}\right)} \frac {\partial E}{\partial T} \left(- \frac {5}{2} \frac {\Delta L}{L _ {0}} + \frac {1}{2} \frac {\Delta w}{w _ {0}} + \frac {\Delta h}{h _ {0}}\right) \tag {7}
+$$
+
+According to Equation (7), the relative change in length of the resonator would make the most change to temperature sensitivity, and the relative change in thickness would make the least.
+
+To get the characteristic of resonant frequency drift caused by temperature variations, a finite element multiphysics (FEM) simulation was taken with COMSOL (COMSOL Lnc., Stockholm, Sweden). Figure 2 shows the result of the simulation. Over the temperature from $-40^{\circ}\mathrm{C}$ to $80^{\circ}\mathrm{C}$ , a linear approximation is fairly good over the range with a residual norm no more than $0.44841\mathrm{Hz}$ , corresponding to $0.018\mathrm{ppm} / {}^{\circ}\mathrm{C}$ , which is quite small.
+
+![](images/1bbfb83527efffd2428718635bd4455aa3cd3e0e727c42bbdc8c05ea87910fb9.jpg)  
+(a)
+
+![](images/3e0e870957cfc857a471c1e07b9a65803f98e6ee0c1c282a5170068d27dbde3c.jpg)  
+(b)   
+Figure 2. (a) frequency drift caused by Young's modulus and thermal expansion with temperature and linear approximation, (b) residual error between simulation and linear approximation.
+
+# 3. Temperature Compensation
+
+# 3.1. Temperature Model of Sensor and Method for Temperature Compensation
+
+To improve the sensitivity to external acceleration of a MEMS resonant accelerometer, differential frequency output is often adopted, which has the opposite sensitivity to external acceleration, but the same direction sensitivity to temperature. The dependency of frequency on temperature has an approximately linear relationship for single crystalline
+
+silicon in a large range as discussed before. So, the output frequency of the two differential outputs may be expressed as follows with considering of the impact of temperature in frequency drift of a MEMS resonant accelerometer based on differential output.
+
+$$
+\left\{ \begin{array}{l} f _ {1} = f _ {1 0} + S _ {F 1} a + k _ {1} T \\ f _ {2} = f _ {2 0} + S _ {F 2} a + k _ {2} T \end{array} \right. \tag {8}
+$$
+
+$$
+S _ {F 1} > 0, S _ {F 2} <   0; k _ {1} <   0, k _ {2} <   0 \tag {9}
+$$
+
+where $f_{1}$ and $f_{2}$ are the resonant frequency of the resonators respectively, $S_{F1}, S_{F2}$ are the scale factors for the resonators to the external acceleration and $k_{1}, k_{2}$ are the temperature factors. The absolute value of scale factor $S_{F1}$ and $S_{F2}$ or temperature factor $k_{1}$ and $k_{2}$ are ideally equal to each other, but there may be some difference due to process deviation and other reasons. To implement temperature compensation, this work proposed a self-temperature compensation method called proportional difference without additional temperature sensor. The main idea of the promoted approach can be formulated as
+
+$$
+d f = f _ {1} - \alpha f _ {2} = f _ {b} + \left(S _ {F 1} - \alpha S _ {F 2}\right) a + \left(k _ {1} - \alpha k _ {2}\right) T \tag {10}
+$$
+
+$$
+\alpha = \frac {k _ {1}}{k _ {2}} \tag {11}
+$$
+
+$$
+f _ {b} = f _ {1 0} - \alpha f _ {2 0} \tag {12}
+$$
+
+The impact on frequency drift caused by temperature can be cancelled by the proportional difference of the two resonators within an accelerometer. $\alpha$ is called as temperature difference-ratio in this paper, and it is always a positive value as $k_{1}, k_{2}$ have the same sign in an accelerometer, ensuring $S_{F1} - \alpha S_{F2}$ be nonzero for the fact that $S_{F1}$ and $S_{F2}$ have opposite signs to each other because of the opposite sensitivity to the external acceleration. Without considering temperature compensation, the two resonant frequencies are made different directly to achieve external acceleration. This conventional method is called direct difference in this paper in contrast with the proposed approach.
+
+# 3.2. Calibration of Temperature Difference Ratio
+
+With the linear model, a self-calibration of temperature difference-ratio is proposed. In a typical way, a set of output frequencies from both resonators at N different temperature are recorded and linear fittings between frequencies and temperature are made to get the parameter $k_{1}$ , $k_{2}$ of the temperature model. In this process, a temperature chamber which can keep and monitor the temperature precisely as expected is necessary. Manual operation is required in most steps for the duration. This work proposed a simpler approach by calculating the temperature difference ratio directly using the least squares method instead of computing temperature factors of both resonators. For the zero-bias of the proposed approach of thermal compensation:
+
+$$
+\left. f _ {1} (T) \right| _ {a = 0} = \alpha f _ {2} (T) | _ {a = 0} + f _ {b} \tag {13}
+$$
+
+Because both $\alpha$ and $f_{b}$ are independent of the value of temperature, a group of frequencies from the two resonators in different temperatures would be sufficient, which means much more convenience and simplicity in operation.
+
+$$
+\left( \begin{array}{c c} f _ {2} (T _ {1}) | _ {a = 0} & 1 \\ f _ {2} (T _ {2}) | _ {a = 0} & 1 \\ \vdots & \vdots \\ f _ {2} (T _ {n}) | _ {a = 0} & 1 \end{array} \right) \times \left( \begin{array}{c} \alpha \\ f _ {b} \end{array} \right) = \left( \begin{array}{c} f _ {1} (T _ {1}) | _ {a = 0} \\ f _ {1} (T _ {2}) | _ {a = 0} \\ \vdots \\ f _ {1} (T _ {n}) | _ {a = 0} \end{array} \right) \tag {14}
+$$
+
+then
+
+$$
+\left( \begin{array}{c} \alpha \\ f _ {b} \end{array} \right) = \left(A ^ {T} A\right) ^ {- 1} A ^ {T} B \tag {15}
+$$
+
+where
+
+$$
+A = \left( \begin{array}{c c} f _ {2} (T _ {1}) | _ {a = 0} & 1 \\ f _ {2} (T _ {2}) | _ {a = 0} & 1 \\ \vdots & \vdots \\ f _ {2} (T _ {n}) | _ {a = 0} & 1 \end{array} \right), B = \left( \begin{array}{c} f _ {1} (T _ {1}) | _ {a = 0} \\ f _ {1} (T _ {2}) | _ {a = 0} \\ \vdots \\ f _ {1} (T _ {n}) | _ {a = 0} \end{array} \right) \tag {16}
+$$
+
+With the proposed calibration method, equipment which can change temperature meets the need. No additional temperature sensor is required to measure the temperature, which means no error caused by temperature measurement error and thermal lags. In this paper, a procedure of recording frequencies from the two channels during a process of cooling down while keeping the external acceleration as zero is implemented to calculate $\alpha$ and $f_{b}$ . Using the proposed approach, the process can be simplified as Figure 3b shows, where little manual operation is needed.
+
+![](images/f8709841afef3e0d362d43b0b743fe60d5a73b76d0f939c3203fdf711595031a.jpg)  
+(a)
+
+![](images/cf5e3240272cacae67bb490af5b356ee7e8e19d853379f5aab4a378d1dd9ea3d.jpg)  
+(b)   
+Figure 3. (a) Calibration of temperature factor. (b) Calibration of temperature difference ratio.
+
+# 4. Experiments and Results
+
+# 4.1. Experimental Setup
+
+Each resonator is capacitively excited by an oscillator circuit. The photograph of driving circuit and accelerometer is shown in Figure 4a and the schematic of the circuit is shown in Figure 4b. A $10\mathrm{V}$ DC voltage is applied to provide bias, with a $5\mathrm{mV}$ AC voltage applied across the electrodes of the parallel-plate capacitor to generate actuating force, driving the resonator. TIA (Trans-Impedance Amplifier) converts the movement current to voltage as the input of the oscillation loop. An AGC is used in every oscillation loop to provide a stable amplitude of oscillation, aiming to reduce the phase noise and limit the loop gain [27].
+
+![](images/000a12b4d3f68ad149f2d32f4e619f0c3a8f20eab1cbf750d2b0cfe1ae30b626.jpg)  
+(a)
+
+![](images/558a7992ef15eeb93768072587ca7067bb1bf1e8d160a94b8e3ffdee04aafa51.jpg)  
+(b)   
+Figure 4. (a) Photograph of driving circuit PCB (Printed Circuit Board) and packaged accelerometer. (b) Schematic of driving circuit.
+
+The device consisting of accelerometer and driving circuit was placed in the temperature chamber with a thermometer monitoring the temperature. A DC (Direct Current) power source was used to supply power for the device and two frequency counters (Keysight 53230A, Keysight Technologies, Santa Rosa, CA, USA) were used to measure the oscillating frequencies from the two differential resonators. The test platform and temperature chamber are shown in Figure 5a,b, respectively.
+
+![](images/d86d991e4af4a1b6cf47a17406b789a6942b4345559ac507fe2cb8ded894acca.jpg)  
+(a)
+
+![](images/bc380091ee18755f4cd5bde655f99b62d00b188e9bc8958df4cb1b892849d57d.jpg)  
+(b)   
+Figure 5. (a) The platform for temperature test. (b) Temperature chamber.
+
+# 4.2. Results and Discussion
+
+To prove the proposed approach of calibration, an experiment of getting temperature factor $k_{1}, k_{2}$ and calculating temperature difference ratio by $k_{1} / k_{2}$ was performed as well. The accelerometer was put in the temperature chamber, $-10^{\circ}\mathrm{C}$ to $70^{\circ}\mathrm{C}$ with a $10^{\circ}\mathrm{C}$ step is set, and the frequency of the two resonators is recorded after two hours, when the temperature becomes steady, to eliminate the thermal lag.
+
+Then a linear fitting between frequency with temperature is made for each resonator, as shown in Figure 6a,b. Results show that $f_{1}$ has a sensitivity of $-8.777\mathrm{Hz / K}$ and $f_{2}$ is $-7.615\mathrm{Hz / K}$ .
+
+![](images/8ba3ff5c24818daa08857d78e5e1009315515b53b613e36010d252eaf53464cb.jpg)  
+(a)
+
+![](images/4bb5935632338016b6814d688660c08df09e94286972537c7bbf03e106c20701.jpg)  
+(b)   
+Figure 6. (a) Calibration of temperature factor for resonator 1. (b) Calibration of temperature factor for resonator 2.
+
+Then, an experiment of dynamic temperature ramp down has been performed and the temperature difference ratio is calculated by proposed approach of calibration. After the temperature reached to $70^{\circ}\mathrm{C}$ , the target temperature was set to $-10^{\circ}\mathrm{C}$ . The output frequency of both resonators was sampled at an interval of $50~\mathrm{ms}$ and recorded as the temperature dropped down. The temperature difference ratio was calculated using the recorded frequencies from both resonators. The results of temperature difference ratio calculated by the two methods are summarized in Table 2. The proposed approach is proved to be effective according to the result by calculating with $k_{1} / k_{2}$ .
+
+Table 2. Calculated temperature difference ratio through the two method.   
+
+<table><tr><td></td><td>Temperature Factor 1</td><td>Temperature Factor 2</td><td>Temperature Difference Ratio</td></tr><tr><td>k1/k2</td><td>-8.777</td><td>-7.615</td><td>0.867</td></tr><tr><td>proposed</td><td>~</td><td>~</td><td>0.878</td></tr></table>
+
+To verify the approach of temperature compensation, another temperature ramp down experiment was taken. In the experiment, the temperature difference-ratio calculated by the proposed approach was used for compensation. The temperature is set to $70^{\circ}\mathrm{C}$ for a duration of $2\mathrm{h}$ . Then target temperature of the chamber was set as $-10^{\circ}\mathrm{C}$ , making temperature cool down to $-10^{\circ}\mathrm{C}$ in about $6\mathrm{h}$ . The frequencies, measured by Keysight 53230A, of the two output signals were recorded at a time interval of $50\mathrm{ms}$ for the duration, and the proportional difference proposed and direct difference were implemented with the output frequencies, respectively. In Figure 6, resonator 1 and resonator 2 showed $43.16~\mathrm{ppm} / {}^{\circ}\mathrm{C}$ and $38.48~\mathrm{ppm} / {}^{\circ}\mathrm{C}$ drift without any temperature compensation, respectively. A comparison between direct difference and proportional difference proposed is also shown in Figure 7. The direct difference can reduce the drift to $5.26~\mathrm{ppm} / {}^{\circ}\mathrm{C}$ as it can offset a part of side effects in frequency drift caused by temperature change, while the proposed proportional difference can cancel out the impact of temperature the most and reduce the drift to $0.83~\mathrm{ppm} / {}^{\circ}\mathrm{C}$ . Proportional difference performs much better than direct difference because proportional difference copes with the differential outputs while considering the effect of temperature and the fact that there may be differences of sensitivity to temperature between the two resonators.
+
+![](images/06c84b1b42c107760cb53fc9f1d88d119f99a285b158e89c19d37a7ac8f891a2.jpg)  
+Figure 7. Frequency drift in different cases.
+
+Allan deviation analysis is shown in Figure 8. with proportional difference implemented. The long-term noise, which is mainly caused by the change of temperature, is reduced the most. Compared with the frequency of a single resonator without any temperature compensation, the two kinds of differential methods perform evidently better at the start of about $10\mathrm{~s}$ . The differential outputs reduce the frequency drift caused by temperature changes. Within time more than $100\mathrm{~s}$ , the proportional difference evidently reduces the noise in contrast to direct difference as proportional difference can cancel out frequency drift to the greatest extent. As temperature changes over a large range for a long time, the proportional difference performed the best by achieving the least drift.
+
+![](images/b1e36e0d12c0b65354ef48c819bba9a42f47eaa2852cb8c8e3fee208a81af7d6.jpg)  
+Figure 8. Measured Allan deviation during the temperature ramp down.
+
+# 5. Conclusions and Future Work
+
+This article proposed an improved temperature compensation approach called proportional difference for accelerometers based on differential frequency modulation. A parameter named temperature difference ratio is used to cancelled the drift in the frequency of the differential resonators caused by temperature. A method using the least squares method is promoted to calculate the temperature difference ratio instead of measuring the temperature factor of each resonator, which is simpler and is proved to be effective. The approach of temperature compensation called proportional difference performs better than direct difference, which is usually used in accelerometers based on differential frequency
+
+modulation without considering the thermal impact, especially if there is a large difference in sensitivity to temperature of both resonators. The nonlinearity between temperature and bias drift over a large temperature range limits the performance of our approach. This may be improved in future work by making an optimization design on MEMS accelerometer and adding an oven controller which can tune the temperature in a small range.
+
+Author Contributions: Conceptualization, X.Z.; data curation, P.C.; formal analysis, K.W.; investigation, J.W.; methodology, P.C.; resources, X.Z.; supervision, X.Z.; validation, P.C.; writing—original draft, P.C.; writing—review and editing, X.X. All authors have read and agreed to the published version of the manuscript.
+
+Funding: This research was funded by the National Key Research and Development Program of China, grant No. 2018YFB2002300.
+
+Acknowledgments: The authors would like to thank Zheng Wang for his efforts with the sensors and Yunfei Liu for his assistance with the mathematical analysis. Thanks to everyone who helped us in our work.
+
+Conflicts of Interest: The authors declare no conflict of interest.
+
+# References
+
+1. Judy, M.W. Evolution of Integrated Inertial Mems Technology. In Proceedings of the 2004 Solid-State, Actuators, and Microsystems Workshop, Hilton Head Island, SC, USA, 6-10 June 2004.   
+2. Marek, J. MEMS for automotive and consumer electronics. In Proceedings of the 2010 IEEE International Solid-State Circuits Conference—(ISSCC), Bucharest, Romania, 16–20 September 2010.   
+3. Weinberg, M.S.; Bernstein, J.; Borenstein, J.T.; Campbell, J.; Sohn, J.B. Micromachining inertial instruments. In Proceedings of the SPIE—The International Society for Optical Engineering, Austin, TX, USA, 23 September 1996.   
+4. Hopkins, R.; Miola, J.; Setterlund, R. The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications. In Proceedings of the 2005 National Technical Meeting of The Institute of Navigation, San Diego, CA, USA, 24-26 January 2006.   
+5. Zou, X.; Thiruvenkatanathan, P.; Seshia, A.A. Micro-electro-mechanical resonant tilt sensor. In Proceedings of the IEEE International Frequency Control Symposium, Baltimore, MD, USA, 21-24 May 2012.   
+6. Zwahlen, P.; Nguyen, A.M.; Dong, Y.; Rudolf, F.; Schmid, H. Navigation grade MEMS accelerometer. In Proceedings of the IEEE International Conference on Micro Electro Mechanical Systems, Hong Kong, China, 24-28 January 2010.   
+7. Shan, X.; Zou, T.; Forbes, J.R.; Angeles, J. Design Specifications for Biaxial Navigation-Grade MEMS Accelerometers. In Proceedings of the ASME International Mechanical Engineering Congress and Exposition, Montreal, QC, Canada, 14–20 November 2014.   
+8. Zhao, C.; Pandit, M.; Sobreviela, G.; Steinmann, P.; Mustafazade, A.; Zou, X.; Seshia, A. JMEMS Letters A Resonant MEMS Accelerometer With 56ng Bias Stability and 98ng/Hz1/2 Noise Floor. J. Microelectromech. Syst. 2019, 28, 324-326. [CrossRef]   
+9. Rao, K.; Liu, H.; Wei, X.; Wu, W.; Tu, L.C. A High-resolution Area-change-based Capacitive MEMS Accelerometer for Tilt Sensing. In Proceedings of the 2020 IEEE International Symposium on Inertial Sensors and Systems (INERTIAL), Hiroshima, Japan, 23-26 March 2020.   
+10. Comi, C.; Corigliano, A.; Langfelder, G.; Longoni, A.; Tocchio, A.; Simoni, B. A Resonant Microaccelerometer With High Sensitivity Operating in an Oscillating Circuit. J. Microelectromech. Syst. 2010, 19, 1140-1152. [CrossRef]   
+11. Seshia, A.A.; Palaniapan, M.; Roessig, T.A.; Howe, R.T.; Montague, S. A vacuum packaged surface micromachined resonant accelerometer. J. Microelectromech. Syst. 2003, 11, 784-793. [CrossRef]   
+12. Omura, Y.; Nonomura, Y.; Tabata, O. New resonant accelerometer based on rigidity change. In Proceedings of the International Conference on Solid State Sensors & Actuators, Chicago, IL, USA, 19 June 1999.   
+13. Seo, Y.H.; Cho, Y.-H. Design, fabrication, static test and uncertainty analysis of a resonant microaccelerometer. Sens. Mater. 2002, 14, 91-108.   
+14. Wang, Y.; Zhang, J.; Yao, Z.; Lin, C.; Tong, Z.; Su, Y.; Zhao, J. A MEMS Resonant Accelerometer With High Performance of Temperature Based on Electrostatic Spring Softening and Continuous Ring-Down Technique. IEEE Sens. J. 2018, 18, 7023-7031. [CrossRef]   
+15. Meldrum, M.A. Application of vibrating beam technology to digital acceleration measurement. Sens. Actuators A Phys. 1990, 21, 377-380. [CrossRef]   
+16. Liu, G.J.; Jiang, T.; Jiang, Q.K.; Wang, A.L. Characterization of a MEMS Accelerometer Considering Environmental Temperature Fluctuations. Mater. Sci. Forum 2011, 697-698, 801-804. [CrossRef]   
+17. Watanabe, H.; Yamada, N.; Okaji, M. Linear Thermal Expansion Coefficient of Silicon from 293 to 1000 K. Int. J. Thermophys. 2004, 25, 221-236. [CrossRef]   
+18. Yang, D.; Woo, J.K.; Lee, S.; Mitchell, J.; Challoner, A.D.; Najafi, K. A Micro Oven-Control System for Inertial Sensors. J. Microelectromech. Syst. 2017, 26, 507-518. [CrossRef]
+
+19. Kwon, H.K.; Ortiz, L.C.; Vukasin, G.D.; Chen, Y.; Kenny, T.W. An Oven-Controlled MEMS Oscillator (OCMO) With Sub 10mw, ± 1.5 PPB Stability Over Temperature. In Proceedings of the 2019 20th International Conference on Solid-State Sensors, Actuators and Microsystems & Eurosensors XXXIII (TRANSDUCERS & EUROSENSORS XXXIII), Berlin, Germany, 23-27 June 2019.   
+20. Xu, C.; Segovia-Fernandez, J.; Kim, H.J.; Piazza, G. Temperature-Stable Piezoelectric MEMS Resonators Using Integrated Ovens and Simple Resistive Feedback Circuits. J. Microelectromech. Syst. 2017, 26, 187-195. [CrossRef]   
+21. Salvia, J.C.; Melamud, R.; Chandorkar, S.A.; Lord, S.F.; Kenny, T.W. Real-Time Temperature Compensation of MEMS Oscillators Using an Integrated Micro-Oven and a Phase-Locked Loop. J. Microelectromech. Syst. 2010, 19, 192-201. [CrossRef]   
+22. Li, B.; Li, C.; Zhao, Y.; Han, C.; Zhang, Q. An integrated packaged resonant accelerometer with temperature compensation. Rev. Sci. Instrum. 2020, 91, 105004. [CrossRef] [PubMed]   
+23. Chiang, C.; Graham, A.B.; Lee, B.J.; Ahn, C.H.; Kenny, T.W. Resonant pressure sensor with on-chip temperature and strain sensors for error correction. In Proceedings of the 2013 IEEE 26th International Conference on Micro Electro Mechanical Systems (MEMS), Taipei, Taiwan, 20-24 January 2013.   
+24. Lee, J.; Rhim, J. Temperature compensation method for the resonant frequency of a differential vibrating accelerometer using electrostatic stiffness control. J. Micromech. Microeng. 2012, 22, 95016-95026+95011. [CrossRef]   
+25. Behbahani, A.H.; Kim, D.; Stupar, P.; Denatale, J.; M'Closkey, R.T. Tailored Etch Profiles for Wafer-Level Frequency Tuning of Axisymmetric Resonators. J. Microelectromech. Syst. 2017, 26, 333-343. [CrossRef]   
+26. Ge, H.H.; Behbahani, A.H.; Closkey, R.T.M. MEMS gyro drift compensation using multiple rate measurements derived from a single resonator. In Proceedings of the 2018 IEEE/ION Position, Location and Navigation Symposium (PLANS), Monterey, CA, USA, 23-26 April 2018; pp. 288-293.   
+27. Lee, S.; Nguyen, T.C. Influence of automatic level control on micromechanical resonator oscillator phase noise. In Frequency Control Symposium and PDA Exhibition Jointly with the 17th European Frequency and Time Forum, 2003, Proceedings of the 2003 IEEE International, Tampa, FL, USA, 4-8 May 2003; IEEE: Tampa, FL, USA, 2003.

@@ -1,0 +1,865 @@
+[
+    {
+        "type": "text",
+        "text": "Bulk-Micromachined Silicon Resonant Accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            68,
+            106,
+            929,
+            131
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Anping Qiu,Yan Su, Xinhua Zhu,Qin Shi ",
+        "bbox": [
+            341,
+            176,
+            653,
+            192
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Research Center of MEMS Inertial Technology ",
+        "bbox": [
+            341,
+            193,
+            655,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Nanjing University of Science and Technology ",
+        "bbox": [
+            341,
+            207,
+            653,
+            220
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Nanjing, P.R.Cjina, 210094 ",
+        "bbox": [
+            406,
+            220,
+            591,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Email:apqiu@mail.njust.edu.cn ",
+        "bbox": [
+            393,
+            233,
+            603,
+            247
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract—A micromechanical silicon resonant accelerometer (SRA) with micro leverage mechanism amplifying the inertial force is presented. SRA consists of a pair of double-ended tuning forks (DETF), a proof mass and a micro lever mechanism. Firstly, the relation between frequency shift and applied force of DETF is modeled with the classical Bernoulli-Euler beams theory and then simulated by the finite element analysis (FEA). The conclusion is that analytical analysis results are very close to simulation results. Secondly micro leverage mechanism is presented, and the equations for calculating the amplification factor are derived. The effect of pivot spring and output system constants on the amplification factor is analyzed. According to the analytical results, the SRA is designed and fabricated. Comparison of the obtained experimental results and analytical results shows good agreement. ",
+        "bbox": [
+            80,
+            273,
+            485,
+            467
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "I. INTRODUCTION ",
+        "text_level": 1,
+        "bbox": [
+            205,
+            486,
+            369,
+            500
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A resonant accelerometer is an oscillator whose frequency is a function of the quantity being measured. The output of the sensor is the value of the output frequency [1]. These devices have been considered attractive for a number of reasons, including simpler dynamics and control, improved stability, large dynamic range, high resolution, and a quasidigital FM output [2]. In contrast to those currently available commercial silicon accelerometers that translate acceleration into quasi-DC quantities as capacitance or resistance, silicon resonant accelerometer translates acceleration into a change of mechanical vibration and is less susceptible to the power supply and temperature fluctuations [3]. ",
+        "bbox": [
+            80,
+            504,
+            485,
+            669
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A number of researchers and research groups have worked on silicon resonant accelerometers. Draper Laboratory developed the silicon oscillating accelerometer (SOA) (Fig.1). The goal of the SOA design is to achieve a high SF, high Q resonator to meet the $1 - \\mu \\mathrm{g} / 1$ -ppm strategic-grade performance requirements. Performance data acquired approach the levels needed for strategic guidance mission [4]. Analog Devices, Inc. demonstrated the feasibility of resonant accelerometers in a surface-micromachining technology, and ",
+        "bbox": [
+            80,
+            675,
+            487,
+            790
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e3de6f7ae49ed39a765c9bd77e1ebd2b62d418e6dd5c6e1cd93f2575b8b559bb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            532,
+            268,
+            875,
+            362
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c66f706fb1e8b6e0e8ed020d9a5adcefc9cd65be13ccdd59f96fa0922ce479f.jpg",
+        "image_caption": [
+            "Figure 1 CSDL SOA (a) schematic, (b) detail "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            563,
+            371,
+            845,
+            530
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a prototype device has been fabricated in the BiMEMS foundry process (Fig.2). Here the SRA consisted of double-ended tuning fork (DETF) resonators whose natural frequencies are a function of an applied force. Force is transferred to the forks from the proof mass by leverage mechanism [2]. A summary of the basic working principle of the SRA is also provided below in section II. ",
+        "bbox": [
+            507,
+            546,
+            914,
+            635
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/122d8d884427804292d3445d12dc75a889115c2009428c4bc3bd3cc7eee56960.jpg",
+        "image_caption": [
+            "Figure 2. Microphotograph of fabricated accelerometer "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            594,
+            636,
+            821,
+            828
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Proceedings of the 2009 IEEE International Conference on Information and Automation June 22-25, 2009, Zhuhai/Macau, China ",
+        "bbox": [
+            87,
+            19,
+            386,
+            52
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "978-1-4244-3608-8/09/$25.00 © 2009 IEEE. ",
+        "bbox": [
+            75,
+            952,
+            381,
+            964
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1289 ",
+        "bbox": [
+            480,
+            952,
+            517,
+            963
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:09 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            92,
+            964,
+            897,
+            976
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II. SRA BASICS ",
+        "text_level": 1,
+        "bbox": [
+            205,
+            124,
+            354,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Figure 3 shows a schematic of the SRA. Figure 4 shows a SEM image of the accelerometer. The device uses a proof mass leveraged between DETFs. Mechanical structures of the accelerometer is $15\\mu \\mathrm{m}$ thick, the tuning fork are $6\\mu \\mathrm{m} \\times 650\\mu \\mathrm{m}$ , and the proof mass is approximately $1\\mathrm{mm} \\times 1\\mathrm{mm}$ . The forks are resonated at their natural frequencies by the sustaining circuitry, and when acceleration is applied to the device, the proof mass hinges about the pivot beam and applies forces to the two DETFs. One of these forks is subject to a tensile force which raises its natural frequency. The other experiences a compressive force, lowering its frequency. The output of the sensor is a change in frequency of the DETF, a quantity that is easily measured using digital techniques [2]. ",
+        "bbox": [
+            80,
+            142,
+            485,
+            330
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/31d6ebac22bfa8bbcedaec737f2ca9c6b7ae591c3f690d37abc641f40183a966.jpg",
+        "image_caption": [
+            "Figure 3. SRA schematic "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            117,
+            340,
+            438,
+            530
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4de40f7f58e5e541ca41a0c3109f1565044e910d8b01a83932222e8ffa2b01c6.jpg",
+        "image_caption": [
+            "Figure 4 SEM of silicon resonant accelerometer "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            127,
+            553,
+            408,
+            697
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "III. DETF RESONATORS DESIGN ",
+        "text_level": 1,
+        "bbox": [
+            205,
+            736,
+            450,
+            749
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The mechanical element of the DETF resonator comprises the two tines, each of which is anchored to the substrate on one end. Each tine has drive comb, a set of electrostatic comb is used to sustain oscillation. One set of combs is used to drive the tines, and the other is used to sense the vibrating of the tines. Assuming plane cross-section of the tines remains plane after deformation (slender beams) and elastic material behavior is linear, the function ",
+        "bbox": [
+            80,
+            754,
+            487,
+            861
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "of the vibration mode shape of the tine may be derived from a classical theory for Bernoulli-Euler beams. So the equation of motion of the tine can be written [5] ",
+        "bbox": [
+            507,
+            124,
+            912,
+            165
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE I \\frac {\\partial^ {4} y (x , t)}{\\partial x ^ {4}} + \\rho A \\frac {\\partial^ {2} y (x , t)}{\\partial t ^ {2}} = F (x, t) \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            613,
+            166,
+            912,
+            198
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $E$ is the Young's modulus of the material, $I$ is the area moment of inertia of the sine cross section, $\\rho$ is the density, $A$ is the beam cross-sectional area, $F$ is the applied axial force. ",
+        "bbox": [
+            507,
+            199,
+            912,
+            254
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Raleigh's energy method is used to obtain the natural frequencies of the tuning forks. The nominal natural frequency $(f_{n,l})$ clamped-clamped beam before loading is given by [7] ",
+        "bbox": [
+            507,
+            255,
+            912,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {n, 1} = \\frac {\\omega_ {n , 1}}{2 \\pi} = \\frac {1}{2 \\pi} \\sqrt {\\frac {1 9 3 . 5 9 E I}{[ 0 . 3 9 2 6 m _ {T} + M ] L ^ {3}}} \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            581,
+            309,
+            912,
+            347
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "When the DETFs are applied the inertial force, the nominal natural frequency after loading is given by [7] ",
+        "bbox": [
+            507,
+            349,
+            904,
+            377
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {n, 1} ^ {\\prime} = \\frac {\\omega_ {n , 1} ^ {\\prime}}{2 \\pi} = \\frac {1}{2 \\pi} \\sqrt {\\frac {1 9 3 . 5 9 E I + 4 . 3 6 n M _ {a} a L ^ {2}}{\\left[ 0 . 3 9 2 6 m _ {T} + M \\right] L ^ {3}}} \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            541,
+            389,
+            912,
+            432
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Therefore, the natural frequency versus acceleration is given by ",
+        "bbox": [
+            507,
+            434,
+            912,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta f = f _ {n, 1} ^ {\\prime} - f _ {n, 1} \\approx 0. 0 6 8 \\frac {n M _ {a} L ^ {2} f _ {n , 1}}{E W ^ {3} h} a \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            574,
+            461,
+            912,
+            500
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We simulate the natural frequency of DETF and the relation between the applied force and the frequency shift by FEA to validate the analytical analysis result. Figure.5 (a) and (b) shows the difference of the analytical analysis and the simulation, and the first vibration mode shape respectively. The relative error of natural frequency of DETF of the analytical analysis and the simulation is less than $0.6\\%$ . Figure 6 shows that the frequency shift is proportional to the applied force. The relative error of the frequency shift of the analytical analysis and the simulation is less than $10\\%$ . ",
+        "bbox": [
+            507,
+            500,
+            912,
+            644
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff1484f355b26d01dffac0f7aef6a35b1933c64eb634b59e5bbaacca1b5d9768.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            542,
+            668,
+            823,
+            821
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c01bfa9692397d0eb41b97be0d59fe512389a8f893c989281aaf92651a67b382.jpg",
+        "image_caption": [
+            "Figure 5. (a) DETF frequency vs DETF dimension; ",
+            "(b) First vibration mode of DETF "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            833,
+            668,
+            885,
+            821
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "1290 ",
+        "bbox": [
+            480,
+            951,
+            517,
+            963
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:09 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            92,
+            963,
+            899,
+            976
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2b01e6753ac8621b4cf5ac73aa7385e2f4075c71091e1b6b8f3da28b119fbd94.jpg",
+        "image_caption": [
+            "Figure 6 Frequency shift vs applied force "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            107,
+            122,
+            421,
+            293
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "IV. MICRO LEVERAGE DESIGN ",
+        "text_level": 1,
+        "bbox": [
+            205,
+            338,
+            442,
+            350
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In order to maximize the scale factor available from the small inertial mass, a leverage system is used to magnify the force applied to the two DETFs [2]. Mechanical transformation in a micro leverage mechanism is achieved by elastic deformation of its component flexure beams. The design of micro leverage mechanisms is different from that of the conventional levers in the macro-world. A pivot structure in the macro-world can be formed by a pin-joint or bearing which permits free rotation and rigid support. With fabrication technology constraints, it is very difficult to achieve free rotation and rigid support in a micro leverage mechanism. The micro leverage mechanism is mainly formed by co-planar flexures. The most commonly used pivot in MEMS is a flexure beam with one side anchored to the substrate as a pseudo-pivot [6]. The geometry of the beam is designed to have a relatively small rotational spring constant allowing easy rotation. A single-stage micro-leverage mechanism is used to magnify the inertial force, which consists of four major parts: lever arm, pivot, the input system and output system, as schematic shown in Figure 7 [6]. Figure 8 shows the deformation schematic of the micro lever. ",
+        "bbox": [
+            80,
+            355,
+            485,
+            631
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/df9492555cd2891d0a45c9bed9bc3acdfe31f79e68cadd8f29a7ee91f928f5e5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            166,
+            633,
+            421,
+            735
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Applying the force and moment equilibrium condition to the lever arm leads to the following equations: ",
+        "bbox": [
+            82,
+            738,
+            485,
+            764
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ffceb0e2c84d80a2e4251900fd465522cf1ce2674c821f614776f48aae64a92f.jpg",
+        "image_caption": [
+            "Figure 8. The micro-leverage under loading "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            139,
+            789,
+            442,
+            865
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {i n} = k _ {o v} (L \\theta + \\delta) + k _ {p v} \\delta \\tag {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            618,
+            125,
+            912,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {i n} l = k _ {o v} (L \\theta + \\delta) L + k _ {o \\theta} \\theta + k _ {p \\theta} \\theta \\tag {6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            618,
+            147,
+            912,
+            166
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {o u t} = k _ {o v} (L \\theta + \\delta) \\tag {7}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            621,
+            168,
+            912,
+            188
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $k_{ov}$ and $k_{o\\theta}$ are the axial spring constant and the bending spring constant at the output of the micro-lever stage, $k_{pv}$ and $k_{p\\theta}$ are the bending spring constant and the axial spring constant of the pivot, $L$ is the length between the pivot and input, and $l$ is the length between the input and output. ",
+        "bbox": [
+            507,
+            199,
+            915,
+            275
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Then, the amplification factor $n$ of the micro lever is ",
+        "bbox": [
+            529,
+            281,
+            878,
+            294
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nn = \\frac {F _ {\\text {o u t}}}{F _ {\\text {i n}}} = \\frac {\\frac {1}{k _ {p v}} \\left(k _ {o \\theta} + k _ {p \\theta}\\right) + l L}{\\left(\\frac {1}{k _ {o v}} + \\frac {1}{k _ {p v}}\\right) \\left(k _ {o \\theta} + k _ {p \\theta}\\right) + L ^ {2}} \\tag {8}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            586,
+            305,
+            912,
+            380
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For an ideal lever, $k_{pv} \\Rightarrow \\infty$ , $k_{p\\theta} \\Rightarrow 0$ , $k_{o\\theta} \\Rightarrow 0$ and the amplification factor approaches the lever ratio $n_0$ ",
+        "bbox": [
+            507,
+            387,
+            912,
+            425
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nn _ {0} = \\frac {l}{L} \\tag {9}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            690,
+            435,
+            912,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Therefore, for a single-stage micro lever to have the maximum amplification factor, both $k_{ov}$ and $k_{pv}$ should be as large as possible and both $k_{o\\theta}$ and $k_{p\\theta}$ as small as possible. In other words, the pivot and output system need to be axially stiff, but easy to rotate [6]. ",
+        "bbox": [
+            507,
+            475,
+            912,
+            558
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In order to validate the analytical analysis result, the amplification factor of the micro lever is simulated by FEA. Table I lists the calculated amplification factor $n_{c}$ and simulated $n_{s}$ . The error between the analytical result and simulation result is less than $1.5\\%$ . ",
+        "bbox": [
+            507,
+            562,
+            912,
+            642
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/1b45f78c9c5801c8edc931dc18e3b5f603a374878fd426e3d070176cfe7546d8.jpg",
+        "table_caption": [
+            "Table I. Comparison between the ${n}_{c}$ and ${n}_{s}$ ",
+            "V. FABRICATION AND TESTS "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Pivot (length × width) (μm)</td><td>40×6</td></tr><tr><td colspan=\"2\">Lever arm (length × width)(μm)</td><td>461×40</td></tr><tr><td colspan=\"2\">Output beam (length × width)(μm)</td><td>650×6</td></tr><tr><td rowspan=\"2\">Amplification factor</td><td>nc</td><td>18.2</td></tr><tr><td>ns</td><td>17.95</td></tr></table>",
+        "bbox": [
+            561,
+            667,
+            867,
+            732
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The resonant accelerometer described above was fabricated by the dissolved wafer process (DWP). Figure 9 illustrates the fabrication process flow including heavily boron doping, RIE etching, ICP etching, Ti-Pt-Au depositing, electrostatic bonding and EPW release etching, and so on. ",
+        "bbox": [
+            507,
+            762,
+            912,
+            840
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Table II lists the experimental results. The resonant frequencies of DETF I and DETF II are about $88.65\\mathrm{kHz}$ ",
+        "bbox": [
+            507,
+            840,
+            912,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "1291 ",
+        "bbox": [
+            480,
+            951,
+            515,
+            961
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:09 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            92,
+            963,
+            897,
+            976
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "and $88.89\\mathrm{kHz}$ , a mismatch of $0.27\\%$ . The scale factor of DETF I as measured with $\\pm 1\\mathrm{g}$ test is $14.35\\mathrm{Hz / g}$ , and DETF II $13.95\\mathrm{Hz / g}$ , a mismatch of $2.8\\%$ . The micro lever amplification is about 14-15. The relative error of the micro lever amplification of the analytical analysis and the experiment value is less than $20\\%$ . ",
+        "bbox": [
+            80,
+            123,
+            487,
+            206
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/0458f0bdb0b321ae3d12d0e94de85ee7c94f6e3a6f0fadab3ead9e555c0bcd64.jpg",
+        "image_caption": [
+            "A. heavily boron diffused ",
+            "B. RIE etch bonding contacts ",
+            "C. ICP deep etch structure ",
+            "D. Ti-Pt-Au deposit ",
+            "E. Silicon/glass electrostatic bonding ",
+            "F. EPR Release etch ",
+            "Figure 9. Fabrication process flow for the SRA "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            144,
+            212,
+            290,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/c93f97a60f3bda53bd47ae93dff93d58b4ce1647d5885154387dbf1dfdaf73a8.jpg",
+        "table_caption": [
+            "Table II output of the DETF under $\\pm 1\\mathrm{g}$ loading "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">DETF</td><td colspan=\"3\">Resonant frequency(kHz)</td></tr><tr><td>0g</td><td>-1g</td><td>+1g</td></tr><tr><td>I</td><td>88.6525</td><td>88.6693</td><td>88.6406</td></tr><tr><td>II</td><td>88.8920</td><td>88.8771</td><td>88.9050</td></tr></table>",
+        "bbox": [
+            67,
+            429,
+            465,
+            476
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "VI. CONCLUSION ",
+        "text_level": 1,
+        "bbox": [
+            206,
+            490,
+            356,
+            502
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The SRA consists of a pair of DETF, a proof mass and a micro lever mechanism. The frequency shift is proportional to the applied acceleration. The SRA was fabricated by the dissolved wafer process. Under static measurements with $\\pm 1\\mathrm{g}$ , the scale factor of DEFT I is $14.35\\mathrm{Hz / g}$ , and DETF II ",
+        "bbox": [
+            80,
+            507,
+            487,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$13.95\\mathrm{Hz / g}$ . The slight mismatch may be caused by fabrication error and residual stress. Future work is focused on increasing the SRA sensitivity and adopting silicon-on-glass (SOG) process in replace of DWP. ",
+        "bbox": [
+            507,
+            124,
+            912,
+            179
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "ACKNOWLEDGMENT ",
+        "text_level": 1,
+        "bbox": [
+            642,
+            188,
+            781,
+            199
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The authors are grateful to Dr.Yang Yongjun and his colleagues of Heibei Semiconductor Research institute for fabrication the devices. This work is supported by the foundation for the National Natural Science Foundation of China under No.10572039. ",
+        "bbox": [
+            507,
+            204,
+            914,
+            267
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "text_level": 1,
+        "bbox": [
+            667,
+            285,
+            754,
+            296
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] Trey A. Roessig, \"Integrated MEMS Tuning Fork Oscillators for Sensor Applications,\" Ph.D. dissertation, Univ. California, Berkeley, CA, 1998. ",
+            "[2] Trey A. Roessig, Roger T. Howe, Albert P. Pisano, and James H. Simuth, \"Surface-Micromachined resonant accelerometer,\" International Conference on Solid-State Sensors and Actuators, Chicago, 1997, pp 859-862. ",
+            "[3] Lin He, Yong-ping Xu, and Anping Qiu. \"Folded Silicon Resonant Accelerometer with Temperature Compensation,\" The $3^{\\mathrm{rd}}$ IEEE Conference on Sensors, 24-27 Oct 2004, Vienna University of Technology, Vienna, Austria. ",
+            "[4] Ralph E. Hopkins, et al., \"The Silicon Oscillating Accelerometer: A MEMS Inertial Instrument for Strategic Missile\", Guidance Missile Sciences Conference, Monterey, CA, November 7-9, 2000. ",
+            "[5] Xu Benying et al., \"Elements of mechanical vibration and modal analysis,\" Publishing House of Mechanical Industry, 1998. ",
+            "[6] Xiao-Ping Susan Su, \"Compliant leverage mechanism design for MEMS applications,\" Ph.D. dissertation, Univ. California, Berkeley, CA, 2001. ",
+            "[7] Anping Qiu Shourong Wang and Bailing Zhou. \"A Micromachined resonant gyroscope,\" The 5th International Symposium on Instrument and Control Technology., 24-27 Oct 2004, Beijing, China. "
+        ],
+        "bbox": [
+            510,
+            301,
+            914,
+            549
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "1292 ",
+        "bbox": [
+            480,
+            951,
+            517,
+            961
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:09 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            92,
+            963,
+            899,
+            976
+        ],
+        "page_idx": 3
+    }
+]

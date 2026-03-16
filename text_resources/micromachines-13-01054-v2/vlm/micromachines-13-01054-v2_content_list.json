@@ -1,0 +1,1867 @@
+[
+    {
+        "type": "text",
+        "text": "Article ",
+        "bbox": [
+            53,
+            122,
+            107,
+            136
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Temperature Compensation Method Based on an Improved Firefly Algorithm Optimized Backpropagation Neural Network for Micromachined Silicon Resonant Accelerometers ",
+        "text_level": 1,
+        "bbox": [
+            53,
+            137,
+            929,
+            204
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Libin Huang $^{1,2,\\ast}$ , Lin Jiang $^{1,2}$ , Liye Zhao $^{1,2}$ and Xukai Ding $^{1,2}$ ",
+        "bbox": [
+            53,
+            216,
+            564,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$^{1}$ School of Instrument Science and Engineering, Southeast University, Nanjing 210096, China; 220203458@seu.edu.cn (L.J.); liyezhao@seu.edu.cn (L.Z.); ding.xk@seu.edu.cn (X.D.) ",
+            "2 Key Laboratory of Micro-Inertial Instruments and Advanced Navigation Technology, Ministry of Education, Nanjing 210096, China ",
+            "* Correspondence: huanglibin@seu.edu.cn "
+        ],
+        "bbox": [
+            273,
+            256,
+            941,
+            322
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/807d186541ecd27a5f79efee952afbfbe70ea719a35bfae3fe9267c36f724b20.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            57,
+            462,
+            87,
+            483
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "check for updates ",
+        "bbox": [
+            90,
+            464,
+            146,
+            483
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Citation: Huang, L.; Jiang, L.; Zhao, L.; Ding, X. Temperature ",
+        "bbox": [
+            53,
+            489,
+            245,
+            514
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Compensation Method Based on an Improved Firefly Algorithm ",
+        "bbox": [
+            53,
+            517,
+            245,
+            543
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Optimized Backpropagation Neural Network for Micromachined Silicon Resonant Accelerometers. ",
+        "bbox": [
+            53,
+            545,
+            245,
+            583
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Micromachines 2022, 13, 1054. ",
+        "bbox": [
+            53,
+            587,
+            208,
+            599
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "https://doi.org/10.3390/ ",
+        "bbox": [
+            53,
+            602,
+            191,
+            614
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "mi13071054 ",
+        "bbox": [
+            53,
+            615,
+            121,
+            627
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Academic Editor: Aiqun Liu ",
+        "bbox": [
+            53,
+            638,
+            206,
+            650
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Received: 2 June 2022 ",
+        "bbox": [
+            53,
+            659,
+            171,
+            671
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Accepted: 29 June 2022 ",
+        "bbox": [
+            53,
+            674,
+            179,
+            686
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Published: 30 June 2022 ",
+        "bbox": [
+            53,
+            688,
+            183,
+            699
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations. ",
+        "bbox": [
+            53,
+            709,
+            255,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2bccf2d0c3400bf80a9683e30f8b71c45f1f99c20be9d45e89e95a678b651c1b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            57,
+            777,
+            154,
+            803
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Copyright: © 2022 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/). ",
+        "bbox": [
+            53,
+            808,
+            257,
+            919
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract: The output of the micromachined silicon resonant accelerometer (MSRA) is prone to drift in a temperature-changing environment. Therefore, it is crucial to adopt an appropriate suppression method for temperature error to improve the performance of the accelerometer. In this study, an improved firefly algorithm-backpropagation (IFA-BP) neural network is proposed in order to realize temperature compensation. IFA can improve a BP neural network's convergence accuracy and robustness in the training process by optimizing the initial weights and thresholds of the BP neural network. Additionally, zero-bias experiments at room temperature and full-temperature experiments were conducted on the MSRA, and the reproducible experimental data were used to train and evaluate the temperature compensation model. Compared with the firefly algorithm-backpropagation (FA-BP) neural network, it was proven that the IFA-BP neural network model has a better temperature compensation performance. The experimental results of the zero-bias experiment at room temperature indicated that the stability of the zero-bias was improved by more than an order of magnitude after compensation by the IFA-BP neural network temperature compensation model. The results of the full-temperature experiment indicated that in the temperature range of $-40^{\\circ}\\mathrm{C} \\sim 60^{\\circ}\\mathrm{C}$ , the variation of the scale factor at full temperature improved by more than 70 times, and the variation of the bias at full temperature improved by around three orders of magnitude. ",
+        "bbox": [
+            272,
+            338,
+            944,
+            586
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: micromachined silicon resonant accelerometer; temperature compensation; neural network; firefly algorithm ",
+        "bbox": [
+            273,
+            600,
+            941,
+            630
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            675,
+            394,
+            688
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Micromachined silicon resonant accelerometers have the advantages of small size, low power consumption, mass production, and quasi-digitalization [1,2]. They have been widely used in aerospace and Earth exploration fields [3,4]. Due to the influence of the materials and fabrication, the output of the MSRA is prone to drift in a temperature-changing environment. The influence of temperature on the accelerometer is mainly reflected in the following aspects: firstly, the Young's modulus of the silicon will change with temperature [5]; secondly, the mismatched thermal expansion coefficient of silicon and the base material will create thermal stress in the resonator; thirdly, the fabricating and packaging process will lead to the generation of residual thermal stress [6-8]. Temperature drift is one of the key factors limiting further improvements in the accuracy of MSRAs, and it needs to be suppressed [9]. At present, the common temperature drift suppression methods mainly include temperature control systems, structural optimization, and temperature compensation models. ",
+        "bbox": [
+            272,
+            693,
+            944,
+            885
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The temperature control system can make an accelerometer operate at a constant temperature, which effectively avoids the influence of temperature change. In general, ",
+        "bbox": [
+            273,
+            887,
+            941,
+            917
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "# ",
+        "bbox": [
+            57,
+            57,
+            115,
+            99
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "micromachines ",
+        "bbox": [
+            119,
+            68,
+            273,
+            85
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "MDPI ",
+        "bbox": [
+            865,
+            64,
+            937,
+            98
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Micromachines 2022, 13, 1054. https://doi.org/10.3390/mi13071054 ",
+        "bbox": [
+            53,
+            963,
+            455,
+            977
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "https://www.mdpi.com/journal/micromachines ",
+        "bbox": [
+            640,
+            963,
+            939,
+            977
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a temperature chamber or an on-chip heating electrode is used to keep the temperature stable; therefore, the temperature control system can theoretically eliminate the influence of temperature across a wide working range. However, the temperature chamber will greatly increase the volume and power of the system, and the on-chip heating electrode method is complicated to control and may introduce additional noise [10-13]. Structural optimization mainly reduces the influence of thermal stress by designing a special structure, such as a differential structure or a stress isolation frame [14-17]. The authors of [18] proposed a differential resonant accelerometer with temperature compensation, in which resonant beams were fixed by a single anchor to eliminate the frequency drift caused by external and package stress. In [19], the authors reported an MSRA embedded in an isolation frame with stress-insensitive anchors, which could protect the resonant beams from thermal stress along the sensitive axis. The method of structural optimization can theoretically reduce the influence of thermal stress effectively. However, due to the limitations of processing technology, it is difficult to achieve complete symmetry in the differential structure, which means that the common-mode error cannot be completely eliminated. ",
+        "bbox": [
+            278,
+            112,
+            939,
+            334
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Temperature drift compensation based on a software algorithm is an efficient method for suppressing temperature drift. Establishing a temperature compensation model can save numerous hardware resources and has great flexibility [20]. The polynomial compensation model is a commonly used temperature compensation model. The authors of [21] used temperature resonators to measure the temperature and established a polynomial temperature compensation model to compensate the frequency output of the accelerometer. The experimental results showed that the temperature coefficients of the bias and scale factor reduced from $3.1\\mathrm{mg} / {}^{\\circ}\\mathrm{C}$ and $778~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}$ to $0.05\\mathrm{mg} / {}^{\\circ}\\mathrm{C}$ and $-9.4\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}$ after compensation. The authors of [22] proposed a method of self-calibration of the temperature difference ratio and established a temperature compensation model for a resonant accelerometer. A least-squares method which performed regression analysis on the accelerometer's frequency and temperature was applied to obtain the model parameters. The experimental results showed that the frequency drift of the two resonators of the accelerometer reduced from $43.16\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}$ to $0.83\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}$ after compensation. ",
+        "bbox": [
+            278,
+            335,
+            939,
+            544
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In recent years, with the development of machine learning technology, neural networks have been widely applied in many fields [23-25], and accelerometer temperature compensation models established by neural networks have also begun to be researched. The authors of [26] proposed a temperature compensation method based on the BP neural network and combined it with the genetic algorithm to optimize the BP neural network model. The experimental results showed that the maximum error of the accelerometer's output was $0.017\\%$ , which is 173 times better than the traditional polynomial fit over the temperature range from $-10^{\\circ}\\mathrm{C}$ to $60^{\\circ}\\mathrm{C}$ . In [27], the authors proposed a fusion algorithm of EMD (empirical mode decomposition) + wavelet thresholding + GA (genetic algorithm) BP temperature compensation to improve the accuracy of a high-G accelerometer. The experimental results showed that the random walk and zero-bias stability of the accelerometer changed from $1712.66\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}$ and $49275\\mathrm{g/h}$ to $79.15\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}$ and $774.7\\mathrm{g/h}$ , respectively. The authors of [28] proposed an RBF-NN + GA + KF (radial basis function neural network + genetic algorithm + Kalman filter) fusion algorithm to compensate for the temperature drift of an accelerometer. With this method, the acceleration random drift was reduced from $17130\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}$ to $765.3\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}$ , and the bias stability reduced from $4720\\mathrm{g/h}$ to $57.27\\mathrm{g/h}$ . ",
+        "bbox": [
+            278,
+            545,
+            939,
+            797
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To further improve the performance of the MSRA developed in the laboratory, a method for temperature compensation based on an IFA-BP neural network model is proposed in this study. It optimizes the initial weights and thresholds of the BP neural network by taking advantage of the optimization ability of IFA and then applies the obtained neural network model to perform compensation for the accelerometer to improve the temperature performance of the accelerometer. Finally, a temperature experimental system was established to verify the effect of the IFA-BP neural network compensation model. The results showed that the stability of the zero-bias improved by more than 10 times ",
+        "bbox": [
+            278,
+            797,
+            939,
+            917
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            57,
+            64,
+            226,
+            74
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2 of 14 ",
+        "bbox": [
+            897,
+            64,
+            939,
+            74
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "after compensation in the zero-bias experiment at room temperature. The full-temperature experiment indicated that in the temperature range of $-40^{\\circ}\\mathrm{C} \\sim 60^{\\circ}\\mathrm{C}$ , the variation of the scale factor at full temperature improved by more than 70 times, and the variation of the bias at full-temperature improved by around 1000 times after compensation. ",
+        "bbox": [
+            272,
+            112,
+            939,
+            174
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2. Establishing the IFA-BP Neural Network Compensation Model ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            183,
+            781,
+            198
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.1. BP Neural Network ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            199,
+            447,
+            212
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The BP neural network is a multilayer feedforward neural network based on error backpropagation, and its learning process includes forward signal propagation and error backpropagation. The BP neural network is composed of an input layer, a hidden layer, and an output layer. When the number of hidden layer neurons is appropriately determined, a three-layer neural network with a single hidden layer can achieve the approximation of an arbitrary nonlinear function [29]. For problems with low complexity, a neural network with one hidden layer is sufficient, and an excessive number of hidden layers may lead to difficulties in convergence. The structure of the three-layer BP neural network is shown in Figure 1. The BP neural network does not need the relational expression between the input and output, and only needs to be trained with a large amount of data to obtain a high-precision model. Therefore, it has the advantages of strong self-adaptation and strong learning and it has been widely used in many fields. ",
+        "bbox": [
+            272,
+            218,
+            941,
+            398
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/db6abc721a9da192e611254af454da9d83963f395f0ce2592bbec9950091c139.jpg",
+        "image_caption": [
+            "Figure 1. Three-layer neural network. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            275,
+            405,
+            657,
+            682
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "To conduct the training of the BP neural network, the topology of the neural network should first be established, which involves determining the number of hidden layers and the number of neurons in each layer. The number of input neurons and output neurons is determined by the application. In this study, the input data are the frequency difference and the temperature, so the number of input neurons is $m = 2$ . The output data are the corrected acceleration values, so the number of output neurons is $n = 1$ . The number of hidden neurons can be determined by the following equation [30]: ",
+        "bbox": [
+            272,
+            714,
+            941,
+            820
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nl = \\sqrt {m + n} + c \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            544,
+            831,
+            939,
+            847
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $c$ is a constant between 0 and 10. ",
+        "bbox": [
+            273,
+            859,
+            569,
+            873
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3 of 14 ",
+        "bbox": [
+            895,
+            64,
+            941,
+            76
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "After establishing the topology of the neural network, the weights and thresholds of the neural network need to be initialized. By inputting the signal $X = x_{1},x_{2},\\dots ,x_{m}$ into the neural network through the input layer, the output is obtained [31]: ",
+        "bbox": [
+            272,
+            112,
+            941,
+            158
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\ny _ {n} = \\varphi \\left(\\sum_ {i = 1} ^ {l} w _ {l i} \\sigma \\left(\\sum_ {j = 1} ^ {m} w _ {m j} x _ {j} + b _ {j}\\right) + b _ {n}\\right) \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            453,
+            166,
+            941,
+            208
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\sigma$ is the activation function of the hidden layer, $\\varphi$ is the activation function of the output layer; $w_{mj}$ is the weight assigned by the input layer to the $j_{th}$ neuron of the hidden layer, $w_{li}$ is the weight from the hidden layer to the $i_{th}$ neuron of the output layer, $b_i$ is the threshold of the $i_{th}$ neuron of the hidden layer, and $b_n$ is the threshold of the $n_{th}$ neuron of the output layer. The output of the neural network is compared with the expected output to obtain the network error function. ",
+        "bbox": [
+            272,
+            218,
+            941,
+            307
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC = \\frac {1}{2 n} \\sum_ {k = 1} ^ {n} \\left\\| \\bar {y _ {k}} - y _ {k} \\right\\| ^ {2} \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            524,
+            315,
+            939,
+            351
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\overline{y_k}$ is the expected output. The weights and thresholds of the neural network are corrected backward by finding the partial derivatives of the error function and by using a gradient descent until the error or the number of iterations reaches the set value. However, BP neural networks have inherent disadvantages, such as low convergence accuracy and low robustness. Some researchers have proposed the use of modern optimization algorithms to improve the performance of BP neural networks. The firefly algorithm is one of the modern optimization algorithms which simulates the luminous characteristics and attraction behavior of fireflies and has the advantages of a simple structure, few adjustment parameters, and excellent search capability. ",
+        "bbox": [
+            272,
+            361,
+            944,
+            497
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.2. Firefly Algorithm ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            507,
+            430,
+            521
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.2.1. Standard Firefly Algorithm ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            523,
+            524,
+            539
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The firefly algorithm was first proposed by Xin-She Yang in 2008 [32] and is a heuristic algorithm derived from the behavior of fireflies in nature. The basic principle of FA is that each firefly can emit light, and the intensity of its brightness is related to its position. Fireflies with high brightness will attract fireflies with less brightness, and the greater the intensity of brightness, the greater the attraction. By updating the position of the fireflies, we gradually find the position with the highest intensity of brightness. In FA, the intensity of brightness is the value of the objective function, and the position is the feasible solution to the problem to be solved. ",
+        "bbox": [
+            272,
+            541,
+            941,
+            659
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The method randomly initialized $n$ fireflies in the $D$ -dimensional space, with each firefly positioned at $X = (x_{1}, x_{2}, \\dots, x_{D})$ . Therefore, the attractiveness of a firefly is [33]: ",
+        "bbox": [
+            273,
+            661,
+            939,
+            692
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\beta = \\beta_ {0} e ^ {- \\gamma r _ {i j} ^ {2}} \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            557,
+            700,
+            939,
+            725
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\beta_0$ is the initial attractiveness, $\\gamma$ is the light absorption coefficient, and $r_{ij}$ is the Euclidean distance between the firefly $X_i$ and firefly $X_j$ . Each firefly will move toward all fireflies whose brightness is greater than its own, and its position is updated by the equation: ",
+        "bbox": [
+            272,
+            734,
+            941,
+            781
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {i} (n + 1) = X _ {i} (n) + \\beta_ {0} e ^ {- \\gamma r _ {i j} ^ {2}} \\left(X _ {j} (n) - X _ {i} (n)\\right) + \\alpha_ {0} \\left(\\xi - \\frac {1}{2}\\right) \\tag {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            384,
+            790,
+            939,
+            822
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $n$ is the number of iterations, $\\alpha_0$ is the step size factor, and $\\xi$ is a random number subject to uniform distribution on [0,1]. ",
+        "bbox": [
+            272,
+            832,
+            939,
+            862
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.2.2. Improved Firefly Algorithm ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            873,
+            532,
+            889
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The FA has been used in many fields since it was proposed, but it has disadvantages; for example, it easily falls into bad local minima and has possible oscillations in the later ",
+        "bbox": [
+            273,
+            892,
+            941,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            226,
+            76
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4 of 14 ",
+        "bbox": [
+            895,
+            64,
+            941,
+            76
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "iterations. To address these problems, an improved firefly algorithm (IFA) was proposed to further improve the optimal finding ability and stability of the FA. ",
+        "bbox": [
+            272,
+            112,
+            939,
+            143
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. Improvement of the step size strategy ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            148,
+            596,
+            164
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In the standard FA, the step size is constant during the iterations. If the chosen step size is too large, the algorithm can quickly move to the optimum at the beginning of the iterations, which makes the algorithm have a strong global search capability; however, at the end of the iterations, the optimum may be skipped or the iteration may oscillate due to the large step size, which greatly reduces the accuracy of the algorithm. If the chosen step size is too small, it can make the algorithm approach the local optimum more accurately in the later iterations; however, in the early iterations, it will lead to slow convergence and reduce the global search capability. To balance the ability for global search and local search, an adaptive step size update formula was designed using a nonlinear function. The step size is calculated as follows: ",
+        "bbox": [
+            272,
+            168,
+            941,
+            317
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\alpha (n + 1) = k \\cdot \\alpha (n) \\cdot e ^ {\\frac {n}{n - m a x g e n}} \\tag {6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            499,
+            326,
+            939,
+            347
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $k$ is the adjustment factor and maxgen is the maximum number of iterations. According to the formula, the value of the step size decreases with an increase in the number of iterations. At the beginning of the iterations, a larger step size can make the algorithm's global search capability stronger and improve the iteration efficiency, whereas at the end of the iteration, a smaller step size can enhance the local search capability of the algorithm and improve the optimization accuracy. ",
+        "bbox": [
+            272,
+            357,
+            941,
+            448
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2. Improvement of the best firefly ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            453,
+            549,
+            469
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "According to the FA, each firefly is attracted to the firefly with the greatest brightness, which makes the position of the best firefly greatly affect the algorithm's search process. For instance, if the best firefly is near the bad local minima, it is possible to make the algorithm converge to it. To update the position of the best firefly, the Metropolis criterion in the simulated annealing algorithm [34] combined with mutations is introduced. The Metropolis criterion can be expressed as follows: when the system is subjected to a perturbation that generates a new value $X'$ as well as a new objective function value $C'$ , the system calculates the acceptance probability $P_i$ according to the Metropolis criterion to determine whether to update the new value. The calculation formula is as follows: ",
+        "bbox": [
+            272,
+            473,
+            941,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP _ {i} = \\left\\{ \\begin{array}{l l} 1, & C ^ {\\prime} <   C \\\\ \\exp \\left(\\frac {C - C ^ {\\prime}}{T}\\right), & C ^ {\\prime} \\geq C \\end{array} \\right. \\tag {7}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            620,
+            939,
+            653
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $T$ is the temperature of the simulated annealing algorithm, relative to the number of iterations. ",
+        "bbox": [
+            272,
+            663,
+            939,
+            692
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If the objective function value of the new value is better, the new value is received with a probability of 1; otherwise, if the objective function value of the new value is worse than the original value, the new value is received with a probability of $\\exp((C - C') / T)$ . A worse value can be received with the probability calculated by the Metropolis criterion, which enhances the stability of the algorithm and provides the opportunity to jump out of the bad local minima. The temperature in the simulated annealing algorithm gradually decreases with the number of iterations, which means the probability of accepting the worse value decreases in the later iterations. In order to apply the Metropolis criterion to the firefly algorithm, some modifications to the original formulation are required. ",
+        "bbox": [
+            272,
+            693,
+            941,
+            829
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT = \\varepsilon \\cdot (m a x g e n - n) \\tag {8}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            527,
+            840,
+            939,
+            856
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            226,
+            76
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5 of 14 ",
+        "bbox": [
+            895,
+            64,
+            939,
+            74
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $\\varepsilon$ is the correction factor. Meanwhile, in order to perturb the best firefly, combining the mutations and balancing the convergence speed and accuracy, the following variational perturbation formula is used to perturb the firefly's position. ",
+        "bbox": [
+            272,
+            112,
+            939,
+            156
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta x = \\cos \\left(\\frac {\\pi}{2} \\cdot \\frac {n}{m a x g e n}\\right) \\cdot \\left(\\xi - \\frac {1}{2}\\right) \\cdot s \\tag {9}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            463,
+            167,
+            939,
+            200
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where $\\xi$ is a random number in the range [0,1] and $s$ is the width of the definition domain. ",
+        "bbox": [
+            272,
+            209,
+            941,
+            223
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The variational perturbation formula also decreases nonlinearly with an increase in the number of iterations, avoiding or attenuating the oscillations that may result from a fixed perturbation. Thus, the position of the best firefly subject to perturbation is updated as: ",
+        "bbox": [
+            272,
+            225,
+            941,
+            269
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {B} ^ {\\prime} = X _ {B} + \\Delta X \\tag {10}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            547,
+            281,
+            939,
+            297
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where $\\Delta X = (\\Delta x_{1},\\Delta x_{2},\\dots ,\\Delta x_{D})$ is the perturbation matrix. ",
+        "bbox": [
+            272,
+            309,
+            724,
+            324
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Improvement of the firefly position update strategy ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            329,
+            697,
+            344
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In the FA, the fireflies move toward all fireflies with greater brightness, which inevitably leads to rapid convergence of the firefly population. However, if the firefly population gathers at a bad position prematurely, the search ability of the algorithm decreases rapidly, which makes it difficult to jump out of the bad local minima. The position update strategy of fireflies is improved by randomly selecting only several individuals from the firefly population, so that the fireflies only move toward selected fireflies with greater brightness. In addition, the fireflies may be out of the search space after updating the position, and the positions of fireflies that are out of the search range are corrected according to the following equation: ",
+        "bbox": [
+            272,
+            349,
+            941,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx _ {i} = \\left\\{ \\begin{array}{l l} x _ {\\min }, & x _ {i} <   x _ {\\min } \\\\ x _ {\\max }, & x _ {i} > x _ {\\max } \\end{array} \\right. \\tag {11}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            514,
+            483,
+            939,
+            514
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where $x_{\\mathrm{min}}$ and $x_{\\mathrm{max}}$ are the boundary values of the search space. ",
+        "bbox": [
+            273,
+            521,
+            763,
+            536
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.2.3. Simulation Analysis of Optimization Algorithm Based on Test Functions ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            546,
+            858,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Two test functions were selected to evaluate the performance of the proposed IFA algorithm and the standard FA, and images of the two test functions are shown in Figure 2. The population size of the two firefly algorithms is 10, the number of dimensions is 2, the number of iterations is 50, the initial step size $\\alpha_0$ is 0.25, and the initial attractiveness $\\beta_0$ and the light absorption $\\gamma$ are both set to 1. ",
+        "bbox": [
+            272,
+            565,
+            941,
+            640
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8db9148127da8970ea96ae8c97dd04a6a2c834a93859031600ae510d90d28d6a.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            278,
+            650,
+            546,
+            799
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c6533e6390dd8ef564084b375298c296b7e17697dc7c5fa34c5dd90e4b2f951.jpg",
+        "image_caption": [
+            "(b) ",
+            "Figure 2. Images of the two test functions: (a) Schaffer function; (b) Rastrigin function. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            608,
+            650,
+            872,
+            797
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The Schaffer function has many local minima distributed near the global minima, which can be used to evaluate the global optimization searching ability of the algorithms. The evolution curves of the two optimization algorithms for the Schaffer function are shown in Figure 3. Figure 3a shows the evolution curves of the FA. As shown in the figures, although the best fitness of the algorithm can converge to the global minima of $-1$ , the ",
+        "bbox": [
+            272,
+            854,
+            941,
+            932
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6 of 14 ",
+        "bbox": [
+            895,
+            64,
+            941,
+            74
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "average fitness falls to local minima around $-0.45$ , indicating that the FA is less stable. Figure 3b shows that the IFA can make both the best fitness and the average fitness converge to the global minima at $-1$ , which indicates that the IFA has great stability and global search capability. ",
+        "bbox": [
+            275,
+            112,
+            939,
+            172
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/df0ffc7cfabf6be570f294415985a6504f05f6e8823798130086c1d815318a0b.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            280,
+            181,
+            534,
+            331
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/33d6df20ec6143cd2653b1ff32b490964eeb5cf98148296527722332fee0d3e1.jpg",
+        "image_caption": [
+            "(b) ",
+            "Figure 3. Evolutionary curve of the Schaffer function using different compensation models: (a) FA; (b) IFA. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            608,
+            181,
+            865,
+            331
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The Rastrigin function has many local minima distributed throughout the definition domain, making it easy to fall to the local minima for the optimization algorithm. Figure 4 shows the evolution curves of the two optimization algorithms for the Rastrigin function. Figure 4 shows the evolution curves of the FA and the IFA, and it can be seen that the FA falls to the local minima and converges around 2. The IFA also falls to the local minima of 1.3 at the eighth iteration, but because the improved algorithm makes it accept a worse value with a certain probability, it jumps out of the local minima of 1.3 at the 12th iteration and finally converges to the global minima of 0. This simulation results indicate that IFA has a stronger ability to jump out of the local minima compared with the FA. ",
+        "bbox": [
+            275,
+            401,
+            941,
+            536
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f9cf2ddaf8c2b4cd30da79aef0404390d0bcae5789a901ad3a629fd8ed8832e.jpg",
+        "image_caption": [
+            "Figure 4. Evolutionary curve of the Rastrigin function using the FA and the IFA. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            280,
+            545,
+            589,
+            728
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.3. IFA-BP Neural Network Model ",
+        "text_level": 1,
+        "bbox": [
+            275,
+            762,
+            524,
+            776
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The selection of the initial weights and thresholds has a large impact on the training, and bad initial values may make the training too slow or even fail. The proposed IFA was used to optimize the initial weights and thresholds of the BP neural network with a better global search ability and the ability to jump out of local minima. The flow chart of the algorithm for optimizing the BP neural network by IFA is shown in Figure 5, and its main steps are as follows: ",
+        "bbox": [
+            275,
+            781,
+            939,
+            869
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "(1) Initialize the BP neural network topology and all parameters of the IFA and generate the initial population of fireflies. ",
+            "(2) Calculate the brightness of the fireflies, perturb the best fireflies, and calculate the acceptance probability according to the Metropolis criterion; other fireflies randomly "
+        ],
+        "bbox": [
+            273,
+            870,
+            939,
+            929
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            57,
+            65,
+            226,
+            76
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7 of 14 ",
+        "bbox": [
+            897,
+            65,
+            939,
+            76
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "select the moving target and all fireflies update their positions according to the position update rule. ",
+        "bbox": [
+            272,
+            112,
+            939,
+            140
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "(3) Update the step size and determine whether the termination iteration condition is satisfied. If so, save the best firefly and jump to Step (4); otherwise, return to Step (2). ",
+            "(4) Use the best firefly as the initial weights and thresholds of the BP neural network. ",
+            "(5) Substitute the accelerometer output dataset into the model and calculate the error function. ",
+            "(6) Determine whether the termination iteration condition has been satisfied. If it has been satisfied, save the weights and thresholds and quit training; if not, update the weights and thresholds of the neural network using the gradient descent method and return to Step (5). "
+        ],
+        "bbox": [
+            272,
+            142,
+            942,
+            275
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5a7d29d93334b5fde7d37d916d14b55c71293c662bc29869f0158a5754bc966.jpg",
+        "image_caption": [
+            "Figure 5. Flow chart of the IFA-BP neural network. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            282,
+            281,
+            848,
+            726
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3. Experiments and Results ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            757,
+            487,
+            772
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1. Experiments ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            774,
+            396,
+            789
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Determination of the parameters of the neural network model requires numerous accelerometer output data and temperature data for training. Therefore, it was necessary to build a temperature experimental system to conduct a series of temperature experiments on the accelerometer. The temperature experimental system mainly consisted of a high-precision turntable, a temperature chamber and a MSRA prototype. The experimental system is shown in Figure 6. ",
+        "bbox": [
+            272,
+            791,
+            944,
+            883
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8 of 14 ",
+        "bbox": [
+            895,
+            64,
+            941,
+            74
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/68c2de247433e2c7f25837ebfbcb2472efe1160c410ee1287c6469c1213fb32a.jpg",
+        "image_caption": [
+            "Figure 6. Temperature experimental system. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            278,
+            112,
+            668,
+            319
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The MSRA prototype was used to conduct a zero-bias experiment at room temperature and a full-temperature experiment. The output of the accelerometer and the experimental temperature were collected. The zero-bias experiment was conducted at room temperature with a sampling rate of one time per second for at least an hour and a half when the input acceleration was zero gravity $(0\\mathrm{g})$ . The operating temperature of the MSRA in the full-temperature experiment was between $-40^{\\circ}\\mathrm{C}$ and $60^{\\circ}\\mathrm{C}$ , and the test nodes were established at intervals of $20^{\\circ}\\mathrm{C}$ . After the operating temperature reached the expected value, the temperature was maintained for one hour. Each temperature node collected data for four states of acceleration at $+0\\mathrm{g}, +1\\mathrm{g}, -0\\mathrm{g},$ and $-1\\mathrm{g},$ and each state was collected for at least 30 s while the time interval for data collection was set to one second. The variations of the scale factor and bias at full temperature were used as the evaluation index in the full-temperature experiment. The variation of the scale factor at full temperature was the standard deviation of the scale factor at different temperature points divided by the mean value. The variation of the bias at full temperature was the standard deviation of the bias at different temperature points, and the bias was calculated as: ",
+        "bbox": [
+            272,
+            353,
+            944,
+            577
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB _ {0} = \\frac {U _ {+ 0 g} - U _ {- 0 g}}{U _ {+ 1 g} - U _ {- 1 g}} \\cdot g \\tag {12}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            587,
+            939,
+            621
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $U_{+0\\mathrm{g}}, U_{+1\\mathrm{g}}, U_{-0\\mathrm{g}}$ , and $U_{-1\\mathrm{g}}$ are the outputs of the accelerometer at $+0\\mathrm{g}, +1\\mathrm{g}, -0\\mathrm{g}$ , and $-1\\mathrm{g}$ , respectively. ",
+        "bbox": [
+            273,
+            631,
+            941,
+            662
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2. Results and Discussion ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            671,
+            470,
+            686
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "By repeating the zero-bias experiment at room temperature and full temperature experiment, six datasets for the zero-bias experiment at room temperature and five datasets for the full-temperature experiment were obtained, among which four datasets of the zero-bias experiment at room temperature and three datasets of the full-temperature experiment were randomly selected as the training datasets, and the remaining datasets were utilized for evaluation. ",
+        "bbox": [
+            272,
+            690,
+            944,
+            778
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The FA-BP and IFA-BP neural network temperature compensation models used in the experiments have an input layer, a hidden layer, and an output layer. The number of neurons in the input layer is 2, the number of neurons in the hidden layer is 10, and the number of neurons in the output layer is 1. We used the FA-BP model and IFA-BP model to train the datasets 30 times, and the FA-BP model and IFA-BP model with the smallest RMSE (root mean square error) were selected for comparison. To evaluate the performance of the compensation model for different test datasets, the two test datasets of the zero-bias experiment at room temperature were compensated by the same model, and the two test datasets of the full-temperature experiment were also compensated by the same model. ",
+        "bbox": [
+            272,
+            781,
+            944,
+            917
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9 of 14 ",
+        "bbox": [
+            895,
+            64,
+            941,
+            76
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For the zero-bias experiments at room temperature, the original data indicators of the MSRA and the indicators after compensation by the FA-BP model and IFA-BP model are shown in Table 1. According to the table, it can be seen that the zero-bias stability of the accelerometer has been significantly improved by the neural network, and the same compensation model is effective for different test datasets, indicating the applicability of the temperature compensation model based on a neural network. Among them, after compensation by the IFA-BP model, the zero-bias stability after $30\\mathrm{min}$ of startup, zero-bias stability after $20\\mathrm{min}$ of startup, and zero-start zero-bias stability are better than those of the FA-BP model. A comparison of the MSRA before and after compensation by the IFA-BP is shown in Figure 7. For graphing convenience, a mean value was subtracted from the measured data. ",
+        "bbox": [
+            272,
+            112,
+            939,
+            275
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/a429648a71189a3e97602ec57f0a1788eab6b58ba8864bb453b999bb6e004a86.jpg",
+        "table_caption": [
+            "Table 1. Zero-bias stability at room temperature before and after compensation. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\"></td><td colspan=\"2\">Measured Data</td><td colspan=\"2\">FA-BP</td><td colspan=\"2\">IFA-BP</td></tr><tr><td>Test Dataset 1</td><td>Test Dataset 2</td><td>Test Dataset 1</td><td>Test Dataset 2</td><td>Test Dataset 1</td><td>Test Dataset 2</td></tr><tr><td>Zero-bias stability after 30 min of startup (μg)</td><td>186.47</td><td>109.56</td><td>15.867</td><td>14.476</td><td>7.7562</td><td>7.4809</td></tr><tr><td>Zero-bias stability after 20 min of startup (μg)</td><td>231.63</td><td>136.38</td><td>16.902</td><td>19.417</td><td>9.6671</td><td>10.127</td></tr><tr><td>Zero-start zero-bias stability (μg)</td><td>283.05</td><td>227.98</td><td>24.848</td><td>25.907</td><td>11.868</td><td>12.750</td></tr></table>",
+        "bbox": [
+            57,
+            307,
+            942,
+            420
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/224dee8aec48e9ac2b19b390e5e9c909e4f997b94da36a761a7c8f2f61d69622.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            136,
+            436,
+            485,
+            637
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/af6908b5a1fd743ca60a05583b9b0a69f31dc9f6602e00013dfbdba1bd7af3dd.jpg",
+        "image_caption": [
+            "(b) ",
+            "Figure 7. The IFA-BP compensation results of the accelerometer at room temperature: (a) test dataset 1; (b) test dataset 2. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            499,
+            432,
+            863,
+            638
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The variation of the scale factor and bias at full temperature of two test datasets before and after compensation are shown in Table 2. The comparison results indicate that the IFA-BP model has a better effect in improving the accelerometer's performance at full temperature than the FA-BP model. The variation of the scale factor at full temperature after compensation by the IFA-BP model has improved by more than 70 times, and the variation of the bias at full temperature has improved by around three orders of magnitude. Figure 8 shows a comparison of the frequency output of the MSRA at six temperature points and four states before and after compensation by the IFA-BP model. Figures 9 and 10 show the curves of the accelerometer's output with temperature before and after IFA-BP neural network model compensation at four acceleration states. In these figures, it can be seen that the accelerometer's frequency output before compensation is affected by the temperature and produces frequency drift. After compensation by the IFA-BP model, the temperature performance of accelerometer has improved greatly. ",
+        "bbox": [
+            272,
+            712,
+            941,
+            908
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10 of 14 ",
+        "bbox": [
+            890,
+            64,
+            939,
+            74
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/0aa2fb4c37d9a74d7ddfde35e4bfb5548a17a77a7b0eb1802f6c830e837407a4.jpg",
+        "table_caption": [
+            "Table 2. The variation of scale factor and bias at full temperature before and after compensation. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\"></td><td colspan=\"2\">Measured Data</td><td colspan=\"2\">FA-BP</td><td colspan=\"2\">IFA-BP</td></tr><tr><td>Test Dataset 1</td><td>Test Dataset 2</td><td>Test Dataset 1</td><td>Test Dataset 2</td><td>Test Dataset 1</td><td>Test Dataset 2</td></tr><tr><td>The variation of the scale factor at full temperature (ppm)</td><td>20,600</td><td>2153.2</td><td>578.77</td><td>107.59</td><td>214.86</td><td>30.806</td></tr><tr><td>The variation of the bias at full temperature (μg)</td><td>39,152</td><td>32873</td><td>89.431</td><td>103.57</td><td>32.967</td><td>36.556</td></tr></table>",
+        "bbox": [
+            57,
+            131,
+            942,
+            231
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/a714312a46e94b699b721aa681e393ab53504f0b8d4ddb3a0adffc7f3a490193.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            168,
+            247,
+            460,
+            418
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/4fc53fd60d3338d58992f7dce74e549a52972fb4cd0618e7b983072ba971cbe3.jpg",
+        "image_caption": [
+            "(b) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            537,
+            247,
+            830,
+            418
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/fab64f99266ab00eff72456008de73c4fca62af425e8d53e9f7fe2cc053e9915.jpg",
+        "image_caption": [
+            "Figure 8. The IFA-BP compensation results of the accelerometer in the full-temperature experiment: (a) test dataset 1; (b) test dataset 2. ",
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            171,
+            486,
+            453,
+            661
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/07aceba43fcc5dd5eb663089418b14aa271810645c3551c9af0e9762df0ad655.jpg",
+        "image_caption": [
+            "(b) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            537,
+            487,
+            823,
+            661
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/64043c292c8c5650dba35b77449df5ee8a04f75d793425d920b79dc66cce412f.jpg",
+        "image_caption": [
+            "(c) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            171,
+            680,
+            453,
+            853
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/5b78f3ae785042e09b180939b2cc556430f985e4509a6cc4f2ed19c9ed23886b.jpg",
+        "image_caption": [
+            "(d) ",
+            "Figure 9. The IFA-BP compensation results of test dataset 1 in the full-temperature experiment: (a) $+0\\mathrm{g}$ ; (b) $+1\\mathrm{g}$ ; (c) $-0\\mathrm{g}$ ; (d) $-1\\mathrm{g}$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            537,
+            681,
+            825,
+            853
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            226,
+            76
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11 of 14 ",
+        "bbox": [
+            890,
+            64,
+            939,
+            74
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab2aff12a3a12e43d42f452de41f8ea184a9ebc753969e1e200ecd32aa369e2a.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            166,
+            115,
+            453,
+            288
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c48111f72c3db04e02513c7c8208bd0514b0bbbc4095084d96afd257b06562a0.jpg",
+        "image_caption": [
+            "(b) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            537,
+            114,
+            830,
+            288
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c8f8ad456c71e481c737b9104a81ee1553c14b9b2cfa74b8db7e66e38c397d7f.jpg",
+        "image_caption": [
+            "(c) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            166,
+            309,
+            452,
+            483
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c8ccb02aecd1caeebaa97940e4637607322105d9a9996d7de82f550a636a2f65.jpg",
+        "image_caption": [
+            "(d) ",
+            "Figure 10. The IFA-BP compensation results of test dataset 2 in the full-temperature experiment: (a) $+0\\mathrm{g}$ ; (b) $+1\\mathrm{g}$ ; (c) $-0\\mathrm{g}$ ; (d) $-1\\mathrm{g}$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            534,
+            309,
+            828,
+            483
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4. Conclusions ",
+        "text_level": 1,
+        "bbox": [
+            273,
+            549,
+            393,
+            562
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In order to improve the temperature performance of MRsAs, an accelerometer temperature compensation method based on an improved firefly algorithm optimized BP neural network was proposed in this study. The IFA was used to optimize the initial values of the BP neural network to improve the convergence accuracy and robustness of the neural network's training. Zero-bias experiments at room temperature and full-temperature experiments were conducted on the MSRA, and temperature compensation models of the FA-BP and IFA-BP neural networks were established. A comparison of the accelerometer's output before and after compensation shows that the proposed IFA-BP neural network temperature compensation model is effective. The zero-bias stability of the accelerometer in the zero-bias experiment at room temperature improved by more than 10 times. The variation of the scale factor at full temperature improved by more than 70 times and the variation of the bias at full temperature improved by around 1000 times. The results indicate that the temperature compensation method based on the IFA-BP neural network is suitable for MRsAs in both zero-bias experiments at room temperature and full-temperature experiments. ",
+        "bbox": [
+            272,
+            567,
+            944,
+            778
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Author Contributions: Conceptualization, L.H. and X.D.; methodology, L.H. and L.J.; formal analysis, X.D.; investigation, L.Z.; data curation, L.J.; writing—original draft preparation, L.J.; supervision, L.Z. All authors have read and agreed to the published version of the manuscript. ",
+        "bbox": [
+            272,
+            790,
+            944,
+            833
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Funding: This research received no external funding. ",
+        "bbox": [
+            273,
+            839,
+            636,
+            853
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Conflicts of Interest: The authors declare no conflict of interest. ",
+        "bbox": [
+            273,
+            860,
+            702,
+            873
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "12 of 14 ",
+        "bbox": [
+            890,
+            64,
+            939,
+            74
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            55,
+            112,
+            144,
+            124
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "1. Huang, L.; Yang, H.; Gao, Y.; Zhao, L.; Liang, J. Design and implementation of a micromechanical silicon resonant accelerometer. Sensors 2013, 13, 15785-15804. [CrossRef] [PubMed] ",
+            "2. Weinberg, M.S.; Bernstein, J.J.; Borenstein, J.T.; Campbell, J.; Cousins, J.; Cunningham, R.K.; Fields, R.; Greiff, P.; Hugh, B.; Niles, L. Micromachining inertial instruments. In Proceedings of the Micromachining and Microfabrication Process Technology II, Austin, TX, USA, 14–15 October 1996; pp. 26–36. ",
+            "3. Hopkins, R.; Miola, J.; Sawyer, W.; Setterlund, R.; Dow, B. The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications. In Proceedings of the Institute of Navigation, 2005 National Technical Meeting, NTM 2005, San Diego, CA, USA, 24-26 January 2005; pp. 970-979. ",
+            "4. Pike, W.T.; Delahunty, A.; Mukherjee, A.; Dou, G.; Liu, H.; Calcutt, S.; Standley, I.M. A self-levelling nano-g silicon seismometer. In Proceedings of the SENSORS, 2014 IEEE, Valencia, Spain, 2-5 November 2014; pp. 1599-1602. ",
+            "5. Jiang, B.; Huang, S.; Zhang, J.; Su, Y. Analysis of Frequency Drift of Silicon MEMS Resonator with Temperature. Micromachines 2020, 12, 26. [CrossRef] [PubMed] ",
+            "6. Jing, Z.; Anping, Q.; Qin, S.; You, B.; Guoming, X. Research on temperature compensation method of silicon resonant accelerometer based on integrated temperature measurement resonator. In Proceedings of the 2015 12th IEEE International Conference on Electronic Measurement & Instruments (ICEMI), Qingdao, China, 16-18 July 2015; pp. 1577-1581. ",
+            "7. Kyu Lee, H.; Melamud, R.; Kim, B.; Chandorkar, S.; Salvia, J.C.; Kenny, T.W. The effect of the temperature-dependent nonlinearities on the temperature stability of micromechanical resonators. J. Appl. Phys. 2013, 114, 153513. [CrossRef] ",
+            "8. Zhang, X.; Park, S.; Judy, M.W. Accurate Assessment of Packaging Stress Effects on MEMS Sensors by Measurement and Sensor-Package Interaction Simulations. J. Microelectromechan. Syst. 2007, 16, 639-649. [CrossRef] ",
+            "9. Luschi, L.; Iannaccone, G.; Pieri, F. Temperature Compensation of Silicon Lame Resonators Using Etch Holes: Theory and Design Methodology. IEEE Trans. Ultrason. Ferroelectr. Freq. Control 2017, 64, 879-887. [CrossRef] [PubMed] ",
+            "10. Mustafazade, A.; Seshia, A.A. Compact High-Precision Analog Temperature Controller for MEMS Inertial Sensors. In Proceedings of the 2018 IEEE International Frequency Control Symposium (IFCS), Olympic Valley, CA, USA, 21-24 May 2018; pp. 1-2. ",
+            "11. Salvia, J.C.; Melamud, R.; Chandorkar, S.A.; Lord, S.F.; Kenny, T.W. Real-Time Temperature Compensation of MEMS Oscillators Using an Integrated Micro-Oven and a Phase-Locked Loop. J. Microelectromechan. Syst. 2010, 19, 192-201. [CrossRef] ",
+            "12. Shin, D.D.; Chen, Y.; Flader, I.B.; Kenny, T.W. Epitaxially encapsulated resonant accelerometer with an on-chip micro-oven. In Proceedings of the 2017 19th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), Kaohsiung, Taiwan, 18–22 June 2017; pp. 595–598. ",
+            "13. Yang, B.; Dai, B.; Liu, X.; Xu, L.; Deng, Y.; Wang, X. The on-chip temperature compensation and temperature control research for the silicon micro-gyroscope. Microsyst. Technol. 2014, 21, 1061-1072. [CrossRef] ",
+            "14. Cui, J.; Yang, H.; Li, D.; Song, Z.; Zhao, Q. A Silicon Resonant Accelerometer Embedded in An Isolation Frame with Stress Relief Anchor. Micromachines 2019, 10, 571. [CrossRef] [PubMed] ",
+            "15. Kang, H.; Ruan, B.; Hao, Y.; Chang, H. A Mode-Localized Resonant Accelerometer With Self-Temperature Drift Suppression. IEEE Sens. J. 2020, 20, 12154–12165. [CrossRef] ",
+            "16. Li, H.; Huang, L.; Ran, Q.; Wang, S. Design of Temperature Sensitive Structure for Micromechanical Silicon Resonant Accelerometer. In Proceedings of the 2017 International Conference on Computer Network, Electronic and Automation (ICCNEA), Xi'an, China, 23-25 September 2017; pp. 350-354. ",
+            "17. Li, N.; Xing, C.; Sun, P.; Zhu, Z. Simulation Analysis on Thermal Drift of MEMS Resonant Accelerometer. In Proceedings of the 2019 20th International Conference on Electronic Packaging Technology (ICEPT), Hong Kong, China, 11-15 August 2019; pp. 1-4. ",
+            "18. Shin, D.D.; Ahn, C.H.; Chen, Y.; Christensen, D.L.; Flader, I.B.; Kenny, T.W.; IEEE. Environmentally Robust Differential Resonant Accelerometer in a Wafer-Scale Encapsulation Process. In Proceedings of the 30th IEEE International Conference on Micro Electro Mechanical Systems (MEMS), Las Vegas, NV, USA, 22-26 January 2017; pp. 17-20. ",
+            "19. Cui, J.; Liu, M.; Yang, H.; Li, D.; Zhao, Q.; IEEE. Temperature Robust Silicon Resonant Accelerometer with Stress Isolation Frame Mounted on Axis-Symmetrical Anchors. In Proceedings of the 33rd IEEE International Conference on Micro Electro Mechanical Systems (MEMS), Vancouver, BC, Canada, 18-22 January 2020; pp. 791-794. ",
+            "20. Zotov, S.A.; Simon, B.R.; Trusov, A.A.; Shkel, A.M. High Quality Factor Resonant MEMS Accelerometer With Continuous Thermal Compensation. IEEE Sens. J. 2015, 15, 5045-5052. [CrossRef] ",
+            "21. Shi, R.; Zhao, J.; Qiu, A.P.; Xia, G.M. Temperature Self-Compensation of Micromechanical Silicon Resonant Accelerometer. Appl. Mech. Mater. 2013, 373–375, 373–381. [CrossRef] ",
+            "22. Cai, P.; Xiong, X.; Wang, K.; Wang, J.; Zou, X. An Improved Difference Temperature Compensation Method for MEMS Resonant Accelerometers. Micromachines 2021, 12, 1022. [CrossRef] [PubMed] ",
+            "23. Araghi, G.; Landry, R., Jr.; IEEE. Temperature compensation model of MEMS inertial sensors based on neural network. In Proceedings of the IEEE/ION Position, Location and Navigation Symposium (PLANS), Monterey, CA, USA, 23-26 April 2018; pp. 301-309. ",
+            "24. Cao, H.; Zhang, Y.; Shen, C.; Liu, Y.; Wang, X. Temperature Energy Influence Compensation for MEMS Vibration Gyroscope Based on RBF NN-GA-KF Method. Shock Vib. 2018, 2018, 1-10. [CrossRef] ",
+            "25. Fontanella, R.; Accardo, D.; Lo Moriello, R.S.; Angrisani, L.; De Simone, D. MEMS gyros temperature calibration through artificial neural networks. Sens. Actuators A Phys. 2018, 279, 553-565. [CrossRef] "
+        ],
+        "bbox": [
+            55,
+            129,
+            942,
+            923
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            228,
+            76
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "13 of 14 ",
+        "bbox": [
+            890,
+            64,
+            941,
+            74
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "26. Wang, S.; Zhu, W.; Shen, Y.; Ren, J.; Gu, H.; Wei, X. Temperature compensation for MEMS resonant accelerometer based on genetic algorithm optimized backpropagation neural network. Sens. Actuators A Phys. 2020, 316, 112393. [CrossRef] ",
+            "27. Lu, Q.; Shen, C.; Cao, H.; Shi, Y.; Liu, J. Fusion Algorithm-Based Temperature Compensation Method for High-G MEMS Accelerometer. Shock Vib. 2019, 2019, 1-13. [CrossRef] ",
+            "28. Zhu, M.; Pang, L.; Xiao, Z.; Shen, C.; Cao, H.; Shi, Y.; Liu, J. Temperature Drift Compensation for High-G MEMS Accelerometer Based on RBF NN Improved Method. Appl. Sci. 2019, 9, 695. [CrossRef] ",
+            "29. Hornik, K. Approximation Capabilities of Multilayer Feedforward Networks. Neural Netw. 1991, 4, 251-257. [CrossRef] ",
+            "30. Liu, M.; Zhang, M.; Zhao, W.; Song, C.; Wang, D.; Li, Q.; Wang, Z. Prediction of congestion degree for optical networks based on bp artificial neural network. In Proceedings of the 2017 16th International Conference on Optical Communications and Networks (ICOCN), Wuzhen, China, 7-10 August 2017; pp. 1-3. ",
+            "31. Ren, C.; An, N.; Wang, J.; Li, L.; Hu, B.; Shang, D. Optimal parameters selection for BP neural network based on particle swarm optimization: A case study of wind speed forecasting. Knowledge-Based Syst. 2014, 56, 226-239. [CrossRef] ",
+            "32. Yang, X.-S. Firefly algorithms for multimodal optimization. In Proceedings of the International Symposium on Stochastic Algorithms, Sapporo, Japan, 26-28 October 2009; pp. 169-178. ",
+            "33. Yang, X.-S. Firefly Algorithm, Lévy Flights and Global Optimization. In Research and Development in Intelligent Systems XXVI; Springer: Berlin, Germany, 2010; pp. 209-218. ",
+            "34. Metropolis, N.; Rosenbluth, A.W.; Rosenbluth, M.N.; Teller, A.H.; Teller, E. Equation of state calculations by fast computing machines. J. Chem. phys. 1953, 21, 1087-1092. [CrossRef] "
+        ],
+        "bbox": [
+            53,
+            112,
+            941,
+            360
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "header",
+        "text": "Micromachines 2022, 13, 1054 ",
+        "bbox": [
+            55,
+            64,
+            226,
+            76
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "14 of 14 ",
+        "bbox": [
+            890,
+            64,
+            941,
+            77
+        ],
+        "page_idx": 13
+    }
+]

@@ -1,0 +1,1389 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "HERMETICALLY ENCAPSULATED DIFFERENTIAL RESONANT ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                92,
+                61,
+                902,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D.L. Christensen*, C.H. Ahn, V.A. Hong, E.J. Ng, Y. Yang, B.J. Lee, T.W. Kenny Department of Mechanical Engineering, Stanford University, Stanford, CA, USA "
+                    }
+                ]
+            },
+            "bbox": [
+                164,
+                95,
+                826,
+                130
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                145,
+                200,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We demonstrate the first accelerometer with a resonant strain gauge displacement transducer fabricated in a wafer-scale encapsulation process. Co-fabrication of this device with ultra-stable resonators enables detection of acceleration, and measurement of temperature (for compensation), along with generation of the timing reference for acceleration measurement. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                161,
+                485,
+                256
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "KEYWORDS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                274,
+                211,
+                288
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant accelerometer, wafer-scale packaging "
+                    }
+                ]
+            },
+            "bbox": [
+                115,
+                288,
+                442,
+                304
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                317,
+                253,
+                331
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Acceleration and time are inherently coupled in the field of inertial navigation. For this reason, co-fabrication of a MEMS resonator clock and an accelerometer is an attractive concept, but presents many technical challenges: A high-performance MEMS clock requires a very high quality factor (Q), a very clean environment, and transduction of MHz signals, whereas an accelerometer generally requires lower Q and requires transduction of signals near DC. Therefore, accelerometers and clocks are usually designed, fabricated, and packaged separately, and rely on different ASICs for operation. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                332,
+                485,
+                498
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "FABRICATION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                511,
+                235,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this work, we design, fabricate and characterize a new accelerometer with a resonant strain gauge as a displacement transducer. We constrain the design of the accelerometer to be compatible with the Stanford epitaxial polysilicon encapsulation process (epi-seal) [1]. An additional benefit is that the MEMS resonator can be used as the timing reference for extraction of the output of the resonant accelerometer. Since all of these parts are encapsulated in the ultra-clean epi-seal process, we retain the benefits of extreme long-term resonator stability, wafer-scale packaging [2], and compatibility with a large-volume, low-cost manufacturing process [10]. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                527,
+                485,
+                692
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DESIGN "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                708,
+                168,
+                722
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "There have been several prior examples of resonant accelerometers [3-8], as well as wedge shaped torsion beam accelerometers [9]. In this work, the design is tailored to meet the design requirements of our existing fab process, including restrictions on gap sizes, interconnect geometry and spacing, and requirements for support for the cap layer. The design of the device is shown in Figures 1 and 3 - a large, wedge-shaped mass is suspended from a beam including a resonant strain gauge. In-plane acceleration causes deflection of the mass, and a differential frequency shift between the two resonating beams, resulting in a sensitivity of: "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                722,
+                485,
+                889
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {\\Delta f} = 0. 1 4 \\left(\\frac {L _ {b e a m}}{w _ {b e a m}}\\right) ^ {2} f _ {0} \\left(2 \\varepsilon_ {b e a m 1 g}\\right) [ \\mathrm {H z / g} ] \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b8c44112ce2736554a97f5df0ed7e84a050f5bdad661bb34e8cca238281fda87.jpg"
+                }
+            },
+            "bbox": [
+                541,
+                145,
+                889,
+                191
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon_{\\mathrm{beam1g}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial strain in one resonant beam due to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration on proof mass. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                192,
+                867,
+                219
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We choose a design that places the resonant sensing beams symmetrically and in close proximity to provide a differential frequency shift for linear acceleration (as well as angular acceleration), and common-mode shifts for most error sources (off-axis acceleration and temperature changes). Figure 5 shows a measurement of the frequency difference as a function of orientation relative to gravity. A second nearby device oriented 180 degrees to the first can provide a differential signal to cancel out angular acceleration if needed. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                219,
+                910,
+                356
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2a0612830b8147e44291847b4789bcb27131db3ffd3a5e01fff3aa7c0ecc6cda.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1: SEM micrograph of device layer noting design features of the high sensitivity device, as well as insets showing encapsulation and close up of sensing geometry. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                512,
+                369,
+                910,
+                625
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ccf8dbab77138257518b4eb29e308e585af5ae02b04c636e3667ec47248e8484.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2: Schematic of the resonant sensing area showing differential resonant strain gauges, support flexure, single side drive and sense electrodes and anchors. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                549,
+                681,
+                870,
+                866
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "M4A.002 "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                38,
+                154,
+                51
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-1-4673-5983-2/13/$31.00 ©2013 IEEE "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                940,
+                386,
+                954
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "606 "
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                941,
+                512,
+                954
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Transducers 2013, Barcelona, SPAIN, 16-20 June 2013 "
+                    }
+                ]
+            },
+            "bbox": [
+                532,
+                941,
+                910,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/15e559ebb144d7dda5ff57b8b1717dc669889b16043e32e2fd102fa2ae22d60a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3: FEA model of the device showing the deformation and strain response to acceleration. Inset provides view of the strains in the sensing resonators. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                85,
+                61,
+                487,
+                290
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The sensing beam width is chosen as the minimum feature size allowed by the process  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(3\\mu \\mathrm{m})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and with a length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(159\\mu \\mathrm{m})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " selected to produce a resonant frequency of about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{MHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A modest over-etch of these beams in our process resulted in a beam width of about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.8\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a measured resonant frequency of about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "815\\mathrm{kHz} + / - 10\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This resulted in an overall sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "280\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and a high Q  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(57\\mathrm{k} + / - 5\\mathrm{k})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity and the Q are dependent on the width of the beams, with narrower width producing higher values of both parameters. Normally, selection of the minimum value for a key parameter could be a source of concern for a commercial accelerometer. In this case, variations in this parameter would lead to scale factor offsets in the sensitivity of the device, and can be accounted for with a single calibration experiment. Also, a true industrial production process would be able to control this dimension with more precision than our academic prototyping process. "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                344,
+                485,
+                590
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The geometric design of the proof mass includes a variety of specialized features limited by the constraints and strengths of the epi-seal process (Figure 4). In this case, these features are selected to achieve a larger sensitivity and therefore a lower resolution for a given sensing circuitry. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                590,
+                485,
+                673
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To increase the total allowable size of the mass (and thus the device sensitivity), a zigzag profile is used on the edges of the mass. This feature increases the maximum displacement while still satisfying the limitation on gap size, resulting in about 3.5 times the allowed angular displacement for a given size. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                671,
+                485,
+                755
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For the shape of the mass, we use a shape with an outer profile of two intersecting logarithmic (\"Bernoulli's\") spirals. This shape allows an increase of the radius of the proof mass (a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "46\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " increase for this design), resulting in more mass at a larger radius for an increased sensitivity (over 3 times that of a simple, narrow wedge shape). This increased sensitivity does come at the cost of a lowered out of plane and torsional resonant frequencies --which are addressed by the following design features. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                755,
+                485,
+                892
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2954775282ff05418dc6d1795ed2942d8ff84a98a513a4f05f4f5f63357d1bbe.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4: Schematic showing possible proof mass geometries for the wedge shaped proof mass. A. is the maximum radius possible without using zigzags, while B. is the increased diameter circle that is possible with the zigzags for the same maximum angular displacement. C. represents the extra area available due to the logarithmic spiral addition for the small included angle proof mass, while D. represents the much larger increase in area and radius possible with the logarithmic addition and a larger included angle. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                603,
+                61,
+                830,
+                274
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The sensing area (Schematic found in Figure 2) consists of the two resonant sensing beams separated at an equal distance from a center support beam with a notched flexure. This supporting flexure is very stiff in shear, torsion and out of plane motion but significantly less stiff in the sensing direction. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                439,
+                910,
+                521
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Given the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick device layer specifically developed to facilitate inertial sensing in the epi-seal process, this flexure keeps the nearest non-sensing resonant frequencies higher (more than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ) than the sensing direction resonant frequency (10.3kHz measured,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Q} = 17\\mathrm{k}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " by Agilent 8753ES), despite the large included angle (and relatively high out of plane moment of inertia) of the wedge shaped proof mass. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                521,
+                910,
+                633
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                659,
+                606,
+                674
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Inclinometer Test "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                676,
+                655,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To characterize the performance of these resonant accelerometers, a series of tilt tests were performed using a servo to rotate the device in the range of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+/-90"
+                    },
+                    {
+                        "type": "text",
+                        "content": " degrees (accelerations of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+/-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). Tests were performed over several hours without temperature control on an open lab bench. The resonant frequencies of both elements of the resonant strain gauge were measured sequentially using an Agilent 53132A counter with a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5s"
+                    },
+                    {
+                        "type": "text",
+                        "content": " gate time. These unsynchronized measurements limit the effectiveness of the differential sensing approach at correcting for rapid temperature-related errors, and contributes substantially to the variance seen in the result in Figure 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                690,
+                910,
+                857
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "607 "
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                941,
+                512,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f632b90be3f9304820281971f4b36ec11456cc626b4c1aa6aa5f78f35f02e080.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5: Plot of frequency difference of the two resonant sensing beams as the device is tilted approximately 180 degrees with gravity. The test was performed at room temperature with no active temperature control showing the effectiveness of the differential measurement. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                92,
+                63,
+                448,
+                230
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Phase Noise Performance "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                313,
+                292,
+                326
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "While tilt tests are useful for initial characterization of the device sensitivity, the true performance of these parts is determined by the measurement accuracy of the oscillator output frequency. Figure 6 shows measurements of the phase noise for several choices of bias voltage. Measurements were performed using a vector signal analyzer (HP 89410A) running with a sequence of frequency ranges from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with all results recorded and concatenated together. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                326,
+                485,
+                451
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/59bef51c6b57bf65db0bf3c0ff72fca4c60c46d4ac9b526313a002b0e2faed40.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6: Phase noise vs. Bias Voltage of one of the two resonant sensing beams. Measurement is performed in a quiet lab, but without seismic and acoustic isolation, so the noise includes room noise as signal as well as temperature drift that would be compensated by the other resonant beam in differential measurement. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                95,
+                462,
+                475,
+                634
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When combined with the acceleration sensitivity, it is possible to determine the resolution of the resonant accelerometer at any given bandwidth. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                731,
+                485,
+                772
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7 shows a calculated resolution vs. bandwidth curve for these devices, based on the phase noise measurements. For a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bandwidth, this device has resolution near  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.2\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". We estimate the fundamental thermomechanical noise for this device to be below 0.01  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{mg} / \\sqrt{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so improvements in the oscillator circuit should lead to performance improvements. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                772,
+                485,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The measured oscillator phase noise at low offset frequencies is the dominant noise source, as acceleration signals will appear in this region. The increase in phase "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                870,
+                485,
+                912
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "noise with bias voltage shown in Figure 6 indicates that noise from the bias voltage source, and the finite resolution of the analyzer are dominant factors, indicating that better performance should be available with more careful circuit design and construction. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                61,
+                910,
+                131
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3de5f62a36be3469b93f9277d36cf089c678ac90b72fb9e5a2fa2746df7a17eb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7: RMS Resolution (in g's) vs. Bandwidth showing the effect of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias on the measurement. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                146,
+                909,
+                329
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Dynamic (Shaker) Test "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                373,
+                699,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Finally the device was mounted to the end of an electromagnetic shaker (B&K 4809) equipped with a laser velocimeter (Polytec OFV302 and OFV3001) and a power amplifier (B&K 2706). It was driven at a variety of amplitudes and frequencies while the output was recorded with a vector signal analyzer (HP 89410A). The driven acceleration shows up as sidebands on both sides of the carrier frequency as expected. Figure 8 shows this sideband output of one condition:  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " frequency and .01 +/-.001g amplitude acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                387,
+                910,
+                525
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e71881ecd612858c4be4734134d6bff32df78f9e838fdc8d07f9280aa319c2bb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8: Spectrum of the signals near the peak showing the side bands due to a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " .01 g amplitude acceleration "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                539,
+                914,
+                731
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "FUTURE WORK "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                787,
+                668,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With this work on optimization of the size and shape of the proof mass, future work should concentrate on reduction in the minimum feature size. Reductions in this parameter would allow narrower beams, which would improve the sensitivity, and increase the Q - both of these features would enhance the resolution of this device. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                803,
+                910,
+                884
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Also, higher frequency sensing beams are of interest as they will result in higher sensitivity, but at the expense "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                885,
+                910,
+                913
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "608 "
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                942,
+                512,
+                954
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of potentially larger thermal drift, and more complex electronics. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                61,
+                485,
+                89
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Optimization of the drive and sense electronics is crucial to the performance of this device. SiTime has achieved much better phase noise performance with dedicated matched impedance ASICS from resonators conceptually similar to these. That benefit could apply directly into increased noise performance for these parts. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                90,
+                485,
+                173
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "While this high-vacuum, high-Q system allows precise measurement of strain and gives low thermal noise, the obvious downside is the ringing in proof mass position that will occur with shock or with vibration at the resonant frequency of the proof mass. In our prototypes, electrodes have been provided around the perimeter to enable a feedback controlled stiffening and damping system. Future experiments will make use of these electrodes for active control of device dynamics and improved shock response. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                173,
+                485,
+                309
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                338,
+                228,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We have designed, fabricated and characterized the first resonant accelerometers built within a wafer-scale encapsulation process. These results show promise towards being able to build a high-performance resonant accelerometer in the epi-seal process that should benefit from many of the advantages (high Q, high stability) inherent to that process. Preliminary experiments confirmed the operation and modeled performance of this device, and future work will focus on optimization of parameters to enhance sensitivity "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                354,
+                485,
+                489
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGEMENTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                521,
+                327,
+                535
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors acknowledge extensive technical discussions with Dr, Dorian Challoner of Boeing, Dr. Marc Weinberg of Draper Labs, and Dr. Gary O'Brien and Gary Yama of Bosch. This work was supported by the Defense Advanced Research Projects Agency (DARPA) Precision Navigation and Timing program (PNT) managed by Dr. Andrei Shkel under contract # N66001-12-1-4260. This work was performed in part at the Stanford Nanofabrication Facility (SNF) which is supported by National Science Foundation through the NNIN under Grant ECS-9731293. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                537,
+                485,
+                687
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                64,
+                650,
+                78
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] R.N. Candler, et al. \"Single Wafer Encapsulation of MEMS Devices\", IEEE Transactions on Advanced Packaging 26, p.227, 2003. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] R.N. Candler, et al. “Long Term and Accelerated Life Testing of a Novel Single-Wafer Vacuum Encapsulation for MEMS Resonators”, JMEMS vol.15, p.1146, 2006 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] T. Roessig, et.al \"Surface-micromachined resonant accelerometer\", Transducers '97, p859 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] A. Seshia, et.al, \"A vacuum packaged surface micromachined resonant accelerometer,\" JMEMS., vol.11, pp. 784-793, 2002 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] S. Su, H. Yang, A. Agogino, \"A resonant accelerometer with two-stage microleverage mechanisms fabricated by SOI-MEMS technology,\" Sensors J. vol.5, no.6, pp. 1214-1223, 2005 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] Y. Omura, et.al, \"New resonant accelerometer based on rigidity change,\" Transducers '97, p.855 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] M. Aikele, et.al, “Resonant accelerometer with self-test”, Sensors and Actuators A: Physical, 92, p161, 2001 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] V. Ferrari, et.al, \"Silicon resonant accelerometer with electronic compensation of input-output cross-talk\", Sensors and Actuators A: Physical, 123-124, p.258, 2005 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] Partridge, Aaron, et al. \"A high-performance planar piezoresistive accelerometer\", JMEMS vol.9.1, p.58-66, 2000 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] www.stime.com "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                79,
+                910,
+                476
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CONTACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                510,
+                533,
+                616,
+                546
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "*D.L. Christensen, tel: +1-209-9696300, "
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                548,
+                789,
+                562
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "davidc10@stanford.edu "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                563,
+                675,
+                576
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "609 "
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                941,
+                512,
+                954
+            ]
+        }
+    ]
+]

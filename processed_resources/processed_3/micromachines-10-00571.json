@@ -1,0 +1,486 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Article",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Jian Cui   ^{1,2} , Haibing Yang   ^{1} , Dong Li   ^{1} , Ziyang Song   ^{1}  and Qiancheng Zhao   ^{1,*}\n- ^{1}  National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, Peking University, Beijing 100871, China\n- ^{2}  Chinese Society of Micro-Nano Technology (CSMNT), Beijing 100084, China\n- * Correspondence: zqc@pku.edu.cn\nReceived: 14 July 2019; Accepted: 27 August 2019; Published: 29 August 2019 check for updates\nAbstract: Bias thermal sensitivity is a significant performance parameter of a silicon resonant accelerometer (SRA) and is normally used to evaluate the degree of engineering practicability. Theoretical analysis demonstrates that temperature-induced stress is the dominant factor that determines the bias temperature drift of the custom-designed SRA. To solve this issue, this paper presents an SRA embedded in an isolation frame with stress insensitive anchor that prevents the resonant beams suffering from the thermal stress along the sense axis and thus improving the bias stability. Moreover, a high sensitivity device is achieved by integrating the vibrating beams with the comb fingers without conventional additional mass design. The experimental results show that the nominal resonant frequency of the SRA is around   93\\mathrm{kHz}  with the sensitivity and nonlinearity of   223.7\\mathrm{Hz / g}  and   5.1\\%  . The thermal sensitivities of the two resonant beams are   -27.6~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and   -28.8~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , respectively, which can be considered as the results owing to temperature change of the Young's modulus without the thermal stress effect. The bias thermal sensitivity and the stability   (1\\sigma)  after compensation are tested to be approximately   0.7\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  and   1\\mathrm{mg}  over the temperature range from   -40^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C}  with   \\pm 80\\mathrm{g}  measurement range.\nKeywords: silicon resonant accelerometer; temperature-induced stress; stress insensitive anchor; isolation frame",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "Silicon resonant accelerometer (SRA) belongs to the generic category of vibrating beam accelerometers (VBA), which so far have demonstrated the right capability of meeting very demanding strategic-grade performance requirements in terms of accuracy, stability, and linearity following the quartz pendulous accelerometer technology [1,2]. VBA devices sense external acceleration by measuring the change in the resonant frequency of beam oscillators under the inertial loading of a proof mass. Compared with the widely used quartz resonant accelerometers, SRA offers more attractive advantages of lower cost, a more miniature size, and their capability of being integrated with the complementary metal-oxide-semiconductor (CMOS) circuit, etc. However, the SRAs appeared to be more sensitive to mechanical environments, especially to the temperature-induced stress caused by the mismatch of the coefficients of thermal expansion (CTE) between the silicon structure and the glass substrate [3,4], thus resulting in the drift of the resonant frequency and deterioration of the temperature performance.\nConsiderable research efforts have been devoted to alleviating the effect of thermal stress and reduce the thermal frequency drift of SRA from the aspects of materials, control circuit, packaging, and post-compensation. Composite materials were used in the resonator design to counterbalance the temperature coefficient of silicon [5,6]. Since the resonant frequency of a micro-resonator can\nbe adjusted by electrostatic tuning, the temperature sensitivity of frequency can be compensated by controlling the polarization voltage changing with temperature [7]. A separate isolation structure or platform was utilized to prevent the thermal stress generated during the die attaching process from transferring to the vibration beams of an accelerometer [8-10]. Another creative way is to employ a micro-oven with high precision feedback control of temperature to compensate for the resonator frequency drift over a wide temperature range [11]. To further improve the temperature performance of SRAs, some post-compensation methods took advantage of the resonant frequency of an on-chip resonator or the device quality factor as the thermometer to calibrate the bias output, which can avoid the thermal lag between the accelerometer and the external temperature sensors [12,13].\nDiffering from the previous literatures, in this paper, we focus on the anchor structure design to isolate the vibration beams from the thermal stress along the sense axis, thereby decreasing the frequency drift of the resonators. It is a more efficient and cost-effective means which requires no additional fabrication steps, complex control circuits, or extra isolation structures. Besides, a high sensitivity device is obtained by integrating the vibrating beams with the comb fingers without conventional additional mass design. The paper is organized as follows. Section 2 describes the mechanical structure design and the fabrication of the developed SRA. Detailed experimental results are given in Section 3. The conclusions are made in Section 4.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Figure 1 shows the proposed structure of SRA that mainly consists of a pair of double-ended tuning forks (DETF), a proof mass, two micro-leverages, four folded beams, and a supporting structure. Two identical DETFs are symmetrically distributed on both sides of the geometric center line of the structure. An axial force is generated and coupled onto the resonators when the external acceleration is applied to a movable seismic mass along the sense axis. The resonant frequency of each DETF changes under the applied load. This frequency change is proportional to the input acceleration and serves as the output of the SRA. It should be noted that the two DETFs are arranged collinearly in the sense axis, so they are loaded differentially by the proof mass. That is to say, one DETF is subject to a tension, the other to a compression. This differential configuration doubles the mechanical sensitivity of the SRA and leads a cancellation of common error sources, such as thermal drift and noise to both DETFs.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1. Schematic view of the designed silicon resonant accelerometer..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/69075103eef03857854ed26f8f334ec5253a1bcfa2eedaa7b97d09490cebab02.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Figure 1. Schematic view of the designed silicon resonant accelerometer..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/69075103eef03857854ed26f8f334ec5253a1bcfa2eedaa7b97d09490cebab02.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "Silicon-based DETFs are actuated by electrostatic comb finger structures which normally appear as airfoil types with additional mass in the conventional design, as shown in Figure 2a. The comb fingers have both inner and outer stator combs that are fixed to the glass substrate. There are several configurations for the driving and sensing combs. In Figure 2a, the two left groups of comb fingers are used as the driving combs, while the right two groups are the sensing combs. The resonant frequency of DETF is expressed as [14]\n$$\nf = f _ {n} \\sqrt {1 + F \\frac {0 . 2 9 3 L ^ {2}}{E h w ^ {3}}} \\tag {1}\n$$\n$$\nf _ {h} = \\frac {6 . 9 6}{\\pi} \\sqrt {\\frac {E h}{1 2} \\left(\\frac {w}{L}\\right) ^ {3} \\frac {1}{0 . 3 9 8 m + m _ {a}}}\n$$\nwhere   f_{n}  is the natural resonant frequency of DETF without any inertial loading,   E  is the Young's modulus,   h ,   w , and   L  are the thickness, width, and length of the vibration beam, respectively.   m  and   m_{a}  are the mass of vibration beam and airfoil type combs.   F  is the axial force along the length of the beam and can be written as\n$$\nF = m _ {p} a _ {e x} A _ {F} \\tag {2}\n$$\nm_{p}  is the proof mass,   a_{ex}  is the external input acceleration,   A_{F}  is the mechanical amplified factor caused by a micro-leverage which can further enhance the sensitivity of the accelerometer.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Structure design of DETF. (a) Conventional design with airfoil additional mass; (b) Improved design with no additional mass..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/b0a15d53840b0c0aa9771c8f1e9886b83cf9d67978a2198af23518558f909f86.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "Figure 2. Structure design of DETF. (a) Conventional design with airfoil additional mass; (b) Improved design with no additional mass..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/b0a15d53840b0c0aa9771c8f1e9886b83cf9d67978a2198af23518558f909f86.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The bias of the SRA is the differential output of the two DFTFs, as follows\n$$\n\\Delta f = f _ {n} \\left(\\sqrt {1 + F \\frac {0 . 2 9 3 L ^ {2}}{E h w ^ {3}}} - \\sqrt {1 - F \\frac {0 . 2 9 3 L ^ {2}}{E h w ^ {3}}}\\right) \\tag {3}\n$$\nTaylor expansion is applied to Equation (3) with the high-order terms omitted, so we obtained\n$$\n\\Delta f = f _ {n} F \\frac {0 . 2 9 3 L ^ {2}}{E h w ^ {3}} + \\frac {1}{8} f _ {n} \\left(F \\frac {0 . 2 9 3 L ^ {2}}{E h w ^ {3}}\\right) ^ {3} \\tag {4}\n$$\nCombining with Equation (2), the scale factor can be written as a ratio of the nominal differential frequency shift between the two resonant force sensors to the applied acceleration\n$$\nS F = \\frac {\\Delta f}{a _ {e x}} \\approx 0. 1 8 7 m _ {p} A _ {F} \\sqrt {\\frac {L}{E h w ^ {3}} \\frac {1}{0 . 3 9 8 m + m _ {a}}} \\tag {5}\n$$\nEquation (5) indicates that the scale factor of SRA is determined by the mechanical parameters, but not by any electrical parameter of the circuit. The scale factor and resonant frequency of the vibration beam can be increased by reducing the mass of the airfoil type combs. Hence, an improved structure design is proposed, as shown in Figure 2b, that integrates comb fingers sensing structure into the vibrating beam. The combination of vibrating beam and sensing combs enables additional mass\nnormally used in conventional design not being required, which enhances the sensitivity and ability of anti-vibration by increasing the resonant frequency.\nThe measurement range of the SRA is evaluated via a simulation method, as shown in Figure 3. First, the conversion coefficient from the external acceleration input to inertial force applied to the DETF is calculated on the basis of the measured scale factor. Then, a series of inertial forces corresponding to different acceleration inputs can be calculated and exerted on the DETF as a prestressing force, respectively. The frequency variations of the DETF are obtained through modal analysis under distinct prestress force by COMSOL multiphysics (Burlington, MA, USA). The nonlinearity of the frequency variations, with respect to the acceleration inputs, can be evaluated with the simulation results. We selected the nonlinearity of   0.1\\%  as the criterion to define the measurement range in the simulation. When the input is added to   80\\mathrm{g} , the simulated nonlinearity increased to about   1.017\\% . Thus,   \\pm 80\\mathrm{g}  is considered as the measurement range.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Structure design of DETF. (a) Conventional design with airfoil additional mass; (b) Improved design with no additional mass..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/b0a15d53840b0c0aa9771c8f1e9886b83cf9d67978a2198af23518558f909f86.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3. Simulation flow of measurement range..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/faa0b4768528dbc5005181ec258949e1902232534098d12751127c2a36810014.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "Figure 3. Simulation flow of measurement range..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/faa0b4768528dbc5005181ec258949e1902232534098d12751127c2a36810014.jpg"
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "The modal analysis of the designed DETF was performed using COMSOL multiphysics. The main structure parameters of improved design with no additional mass (Figure 2b) are listed in Table 1. The dimensions of conventional design with airfoil additional mass are annotated in Figure 2a with the same parameters of   h, w, L  as the improved design.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Structure design of DETF. (a) Conventional design with airfoil additional mass; (b) Improved design with no additional mass..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/b0a15d53840b0c0aa9771c8f1e9886b83cf9d67978a2198af23518558f909f86.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Structure parameters of the DETF..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/9373364eefd4f4d55301867144af1cc04035ab27c711b5af9c3df0cde3509dad.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Table 1. Structure parameters of the DETF..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/9373364eefd4f4d55301867144af1cc04035ab27c711b5af9c3df0cde3509dad.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "As shown in Figure 4a,c, the working modal frequencies of the DETF without and with additional mass under no external acceleration are   45147\\mathrm{Hz}  and   93065\\mathrm{Hz} . Although both schemes share the identical resonant beam structure parameters   (h,w,L) , the resonant frequency is doubled by removing the additional mass on DETFs, which can enlarge the scale factor of the SRA and make the device less affected by environment acoustic noise. The first five orders of modal shape of the designed DETF are illustrated in Figure 4b-f, with the simulation results listed in Table 2. The differential actuation\nconfiguration of the DETF guarantees that the translation mode cannot be excited. A large frequency split between the high order modes and the drive mode can effectively reduce the interference of other modes to the working mode.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(a). (b). (d). Figure 4. Simulated resonant modes of DETF under no loading force. (a) Drive mode of conventional design with airfoil additional mass DETF sensing structure; (b) 1st mode: in-plane translation mode; (c) 2nd mode: in plane drive mode; (d) 3rd mode: out-of-plane in-phase wriggle mode; (e) 4th mode: in-plane opposite wriggle mode; (f) 5th mode: in-phase torsional mode..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/013a4346e144a53169d914dad5f036ec8d3a6c7d2889d7c028d90882797ddfa4.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/35ba73c1a334a1df7f3c5a3ec7de2a1436b1986989abe553abd4aaa821600904.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/f1cbe872ebf4fdd1f33818e87fc2d6ce55dbea896fc13a2ec26b7ed96024148b.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/98b330bbbd56ebdbe1a4e7289f6dd4750ff58b4d4cf5cd5094501f99b6e0485e.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/50c6993259c82648d7eb37b904e9f974c06266169f0bfcca534777050ea2e68d.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/656f9dad563ac73b54ceb4c7ae734d1419ec369ce9a8a3b86b3d502ae3a4807c.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2. Modal analysis results of the designed DETF..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/b231cee4a194c30cc3731ac8b1a101936d1f696ba25e996b259aff077905d185.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "(a). (b). (d). Figure 4. Simulated resonant modes of DETF under no loading force. (a) Drive mode of conventional design with airfoil additional mass DETF sensing structure; (b) 1st mode: in-plane translation mode; (c) 2nd mode: in plane drive mode; (d) 3rd mode: out-of-plane in-phase wriggle mode; (e) 4th mode: in-plane opposite wriggle mode; (f) 5th mode: in-phase torsional mode..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/013a4346e144a53169d914dad5f036ec8d3a6c7d2889d7c028d90882797ddfa4.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/35ba73c1a334a1df7f3c5a3ec7de2a1436b1986989abe553abd4aaa821600904.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/f1cbe872ebf4fdd1f33818e87fc2d6ce55dbea896fc13a2ec26b7ed96024148b.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/98b330bbbd56ebdbe1a4e7289f6dd4750ff58b4d4cf5cd5094501f99b6e0485e.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/50c6993259c82648d7eb37b904e9f974c06266169f0bfcca534777050ea2e68d.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/656f9dad563ac73b54ceb4c7ae734d1419ec369ce9a8a3b86b3d502ae3a4807c.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "Table 2. Modal analysis results of the designed DETF..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/b231cee4a194c30cc3731ac8b1a101936d1f696ba25e996b259aff077905d185.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "On the basis of Equation (1), the temperature sensitivity of the resonant frequency without any axis stress is expressed as the derivative of the frequency, with respect to the temperature, as follows.\n$$\n\\frac {1}{f} \\frac {\\partial f}{\\partial T} = \\frac {1}{2} \\frac {1}{E} \\frac {\\partial E}{\\partial T} + \\frac {1}{2} \\frac {1}{h} \\frac {\\partial h}{\\partial T} + \\frac {3}{2} \\frac {1}{w} \\frac {\\partial w}{\\partial T} - \\frac {3}{2} \\frac {1}{L} \\frac {\\partial L}{\\partial T} \\tag {6}\n$$\nAs a matter of fact, the thermal sensitivity of the geometric dimension   (h,w,L)  is equal to the linear thermal expansion coefficient of silicon material   \\alpha_{\\mathrm{si}} , which is approximately   2.6~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  [15]. Thus, Equation (6) can be simplified as\n$$\n\\frac {1}{f} \\frac {\\partial f}{\\partial T} = \\frac {1}{2} \\frac {1}{E} \\frac {\\partial E}{\\partial T} + \\frac {1}{2} \\alpha_ {s i} \\tag {7}\n$$\nIt can be shown in Equation (7) that the temperature coefficient of the frequency (TCF) depends on the temperature variation of Young's modulus of about   -60\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  [16] and coefficient of thermal expansion of silicon material. Therefore, TCF is calculated to be around   -28\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , which can be used to evaluate the stress of the SRA, since the thermal sensitivity of the bonding stress is much larger than that of Young's modulus [3]. That is, severe stress may exist in the structure of DETF if the measured TCF of DETF far exceeds   -28\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , or if there are obvious nonlinear characteristics of the frequency-temperature varying curve.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_15",
+    "content": "The anchors are the supporting structures that act as a bridge connecting the sensing elements and the substrate. The anchors offer a unique path of transmitting the temperature-induced stress from the glass substrate to the DETFs. Therefore, the stress can be restrained by the proper design of the anchors.\nThe stress relief anchors of the SRA are shown in Figure 5. The internal support structure is implemented with an isolation frame structure, which is located inside the proof mass and outside the DETF resonators. The isolation frame is constructed in the shape of a Chinese character \"中\" and lies in the center of the accelerometer structure, with geometric symmetry along the drive and sense axis. The entire mechanical structure is suspended above the glass substrate through the anchors that can expand along the drive axis and sense axis, in the case of the thermal stress produced by the mismatch of the thermal expansion coefficients of silicon and glass. Because the stress relief anchors are symmetrically distributed on the isolation frame, of which the stiffness is extremely large, the isolation frame will be deformed by the thermal stress only in the drive axis direction, but not in the sense axis direction. Consequently, the anchors with isolation frame minimize the effect of thermal stress transmitted to the DETF resonators, resulting in reducing the sensitivity of the resonators to the thermal stress.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Figure 5. Stress relief anchor design..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/77bcbfca789dc33fa78e62a581231cc7833f77642f50d49cde9738cb4f2796c7.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "Figure 5. Stress relief anchor design..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/77bcbfca789dc33fa78e62a581231cc7833f77642f50d49cde9738cb4f2796c7.jpg"
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "To investigate the effect of the stress relief anchors, the Von mises stress nephogram is obtained by a simulation with COMSOL multiphysics with the ambient temperature rising from the room temperature to   +50^{\\circ}\\mathrm{C} , as displayed in Figure 6. A small area in the center of the substrate is clamped as the boundary condition. A thick substrate layer is normally adopted to reduce the die stress. In practice, Pyrex 7740 glass (Corning, NY, USA) with a thickness of   500\\mu \\mathrm{m}  was selected as the substrate, due to its similar thermal expansion coefficient   (3.25\\mathrm{ppm} / {}^{\\circ}\\mathrm{C})  with that of silicon material   (2.6\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}) . We intentionally selected a set of worse simulation parameters. The thickness and CTE of the substrate are set as   150~{\\mu\\mathrm{m}}  and   0.5\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , which are less than the practical used value. If the simulation results obtained by this group of worse parameters show a good stress relief effect, the actual stress situation will be better. It can be revealed that, thanks to the utilization of the designed anchors with isolation frame, the temperature-induced stress mainly concentrates on the connection between the anchors and the frame along the drive-axis (Y). The DETF resonators are almost unaffected, which can improve the temperature stability of the SRA.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6. Simulated Von mises stress nephogram of the SRA. (a) The thermal stress distribution when the ambient temperature rises from the room temperature to   +50^{\\circ}\\mathrm{C} ; (b) Detailed view of the stress distribution on the anchors and isolation frame..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/438bd469e4e37cbe7e8a551876aade362f752124d03fa93c3b924d6a8332a8dd.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/8c453fdf4570c1ff2bd34257b973ccabeb55697e6d17dee957777f7f6eb4ca65.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Figure 6. Simulated Von mises stress nephogram of the SRA. (a) The thermal stress distribution when the ambient temperature rises from the room temperature to   +50^{\\circ}\\mathrm{C} ; (b) Detailed view of the stress distribution on the anchors and isolation frame..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/438bd469e4e37cbe7e8a551876aade362f752124d03fa93c3b924d6a8332a8dd.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/8c453fdf4570c1ff2bd34257b973ccabeb55697e6d17dee957777f7f6eb4ca65.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "The SRA is fabricated with the silicon on glass (SOG) process which is illustrated in Figure 7. The process starts with a high doping and low resistivity silicon wafer. Photoresist defines the anchor area of wafer and deep reactive ion etching (DRIE) process etches the convex plate as the bonding interface (Figure 7a). Ion implantation on the bonding surface could reduce the resistivity at the bonding interface and ensure good ohmic contact (Figure 7b). In order to ensure thermal expansion matching with silicon materials, Pyrex 7740 glass is selected, due to its similar thermal expansion coefficient with silicon material. Graphic transfer of metal electrode on glass is accomplished by the lift-off technique (Figure 7c). After the metal electrode is formed, the silicon wafer and the glass substrate are aligned and bonded, which realizes the electrical connection and electrode extraction between mechanical structure and glass substrate (Figure 7d).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "(a). (b). (c). (d). (e). (f). Figure 7. The standard SOG process. (a) Etch bonding area on silicon wafer. (b) Ion implantation on bonding surface. (c) Depositing the metal electrodes on glass substrate. (d) Bonding glass substrate to silicon wafer. (e) Thinning and polishing silicon wafer. (f) Release the structure through DRIE..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/6a19bbeb9588e8fd6a05d5c37e1a52b6886d6340011cece8cadbfd27c75f87e8.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/884699b332e021a5e2b8b6cfc52f80cff6b076d8f407da2bc34595f4f2925262.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/72b40816d2ccdcb0406ad87a30125003a3696e34921d652a13efe545aed7ebaa.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/830a25688d6100f6c1a241eff0720ab413a242de619b4dea68d19215195493c6.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ae547eab491678b5d3aa3981ab06cd5767c44d99848360c5ee757e1507e51eec.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ff4328e25c06933ce86a809169b0c59ec0b256c1e1e24b48ca9a3d8aa1a2392c.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ae185549842f93636cdb400ab1b4c771c7d6ca23d2945e0bdbc24673773bb9a5.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/abeb48a548fb4844d66333e8664a7f8d08e048685ed7ea849c7bfd3126b17499.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/023a9bd8841307ff48f50d8b54189b1524d15db74c84dadf709473b246475bf9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "(a). (b). (c). (d). (e). (f). Figure 7. The standard SOG process. (a) Etch bonding area on silicon wafer. (b) Ion implantation on bonding surface. (c) Depositing the metal electrodes on glass substrate. (d) Bonding glass substrate to silicon wafer. (e) Thinning and polishing silicon wafer. (f) Release the structure through DRIE..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/6a19bbeb9588e8fd6a05d5c37e1a52b6886d6340011cece8cadbfd27c75f87e8.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/884699b332e021a5e2b8b6cfc52f80cff6b076d8f407da2bc34595f4f2925262.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/72b40816d2ccdcb0406ad87a30125003a3696e34921d652a13efe545aed7ebaa.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/830a25688d6100f6c1a241eff0720ab413a242de619b4dea68d19215195493c6.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/ae547eab491678b5d3aa3981ab06cd5767c44d99848360c5ee757e1507e51eec.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/ff4328e25c06933ce86a809169b0c59ec0b256c1e1e24b48ca9a3d8aa1a2392c.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/ae185549842f93636cdb400ab1b4c771c7d6ca23d2945e0bdbc24673773bb9a5.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/abeb48a548fb4844d66333e8664a7f8d08e048685ed7ea849c7bfd3126b17499.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/023a9bd8841307ff48f50d8b54189b1524d15db74c84dadf709473b246475bf9.jpg"
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "Then, the KOH solution is used to reduce the thickness of the silicon structural layer to 60   \\mu m (Figure 7e) and to finally release the mechanical structure through the DRIE process (Figure 7f). The scanning electron microscope (SEM) images of the custom-designed SRA are depicted in Figure 8.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "(a). (b). (c). (d). (e). (f). Figure 7. The standard SOG process. (a) Etch bonding area on silicon wafer. (b) Ion implantation on bonding surface. (c) Depositing the metal electrodes on glass substrate. (d) Bonding glass substrate to silicon wafer. (e) Thinning and polishing silicon wafer. (f) Release the structure through DRIE..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/6a19bbeb9588e8fd6a05d5c37e1a52b6886d6340011cece8cadbfd27c75f87e8.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/884699b332e021a5e2b8b6cfc52f80cff6b076d8f407da2bc34595f4f2925262.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/72b40816d2ccdcb0406ad87a30125003a3696e34921d652a13efe545aed7ebaa.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/830a25688d6100f6c1a241eff0720ab413a242de619b4dea68d19215195493c6.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ae547eab491678b5d3aa3981ab06cd5767c44d99848360c5ee757e1507e51eec.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ff4328e25c06933ce86a809169b0c59ec0b256c1e1e24b48ca9a3d8aa1a2392c.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ae185549842f93636cdb400ab1b4c771c7d6ca23d2945e0bdbc24673773bb9a5.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/abeb48a548fb4844d66333e8664a7f8d08e048685ed7ea849c7bfd3126b17499.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/023a9bd8841307ff48f50d8b54189b1524d15db74c84dadf709473b246475bf9.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "(a). (b)  Figure 8. The SEM image of SRA structure. (a) Two DETFs embedded in the isolation frame; (b) Close ups of the DETF (Left)..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/15489d3c486251b5a351001e2d8f43998995962768a54f0df622fd46dd204c4b.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/b82abb44026e84df04a28ecfc0a180f87979e3746578a0a3fae6c141f6d5d428.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "(a). (b)  Figure 8. The SEM image of SRA structure. (a) Two DETFs embedded in the isolation frame; (b) Close ups of the DETF (Left)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/15489d3c486251b5a351001e2d8f43998995962768a54f0df622fd46dd204c4b.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/b82abb44026e84df04a28ecfc0a180f87979e3746578a0a3fae6c141f6d5d428.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "The fabricated SRA is vacuum sealed in a cylindrical metal packaging with the quality factor around 64000 which reduces the frequency noise in the output from phase jitter [1]. A printed circuit board (PCB) is designed to test the performance of SRA with pre-readout circuits and self-oscillation with automatic gain control (AGC) circuit [17], as shown in Figure 9a. The overall size of the test circuit is   55\\mathrm{mm}\\times 50\\mathrm{mm} . Figure 9b describes the control scheme of self-oscillation loop. A dc voltage   V_{p}  is applied to the proof mass. A continuous-time charge-sensitive amplifier (CSA) is adopted to convert the capacitance variation to voltage   (C / V) . The displacement voltage is then fed into a   90^{\\circ}  phase shift circuit to meet the phase requirement of the Barkhausen criterion. An AGC is used to control the amplitude of the displacement voltage to a reference R by adjusting the amplitude of the drive voltage   V_{d}(t)  that is differentially applied back to the driving combs of the DETF.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 9",
+        "caption": "(a). (b)  Figure 9. The test circuit for vacuum sealed SRA. (a) Test PCB mounted with the SRA; (b) Control scheme of self-oscillation loop..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/71f260e37f4cc0a9692e0d3f77cb839f48d20dcf90ca2c256f5efa89671d6054.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ddcd259dc31ad92dcb979cd1eaef50350139ec43598d4ecd055e3e91c60b4e32.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_24",
+    "content": "(a). (b)  Figure 9. The test circuit for vacuum sealed SRA. (a) Test PCB mounted with the SRA; (b) Control scheme of self-oscillation loop..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/71f260e37f4cc0a9692e0d3f77cb839f48d20dcf90ca2c256f5efa89671d6054.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/ddcd259dc31ad92dcb979cd1eaef50350139ec43598d4ecd055e3e91c60b4e32.jpg"
+    ]
+  },
+  {
+    "id": "doc_25",
+    "content": "A ring-down method has been employed to extract the resonant frequency and quality factor of the SRA, using a NI 6366 data acquisition card [18]. First, an actuation signal with a frequency of around   90\\mathrm{kHz}  was generated to apply to the drive electrodes of DETF for several seconds, and then it was removed. The frequency of the ring-down waveform (Figure 10a) was determined through the fast fourier transform (FFT) using LabVIEW (National Instruments, Austin, TX, USA) (Figure 10b). The envelope of the attenuation response curve is fitted to calculate Q, as shown in Figure 10c. The resonant frequencies and quality factors of the two DETF resonators without any input acceleration are measured to be   93228\\mathrm{Hz} , 64073, and   92847\\mathrm{Hz} , 62340, respectively. The measured resonant frequencies are close to the simulation results. The initial frequency split is then calculated to be   381\\mathrm{Hz}  due to the different fabrication tolerance of the two DETF resonators.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 10",
+        "caption": "Figure 10. The frequency and quality factor of the DETF1 (Left) testing. (a) Ring-down waveform of the SRA vibration; (b) Resonant frequency test using FFT; (c) Envelope of the attenuation response curve..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/b020a8c7851ad1500ef6512365efd392ab642ba08dda7337a1bcd6c359bd4173.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/5d5ab4bf6039c09c0d92454302cc1cb975e6484de3cee67faae6338d676511f2.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/10cb9a3f21bf6d398a3c17f96879b41ca62ceb2ae87b0187db397da5e2275010.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_26",
+    "content": "Figure 10. The frequency and quality factor of the DETF1 (Left) testing. (a) Ring-down waveform of the SRA vibration; (b) Resonant frequency test using FFT; (c) Envelope of the attenuation response curve..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/b020a8c7851ad1500ef6512365efd392ab642ba08dda7337a1bcd6c359bd4173.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/5d5ab4bf6039c09c0d92454302cc1cb975e6484de3cee67faae6338d676511f2.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/10cb9a3f21bf6d398a3c17f96879b41ca62ceb2ae87b0187db397da5e2275010.jpg"
+    ]
+  },
+  {
+    "id": "doc_27",
+    "content": "A NI 6366 data acquisition card (National Instruments, Austin, TX, USA) was adopted to obtain the resonant frequencies of the two DETFS. The test PCB mounted with SRA is installed on an indexing plate which can be precisely changed the sense axis angle from   -90  degree to   +90  degree with 10-degree intervals by a hand crank, as shown in Figure 11a, thus resulting in 19 test points. At each tilt angle position, the output frequencies of the oscillator are recorded by the frequency counter for   30\\mathrm{s}  and the mean value of the 30 data is considered to be the final output under a specific position. Figure 11b shows the resonant frequencies variations of DETF 1 and DETF 2 at all tilt angles. Figure 11c demonstrates that the scale factor of the SRA is   223.7\\mathrm{Hz / g}  with a nonlinearity of   5.1\\%",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 11",
+        "caption": "(a). (b). (c)  Figure 11. The scale factor testing. (a) The SRA is fixed on the indexing plate to test the scale factor; (b) The frequency output of two DETFs; (c) Frequency difference vs. input gravity..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/01a7808c11c0969f5fc4f41cdf31a9db2505c5429321596f6ce8954b143320cb.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/7b31407bb8608d6eda9989042d7f98d704597ac7588cc565156a3a8095181eca.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/ccbe5cb35b64c43b9eb273955ab2a12235978f3f084e03ddfbe720b7eda2eecf.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_28",
+    "content": "(a). (b). (c)  Figure 11. The scale factor testing. (a) The SRA is fixed on the indexing plate to test the scale factor; (b) The frequency output of two DETFs; (c) Frequency difference vs. input gravity..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/01a7808c11c0969f5fc4f41cdf31a9db2505c5429321596f6ce8954b143320cb.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/7b31407bb8608d6eda9989042d7f98d704597ac7588cc565156a3a8095181eca.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/ccbe5cb35b64c43b9eb273955ab2a12235978f3f084e03ddfbe720b7eda2eecf.jpg"
+    ]
+  },
+  {
+    "id": "doc_29",
+    "content": "The SRA with the control circuit was put inside an oven chamber to measure the bias temperature performance, as shown in Figure 12. The device is installed on a custom-designed fixture. To keep the SRA away from the vibration of the oven chamber due to its compressor engine operation, the fixture should not be directly contact with the chamber but should be mounted on a metal crossbeam that is isolated from the chamber. The temperature was configured from   -40^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C} , with the variation rate of   1^{\\circ}\\mathrm{C / min} .\nThe resonant frequencies of the two DETFs and the temperature information are continuously measured and stored with a sampling frequency of   1\\mathrm{Hz} . The varying curves of the resonant frequencies, with respect to the temperature, are plotted in Figure 13. The thermal sensitivities of the two DETFs are   -27.6\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and   -28.8\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , respectively. The temperature-induced stress is believed to be substantially relieved by the designed anchors with the isolation frame, since the TCFs of the DETF resonators are all around   -28\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and a good linear relationship is found between the frequency and the temperature, as analyzed in Section 2.3. The raw bias output of the SRA is shown in Figure 14a. The variation of the bias is about   70\\mathrm{mg}  over the temperature of the   100^{\\circ}\\mathrm{C}  range. The thermal sensitivity of the SRA is thus calculated to be   0.7\\mathrm{mg} / {}^{\\circ}\\mathrm{C} , which is equivalent to about   0.16\\mathrm{Hz} / {}^{\\circ}\\mathrm{C} . The thermal bias stability (1σ) of the SRA was approximately   1\\mathrm{mg}  after a third-order temperature compensation was applied, as displayed in Figure 14b, which is fairly good for a microelectromechanical systems (MEMS) accelerometer with an   \\pm 80\\mathrm{g}  measurement range.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 12",
+        "caption": "Figure 12. The SRA is put inside an oven chamber for temperature performance testing.  Figure 13. The resonant frequencies of the two DETFs vary with the temperature..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/75b09ee69ea7c31902e93bea0c724e6e8faa73e42dd89afc6deb2d082d90eca2.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/0da2f7e521c2d21913e37a8e8b26fa4569a57a7016b37d9e28753dc413bde82c.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 13",
+        "caption": "Figure 12. The SRA is put inside an oven chamber for temperature performance testing.  Figure 13. The resonant frequencies of the two DETFs vary with the temperature..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/75b09ee69ea7c31902e93bea0c724e6e8faa73e42dd89afc6deb2d082d90eca2.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/0da2f7e521c2d21913e37a8e8b26fa4569a57a7016b37d9e28753dc413bde82c.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 14",
+        "caption": "(a). (b)  Figure 14. The bias of the SRA vary with the temperature. (a) Raw bias output. (b) Compensated bias output..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/ec2fe847b7d4e130505990e3ba8092f423d0f6e4fef3a88a7670c93416824668.jpg",
+          "./text_resources/micromachines-10-00571/vlm/images/51f610d7a34fbc007bfff25745cb44b03e7a8701628af09b71265f74a2211fda.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_30",
+    "content": "Figure 12. The SRA is put inside an oven chamber for temperature performance testing.  Figure 13. The resonant frequencies of the two DETFs vary with the temperature..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/75b09ee69ea7c31902e93bea0c724e6e8faa73e42dd89afc6deb2d082d90eca2.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/0da2f7e521c2d21913e37a8e8b26fa4569a57a7016b37d9e28753dc413bde82c.jpg"
+    ]
+  },
+  {
+    "id": "doc_31",
+    "content": "(a). (b)  Figure 14. The bias of the SRA vary with the temperature. (a) Raw bias output. (b) Compensated bias output..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/ec2fe847b7d4e130505990e3ba8092f423d0f6e4fef3a88a7670c93416824668.jpg",
+      "./text_resources/micromachines-10-00571/vlm/images/51f610d7a34fbc007bfff25745cb44b03e7a8701628af09b71265f74a2211fda.jpg"
+    ]
+  },
+  {
+    "id": "doc_32",
+    "content": "The thermal sensitivity of the bias output is determined by temperature variations of the two DETF resonators. Ideally, the thermal drift of the bias can be cancelled by the differential readouts of the two DETF resonators. However, the structures of the two DETFs are not identical as expected, due to the fabrication error, which leads to the bias drift. Therefore, the initial frequency split of the two DETFs can be used as an indicator of the structural asymmetry that can affect the temperature characteristics of the SRA. Table 3 summarizes the measured performance of the proposed accelerometer and the comparison with the previously reported resonant accelerometers.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 3",
+        "caption": "Table 3. Summary of comparison with previous works..",
+        "image_source": [
+          "./text_resources/micromachines-10-00571/vlm/images/75a999aec73e22573e0a8f43781184afde3a6cd62f2f1fe261cbfab9d4ddd202.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_33",
+    "content": "Table 3. Summary of comparison with previous works..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/micromachines-10-00571/vlm/images/75a999aec73e22573e0a8f43781184afde3a6cd62f2f1fe261cbfab9d4ddd202.jpg"
+    ]
+  },
+  {
+    "id": "doc_34",
+    "content": "The SRAs received broad attention by the technical communities for their advantages of lower cost, a more miniature size, and the potential of navigation-grade performance. However, it is a challenging task to promote the temperature performance, since the SRAs are so sensitive to the temperature-induced stress. This paper proposed a SRA with stress insensitive anchor with an isolation frame that prevents the resonant beams from suffering the thermal stress along the sense axis, thus improving the bias stability. Besides, a high mechanical sensitivity was obtained by integrating the vibrating beams with the comb fingers without conventional additional mass design. The experimental results indicated that the nominal resonant frequency of the SRA was around   93\\mathrm{kHz}  with the sensitivity and nonlinearity of   223.7\\mathrm{Hz / g}  and   5.1\\%  . The thermal sensitivities of the two resonant beams are   -27.6~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and   -28.8~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , respectively, which are very close to the theoretical value without the thermal stress effect. The bias thermal sensitivity and the stability (1σ) after compensation were tested to be approximately   0.7\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  and   1\\mathrm{mg}  over the temperature range from   -40^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C}  with an   \\pm 80\\mathrm{g}  measurement range. Future work will focus on the initial frequency reduction of the two DETF resonators to further improve the temperature stability of the SRA.\nAuthor Contributions: Conceptualization, Q.Z. and J.C.; simulation, H.Y. and Z.S.; hardware, J.C.; experiments, Z.S. and D.L.; supervision, Q.Z.\nFunding: This research was funded by the National Natural Science Foundation of China (Grant No. 61434003) and the Foundation of Science and Technology on Reliability Physics and Application of Electronic Component Laboratory (Grant No. 61428060303).\nConflicts of Interest: The authors declare no conflict of interest.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_35",
+    "content": "- 1. Hopkins, R.; Miola, J.; Setterlund, R.; Dow, B.; Sawyer, W. The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications. In Proceedings of the 61st Annual Meeting of The Institute of Navigation, Cambridge, MA, USA, 27-29 June 2005; pp. 1043-1052.\n- 2. Beitia, J.; Clifford, A.; Fell, C.; Loisel, P. Quartz pendulous accelerometers for navigation and tactical grade systems. In Proceedings of the 2015 DGON Inertial Sensors and Systems Symposium (ISS), Karlsruhe, Germany, 22-23 September 2015; pp. 1-20. [CrossRef]",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_36",
+    "content": "- 3. Dong, J.; Qiu, A.; Shi, R. Temperature influence mechanism of micromechanical silicon oscillating accelerometer. In Proceedings of the 2011 IEEE Power Engineering and Automation Conference, Wuhan, China, 8-9 September 2011; pp. 385-389. [CrossRef]\n- 4. Melamud, R.; Hopcroft, M.; Jha, C.; Bongsang, K.; Chandorkar, S.; Candler, R.; Kenny, T.W. Effects of stress on the temperature coefficient of frequency in double clamped resonators. In Proceedings of the The 13th International Conference on Solid-State Sensors, Actuators and Microsystems, 2005. Digest of Technical Papers. TRANSDUCERS '05., Seoul, South Korea, 5-9 June 2005; pp. 392-395. [CrossRef]\n- 5. Kim, B.; Melamud, R.; Hopcroft, M.A.; Chandorkar, S.A.; Bahl, G.; Messana, M.; Candler, R.N.; Yama, G.; Kenny, T. Si-SiO2 Composite MEMS Resonators in CMOS Compatible Wafer-scale Thin-Film Encapsulation. In Proceedings of the 2007 IEEE International Frequency Control Symposium Joint with the 21st European Frequency and Time Forum, Geneva, Switzerland, 29 May-1 June 2007; pp. 1214-1219. [CrossRef]\n- 6. Tabrizian, R.; Casinovi, G.; Ayazi, F. Temperature-Stable Silicon Oxide (SilOx) Micromechanical Resonators. IEEE Trans. Electron Devices 2013, 60, 2656-2663. [CrossRef]\n- 7. Sundaresan, K.; Ho, G.K.; Pourkamali, S.; Ayazi, F. Electronically temperature compensated silicon bulk acoustic resonator reference oscillators. IEEE J Solid-St Circ 2007, 42, 1425-1434. [CrossRef]\n- 8. Traon, O.L.; Janiaud, D.; Lecorre, B.; Pernice, M.; Muller, S.; Tridera, J. Monolithic differential vibrating beam accelerometer within an isolating system between the two resonators. In Proceedings of the SENSORS, 2005 IEEE, Irvine, CA, USA, 30 Oct.-3 November 2005; p. 4. [CrossRef]\n- 9. Lee, S.; Lee, S.W.; Najafi, K. A Generic Environment-Resistant Packaging Technology for MEMS. In Proceedings of the TRANSDUCERS 2007 - 2007 International Solid-State Sensors, Actuators and Microsystems Conference, Lyon, France, 10-14 June 2007; pp. 335-338. [CrossRef]\n- 10. Yin, Y.; Fang, Z.; Dong, J.; Liu, Y.; Han, F. A Temperature-Insensitive Micromachined Resonant Accelerometer with Thermal Stress Isolation. In Proceedings of the 2018 IEEE SENSORS, New Delhi, India, 28-31 October 2018; pp. 1-4. [CrossRef]\n- 11. Jha, C.M.; Hopcroft, M.A.; Chandorkar, S.A.; Salvia, J.C.; Agarwal, M.; Candler, R.N.; Melamud, R.; Kim, B.; Kenny, T.W. Thermal isolation of encapsulated MEMS resonators. J. Microelectromech. Syst. 2008, 17, 175-184. [CrossRef]\n- 12. Hopcroft, M.A.; Agarwal, M.; Park, K.K.; Kim, B.; Jha, C.M.; Candler, R.N.; Yama, G.; Murmann, B.; Kenny, T.W. Temperature Compensation of a MEMS Resonator Using Quality Factor as a Thermometer. In Proceedings of the 19th IEEE International Conference on Micro Electro Mechanical Systems, Istanbul, Turkey, 22-26 January 2006; pp. 222-225. [CrossRef]\n- 13. Kose, T.; Azgin, K.; Akin, T. Temperature compensation of a capacitive MEMS accelerometer by using a MEMS oscillator. In Proceedings of the 2016 IEEE International Symposium on Inertial Sensors and Systems, Laguna Beach, CA, USA, 22-25 February 2016; pp. 33-36. [CrossRef]\n- 14. Xia, G.; Shi, Q.; Qiu, A.; Yu, X.; Pei, Z. An on-chip thermal stress evaluation method for silicon resonant accelerometer. In Proceedings of the 2016 IEEE SENSORS, Orlando, FL, USA, 30 Oct.-3 November 2016; pp. 1-3. [CrossRef]\n- 15. Okada, Y.; Tokumaru, Y. Precise determination of lattice parameter and thermal expansion coefficient of silicon between 300 and 1500 K. J. Appl. Phys. 1984, 56, 314-320. [CrossRef]\n- 16. Hopcroft, M.A.; Nix, W.D.; Kenny, T.W. What is the Young's Modulus of Silicon? J Microelectromech Syst. 2010, 19, 229-238. [CrossRef]\n- 17. Cui, J.; Chi, X.Z.; Ding, H.T.; Lin, L.T.; Yang, Z.C.; Yan, G.Z. Transient response and stability of the AGC-PI closed-loop controlled MEMS vibratory gyroscopes. J. Micromech. Microeng. 2009, 19, 125015. [CrossRef]\n- 18. Yan, J.J.; He, C.H.; Ge, F.; Zhao, Q.C.; Cui, J.; Yan, G.Z. Research of Resonant Frequency and Quality Factor Test Methods for High Vacuum Sealed Microgyroscope Based on LabVIEW. Procedia Eng. 2011, 15, 2566-2570. [CrossRef]\n- 19. Shi, R.; Zhao, J.; Qiu, A.P.; Xia, G.M. Temperature Self-Compensation of Micromechanical Silicon Resonant Accelerometer. Appl. Mech. Mater. 2013, 373–375, 373–381. [CrossRef]\n- 20. Wang, Y.G.; Zhang, J.; Yao, Z.C.; Lin, C.; Zhou, T.; Su, Y.; Zhao, J. A MEMS Resonant Accelerometer With High Performance of Temperature Based on Electrostatic Spring Softening and Continuous Ring-Down Technique. IEEE Sens. J. 2018, 18, 7023-7031. [CrossRef]",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_37",
+    "content": "- 21. Shin, D.D.; Ahn, C.H.; Chen, Y.; Christensen, D.L.; Flader, I.B.; Kenny, T.W. Environmentally robust differential resonant accelerometer in a wafer-scale encapsulation process. In Proceedings of the 2017 IEEE 30th International Conference on Micro Electro Mechanical Systems (MEMS), Las Vegas, NV, USA, 22-26 January 2017; pp. 17-20. [CrossRef]\n- 22. Comi, C.; Corigliano, A.; Langfelder, G.; Zega, V.; Zerbini, S. Sensitivity and temperature behavior of a novelz-axis differential resonant micro accelerometer. J. Micromech. Microeng. 2016, 26, 035006. [CrossRef]\n- 23. Huang, L.B.; Yang, H.; Gao, Y.; Zhao, L.Y.; Liang, J.X. Design and Implementation of a Micromechanical Silicon Resonant Accelerometer. Sensors 2013, 13, 15785-15804. [CrossRef] [PubMed]",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_38",
+    "content": "© 2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (http://creativecommons.org/licenses/by/4.0/).",
+    "block_type": "text"
+  }
+]

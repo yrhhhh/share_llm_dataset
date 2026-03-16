@@ -1,0 +1,1238 @@
+[
+    {
+        "type": "text",
+        "text": "Modeling of nonlinear stiffness of micro-resonator in silicon resonant accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            216,
+            81,
+            783,
+            129
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "JING Zhang $^{1, a}$ , SHAO-DONG Jiang $^{1, b}$ and AN-PING Qiu $^{1, c}$ ",
+        "bbox": [
+            193,
+            141,
+            805,
+            162
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>1</sup> School of Mechanical Engineering, Nanjing University of Science and Technology, Nanjing 210094, China ",
+        "bbox": [
+            157,
+            167,
+            840,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a zhangjing3701@126.com, bshdjiang_njust@163.com, capqiu@mail.njust.edu.cn ",
+        "bbox": [
+            163,
+            213,
+            833,
+            230
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Silicon Resonant Accelerometer, nonlinear vibration, nonlinear stiffness ",
+        "bbox": [
+            92,
+            250,
+            779,
+            267
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract. Nonlinearities of the resonator in silicon resonant accelerometer (SRA) limit the ultimate short term frequency stability. In SRA, this stability is a measure of the achievable resolution. This paper discusses the nonlinear vibration phenomenon of micro-resonator considering the impact of the entire structure of SRA and builds a model to calculate the micro-resonator nonlinear stiffness $K_{3,eff}$ of the SRA prototype. The dies of SRA were fabricated by Silicon on Insulator (SOI) process. The equivalent model of the micro-resonator is built and the analytical value of the elastic constraint stiffness $K_{a}$ of micro-resonator is derived as $8.91 \\times 10^{4} \\mathrm{~N/m}$ . It is calculated that $K_{3,eff}$ is equal to $5 \\times 10^{11} \\mathrm{~N/m}^3$ , and as a comparison, the simulation result is $5.026 \\times 10^{11} \\mathrm{~N/m}^3$ . The error between them is $0.52\\%$ . The nonlinear vibration experiments show that the maximum error between the theoretical and experimental value of resonance frequency is $2.1\\%$ . The prediction for the nonlinear stiffness contributes to further research on nonlinear vibration of the resonant beam. The model in this paper could also provide guidance and reference for optimal design of SRA. ",
+        "bbox": [
+            90,
+            288,
+            907,
+            490
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Introduction ",
+        "text_level": 1,
+        "bbox": [
+            92,
+            498,
+            203,
+            514
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The SRA belongs to the generic category of accelerometers known as Vibrating Beam Accelerometers(VBA), which sense acceleration by measuring the change in the resonant frequency of beam oscillators under the inertial loading of a proof mass[1]. Compared with traditional accelerometers, SRA is considered attractively for its wide dynamic range and high sensitivity, as well as for its ease of integration into digital systems. It has been applied in many engineering fields and its output is a frequency shift. SRA obtains acceleration utilizing the force-frequency characteristic of the resonant beam. However, when the vibration amplitude increases, the tuning fork tone is forced to extend. This extension causes additional axial force, and increases the trend of the output frequency. Namely produce nonlinear vibration. Nonlinear effects can lead to super and subharmonic resonances which can also limit the fundamental mode amplitude [2]. Thus, the nonlinear vibration directly affects accuracy and sensitivity of the output frequency. ",
+        "bbox": [
+            90,
+            521,
+            905,
+            706
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Nonlinear characterization of micro-resonator was researched in [2]-[4]. Ville expounded that nonlinearities in setting the limit for vibration energy storage are demonstrated in oscillator applications [2]. Roessig proposed that the sources of nonlinearity in micro-resonator are mechanical structure and electrostatic actuation and shows that low-frequency voltage drift in the sustaining amplifier is directly converted into a frequency shift in the oscillator output in [3]. Claudia established the geometric model of resonator and obtained the nonlinear dynamic response of micro-resonators in [4]. Researches mentioned above only consider the nonlinearity caused by micro-resonator itself. In SRA, the stiffness characteristics of micro-lever connected with micro-resonator will also affect the nonlinear vibration characteristics of micro-resonator. Therefore, this paper discusses the nonlinear vibration phenomenon of micro-resonator considering the impact of the entire structure of SRA. ",
+        "bbox": [
+            90,
+            707,
+            905,
+            874
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper establishes the nonlinear vibration models of the micro-resonator and gives the calculation for the elastic constraint stiffness $K_{a}$ and the nonlinear stiffness $K_{3,eff}$ . The theoretical value of $K_{3,eff}$ is verified by the simulations and the experiments. The models could provide guidance and reference for the SRA structure optimization. ",
+        "bbox": [
+            92,
+            875,
+            902,
+            941
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Key Engineering Materials  \nISSN: 1662-9795, Vols. 562-565, pp 374-379  \ndoi:10.4028/www.scientific.net/KEM.562-565.374  \n© 2013 Trans Tech Publications Ltd, All Rights Reserved ",
+        "bbox": [
+            90,
+            14,
+            480,
+            66
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Online: 2013-07-15 ",
+        "bbox": [
+            771,
+            14,
+            907,
+            29
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "All rights reserved. No part of contents of this paper may be reproduced, processed or transmitted in any form or by any means without the written permission of Trans Tech Publications Ltd, www.scientific.net. (#755700355, KU Leuven - University Library, Leuven, Belgium-19/01/26, 19:07:02) ",
+        "bbox": [
+            92,
+            966,
+            853,
+            984
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Nonlinear vibration model of the micro-resonator ",
+        "text_level": 1,
+        "bbox": [
+            89,
+            84,
+            542,
+            100
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1 Equivalent model of the resonant beam ",
+        "text_level": 1,
+        "bbox": [
+            89,
+            115,
+            465,
+            131
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Fig. 1 is the a schematic representation of the SRA sensor, showing a pair of double-ended tuning forks(DETF) resonators connected to a proof mass via micro-levers. The SRA input axis lies in plane as indicated in Fig.1. Under acceleration, the inertial force of the proof mass is amplified by micro-levers and then loads the two resonators pairs. One resonator is placed in tension whose frequency increases, the other in compression whose frequency decreases. This differential design doubles the sensitivity or scale factor of the accelerometer and furnishes a cancellation of error sources common to both resonators.[1] ",
+        "bbox": [
+            87,
+            138,
+            905,
+            256
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/78255ef0c39bc6132770444e3461f0044dc42c62a9122a6a727310fd9b6be0ca.jpg",
+        "image_caption": [
+            "Fig. 1 SRA schematic "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            236,
+            258,
+            759,
+            413
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Due to the symmetry of the SRA, $1/4$ of the overall structure is studied (see in Fig. 2(a)). The beam is simplified axially constrained at both ends, with elastic constraints represented by an axial spring of stiffness $K_{a}$ in the x-direction and fixed in the y-direction at one end (see in Fig. 2(b)). ",
+        "bbox": [
+            87,
+            447,
+            907,
+            500
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc95d7312df3d656c7c4c9d46bf0b7479972535bf1493c83565d428e8c855583.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            114,
+            503,
+            524,
+            609
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d4a53e4fd3bf1da8f70a3fe1716d981dc3c2fe29938ecb5aeb435060a005e737.jpg",
+        "image_caption": [
+            "Fig. 2 Mechanical model of the micro-resonator "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            542,
+            503,
+            875,
+            609
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Therefore, the transverse boundary conditions of the resonant beam are ",
+        "bbox": [
+            114,
+            644,
+            692,
+            659
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\ny (0, t) = y (L, t) = 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            436,
+            660,
+            554,
+            674
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\partial}{\\partial x} y (0, t) = \\frac {\\partial}{\\partial x} y (L, t) = 0 \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            436,
+            669,
+            905,
+            706
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "and the axial boundary conditions are ",
+        "bbox": [
+            89,
+            707,
+            400,
+            723
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nu (0, t) = 0 \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            463,
+            723,
+            905,
+            745
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nu (L, t) = - \\frac {E A \\varepsilon}{K _ {a}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            463,
+            739,
+            561,
+            768
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The axial force applied in the resonant beam can be expressed according to Eq. 2 [3]. ",
+        "bbox": [
+            112,
+            770,
+            803,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF = F _ {0} + \\frac {K _ {a} E A}{K _ {a} L + E A} \\int_ {0} ^ {L} \\frac {1}{2} \\left(\\frac {d y}{d x}\\right) ^ {2} d x \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            393,
+            789,
+            905,
+            821
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $F_{0}$ is the inertial force, $E$ is the Young's modulus, $A$ is the cross-sectional area, $L$ is the entire length of the resonant beam, and $y$ is the bending deflection. ",
+        "bbox": [
+            87,
+            824,
+            907,
+            858
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "According to Eq. 1, the vibration mode shapes of the resonant beam can be obtained as ",
+        "bbox": [
+            112,
+            858,
+            820,
+            874
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\phi (x) = 0. 6 3 \\left[ c h \\beta x - \\cos \\beta x - \\frac {c h \\beta L - \\cos \\beta L}{s h \\beta L - \\sin \\beta L} \\left(s h \\beta x - \\sin \\beta x\\right) \\right] \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            329,
+            874,
+            905,
+            904
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where the value of $\\beta$ can be determined based on the boundary conditions of the beam. ",
+        "bbox": [
+            89,
+            906,
+            793,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Key Engineering Materials Vols. 562-565 ",
+        "bbox": [
+            268,
+            24,
+            663,
+            43
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "375 ",
+        "bbox": [
+            867,
+            24,
+            904,
+            39
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.2 Energy method analysis of nonlinear vibration ",
+        "text_level": 1,
+        "bbox": [
+            90,
+            84,
+            527,
+            100
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Reference the Hamilton's principle [4] described, the following nonlinear equation of the resonant beam oscillation is obtained by energy method and the Lagrange equations as ",
+        "bbox": [
+            89,
+            106,
+            907,
+            140
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM _ {e f f} \\ddot {q} + K _ {e f f} q + K _ {3, e f f} q ^ {3} = P \\tag {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            415,
+            143,
+            905,
+            161
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "with ",
+        "bbox": [
+            90,
+            163,
+            132,
+            178
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM _ {e f f} = \\rho A L \\int_ {0} ^ {1} \\phi^ {2} d \\varepsilon + m _ {s} \\tag {6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            180,
+            905,
+            209
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {e f f} = \\frac {E I}{L ^ {3}} \\int_ {0} ^ {1} \\left(\\frac {d ^ {2} \\phi}{d \\varepsilon^ {2}}\\right) ^ {2} d \\varepsilon + \\frac {F _ {0}}{L} \\int_ {0} ^ {1} \\left(\\frac {d \\phi}{d \\varepsilon}\\right) ^ {2} d \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            205,
+            638,
+            236
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {3, \\text {e f f}} = \\frac {1}{2} \\frac {1}{L ^ {2}} \\frac {K _ {a} E A}{K _ {a} L + E A} \\left(\\int_ {0} ^ {1} \\left(\\frac {d \\phi}{d \\varepsilon}\\right) ^ {2} d \\varepsilon\\right) ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            239,
+            631,
+            275
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\rho$ is the density of silicon material, $I$ is the inertia moment of the beam cross-section, $\\mathrm{m_s}$ is the comb mass, $M_{\\mathrm{eff}}$ is the equivalent mass, $K_{\\mathrm{eff}}$ is the linear stiffness including the linear elastic flexural stiffness and the generalized geometric stiffness due to the axial load, and $K_{3,\\mathrm{eff}}$ is the cubic nonlinear constant (namely the nonlinear stiffness), $P$ is the driving force applied in the comb. ",
+        "bbox": [
+            87,
+            277,
+            907,
+            345
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Substituting Eq. 4 into Eq. 6 ",
+        "bbox": [
+            112,
+            346,
+            349,
+            362
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {\\text {e f f}} = 1 9 8. 6 \\frac {E I}{L ^ {3}} \\mathrm {N} / \\mathrm {m} \\tag {7}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            362,
+            905,
+            389
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {3, e f f} = 1 1. 7 6 \\frac {1}{L ^ {2}} \\frac {K _ {a} E A}{K _ {a} L + E A} \\mathrm {N} / \\mathrm {m} ^ {3} \\tag {8}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            403,
+            399,
+            905,
+            428
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "According to Eq. 8, The equivalent stiffness $K_{a}$ is the key point of $K_{3,\\text{eff}}$ . $K_{a}$ is decided by the micro-lever mechanism of SRA. For double-clamped resonant beam, $K_{a}$ tends to infinity ",
+        "bbox": [
+            89,
+            437,
+            907,
+            471
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {3, e f f} = 1 1. 7 6 \\frac {E A}{L ^ {3}} \\tag {9}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            472,
+            905,
+            497
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "and the nonlinear stiffness is only related to the dimension of the resonant beam. ",
+        "bbox": [
+            89,
+            500,
+            742,
+            516
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.3 The model of equivalent stiffness ",
+        "text_level": 1,
+        "bbox": [
+            90,
+            536,
+            410,
+            555
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The schematic of micro-lever of the differential SRA prototype is shown in Fig. 3. In the figure, $l$ is the length between pivot and output, and $L$ is the length between pivot and input of the lever arm. $M_{i}$ , $M_{p}$ , $M_{o}$ respectively represents bending moments at the input, pivot and output. $F_{in}$ , $F_{vp}$ and $F_{vo}$ are the input, pivot and output axial forces. $F_{hi}$ , $F_{ho}$ and $F_{hp}$ are the input, output and pivot shear forces. One can know from material mechanics that the value of $K_{a}$ is equal to the force divided by the displacement at the output beam. ",
+        "bbox": [
+            87,
+            561,
+            907,
+            661
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Under loading, suppose the vertical displacement at the output system is $\\delta$ , the rotation angle at the lever arm is $\\theta$ , the actual displacement at the input beam is $\\tau$ , the input stiffness of the lever is $K$ , the force amplification factor is $A$ . Then, the output force $F_{o}$ of the lever is equal to $AK\\tau$ and the displacement $x_{o}$ at the output terminal is equal to $(\\delta + l\\theta)\\tau / (\\delta + L\\theta)$ . So $K_{a}$ could be obtained as ",
+        "bbox": [
+            87,
+            662,
+            907,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK _ {a} = \\frac {F _ {o}}{x _ {o}} = \\frac {A K \\tau}{\\frac {\\delta + l \\theta}{\\delta + L \\theta} \\tau} = \\frac {A K \\left(L + \\frac {\\delta}{\\theta}\\right)}{l + \\frac {\\delta}{\\theta}} \\tag {10}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            731,
+            905,
+            783
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Ref. [5] gives the formula to the input stiffness $K$ of the micro-lever ",
+        "bbox": [
+            112,
+            783,
+            670,
+            800
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nK = \\frac {F _ {\\text {i n}}}{(L \\theta + \\delta)} = \\frac {\\left(k _ {v v o} + k _ {v v p}\\right) \\left(f _ {o} k _ {\\theta m o} + f _ {p} k _ {\\theta m p} + f _ {i} k _ {\\theta m i}\\right) + k _ {v v o} k _ {v v p} l ^ {2}}{\\left(f _ {o} k _ {\\theta m o} + f _ {p} k _ {\\theta m p} + f _ {i} k _ {\\theta m i}\\right) + k _ {v v o} (L - l) ^ {2} + k _ {v v p} L ^ {2}} \\tag {11}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            299,
+            801,
+            905,
+            840
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $k_{vvp}$ , $k_{vvo}$ respectively represents the axial spring constants of the pivot beam and the resonant beam in series with the output beam, when applied by a vertical force. $k_{\\theta mi}$ , $k_{\\theta mo}$ , $k_{\\theta mp}$ respectively represents rotational spring constant of the output system and the pivot, when loaded with a bending moment. $f_o$ , $f_p$ , $f_i$ are the correct factors for the apparent rotational spring constants of the output beam, the pivot beam and the input beam respectively. ",
+        "bbox": [
+            87,
+            840,
+            907,
+            926
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "376 ",
+        "bbox": [
+            92,
+            24,
+            129,
+            39
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Micro-Nano Technology XIV ",
+        "bbox": [
+            394,
+            24,
+            668,
+            42
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/968b0c17f740ada6991ca88ada0bba5d5fc933ab407575e499e88d1e38a5e522.jpg",
+        "image_caption": [
+            "Fig. 3 Free-body diagram of microlever and the resonant beam under loading "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            250,
+            80,
+            744,
+            327
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Note that $K_{a}$ is the micro-lever stiffness, the resonant beam should not be considered when solve the force amplification $A$ . Analyze the micro-lever separately, according to the force balance and moment balance, we can get ",
+        "bbox": [
+            87,
+            361,
+            907,
+            410
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {i n} = F _ {v o} + F _ {v p} \\tag {12}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            453,
+            413,
+            905,
+            431
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {i n} L = F _ {v o} l + M _ {o} + M _ {p} + M _ {i} \\tag {13}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            423,
+            434,
+            905,
+            453
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF _ {h o} + F _ {h p} + F _ {h i} = 0 \\tag {14}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            453,
+            456,
+            905,
+            473
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In the balance equations above, $F_{vp} = k_{vvp}\\delta$ , $F_{vo} = k_{vvo}'(l\\theta + \\delta)$ , $M_o = k_{\\theta m o}f_o\\theta$ , $M_p = k_{\\theta m p}f_p\\theta$ , $M_i = k_{\\theta m i}f_i\\theta$ where $k_{vvo}'$ is the axial spring constant of the output beam. ",
+        "bbox": [
+            89,
+            477,
+            905,
+            515
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The amplification factor of the micro-lever $A$ , $\\delta$ and $\\theta$ can be solved by Eq. 12-14. ",
+        "bbox": [
+            112,
+            515,
+            781,
+            533
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA = \\frac {F _ {\\mathrm {v o}}}{F _ {\\mathrm {i n}}} = \\frac {k _ {\\mathrm {v v o}} ^ {\\prime} (l \\theta + \\delta)}{F _ {\\mathrm {i n}}} \\tag {15}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            436,
+            534,
+            909,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\theta = \\frac {L - \\frac {k _ {v v o} ^ {\\prime}}{k _ {v v o} ^ {\\prime} + k _ {v p}} l}{k _ {v v o} ^ {\\prime} l ^ {2} + k _ {\\theta m o} f _ {o} + k _ {\\theta m p} f _ {p} + k _ {\\theta m i} f _ {i} - \\frac {k _ {v v o} ^ {\\prime 2} l ^ {2}}{k _ {v v o} ^ {\\prime} + k _ {v p}}} F _ {i n} \\tag {16}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            361,
+            570,
+            909,
+            636
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\delta = \\frac {F _ {i n} - k _ {v v o} ^ {\\prime} l \\theta}{k _ {v v o} ^ {\\prime} + k _ {v v p}} \\tag {17}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            448,
+            638,
+            909,
+            673
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $k_{\\nu \\nu p} = \\frac{Ebh_p}{l_p}, \\quad k_{\\nu \\nu o}^{\\prime} = \\frac{Ebh_o}{l_o}, \\quad k_{\\theta m o} = \\frac{Ebh_o^3}{12l_o}, \\quad k_{\\theta m p} = \\frac{Ebh_p^3}{12l_p}, \\quad k_{\\theta m i} = \\frac{Ebh_i^3}{12l_i},$ while $k_{\\nu \\nu O}$ is expressed as $\\frac{Eb}{\\frac{l_o}{h_o} + \\frac{l_f}{h_f}}$ in ",
+        "bbox": [
+            89,
+            674,
+            907,
+            730
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Eq. 11. $l, h, b$ is length, width, thickness of each beam with subscript $i$ , $o, f, p$ representing the input beam, the output beam, the resonant beam, and the pivot beam respectively. ",
+        "bbox": [
+            87,
+            731,
+            905,
+            767
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/6b976e2e385fd409465e8dbeca3727724c9568a3f4fb9c26b80a91fac23ab6c7.jpg",
+        "table_caption": [
+            "Table.1 Designed parameter of microlever "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\"></td><td>L [μm]</td><td>h [μm]</td><td>b [μm]</td></tr><tr><td colspan=\"2\">Input arm</td><td>644</td><td>30</td><td>60</td></tr><tr><td colspan=\"2\">Output arm</td><td>19</td><td>30</td><td>60</td></tr><tr><td colspan=\"2\">Input beam</td><td>300</td><td>6</td><td>60</td></tr><tr><td colspan=\"2\">Pivot beam</td><td>270</td><td>6</td><td>60</td></tr><tr><td rowspan=\"2\">Output system</td><td>Output beam</td><td>60</td><td>4</td><td>60</td></tr><tr><td>Resonant beam</td><td>1000</td><td>8</td><td>60</td></tr></table>",
+        "bbox": [
+            255,
+            811,
+            742,
+            933
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Key Engineering Materials Vols. 562-565 ",
+        "bbox": [
+            270,
+            24,
+            663,
+            43
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "377 ",
+        "bbox": [
+            867,
+            24,
+            904,
+            39
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Substituting the parameters of the microlever (see Table 1) into Eq. 11 and Eq. 15-17, the value of $K$ , $A$ and $\\delta/\\theta$ can be obtained as $66.74\\mathrm{N / m}$ , 30.26 and $-4.5\\times 10^{-6}\\mathrm{m}$ respectively. $K_{a}$ is $8.91\\times 10^{4}\\mathrm{N / m}$ . Then we can get the theoretical value of $K_{3,\\text{eff}}$ is $5\\times 10^{11}\\mathrm{N / m^3}$ . ",
+        "bbox": [
+            87,
+            83,
+            910,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3. Simulation and experimental verification ",
+        "text_level": 1,
+        "bbox": [
+            92,
+            157,
+            473,
+            174
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1 Simulation for nonlinear stiffness of the resonant beam ",
+        "text_level": 1,
+        "bbox": [
+            89,
+            188,
+            600,
+            205
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Under no acceleration, Eq. 5 can be rewritten as ",
+        "bbox": [
+            117,
+            212,
+            512,
+            228
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP = K _ {\\text {e f f}} X _ {m} + K _ {3, \\text {e f f}} X _ {m} ^ {3} \\tag {18}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            435,
+            229,
+            905,
+            251
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The nonlinear static analysis for nonlinear stiffness of the resonant beam subjected to various driving force is simulated by FEA software (see Fig. 4). By fitting the 11 sets of the amplitude of resonant beam(see Fig. 5) according to Eq. 18, we get the fitting value of $K_{3,\\text{eff}}$ is equal to $5.026 \\times 10^{11}$ N/m $^3$ . The error of the analytical value compared to the simulation result is $0.52\\%$ . ",
+        "bbox": [
+            87,
+            252,
+            910,
+            319
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b3265a19fc2e6377698d0e4bfe8ab0ddf67d8ac8da00a8e952ca7202f3b08a8.jpg",
+        "image_caption": [
+            "Fig. 4 Simulation for the SRA "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            97,
+            321,
+            450,
+            501
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/0f8e0af776411aa4c2c47efa12aa630d945306bdc2869299a0fc9f5fd4e35d39.jpg",
+        "image_caption": [
+            "Fig. 5 The fitting curve of the amplitude and driving force "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            480,
+            321,
+            890,
+            501
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2 Nonlinear vibration experiments of SRA ",
+        "text_level": 1,
+        "bbox": [
+            89,
+            536,
+            473,
+            554
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For small AC driving voltage $|\\nu_{m}|\\sin \\omega t$ , the driving force applied in the comb of the resonator can be expressed as [6] ",
+        "bbox": [
+            87,
+            561,
+            907,
+            595
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP _ {v} = 2 n \\varepsilon \\frac {h}{d} V _ {P} | v _ {m} | \\sin \\omega t \\tag {19}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            421,
+            596,
+            905,
+            624
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $n$ is the number of the driving comb gap, $\\varepsilon$ is the vacuum permittivity, $h$ is the comb thickness, $d$ is the distance between the comb gaps, $V_{p}$ is the DC bias voltage. ",
+        "bbox": [
+            87,
+            625,
+            907,
+            657
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The relation between the vibration amplitude of the resonator and the driving force is ",
+        "bbox": [
+            112,
+            659,
+            806,
+            674
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {m} = \\frac {Q \\left| P _ {v} \\right|}{K _ {\\text {e f f}}} \\tag {20}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            458,
+            674,
+            905,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $Q$ is the parameter associated with the damping. ",
+        "bbox": [
+            89,
+            709,
+            534,
+            725
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Substituting Eq. 19 into Eq. 20, the vibration amplitude could also be expressed as ",
+        "bbox": [
+            112,
+            726,
+            784,
+            742
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX _ {m} = Q \\frac {2 n \\varepsilon \\frac {h}{d} V _ {P} | v _ {m} |}{K _ {\\text {e f f}}} \\tag {21}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            742,
+            905,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Substituting Eq. 21 into the relation between the frequency and the vibration amplitude of the resonant beam, the resonant frequency can be expressed as ",
+        "bbox": [
+            87,
+            785,
+            907,
+            818
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\omega = \\omega_ {0} \\left(1 + \\frac {3}{8} \\frac {K _ {3 , e f f}}{K _ {e f f}} X _ {m} ^ {2}\\right) = \\omega_ {0} \\left[ 1 + \\frac {3}{2} \\frac {K _ {3 , e f f}}{K _ {e f f} ^ {3}} \\left(Q n \\varepsilon \\frac {h}{d} V _ {P}\\right) ^ {2} | v _ {m} | ^ {2} \\right] \\tag {22}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            322,
+            818,
+            905,
+            853
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $\\omega_0$ is the natural frequency of the resonant beam. ",
+        "bbox": [
+            89,
+            855,
+            544,
+            870
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Q value of the prototype A11008 is about 138343. It is also known that $V_{p} = 10\\mathrm{V}$ , $n = 24$ , $h = 60\\mu \\mathrm{m}$ , $d = 5\\mu \\mathrm{m}$ , $\\varepsilon = 8.854\\times 10^{-12}$ . Thus, substituting the value of $K_{3,\\text{eff}}$ into Eq. 22 ",
+        "bbox": [
+            87,
+            871,
+            907,
+            906
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\omega = \\omega_ {0} \\left(1 + 1 4. 8 \\left| v _ {m} \\right| ^ {2}\\right) \\tag {23}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            907,
+            905,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "378 ",
+        "bbox": [
+            92,
+            24,
+            129,
+            39
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Micro-Nano Technology XIV ",
+        "bbox": [
+            394,
+            24,
+            668,
+            42
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The natural frequency of the prototype A11008 is about $2.066 \\times 10^{4} \\mathrm{~Hz}$ . Adjust the AC driving voltage of the open loop using a signal generator, and record the output frequency of the resonator. Fitting curve between the voltage and the frequency is shown in Fig. 6. Within normal operate range of the resonator, error between the theoretical and the experimental value of resonance frequency is shown in Fig. 7. The maximum error is about $2.1\\%$ . ",
+        "bbox": [
+            87,
+            81,
+            905,
+            168
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/44215c311b09d4f56fd38973e9aa22854a6df94accb20b66c84ed4b8008f90c5.jpg",
+        "image_caption": [
+            "Fig. 6 Driving voltage and the frequency "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            92,
+            169,
+            487,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c9cd5f0b9d4f200900995acc3fbfa61788d21b76897e2cdc383df61dbf16ce5.jpg",
+        "image_caption": [
+            "Fig. 7 The error between theoretical and experimental results "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            504,
+            169,
+            890,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. Summary ",
+        "text_level": 1,
+        "bbox": [
+            89,
+            374,
+            203,
+            390
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The die of SRA is fabricated by SOI process, and the equivalent models of the micro-resonator are built. The nonlinear stiffness $K_{3,\\text{eff}}$ of the micro resonator is obtained and the elastic constraint stiffness $K_{a}$ of micro-resonator is derived. The nonlinear stiffness $K_{3,\\text{eff}}$ is equal to $5 \\times 10^{11} \\mathrm{~N/m}^3$ . By comparing to the analytical value, the simulation value of $K_{3,\\text{eff}}$ is $5.026 \\times 10^{11} \\mathrm{~N/m}^3$ and the error is $0.52\\%$ . The nonlinear vibration experiments of SRA show that the maximum error between the theoretical and experimental value of resonance frequency is $2.1\\%$ . This implies the feasibility of the prediction for $K_{3,\\text{eff}}$ . The derivation this paper presented is useful for further research on nonlinear vibration of resonant beam and optimal design of SRA. ",
+        "bbox": [
+            87,
+            397,
+            905,
+            533
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            90,
+            554,
+            191,
+            568
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] The Silicon Oscillating Accelerometer: A High-Performance MEMS Accelerometer for Precision Navigation and Strategic Guidance Applications ",
+            "[2] V. Kaajakari, T. Mattila, A. Oja, and H.Seppa, Nonlinear limits for single-crystal silicon microresonators, J. MEMS. 5,13 (2004) 715-724. ",
+            "[3] T. A. Roessig, Integrated MEMS Tuning Fork Oscillators for Sensor Applications, D. Ph.D. dissertation, Univ. California, Berkeley, CA, 1998. ",
+            "[4] C. Comi, On geometrical effects in micro-resonators, J. Latin American Journal of Solids and Structures. 6 (2009) 73-87. ",
+            "[5] S. Ran, J. S. Dong, Q. A. Ping, S. Yan, Application of microlever to micromechanical silicon resonant accelerometers, J. Optics and Precision Engineering. 4,19 (2011) 805-811. ",
+            "[6] Q. A. Ping, S. Yan, Z. X. Hua, S. Qin, Bulk-Micromachined Silicon Resonant Accelerometer, C. 2009 IEEE International conference on information and automation, Zhuhai, China, June. 22-25 (2009) 1289-1292. "
+        ],
+        "bbox": [
+            90,
+            576,
+            907,
+            798
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Key Engineering Materials Vols. 562-565 ",
+        "bbox": [
+            270,
+            24,
+            663,
+            43
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "379 ",
+        "bbox": [
+            867,
+            24,
+            904,
+            39
+        ],
+        "page_idx": 5
+    }
+]

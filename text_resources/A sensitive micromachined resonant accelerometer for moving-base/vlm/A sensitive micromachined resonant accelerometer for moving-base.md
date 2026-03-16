@@ -1,0 +1,310 @@
+# A sensitive micromachined resonant accelerometer for moving-base gravimetry
+
+![](images/8aaeffcfce853cf1a3510939906cbe38c4346075f6e6ea1721518d3b3809d4e7.jpg)
+
+Zhengxiang Fang $^{a,1}$ , Yonggang Yin $^{b,1}$ , Chen Chen $^{a}$ , Shujuan Zhang $^{a}$ , Yunfeng Liu $^{a,*}$ , Fengtian Han $^{a,*}$
+
+$^{a}$ Department of Precision Instruments, Tsinghua University, Beijing, 100084, China   
+$^{b}$ Research Center for Intelligent Sensing, Zhejiang Lab, Hangzhou, 311100, China
+
+# ARTICLE INFO
+
+Article history:
+
+Received 18 December 2020
+
+Received in revised form 12 March 2021
+
+Accepted 16 March 2021
+
+Available online 18 March 2021
+
+Keywords:
+
+Resonant accelerometer
+
+Moving-base gravimetry
+
+Earth tides measurement
+
+MEMS
+
+# ABSTRACT
+
+A sensitive micromachined resonant accelerometer that exhibits extremely low noise floor and excellent bias stability is presented for future application of moving-base gravimetry. An overall structure optimization is presented for large scale factor and low noise, which is significant for measuring variations in the gravitational field of the Earth. The experimental results show that the MEMS accelerometer has a scale factor up to $876\mathrm{Hz / g}$ and a noise floor down to $75\mathrm{ng} / \sqrt{\mathrm{Hz}}$ by setting a relatively low full-scale range of $\pm 5\mathrm{g}$ . The experimental results of the resonant accelerometer with $\pm 0.01^{\circ}\mathrm{C}$ temperature control show that the averaged bias stability for one day duration is $0.197\mu \mathrm{g}$ and the bias repeatability within about 3 months is $1.56\mu \mathrm{g}$ . Furthermore, a six-day measurement duration of the accelerometer with its sensitive axis perpendicular to the ground shows a sensitive measurement synchronously with the Earth's tidal gravity, which demonstrates that the resonant accelerometer has the capability for high-performance applications such as moving-base gravimeters and shipborne inertial navigation systems.
+
+© 2021 Elsevier B.V. All rights reserved.
+
+# 1. Introduction
+
+The Earth's gravitational field is one of the basic physical fields inherent to the Earth as the gravitational field and its time fluctuation reflect the distribution, movement and change of the Earth's surface and its internal material. Precise measurement of the gravitational acceleration is of great significance in many fields such as geophysics [1], gravity-aided navigation [2], oil/gas and mineral exploration [3]. The moving-base gravimetry, such as shipborne and airborne relative gravimeters, is an effective way to measure high-resolution regional gravity quickly and efficiently. The accelerometer-based gravity sensing instruments are developed rapidly where the high-performance quartz flexible accelerometer is a typical representative with excellent long-term stability and repeatability [4]. Recently, micromachined accelerometers have been an attractive alternative for high-performance applications as they offer smaller size and lower cost, which is beneficial from the micro-electromechanical-system (MEMS) technology [5,6]. Lainé [7] reported a MEMS-based accelerometer with a noise floor of
+
+$12\mathrm{ng} / \sqrt{\mathrm{Hz}}$ noise for seismic measurements by optimized closed-loop configuration and careful structural design. A MEMS-based gravimeter from the University of Glasgow mainly consisting of the MEMS structure, an optical displacement sensor and constant temperature control demonstrated a sensitivity of $40\mathrm{ng} / \sqrt{\mathrm{Hz}}$ and potential capability to detect the Earth tides-induced gravity variation [8,9]. A further optimization on similar design by Huazhong University reduced the noise floor down to $8\mathrm{ng} / \sqrt{\mathrm{Hz}}$ [10,11]. Cambridge University has reported a sensitive resonant accelerometer with a scale factor of $960\mathrm{Hz} / \mathrm{m} / \mathrm{s}^2$ and a measured noise floor of $0.15\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ [12]. However, these MEMS accelerometers and gravimeters are mainly designed for operation on the motionless base where the sensitivity improvement is primarily at the cost of ultra-low full-scale range. Hence, a performance requirement of both high sensitivity and large dynamic range is desirable for such miniaturized moving-base gravimeters with MEMS accelerometers.
+
+Micromachined resonant accelerometer (MRA) is based on accurate conversion from input acceleration-induced force to frequency change of the resonator. The MRA is inherent with quasi-digital output and can offer large dynamic range and high resolution with high quality-factor resonators, which is very attractive for high-performance applications such as inertial navigation and gravimetry [13-16]. Generally, the scale factor of the MRA is opti
+
+![](images/e234db7fb0b050b03daef18d6d47201031e39db31fd3620ad94f67e8cc2c3d69.jpg)  
+Fig. 1. Half of the completely symmetric MRA structure.
+
+mized at about $200\mathrm{Hz / g}$ in order to meet requirement of both high resolution and large measurement range for typical applications of tactical- and navigation-grade inertial systems [17-19]. For higher resolution application such as strategic-grade inertial navigation and moving-base gravimeters, significant improvement of the scale factor is of great importance for much lower noise floor. Moreover, the temperature-dominated drift is the most important error source for long-time operation of high-performance MRAs. Currently, several careful designs of the sensor structure with low sensitivity to temperature variation were reported [20-22] with their scale factors less than $500\mathrm{Hz / g}$ . Although a MRA with an ultra-high scale factor of $2752\mathrm{Hz / g}$ was reported, its bias temperature-drift coefficient is as high as $5378~\mu \mathrm{g} / ^{\circ}\mathrm{C}$ which prevents it from such applications as long-term navigation and gravimetry [23]. How to further increase the scale factor and enhance the long-time stability are still two of the most challenging aspects in design of a high-performance MRA for strategic-grade navigation and moving-base gravimetry.
+
+The resonant accelerometer topology with thermal isolated frame has been introduced in our previous work to achieve low temperature drift [20,24]. A more sensitive micromachined resonant accelerometer with high scale factor and low noise floor is presented in this paper which demonstrates the Earth tide-induced gravity variation experimentally. A comprehensive analysis of the current design is presented to achieve high scale factor under package size and fabrication constraints. A stiffness matching optimization among the resonator, micro-lever and suspension beam is proposed and discussed for improvement of the effective scale factor. The temperature sensitivity, bias stability and noise floor of a prototype MRA were measured for performance evaluation. Furthermore, a six-day duration for measurements of the Earth tide-induced gravity variation was performed and the experimental results of the MRA demonstrate the potential for sensitive moving-base gravity measurement.
+
+# 2. Design of the MRA structure
+
+Fig. 1 shows half of the completely symmetric MRA structure in this work, which is based on our previous resonant accelerometer topology [24]. Two double ended tuning fork (DETF) resonators are symmetric distributed to form a differential measurement of the input acceleration, which can double the scale factor of the accelerometer and ideally achieve cancellation of common-mode error sources. The micro-lever is used to enlarge the inertial force transferred from the proof mass when loaded at an input acceleration on the sensitive axis ( $x$ axis in Fig. 1). The isolation frame is used
+
+![](images/4c8f754e905357713313c9c739a760bd8e6b630dad537aaf7a0fcb561960fcf5.jpg)  
+Fig. 2. Simulated scale factor and resonant frequency with different width and length of vibration beam.
+
+to connect the glass substrate with the moveable silicon structure to suppress the thermal stress delivered from the glass and the single anchor. The actuation electrodes and sensing electrodes are separately arranged on two sides of the vibration beam for electrostatic excitation and capacitively sensing of the resonator motion. When there is no input acceleration, the two DETF resonators operate at their natural frequency under anti-phase vibration mode. Once the proof mass is applied on input acceleration along the sensitive axis, the resonant frequency of the two resonators changes differentially and the frequency difference of the two resonators is served as the acceleration measurement of the MRA.
+
+For the MRA illustrated in Fig. 1, the scale factor provided by the two resonators operated in a differential fashion is given by:
+
+$$
+S F = 2 \cdot M _ {\mathrm {P}} \cdot A _ {F} \cdot S F _ {R} \tag {1}
+$$
+
+where $M_{\mathrm{P}}$ is the mass of the proof mass, $A_{\mathrm{F}}$ is the effective force magnification ratio of the micro-lever, and $SF_{\mathrm{R}}$ is the sensitivity of one DETF resonator. In order to achieve high scale factor, the three components on the right side of Eq. (1) should be as large as possible by optimization design. It is an intuitive method to increase the scale factor by increasing the mass of the proof mass. However, considering allowable chip package size, the area of the proof mass was set at $2000 \mu \mathrm{m} \times 6174 \mu \mathrm{m}$ in this work and the thickness of the moving silicon structure layer was $60 \mu \mathrm{m}$ .
+
+# 2.1. Design of the DETF resonator
+
+The DETF resonator which determined significantly the scale factor and temperature drift is the key component to realize precise force-frequency conversion. The resonant frequency of the resonator pair operating in anti-phase mode under an axial force input $F$ is given by:
+
+$$
+f = f _ {0} \sqrt {1 + \eta F} = \frac {1}{2 \pi} \sqrt {\frac {1 9 9 E t w ^ {3}}{1 2 M _ {e} q l ^ {3}}} \sqrt {1 + \frac {3 l ^ {2}}{\pi^ {2} E t w ^ {3}} F} \tag {2}
+$$
+
+where $\eta$ is the conversion factor of the axial force to the resonant frequency, $E$ and $\rho$ are the Young's modulus and density of silicon, $l$ , $w$ , and $t$ are the length, width, and thickness of the vibration beam,
+
+![](images/5f5d6fe40ef85c82fc92701b2f4560e8a29c9f9166c3b05ff80767a9db8cdfab.jpg)  
+Fig. 3. A schematic force amplification mechanism with the micro-lever.
+
+and $M_{\mathrm{eq}}$ is the equivalent vibration mass. The scale factor of each DETF resonator is given as:
+
+$$
+S F _ {R} = f _ {0} \frac {3 l ^ {2}}{2 \pi^ {2} E t w ^ {3}} \tag {3}
+$$
+
+The scale factor of the DETF resonator can be increased by increasing the length and decreasing both the width and thickness of the vibration beam. The scale factor and resonant frequency of the resonator with different sizes of the vibration beam were simulated by finite element analysis and are illustrated in Fig. 2. It is clear that the scale factor of the DETF resonator is dominated mostly by the width of the vibration beam by comparing with the effect of the beam length as Eq. (3) indicates. Though the scale factor can be increased rapidly when the resonant beam width is smaller, this design is set at $4\mu \mathrm{m}$ due to fabrication constraints by allowable aspect ratio of silicon deep etching. Moreover, the resonant frequency of the vibration beam is chosen at the vicinity of $20\mathrm{kHz}$ to match the interface circuit parameters and to avoid interference modes by considering desirable frequency change range of $\pm 2.5$ kHz. Therefore, the length of the resonant beam was set at $800~{\mu\mathrm{m}}$ to produce a resonator frequency of $18.93\mathrm{kHz}$ though larger length can increase the scale factor slightly.
+
+# 2.2. Design of the force amplification mechanism
+
+The force amplification system consists of two micro-levers and four suspension beams. The micro-lever is used to enlarge the inertial force transferred from the proof mass but the suspension beam also shares a part of the inertial force. As the DETF resonator has two
+
+vibration beams and they share inertial force equally, the effective force magnification factor can be expressed as:
+
+$$
+A _ {F} = \frac {1}{2} \frac {K _ {L}}{2 K _ {U} + K _ {L}} A _ {L} \tag {4}
+$$
+
+where $K_{\mathrm{L}}$ and $K_{\mathrm{U}}$ are the input stiffness of the micro-lever and stiffness of the suspension beam, and $A_{\mathrm{L}}$ is the theoretical force magnification of one micro-lever.
+
+# 2.3. Micro-lever
+
+The micro-lever consists of a lever arm, a force input beam, a force output beam and a pivot beam connected with a pivot as shown in Fig. 3. The force magnification factor $(A_{\mathrm{L}})$ and input stiffness $(K_{\mathrm{L}})$ of the micro-lever are expressed as [25]
+
+$$
+\left\{ \begin{array}{l} A _ {L} = \frac {\left(K _ {\mathrm {s o}} + K _ {\mathrm {s p}}\right) / K _ {\mathrm {v p}} - L _ {\mathrm {i}} L _ {\mathrm {o}}}{\left(K _ {\mathrm {s o}} + K _ {\mathrm {s p}}\right) \left(1 / K _ {\mathrm {v p}} + 1 / K _ {\mathrm {v o}}\right) + L _ {\mathrm {o}} ^ {2}} \\ K _ {L} = \frac {\left(K _ {\mathrm {v o}} + K _ {\mathrm {v p}}\right) \left(K _ {\mathrm {s o}} + K _ {\mathrm {s p}}\right) + K _ {\mathrm {v o}} K _ {\mathrm {v p}} L _ {\mathrm {o}} ^ {2}}{K _ {\mathrm {v o}} \left(L _ {\mathrm {i}} + L _ {\mathrm {o}}\right) ^ {2} + K _ {\mathrm {v p}} L _ {\mathrm {i}} ^ {2} + K _ {\mathrm {s o}} + K _ {\mathrm {s p}}} \end{array} \right. \tag {5}
+$$
+
+where $L_{\mathrm{i}}$ and $L_{0}$ are the length of the input force arm and output force arm respectively. In addition, $K_{\mathrm{so}}$ and $K_{\mathrm{vo}}$ are the rotational stiffness and axial stiffness of the force output beam while $K_{\mathrm{sp}}$ and $K_{\mathrm{vp}}$ are the rotational stiffness and axial stiffness of the pivot beam.
+
+As the length of the input force lever arm $(L_{\mathrm{i}})$ is limited by the package size, it is the most effective method to increase the force magnification factor by reducing the length of the output force lever arm $(L_0)$ . However, as $L_{0}$ decreases, a stress concentration between the pivot beam and force output beam comes out which results in extra energy loss. Fig. 4 shows a stress distribution comparison of different $L_{0}$ by finite element simulation. An example of force magnification factor and nonlinear error with different $L_{0}$ settings is shown in Fig. 5. The length of the input force arm was set at $1800\mu \mathrm{m}$ and the effective force magnification factor is slightly smaller than its ideal value $L_{\mathrm{i}}$ : $L_{0}$ because of energy loss resulted from the bending of the force output beam, pivot beam and force input beam as described by Eq. (5). The nonlinear error of the force magnification factor, which is simulated under the inertial force equivalent at $\pm 5$ g input acceleration, increases rapidly as $L_{0}$ decreases. In this work, $L_{0}$ was set at $35~{\mu\mathrm{m}}$ to keep a balance between $A_{\mathrm{L}}$ and nonlinear error.
+
+In addition, the force magnification factor can be improved by proper selection of the lever arm width $(W_{\mathrm{L}})$ . The simulated force magnification factor and nonlinear error vary with $W_{\mathrm{L}}$ are shown in Fig. 6. It is clear that the micro-lever will lose the force magnification
+
+![](images/85a4af596f546cb3be408d43c5b21689fd9c3f935da79bb60610bbb1c387f4bb.jpg)  
+Fig. 4. Stress concentration between the pivot beam and force output beam.
+
+![](images/d39dca10ceab5e4c340bceb0553e5c50446941502f274e0870fb3716ca0c0a96.jpg)  
+Fig. 5. Simulated force magnification factor and nonlinear error with different length of output lever arm.
+
+![](images/262ce863a8f562905cb59e90b52f79b1fce0e50bb8c1bfefb8ccdf646d9606db.jpg)  
+Fig. 6. Simulated force magnification factor and nonlinear error with different width of micro-lever arm.
+
+factor partially when $W_{\mathrm{L}}$ gets too small. In Fig. 6, the ideal force magnification factor $L_{\mathrm{i}}$ : $L_{0}$ is set at $1800~\mu \mathrm{m}$ : $35~\mu \mathrm{m}$ (51.4). As $W_{\mathrm{L}}$ is smaller than $60~\mu \mathrm{m}$ , the effective force magnification factor drops rapidly and the nonlinear error increases sharply. In this work, $W_{\mathrm{L}}$ was set at $100~\mu \mathrm{m}$ for purpose of robust force magnification.
+
+# 2.4. Suspension beam
+
+The suspension beam is employed to support the moving proof mass and determine the sensitive-axis direction. The stiffness of the suspension beam $(K_{\mathrm{U}})$ is given as:
+
+$$
+K _ {U} = \frac {E t w _ {\mathrm {U}} ^ {3}}{2 l _ {\mathrm {U}} ^ {3}} \tag {6}
+$$
+
+where $E$ is the Young's modulus of silicon, $l_{\mathrm{U}}, w_{\mathrm{U}}$ , and $t$ are the length, width, and thickness of the suspension beam, respectively. Note that $K_{\mathrm{U}} / K_{\mathrm{L}}$ is increasing when increasing the ideal force magnification factor $L_{\mathrm{i}} / L_{\mathrm{o}}$ while a decrease of the stiffness of the
+
+![](images/865275eef24462cc1bd6fe008083f19e157d172c10ac683457fe980ea2ad2cf2.jpg)  
+Fig. 7. Simulated $A_{\mathrm{F}}$ and fabrication results of MRA samples with different $K_{\mathrm{U}}$ and $A_{\mathrm{L}}$ .
+
+suspension beam $K_{\mathrm{U}}$ will also increase the effective magnification but at the expense of anti-overload capability in Eq. (4). Hence, it is significant to optimize the sensing structure for large force magnification and adequate stiffness of the suspension beam. Fig. 7 shows an example of the simulated effective force magnification factor $(A_{\mathrm{F}})$ with different design of $K_{\mathrm{U}}$ and $A_{\mathrm{L}}$ . The effective force magnification factor increases as a decrease of $K_{\mathrm{U}}$ and an increase of $A_{\mathrm{L}}$ .
+
+Furthermore, based on our previous fabrication results, the suspension beam is generally the most vulnerable structure of the MRA owing to lack of mechanical robustness. Multiple fabrication results of the die samples with different design of $K_{\mathrm{U}}$ are illustrated in Fig. 7, where the red fork represents the failure samples and the blue triangle marker represents the successful samples. No successful sample was found when $K_{\mathrm{U}}$ is smaller than $2.5\mathrm{N / m}$ as red danger region in Fig. 7. For insurance purpose, the stiffness of the suspension beam in our design is larger than $3.7\mathrm{N / m}$ at the safe region in Fig. 7 as the silicon deep etching may vary slightly in different batches.
+
+# 2.5. Design summary
+
+An isolation frame-based sensing structure is employed to suppress the thermal stress and thus ensure insensitivity to temperature variation [24]. A comparison of main parameters for three different MRA designs is listed in Table 1 where the stiffness of the suspension beam is the only difference in these designs. Design A has the largest scale factor and least stiffness of the suspension beam while the scale factor in design C is the smallest for preventing fabrication failure of all these structures. Note that the overall structure parameters could be optimized further for larger scale factor by considering the discussions and constraints above.
+
+For design A, the anti-phase resonant mode is employed where the natural resonant frequency of the resonator $(f_0)$ is $18,928\mathrm{Hz}$ . The MRA has a measurement range greater than $\pm 5\mathrm{g}$ and an overload capability of $36.9\mathrm{g}$ for shipborne gravimetry and navigation applications. The simulated scale factor is increased up to 1008.5 $\mathrm{Hz / g}$ with a nonlinear error of only $25.0~\mathrm{ppm}$ as shown in Fig. 8. The frequency temperature coefficient (FTC) of each resonator is $-30.74~\mathrm{ppm} / {}^{\circ}\mathrm{C}$ $(-0.5819\mathrm{Hz} / {}^{\circ}\mathrm{C})$ and the temperature drift of the
+
+Table 1 Main structure parameters of three MRA designs.   
+
+<table><tr><td>Parameters</td><td>Units</td><td>Design A</td><td>Design B</td><td>Design C</td></tr><tr><td>The mass of proof mass(MP)</td><td>μg</td><td>1.209</td><td>1.209</td><td>1.209</td></tr><tr><td>Size of the DETF (Length/width)(l/w)</td><td>μm/μm</td><td>800/4</td><td>800/4</td><td>800/4</td></tr><tr><td>Ideal lever factor(Li/Lo)</td><td>μm/μm</td><td>1800/35</td><td>1800/35</td><td>1800/35</td></tr><tr><td>Stiffness of the suspension beam(kU)</td><td>N/m</td><td>3.7</td><td>5.1</td><td>8.7</td></tr><tr><td>Effective force magnification factor(At)</td><td>N/N</td><td>16.88</td><td>15.11</td><td>13.66</td></tr><tr><td>Scale factor of DETF resonator(SFR)</td><td>Hz/μN</td><td>2.528</td><td>2.528</td><td>2.528</td></tr><tr><td>Natural frequency of MRA(f0)</td><td>Hz</td><td>18,928</td><td>18,920</td><td>18,918</td></tr><tr><td>Scale factor of MRA(SF)</td><td>Hz/g</td><td>1008.5</td><td>902.8</td><td>816.4</td></tr><tr><td>Frequency temperature coefficient(FTC)</td><td>ppm/°C</td><td>-30.74</td><td>-30.82</td><td>-30.96</td></tr><tr><td>Full-scale range&quot;</td><td>g</td><td>±5</td><td>±5</td><td>±5</td></tr><tr><td>Nonlinear error&quot;</td><td>ppm</td><td>25.0</td><td>20.8</td><td>16.4</td></tr><tr><td>Overload capability&quot;</td><td>g</td><td>36.9</td><td>41.1</td><td>46.3</td></tr></table>
+
+MRA can be further reduced greatly by differential measurement of the two resonators. The first-order natural frequency of the MRA is approximately $899\mathrm{Hz}$ at the translational mode along the sensitive axis.
+
+# 3. Performance test
+
+# 3.1. MRA setup
+
+This MRA was fabricated by silicon on glass process and the size of the die is $8.7\mathrm{mm}\times 8.7\mathrm{mm}\times 0.58\mathrm{mm}$ . It was sealed into a hermetic ceramic case under high vacuum condition. The vacuum encapsulation can provide ultra-low aerodynamic damping and high quality factor to reduce the mechanical noise and enhance the gain of drive force to capacitance change which increases the signal-to-noise ratio greatly [26]. A photograph of the vacuum packaged device with a size of $15\mathrm{mm}\times 15\mathrm{mm}\times 5\mathrm{mm}$ and the MRA die inside are shown in Fig. 9a. Fig. 9b and c are the micrograph of the resonator assembly and the SEM graph of the comb teeth electrodes. In following tests including scale factor, stability and temperature performance, the test procedures are accordance with the IEEE standard [27].
+
+# 3.2. Characteristics of the resonators and scale factor
+
+The open-loop response of the accelerometer was measured on a precise turntable as shown in Fig. 10. A dynamic signal analyzer (Agilent 35670) was used to test the responses of the resonator pair within a given sweeping-frequency range.
+
+![](images/5d3f11c8121ee43ff2b4a200f435878d4a1fe3c53e8661978020c503370b5186.jpg)  
+Fig. 8. Simulated scale factor and its nonlinear error of Design A.
+
+The main measured performances of the three MRAs are listed in Table 2. For design A, the natural frequency of these two resonators was measured at $20441\mathrm{Hz}$ and $20550\mathrm{Hz}$ under room temperature, respectively. The accelerometer was measured under two-position tumble test of $\pm 1\mathrm{g}$ by tilting the turntable and the resulted scale factor was calibrated to $876.4\mathrm{Hz / g}$ . For designs B and C, the scale
+
+![](images/6d48df8883b5e6389925b1fa0aeb9c6450e5dc73ea9df315090aea0e6acf5a15.jpg)  
+Fig. 9. a) Micrograph of a packaged MRA chip; b) micrograph of one vibration beam assembly; c) SEM graph of the comb teeth.
+
+![](images/91cdd8506b03d5ff194c49f5dfa7e1614ada86b324afaea49ff315d5c86952ad.jpg)  
+Fig. 10. Open-loop response set-up.
+
+![](images/9577f748dc78b76023461462b3f33fe040d4a270c23e0607201e9f98aebad0bc.jpg)
+
+![](images/85f22fd9d78ac33df72ec6977e74b48934d931fc0d496f0578ba4a40396452a5.jpg)  
+Fig. 11. a) Cross-section of the temperature control chamber; b) Measured temperature inside the chamber.
+
+Table 2 Measured performances of the three MRA prototypes.   
+
+<table><tr><td>Parameters</td><td>Units</td><td>Design A</td><td>Design B</td><td>Design C</td></tr><tr><td>Designed scale factor</td><td>Hz/g</td><td>1008.5</td><td>902.8</td><td>816.4</td></tr><tr><td>Experimental scale factor</td><td>Hz/g</td><td>876.4</td><td>778.5</td><td>651.8</td></tr><tr><td>Experimental natural frequency</td><td>Hz</td><td>20,441/20,550</td><td>20,441/20,556</td><td>20,848/20,928</td></tr><tr><td>Quality factor</td><td>×103</td><td>377/386</td><td>344/365</td><td>443/422</td></tr><tr><td>Experimental FTC</td><td>ppm/°C</td><td>-26.36/-26.69</td><td>-26.66/-26.44</td><td>-26.46/-26.27</td></tr><tr><td>Experimental bias TDC</td><td>μg/°C</td><td>10.8</td><td>1.93</td><td>2.76</td></tr></table>
+
+factors were $778.5\mathrm{Hz / g}$ and $651.8\mathrm{Hz}$ , which are lower than design A and agree with the design. The measured scale factor was slightly smaller than the theoretical one and the natural resonant frequencies of the two resonators were both larger than the prediction. The simulation result shows this discrepancy mainly came from the under-etching error of the vibration beam width which was estimated at about $0.30~{\mu\mathrm{m}}$ . Furthermore, the measured quality factor of the two vibration beams in the three MRAs was over $3.44\times 10^{5}$ which shows excellent vacuum condition inside the package.
+
+# 3.3. Temperature sensitivity and stability
+
+Low temperature sensitivity of the MRA is significant for high-precision and long-term navigation and gravimetry. To evaluate the temperature drift performance of the MRA, a temperature control chamber was set up to maintain a constant temperature condition as shown in Fig. 11a. The sampling frequency of the digital temperature control loop and data update rate to a host computer were both set at $1\mathrm{Hz}$ . The temperature fluctuation was measured within $\pm 0.01^{\circ}\mathrm{C}$ when the temperature control system reaches its stable-state operation as the experimental result shown in Fig. 11b. The
+
+![](images/c6c63b42f447ba40a271ddb47aabd2958b17f4b081a7adc21d90f6faded538e7.jpg)  
+Fig. 12. Four repeated $1\mathrm{g}$ stability results with $1\mathrm{g}$ bias removal under temperature control.
+
+Table 3 Main performance comparison between this work and results in the literature.   
+
+<table><tr><td>Parameters</td><td>[6]</td><td>[8]*</td><td>[16]</td><td>[19]</td><td>[23]</td><td>This work</td></tr><tr><td>Scale factor (Hz/g)</td><td>258.8</td><td>-</td><td>5972</td><td>200</td><td>2752</td><td>876.4</td></tr><tr><td>Resonant frequency (kHz)</td><td>20</td><td>-</td><td>-</td><td>18.7</td><td>352</td><td>20</td></tr><tr><td>Measurement range (g)</td><td>±2</td><td>±0.03</td><td>±1</td><td>±30</td><td>-</td><td>±5</td></tr><tr><td>Bias TDC (μg/°C)</td><td>-</td><td>7.88</td><td>-</td><td>-</td><td>5378</td><td>10.8</td></tr><tr><td>Bias stability (μg)</td><td>2 (30 d)</td><td>-</td><td>-</td><td>2.5 (1 h)</td><td>-</td><td>0.197 (1 d)</td></tr><tr><td>Bias instability (μg)</td><td>0.08</td><td>-</td><td>0.007</td><td>0.23</td><td>0.056</td><td>0.0173</td></tr><tr><td>Noise floor (μg/√Hz)</td><td>4.5</td><td>0.04</td><td>0.1</td><td>1</td><td>0.098</td><td>0.075</td></tr></table>
+
+* This is a micro-gravimeter operated only in a stationary base.
+
+![](images/0331db5c246ec62215a3ed4f88e137b72d8ccbcf4c7df848f92e56d9076af160.jpg)  
+Fig. 13. Measured noise of the MRA.
+
+temperature chamber with the MRA inside was put on a marble base calibrated horizontally.
+
+The interface electronics of the MRA operated in closed-loop self-oscillation consist of capacitively position sensing and closed-loop phase and amplitude control loops. A frequency counter is used to record the vibrating frequency of the two resonators $(f_{1}$ and $f_{2})$ respectively. The data update rate of the frequency counter was set at $1\mathrm{Hz}$ in the following experiments.
+
+The temperature-induced frequency drift, which is the major drift error source of the MRA, was measured by the temperature control chamber and the results of the three designs are list in Table 2. The FTCs of the design A were measured to be -26.36 ppm/°C (-0.5389 Hz/°C) and -26.69 ppm/°C (-0.5484 Hz/°C) respectively under controlled temperature ranging from 30 °C to 60 °C, which are close to the predicted result -30.74 ppm/°C (-0.5819 Hz/°C). The bias temperature drift coefficient (TDC) was 10.8 μg/°C as the differential FTC was 0.0095 Hz/°C by considering the measured scale factor. The bias TDCs of two prototypes of design B and design C were only 1.93 μg/°C and 2.76 μg/°C, respectively. The experimental results among different prototypes all with thermal stress isolation design indicate that the discrepancy of these measured TDCs mainly results from thermal stress of die-attach process.
+
+To evaluate the stability and repeatability of the MRA for gravimetry operation, four repeated tests of design A with the input of $1\mathrm{g}$ and constant temperature condition were conducted under $45\pm 0.01^{\circ}\mathrm{C}$ constant temperature test condition from 11 December 2019 to 02 March 2020. After the temperature was constant in a steady state, four test results by removing fixed bias of $1\mathrm{g}$ were recorded and shown in Fig. 12 all with 24 -h duration. The mean of $1\mathrm{g}$ stability $(1\sigma)$ in four repeated tests is $0.197~\mu \mathrm{g},$ and the $1\mathrm{g}$ stability results vary from $0.130~\mu \mathrm{g}$ to $0.268~\mu \mathrm{g}$ during the four tests.
+
+![](images/e93f4175bf29a5f13595690821ab860dd8225822cb653b36320bdccee8303276.jpg)  
+Fig. 14. The measurements of the Earth tides effect with the MRA.
+
+Furthermore, the $1\mathrm{g}$ repeatability of the four tests is $1.56~\mu \mathrm{g}$ which indicates an extremely small drift of the prototype MRA system for about 3 months. The excellent stability and repeatability results demonstrate that the MRA has the potential for high-performance application such as moving-base gravimetry.
+
+# 3.4. Noise level
+
+Fig. 13 plots the noise power spectral density (PSD) of design A measured in a quiet room with special ground mechanical decoupling at Tsinghua University lab. Two tests were conducted to demonstrate the noise repeatability of the MRA with the same setup as the stability test. The measured noise level of the MRA is lower than $75\mathrm{ng} / \sqrt{\mathrm{Hz}}$ @0.5 Hz. As the white noise mainly results from ambient disturbance inherent in an Earth-bound test environment, the noise floor of the MRA could be smaller if the MRA system is mounted on a quieter base such as a dedicated test station for gravity and seismic monitoring. Some of the performance parameters are listed in Table 3 and compared with the results in the literature. It is clear that the prototype MRA in this work exhibits excellent stability, low noise floor and large measurement range, which is one of the best choices in miniaturized moving-base gravity sensing application.
+
+# 3.5. Earth tides measurements
+
+The Earth tides exhibits periodic and tiny gravity variations typically with a peak-to-peak of about $300\mu \mathrm{Gal}$ , which is much smaller than the Earth gravity of about 980 Gal. To evaluate the accelerometer performance, a continuous test of the Earth tides effect was performed and the MRA of design A was employed. In these tests, the MRA setup was almost the same as the stability test but the sensitive axis of the MRA was aligned vertically to the ground to sense the $1\mathrm{g}$ gravity change due to the tidal force. Before the formal test started, a continuous burn-in experiment was performed
+
+![](images/777d0d29eba5b896952861e8c227fa1f336192d0eff51f755b98d7fe622640e4.jpg)
+
+![](images/b94b3f8928e7c325cb9926e088f990d68a57107169b591aba24a36716d358756.jpg)
+
+![](images/b8405dff582aef24c18163fe38f24a04caf783541a6e19270c6e46f67e776309.jpg)
+
+![](images/ec0d0fd1b9f37e5865fe86d9c29f0024acff308aa54f81ee59e5b7f142470706.jpg)  
+Fig. 15. a) Raw data of tides measurement. b) Allan deviation of a. c) data series with Earth tides removal. d) Allan deviation of c.
+
+to reduce the residual stress of the MRA prototype. Fig. 14 shows a data run of six-day duration from 3 to 9 March 2020 where the measured gravitational acceleration variation with $1\mathrm{g}$ bias removal is plotted against time. The blue line is the experiment results with an averaging time of $3600~s$ . The red line is a theoretical prediction of the Earth tides-induced gravity variation at the experiment location $(39^{\circ}57'52\mathrm{N}, 116^{\circ}17'52\mathrm{E})$ , which is plotted by TSOFT [28]. There is a significant correlation coefficient of 0.84 between the prediction and the experimental result, demonstrating that this MEMS accelerometer behaves ultra-high resolution to enable measurement of the Earth tides-induced gravity. Moreover, the raw measurement data during the six-day test are plotted in Fig. 15a while Fig. 15c is the data series by removing the Earth tides effect. Benefited from the burn-in process and constant temperature control, the output of the accelerometer has virtually no bias drift. Fig. 15b and d are the Allan deviation of the two data series above. The bias instability of the MRA is $17.3\mathrm{ng}$ at an integration time of $70\mathrm{s}$ , which indicates an extremely high resolution of this MRA. It is clear that the marked difference exists clearly at large averaging time as the Earth tides measurements have two period components at about $12\mathrm{h}$ and $24\mathrm{h}$ . Therefore, the Allan deviation with larger averaging-time weight reduced a lot when the Earth tides component was removed. This measurement indicates that the MRA has extremely high resolution and excellent long-term stability.
+
+# 4. Conclusions
+
+This paper presents a sensitive MRA which is verified experimentally by the Earth tides-induced gravity measurement. Generally, the scale factor of the MRA can be enhanced by increasing the proof mass, the scale factor of resonator and the magnification ratio of the micro-lever. In this work, the mechanical robustness, dynamic range, nonlinear error, package limitation and fabrication constraint are considered and discussed to achieve high scale factor. An optimization of the isolation frame-based sensing structure by finite-element simulation indicates that the measured scale factor of the MRA reaches up to $876\mathrm{Hz / g}$ with $\pm 5\mathrm{g}$ measure
+
+ment range. The experimental results show that the MRA exhibits a much lower bias temperature-drift coefficient and noise floor. Moreover, the $1\mathrm{g}$ stability result demonstrates that the MEMS accelerometer has the ability to measure the Earth tides-induced gravity variation, which shows that the MRA offers the potential for precise moving-base gravity measurement and high-precision navigation applications. Future work will focus on the design of an application-specific integrated circuit (ASIC) to significantly reduce the size and the power consumption of the sensitive accelerometer.
+
+# Author statement
+
+Zhengxiang Fang: Conceptualization, Methodology, Software, Writing- Original draft preparation.
+
+Yonggang Yin: Conceptualization, Methodology, Formal analysis.
+
+Chen chen: Data curation, Investigation, Formal analysis.
+
+Shujuan Zhang: Investigation, Resources.
+
+Yunfeng Liu: Supervision, Validation:
+
+Fengtian Han: Supervision, Funding acquisition, Visualization, Writing - Review & Editing.
+
+# Declaration of Competing Interest
+
+The authors report no declarations of interest.
+
+# Acknowledgment
+
+This work was supported by the National Natural Science Foundation of China (grant 41774189).
+
+# References
+
+[1] S. Pearson-Grant, P. Franz, J. Clearwater, Gravity measurements as a calibration tool for geothermal reservoir modelling, Geothermics 73 (2018) 146-157.   
+[2] M. Studinger, R.E. Bell, N.P. Frearson, Comparison of AirGrav and GT-1A airborne gravit meters for research applications, Geophysics 73 (2008) 151–161.
+
+[3] M.N. Nabighian, M.E. Ander, V.J.S. Grauch, R.O. Hansen, T.R. LaFehr, Y. Li, W.C. Pearson, J.W. Peirce, J.D. Phillips, M.E. Ruder, 75th anniversary - historical development of the gravity method in exploration, Geothermics 70 (2005) 63ND-89ND.   
+[4] S.A. Foote, D.B. Grindeland, Model QA3000 Q-Flex accelerometer high performance test results, IEEE Aerospace Electron. Syst. Mag. 7 (1992) 59-67.   
+[5] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, S. Montague, A vacuum packaged surface micromachined resonant accelerometer, J. Microelectromech. Syst. 11 (2002) 784-793.   
+[6] R. Hopkins, J. Miola, R. Setterlund, B. Dow, W. Sawyer, The silicon oscillating accelerometer: a high-performance MEMS accelerometer for precision navigation and strategic guidance applications, in: Proceedings of the 61st Annual Meeting of the Institute of Navigation, Cambridge, MA, USA, 2005, pp. 1043-1052.   
+[7] J. Laine, D. Mougenot, A high-sensitivity MEMS-based accelerometer, Lead. Edge 33 (2014) 1234-1242.   
+[8] R.P. Middlemiss, A. Samarelli, D.J. Paul, J. Hough, S. Rowan, G.D. Hammond, Measurement of the Earth tides with a MEMS gravimeter, Nature 531 (2016) 614-617.   
+[9] R.P. Middlemiss, S.G. Bramsiepe, R. Douglas, J. Hough, D.J. Paul, S. Rowan, G.D. Hammond, Field tests of a portable MEMS gravimeter, Sensors 17 (2017) 2571.   
+[10] S. Tang, H. Liu, S. Yan, X. Xu, W. Wu, J. Fan, J. Liu, C. Hu, L. Tu, A high-sensitivity MEMS gravimeter with a large dynamic range, Microsyst. Nanoeng. 5 (2019).   
+[11] S. Tang, H. Liu, S. Yan, X. Xu, W. Wu, L. Tu, A MEMS GRAVIMETER QUALIFIED FOR EARTH TIDES MEASUREMENT, 20th International Conference on Solid-State Sensors, Actuators and Microsystems and Eurosensors XXXIII (TRANSDUCERS and EUROSENSORS), Berlin, Germany, 2019, pp. 499-502.   
+[12] X. Zou, A.A. Seshia, A HIGH-RESOLUTION RESONANT MEMS ACCELEROMETER, 18th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), Anchorage, AK, 2015, pp. 1247–1250.   
+[13] X. Zou, P. Thirruvenkatanathan, A.A. Seshia, A seismic-grade resonant MEMS accelerometer, J. Microelectromech. Syst. 23 (2014) 768-770.   
+[14] X. Zou, A.A. Seshia, A high-resolution resonant MEMS accelerometer, in: Proceedings of the 2015 Transducers-2015 18th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), Anchorage, AK, USA, 2015, pp. 1247-1250.   
+[15] W. Pike, A. Delahunty, A. Mukherjee, G. Dou, H. Liu, S. Calcutt, I. Standley, A self-levelling nano-g silicon seismometer, in: Proceedings of the SENSORS, Valencia, Spain, 2014, pp. 1599–1602.   
+[16] A. Mustafazade, M. Pandit, C. Zhao, G. Sobreviela, Z. Du, P. Steinmann, X. Zou, R.T. Howe, A.A. Seshia, A vibrating beam MEMS accelerometer for gravity and seismic measurements, Sci. Rep. 10 (2020).   
+[17] C.R. Marra, A. Tocchio, F. Rizzini, G. Langfelder, Solving FSR versus offset-drift trade-offs with three-axis time-switched FM MEMS accelerometer, J. Microelectromech. Syst. 27 (2018), 790-199.   
+[18] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, B. Simoni, A resonant microaccelerometer with high sensitivity operating in an oscillating circuit, J. Microelectromech. Syst. 19 (2010) 1140-1152.   
+[19] J. Zhao, X. Wang, Y. Zhao, G. Xia, A. Qiu, Y. Su, Y. Xu, A 0.23-mug bias instability and 1-mug/radicHz acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL, IEEE J. Solid-State Circuits 52 (2017) 1053-1065.   
+[20] Z. Fang, Y. Yin, X. He, F.T. Han, Y.F. Liu, Temperature-drift characterization of a micromachined resonant accelerometer with a low-noise frequency readout, Sens. Actuators A Phys. 300 (2019) 111665.   
+[21] D. Shin, Y. Chen, I.B. Flader, T.W. Kenny, Epitaxially Encapsulated Resonant Accelerometer With an on-Chip Micro-Oven, 19th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS 2017), 2017, pp. 595-598.
+
+[22] Y. Zhao, J. Zhao, X. Wang, G.M. Xia, A.P. Qiu, Y. Su, Y.P. Xu, A sub-μg bias-instability MEMS oscillating accelerometer with an ultra-low-noise read-out circuit in CMOS, IEEE J. SolidState Circuits 50 (2015) 2113-2126.   
+[23] C. Zhao, M. Pandit, G. Sobreviela, P. Steinmann, A. Mustafazade, X. Zou, A.A. Seshia, A resonant MEMS accelerometer with 56ng bias stability and 98 ng/Hz $^{1/2}$ noise floor, J. Microelectromech. Syst. 28 (2019) 324-326.   
+[24] Y.G. Yin, Z.X. Fang, Y.F. Liu, F.T. Han, Temperature-insensitive structure design of micromachined resonant accelerometers, Sensors 19 (2019) 1544.   
+[25] X.P. Su, H. Yang, Design of compliant microleverage mechanisms, Sens. Actuators A Phys. 87 (2001) 146-156.   
+[26] X. Zou, A.A. Seshia, The impact of damping on the frequency stability of nonlinear MEMS oscillators, J. Microelectromech. Syst. 24 (2015) 537-544.   
+[27] IEEE Standard Specification Format Guide and Test Procedure for Linear, Single-Axis, Nongyroscopic Accelerometers, 1999, xiv+233 pp, 16 April.   
+[28] M. Van Camp, P. Vauterin, Tsoft: graphical and interactive software for the analysis of time series and Earth tides, Comput. Geosci. 31 (2005) 631-640.
+
+# Biographies
+
+Zhengxiang Fang received the B.S. degree in mechanical engineering and automation from Tsinghua University, Beijing, China, in 2016. He is currently working toward the Ph.D. degree in instrumentation science and technology in Tsinghua University. His research interests include MEMS resonant accelerometers and interface circuit design.
+
+Yonggang Yin received the B.S. degree in mechanical engineering and automation from Tsinghua University, Beijing, China, in 2014, and the Ph.D. degree in instrumentation science and technology from Tsinghua University, in 2019. He is currently an assistant research fellow in Research Center for Intelligent Sensing, Zhejiang Lab, Hangzhou, China. His research interests include MEMS resonant accelerometers and ultrasonic transducer.
+
+Chen chen received the B.S. degree in process equipment and control engineering from Beijing University of Chemical Technology, Beijing, China, in 2019. He is currently working toward the Master's degree in instrument and meter engineering in Tsinghua University. His research interests include MEMS resonant accelerometers.
+
+Shujuan Zhang received the B.S. degree in mechanical engineering from Shiji-azhuang Tiedao University, Hebei, China, in 2019. She is currently working toward the Master's degree in mechanical design and theory in Beijing Jiaotong University. Her research interests include design and optimization of MEMS resonant accelerometers.
+
+Yunfeng Liu received the B.S. degree in School of aeronautic science and engineering from Beijing Aerospace University, in 1996, the M.S. degree and Ph.D. degree in precision instrumentation from Tsinghua University, Beijing, China, in 2006. He is currently an Associate Professor in the Department of Precision Instrument, Tsinghua University. His research interests include MEMS inertial sensors and inertial technology and gravity detection.
+
+Fengtian Han received the B.S. degree in automation instrumentation from Nanjing University of Science and Technology, Nanjing, China, in 1990, the M.S. degree in industrial automation from Beijing University of Aeronautics and Astronautics, Beijing, China, in 1996, and the Ph.D. degree in precision instrumentation from Tsinghua University, Beijing, China, in 2002. From 2002-2004, he was a Post-Doctoral Scholar with the Department of Precision Instrument, Tsinghua University, where he is currently a Professor. His research interests include MEMS inertial sensors and inertial navigation.

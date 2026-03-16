@@ -1,0 +1,996 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A CMOS Readout Circuit for Silicon Resonant Accelerometer with 32-ppb bias stability "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                61,
+                916,
+                85
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lin He, Yong Ping Xu and Moorthi Palaniapan "
+                    }
+                ]
+            },
+            "bbox": [
+                318,
+                97,
+                684,
+                115
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Department of Electrical and Computer Engineering, National University of Singapore, 4 Engineering Dr 3, 117576 Singapore E-mail: Lin_he00@nus.edu.sg, yongpingxu@nus.edu.sg, elemp@nus.edu.sg "
+                    }
+                ]
+            },
+            "bbox": [
+                99,
+                131,
+                903,
+                162
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                256,
+                186,
+                321,
+                201
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper describes a fully-differential CMOS readout circuit for silicon micro-resonant accelerometer. Tested with a SOI resonator, the readout chip sustains the oscillation at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a phase noise of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-36\\mathrm{dBc}@\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.0035\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "32\\mathrm{ppb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which can be translated to an amplitude noise of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{A} / \\sqrt{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " down to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.05\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.22\\mathrm{A}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " up to 100 seconds. The chip is fabricated in a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.35\\mathrm{-um}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " CMOS process and draws  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{mA}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.3\\mathrm{-V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " single supply. "
+                    }
+                ]
+            },
+            "bbox": [
+                86,
+                214,
+                491,
+                328
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Key words: MEMS resonator, CMOS readout circuit, bias stability "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                86,
+                339,
+                491,
+                369
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                243,
+                380,
+                336,
+                395
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Aerospace and inertial navigation set a very stringent requirement on the precision of accelerometer. This precision is determined by noise figure and more importantly by bias stability, which is defined as the offset variation during the subsequent period after calibration. Bias stabilities ranging from 30ppb [1] to 5ppb [2] were demonstrated in silicon resonant accelerometers (SRA) with readout circuits made from discrete components. The bias instability is caused by the interaction between flicker noise and the resonator's nonlinearity. Due to the strong flicker noise associated with MOS devices, it is challenging to meet the stability requirement using CMOS technology. The only CMOS readout circuit [3] ever reported for SRA has a 220ppb bias stability despite that a separate 16-V power supply is used to bias the resonator. In this paper, a low-noise, low drift CMOS readout circuit for SRA is presented. The chip and the sense resonator operate with a single 3.3-V supply. Several techniques are proposed to suppress the flicker noises and reduce their interactions with the strong mechanical nonlinearity due to the increased oscillation amplitude to maintain the same SNR under reduced bias voltage. The "
+                    }
+                ]
+            },
+            "bbox": [
+                86,
+                407,
+                491,
+                710
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8ea7769676fc5f7bef49c7789d3e59c79a7f39153927a9deedd0cf14a64a5252.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                76,
+                711,
+                274,
+                818
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ef85af370dd0947671d47ad5f0f0b7e2ffc9462521c0b2773bfbf25a1fa57830.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.1 Typical DETF resonator (a) and our sense resonator (b) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                276,
+                711,
+                485,
+                818
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "fabricated chip, tested with a SOI resonator, has achieved superior bias stability of 32 ppb. "
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                186,
+                921,
+                217
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Sense Resonator "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                660,
+                231,
+                779,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the previous works [1-3], the sense resonators were made out of the double-ended tuning fork (DETF) structure shown in Fig.1.(a). The beams were excited exactly  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "180^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " out-of-phase to minimize the acoustic radiation. Although this structure helps achieve high quality factor (Q), it favors only single-ended operation. In our design, to take advantage of differential operation, a connection is made at the center of DETF, as shown in Fig.1(b), which forces both beams to move exactly in-phase, resulting a differential capacitance change. Sense and drive operation share the same electrodes at different timeslots. The resonator is biased with a 3.3-6.4V pulse generated by an on-chip charge pump. The bootstrap pulse bias triples the feedback force and generates charge outputs for the sense interface. A  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{-kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " sense resonator is fabricated from the top layer of the SOI wafer using SOIMUMPS process. "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                258,
+                921,
+                479
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "System overview "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                658,
+                492,
+                779,
+                507
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c0ff590a6daf3e9ffc59fdbd03be9aa3b25943f5f6a097b40b6e8691087cbe99.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.2(a) shows the overall system block diagram. The displacement of resonant beam is detected with a low noise sense interface circuit. Velocity signal is obtained by the differentiator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{A}_1(1 - z^{-1})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and further amplified by the variable "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                527,
+                584,
+                916,
+                678
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/45cd3435bc69d4693aa6fa1cb68f92ee0ef83d5865ff797c51edc2042be6f300.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.2 System schematic diagram (a) and implemented system with CMOS readout circuit and resonator wire-bonded together (b) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                540,
+                680,
+                903,
+                798
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "14-3 "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                34,
+                133,
+                50
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "146 "
+                    }
+                ]
+            },
+            "bbox": [
+                86,
+                947,
+                125,
+                963
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-4-900784-04-8"
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                948,
+                277,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2007 Symposium on VLSI Circuits Digest of Technical Papers "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                948,
+                913,
+                960
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:18:58 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                963,
+                870,
+                975
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "gain amplifier (VGA). It is then fed back and drives the same electrodes, through a buffer, in different timeslots to generate electrostatic force. The gain of VGA is automatically set by a control loop. Inside the control loop, the amplitude is detected with a full-wave rectifier and compared with a preset value  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{R0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The resultant error signal is fed to a loop filter  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " whose output controls VGA gain. "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                59,
+                482,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The flicker noise in the oscillation amplitude of nonlinear resonator translates into bias instability or  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 / f^3"
+                    },
+                    {
+                        "type": "text",
+                        "content": " phase noise. Therefore, reducing the flicker noise in the oscillation amplitude is the primary design target. To do so, the flicker noises in the full-wave rectifier and loop filter are removed by two sets of choppers, respectively. While the amplitude modulation of the flick noise in the VGA is suppressed by a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2^{\\mathrm{nd}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " order loop filter  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{L(s)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                161,
+                482,
+                275
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Key circuit block implementation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                171,
+                291,
+                395,
+                305
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The sense capacitance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_s"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the capacitance variation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta C_s"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are 20fF and 0.5fF, respectively. A capacitive sense interface circuit in [4] without the input common-mode feedback is adopted in this design. The interface is isolated from resonator with a pair of decoupling capacitors to avoid overdriving the opamp during the feedback timeslot. The signal is sampled at a rate of 5MHz with multi-phase clock [4]. NMOS input telescopic OTA with passive feed-forward capacitor is chosen for the best power-noise-speed tradeoff. "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                319,
+                482,
+                448
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The differentiator is realized by charge redistribution among three capacitors. C1 stores the present value while C2 and C3 alternate store the delayed value. This switch-cap network was combined with an offset-free gain stage to obtain enough amplification and reject undesirable DC offset. A differential pair amplifier (M1, M2) provides a continuous output (Fig.3.a). "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                449,
+                482,
+                548
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A pair of NMOS full-wave rectifiers is used to detect the oscillation amplitude. Two sets of Choppers are employed for "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                550,
+                482,
+                578
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/19630d2497cb6c014d43ca8962092ad9934d37ce6c47a121d9ab8caf98d14663.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                96,
+                584,
+                478,
+                738
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/91c458aa521a558ad0e18cf76fb89eb9edf86e0d21aed5dd3b05ca5fe33d9632.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig.3. Circuit diagrams of (a) differentiator and (b) chopped rectifier and Gm cells in amplitude control loop. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                94,
+                749,
+                468,
+                855
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the rectifiers and the Gm cells in loop filter so that the flicker noise can also be removed, as shown in Fig.3(b). "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                61,
+                911,
+                87
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Experiment result and discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                602,
+                103,
+                825,
+                117
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resonator chip and CMOS IC chip are mounted on a PCB and wire-bonded together (Fig2.b). The PCB is placed in a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "125\\mathrm{Pa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " vacuum environment. The oscillation signal is taken from the output of the VGA and drives a full-customized PLL with a frequency ratio of 420. The frequency is recorded with Agilent E53131A and filtered with a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.0005\\mathrm{-Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " high-pass filter to compensate the temperature effect. The Allan variances of compensated data are plotted in Fig.4. The floor of the variance plot is known as the bias stability. The chip design allows us to disable the chopper and to replace the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2^{\\mathrm{nd}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " order loop filter  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{L(s)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1^{\\mathrm{st}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " order one to compare their respective effects on stability performance. The efficiency of "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                131,
+                911,
+                296
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/31cbe89cda28d7a849b3157230251856c6f70b2045eab4a266bf9845bad3af2a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.4. Measured Allan variance. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                529,
+                313,
+                883,
+                465
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "chopper can be clearly seen. But the flicker noise was not completely removed even with the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2^{\\mathrm{nd}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " order loop control filter. The residue flicker noise was found to be caused by the flicker noise in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{M}_3"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (Fig.3.a) which modulates gain of the differential stage. "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                494,
+                911,
+                562
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conclusion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                674,
+                577,
+                751,
+                589
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A fully-differential CMOS readout circuit with 3.3-V single supply for silicon resonant accelerometer has been implemented and achieved the stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "32\\mathrm{ppb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Chopper technique and high-order loop filter were proposed for amplitude control to improve the bias stability and experimentally verified. "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                604,
+                911,
+                684
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                679,
+                699,
+                746,
+                709
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] M. Helsel, et al., \"Navigation grade micro-machined silicon accelerometer,\" Proc. IEEE Position Location and Navigation Symp., 1994, pp. 51-58. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] R. E. Hopkins, et al., \"The Silicon Oscillating Accelerometer: A MEMS Inertial Instrument for Strategic Missile\", Guidance Missile Sciences Conference, November, 2000, pp.44-51. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] T. A. Roessig, et al., \"Surface-micromachined resonant accelerometer,\" Transducers '97, June 1997, pp.859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] X. Jiang, et al., \"A Monolithic Surface Micromachined Z-Axis Gyroscope with Digital Output\", Tech Digest of VLSI Circuits conference, 2000, pp 15-18. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                722,
+                911,
+                858
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2007 Symposium on VLSI Circuits Digest of Technical Papers "
+                    }
+                ]
+            },
+            "bbox": [
+                444,
+                949,
+                846,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:18:58 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                120,
+                964,
+                870,
+                975
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "147 "
+                    }
+                ]
+            },
+            "bbox": [
+                874,
+                948,
+                910,
+                962
+            ]
+        }
+    ]
+]

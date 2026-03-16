@@ -1,0 +1,90 @@
+# A Temperature-insensitive Micromachined Resonant Accelerometer with Thermal Stress Isolation
+
+Yonggang Yin, Zhengxiang Fang, Jingxin Dong, Yunfeng Liu and Fengtian Han  
+State Key Laboratory of Precision Measurement Technology and Instruments, Tsinghua University, Beijing, China  
+Email: hft@mail.tsinghua.edu.cn
+
+Abstract—Micromachined resonant accelerometers, especially those devices fabricated by silicon on glass technology, suffer from temperature drift caused by inherent thermal stress. This paper introduces two methods to attenuate the effect of thermal stress. The locations of the bonding anchors are first optimized in layout design to reduce the thermal stress effect along the acceleration-sensitive axis. Moreover, the glass substrate is designed as a dedicated shape to isolate the thermal stress generated during the die attach process. Experimental results on several prototype accelerometers show that the differential temperature sensitivity is reduced to $10.5\mu \mathrm{g} / ^{\circ}\mathrm{C}$ and the 1-hour bias stability reaches $0.7\mu \mathrm{g}$ .
+
+Keywords—resonant accelerometer; silicon on glass (SOG); temperature sensitivity; thermal stress; bias stability
+
+# I. INTRODUCTION
+
+Micromachined accelerometers have shown potential for high-precision applications such as strategic-grade navigation [1,2], seismology [3,4] and gravimetry [5,6] in recent years. High-performance micromachined resonant accelerometers (MRAs), based on the force-frequency characteristics of high-Q resonators, have become very attractive due to direct frequency output [1-3]. However, the temperature drifts of the bias and the scale factor limit the long-term stability of the MRA operation. There are two major sources of structure-dependent temperature drift [7]. Firstly, the Young's modulus of silicon used as sensing structure material varies with temperature change, which will result in the natural frequency change of the resonator [8]. Secondly, the mismatch of the coefficients of thermal expansion (CTEs) between the silicon structure and the glass substrate will generate thermal stress. The first drift error can be greatly decreased by a differential design of two symmetric resonators but the second one will worsen the differential effect. In addition, the die attach process during the device vacuum packaging will generate unpredictable thermal stress [2,9]. This paper proposes an improved structure design and a special-shaped isolation substrate to reduce the thermal stress effect on bias stability of the MRA.
+
+# II. METHODS
+
+A double-ended tuning fork (DETF) resonator with a pair of micro-levers is shown in Fig. 1. The MRA device was fabricated based on silicon on glass (SOG) process [1]. Since
+
+the CTE of the BF33 glass substrate $(\alpha_{\mathrm{g}})$ is slightly larger than that of the silicon structure $(\alpha_{\mathrm{s}})$ , the $x$ -axis distance between the anchors $(\delta)$ will increase as the temperature rises $(\Delta T)$ [10]. In this case, the natural frequency $(f_0)$ of the resonator will increase due to the larger tensile force generated in the DETF, as modeled in (1).
+
+$$
+\Delta f _ {0} = k \left(\alpha_ {\mathrm {g}} - \alpha_ {\mathrm {s}}\right) \Delta T \tag {1}
+$$
+
+In principle, the thermal stress coefficient $(k)$ is dominated by $\delta$ . If $\delta = 0$ , which can be implemented by using an inverted beam design, the thermal stress along the acceleration-sensitive axis can be decreased greatly. The layout of the suspension beams also influences the thermal stress. The four anchors of the suspension beams should be arranged symmetrically, relative to the expansion center, and be close to each other. An improved structure design is illustrated schematically in Fig. 2. Finite element simulation shows that the theoretical temperature drift caused by the thermal expansion of silicon and glass is only $-0.016\mathrm{Hz} / {}^{\circ}\mathrm{C}$ , as shown in Fig. 3. The total temperature drift coefficient (TDC) of a single resonator is $-0.576\mathrm{Hz} / {}^{\circ}\mathrm{C}$ , which is mainly owing to the Young's modulus drift. This design aims to minimize the effect of thermal expansion and improve the TDC consistency of two DETF resonators.
+
+![](images/67aa939442c3a02fb9ec928fa876446ff3804077aae3e9837975ce450421cd5b.jpg)  
+(a)
+
+![](images/a0b814fed8c6675c0ff52f18ba02f05421648fee283635927ea2d215fbff0bd0.jpg)  
+(b)   
+Fig. 1. The DETF resonator with a pair of micro-levers, (a) a schematic of the sensing structure, (b) a micrograph of the fabricated structure.
+
+![](images/898b62669c3717950c763a4ad63991a1d88dc5302ab9c34943b1bf0236319bad.jpg)  
+Fig. 2. The schematic structure with optimized anchor locations.
+
+![](images/a21e6978fcf62838b27f80c8c1ccc3845781614e9b4b352074e2429729114ec4.jpg)  
+Fig. 3. The simulated temperature drift of a single resonator's natural frequency and the effect of thermal stress only.
+
+However, during the die attach process by packaging the glass substrate on a ceramic base, the large thermal expansion of the adhesive layer will deteriorate the theoretical temperature drift results greatly. Worse still, it is difficult to maintain an uniform thickness of the adhesive layer, which increases the common mode error of the two resonator responses. Hence, a dedicated H-shaped isolation structure is proposed in this work to reduce the thermal stress produced by the die attach process, as shown in Fig. 4 (a). It is clear that the silicon structure is separated from the adhesive layer by a narrow isolation beam. The H-shaped glass substrate is shaped by a post laser cutting, as a fabricated device shown in Fig. 4 (b). Fig. 4 (c) shows a comparison of the H-shaped substrate and a simple rectangular substrate. The finite element analysis result indicates that the H-shaped substrate can effectively isolate the thermal stress generated between the adhesive layer and the ceramic base. This implies the silicon structure and the glass substrate below can expand or shrink freely without extra constraint. Then the temperature characteristics of the resonator shown in Fig. 3 will be close to the practical operating condition. Although the H-shaped structure is a cantilever, the MRA will not affected by the low frequency vibration. This is because the resonant frequency of the cantilever around $x$ -axis is $3.8\mathrm{kHz}$ , which is much larger than the measurement bandwidth of the MRA.
+
+![](images/0f5f8cbc5d980387a971d5545407f64031f7fe59158d47de4eb0ddf1e43b12b2.jpg)  
+(c)   
+Fig. 4. MRA with thermal stress isolation substrate, (a) a schematic of the integrated device structure, (b) a photograph of the fabricated device with thermal stress isolation substrate, (c) a comparison of the thermal stress between two kinds of substrate shapes.
+
+# III. RESULTS
+
+The improved MRA devices with optimized anchor locations and additional H-shaped isolation substrate were fabricated and tested experimentally. The silicon-glass structure was sealed in a hermetic metallic package and maintained at high vacuum by a getter inside the package, as shown in Fig. 5. The degree of vacuum is estimated at nearly $0.1\mathrm{Pa}$ and the measured Q-factor of the resonator is up to $2.5\times 10^{5}$ . The block diagram of the interface electronics is schematically illustrated in Fig. 6. The capacitive position sensing of the resonator is based on the ring-type diodes demodulation and a followed amplifier [11]. The oscillator amplitude is stabilized by automatic amplitude control (AAC) comprising an active amplitude detection and a classical proportional-integral (PI) compensator. Then the AAC voltage and the vibration sensing signal with $90^{\circ}$ phase shift are multiplied by an analog multiplier to generate the AC drive voltage. The frequency of each resonator response is recorded via a commercial frequency counter (53230A, Keysight Technologies).
+
+The temperature characteristics of 3 MRA devices, which are samples from a single batch, are measured and listed in TABLE. TDC1 and TDC2 are the temperature drift coefficients of the two resonators in one MRA, respectively. The measured TDCs agree well with the predication $(-0.576\mathrm{Hz} / {}^{\circ}\mathrm{C})$ where the discrepancy is below $3\%$ . Considering the scale factor (SF) measurements, the best differential TDC reaches as low as $10.5~\mu \mathrm{g} / {}^{\circ}\mathrm{C}$ . The temperature drift of one typical device (M1) is shown in Fig. 7, of which $f_{1}$ and $f_{2}$ are the resonant frequency of the two resonators, respectively. The experimental results confirm the two proposed methods are effective to reduce thermal stress of the MRA.
+
+![](images/f5291b52cfa131bd387be2b1d7caf8ec5a32f1246a05a0a7662bd675998588cf.jpg)  
+Fig. 5. Photograph of the vacuum packaged MRA device in an interface circuit board.
+
+![](images/9ceb28e1968d68a97d0de4828ed169354126d6bcbdf521002bbcd3a5b181e211.jpg)  
+Fig. 6. The block diagram of the MRA interface electronics.
+
+TABLE I. TEMPERATURE CHARACTERISTICS OF THREE MRA DEVICES  
+
+<table><tr><td>Serial number</td><td>TDC1 (Hz/°C)</td><td>TDC2 (Hz/°C)</td><td>SF (Hz/g)</td><td>Differential TDC (μg/°C)</td></tr><tr><td>M1</td><td>-0.5907</td><td>-0.5873</td><td>244</td><td>-13.9</td></tr><tr><td>M2</td><td>-0.5897</td><td>-0.5924</td><td>256</td><td>10.5</td></tr><tr><td>M3</td><td>-0.5862</td><td>-0.5795</td><td>256</td><td>-26.2</td></tr></table>
+
+The bias stability is one of the most crucial performance parameters for high-precision accelerometers. Fig. 8 shows the output acceleration of one MRA device (M1). The device is mounted at $0\mathrm{g}$ position and the test environment is under room temperature. The frequency output is acquired at a sampling rate of $1\mathrm{Hz}$ for a duration of 12 hours, where no temperature compensation or data smoothing is used in the plotted curves. It is clear that the MRA reached thermal equilibrium within two hours. The standard deviation of the later 10-hour data is $2.7~\mu \mathrm{g}$ and the bias change of the last 1-hour output is only $0.7~\mu \mathrm{g}$ .
+
+![](images/0c7751401486d5fa02f9cac459a470d60a0d5867527b492aed9e822e5081a696.jpg)  
+Fig. 7. The measured temperature drift of one typical device (M1).
+
+![](images/90d7123ad1a806e33d0b582dc99e0016d10d20d93b7e7ff7acb10a5fd09b8df0.jpg)  
+Fig. 8. Measured bias stability under room temperature.
+
+The measured results indicate that the MRA devices presented in this work exhibit good temperature-insensitive characteristics and high long-term stability. Along with the low noise design [12], the MRA has shown potential performance for high-precision strategic-grade navigation and gravity measurement applications.
+
+# IV. CONCLUSION
+
+This paper presents a novel MRA structure design with optimized anchor locations and additional H-shaped isolation glass substrate to reduce the thermal stress effect. Experimental results show that the MRA temperature drift generated in both the microfabrication and device packaging is reduced greatly. The differential temperature drift coefficient is reduced to $10.5\mu \mathrm{g} / ^{\circ}\mathrm{C}$ . The measured bias stability is $0.7~\mu \mathrm{g}$ in one hour and $2.7~\mu \mathrm{g}$ in 10 hours under room temperature. Future work will focus on the temperature drift compensation and constant temperature control techniques to further improve the long-term stability.
+
+# REFERENCES
+
+[1] R. Hopkins, J. Miola, R. Setterlund, B. Dow, and W. Sawyer, "The silicon oscillating accelerometer: A high-performance MEMS accelerometer for precision navigation and strategic guidance applications," Proceedings of the 61st Annual Meeting of the Institute of Navigation. Cambridge, MA, United States, pp. 1043-1052, June 2005.   
+[2] D. D. Shin, C. H. Ahn, Y. Chen, D. L. Christensen, I. B. Flader, and T. W. Kenny, "Environmentally robust differential resonant accelerometer in a wafer-scale encapsulation process," 2017 IEEE 30th International Conference on Micro Electro Mechanical Systems (MEMS), Las Vegas, NV, United States, pp. 17-20, January 2017.   
+[3] X. Zou, P. Thiruvenkatanathan, and A. A. Seshia, “A seismic-grade resonant MEMS accelerometer,” Journal of Microelectromechanical Systems, vol. 23, no. 4, pp. 768-770, 2014.   
+[4] W. T. Pike, A. K. Delahunty, A. Mukherjee, G. Dou, H. Liu, S. Calcutt, and I. M. Standley, “A self-levelling nano-g silicon seismometer,” Proc. IEEE SENSORS 2014, pp. 1599-1602, November 2014.   
+[5] R. P. Middlemiss, A. Samarelli, D. J. Paul, J.Hough, S. Rowan, and G. D. Hammond, "Measurement of the Earth tides with a MEMS gravimeter," Nature, vol. 531, no. 7596, pp. 614, 2016.   
+[6] R. P. Middlemiss, “A practical MEMS gravimeter,” University of Glasgow, 2016.
+
+[7] J. Dong, A. Qiu, and R. Shi, "Temperature influence mechanism of micromechanical silicon oscillating accelerometer," 2011 IEEE Power Engineering and Automation Conference, Wuhan, China, pp. 385-389, September 2011.   
+[8] R. Melamud, S. A. Chandorkar, B. Kim, H. K. Lee, J. C. Salvia, G. Bahl et al., "Temperature-insensitive composite micromechanical resonators," Journal of Microelectromechanical Systems, vol. 18, no. 6, pp. 1409-1419, 2009.   
+[9] X. Zhang, S. Park, and M. W. Judy, "Accurate assessment of packaging stress effects on MEMS sensors by measurement and sensor-package interaction simulations," Journal of microelectromechanical systems, vol. 16, no. 3, pp. 639-649, 2007.   
+[10] K. S. Meredith, "Effects of mechanical coupling on oscillator frequency in a micromechanical accelerometer," Massachusetts Institute of Technology, 2001.   
+[11] B. Yan, Y. Liu, and J. Dong, "The optimization of drive and sense circuit in silicon micro-machined resonant accelerometer," Proceedings of 2016 IEEE Chinese Guidance, Navigation and Control Conference, Nanjing, China, pp. 2058-2063, August 2016.   
+[12] Y. Yin, Z. Fang, F. Han, B. Yan, J. Dong, and Q. Wu, "Design and test of a micromachined resonant accelerometer with high scale factor and low noise," Sensors and Actuators a-Physical, vol. 268, pp. 52-60, 2017.

@@ -1,0 +1,893 @@
+[
+    {
+        "type": "text",
+        "text": "Surface-Micromachined Resonant Accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            270,
+            53,
+            734,
+            73
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Trey A. Roessig, Roger T. Howe, Albert P. Pisano, and James H. Smith*  \nBerkeley Sensor & Actuator Center ",
+        "bbox": [
+            226,
+            88,
+            774,
+            124
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "497 Cory Hall, University of California, Berkeley, CA 94720-1774, USA ",
+        "bbox": [
+            226,
+            124,
+            774,
+            139
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "*Sandia National Laboratories, Albuquerque, NM 87185-1080, USA ",
+        "bbox": [
+            245,
+            139,
+            757,
+            157
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "SUMMARY ",
+        "text_level": 1,
+        "bbox": [
+            234,
+            187,
+            340,
+            206
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper discusses the design and testing of a resonant accelerometer developed for integrated surface-micromachining processes. First- and second-generation designs are presented. The sensors use leverage mechanisms to transfer force from a proof mass to double-ended tuning fork (DETF) resonators used as force transducers. Each fork forms the basis of an integrated oscillator to provide the output waveforms. The DETFs on the first-generation device have a nominal frequency of $175\\mathrm{kHz}$ , and the sensor has a scale factor of $2.4\\mathrm{Hz / g}$ . The oscillators on this device exhibit a root Allan variance floor of $38\\mathrm{mHz}$ (220 ppb). The second-generation, higher-sensitivity sensor uses DETFs with a nominal frequency of $68\\mathrm{kHz}$ and has a measured scale factor of $45\\mathrm{Hz / g}$ . ",
+        "bbox": [
+            83,
+            224,
+            488,
+            416
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Surface-micromachining, resonator, accelerometer ",
+        "bbox": [
+            83,
+            429,
+            480,
+            444
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "INTRODUCTION ",
+        "text_level": 1,
+        "bbox": [
+            209,
+            461,
+            364,
+            477
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A resonant sensor is a device whose response to the measurand is a frequency shift. Historically, sensors based on vibrating elements have been considered highly attractive, as they are generally quite sensitive and possess a wide dynamic range [1]. The quasi-digital nature of the output signal also makes this sensor class easy to integrate into digital systems [2]. Quartz-based resonant sensors have been used in many commercial applications, including navigation-grade precision accelerometers [2][3]. ",
+        "bbox": [
+            83,
+            497,
+            487,
+            627
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Some recent work has focussed on micromachined resonant sensors in bulk silicon processes [4][5], but this class of sensor has not yet been pursued in a surface-micromachining technology. Because of this, the design trade-offs are not yet well-understood. Resonant sensing is a powerful measurement technique, and surface-micromachining has already proven itself as a manufacturable technology. The combination of the two has the potential to produce high-quality, low-cost sensors. ",
+        "bbox": [
+            83,
+            629,
+            487,
+            745
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To demonstrate the feasibility of resonant accelerometers in a surface-micromachining technology, a prototype device has been fabricated at Analog Devices, Inc. in the BiMEMS foundry process. The transducers themselves are double-ended tuning fork (DETF) resonators whose natural frequencies are a function of an applied force. Force is transferred to the forks from the proof mass by a leverage mechanism. This mechanism also amplifies the force during the transfer, increasing the scale factor of the sensor. Oscillators based on the tuning forks provide the output waveforms of the device. A microphotograph of ",
+        "bbox": [
+            83,
+            745,
+            487,
+            889
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/27a4448974446bff49fda388332aebe7b38257637ddf6aaa67b522d32ba5336a.jpg",
+        "image_caption": [
+            "Figure 1: Die photo of ADI-fabricated accelerometer chip "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            528,
+            196,
+            893,
+            474
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "the die, which contains four separate devices and some unrelated stiction experiments, is shown in Figure 1. ",
+        "bbox": [
+            509,
+            517,
+            911,
+            547
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MECHANICAL DESIGN ",
+        "text_level": 1,
+        "bbox": [
+            604,
+            563,
+            818,
+            578
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A microphotograph of the accelerometer itself is shown in Figure 2. The polysilicon is $2\\mu \\mathrm{m}$ thick, the tuning fork tines are $2\\mu \\mathrm{m} \\times 220\\mu \\mathrm{m}$ , and the proof mass is approximately $120\\mu \\mathrm{m} \\times 150\\mu \\mathrm{m}$ . When an acceleration is applied to the device, the proof mass hinges about the pivot beam and applies forces to the two DETFs. One of these forks is subject to a tensile force which raises its natural frequency. The other experiences a compressive force, lowering its frequency. Each fork is kept resonating at its natural frequency by a sustaining amplifier, and the frequency difference between the two forks is the output of the sensor. This push-pull configuration gives the device a first-order temperature compensation. ",
+        "bbox": [
+            509,
+            598,
+            911,
+            771
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to maximize the scale factor available from the small inertial mass, a leverage system is used to magnify the force applied to the tuning forks [6]. The pivot beam and proof mass approximate a fulcrum and lever, as shown in Figure 3. This magnifies the force applied to the tuning forks by approximately an order of magnitude. Naturally, the scale factor of the sensor is magnified by the same amount. To compensate for any bending moments applied to the tuning forks, the beams linking ",
+        "bbox": [
+            509,
+            773,
+            913,
+            889
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "3B2.02",
+        "bbox": [
+            848,
+            40,
+            911,
+            55
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "0-7803-3829-4/97/$10.00 ©1997 IEEE ",
+        "bbox": [
+            88,
+            936,
+            409,
+            951
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "859 ",
+        "bbox": [
+            485,
+            936,
+            520,
+            949
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "TRANSDUCERS '97 ",
+        "bbox": [
+            808,
+            931,
+            911,
+            939
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "1997 International Conference on Solid-State Sensors and Actuators ",
+        "bbox": [
+            580,
+            939,
+            911,
+            949
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Chicago, June 16-19, 1997 ",
+        "bbox": [
+            779,
+            949,
+            911,
+            958
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: Zhejiang University. Downloaded on February 03,2026 at 08:53:46 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            131,
+            962,
+            860,
+            974
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b76f5d2f84d360210cfcebe79f251ac47ecfb4dc1bfa120ea9f00dae4654837e.jpg",
+        "image_caption": [
+            "Figure 2: Microphotograph of fabricated accelerometer "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            90,
+            56,
+            474,
+            428
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "the DETF structure to the lever arm are dimensioned so that the average moment across each tuning fork is zero. This insures that the tuning fork tines are not differentially loaded [6]. ",
+        "bbox": [
+            82,
+            465,
+            489,
+            510
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "ELECTRICAL DESIGN ",
+        "text_level": 1,
+        "bbox": [
+            184,
+            526,
+            392,
+            542
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Each of the tuning forks on the accelerometer structure has its own sustaining amplifier. In each case, the amplifier and tuning fork form an oscillation loop that generates an output waveform at the natural frequency of the DETF. These oscillators must be as stable as possible in order to minimize the sensor noise floor. ",
+        "bbox": [
+            82,
+            560,
+            489,
+            647
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The oscillation loop is shown in Figure 4. The tuning fork itself is a variant of previously-demonstrated micromachined resonators [7]. Each tine has drive and sense combs attached to it, and the two tines of each fork are driven and sensed in parallel. This arrangement rejects unwanted vibration modes and gives the resonator a series RLC electrical model similar to that of a quartz crystal. Near resonance, the reactive component of the impedance is small, and the DETF has a primarily resistive behavior. ",
+        "bbox": [
+            82,
+            648,
+            491,
+            777
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The amplifier, whose purpose is to convert the output current from the tuning fork into a voltage used to drive the structure, consists of two inverter stages [7]. The first stage is an inverting amplifier with a PMOS device used as a resistor placed in feedback around it. This stage is responsible for the actual transimpedance function, with the PMOS device serving as a variable resistor that sets the gain of the stage. The second ",
+        "bbox": [
+            84,
+            779,
+            491,
+            881
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/834312c946a95f5dee11e9b4ec28c6496554c4fb2fb8a15c2fadb1f76aead833.jpg",
+        "image_caption": [
+            "Figure 3: Spring-lever model of leverage mechanism "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            529,
+            70,
+            905,
+            210
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b95b7e1d51fee2c9e29492ddad5feefaf5c977ecef4ba90cde611b68858d5603.jpg",
+        "image_caption": [
+            "Figure 4: Simplified schematic of oscillation loop "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            526,
+            279,
+            905,
+            426
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "stage is a simple inverting amplifier, the output of which is sent both to an output buffer and back to the fork itself. ",
+        "bbox": [
+            513,
+            465,
+            918,
+            494
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Left to itself, this circuit would drive its tuning fork far into the nonlinear vibration regime, which is detrimental to oscillator stability [8]. To limit the amplitude of oscillation, an off-chip gain control loop was implemented. After filtering, a diode rectifier and low pass filter are used to detect the output amplitude and set the voltage on the gate of the PMOS resistor. The effect is that as the oscillation amplitude grows, the gain of the amplifier drops. When the gain is no longer enough to cause the amplitude to increase further, a steady state condition is reached. ",
+        "bbox": [
+            513,
+            494,
+            918,
+            638
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "FABRICATION AND TESTING ",
+        "text_level": 1,
+        "bbox": [
+            583,
+            657,
+            852,
+            672
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The resonant accelerometer described above was fabricated in the Analog Devices BiMEMS foundry process [9]. In order to achieve a sufficiently high Q for oscillation, the device had to be tested in vacuum. A bell jar was constructed to allow a ceramic DIP package to be held at $150\\mathrm{mTorr}$ by a roughing pump during testing. The feedthroughs of this bell jar were attached to a circuit board, and the board and jar were bolted together. This allowed gravitational acceleration to be applied to the chip while in vacuum. For higher forces, the test electrodes to either side of the proof mass were used to apply electrostatic forces. ",
+        "bbox": [
+            513,
+            691,
+            920,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The response of the individual tuning forks to these applied forces is shown in Figure 5. The nominal frequencies of the ",
+        "bbox": [
+            515,
+            851,
+            920,
+            880
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "3B2.02",
+        "bbox": [
+            77,
+            39,
+            139,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "TRANSDUCERS '97 ",
+        "bbox": [
+            89,
+            936,
+            194,
+            945
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "1997 International Conference on Solid-State Sensors and Actuators ",
+        "bbox": [
+            90,
+            946,
+            427,
+            953
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "Chicago, June 16-19, 1997 ",
+        "bbox": [
+            90,
+            953,
+            222,
+            962
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: Zhejiang University. Downloaded on February 03,2026 at 08:53:46 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            129,
+            962,
+            862,
+            974
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "860 ",
+        "bbox": [
+            487,
+            938,
+            521,
+            950
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4a7bc25b4526404a412333aa1c922aceb2288d440b2463317c7bece32b754909.jpg",
+        "image_caption": [
+            "Figure 5: Tuning fork response to applied forces "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            81,
+            51,
+            456,
+            288
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "forks are 174.9 and $176.1\\mathrm{kHz}$ , a mismatch of $0.7\\%$ . The scale factor as measured with a $\\pm 1\\mathrm{g}$ test is $2.4\\mathrm{Hz / g}$ . As can be seen, the response of each fork is in line with expectations, and the sensitivities of the two forks are well-matched, despite the asymmetry of the sensor design. ",
+        "bbox": [
+            78,
+            326,
+            472,
+            400
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In order to characterize the oscillators, the two outputs were multiplied against each other, the high-frequency component was removed, and the resulting frequency difference was analyzed. The noise contributions from each fork were assumed to be equal, an assumption borne out by comparison of the two power spectra. This analysis method allowed the measurement of small fractional fluctuations without need of an external reference. The Allan variance was chosen as a figure of merit based on its applicability to signal processing of resonant sensor outputs [4]. ",
+        "bbox": [
+            78,
+            402,
+            472,
+            544
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The frequency difference power spectrum and single-oscillator Allan variance data are shown in Figures 6 and 7, respectively. For an oscillation amplitude such that the noise floor is $58~\\mathrm{dB / Hz}$ below the carrier, the constant region of the root Allan variance, or \"frequency flicker floor,\" occurs at $38~\\mathrm{mHz}$ (220 ppb). Using model fitting techniques, the Q of open-loop forks on the same chip was estimated at 72,000. ",
+        "bbox": [
+            78,
+            547,
+            470,
+            647
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "DISCUSSION ",
+        "text_level": 1,
+        "bbox": [
+            216,
+            665,
+            331,
+            680
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Much better noise performance can be expected from oscillators based on these high-Q elements. There are two major sources of noise present in this system, one linear and one nonlinear. The dominant linear noise source is the PMOS resistor in the sustaining amplifier. This resistor, located at the front end of the circuit, generates a large amount of current noise and gives the oscillation loop a very high noise floor. The effect at low oscillation amplitudes is to bury the signal in white noise, making it hard to detect and difficult to limit to linear regimes of operation. If the noise due to this source demands that the oscillation be at a nonlinear amplitude, the oscillator will never be very stable. In addition, this noise source is responsible for the ",
+        "bbox": [
+            78,
+            701,
+            470,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/f888b02ec1a689c9aa1de48bdcbbd34e7a1f8fd7ac1e8285af0bcfb6a17e4251.jpg",
+        "image_caption": [
+            "Figure 6: Frequency difference output spectrum "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            505,
+            54,
+            881,
+            289
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff2954dadec70eeedb76bb94e49133f2f214eb701de0c454d451d8de79538a32.jpg",
+        "image_caption": [
+            "Figure 7: Allan variance behavior of integrated oscillator "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            500,
+            327,
+            874,
+            573
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$1 / \\tau$ portion of the root Allan variance graph, demonstrating that white noise hinders frequency measurements at high rates. An improved front end of this circuit based on a Pierce configuration [10] should reduce this noise source by at least an order of magnitude. ",
+        "bbox": [
+            500,
+            607,
+            891,
+            679
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The second noise source in this system is nonlinear and the dominant noise source at lower sampling frequencies. This source has been shown to be a nonlinear mixing of the 1/f noise of the sustaining amplifier around the carrier signal [8]. This mixing takes place when low-frequency drift in the sustaining circuits causes a series resistance drift in the tuning fork itself. Because the resonator is not vibrating in a truly linear regime, some amplitude-frequency effect remains. The resistance shift interacts with the gain control circuitry to produce an amplitude shift and along with it, a change in frequency. This noise source is responsible for the flicker floor, beyond which further time-averaging produces no decrease in frequency fluctuation. It can be minimized by reducing the amplitude of vibration to reduce ",
+        "bbox": [
+            500,
+            685,
+            891,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "3B2.02",
+        "bbox": [
+            835,
+            37,
+            896,
+            51
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "861 ",
+        "bbox": [
+            473,
+            928,
+            502,
+            940
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "TRANSDUCERS '97 ",
+        "bbox": [
+            792,
+            923,
+            894,
+            933
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "1997 International Conference on Solid-State Sensors and Actuators ",
+        "bbox": [
+            566,
+            933,
+            894,
+            940
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "Chicago, June 16-19, 1997 ",
+        "bbox": [
+            763,
+            940,
+            894,
+            950
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: Zhejiang University. Downloaded on February 03,2026 at 08:53:46 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            138,
+            963,
+            854,
+            973
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/dc3f876afcc33fcc4ffff7bb5eee69c02ec5e30acbe54e5d3d07531dd10f4305.jpg",
+        "image_caption": [
+            "Figure 8: Photograph of second-generation accelerometer "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            91,
+            61,
+            485,
+            351
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "the nonlinearity, by reducing the 1/f noise of the circuitry, or by an integrated AC-coupling scheme to remove the low-frequency drift from the tuning fork drive comb. ",
+        "bbox": [
+            90,
+            386,
+            493,
+            430
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The two primary factors affecting the noise floor of a resonant sensor are the scale factor of the device and stability of its oscillators. While the first-generation design is useful to show proof of concept, it does not maximize the scale factor possible in a surface micromachining technology. To this end, a second-generation accelerometer, shown in Figure 8, has been fabricated in the integrated surface-micromachining process at Sandia National Labs [11]. The polysilicon is $2\\mu \\mathrm{m}$ thick, the DETFs are $2\\mu \\mathrm{m} \\times 180\\mu \\mathrm{m}$ , and the proof mass is approximately $460\\mu \\mathrm{m} \\times 540\\mu \\mathrm{m}$ . ",
+        "bbox": [
+            90,
+            434,
+            493,
+            580
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The mechanical design of this sensor incorporates several design improvements. The low-stress-gradient polysilicon allows a larger proof mass, and the improved leverage system provides greater magnification, both of which increase the scale factor. Making the leverage system symmetric removes any potential sensitivity to angular accelerations and improves the overall robustness of the device. It also removes the necessity of designing the tuning fork against transferred moments. Testing on the device is still underway, but in initial characterization, the sensor has shown a base output frequency of $68\\mathrm{kHz}$ and has demonstrated a sensitivity of $45\\mathrm{Hz / g}$ in $\\pm 1\\mathrm{g}$ tests. ",
+        "bbox": [
+            90,
+            582,
+            495,
+            743
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "CONCLUSIONS ",
+        "text_level": 1,
+        "bbox": [
+            223,
+            762,
+            366,
+            778
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "First- and second-generation resonant accelerometer designs have been produced in two different surface-micromachining technologies. These devices are functional and their behavior is in line with expectations. With the further study of these sensors and their design models, the trade-offs involved in using resonant sensing techniques in surface-micromachining ",
+        "bbox": [
+            91,
+            798,
+            496,
+            886
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "technologies can be more deeply understood. Future work will include design of lower-noise oscillators and testing of shock and temperature sensitivities. ",
+        "bbox": [
+            514,
+            57,
+            919,
+            101
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "ACKNOWLEDGEMENTS ",
+        "text_level": 1,
+        "bbox": [
+            607,
+            116,
+            829,
+            133
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The authors would like to acknowledge the students at the Berkeley Sensor & Actuator Center for their help and support, Analog Devices, Inc. and Sandia National Labs for fabrication of the sensors, and the DARPA MEMS program for financial support of this research. This material is based on work supported under a National Science Foundation fellowship. ",
+        "bbox": [
+            514,
+            152,
+            919,
+            239
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Sandia is a multi-program laboratory operated by Sandia Corporation, a Lockheed Martin Company, for the US Department of Energy under contract DE-AC04-94AL85000. ",
+        "bbox": [
+            516,
+            239,
+            919,
+            283
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "text_level": 1,
+        "bbox": [
+            654,
+            301,
+            784,
+            317
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] M. A. Meldrum, “Application of vibrating beam technology to digital acceleration measurement”, Sensors and Actuators, Vol. A21-A23, 1990, pp. 377-380 ",
+            "[2] W. C. Albert, “Vibrating quartz crystal beam accelerometer”, Proceedings of the 28th ISA International Instrumentation Symposium, Las Vegas, NV, 1982, pp. 33-44 ",
+            "[3] B. L. Norling, \"Superflex: a synergistic combination of vibrating beam and quartz flexure accelerometer technology\", Journal of the Institute of Navigation, Vol. 34, No. 4, 1988, pp. 337-353 ",
+            "[4] D. W. Burns, et al., \"Resonant microbeam accelerometer\", Eighth International Conference on Solid-State Transducers and Actuators (Transducers '95), Stockholm, Sweden, 1995, pp. 656-658 ",
+            "[5] T. V. Rozhart, et al., \"An inertial-grade, micromachined vibrating beam accelerometer\", *Eighth International Conference on Solid-State Transducers and Actuators (Transducers '95), Stockholm, Sweden, 1995*, pp. 659-662 ",
+            "[6] T. A. Roessig, et al., \"Surface-micromachined resonant force sensor\", Proceedings of the ASME Dynamic Systems and Control Division, DSC-Vol. 57-2, 1995 ASME IMECE, pp. 871-876 ",
+            "[7] C. T.-C. Nguyen and R. T. Howe, “CMOS micromechanical resonator oscillator”, IEEE International Electron Devices Meeting, Washington, D. C., 1993, pp. 127-134. ",
+            "[8] T. A. Roessig, et al., “Nonlinear mixing in surface micromachined tuning fork oscillators”, IEEE Frequency Control Symposium, Orlando, FL, 1997 ",
+            "[9] R. S. Payne, et al., \"Surface micromachining: from vision to reality to vision\", IEEE International Solid State Circuits Conference, San Francisco, CA, 1995, pp. 164-165 ",
+            "[10] E. A. Gerber and A. Ballato, editors, Precision Frequency Control, Volume 2: Oscillators and Standards, New York: Academic Press, 1985 ",
+            "[11] J. H. Smith, et al., \"Embedded micromechanical devices for the monolithic integration of MEMS and CMOS\", IEEE International Solid State Circuits Conference, San Francisco, CA, 1995, pp. 609-612 "
+        ],
+        "bbox": [
+            519,
+            335,
+            921,
+            885
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "3B2.02",
+        "bbox": [
+            86,
+            42,
+            149,
+            57
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "TRANSDUCERS '97 ",
+        "bbox": [
+            93,
+            930,
+            197,
+            940
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "1997 International Conference on Solid-State Sensors and Actuators ",
+        "bbox": [
+            93,
+            940,
+            427,
+            949
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Chicago, June 16-19, 1997 ",
+        "bbox": [
+            94,
+            949,
+            226,
+            958
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "862 ",
+        "bbox": [
+            490,
+            937,
+            524,
+            951
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Authorized licensed use limited to: Zhejiang University. Downloaded on February 03,2026 at 08:53:46 UTC from IEEE Xplore. Restrictions apply. ",
+        "bbox": [
+            131,
+            962,
+            858,
+            974
+        ],
+        "page_idx": 3
+    }
+]

@@ -1,0 +1,278 @@
+# Design Criteria of Low-Power Oscillators for Consumer-Grade MEMS Resonant Sensors
+
+Giacomo Langfelder, Alessandro Caspani, and Alessandro Tocchio
+
+Abstract—This paper discusses the constraints in the design of circuits for microelectromechanical systems (MEMS) resonant sensors in consumer applications, presents a novel integrated circuit implementation, and shows that this approach can be competitive with respect to the mostly used capacitive readout. From a circuit design perspective, it is shown how the large equivalent resistance typical of MEMS resonators, their operation close to mechanical nonlinearity, and the effect of feedthrough capacitances on the oscillating loop constrain the power requirements of the driving/readout electronics. As a case study, a resonant accelerometer built in an industrial process is coupled to a suitably designed transimpedance amplifier with a low-power "hard limiter." The performance shown in terms of linearity across the measurement range $(\pm 8\mathrm{g})$ , minimum measurable acceleration $(1\mathrm{mg}$ with a readout bandwidth of $100\mathrm{Hz})$ , and power consumption $(\approx 100\mu \mathrm{W}$ per axis) is comparable to those of state-of-the-art capacitive inertial sensors.
+
+Index Terms—Accelerometers, low-power circuits, microelectromechanical systems (MEMS) sensors, resonators, transimpedance amplifier (TIA).
+
+# I. INTRODUCTION
+
+THE market of microelectromechanical systems (MEMS) devices for consumer applications is rapidly moving from single-axis single-parameter sensors to multiaxis multiparameter smart systems. State-of-the-art inertial measurement units (IMUs), for instance, incorporate at least a three-axis accelerometer and a three-axis gyroscope made using the same cheap large-volume industrial process [1]. Some recent IMUs also embed a three-axis magnetometer [2], [3]. All these devices are (or can be) read out through a differential capacitive scheme, where the movement of the suspended mass (due to the inertial [4], Coriolis [5]-[7], or Lorentz force [8], [9], respectively) determines a change in the gap between suitably designed parallel-plate cells. The electronics to implement this well-known and very mature readout scheme have progressively scaled down their power dissipation to values that can be, for instance, in the case of accelerometers, as small as a few hundreds of microwatts per axis [10]. This is a critical parameter not only in the case of consumer applications but also, for instance, for implantable medical devices [11].
+
+Manuscript received September 10, 2012; revised November 29, 2012; accepted January 25, 2013. Date of publication February 13, 2013; date of current version July 18, 2013.
+
+G. Langfelder and A. Caspani are with the Department of Electronics, Information and Bioengineering, Politecnico di Milano, 20133 Milan, Italy (e-mail: giacomo.langfelder@polimi.it; caspani@elet.polimi.it).
+
+A. Tocchio is with STMicroelectronics, 20010 Cornaredo, Italy (e-mail: alessandro.tocchio@st.com).
+
+Color versions of one or more of the figures in this paper are available online at http://ieeexplore.ieee.org.
+
+Digital Object Identifier 10.1109/TIE.2013.2247233
+
+The early research and industrial investments have thus created an increasingly deeper rift between capacitive sensing and other sensing topologies, whose competitiveness must unavoidably face the problem of power consumption, together with performance and area occupation. Among other possible sensing schemes, one of the most promising and, thus, one of the most investigated is resonant sensing. In this kind of devices, a change in the quantity to be measured determines a change in the resonance frequency of suitably designed resonators usually kept in oscillation through unity-gain zero-phase closed-loop circuits. This frequency change is achieved through a suitable mechanical design. Examples of this approach can be found for accelerometers [12]–[14], gyroscopes [15], and even magnetometers [16].
+
+It is the first goal of this paper to revisit the theoretical aspects in the design of an integrated circuit for resonant MEMS sensors, based on the transimpedance amplifier (TIA) configuration [17], by taking into account several practical constraints like the following: 1) the typical industrial package and available pressure (and thus the reachable quality factor); 2) unavoidable parasitic capacitances arising from wire bonding between the MEMS die and the application-specific integrated circuit (ASIC) die; 3) mechanical nonlinearities and their impact on the circuit topology [18]; and 4) the influence of all the points above on power dissipation in order to develop a low-power integrated circuit, which is the second goal of this paper—indeed, previous data were obtained without taking into account power dissipation constraints. This is, on the contrary, a severe parameter when dealing with portable applications. It is therefore of definitive importance to verify whether the proposed system architecture can be pursued also with a low-power approach.
+
+The issue is studied for a resonant accelerometer similar to the one presented in [13], which shows competitive performance in terms of intrinsic resolution, linearity, and area occupation. The integrated circuit is codesigned taking into account the constraints described earlier. The system formed by the ASIC, built in a standard 150-nm CMOS process, and the device, built in the STMicroelectronics industrial MEMS process, demonstrates performance in terms of power dissipation on the order of $115\mu \mathrm{W}$ per axis with a resolution of about $1\mathrm{mg}$ (with $g = 9.8~\mathrm{m / s^2}$ being the gravitational acceleration unit) on a bandwidth of $100\mathrm{Hz}$ , substantially competitive with those obtainable with mature capacitive readout schemes.
+
+# II. IDEAL MODEL OF A RESONANT SENSOR
+
+Sample specifications for consumer-grade accelerometers are summarized in Table I. The reported data are a combination
+
+TABLEI TARGET SPECIFICATIONS FOR CONSUMER-GRADE ACCELERometers   
+
+<table><tr><td>Full scale range (FSR)</td><td>±2 – ±20</td><td>g</td><td>typ. selectable</td></tr><tr><td>Accel. noise density</td><td>50 – 200</td><td>μg/√Hz</td><td>eq. white noise</td></tr><tr><td>Bandwidth</td><td>~ 1000</td><td>Hz</td><td>-3 dB</td></tr><tr><td>Linearity</td><td>~ 2</td><td>%</td><td>across the FSR</td></tr><tr><td>Power dissipation</td><td>50 – 200</td><td>μW</td><td>rms, per axis</td></tr><tr><td>Device area</td><td>500 x 500</td><td>(μm)2</td><td>per axis</td></tr></table>
+
+![](images/f744c2fa19f427718b8c78e0846c281b3ef31b9df07ed71917f5fbe0089adb5f.jpg)
+
+![](images/4d2bb04c3fb20355dae3f5265cf95e57d059ba5ee40a943cb1c9a9449aa2aaa1.jpg)  
+Fig. 1. Optical and SEM images of the MEMS accelerometer in this work. On the whole, the suspended mass area is $505 \times 435 \mu \mathrm{m}^2$ . The lever effect is optimized by choosing the distance $d_1$ with respect to the overall spring length $d_1 + d_2$ , as described in [13].
+
+of the authors' knowledge and information available on commercial datasheets (see, e.g., [1] and [10]). An accelerometer can be thus seen as a black box that, regardless of its operating principle, gives the possibility of measuring accelerations up to few gravity units and a few kilohertz of maximum frequency variation, with a minimum resolution on the order of $1\mathrm{mg}$ . The MEMS area takes up around $500\times 500~\mu \mathrm{m}^2$ , and it is typically fabricated as a suspended mass with nested parallel-plate cells for capacitive readout (see, e.g., [4] and [19]). The given specifications represent the reference benchmark for any alternative sensing topologies.
+
+Before beginning the analysis of the constraints in designing low-power integrated circuits for resonant sensors, a description of the working principle of a generic device and of its modeling is given, taking as a case study the resonant accelerometer shown in the optical and SEM pictures in Fig. 1. Its overall area is comparable to the specification target in Table I. Its basic working principle was presented in a previous work [13] and is summarized in the following. Two thin resonating beams form the sensing system of the device, with each of them being hedged by two electrical ports used for capacitive driving and
+
+![](images/a17d30083bfc25c5d3a29cec8f49c6fec2001b7ab095d12123fe86233c0d2b2d.jpg)  
+(a)
+
+![](images/2a2544d6191bae15cd75edbfad14bbf00b6a650c3fa3ea029ee4cb2bc2e88154.jpg)  
+(b)   
+Fig. 2. (a) Theoretical differential frequency variation under an applied acceleration and (b) related linearity error.
+
+sensing of the resonant motion. The beams are clamped to the substrate on one side through anchor points; on the other side, their end is linked to a lever system used to amplify the inertial force acting on the inner inertial mass. Under an external acceleration having a component of modulus $a$ in the direction of the arrow in Fig. 1, an inertial force $m \cdot a$ (with $m$ being the value of the inertial mass), amplified by the lever factor LF, generates the compression or stretch of the resonant beams, leading to a differential shift $\Delta f$ from their nominal frequency at rest $f_0$ . This shift can be expressed through a first-order linearization to obtain a simplified model for the mechanical sensitivity (here expressed as the frequency change per unit number $n_g$ of gravity units of external acceleration)
+
+$$
+\begin{array}{l} \frac {\Delta f}{n _ {g}} = \frac {f _ {0} \sqrt {1 + \alpha \frac {N L ^ {2}}{E I}} - f _ {0} \sqrt {1 - \alpha \frac {N L ^ {2}}{E I}}}{n _ {g}} \approx \frac {f _ {0} \alpha \frac {N L ^ {2}}{E I}}{n _ {g}} \\ = f _ {0} \alpha \cdot m g \cdot \mathrm {L F} \frac {L ^ {2}}{E I}. \tag {1} \\ \end{array}
+$$
+
+In (1), $E, I$ , and $L$ are the resonator Young modulus, moment of inertia, and length, respectively. $N$ is the axial force on the beam; $\alpha$ is a coefficient that depends on the boundary conditions ( $\sim 0.0246$ for a clamped-clamped beam, an assumption that holds for this case). A theoretical comparison between the true and linearized formulas (see Fig. 2) reveals that, for the sample case here studied, the linearity error is lower than $1\%$ up to $70\mathrm{g}$ of external acceleration, much beyond the requirements in Table I. With the dimensions given in Fig. 3, the device has an overall differential nominal mechanical sensitivity around $240\mathrm{Hz / g}$ .
+
+The particular geometry with $L$ -shaped resonators [20] (i.e., ending on one side with the link $d_{1}$ to the anchor point; see Fig. 1) should guarantee a better immunity from temperature-induced stresses than that with $I$ -shaped (i.e., clamped-clamped) resonators. Moreover, temperature effects should result in a stress of the same sign applied to both beams, which should therefore be seen as a common-mode signal and, in turn, canceled by the differential readout.
+
+Given the geometrical and mechanical parameters of the resonators, it has been shown (see, e.g., [21]) that an equivalent electrical model can be found, whose resistance $R_{\mathrm{eq}}$ , capacitance $C_{\mathrm{eq}}$ , and inductance $L_{\mathrm{eq}}$ values can be related to
+
+![](images/d834346016d384db4b69ee16485704b8cf50f9625415bf4e4f03e2bb3849d098.jpg)  
+Fig. 3. (a) Mechanical and (b) electrical equivalent models of the resonator. Simplified schematic circuits of the oscillator with (c) the "hard limiter" limiting technique, (d) the AGC limiting technique, and (e) the proposed clamped limiting technique.
+
+their mechanical counterparts, i.e., to the damping coefficient $b$ ( $R_{\mathrm{eq}} = b / \eta^2$ ), the effective mass $m$ ( $L_{\mathrm{eq}} = m / \eta^2$ ), and the elastic stiffness $k$ ( $C_{\mathrm{eq}} = \eta^2 / k$ ), respectively. The coupling factor $\eta$ between these parameters is the proportionality coefficient between the velocity of the central point of the beam and the motional current flowing through the resonator. Its expression is given by
+
+$$
+\eta = \frac {\epsilon_ {0} A}{x _ {0} ^ {2}} V _ {p} \cdot \Gamma . \tag {2}
+$$
+
+Its value thus depends on the voltage difference $V_{p}$ between the beam and each electrical port; the corresponding capacitances have an area $A$ , a permittivity $\epsilon_0$ taken as that of vacuum, and an air gap at rest $x_0$ . $\Gamma$ is a geometrical factor related to the integral of the beam deformation [13]. Such a resonator can be thus represented as the electrical equivalent model shown in Fig. 3(b) and can be used as the frequency-selective element of a closed-loop oscillating circuit whose loop gain is larger than one at the start-up and stabilizes to one (with a phase shift corresponding to 360) after a turn-on transient.
+
+# III. OSCILLATING LOOP CHARACTERISTICS
+
+A way to operate a resonant sensor (like but not limited to the one described earlier) is to drive every of its resonators by means of a closed-loop oscillator, where the resonator itself represents the frequency-selective element [22]. On one side, the driving port is used to force the oscillation through an ac voltage $v_{a}(t)$ ; on the other side, the sensing port (kept, for instance, at a virtual ground) is used to measure the displacement through a current signal $i(t)$ that can be exploited to close the loop, as described in the following.
+
+The electrostatic force acting on a single MEMS parallel plate biased at a generic voltage can be calculated, for a 1-D model, as the variation of the energy stored in the capacitor due to the motion of one plate along the considered 1-D direction (see, e.g., [23]). From this consideration and from the electromechanical coupling relation introduced by (2), it is possible to relate the force $F(t)$ , exerted on the movable plate by both the fixed ports, to the applied ac voltage when
+
+the suspended mass (and beams) is kept at a dc voltage $V_{p}$ . A small-displacement assumption ( $x \ll x_0$ ) is used
+
+$$
+\begin{array}{l} F (t) = \frac {\epsilon_ {0} A}{x _ {0} ^ {2}} \Gamma \left(\frac {V _ {p} ^ {2}}{2} + V _ {p} v _ {a} + \frac {v _ {a} ^ {2}}{2}\right) - \frac {\epsilon_ {0} A}{x _ {0} ^ {2}} \Gamma \frac {V _ {p} ^ {2}}{2} \\ \sim \frac {\epsilon_ {0} A}{x _ {0} ^ {2}} \Gamma V _ {p} v _ {a} = \eta v _ {a}. \tag {3} \\ \end{array}
+$$
+
+The coupling factor $\eta$ also relates the velocity $v(t)$ of the beam and the output current, i.e., $i(t) = \eta \cdot v(t)$ , as explained in [13]. Therefore, if the amplitude of the ac voltage is much lower than that of the dc voltage, the electrostatic driving force and the corresponding current can be assumed to be proportional. The simplified schematic representations of possible oscillator loops are illustrated in Fig. 3(c) and (d). In order to read out the current $i(t)$ from the sensing port, it is common to use a TIA; the loop is completed by an electronic nonlinear stage to stabilize the gain of the oscillator to unity. A first possibility [Fig. 3(c)] is to clamp the amplitude of the oscillation signal $v_{a}(t)$ through a saturator. This solution, although at an extremely low power, allows no control of the signal amplitude at the resonator driving port. Another possibility [Fig. 3(d)] is to adjust the oscillation signal $v_{a}(t)$ through an amplitude gain control (AGC) circuit acting on a variable-gain amplifier [24]. This solution typically implies larger power dissipation than the previous one.
+
+In the following, the functional, mechanical, and electrical constraints that must be taken into account in the design of a low-power oscillating circuit are revisited.
+
+# A. Equivalent Resistance of the Resonator
+
+The first constraint is given by the need to have a closed-loop gain initially much larger than unity to ensure a quick start-up of the oscillation. This condition is not trivial to solve because the equivalent resistance $R_{\mathrm{eq}}$ of the micromechanical resonator can be as high as tens to hundreds of megaohms for a typical industrial packaging [25]. Safe margins in the loop design should be used as the quality factor, and in turn, $R_{\mathrm{eq}}$ can change with temperature. The expression of the peak of the motional current at the resonance frequency $(f_0 = (1 / 2\pi)\sqrt{k / m})$ can be rewritten as
+
+$$
+\begin{array}{l} i _ {\max } = \eta v = \eta \omega_ {0} x _ {\max } = \eta \omega_ {0} \frac {F _ {\max }}{k} Q = \eta \omega_ {0} \frac {F _ {\max }}{k} \frac {\omega_ {0} m}{b} \\ = \eta \frac {F _ {\operatorname* {m a x}}}{b} = \frac {F _ {\operatorname* {m a x}}}{\eta R _ {\mathrm {e q}}} = \frac {v _ {a , \operatorname* {m a x}}}{R _ {\mathrm {e q}}} \tag {4} \\ \end{array}
+$$
+
+(where the subscript max indicates the peak value of the corresponding quantity). As expected from the resonator model in Fig. 3(b), the motional current is inversely proportional to the equivalent resistance. The gain from the device driving port to the transimpedance output is therefore given by $G(\omega_0) = R_f / R_{\mathrm{eq}}$ , with $R_{f}$ being the feedback resistance of the TIA. Due to the practical limitations in implementing large resistances in integrated circuits, it is thus of interest to study the possibility of lowering the resistance $R_{\mathrm{eq}}$ of the mechanical resonator. A lower $R_{\mathrm{eq}}$ guarantees a higher signal and a better signal-to-noise ratio (SNR). Instead of improving the SNR, a lower power dissipation can be obtained as the now smaller required resistance $R_{f}$ turns into a smaller gain-bandwidth
+
+product required by the TIA (i.e., a smaller $g_{m}$ and, thus, a lower driving current).
+
+The geometrical or electrical quantities that affect the value of $R_{\mathrm{eq}}$ are as follows.
+
+1) The biasing voltage $V_{p}$ . Nevertheless, in order to guarantee a low-voltage operation, the value of $V_{p}$ should be kept on the order of few volts only.   
+2) The area $A$ , which depends on the process height $h$ (fixed by the technology) and on the beam length $L$ .   
+3) The factor $\Gamma$ which results from an integral whose value depends again on the beam length $L$ and also on the width $W$ . Both these parameters are constrained by the optimization of the frequency change per unit acceleration.   
+4) The gap value $x_0$ , which is usually chosen as the minimum one. Indeed, even if the damping coefficient $b$ decreases when increasing the gap, this is not enough to compensate for the inverse square dependence on the factor $\eta$ .
+
+Therefore, none of the aforementioned quantities can be easily modified once the technology and the minimum device dimensions are chosen.
+
+The adopted packaging thus plays a relevant role as the resistance $R_{\mathrm{eq}}$ is also directly proportional to the damping coefficient $b$ . At the typical pressures (e.g., 1 mbar) and gaps (e.g., a few micrometers) that can be obtained using industrial technologies, the linear pressure regime applies: This means that the damping coefficient $b$ (related mainly to squeeze film damping between the central beams and the fixed electrodes) is in inverse relation with the operative pressure [25].
+
+Therefore, the possibility of lowering the value of the pressure inside the MEMS package turns out to be very important as a direct and effective means to lower the motional resistance $R_{\mathrm{eq}}$ , relaxing the gain requirement of the readout electronics, which is advantageous in terms of power dissipation. The use of getter materials during the bonding between the MEMS and the cap wafers allows holding pressures in the MEMS chamber on the order of fractions of millibars.
+
+# B. Mechanical Nonlinearities
+
+Due to the start-up gain requirements, the oscillation amplitude in a circuit like the one shown in Fig. 3(c) rises up from noise until it equals the biasing values $\pm V_{\mathrm{DD}}$ at the resonator input port. This is in contrast with the following: 1) the requirement (described at the beginning of this section) of having an ac amplitude much lower than the dc voltage value $V_{p}$ and 2) the need to avoid mechanical nonlinearities—as explained in previous works, a strong nonlinear behavior leads to a loss of sensitivity to the stress applied on the resonant beam and, thus, to the acceleration. As an example, the resonators of the accelerometer here studied undergo a nonlinear behavior, and thus a severe loss of sensitivity, for driving voltages $v_{a}(t)$ as low as $\pm 60\mathrm{mV}$ [26].
+
+A way to limit the ac oscillation amplitude at the driving port of the resonator could be to clamp it between two fixed values, chosen within $\pm V_{\mathrm{DD}}$ . The simplest (and lowest power) approach could be the use of a pair of comparators biased at the needed partitioning of $\pm V_{\mathrm{DD}}$ . However, this approach is still
+
+![](images/54f1310ab6c9c33ffbc339a79a1b584927fc16721e15f83ee1b284b6d1e37228.jpg)  
+Fig. 4. Simulation of the transfer function of a TIA with the first pole (solid line) at $3\mathrm{MHz}$ and (dashed line) at $300\mathrm{kHz}$ , in the presence of a feedthrough capacitance of $5\mathrm{fF}$ . The resonant peak of the device is assumed at $81\mathrm{kHz}$ .
+
+unsatisfactory, as the comparator requires itself at least some hundreds of millivolts for a proper operation. Hence, a different limiting technique that clamps or controls the actuation voltage to a value that preserves the linearity of the resonator is needed. A simplified example here proposed is given in Fig. 3(e), which is a good compromise between Fig. 3(c) and (d). Here, the ac amplitude is first clamped between $\pm V_{\mathrm{DD}}$ (i.e., digitized) and then drastically reduced to the required value through a 1-b digital-to-analog converter (DAC).
+
+In general, the need for amplitude-limiting circuits to limit and/or stabilize the oscillation amplitude represents an unavoidable source of power dissipation. The approach in Fig. 3(e) is a simple strategy here proposed to accomplish the limiting requirements without the typically large power dissipation of AGC-based circuits.
+
+# C. Effects of Parasitic Capacitances
+
+It is known that the ideal electrical model of the MEMS resonator shown in Fig. 3(b) should include nonideal parasitic elements, the most important among which is a parasitic feedthrough capacitance $C_{\mathrm{ft}}$ directly coupling the sensing and driving ports [28]. There are several sources that contribute to the value of the feedthrough capacitance: the resonator geometry, the interconnections and pads on the MEMS die, the connections from it to the ASIC through bonding wires, etc. The analysis of the transfer function (modulus and phase) of the resonator model, coupled to a simulated TIA model, shows that the presence of the feedthrough capacitance significantly changes the modulus and the phase behavior, adding a positive slope (+20 dB/decade) and an antiresonance peak as shown in Fig. 4. The figure sketches two situations where the value of $C_{\mathrm{ft}}$ has been assumed equal to 5 fF, and two different positions of the first pole of the stage are simulated. In particular, the solid curve remarks that a second point can exist, at a higher frequency $f_0'$ with respect to $f_0$ , where the phase transfer is the same as that at resonance (i.e., $0^\circ$ ) and the gain is larger than one at the start-up; therefore, a second spurious resonance
+
+![](images/021d297390a95f09533d2b553e5ef0f081bfa2b9dcb69e0b677e5e27eea2a7fd.jpg)  
+Fig. 5. Block scheme view of the designed integrated oscillator.
+
+frequency can arise in the oscillator. This frequency is not sensitive to the acceleration, and its oscillation should be avoided.
+
+A method to prevent the oscillation start-up at the spurious frequency $f_0'$ is to decrease the transfer function modulus at this frequency to values lower than one, through filtering. In the example in Fig. 4 (dashed curves), this is obtained simply by adding a feedback capacitance in the TIA stage. Care should be taken in choosing the position of the low-pass pole as, often, there is less than an order of magnitude between $f_0'$ and $f_0$ .
+
+# IV. IMPLEMENTATION OF THE CIRCUIT AND EXPERIMENTAL RESULTS
+
+The considerations given in the previous section will be taken into account during the description of the implemented VLSI TIA readout stage. The oscillating loop is based on a transimpedance topology, with a "hard limiter" limiting technique to clamp the amplitude of the oscillator based on the simplified scheme in Fig. 3(e). The whole system that holds a single MEMS resonator in oscillation is shown in Fig. 5.
+
+The first stage is a TIA that converts the motional current $i(t)$ into a voltage through the feedback resistor $R_{f}$ . The second stage is a noninverting amplifier with a gain $R_{1} / R_{2}$ . The third one is a comparator built through a cascade of three inverters (with a threshold voltage carefully tuned to $0\mathrm{V}$ ) to clamp the signal to the voltage supplies. Finally, the last stage is a 1-b DAC that selects the output voltage through switches. The circuit is implemented in the LFoundry GmbH 150-nm standard CMOS technology, with supplies of $V_{\mathrm{DD}} = \pm 0.9\mathrm{V}$ .
+
+# A. Integrated Circuit Description
+
+The transimpedance is formed by a differential single-stage operational transconductance amplifier, whose transistor-level view is shown in Fig. 6(a). The current consumption of the amplifier is limited to $4.8\mu \mathrm{A}$ , a value that, together with the chosen $W / L$ , guarantees a high repeatability from part to part. In order to guarantee a large gain and to limit the area occupation on the die, the feedback resistor $R_{f}$ is implemented through two MOSFETs operated in the ohmic region, whose resistance can be calibrated in the design phase by setting the gate control voltage close to the subthreshold region. The use of a pair of FETs (one n-channel and one p-channel) allows maintaining an almost constant value of the resistance across the whole oscillation period, without implementing a more complex T-network or a feedback on the gate voltages [17].
+
+![](images/666da2ae65b8f567ba1aa35829fbb186cff6458a841bba3152105764134ace39.jpg)  
+(a)
+
+![](images/9cfb3740cefa726d0c9264d27c90da276541c77108cc51dbe11721cb2a34bdc2.jpg)  
+(b)   
+Fig. 6. (a) Transistor-level schematic of the operational amplifier used for the first stage and (b) detail of the TIA with the PMOS+NMOS feedback resistance.
+
+On the feedback loop of the TIA, a 200-fF capacitance is added to cut off the bandwidth at about $320\mathrm{kHz}$ (for a feedback resistance of $2.5\mathrm{M}\Omega$ ), in this way avoiding the dangerous condition of having a second point of oscillation. The second gain stage is added to increase the signal amplitude at the input of the comparator chain, so to minimize the power consumption of the comparators themselves. This comes at the cost of $10.8\mu \mathrm{A}$ of current consumption for the biasing of the second operational amplifier. The use of a noninverting amplifier for this stage is motivated by the fact that node C in Fig. 5 is extremely sensitive to capacitive loads, since these would directly affect the bandwidth. In the chosen configuration, this capacitance is reduced to a single gate. Such a non-offset-compensated configuration is allowed by the low offset voltage obtained at the output of the first stage, which would otherwise cause a non- $50\%$ -duty-cycle square wave at the input of the comparators.
+
+The comparator chain clamps the input signal to the biasing voltages with a nominal root-mean-square crossbar current consumption of approximately $10\mu \mathrm{A}_{\mathrm{rms}}$ , occurring when the transistors of the first comparator are both in the ON state (for the following comparators, the power consumption is negligible).
+
+This digital output is used to alternately select the driving voltage of the resonator between two fixed voltage values $(+45$ and $-45\mathrm{mV})$ by means of suitable switches. As these switches also add a $180^{\circ}$ phase shift, an overall $360^{\circ}$ phase shift is obtained on the whole oscillator loop. Finally, a buffer amplifier (with a biasing current of $4.4\mu \mathrm{A}$ ) is added at the output of the DAC to drive the resonator with a low impedance, thus avoiding $Q$ -loading effects.
+
+The circuit loop gain is designed in such a way that the oscillation can be sustained with a quality factor even twice lower than what is expected. This is a safe strategy with respect to temperature changes: indeed, their main effect is a change in the package pressure and in the thermal Brownian motion of gas molecules, which, in turn, results in quality factor variations. At the typical packaging pressures of consumer applications, the relationship between the quality factor and the temperature can be described by a square-root law (see, e.g., [27]). The safe design mentioned earlier should guarantee the correct operation of the oscillating loop across the temperature range of consumer applications $(-40^{\circ}\mathrm{C} - 85^{\circ}\mathrm{C})$ . The oscillator turn-on time (or
+
+![](images/5f9866e0b3380b20ef2e5d7b8213b4e2074f423d080b93575dcb870a8eb439bf.jpg)  
+(a)
+
+![](images/47926589055d2589967a5bc1c9b87be74552ed9c5057eb14daad2a79cb2ac098.jpg)  
+(b)   
+Fig. 7. Measured waveforms at the output of the comparator chain and after the amplitude reduction stage (DAC), for two resonators of the same MEMS accelerometer.
+
+start-up time) may be influenced, but this is not an issue as the circuit is designed to operate in continuous mode. An overall nominal current consumption of about $30\mu \mathrm{A}_{\mathrm{rms}}$ per resonator, plus $4\mu \mathrm{A}$ for the biasing networks, turns into an overall power dissipation of $115~\mu \mathrm{W}$ at the used supply of $\pm 0.9\mathrm{V}$ .
+
+# B. Experimental Results
+
+The fabricated circuit die has been glued on top of the MEMS resonant accelerometer, and the two have been connected by means of metallic wire bonding.
+
+Fig. 7 reports, for both resonators, the voltage signals at the output of the comparator chain and after the 1-b DAC, showing a good clamping between the supplies and a stable reduction of the amplitude to the desired values of $\pm 45\mathrm{mV}$ . The resonators are, in this way, driven close to but below their mechanical nonlinear behavior. The two resonators of the tested accelerometer present resonant frequencies of 80.11 and $76.48\mathrm{kHz}$ , respectively, when the suspended mass is biased at $V_{p} = 8\mathrm{V}$ .
+
+To calibrate the device sensitivity to accelerations, the resonant frequency was then evaluated at accelerations of $\pm 1\mathrm{g}$ (simply by carefully tilting the device by $\pm 90^{\circ}$ ), acquiring the square wave at the comparator output through a Lecroy 6100A digital oscilloscope. The measured variation for different values of external acceleration turns into sensitivities of $-121$ and
+
+![](images/0d885e9934db4a2f901c3a2ab57378343e663eae8f2bb4f926cb295f761d59a8.jpg)  
+(a)
+
+![](images/7bebe4137ac058b0863fad6b11beef5bd6d6d545eaa23986698381268bff5d64.jpg)  
+(b)
+
+![](images/0635445fe540f4315ca95b554b781c5c5f315b84587642979b4e4f175726ad53.jpg)  
+(c)   
+Fig. 8. (a) and (b) Experimental sensitivity of the two resonators and (c) differential sensitivity. The inset shows the percentage linearity error (for accelerations close to zero, i.e., for very small output signals, the points were omitted as noise exceeds the nonlinearity).
+
+$119\mathrm{Hz / g}$ for the two resonators, which leads to $240\mathrm{Hz / g}$ for a differential sensing. The difference in the single-ended sensitivities is due to the difference in the resonance frequency caused by process tolerance. To measure the device response under accelerations larger than $1\mathrm{g}$ , the self-test electrostatic actuator was used (see Fig. 1). The equivalent acceleration forced by this system is obtained by cross-checking the theoretical force applied by the parallel plate and the sensitivity measured previously. This allows correcting possible errors caused by under-/overetches with respect to the nominal design. Fig. 8 summarizes the obtained results, reporting the experimental response of each resonator between 0 and $8\mathrm{g}$ of equivalent acceleration, and the overall differential measurement. Due to pull-in phenomena occurring between the self-test plate and the inertial mass, it was not possible to extend further the measurement interval. Comparing the obtained data with the best linear fitting across $8\mathrm{g}$ , the percentage linearity error is calculated. This turns to be below $2\%$ of the full-scale range for almost the whole measured interval, as expected from the theoretical values presented in Section II.
+
+Fig. 9 shows the measured Allan deviation for each resonator. The system equivalent white noise density can be found in the following way: Assuming an operating bandwidth of $100\mathrm{Hz}$ , the Allan deviation graph (Fig. 9) gives a resolution of $0.19\mathrm{Hz}$ for a single resonator, corresponding to $0.00158\mathrm{g}$ of acceleration. In terms of the equivalent white noise power
+
+![](images/d0d95e284a209fed79d52ce04f97e8cb7375878b27035dd17601f7579213a4ee.jpg)  
+Fig. 9. Allan deviation measured for the two oscillators connected to the resonant beams of the accelerometer.
+
+TABLE II COMPARISON WITH A COMMERCIAL ACCELEROMETER   
+
+<table><tr><td>Accelerometer</td><td>Linear Range [g]</td><td>Noise Density [μg/√Hz]</td><td>Power per axis [μW]</td></tr><tr><td>He et al. [24]</td><td>±20</td><td>20</td><td>23000</td></tr><tr><td>Sun et al. [29]</td><td>±11.5</td><td>40</td><td>1000</td></tr><tr><td>Lajevardi et al. [30]</td><td>±9</td><td>220</td><td>3100</td></tr><tr><td>Present Work</td><td>±8</td><td>111</td><td>115</td></tr><tr><td>LIS331DLH [8]</td><td>±2/ ± 8</td><td>218</td><td>218</td></tr><tr><td>ADXL103 [31]</td><td>±2/ ± 18</td><td>110</td><td>1150</td></tr><tr><td>LIS352AR [32]</td><td>±2</td><td>100</td><td>330</td></tr></table>
+
+spectral density, this turns into $158~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ . For the full differential configuration, the signal is doubled while the noise is summed up quadratically: As a consequence, the expected equivalent acceleration noise is decreased by a factor of $\sqrt{2}$ and turns into $111~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ . When filtering at $100\mathrm{Hz}$ (which corresponds approximately to one order of magnitude below the resonance frequency of the inertial mass), the minimum detectable signal turns out to be $1.11\mathrm{mg}$ . From the same measurement and considering the effect of the differential readout, a bias stability of $233~\mu \mathrm{g}_{\mathrm{rms}}$ of measurable acceleration is obtained at $t = 0.1\mathrm{s}$ . All these data can be considered from a system-level point of view, assuming that the following stages (frequency to voltage and digitalization) introduce negligible noise and power consumption. Long-term bias instability (random walk) on the single resonator may be affected, e.g., by temperature drifts, which, in principle, should be compensated in the final differential readout implementation.
+
+The obtained results are quite competitive with respect to those of state-of-the-art consumer devices (see Table II), showing that resonant sensing has the theoretical potentiality to grow alongside capacitive sensing, particularly for new processes or applications where this approach becomes significantly advantageous in terms of device area occupation.
+
+# V. CONCLUSION
+
+This paper has presented the most relevant constraints and the design flow of readout circuits for MEMS resonant sensors suitable for consumer applications. The results obtained in the
+
+paradigmatic case here studied, a microaccelerometer coupled to a transimpedance readout stage, show competitive performance in terms of resolution, linearity, and power dissipation with respect to the widespread capacitive sensing scheme.
+
+The circuit was specifically designed for the device under test, i.e., its dimensioning was based on the following: 1) its electrical oscillator model; 2) the expected feedthrough capacitance; and 3) the nonlinear behavior of the specific resonator. Some tolerance was used as some parameters may vary from what is expected (mainly the feedthrough capacitance).
+
+When dealing with different devices, most of the theoretical considerations still apply, and therefore, in principle, the same circuit implementation can be used for devices resonating in a similar frequency range and with a similar equivalent resistance.
+
+Further research will focus on the development of circuit topologies with minimum number of transistors, like the Pierce or Colpitts oscillators, to further lower power dissipation.
+
+# REFERENCES
+
+[1] LSM330DLC, 3D Accelerometer + 3D Gyroscope Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2011. [Online]. Available: http://www.st.com   
+[2] INEMO-M1, iNemo System-on-Board Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2012. [Online]. Available: http://www.st.com   
+[3] C. M. N. Brigante, N. Abbate, A. Basile, A. C. Faulisi, and S. Sessa, "Towards miniaturization of a MEMS-based wearable motion capture system," IEEE Trans. Ind. Electron., vol. 58, no. 8, pp. 3234-3241, Aug. 2011.   
+[4] M. Lemkin and B. E. Boser, "A three-axis accelerometer with a CMOS position-sense interface and digital offset-trim electronics," IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 456-468, Apr. 1999.   
+[5] R. N. Dean and A. Luque, "Applications of microelectromechanical systems in industrial processes and services," IEEE Trans. Ind. Electron., vol. 56, no. 4, pp. 913-925, Apr. 2009.   
+[6] R. N. Dean, S. T. Castro, G. T. Flowers, G. Roth, A. Ahmed, A. ScottEdward Hodel, B. E. Grantham, D. A. Bittle, and J. P. Brunsch, "A characterization of the performance of a MEMS gyroscope in acoustically harsh environments," IEEE Trans. Ind. Electron., vol. 58, no. 7, pp. 2591-2596, Jul. 2011.   
+[7] C. W. Tsai, K. Chen, C. K. Shen, and J. Tsai, “A MEMS doubly decoupled gyroscope with wide driving frequency range,” IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4921–4929, Dec. 2012.   
+[8] G. Langfelder, C. Buffa, A. Frangi, A. Tocchio, E. Lasalandra, and A. Longoni, “Z-axis magnetometers for MEMS inertial measurement units using an industrial process,” IEEE Trans. Ind. Electron., vol. 60, no. 9, pp. 3983–3990, Sep. 2013.   
+[9] M. Li, V. T. Rouf, M. J. Thompson, and D. A. Horsley, "Three-axis Lorentz-force magnetic sensor for electronic compass applications," J. Microelectromech. Syst., vol. 21, no. 4, pp. 1002-1010, Aug. 2012.   
+[10] LIS331DLH, STMicroelectronics, Geneva, Switzerland, 3D Accelerometer Technical Datasheet, 2009. [Online]. Available: http://www.st.com   
+[11] C. C. Della Santina, “A device to restore balance,” Sci. Amer., vol. 302, pp. 68–71, 2010.   
+[12] A. A. Seshia, M. Palaniapan, T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, and S. Montague, "A vacuum packaged surface micromachined resonant accelerometer," J. Microelectromech. Syst., vol. 11, no. 6, pp. 784-793, Dec. 2002.   
+[13] C. Comi, A. Corigliano, G. Langfelder, G. Longoni, A. Tocchio, and B. Simoni, "A resonant microaccelerometer with high sensitivity operating in an oscillating circuit," J. Microelectromech. Syst., vol. 19, no. 5, pp. 1140-1152, Oct. 2010.   
+[14] G. Vigevani, F. T. Goericke, A. P. Pisano, I. I. Izyumin, and B. E. Boser, "Microleverage DETF aluminum nitride resonating accelerometer," in Proc. IEEE IFCS, May 21-24, 2012, pp. 1-4.   
+[15] S. A. Zotov, A. A. Trusov, and A. M. Shkel, "High-range angular rate sensor based on mechanical frequency modulation," J. Microelectromech. Syst., vol. 21, no. 2, pp. 398-405, Apr. 2012.
+
+[16] B. Bahreyni and C. Shafai, "A resonant micromachined magnetic field sensor," IEEE Sensors J., vol. 7, no. 9, pp. 1326-1334, Sep. 2007.   
+[17] A. Sharma, M. F. Zaman, and F. Ayazi, "A 104-dB dynamic range transimpedance-based CMOS ASIC for tuning fork microgyroscopes," IEEE J. Solid-State Circuits, vol. 42, no. 8, pp. 1790-1802, Aug. 2007.   
+[18] V. Kaajakari, T. Mattila, A. Oja, and H. Sepp, "Nonlinear limits for single-crystal silicon microresonators," IEEE J. Microelectromech. Syst., vol. 13, no. 5, pp. 715-724, Oct. 2004.   
+[19] M. Pastre, M. Kayal, H. Schmid, P. Zwahlen, D. Yufeng, and A. M. Nguyen, "A navigation-grade MEMS accelerometer based on a versatile front end," in Proc. 37th IEEE IECON, Nov. 7-10, 2011, pp. 4038-4043.   
+[20] C. Comi, “On geometrical effects in micro-resonators,” Latin Amer. J. Solids Struct., vol. 6, no. 1, pp. 73–87, Mar. 2009.   
+[21] C. T.-C. Nguyen and R. T. Howe, "An integrated CMOS micromechanical resonator high-Q oscillator," IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 440-455, Apr. 1999.   
+[22] T. A. Roessig, R. T. Howe, A. P. Pisano, and J. H. Smith, "Surface-micromachined resonant accelerometer," in Proc. TRANSDUCERS, Chicago, IL, USA, Jun. 16-19, 1997, vol. 2, pp. 859-862.   
+[23] G. N. Nielson and G. Barbastathis, "Dynamic pull-in of parallel-plate and torsional electrostatic MEMS actuators," J. Microelectromech. Syst., vol. 15, no. 4, pp. 811-821, Aug. 2006.   
+[24] L. He, Y. P. Xu, and M. Palaniapan, "A CMOS readout circuit for SOI resonant accelerometer with $4 - \mu \mathrm{g}$ bias stability and $20 - \mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution," IEEE J. Solid-State Circuits, vol. 43, no. 6, pp. 1480-1490, Jun. 2008.   
+[25] G. Langfelder, S. Dellea, F. Zaraga, D. Cucchi, and M. A. Urquia, "The dependence of fatigue in microelectromechanical systems from the environment and the industrial packaging," IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4938-4948, Dec. 2012.   
+[26] A. Tocchio, A. Caspani, and G. Langfelder, "Mechanical and electronic amplitude-limiting techniques in a MEMS resonant accelerometer," IEEE Sensors J., vol. 12, no. 6, pp. 1719-1725, Jun. 2012.   
+[27] B. Kim, M. A. Hopcroft, R. N. Candler, C. M. Jha, M. Agarwal, R. Melamud, S. A. Chandorkar, G. Yama, and T. W. Kenny, "Temperature dependence of quality factor in MEMS resonators," J. Microelectromech. Syst., vol. 17, no. 3, pp. 755-766, Jun. 2008.   
+[28] Y. Xu and J. Lee, "Single-device and on-chip feedthrough cancellation for hybrid MEMS resonators," IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4930-4937, Dec. 2012.   
+[29] H. Sun, D. Fang, K. Jia, F. Maarouf, H. Qu, and H. Xie, "A low-power low-noise dual-chopper amplifier for capacitive CMOS-MEMS accelerometers," IEEE Sensors J., vol. 11, no. 4, pp. 925-933, Apr. 2011.   
+[30] P. Lajevardi, V. Petkov, and B. Murmann, "A $\Delta \Sigma$ interface for MEMS accelerometers using electrostatic spring-constant modulation for cancellation of bondwire capacitance drift," in Proc. IEEE Int. Solid-State Circuits Conf., 2012, pp. 196-198.   
+[31] ADXL103, Single-Axis Accelerometer Datasheet, Analog Devices, Norwood, MA, USA, 2011. [Online]. Available: http://www.analog.com   
+[32] LIS352AR, MEMS Motion Sensor: 3-Axis $\pm 2g$ Analog-Output Piccolo Accelerometer Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2010.
+
+![](images/6f255ef8fec8fb9d23ee19a5ae8a31f8101f2ceddea83614c48eaf7951bd3b6a.jpg)
+
+Giacomo Langfelder received the Ph.D. degree in information technology from the Politecnico di Milano, Milan, Italy, in 2009.
+
+He is currently an Assistant Professor with the Department of Electronics, Information and Bioengineering, Politecnico di Milano. He conducts research on radiation detectors and microelectromechanical devices. He is a coinventor of some patents on a newly developed imaging detector and on new methods for white balancing and image processing. He is the author of about 50 publications in refereed
+
+international scientific journals and conference proceedings.
+
+Dr. Langfelder was the recipient of the Premio di Laurea Accenture in 2005 and the Premio per la Promozione Della Ricerca Scientifica in 2011 granted by Rotary International—Distretto 2040.
+
+![](images/5f0acebbbe8dfb9dacb78c75d6f2ac7af6ebb1a3f4bcfac2cc0f7d087be3bc56.jpg)
+
+Alessandro Caspani received the B.S. and M.S. degrees in electronic engineering from the Politecnico di Milano, Milan, Italy, in 2009 and 2011, respectively, where he is currently working toward the Ph.D. degree in information technology.
+
+His research interests include microelectromechanical systems, particularly magnetometers, ultrasound transducers, and related low-noise integrated circuit design. He is the author of a number of publications in refereed journals and international conference proceedings in the field.
+
+![](images/39c00b621ff77dfa924909957107515635c336fcfd5c2dc0006ed7f4b37038fe.jpg)
+
+Alessandro Tocchio received the B.S., M.S., and Ph.D. degrees from the Politecnico di Milano, Milan, Italy, in 2006, 2008, and 2012, respectively. His M.S. thesis was entitled Wafer-level packaging of an optical gas sensor, and it was carried out at the Microsystem Technology Group, Royal Institute of Technology, Stockholm, Sweden.
+
+In July 2012, he moved to STMicroelectronics, Cornaredo, Italy, where he is currently a Senior Microelectromechanical Systems Designer. He is the author of about 15 refereed scientific publications.
+
+His recent research interests include the design and fabrication of novel microelectromechanical sensors and the development of related readout electronics with special focus on low-power low-noise integrated circuit topologies.

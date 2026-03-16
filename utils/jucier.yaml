@@ -1,0 +1,21 @@
+project_name: 'paper-cleaning'
+dataset_path: '/data/rhyang/download/mems_LLM/processed_resources/test.jsonl'
+export_path: '/data/rhyang/download/mems_LLM/processed_resources/processed_by_dj/cleaned_data.jsonl'
+
+process:
+  - whitespace_normalization_mapper:
+  - clean_copyright_mapper:
+  - clean_email_mapper:
+  - remove_bibliography_mapper: {}
+  - text_length_filter:
+      min_len: 30
+      max_len: 20000
+  - image_shape_filter:
+      min_width: 10
+      min_height: 10
+      any_or_all: 'any'
+  - image_captioning_from_gpt4v_mapper:
+      api_key: "your_gpt4v_api_key"
+      mode: "description"  # 或 "reasoning" 生成更深入的解释
+      user_prompt: "请详细描述这张图片的内容，包括物体、场景、动作等。"
+      keep_original_sample: true  # 保留原图路径

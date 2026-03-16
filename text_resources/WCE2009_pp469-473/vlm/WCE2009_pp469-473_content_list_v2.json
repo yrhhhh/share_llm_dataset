@@ -1,0 +1,2016 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Structure Design and Fabrication of Silicon Resonant Micro-accelerometer Based on Electrostatic Rigidity "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                76,
+                848,
+                171
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ZHANG Feng-tian, HE Xiao-ping, SHI Zhi-gui, ZHOU Wu "
+                    }
+                ]
+            },
+            "bbox": [
+                275,
+                195,
+                721,
+                211
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—The structure characteristics and working principle of silicon resonant micro-accelerometer based on electrostatic rigidity are presented. Dynamic characteristics of double-ended tuning fork (DETF) in the sensor are analyzed. Force equilibrium equations of mass and DETF are built respectively for with or without acceleration, through which the relationship between DETF resonant frequency and acceleration is obtained. The influences of folded supporting beams linked with proof mass and gap between capacitive parallel plates on the sensor sensitivity are analyzed, and finally a resonant micro accelerometer with sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is designed and fabricated with bulk-silicon dissolved processes. "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                257,
+                485,
+                406
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Index Terms—Electrostatic rigidity; Resonance; Accelerometer; Bulk-silicon dissolved processes. "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                422,
+                485,
+                445
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                218,
+                475,
+                344,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant principle has been widely used for measuring physical parameters such as mass, acceleration, force, flow or pressure. The main advantage of a resonant sensor over other sensing principles is its quasi-digital output, which implies good resistance to noise or electrical interference and simple interface to a digital system. Resonant accelerometer has been produced and widely used for many years, for example, RBA500 of Honeywell Company. Most resonant accelerometers use quartz material for its excellent piezoelectric performance, but the quartz fabrication is expensive and not compatible with IC (integrated circuits) fabrication technology, which makes it impossible to integrate the sensor and its interface circuits on one chip. "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                492,
+                485,
+                680
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant accelerometers based on the silicon micromachining technology become very attractive due to low cost, small size, compatibility with IC fabrication processes, and potential application in the fields where size and high precision are required. Most silicon resonant accelerometers detect resonant frequency of the vibrating beam subjected to axial loading which relates to inertial force "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                682,
+                485,
+                783
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Manuscript received February 27, 2009. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                805,
+                309,
+                815
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Zhang Feng-tian is with the Institute of Electronic Engineering, China Academy of Engineering Physics, Mianyang, Sichuan, China. (Phone: 86-0816-2484595, fax: 86-0816-2487594, e-mail: zftstuart@sohu.com). "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                817,
+                487,
+                849
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "He Xiao-ping is with the Institute of Electronic Engineering, China Academy of Engineering Physics, Mianyang, Sichuan, China (e-mail: hxp@xleda.com). "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                850,
+                487,
+                883
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SHI Zhi-gui is with the Institute of Electronic Engineering, China Academy of Engineering Physics, Mianyang, Sichuan, China e-mail: (szg@xleda.com). "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                884,
+                487,
+                916
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Zhou Wu is with the Southwest Jiaotong University, Chengdu, Sichuan, China(e-mail: zhouwu916@yahoo.com.cn). "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                916,
+                487,
+                939
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "on the proof mass. The vibrating beam is excited by alternating electrostatic or electrothermal force, and the frequency change is sensed by capacitors or piezoresistive resistors respectively [1-6]. In a relatively new concept of resonant accelerometer, inertial force of the proof mass pushes or pulls one electrode as one part of the proof mass, and changes the gap distance of the parallel-plate capacitor, then the electrostatic force between parallel plate electrodes changes with the gap distance, and equivalently changes the efficient mechanical rigidity of the vibrating beam [7-8]. In the previous work of other research groups, the accelerometer was fabricated and showed excellent performances. But the movement and dynamic characteristics of the vibrating beam were not presented, which is very important for understanding the working principle and the sensor structure design. Therefore, in this study, the movement and dynamic characteristics are analyzed with mechanical dynamic theory. The relationship between resonant frequency of the vibrating beam and acceleration is obtained in theory. Finally, a resonant accelerometer with sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is designed and fabricated with bulk-silicon dissolved processes. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                242,
+                919,
+                561
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. OPERATING PRINCIPLE"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                625,
+                593,
+                805,
+                604
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The concept of the resonant accelerometer is shown in Fig.1. It consists of double-ended tuning fork (DETF), driving capacitors, sensing capacitors, proof mass, and supporting springs. The fixed comb electrodes of driving capacitors are excited by an AC voltage with DC bias, DETF is connected to ground, and the proof mass including the electrode of sensing capacitor is connected to a DC voltage. In the horizontal plane, each clamped-clamped beam of DETF vibrates  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "180^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " out of phase with its natural frequency to cancel reaction forces at the ends when there is no acceleration. The sensing capacitors can detect the vibrating frequency of DETF through interface circuits. When there is acceleration, the proof mass moves near or away from the electrode of DETF under inertial force and changes the gap distance of sensing capacitor. The electrostatic force between sensing electrodes induces an additional electrostatic rigidity, which results in the variation of DETF resonant frequency with acceleration. Therefore, detecting the resonant frequency of DETF can measure acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                611,
+                919,
+                888
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the World Congress on Engineering 2009 Vol I  \nWCE 2009, July 1 - 3, 2009, London, U.K. "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                17,
+                482,
+                43
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "ISBN: 978-988-17012-5-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                967,
+                236,
+                979
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "WCE 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                863,
+                967,
+                937,
+                979
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8d103cc770f9a6f962332946bb0fad9a969c9111207d4293b0aaa5e384e5a4ab.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.1. Principle schematic of a resonant accelerometer "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                122,
+                57,
+                440,
+                267
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. THEORY ANALYSIS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                198,
+                309,
+                364,
+                321
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Due to the symmetry of sensor structure, one half of the structure shown as in Fig.2 is analyzed. The supporting spring in Fig.1 is realized with four folded beams which not only support the proof mass but also make it capable of moving freely along  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axis. The DC voltage of the proof mass is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{d2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the clamped-clamped beam of DETF is connected to GND, and the driving voltage is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{c}} \\times \\sin (\\omega t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with DC bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{d1}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The forces applied to the clamped-clamped beam include inertial force, damping force, elastic force, driving and sensing electrostatic forces. The mechanical dynamic equation of the vibrating beam can be written as "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                340,
+                490,
+                501
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\ddot {Y} + c \\dot {Y} + \\kappa Y = \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - Y\\right) ^ {2}} - \\frac {N _ {1} \\varepsilon h \\left(V _ {d 1} + V _ {c} \\sin (\\omega t)\\right) ^ {2}}{2 g _ {0}} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/85458f97884b0e69964e7ae163c8e20dce3a6e438cc213f23d9edc9846c35c3e.jpg"
+                }
+            },
+            "bbox": [
+                78,
+                503,
+                487,
+                554
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective mass of the vibrating beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c"
+                    },
+                    {
+                        "type": "text",
+                        "content": " damping coefficient,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\kappa"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the effective spring constant of vibrating beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the permittivity of free space  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(8.85 \\times 10^{-12} \\mathrm{F/m})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the efficient area of the sensing capacitor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{d2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the sensing voltage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the gap distance of driving capacitor and sensing capacitor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are respectively the displacement of proof mass or vibrating beam relative to initial position when no voltages are applied, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is number of driving comb finger pairs,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the structure thickness,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the frequency of AC voltage. The first part on the right in (1) is sensing electrostatic forces, while the second part is driving electrostatic forces. In (1), it assumes that the damping force is proportional to velocity. "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                555,
+                489,
+                745
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a688e05f8646c7827013d406965f43ea2c00cda08c88158d75deda620ddff52d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.2. Schematic of the half structure "
+                    },
+                    {
+                        "type": "text",
+                        "content": "From (1), we can see that electrostatic forces of the "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                100,
+                747,
+                460,
+                901
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "vibrating beam include fixed and alternate parts. We can think that the vibrating beam moves to some position by one fixed electrostatic force and vibrates harmonically about this equilibrium position. So  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in (1) can be expressed as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1} + y"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y = y_0 \\times \\sin (\\omega t + \\varphi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the displacement of vibrating beam by the fixed electrostatic force and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the displacement amplitude by harmonic force. If  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{d1}} >> V_{\\mathrm{c}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", with Taylor expansion, (1) can be rewritten as "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                59,
+                924,
+                175
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} m \\ddot {y} + c \\dot {y} + \\kappa \\left(y _ {1} + y\\right) \\cong \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} \\tag {2} \\\\ + \\frac {\\varepsilon A V _ {d 2} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}} y - \\frac {N _ {1} \\varepsilon h V _ {d 1} ^ {2}}{2 g _ {0}} - \\frac {N _ {1} \\varepsilon h V _ {d 1} V _ {c} \\sin (\\omega t)}{g _ {0}} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a8a1a93a94dd8ccc3302c94c54a89130f6c2c7b5dbe6b4af491358f7380ce8ae.jpg"
+                }
+            },
+            "bbox": [
+                510,
+                176,
+                922,
+                255
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Equivalently, we can obtain "
+                    }
+                ]
+            },
+            "bbox": [
+                524,
+                257,
+                719,
+                270
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\kappa y _ {1} - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} + \\frac {N _ {1} \\varepsilon h V _ {d 1} {} ^ {2}}{2 g _ {0}} = 0 \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a765153206773a0f7d1831916f18dada441bf47b1f0841aeb7a495fecb90b3b4.jpg"
+                }
+            },
+            "bbox": [
+                509,
+                271,
+                921,
+                315
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\ddot {y} + c \\dot {y} + \\left(\\kappa - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}}\\right) y = - \\frac {N _ {1} \\varepsilon h V _ {d 1} V _ {c} \\sin (\\omega t)}{g _ {0}} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/103bdaed46eb54d8cc2bff8709c4e9813d1f0d2bfd511c24ed89fb5431bfe7b3.jpg"
+                }
+            },
+            "bbox": [
+                509,
+                317,
+                921,
+                369
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Equation (3) describes the displacement of vibrating beam by fixed force. We can see that  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is determined by the driving or sensing DC voltage in addition to the sensor structure and size. Equation (4) is the harmonic oscillation equation. It shows that there is an additional force proportional to the vibrating amplitude in (4), equivalently an additional rigidity caused by electrostatic force between parallel plates of sensing capacitor. The rigidity named electrostatic rigidity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\kappa_{\\mathrm{e}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be written as "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                370,
+                922,
+                501
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\kappa_ {e} = \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3d159c40f02bb826e3a401d6ee15c258aa1efad1faaea8112c14bd0ed96920d0.jpg"
+                }
+            },
+            "bbox": [
+                509,
+                502,
+                917,
+                542
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Then, the resonant frequency of vibrating beam is as follows "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                542,
+                922,
+                568
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {n} = \\frac {1}{2 \\pi} \\sqrt {\\frac {\\kappa - \\kappa_ {e}}{m}} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ee4c54b1df7fd099688428ced860eb9baf242e9e90702529810ba13be505d812.jpg"
+                }
+            },
+            "bbox": [
+                509,
+                572,
+                917,
+                612
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When there is acceleration which direction shown as in Fig.2, the displacement of proof mass caused by inertial force is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta x"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The electrostatic force between parallel plates of sensing capacitor will change and result in displacement variation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the electrode on the vibrating beam. Thus, the gap distance of sensing parallel-plate capacitor change  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta x + \\Delta y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The electrostatic rigidity induced by sensing parallel-plate capacitor will vary and alter resonant frequency of the vibrating beam shown as "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                612,
+                924,
+                749
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {n} = \\frac {1}{2 \\pi} \\sqrt {\\frac {\\kappa - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {3}}}{m}} \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/65ecb888cf7afd254038b784605435cfa5851061aba8e71af9a17edec5afc8dd.jpg"
+                }
+            },
+            "bbox": [
+                509,
+                751,
+                921,
+                811
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Due to that the natural frequency of vibrating beam is greatly higher than that of proof mass-spring system, the electrostatic force frequency applied to the proof mass by beam vibrating is also largely higher than that of proof mass-string system. So the displacement of proof mass caused by beam vibrating can be neglected. When there is no acceleration, the elastic force and electrostatic force applied to the proof mass are equal. We can obtain the force "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                812,
+                924,
+                929
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the World Congress on Engineering 2009 Vol I  \nWCE 2009, July 1 - 3, 2009, London, U.K. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                16,
+                487,
+                45
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "ISBN: 978-988-17012-5-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                966,
+                238,
+                979
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "WCE 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                860,
+                966,
+                939,
+                979
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "equilibrium equation of proof mass as follow "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                59,
+                386,
+                74
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\kappa_ {s} x - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} = 0 \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/bb7e78da1cf22e0df7906d00dfddc6a51cdf07752c4b9e3760b9b3295ea5fedf.jpg"
+                }
+            },
+            "bbox": [
+                75,
+                74,
+                487,
+                116
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\kappa_{\\mathrm{s}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is spring constant of the folded supporting beams linked with proof mass. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                117,
+                487,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When there is acceleration shown as in Fig.2, the gap of sensing capacitor will change, and the elastic force plus inertial force is equal to electrostatic force by sensing capacitor, the force equilibrium equation can be written as "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                146,
+                489,
+                205
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {2}} - \\kappa_ {s} (x - \\Delta x) - M a = 0 \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9d77047c893a45b729c400f914cde9744327536a00ed991d09d52f707bd0a426.jpg"
+                }
+            },
+            "bbox": [
+                75,
+                207,
+                487,
+                247
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M"
+                    },
+                    {
+                        "type": "text",
+                        "content": " refers to the mass of the proof mass. As for the vibrating beam, from (3), we can obtain "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                248,
+                487,
+                276
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {2}} - \\frac {N _ {1} \\varepsilon h V _ {d 1} {} ^ {2}}{2 g _ {0}} \\tag {10} \\\\ + m a - \\kappa \\left(y _ {1} - \\Delta y _ {1}\\right) = 0 \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ecde0caa9c9a0a92ef896fac5e6ec45330852a850239dc0afe3d3c2ae9185e7a.jpg"
+                }
+            },
+            "bbox": [
+                75,
+                277,
+                487,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the sensor structure size, driving and sensing voltage are determined, from (3) (8) (9) (10), we can calculate the value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x, y_{1}, \\triangle x, \\triangle y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and substitute them into (7), the relationship between the beam vibrating frequency and acceleration can be obtained, which is important for sensor structure design. "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                336,
+                489,
+                426
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. STRUCTURE DEIGN "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                196,
+                454,
+                364,
+                467
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The accelerometer sensitivity directly affects its precision. The important aspect of sensor structure design is to determine proper structure size to improve the sensor sensitivity when the structure stability is guaranteed. The sensor sensitivity will be calculated at different structure size, driving or sensing voltage, with the above established equations. The vibrating beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " long and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " wide. The sensor structure is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in thickness. The driving AC amplitude is 1V with 15V DC bias. The folded supporting beams are U-shape. "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                473,
+                489,
+                619
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig.3a shows the relationship between the sensor sensitivity and sensing voltage when the capacitor gap is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the folded beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "450\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " long and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " width. Fig.3b presents the variation of sensitivity with the capacitor gap distance when the folded beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "450\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " long and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " wide and sensing voltage is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "16\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". We can see that sensor sensitivity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "250\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " when sensing voltage is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively. Larger sensing voltage and small capacitor gap mean higher sensitivity. The reason is that the sensing capacitor electrostatic force increases when sensing voltage increases and capacitor gap gets narrow, then the variation of electrostatic rigidity at same acceleration become larger and produce larger deviation of vibrating beam resonant frequency. But too large sensing voltage and small capacitor gap may lead to absorption of capacitor plates and structure stability will be ruined. "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                619,
+                489,
+                851
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig.3c is the relationship of sensor sensitivity and folded supporting beam width, and Fig.3d shows that of sensor sensitivity and supporting beam length. We can see that narrower and longer supporting beams can improve sensor sensitivity. This is due to that the capacitor gap variation "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                852,
+                490,
+                926
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "caused by inertial force of the proof mass is larger when the folded beam is narrow and long, and electrostatic rigidity varies greatly. Also, too narrow or long folded beams will affect the strength and resistance to impact, even maybe result in absorption of capacitor plates and destroy the structure stability. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                59,
+                924,
+                148
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b315d3adedf2d8530462c890c9ce102f1de6b34a0efa1c7ce72f08a0ecbddc96.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                579,
+                162,
+                850,
+                308
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/39bc7ff87ca9eb601291fc714b8f1ea61893b4092c0afbe1ca9178128dca1b76.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                583,
+                334,
+                850,
+                486
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/98a5d3868b66fd5b6d36d7c447c5957b1edf61513ce011929f47ea92fde97c6f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(c) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                581,
+                517,
+                848,
+                663
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/793e52f0c64bfb81323e3aa74b00a7a5a9b79d8c9ee8f8c499e22890a7f5a1bf.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(d) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig.3. Sensor sensitivity versus voltage and structure size "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                581,
+                695,
+                852,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From above analysis, smaller capacitor gap, longer and narrower supporting beam, and larger sensing voltage are expected to improve the sensor sensitivity. But in the respect "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                890,
+                922,
+                934
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the World Congress on Engineering 2009 Vol I  \nWCE 2009, July 1 - 3, 2009, London, U.K. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                16,
+                487,
+                45
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "ISBN: 978-988-17012-5-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                966,
+                238,
+                980
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "WCE 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                966,
+                939,
+                979
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of stability and strength, they should be controlled properly. So sensitivity and structure stability should be considered at the same time when designing the sensor structure size. The sensor structure size in this study is finally designed as follows: folded supporting beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "450\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " long and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " wide, capacitor gap  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " wide, and sensing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "17\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The relationship between sensor resonant frequency and applied acceleration is shown in Fig.4. We can see that the designed sensor sensitivity is at least  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for one clamped-clamped beam of DETF. "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                58,
+                490,
+                205
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/29c789c3684df71d906d7c4a15aa2e31581eb48703768c9d4b56603abb281366.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig.4. Resonant frequency versus applied acceleration "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                117,
+                216,
+                445,
+                388
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "V. FABRICATION PROCESS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                186,
+                437,
+                374,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The adopted fabrication process in this study is called bulk-silicon dissolved process. The process sequences are as follows: First, boron is heavily doped into the silicon wafer front side to make the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{P + + }"
+                    },
+                    {
+                        "type": "text",
+                        "content": " etch-stop layer which is used as the structure layer and about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick; anchors for wafer-glass bonding are patterned and etched on the wafer front side with ICP deep etch technology(Fig.5a); then, the sensor structure is patterned and etched with the second ICP deep etching (Fig.5b); aluminum is sputtered on the glass wafer to form electrodes through which different voltage can be subjected to different parts of the sensor (Fig.5c); Finally, bonding silicon wafer and glass wafer together using anodic bonding (Fig.5d)and etch the silicon wafer from backside in KOH etch solution until arriving the etch-stop layer and obtaining the sensor structure(Fig.5e). "
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                454,
+                490,
+                675
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f133cdea3e4fb5494aad6bc816307950bf086c20d38b704e322316f003fe197b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) Bonding anchors etching "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                682,
+                280,
+                717
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/fedf98037ea5d840564cdc262db9d890136879725f113d388bd945b18eb8edca.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(d) Bonding silicon and glass wafer "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                292,
+                686,
+                495,
+                745
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5b2757694a33e1c2eae681b4d32ba4490e4b08906dffa7ec52ddaa6033f5bd0c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                731,
+                280,
+                764
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f7a1ae569fd0037a27d5aa6c426e81004962a4c555777deb3878840ac410d223.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c)Electrodes etching on the glass wafer "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                768,
+                278,
+                809
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b01ce03d76f0ab82ad3810aeaa1b94e45c3d72a95f16b6205ff44da1b7ecfe7c.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(e) Wet thinning wafer from backside "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig.5. Fabrication processes "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                292,
+                768,
+                495,
+                809
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The SEM pictures of the fabricated sensor structure are shown in Fig.6. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                845,
+                489,
+                874
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/41143337b07fc30bef2155cfb7babb8b2a99ad18988a6d6a98172cb69c0e45cf.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                596,
+                58,
+                833,
+                212
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b810386a29e235a5669ee1306abc7f53d081891c0483810dab43e3c2031e7c16.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) Resonant accelerometer "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(b) Resonator "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig.6 The SEM pictures of the fabricated sensor "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                594,
+                237,
+                835,
+                391
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "VI. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                650,
+                454,
+                779,
+                467
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the silicon resonant accelerometer based on electrostatic rigidity, the proof mass will not vibrate when DETF beams vibrate without acceleration. Meanwhile, the proof mass will move away the initial equilibrium position with acceleration, and apply an additional rigidity to the vibrating beam for change the resonant frequency. According to the dynamic equations of proof mass and DETF, the accelerometer resonant frequency can be determined at any acceleration. By analyzing effects of the structure size, sensing voltage on the sensor sensitivity, a sensor structure suitable for actual fabrication condition is designed and fabricated. Future research work will focus on the measurement of the sensor performance. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                473,
+                924,
+                663
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                668,
+                693,
+                761,
+                705
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] Chr. Burrer, J. Esteve. A novel resonant silicon accelerometer in bulk-micromachining technology. Sensors and Actuators A 46-47, 1995:185-189. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] Susan X. P. Su, Henry S. Yang, and Alice M. Agogino. A Resonant Accelerometer With Two-Stage Microleverage Mechanisms Fabricated by SOI-MEMS Technology. IEEE Sensors Journal, VOL. 5, NO. 6, 2005:1214-1223 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Ashwin A. Seshia, Moorthi Palaniapan, Trey A. Roessig, Roger T. Howe, Roland W. Gooch, Thomas R. Schimert, and Stephen Montague. A Vacuum Packaged Surface Micromachined Resonant Accelerometer. Journal of microelectromechanical Systems, vol.11, no.6, 2002:784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] Mark Helsel, Gene Gassner, Mike Robinson and Jim Woodruff. A Navigation Grade Micro-Machined Silicon Accelerometer. IEEE 94:51-58. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Jia Yubin, Hao Yilong, and Zhang Rong. Bulk Silicon Resonant Accelerometer. Chinese Journal of Semiconductors, Vol. 26, No. 2, 2005: 281-286. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] W. Burns, R. D. Horning, W. R. Herb, J. D. Zook, and H. Guckel. Resonant microbeam accelerometers. The 8th international Conference "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                711,
+                922,
+                935
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the World Congress on Engineering 2009 Vol I  \nWCE 2009, July 1 - 3, 2009, London, U.K. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                17,
+                485,
+                45
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "ISBN: 978-988-17012-5-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                966,
+                238,
+                979
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "WCE 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                967,
+                939,
+                979
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "on Solid-State Sensors and Actuators, and Eurosensors IX. Stockholm, Sweden, June 25-29, 1995: 659-662. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] B. L. Lee, C. H. Oh, Y. S. Oh, and K. Chun, “A Novel Resonant Accelerometer: Electrostatic Stiffness Type”, The 10th International "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                59,
+                489,
+                105
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Conference on Solid State Sensors and Actuators (Transducer '99), Sendai, Japan, June 7-10, 1999, pp.1546-1549. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] Seonho Seok, Hak Kim, and Kukjin Chun. An Inertial-grade laterally-driven MEMS Differential Resonant Accelerometer. IEEE 2004:654-657.M. Young, The Technical Writers Handbook. Mill Valley, CA: University Science, 1989. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                59,
+                922,
+                127
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the World Congress on Engineering 2009 Vol I  \nWCE 2009, July 1 - 3, 2009, London, U.K. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                17,
+                485,
+                45
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "ISBN: 978-988-17012-5-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                967,
+                238,
+                979
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "WCE 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                967,
+                939,
+                979
+            ]
+        }
+    ]
+]

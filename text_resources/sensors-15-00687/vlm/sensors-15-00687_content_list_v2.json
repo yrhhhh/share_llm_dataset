@@ -1,0 +1,3752 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A New Z-axis Resonant Micro-Accelerometer Based on Electrostatic Stiffness "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                209,
+                796,
+                257
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Bo Yang  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2,\\ast}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Xingjun Wang  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Bo Dai  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and Xiaojun Liu  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,3}"
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                273,
+                616,
+                293
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{1}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " School of Instrument Science & Engineering, Southeast University, Nanjing 210096, China; E-Mails: wangxingjun2000@126.com (X.W.); cumtdaibo@126.com (B.D.); liuxiaojun0814@126.com (X.L.) "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{2}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Key Laboratory of Micro-Inertial Instrument and Advanced Navigation Technology, Ministry of Education, Nanjing 210096, China "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{3}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " School of Information and Control, Nanjing University of Information Science & Technology, Nanjing 210044, China "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "* Author to whom correspondence should be addressed; E-Mail: yangbo20022002@163.com; Tel.: +86-25-8379-3559. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                308,
+                870,
+                501
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Academic Editor: Yeshaiahu Fainman "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                519,
+                394,
+                535
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received: 28 September 2014 / Accepted: 20 December 2014 / Published: 5 January 2015 "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                554,
+                815,
+                572
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract: Presented in the paper is the design, the simulation, the fabrication and the experiment of a new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer based on the electrostatic stiffness. The new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer, which consists of a torsional accelerometer and two plane resonators, decouples the sensing movement of the accelerometer from the oscillation of the plane resonators by electrostatic stiffness, which will improve the performance. The new structure and the sensitive theory of the acceleration are illuminated, and the equation of the scale factor is deduced under ideal conditions firstly. The Ansys simulation is implemented to verify the basic principle of the torsional accelerometer and the plane resonator individually. The structure simulation results prove that the effective frequency of the torsional accelerometer and the plane resonator are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.66\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.3\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. Then, the new structure is fabricated by the standard three-mask deep dry silicon on glass (DDSOG) process and encapsulated by parallel seam welding. Finally, the detecting and control circuits are designed to achieve the closed-loop self-oscillation, to trace the natural frequency of resonator and to measure the system frequency. Experimental results show that the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer has a "
+                    }
+                ]
+            },
+            "bbox": [
+                124,
+                610,
+                873,
+                910
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15, 687-702; doi:10.3390/s150100687 "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                61,
+                515,
+                79
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "OPEN ACCESS "
+                    }
+                ]
+            },
+            "bbox": [
+                781,
+                81,
+                919,
+                99
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "sensors "
+                    }
+                ]
+            },
+            "bbox": [
+                747,
+                112,
+                919,
+                136
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ISSN 1424-8220 "
+                    }
+                ]
+            },
+            "bbox": [
+                776,
+                141,
+                919,
+                156
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "www.mdpi.com/journal/sensors "
+                    }
+                ]
+            },
+            "bbox": [
+                655,
+                157,
+                919,
+                174
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Article "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                178,
+                142,
+                194
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "31.65\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "727~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a dynamic range of over  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which proves that the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer is practicable. "
+                    }
+                ]
+            },
+            "bbox": [
+                127,
+                93,
+                868,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: resonant micro-accelerometer; electrostatic stiffness; torsional accelerometer; plane resonator "
+                    }
+                ]
+            },
+            "bbox": [
+                127,
+                148,
+                868,
+                185
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                82,
+                239,
+                211,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant micro-accelerometers, which measure external acceleration through the frequency variation of a resonator, have good properties, such as the large dynamic range, the high sensitivity, the strong anti-interference ability, as well as the direct digital output. Therefore, a variety of resonant micro-accelerometers have been developed [1-4]. Due to the merits of the good linearity, the high accuracy and the process compatible with conventional silicon micromachining technology in the in-plane linear resonators, most of the resonant micro-accelerometers studied are currently used to measure the plane acceleration [4-9]. Only a few resonant accelerometers with out-of-plane resonators that can measure the acceleration in the vertical plane are investigated [10-14]. A resonant accelerometer with a single  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonator is researched in the literature [10,11]. However, the natural frequency of the single resonator is extremely sensitive to the temperature variation, which will result in a spurious signal output. At the same time, it is difficult to ensure the stability of the resonant mode due to the sensing direction coinciding with the oscillation direction. Furthermore, the out-of-plane resonators have a large nonlinearity and are susceptible to the influence of the electrostatic pull-in effect. An alternative proposal [12] makes use of a tilting proof mass and two torsional resonators. Nevertheless, the sensing movement is still coupled with the oscillation of torsional resonators. In addition, resonant accelerometers based on the electromagnetic excitation have a poor process compatibility and bulky volume [13]. A vertical resonant accelerometer based on a nanoelectromechanical oscillator is beneficially attempted in the literature [14]. The work in [15] presents a new resonant silicon accelerometer based on differential frequency modulation. The in-plane accelerometer is transformed into frequency variation by electrostatic stiffness. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                273,
+                917,
+                674
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper focuses on the design of a new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer, where the vertical accelerometer is converted into frequency variation by electrostatic stiffness. The new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer, which consists of a torsional accelerometer and two plane resonators, decouples the sensing movement of the accelerometer from the oscillation of the plane resonators by electrostatic stiffness. In Section 2, the structure principle, the simulation and the fabrication are described briefly. In Section 3, the design of the oscillation loop and the frequency measurement circuit are presented. Then, the experimental results are illustrated in Section 4. Concluding remarks are finally given in the last section. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                676,
+                917,
+                834
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                54,
+                220,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "688 "
+                    }
+                ]
+            },
+            "bbox": [
+                884,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Structure Design, Simulation and Fabrication "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                93,
+                497,
+                111
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1. Structure Design "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                127,
+                255,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The structure of the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer is shown in Figure 1A. The  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer, including the torsional proof mass, resonant proof mass, torsional beam, suspension beam, drive electrode, drive-sense electrode, electrostatic coupling comb, anchor 1/2, and so on, consists of a torsional accelerometer and two plane resonators. Firstly, the resonant proof masses on both sides of the structure will be driven respectively to vibrate in the natural frequency of the resonators along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis. The resonant displacements can be detected by the drive-sense electrodes. By feeding back the resonant displacements to the drive electrodes, the closed-loop self-oscillation system is implemented and can track the natural frequency of the resonator. Secondly, the bias voltage between the torsional proof mass and the resonant proof mass is applied on the electrostatic coupling combs. The electrostatic force and electrostatic stiffness are generated. Finally, when the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis acceleration is input, due to the imbalance of the torsional proof mass on both sides, the torsional proof mass will be rotated through the torsional beam around the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis. The overlapping area of the electrostatic coupling combs shown in the Figure 1B will be changed, which will cause the change in the electrostatic force and electrostatic stiffness. Therefore, the natural frequency of the resonator is altered as a result of the change in the electrostatic stiffness. By measuring the frequency changes in the closed-loop self-oscillation system, the acceleration can be detected. The new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer decouples the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis sensing movement of the accelerometer from the oscillation of the plane resonators by electrostatic stiffness. Therefore, the vertical resonator that is ordinarily used to convert the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis input accelerometer is averted. The entire accelerometer is essentially a plane structure, and the vertical gap is not necessary to control (the vertical gap must be controlled to within several micrometers in the vertical resonator in order to increase the resonant accelerometer sensitivity; however, due to the influence of \"pull-in\", too small of a gap is very difficult to achieve), which has good compatibility with the planar process and is conducive to integrating the vertical resonant accelerometer into the plane resonant accelerometer to implement a triaxial resonant micro-accelerometer [16]. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                161,
+                922,
+                665
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The torsional proof mass, the torsional beam and the anchor constitute the basic torsional accelerometer. The equation of motion is: "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                667,
+                919,
+                705
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "J \\frac {d ^ {2} \\theta (t)}{d t ^ {2}} + b \\frac {d \\theta (t)}{d t} + k _ {o} \\theta (t) = k _ {a} a (t) \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d429c9a055faece540921952d6b1a342df2c3d81f6c307f8829ca66ac0ba6230.jpg"
+                }
+            },
+            "bbox": [
+                354,
+                714,
+                912,
+                749
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "J"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the moment of inertia,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the viscous damping coefficient,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{o}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the torsional stiffness,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{a}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the torque coefficient and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the angle displacement. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                761,
+                917,
+                800
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the static state, the output angel displacement is: "
+                    }
+                ]
+            },
+            "bbox": [
+                104,
+                802,
+                517,
+                820
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\theta (t) = \\frac {k _ {a}}{k _ {o}} a (t) \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7f6d46b67ae91154eca8b12ccdfbbad871264f6c4a53d38a4d8b414c11933626.jpg"
+                }
+            },
+            "bbox": [
+                440,
+                830,
+                912,
+                869
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "689 "
+                    }
+                ]
+            },
+            "bbox": [
+                884,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scheme of comb movement is shown in Figure 2. The displacement of the electrostatic coupling comb along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis is: "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                93,
+                919,
+                131
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "z = B \\sin (\\theta (t)) \\approx B \\frac {k _ {a}}{k _ {o}} a (t) \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b8d4af9d204afe648f923b66b9785b3d178708878684e1c9255df28976d1571b.jpg"
+                }
+            },
+            "bbox": [
+                400,
+                138,
+                917,
+                174
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the equivalent distance from the electrostatic coupling combs to the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis. "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                186,
+                778,
+                205
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/134a32c16881a091eadf75f0cfc677fc5de01cd612682fc0fcaf65ca84f6086d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                105,
+                218,
+                574,
+                451
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a011346e54f12dd7544217039576e8c6c445fc1c86ba05ca30333ef283030c1b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                603,
+                239,
+                890,
+                421
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/963881918a57eab188d6fc0d106e5b9cd20c623bb4af8c2c29932c7bb7017d22.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. The scheme of a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer. (a) The structure of the micro-accelerometer; (b) Partial sectional view of the electrostatic coupling comb. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 2. The scheme of the comb movement. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                226,
+                542,
+                764,
+                714
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The equation of motion of the resonator is: "
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                777,
+                453,
+                794
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\frac {d ^ {2} y (t)}{d t ^ {2}} + c \\frac {d y (t)}{d t} + k y (t) = F _ {d} (t) + F _ {e} (t) \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/09fc73e363fd4a4950fe8370eada5c16a342c2361446d3465d087b5e26f7c77a.jpg"
+                }
+            },
+            "bbox": [
+                349,
+                802,
+                917,
+                836
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant proof mass,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the viscous damping coefficient,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the stiffness coefficient of the suspension beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{d}}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the drive force and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{e}}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the coupling electrostatic force of electrostatic coupling comb. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                847,
+                922,
+                906
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                53,
+                223,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "690 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scheme of electrostatic coupling theory is shown in Figure 3. The electrostatic coupling capacitances in the top and the bottom are, respectively: "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                93,
+                919,
+                131
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {1} = n \\frac {\\varepsilon L (h + z)}{d - y} C _ {2} = n \\frac {\\varepsilon L (h + z)}{d + y}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/185937af27a692f5350729d7e5f6aee9b772ede7f974e7721e8076313e54d966.jpg"
+                }
+            },
+            "bbox": [
+                373,
+                137,
+                631,
+                172
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the coupling comb gap,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the comb thickness and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length. The coupling electrostatic force is: "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                182,
+                919,
+                219
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {e} (t) = \\frac {1}{2} \\frac {\\partial C}{\\partial y} V ^ {2} = \\frac {1}{2} \\frac {n \\varepsilon L (h + z)}{(d - y) ^ {2}} V ^ {2} - \\frac {1}{2} \\frac {n \\varepsilon L (h + z)}{(d + y) ^ {2}} V ^ {2} \\approx \\frac {2 n \\varepsilon L (h + z) V ^ {2}}{d ^ {3}} y = k _ {e} (h + z) y \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7799833de3b0d7fcd550671e58dd448ef8f461420ceaf0bdee2ad19261d2ec6a.jpg"
+                }
+            },
+            "bbox": [
+                181,
+                229,
+                917,
+                267
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the bias voltage of the electrostatic coupling beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{e}} = 2n\\varepsilon LV^{2} / d^{3}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                277,
+                712,
+                295
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting Equation (5) into Equation (4), the natural frequency is: "
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                298,
+                662,
+                315
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f = \\frac {1}{2 \\pi} \\sqrt {\\left(k - k _ {e} (h + z)\\right) / m} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b1d660d1c2ada6bd8efd51e353792de3e98a1e2c4ee7a74025be12499dc911ff.jpg"
+                }
+            },
+            "bbox": [
+                408,
+                321,
+                917,
+                352
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Expanding Equation (6) with the Taylor method: "
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                362,
+                505,
+                380
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f \\approx f _ {0} + f ^ {\\prime} _ {0} z \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fb5c0ce433d54b221e78ac06ca17bbd64e0b188346031e614c2489ad553253a8.jpg"
+                }
+            },
+            "bbox": [
+                448,
+                387,
+                917,
+                408
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the static frequency of the resonator and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0 = (\\sqrt{(k - k_e h)/m}) / (2\\pi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f'_0 = n \\varepsilon L V^2 / (4\\pi^2 f_0 d^3 m)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                414,
+                910,
+                434
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting Equation (3) into Equation (7): "
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                439,
+                460,
+                457
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f \\approx f _ {0} + S a (t) \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/edb855fdd215717a0985193d5cb514eeb9db35a63bc26d88b874e431b97c6c5d.jpg"
+                }
+            },
+            "bbox": [
+                443,
+                464,
+                917,
+                484
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the scale factor of the single resonator, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S = n \\varepsilon L V^{2} B k_{a} / (4 \\pi^{2} f_{0} d^{3} m k_{o})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                77,
+                490,
+                752,
+                509
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is evident that the scale factor can be increased by decreasing the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{o}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or increasing the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{a}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The design structure parameters are shown in Table 1. Figure 4 shows the relationship among the bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", coupling comb gap  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the static frequency of resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the scale factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The negative stiffness coefficient of the electrostatic coupling comb and scale factor rise simultaneously with increasing the bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k = k_{\\mathrm{e}}(h + z)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the scale factor has the maximum value and the resonator is operated at critical stability, shown in the hidden harmonic peak and the yellow harmonic peak with the symbol \"□\" in Figure 4. Theoretically, the comb gap should be reduced to the minimum in order to maximize the scale factor. However, a relatively small comb gap will obviously increase the sensitivity of the scale factor to the bias voltage, especially around the stable point, such as the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " comb gap shown in Figure 4. Considering the sensitivity of the scale factor and the stable interval of the bias voltage synthetically, a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " coupling comb gap is chosen. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                515,
+                919,
+                736
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0e4ce6e97bde11cc93d83ff4fab5c7307d31c063042ba44306829f3d18f69d41.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. The scheme of electrostatic coupling theory. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                250,
+                745,
+                736,
+                899
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                53,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "691 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                915,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/51f4f0eb3ac6cb3384870af96c0c455de9f04c7ddcc9165f26ca473897165657.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. The simulation parameters. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameter</td><td>Value</td><td>Parameter</td><td>Value</td></tr><tr><td>m (kg)</td><td>3.3 × 10-8</td><td>V (V)</td><td>18</td></tr><tr><td>c (N·s/m)</td><td>2.8 × 10-8</td><td>B (μm)</td><td>1152</td></tr><tr><td>k (N/m)</td><td>232.5</td><td>ko (N·m/rad)</td><td>2.3 × 10-5</td></tr><tr><td>n</td><td>242</td><td>ka (N·m)</td><td>7 × 10-10</td></tr><tr><td>L (μm)</td><td>35</td><td>J (kg·m2)</td><td>3.0 × 10-12</td></tr><tr><td>h (μm)</td><td>25</td><td>B (N·m·s /rad)</td><td>2.3 × 10-8</td></tr><tr><td>d (μm)</td><td>2</td><td>S (Hz/g) (theory)</td><td>10.43</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                255,
+                114,
+                742,
+                267
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0de12ed6a7ad30ecdd0475c0dbe2ec8c1422bae2c90625818802c05cf0512fd7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. The relationship among the bias voltage, coupling comb gap, the static frequency of resonator and the scale factor (The left is the relationship between the static frequency of resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the different coupling comb gaps  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", presented with different colors, blue “—”, dark green “—”, red “—” and light blue “—”, at the top of the figure. The right is the relationship between the scale factor S and the bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the different coupling comb gaps  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", presented with different symbol of “ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "”, “ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\square"
+                    },
+                    {
+                        "type": "text",
+                        "content": "”, “ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\circ"
+                    },
+                    {
+                        "type": "text",
+                        "content": "” and “ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\diamond"
+                    },
+                    {
+                        "type": "text",
+                        "content": "” in the bottom of the figure. When the coupling comb gap  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d = 1 \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a harmonic peak of the scale factor is missed in the bias voltage between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 \\mathrm{~V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10 \\mathrm{~V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", shown in the curve of the symbol “ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "”. Therefore, a hidden harmonic peak is added with the black dotted line). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                126,
+                279,
+                875,
+                526
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2. Simulation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                745,
+                206,
+                761
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to verify the basic principle of the structure, the simulation is implemented by Ansys. The resonators are coupled with the torsional accelerometer by the electrostatic stiffness. It is difficult to simulate the whole structure directly. Therefore, the resonators and the torsional accelerometer are simulated separately. The mode simulation results of the resonator are shown in Figure 5. The first mode is the effective resonant mode along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis, and the frequency is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.3\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Theoretically, the frequency of the first mode should be selected as small as possible. However, the electrostatic negative stiffness will lead to the decrease of the effective resonant frequency, shown in Figure 4. The suspension beams should be maintained at a certain stiffness in order to ensure the system stability. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                780,
+                922,
+                941
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "692 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The other three are the interference modes. The interference modes shown in the Table 2 are apparently isolated with the effective mode. The resonator is driven to vibrate in the first mode. Additionally, the closed-loop self-oscillation system is locked in the first mode. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                93,
+                919,
+                154
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f8d6297240f9f78807608fd91465b571f1929c1b6912e75c3b17f1b2c6f7a6d0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(A) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                127,
+                163,
+                489,
+                358
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7cc265faa18b24051f513dbfaedb74e7f53f31140017befbf8060dbc4bb63f47.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                162,
+                870,
+                357
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4cf45ce2481f23ae88b76fb0200a9c195dca51ad02a7b09068fa255e0922b3b3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                137,
+                378,
+                482,
+                568
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9e6587fe6c788ab12748f3842b0ee719ab89d2ac99c0bd8951c5a923294dc606.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(D) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 5. The mode simulation of the resonator. (A) The first mode; (B) The second mode; (C) The third mode; (D) The fourth mode. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                507,
+                378,
+                870,
+                571
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/c91d47af8f4e4c22e7b98905ac1e3dce1a1fcc3bbaa41ab7d5b3854348992969.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2. The first six modes of the resonator and the torsional accelerometer. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Mode No.</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>Frequency of the resonator (kHz)</td><td>13.3</td><td>19.4</td><td>20.7</td><td>33.2</td><td>51.6</td><td>67.0</td></tr><tr><td>Frequency of the torsional accelerometer (kHz)</td><td>0.66</td><td>4.16</td><td>4.20</td><td>11.3</td><td>11.6</td><td>14.9</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                139,
+                686,
+                857,
+                764
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The mode simulation of the torsional accelerometer is shown in Figure 6. The first mode is the effective torsional resonant mode around the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis, and the frequency is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.66\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Similarly, the frequency of the first mode should be selected as small as possible in order to increase the sensitivity. However, the lower resonant frequency will also result in a stiffness decrease along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis direction, which will cause the asymmetry of displacement in the left and the right. The other three are the interference modes. The interference modes shown in Table 2 are isolated with the effective mode. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                781,
+                921,
+                899
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "693 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e2924db0658ef0f25f39b639abaa67c8cea7daadf24bf60dee6e252af16646dd.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(A) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                87,
+                92,
+                505,
+                315
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f9920eee643513811e41e0d420d48c485188a44f524f239d786944203d0d4c1b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                92,
+                924,
+                309
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bc76a24dec769bfd2363a59ce95d93443ac81cdcf0b1363b206bfed5e013f5d4.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                80,
+                339,
+                504,
+                562
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b8ada473f3951395becf3bcc17b47fdaabc9b3f4377dc6aa83f577856f8add97.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(D) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 6. The mode simulation of the torsional accelerometer. (A) The first mode; (B) The second mode; (C) The third mode; (D) The fourth mode. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                340,
+                921,
+                557
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.3. Fabrication "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                654,
+                216,
+                669
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer has been fabricated by the standard deep dry silicon on glass (DDSOG) process. A single four-inch crystalline silicon wafer is adopted. The process flow consists of: (1) laying photoresist on the silicon wafer and photo etching; (2) Deep reactive ion etching (DRIE) to form bonding area; (3) sputtering of a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Cr / Ti / Au}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " layer on 7740 Pyrex glass to fabricate the electrode wire; (4) Si/glass electrostatic bonding; (5) reducing the silicon wafer thickness to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " by KOH wet etching and polishing; and (6) DRIE with 20:1 aspect ratio etching to release the structure. The gap in the electrostatic coupling comb has a measured value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.5\\text{-}\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is larger than the design value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The larger gap will decrease the scale factor. Figure 7 shows the picture of the fabricated structure. Figure 7A shows the whole structure of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6900~{\\mu\\mathrm{m}}\\times 5300~{\\mu\\mathrm{m}}\\times 20~{\\mu\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Figure 7B,C shows the partial view of resonator and the electrostatic coupling comb. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                688,
+                921,
+                889
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "694 "
+                    }
+                ]
+            },
+            "bbox": [
+                884,
+                54,
+                915,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/df23af30e632c6f0fe650dfff9486116e738fe7cbd9af41e0573678b4f15a779.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                248,
+                87,
+                515,
+                235
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1c41bc6cdabff7783b5ece401e9bb7237dd9c75bc26fe2acc1f377480575e430.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                531,
+                87,
+                752,
+                236
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6780e30e303bb4ea636f9999e0b268c15d4538a2564a13180a179ab96f90ca26.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Picture of the fabricated structure. (A) The whole mechanical structure; (B) Partial view of the resonator structure; (C) Partial view of the electrostatic coupling comb. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                337,
+                239,
+                660,
+                400
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Design of the Oscillation Loop and the Frequency Measurement Circuit "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                77,
+                511,
+                722,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8 shows the detecting and control circuit for the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer. The detecting and control circuit achieves three functions: the closed-loop self-oscillation, the frequency locking of natural frequency and the frequency measurement. The vibration displacement of the resonator is firstly detected by the pre-amplifier with the ring diode demodulator. Then, the phase is revised by the \"90° phase shifter\". Finally, the self-oscillation is realized by the auto gain control (AGC) and the phase locked loop (PLL). The AGC, which is used to control the vibrating amplitude of the resonator at a constant value, includes the autocorrection demodulator, low pass filter (LPF), subtracter, proportional integral (PI) control and the multiplier. Comparing to silicon micro-gyroscope, the resonator has a higher resonant frequency and a smaller vibration displacement. Therefore, the vibration signal is likely affected by the environmental noise. The autocorrection demodulator is utilized to suppress the noise in order to obtain the real vibration amplitude. The PLL, which consists of the phase detector, the PI control and the voltage-controlled oscillator (VCO), cooperates with the \"90° phase shifter\" to lock the system oscillation frequency to the natural frequency of the resonator. Due to the nonlinearity of the resonator and electrostatic coupling force, the output of pre-amplifier has a harmonic wave. When the output of PLL is designed to lock to the dominant frequency, the phase detector can suppress the influence of harmonic wave and noise. At last, the signal frequency of the oscillation loop is measured by FPGA. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                547,
+                922,
+                889
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "695 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bfbc1d91067f3c97ff6e01ad250c4a64baf04ab0636dc3b3be406c9e45cee099.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8. The detecting and control circuit for the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                127,
+                93,
+                853,
+                440
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Experiment "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                77,
+                491,
+                206,
+                508
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The experiments are implemented to verify the feasibility of the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer. In order to decrease the phase noise and improve the closed-loop control performance, the structure chip of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer is packaged by parallel seam welding in vacuum conditions to improve the quality factor, shown in Figure 9. The mechanical features of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer structure shown in Figure 10 are measured under a 100-mTorr vacuum degree in the device. The two resonators shown in Figure 10A are measured in the 0-V bias voltage. The resonant frequencies are 13.686 kHz and 13.753 kHz, and the quality factors are 590 and 647, respectively. The quality factor is calculated by the equation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f / (f_{+} - f_{-})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{+}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{-}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " present the right and left frequencies of -3 dB attenuation relative to the harmonic peak. The resonant characteristic curve of the Plane Resonator 1 in the different bias voltage applied on the electrostatic coupling comb is shown in Figure 10B. It is evident that the increase of the bias voltage will result in the frequency decrease of the plane resonator. The frequency of the plane resonator will decrease from the 13.686 kHz in the 0-V bias voltage to the 8.392 kHz in the 25-V bias voltage, shown in Figure 10C. The main reason is that the electrostatic force resulting from the electrostatic coupling comb causes the negative stiffness effect and reduces the effective stiffness of Plane Resonator 1, which is consistent with Equation (7). At the same time, the quality factor will decrease with the increase of the bias voltage. The quality factor of Plane Resonator 1 will decrease from 590 in the 0-V bias voltage to 328 in the 25-V bias voltage, shown in Figure 10D. The possible reason is that the electrostatic force increases the structure damping. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                524,
+                922,
+                909
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "696 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2e33cdbbefd626449e35ff3e08804a5d81e6a6ee52873c0f120756cea64f2867.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(A) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                184,
+                91,
+                505,
+                211
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/970cd3fa9d42258ffdb9211676df1c8019696b19f5659c60ac4964d3d58b38c9.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                521,
+                87,
+                820,
+                213
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/da1d358eb4ae6eebbb1731fed0d479f715d6760a9ebcc14e75eddc0e1e73f984.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 9. Vacuum encapsulation. (A) Schematic diagram of vacuum encapsulation; (B) Prototype of vacuum encapsulation. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                115,
+                302,
+                460,
+                477
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/aeb2346419b5d6a5ac5d399c6e00ba8bc9cd649d8f98fc3ced9b728b17530661.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                492,
+                315,
+                910,
+                464
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0e9ea9a3260d5a65010e1d906e1ae797707706623c5efd28f5bf50c949a5cdc0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                92,
+                480,
+                472,
+                691
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d0a0820381d165aa42905b08a6a1e11863a5df0b4efd1776ceea5087ea87ac4d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(D) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 10. The mechanical features experiment of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer structure. (A) The curve of resonant frequency and quality factor; (B) The resonant characteristic curve of Plane Resonator 1 in the different bias voltage applied on the electrostatic coupling comb; (C) The relation curve between static resonant frequency and bias voltage applied on the electrostatic coupling comb; (D) The relation curve between the quality factor and bias voltage applied on the electrostatic coupling comb. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                480,
+                870,
+                686
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to the scheme of the oscillation loop and the frequency measurement circuit in Figure 8, the PCB circuit is designed and debugged with the mechanical structure. The prototype of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer shown in Figure 11 is achieved. The circuit has succeeded in tracking "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                866,
+                922,
+                926
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                226,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "697 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                921,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the natural frequency of resonators. The waveform of harmonic suppression by PLL is shown in Figure 12. Due to the nonlinearity of the plane resonator and the influence of the electrostatic force applied on the electrostatic coupling comb, the output of the pre-amplifier has some harmonic signal and noise, shown in Figure 12A. The output of PLL will be locked in the dominant frequency, which will benefit suppression of the harmonic signal and noise, shown in Figure 12B. To confirm the feasibility of the detection principle of acceleration, the mechanical sensitivity of the single-plane resonator is measured in different bias voltages, shown in Figure 13. The mechanical sensitivity only has  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15.2\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the 25-V bias voltage. The measured mechanical sensitivity is obviously smaller than that of the theory. The main reason is that the fabricated gap is larger than that of the design. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                93,
+                922,
+                274
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7d63af4d35dbe2c6f745fb1e40565d2ef56024d24ceb6c5e4d857912cb819634.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                374,
+                283,
+                623,
+                460
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/60f37c3fe6af6b4629fb628a1377be92056ff464cd40a0a9af531fc935549645.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 11. The prototype of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(A) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                157,
+                505,
+                489,
+                652
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/83e91fe16874422e9ea562b20cc7b1a0a5bbbc65cea7813f9a7983e80464b20b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 12. The waveform of harmonic suppression by PLL. (A) The waveform before PLL; (B) The waveform after PLL and BPF. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                505,
+                840,
+                653
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The system performance experiment is shown in Figure 14 and Table 3. The system bandwidth is mainly limited by the circuit instead of the structure chip. A multi-cycle synchronous frequency measurement method is adopted to measure the frequency of the resonator in the FPGA circuit, shown in Figure 8. In order to ensure the measurement accuracy of frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.01\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a time window of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.02\\mathrm{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is set up. In the period of the time window, one counter is used to calculate the number of pulses in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{MHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; the other counter is used to calculate the number of cycles of the resonator frequency at the same time. The resonator frequency can be measured by the values of the counters. Therefore, the system circuit bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is mainly decided by the time window. Additionally, the mechanical bandwidth should be larger than that of the system circuit. "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                745,
+                922,
+                925
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "698 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f2f9dcc38ad4181575fb7dbb7ba0853b460450b2749618469bc15620ffda2d51.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 13. The relation curve between the mechanical sensitivity of the single-plane resonator and the bias voltage applied on the electrostatic coupling comb. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                307,
+                93,
+                690,
+                300
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1f98bdef3ec94c3e991eb74d459441e47514e478af9f6b8e717bc9989772ecb3.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                119,
+                369,
+                480,
+                559
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3e369eeb168b16cca5fa3d191df13f2efb504682f577209a2508c3c9fb45c513.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                500,
+                385,
+                894,
+                542
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b016f522b4c123fd6647760d7384d1a8cd2d0900e118ce8aace6811127445a13.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 14. The system performance experiment. (A) The curve of output frequency versus input acceleration; (B) The curve of bias stability of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer; (C) The Allan variance curve of the bias drift of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                240,
+                565,
+                759,
+                762
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "699 "
+                    }
+                ]
+            },
+            "bbox": [
+                884,
+                54,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/f7ba87c878c1beca3076e454a1b0fbc1bef93e6d6b2f1a0d59bedbcdf3cb4b0e.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3. The system performance experiment results. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td colspan=\"2\">Test Parameter (Units)</td><td>z-axis</td></tr><tr><td colspan=\"2\">Dynamic range (g)</td><td>10</td></tr><tr><td colspan=\"2\">Scale factor (Hz/g)</td><td>31.65</td></tr><tr><td colspan=\"2\">Scale factor repeatability (%)</td><td>0.85</td></tr><tr><td colspan=\"2\">Scale factor non-linearity (%)</td><td>4.49</td></tr><tr><td colspan=\"2\">Scale factor asymmetry(%)</td><td>23.29</td></tr><tr><td colspan=\"2\">Zero bias (g)</td><td>48.54</td></tr><tr><td rowspan=\"2\">Cross axis sensitivity(%)</td><td>x-axis</td><td>5.67</td></tr><tr><td>y-axis</td><td>1.45</td></tr><tr><td rowspan=\"2\">Zero bias stability (μg)</td><td>Standard deviation (1σ)</td><td>727.0</td></tr><tr><td>Allan variance</td><td>222.2</td></tr><tr><td colspan=\"2\">Rate random walk (μg/√s)</td><td>32.6</td></tr><tr><td colspan=\"2\">Bandwidth (Hz)</td><td>50</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                265,
+                114,
+                732,
+                374
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scale factor experiment was carried out using the goniometer. By changing the angle of the goniometer, the different acceleration rates are input along the input axis. Figure 14A shows the relationship between the input acceleration and the output resonant frequency. The scale factor of the resonant accelerometer along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "31.65\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The frequency sensitivity of the resonant accelerometer has to compromise with the scale factor non-linearity and dynamic range. In order to increase the sensitivity, the torsional beam width of the torsional accelerometer shown in Figure 1 should be decreased. However, too thin of a torsional beam will lead to the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis translational displacement of the whole torsional proof mass, which will cause the non-linearity of the scale factor. Additionally, the excessive sensitivity will give rise to the large rotational displacement of the whole torsional proof mass and, finally, limit the dynamic range. The cross axis sensitivity of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis shown in Table 3 is measured. Obviously, the cross axis sensitivity of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis is larger than that of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis. The main reason is that the stiffness of the torsional beam along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis is softer than that of the torsional beam along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis, shown in Figure 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                390,
+                917,
+                649
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 14B shows the static bias drift of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer when zero acceleration is applied. The obtained equivalent bias drifts are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "727.0~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\sigma"
+                    },
+                    {
+                        "type": "text",
+                        "content": " standard deviation. The Allan variance curve of the bias drifts is shown in Figure 14C. The bias stability of Allan variance is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "222.2~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the rate of the random walk is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "32.6~\\mu \\mathrm{g} / \\sqrt{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Finally, the performance test results of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer are summarized in Table 3. The results demonstrate that the principle of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer is feasible. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                653,
+                917,
+                771
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                789,
+                206,
+                806
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The design, simulation, fabrication and experiment of a new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer based on electrostatic stiffness are presented in the paper. The structure of the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer is illuminated firstly. The sensitive theory of the acceleration is investigated, and the equation of the scale factor is deduced under ideal conditions. The simulation is implemented to verify the basic principle of the torsional accelerometer and the plane resonator individually by Ansys. The structure "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                824,
+                917,
+                921
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                54,
+                220,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "700 "
+                    }
+                ]
+            },
+            "bbox": [
+                885,
+                55,
+                917,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "simulation results prove that the effective frequency of the torsional accelerometer and the plane resonator are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.66\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.3\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. Additionally, the interference modes are apparently isolated with the effective mode. Then, the new structure is fabricated by the standard three-mask DDSOG process and is encapsulated by parallel seam welding. Finally, the detecting and control circuit for the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer is designed to achieve closed-loop self-oscillation, to trace the natural frequency of the resonator and to measure the frequency. Experimental results show that the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant accelerometer has a scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "31.65\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "727~\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis and a dynamic range of over  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which proves that the new  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis resonant micro-accelerometer is practicable. Future work includes reducing the nonlinearity and improving the performance. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                93,
+                922,
+                274
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                290,
+                243,
+                307
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors thank Guizhen Yan at Peking University for her hard work on the MEMS processes to achieve the sensors chips. Additionally, this work is supported by National Natural Science Foundation of China (Contract Number: 61104217 and U1230114), the Eleventh Peak Talents Programme Foundation in the Six New Industry Areas and the China Academy of Space Technology (CAST) Innovation Foundation. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                323,
+                922,
+                422
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Author Contributions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                439,
+                275,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The contributions from Bo Yang encompassed the structure design and the theoretical analysis. Xingjun Wang and Xiaojun Liu were mainly focusing on the design of the oscillation loop and the frequency measurement circuit, as well as the experiments. Bo Dai was responsible for the structure simulation. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                473,
+                922,
+                551
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflicts of Interest "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                568,
+                258,
+                586
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors declare no conflict of interest. "
+                    }
+                ]
+            },
+            "bbox": [
+                102,
+                603,
+                450,
+                619
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                638,
+                181,
+                654
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1. Comi, C.; Corigliano, A.; Langfelder, G. A Resonant Microaccelerometer with High Sensitivity Operating in an Oscillating Circuit. J. Microelectromec. Syst. 2010, 19, 1140-1152. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2. Tocchio, A.; Caspani, A.; Langfelder, G.; Longoni, A.; Lasalandra, E. Resolution and Start-up Dynamics of MEMS Resonant Accelerometers. In Proceedings of the 2011 IEEE Sensors, Limerick, Ireland, 28-31 October 2011; pp. 161-164. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3. Ferrari, V.; Ghisla, D.; Taroni, A. Silicon resonant accelerometer with electronic compensation of input-output cross-talk. Sens. Actuators A 2005, 123-124, 258-266. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4. Seshia, A.-A.; Palaniapan, M.; Roessig, T.-A. A Vacuum Packaged Surface Micromachined Resonant Accelerometer. J. Microelectromec. Syst. 2002, 11, 784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5. Levy, R.; Le, T.-O.; Masson, S.; Ducloux, O.; Janiaud, D.; Guérard, J.; Gaudineau, V.; Chartier, C. An integrated resonator-based thermal compensation for Vibrating Beam Accelerometers. In Proceedings of the 2012 IEEE Sensors, Taipei, Taiwan, 28-31 October 2012; pp. 1-5. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                671,
+                921,
+                933
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                70
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "701 "
+                    }
+                ]
+            },
+            "bbox": [
+                884,
+                54,
+                915,
+                68
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6. Xia, G.-M.; Qiu, A.-P.; Shi, Q.; Su, Y. Test and evaluation of a silicon resonant accelerometer implemented in SOI technology. In Proceedings of the 2013 IEEE SENSORS, Baltimore, MD, USA, 3-6 November 2013; pp.1-4. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7. Su, S.-X.-P.; Yang, H.-S.; Agogino, A.-M. A Resonant Accelerometer with Two-Stage Microleverage Mechanisms Fabricated by SOI-MEMS Technology. IEEE Sens. J. 2005, 5, 1214-1213. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8. Hwang, D.-H.; Chin, K.-P.; Lo, Y.-C. Structure design of a 2-D high-aspect-ratio resonant microbeam accelerometer. J. Microlith. Microfab. Microsyst. 2005, 4, doi:10.1117/1.2037070. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9. Yang, B.; Zhao, H.; Dai, B.; Liu, X. A new silicon biaxial decoupled resonant micro-accelerometer. Microsyst. Technol. 2014, doi:10.1007/s00542-014-2097-8. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10. Sung, S.; Lee, J.-G.; Lee, B. Design and performance test of an oscillation loop for a MEMS resonant accelerometer. J. Micromech. Microeng. 2003, 13, 246-253. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11. Sung, S.; Lee, J.-G.; Kang, T. Development and test of MEMS accelerometer with self-sustained oscillation loop. Sens. Actuators A 2003, 109, 1-8. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12. Sung, S.; Hyun, C.; Lee, J.-G. Resonant Loop Design and Performance Test for a Torsional MEMS Accelerometer with Differential Pickoff. Int. J. Control Autom. Syst. 2007, 5, 35-42. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13. Shang, Y.; Wang, J.; Tu, S. Z-axis differential silicon-on-insulator resonant accelerometer with high sensitivity. Micro Nano Lett. 2011, 6, 519-522. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14. Zhu, R.; Zhang, G.-P.; Chen, G.-W. A Novel Resonant Accelerometer Based on Nanoelectromechanical Oscillator. In Proceedings of the 2010 IEEE 23rd International Conference on Micro Electro Mechanical Systems (MEMS), Hong Kong, China, 24-28 January 2010; pp. 440-443. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15. Trusov, A.-A.; Zotov. S.-A.; Simon, B.-R.; Shkel, A.-M. Silicon Accelerometer with Differential Frequency Modulation and Continuous Self-Calibration. In Proceedings of the 2013 IEEE 26th International Conference on Micro Electro Mechanical Systems (MEMS), Taipei, Taiwan, 20-24 January 2013; pp. 29-32. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "16. Yang, B.; Dai, B.; Zhao, H.; Liu, X.-J. A new silicon triaxial resonant micro-accelerometer. In Proceedings of the 2014 International Conference on Information Science, Electronics and Electrical Engineering (ISEE), Sapporo, Japan, 26-28 April 2014; pp. 1283-1286. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                93,
+                919,
+                676
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2015 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/). "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                693,
+                919,
+                752
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors 2015, 15 "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                54,
+                223,
+                68
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "702 "
+                    }
+                ]
+            },
+            "bbox": [
+                882,
+                54,
+                917,
+                68
+            ]
+        }
+    ]
+]

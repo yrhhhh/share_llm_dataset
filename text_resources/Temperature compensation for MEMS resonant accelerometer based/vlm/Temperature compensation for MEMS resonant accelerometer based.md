@@ -1,0 +1,359 @@
+# Temperature compensation for MEMS resonant accelerometer based on genetic algorithm optimized backpropagation neural network
+
+![](images/a9c06c9ff0783317f18cb48b13167b50c1ad8fb5ff5fc8b8694fb68fbeb4c29a.jpg)
+
+Shudong Wang $^{a,b,1}$ , Weilong Zhu $^{a,1}$ , Yajing Shen $^{b}$ , Juan Ren $^{c}$ , Hairong Gu $^{c}$ , Xueyong Wei $^{a,*}$
+
+$^{a}$ State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an, 710049, China   
+<sup>b</sup> Mechanical and Biomedical Engineering Department, City University of Hong Kong, Hong Kong, SAR 999077, China   
+$^{c}$ School of Construction Machinery, Chang'an University, Xi'an, China
+
+# ARTICLE INFO
+
+Article history:
+
+Received 13 June 2020
+
+Received in revised form
+
+18 September 2020
+
+Accepted 19 October 2020
+
+Available online 24 October 2020
+
+Keywords:
+
+MEMS resonant accelerometer
+
+Temperature drift compensation
+
+Backpropagation neural network
+
+Genetic algorithm
+
+# ABSTRACT
+
+Temperature compensation with high accuracy is crucial for improving the performance of MEMS resonant accelerometers. In this paper, we propose an effective temperature compensation method based on the backpropagation neural network (BP-NN). First, we analyzed the relationship among the input acceleration, the environmental temperature, the output frequencies, and the scale factor of a MEMS resonant accelerometer through the traditional polynomial fitting method. After that, we introduced the BP-NN improved by genetic algorithm (GA). Numerous experiments were performed to train the BP-NN model and establish the relationships between the input layer and the output layer. Comparison between single-beam working mode and symmetrical double-beam working mode of the MEMS resonant accelerometer proved that the latter had a better temperature compensation effect due to its minimized error caused by temperature measurement. Experimental results show that the maximum error of our approach is 0.017 % over the whole temperature range from -10°C to 80°C, which is 173-times better than the traditional polynomial fitting method.
+
+© 2020 Elsevier B.V. All rights reserved.
+
+# 1. Introduction
+
+High-performance MEMS resonant accelerometers are playing an increasingly important role in military, industrial, and consumer electronics fields [1-3]. However, the poor temperature characteristic of silicon has been one of the main reasons for the accuracy loss of silicon-based sensors. In the cases of MEMS resonant accelerometers, when the external temperature changes, the characteristic frequency and scale factor of the sensing elements shift accordingly [4], causing unacceptable measurement error. Therefore, studies on temperature drift compensation have drawn increasing attention recently [5,6]. In general, there are mainly two kinds of techniques, i.e., the hardware compensation methods, and the software compensation methods.
+
+The hardware compensation mainly aims at optimizing topology structures of the sensors [7,8], e.g., thermal isolation frames and stress relief anchors, or adopting a constant temperature oven to control the operating temperature [9]. Theoretically, the tempera
+
+ture coefficient of the silicon and the uneven thermal stress induced by temperature are the main reasons that cause bias temperature drift. Therefore, isolation frames with a single [10] or multiple [11] layers have been developed to reduce the thermal stress between the sensor chip and the package. Besides, stress insensitive anchor can also help to improve the zero-biased stability of the sensing elements [12]. The on-chip micro-oven is another approach that can keep the device operating at a constant high temperature through the Joule heating of resistors [13]. The temperature is generally measured through an additional device (thermometer, resonator, etc.), thereby achieving the feedback control on the environmental temperature [14]. This method can theoretically eliminate the effect of temperature in a wide working range, while the system will suffer from high power consumption and large thermal noise. Degenerately doping silicon to modify the temperature coefficient has also been recently proven an effective approach, which can greatly reduce the temperature drift of Young's modulus [15,16]. Forty-folded reduction in temperature drift over the industrial range can be easily achieved through homogenous composite [17]. The advantage of hardware compensation lies in the improvement of the sensor robustness with no need for any calibration experiments, thus suitable for volume production and wide applications.
+
+However, a residual error will last in the end, which affects the accuracy of the sensor.
+
+The software compensation method is to establish a temperature drift compensation model by studying the variation law between the accelerometer output and the external temperature. Common methods mainly include differential compensation [18], polynomial fitting compensation [19], and neural network fitting compensation [20,21]. Differential compensation approach, namely linear fitting compensation approach, is the most common method to reduce the temperature sensitivity [22]. In the cases when thermal stress can be ignored, the first-order temperature coefficient can be perfectly eliminated by the symmetrical arrangement of two sensing elements [23]. To further reduce the high order temperature coefficient, the polynomial fitting compensation method has been proposed, and the measurement accuracy of the accelerometer is improved for at least one order of magnitude [24]. Recently, temperature compensation models established through the neural network are also widely applied, and various algorithms based on the neural network are investigated to improve the accuracy of the compensation model, such as artificial neural network [25-27], Elman neural network [28], radial basis function neural network [29], Levenberg-Marquardt neural network [30], etc. Recently, a novel temperature-frequency drift suppression approach based on electrostatic stiffness softening was reported [31]. Such a method can realize a high temperature stability of the silicon resonator across a testing span of $70^{\circ}\mathrm{C}$ , which gives another way of temperature compensation.
+
+Software compensation generally requires calibration in advance to obtain a large amount of training data. Compared to the hardware compensation method with the high cost and certain limitations, the real-time software compensation method seems to be a more promising approach for increasing the performance of MEMS accelerometers, which can minimize the measurement error to very low. However, most of the previous reports only focused on the zero-biased drift of the sensor under different temperatures, while ignoring the nonlinear scale factor caused by temperature coefficient. In this work, two compensation models based on the polynomial fitting method and BP-NN approach were proposed. After numerous calibration experiments on the characteristic frequency and the scale factor, both models were trained, and the precise correlation parameters were obtained. By comparison, the BP-NN model owns higher accuracy, since it can reduce the compensation error to the same level as the intrinsic error of the sensor. The organization of the paper is as follows: Section 2 introduces the model of the MEMS resonant sensor, and analyzed the relationship among acceleration, temperature, and frequency output through the polynomial fitting method and BP-NN approach; Section 3 shows the experimental setup; Section 4 gives the results of the calibration experiments and discusses the error introduced by the compensation methods; The summary and future works are given in Section 5.
+
+# 2. Modeling of the sensor
+
+The structure of the MEMS accelerometer is shown in Fig. 1. It consists of a proof mass and six identical double-ended tuning forks (DETFs) radially arranged around it, and the phase displacement between every two DETFs is 60 degrees. When subjected to an external in-plane acceleration, the proof mass displaces, inducing tension or compression stress on each DETF thereby resulting in the frequency shifts of the DETFs [32],
+
+$$
+\Delta f = f _ {0} \left(\sqrt {1 + \frac {\varepsilon \times P}{E}} - 1\right) \tag {1}
+$$
+
+Where $f_{0}$ is the natural frequency of the DETF, $\varepsilon$ is structure related parameter, $P$ is the axial force applied on the resonant beam, $E$ is Young's modulus of silicon.
+
+# 2.1. Temperature sensitivity of the DETFs
+
+According to formula (1), the temperature sensitivity of the DETFs is only related to the temperature coefficient of Young's modulus. However, previous reports show that thermal stress caused by temperature changes can directly affect the frequency output of the resonant sensors, including accelerometers [33] and gyroscopes [34]. Thermal stress is generally induced by the mismatching thermal expansion coefficients of the sensor chip, the adhesive, and the chip carrier [8].
+
+In our cases, the sensor chip was mounted on a side-brazed ceramic package through the silver conductive epoxy adhesive. Since the proof mass is not in the center of the sensor chip, as shown in Fig. 2a, the distribution of thermal stress is uneven. It is nearly impossible to obtain an accurate stress distribution through numerical calculation. Therefore, we did a finite element analysis on the model. The model mainly includes the sensor structure, the silicon frame (coefficient of thermal expansion is $2.6~\mathrm{ppm / K}$ ), and the adhesive (coefficient of thermal expansion is $38.5~\mathrm{ppm / K}$ ), as shown in Fig. 2b.
+
+The inertial temperature of the model was $293.15\mathrm{K}$ , and the structure was assumed to have no internal stress at this condition. When the temperature increased or decreased, the materials expanded or shrank thereby inducing thermal stress on the six DETFs. We analyzed the frequencies under different temperatures, as shown in Fig. 3. When the thermal expansion was not considered, the resonant frequencies of the DETFs were only related to the elastic matrix of silicon and decreased proportionally with the temperature (Fig. 3a). The temperature coefficients of the DETFs in the same crystal orientation are almost the same. However, when thermal expansion was considered, things are quite different, as shown in Fig. 3b. All the temperature coefficients became far from the expected values and different from each other. Besides, the thickness of the adhesive will also affect the thermal stress, so the manual adhesion process will further increase the unevenness of the thermal stress.
+
+Due to the unpredictable temperature coefficient induced by thermal stress, the traditional differential method is no longer applicable in this condition [35]. Therefore, we propose the temperature compensation model based on polynomial fitting and neural network.
+
+# 2.2. Polynomial fitting method based on single-beam working mode
+
+For single-beam working mode (the output of a single tuning fork is used to calculate the in-plane acceleration) of MEMS accelerometer, the relationship between acceleration and the resonant frequency of the beam can be expressed by:
+
+$$
+f = f _ {0} (T) + S F (T) a \tag {2}
+$$
+
+Where, $f$ is the resonant frequency of the beam, $f_{0}(T)$ is the zero-biased frequency related to the temperature, $SF(T)$ is the scale factor at different temperatures, $a$ is the external acceleration.
+
+Substituting $f_{0}(T)$ , and $SF(T)$ into Eq. (1) yields:
+
+$$
+f = A + B T + C T ^ {2} + D T ^ {3} + \dots + \left(E + F T + G T ^ {2} + H T ^ {3} \dots\right) a \tag {3}
+$$
+
+The corresponding value of acceleration goes
+
+$$
+a = \frac {f - (A + B T + C T ^ {2} + D T ^ {3} + \cdots)}{E + F T + G T ^ {2} + H T ^ {3} \cdots} \tag {4}
+$$
+
+![](images/2bfc3549f2a0f8d7aebe223748ce683d26a9311beff21118ba321f3550ed003d.jpg)  
+Fig. 1. Design of the MEMS accelerometer.
+
+![](images/e0d50ecfd256764411b10d4d6e30f2d02d16d2733f220f3389d4e53f02bab211.jpg)
+
+![](images/cce84999e75a7c2a979248dfd628598c1e2b159e9b852165e2478a39bc2f3a04.jpg)  
+Fig. 2. (a) Micrograph of the sensor chip. (b) Expansion of the sensor under $303.15\mathrm{K}$ .
+
+![](images/dff354baf4f9445ef24d3c4cced5daf997541ceec53e42f86d52796946e767b8.jpg)
+
+![](images/27126266e3a920e054099ec9a409d1d037042436e9942e19077c5bc390a1b7c1.jpg)  
+Fig. 3. (a) TCFs when thermal expansion was not considered. TCFs of DETF 3, 4, 5, and 6 are almost the same. (b) TCFs when thermal expansion was considered. TCFs are quite different from each other.
+
+Note that there are several unknown parameters in the above equation, $A, B, C, D, E, F, G$ , etc., which can be determined during the calibration tests. Through the experiments, we can obtain multiple groups of $a, f, T$ , and then carry out polynomial fitting to solve the unknown parameters. The order of the polynomial fitting model can be crucial to the accuracy: a low order may lead to unacceptable error, while a high order may lead to the oscillation of the fitting curve. The accuracy of the single-beam working mode lies in the measurement of $T$ in the test samples. However, due to the slow rate of heat transfer, it is difficult to accurately obtain the real temperature of the sensor chip simply through the reading of the
+
+thermometer. In this way, a huge error will be introduced, thus affecting the results of the compensation method.
+
+# 2.3. Polynomial fitting method based on symmetrical double-beam working mode
+
+Due to the disadvantages of the single-beam working mode, we further propose the symmetrical double-beam working mode (the output of two symmetrical tuning forks are used to calculate the in-plane acceleration) for optimization. The advantage of this approach lies in its decoupling of the temperature through two
+
+![](images/14102d6eb638b4a01b0a5008dcb21465c110f6a7fab9bd0f0a4b6da903facaa2.jpg)  
+Fig. 4. Schematic diagram of the BP-NN.
+
+DETFs, thereby reducing the effect caused by temperature measurement inaccuracies. The relationship among these parameters can be described:
+
+$$
+\left\{ \begin{array}{l} f _ {1} = f _ {0 1} (T) + S F _ {1} (T) a \\ f _ {2} = f _ {0 2} (T) - S F _ {2} (T) a \end{array} \right. \tag {5}
+$$
+
+Similarly, substituting $f_{01}(T), f_{02}(T), SF_1(T)$ and $SF_2(T)$ into Eq. (4) yields:
+
+$$
+\left\{ \begin{array}{l} f _ {1} = A _ {1} + B _ {1} T + C _ {1} T ^ {2} + D _ {1} T ^ {3} + \dots + \left(E _ {1} + F _ {1} T + G _ {1} T ^ {2} + H _ {1} T ^ {3} \dots\right) a \\ f _ {2} = A _ {2} + B _ {2} T + C _ {2} T ^ {2} + D _ {2} T ^ {3} + \dots + \left(E _ {2} + F _ {2} T + G _ {2} T ^ {2} + H _ {2} T ^ {3} \dots\right) a \end{array} \right. \tag {6}
+$$
+
+Theoretically, when all the unknown parameters are calibrated, the relations among $f_{1}, f_{2}$ , and $a$ can be obtained after solving the Eq. 5,
+
+$$
+a = k _ {0} + k _ {1} f _ {1} + k _ {2} f _ {2} + k _ {3} f _ {1} f _ {2} + k _ {4} f _ {1} ^ {2} + k _ {5} f _ {2} ^ {2} \dots = f \left(f _ {1}, f _ {2}\right) \tag {7}
+$$
+
+where $k_{0}, k_{1}, k_{2}, k_{3}, k_{4}$ , and $k_{5}$ are the weighting factor obtained through calculation. Note that Eq. (7) does not contain the temperature, thus avoiding the error introduced by the measurement of the temperature value.
+
+# 2.4. BP-NN compensation method based on GA
+
+The polynomial fitting method still lacks accuracy when they are applied to MEMS accelerometers. On the one hand, the inaccuracy of the fitting model will introduce a systematic error. Although this error is generally smaller than $3\%$ FS, it is still too large compared to the micro-g resolution of the MEMS accelerometers. On the other hand, it fails to consider the high-order nonlinearities in the sensor errors [36]. Fortunately, the NN-based fitting method owns the merit of strong nonlinear mapping ability, which can dramatically reduce the fitting error thereby improving the performance of the system [37].
+
+A typical BP-NN is composed of the input layer, the middle layer (namely the hidden layer), and the output layer, as shown in Fig. 4. In our case, there are two input nodes (the measured frequencies of DETF 2 and 5) and one output node (the acceleration). The number of nodes in the hidden layer is crucial for the accuracy of the system, while the optimal value is difficult to precisely determine. Theoretically, multiple hidden nodes can approximate any smooth mapping to any accuracy [38,39], while it makes the system more
+
+Table 1 Structural dimensions of the accelerometer.   
+
+<table><tr><td>Length of the resonant beam</td><td>200 μm</td></tr><tr><td>Width of the resonant beam</td><td>3 μm</td></tr><tr><td>Thickness of the structural layer</td><td>10 μm</td></tr><tr><td>Typical natural frequency of the DETFs</td><td>320 kHz</td></tr><tr><td>Weight of the proof mass</td><td>190 μg</td></tr><tr><td>Magnification factor of the microlever</td><td>32</td></tr><tr><td>Die area</td><td>5.5 mm * 5 mm</td></tr></table>
+
+prone to fall in bad local minima [40]. In this work, the following formula was used to select the number of hidden layer neurons:
+
+$$
+c = \sqrt {m + n} + d \tag {8}
+$$
+
+Where, $m$ is the number of neurons in the input layer, $n$ is the number of neurons in the output layer, and $d$ is the constant between 1~10. According to the above Eq. (8), the number of neurons can be calculated to be between 3 and 12. We analyzed on each case and made a tradeoff between the training speed and the predicted error. The number of the hidden nodes was finally selected to be 8.
+
+Hence, the temperature compensation model can be established.
+
+$$
+a = \varphi \left[ \sum_ {j = 1} ^ {8} \mu_ {j k} f \left(\sum_ {i = 1} ^ {2} w _ {i j} x _ {i} + b _ {j}\right) + b _ {0} \right] \tag {9}
+$$
+
+Where, $a$ is the output acceleration after compensation, $\varphi$ is the linear transfer function (namely purelin) of the output layer, $x = (f_1,f_2)$ is the resonant frequency of the two symmetrical beams, $f$ is the activation function of the hidden layer (namely S-type transfer function), $w_{ij}$ and $\mu_{jk}$ are weight between the two connected layers, $b_{j}$ is the threshold of the corresponding neuron, $\varepsilon$ is the error between the calculated value and the true value. In practice, large amounts of data need to be fed into the model so that the neural network automatically trains the value of the above parameters to find a minimized $\varepsilon$ . However, due to the inherent disadvantages of BP-NN, the training speed could be slow, and the robustness of the system is not satisfactory. Therefore, based on the above model, we adopted genetic algorithm (GA) for optimization.
+
+GA is a universal optimization algorithm to improve the efficiency of solving global optima, thereby leading to a higher convergence rate and smaller error of the model [41]. As demonstrated in Fig. 5, the optimization algorithm mainly consists of three steps. First, the topology of the BP-NN is determined and the parameters are initialized. Then, the weight and threshold are globally optimized by GA and the optimal individual is assigned to BP-NN. Finally, the predicted error is determined and a higher precision BP-NN model is built.
+
+# 3. Setup of the calibration experiment
+
+# 3.1. Testing circuit of the sensor
+
+The accelerometer was fabricated through a standard SOI-MEMS technology, including silicon doping, metal sputtering, silicon patterning, substrate patterning, and protection layer removal. Some of the dimensions of the sensor are shown in Table 1. The sensor chip was placed inside a DIP-24 ceramic package, while the metal pads on the chip were bonded with the pins through gold wires. The chip was sealed in vacuum (pressure $< 0.5$ Torr) through a combo lid to provide an electromagnetic isolation environment and a low damping ratio.
+
+As demonstrated in Fig. 6, the test circuit consists of a lock-in amplifier and a current amplifier. The DETF was excited by a frequency-sweeping electrostatic force and its vibration was picked up through the capacitance plate. The motional current is amplified
+
+![](images/3df105b351fbba4cdc6cb47e08f8f880941d92d915c23ef74f407e44981e5858.jpg)  
+Fig. 5. Flowchart of the temperature compensation approach based on GA-BP neural network.
+
+![](images/cf104db4b4950fe21e5f376840a64f9a54d314a4cf8489c98e031072998272db.jpg)  
+Fig. 6. Testing circuit of a single DETF.
+
+by the current amplifier and transmitted back to the lock-in amplifier. During the open-loop test, we can obtain a Lorentz curve of the DETF, and the highest point of the curve was regarded as the natural frequency of the corresponding resonator [1]. The lock-in amplifier was hence utilized to construct high Q-factor oscillators to achieve real-time frequency output of the DETFs.
+
+# 3.2. Thermal calibration system setup
+
+A large amount of sensor data should be acquired before the training of the temperature compensation model. Therefore, we built a thermal calibration system as shown in Fig. 7, which includes a high-precision rotary table, a thermostat, a resonant accelerometer, and the testing circuit. The model of our rotatory table is HT100RA100 (Beijing Jiangyun Juli Technology Co., LTD.), and its accuracy is 0.005 degrees (maximum acceleration error $= 87\mu \mathrm{g}$ @ 0 degree). In this way, there exists a systemic error in our experimental setup. Note that this error will affect both the polynomial fitting approach and the neural network method, so the comparison results between the two are still valid. The model of the thermostat is TC-30 (He Fei Tong Bu Test Equipment Co., LTD.), and its nominal fluctuation is $\pm 0.5^{\circ}C$ . The inaccuracy of the temperature will lead to an error of the polynomial method, as it needs the real temperature value during the fitting. However, the drift of the temperature will not affect the double-beam neural network method, as it doesn't need the temperature as the input value. The only error can be induced is that caused by the inconsistent temperature of the two DETs, which is nearly negligible due to the close distance between them.
+
+The sensor was vertically installed on the rotary table to apply an amplitude-constant acceleration with a variable direction to the proof mass. The thermostat can precisely control the ambient temperature of the sensor, thereby observing the performance of it under different conditions. The electrical signal of the sensor was transmitted to the locking amplifier through the BNC-SMA cables, and the frequency output was captured and displayed in real-time. Due to the small bandwidth of the lock-in amplifier, we further built a self-excitation oscillator [1]. In this way, when the frequency shift of the DETF is large, a frequency counter will be utilized to read its output.
+
+The installation errors will seriously affect the accuracy of testing results. In our cases, the sensor was embedded in the PCB and bolted to the rotary table, as shown in Fig. 8a. Theoretically, the initial axial direction of the DETF 2 should be parallel to the Y-axis and orthogonal to the X-Z plane. However, during the bonding of the sensor chip and installation of the ceramic package, there existed inevitable errors. In this way, there are two main sources of the installation errors, i.e., inclination in the Y-Z plane $(\delta_{1})$ and the X-Z plane $(\delta_{2})$ , whose effects are demonstrated in Fig. 8b.
+
+Inclination $\delta_{1}$ will lead to a phase shift of the measured acceleration, and can be evaluated by the following formula:
+
+$$
+\frac {f _ {\theta_ {i}} - f _ {- \theta_ {i}}}{\sin (\theta_ {i} + \delta_ {i}) - \sin (- \theta_ {i} + \delta_ {i})} = \frac {f _ {9 0} - f _ {2 7 0}}{2 \sin (\delta_ {i})} \tag {10}
+$$
+
+where, $f_{\theta_i}, f_{-\theta_i}, f_{90}, f_{270}$ are the frequency values corresponding to the rotation angle $\theta_i, -\theta_i, 90^\circ, 270^\circ$ . After serval times of calibration, we can obtain the inclination error:
+
+$$
+\delta_ {1} = \frac {\sum \delta_ {i}}{i} = 2. 2 5 7 4 ^ {\circ} \tag {11}
+$$
+
+The error $\delta_{2}$ will cause a shrink of the scale factor. During the rotation, the component of gravitational acceleration applied on the axis of the DETF will be changed to $\sin (\theta_i)(1 - \cos (\delta_2))$ , thereby introducing a systematic calibration error. Fortunately, for the same
+
+![](images/3fe733f05e965b51a17e93d1a1696af51dd7f250380beafbebcc180e00d19ac8.jpg)  
+Fig. 7. Setup of the calibration system.
+
+![](images/5eaa5637fd3b174ef2bf8faa055ec85c0fdc8ed86809bbc2bbbf7dbf17b0625b.jpg)
+
+![](images/fc25267b63d2060dcc6c28e27265510c9cda7f29e7c30a34f541ca424627ab16.jpg)  
+Fig. 8. Schematic diagram of the sensor installation error (a) and their effects (b).
+
+sensor chip, this error is a constant, so it can be eliminated by calibration experiment.
+
+# 4. Error analysis of the compensation model
+
+# 4.1. Thermal calibration results and the polynomial fitting
+
+During the calibration test, the environmental temperature was changed from $-10^{\circ}\mathrm{C}$ to $80^{\circ}\mathrm{C}$ with a step of $5^{\circ}\mathrm{C}$ , and each stage was maintained for an hour to minimize the error caused by a low rate of thermal conduction. Meanwhile, the rotary table was rotated from -90 degrees to 90 degrees to induce $\pm 1\mathrm{g}$ acceleration variation on the resonant accelerometer.
+
+Fig. 9a and b shows the zero-biased frequency output of DETF 2 and DETF 5 under different temperatures, respectively. As the temperature increased, both characteristic frequencies decreased, with a linear fitted thermal sensitivity of $-107.15\mathrm{ppm} / {}^{\circ}\mathrm{C}$ ( $R^2 = 0.982$ ) and $-281.21\mathrm{ppm} / {}^{\circ}\mathrm{C}$ ( $R^2 = 0.998$ ). Note that they are much higher than the temperature coefficient of silicon $(-26\mathrm{ppm} / {}^{\circ}\mathrm{C})$ , which coincides with our simulation. Although linear fitting of the characteristic frequency can describe the variation tendency, it still lacks accuracy (maximum residual $>100\mathrm{mg}$ ). Therefore, we introduced the third-order polynomial fitting approach, which effectively minimized the residual to $16\mathrm{mg}$ .
+
+We further analyzed the variation of the scale factors under different conditions, as demonstrated in Fig. 9c and d. At each temperature, the accelerometer was rotated for 180 degrees and the frequencies were recorded through the open-loop testing circuit. As can be seen, the scale factor of DETF 2 goes down with the temperature, while that of the DETF 5 goes up. On the one hand, the scale factor is influenced by Young's modulus of silicon. On the other hand, the uneven thermal stress caused by manufacturing error will also play an important role. Note that all the parameters
+
+have been measured multiple times to eliminate the random error caused by a single experiment.
+
+According to the analysis, we obtain the polynomial fitting compensation model of the two DETFs:
+
+$$
+\begin{array}{l} f _ {D E T F 2} = 3 4 6 8 5 0. 8 3 7 - 4 8. 6 5 3 T + 0. 5 0 6 T ^ {2} - 0. 0 0 5 T ^ {3} \\ + \left(1 1 5 7. 7 8 9 - 2. 2 1 3 T + 0. 0 1 2 T ^ {2}\right) a \tag {12} \\ \end{array}
+$$
+
+$$
+\begin{array}{l} f _ {D E T F 5} = 3 1 4 5 8 1. 2 6 9 - 9 3. 0 2 0 T - 0. 3 1 7 T ^ {2} - 0. 0 1 2 T ^ {3} \\ + \left(1 0 8 3. 1 6 8 + 1. 3 0 8 T - 0. 0 0 3 T ^ {2}\right) a \tag {13} \\ \end{array}
+$$
+
+In this way, the current acceleration $a$ and external temperature $T$ can be solved. The error of this method will be discussed in the following section.
+
+# 4.2. BP-NN compensation approach
+
+To obtain more precise parameters of the BP-NN model, much training data of the sensor is needed. Therefore, two closed-loop self-excitation oscillator was built to read the frequencies of the two DETFs in real-time. We analyzed the performance of the MEMS accelerometer at 60 different acceleration/temperature states, and under each state, 106 sets of data were collected. In this way, we obtained 6360 sets of frequency-temperature-acceleration data, among which 6000 sets were randomly selected as training samples while other 360 sets were utilized for verification. Due to the instability of the oscillator, some systemic fluctuation exists in the output of the DETFs, with a typical deviation of $0.2\mathrm{Hz}$ (181 $\mu$ g when the scale factor is $1100\mathrm{Hz / g}$ ). According to Allan Deviation results of the zero biased frequency output, the short-term stability of a
+
+![](images/4826240c005334a26917775fa36f3c2072b3b2910d52256a6da9b5039ae9ea08.jpg)  
+a
+
+![](images/c53b76b49355b0046ea913245934f1a7ac809de85b00fa45adbaa9fcba4f7a2e.jpg)  
+b
+
+![](images/ab6d86348c57942002955d1fddf2be6ad66c757ea17c0cfefedbc75618ac6f58.jpg)  
+C
+
+![](images/f3516ddf970d39309a0d3c068c747e1bd311aeefae03ab439af79745612115b5.jpg)  
+d   
+Fig. 9. Thermal sensitivity of DETF 2 (a) and DETF 5 (b). Scale factor of DETF 2 (c) and DETF 5 (d) under different temperatures.
+
+![](images/b897a948ddc96779c19710be313914e4071f925abebfd55cd0e1a97f8fa03d22.jpg)  
+Fig. 10. Allan deviation of the frequency output data of a typical DETF.
+
+![](images/b448e765f4fd90093b251b089eb605874c958fd2ee70151d6dcf107388d28adb.jpg)  
+Fig. 11. Prediction error of GA optimization BP-NN compensation model.
+
+single DETF is about 100 ppb (30 $\mu$ g) at 1 s integration time, as demonstrated in Fig. 10.
+
+Then, these sets of data were fed to the BP-NN model for training to establish the model of single-beam working mode (frequency of DETF 2 as input) and double-beam working mode (frequency of DETF 2 and 5 as input). The parameters of the testing samples were utilized to analyze differences between the acceleration corresponding to the rotation angle and that calculated by the BP-NN model, as demonstrated in Fig. 11. The mean values of the error of the two models were $14.25\mu \mathrm{g}$ and $7.54\mu \mathrm{g}$ , respectively, indicating the high accuracies of the BP-NN compensation model. In addition, the double-beam working mode owns higher precision, with a predicted standard deviation of $123.25\mu \mathrm{g}$ , which is 6 times lower than that of the single-beam mode, $762.65\mu \mathrm{g}$ .
+
+We divided the test samples into ten groups according to the different temperatures, and then analyzed the standard deviation
+
+of the forecast error caused by the inherent error of the polynomial fitting model, single beam BP-NN model and double beam BP-NN model, as shown in Fig. 12 and Table. 2. A large standard deviation indicates low precision of the model and bad performance of the method. It can be found that the polynomial fitting approach owns the largest error $(25\sim 59\mathrm{mg})$ , which is 138 times higher than the deviation of the sensor output $(181~\mu \mathrm{g})$ . The BP-NN approach significantly reduces this error for tens of times to $357\sim 1840~\mu \mathrm{g}$ while the double-beam working mode even reached an error of $86\sim 342~\mu \mathrm{g}$ , which is comparable to the characteristic error of the sensor output. This means the BP-NN model (double beam) will not introduce additional errors and is therefore suitable for widely used in resonant sensor temperature compensation.
+
+![](images/169531565cd3bc7a08bdc9c8ab57f670f233810914c16cdb9b0ce0652f412268.jpg)  
+Fig. 12. The forecast errors of polynomial fitting approach, single beam GA BP-NN approach, and double beam GA BP-NN approach.
+
+Table 2 Performance of three compensation models.   
+
+<table><tr><td>Compensation model</td><td>Polynomial fitting</td><td>GA-BPNN (single beam)</td><td>GA-BPNN (double beam)</td></tr><tr><td>Maximum percentage error (%)</td><td>2.95</td><td>0.09</td><td>0.017</td></tr></table>
+
+Table 3 Comparison between this work and other reported.   
+
+<table><tr><td rowspan="2">Reference</td><td rowspan="2">Compensation model</td><td colspan="2">Compensation range</td><td rowspan="2">Sensor type</td><td rowspan="2">Error (%)</td></tr><tr><td>Temperature (°C)</td><td>Acceleration (g)</td></tr><tr><td>[30]</td><td>LM-BP</td><td>-40 ~ 60</td><td>Zero-biased</td><td>Home-made MEMS capacitive accelerometer</td><td>0.06 (nonlinearity)</td></tr><tr><td>[36]</td><td>RBF-NN</td><td>-25 ~ 55</td><td>0 ~ 1</td><td>Commercial MEMS accelerometer (LSM303DLHC)</td><td>0.68</td></tr><tr><td>[42]</td><td>AGA-BP</td><td>-20 ~ 60</td><td>-0.707 ~ 0.707</td><td>Commercial capacitive accelerometer (JSD-I)</td><td>0.38</td></tr><tr><td>[43]</td><td>Polynomial</td><td>0 ~ 140</td><td>-1 ~ 1</td><td>Commercial quartz accelerometer (JSD-II/B-MJ)</td><td>0.5</td></tr><tr><td>This work</td><td>GA-BP</td><td>-10 ~ 80</td><td>-1 ~ 1</td><td>Home-made MEMS resonant accelerometer</td><td>0.017</td></tr></table>
+
+# 5. Conclusion
+
+In this paper, we propose an effective temperature drift compensation method based on backpropagation neural network. The relationship among the zero-biased output, the scale factor, and the environmental temperature has been calibrated precisely. Through the comparison of the three models, it can be found that the BP-NN model has the lowest error, which is no more than $0.017\%$ over the whole temperature range from $-10^{\circ}\mathrm{C}$ to $80^{\circ}\mathrm{C}$ . Through the deviation analysis on the predicted error, it can be found that the polynomial fitting approach owns a large error of tens of milli-g, while the BP-NN approach can greatly reduce this error by $2\sim 3$ orders of magnitude to tens of micro-g. Compared to the state-of-art researches in Table. 3, our work shows superiority in its low error, so the developed model is proven to be suitable for temperature compensation of MEMS resonant sensors and exhibits wide application prospects. In the future, the compensation model will be combined with the hardware compensation approaches to realize an accurate real-time temperature compensation system.
+
+# CRediT authorship contribution statement
+
+Shudong Wang: Methodology, Formal analysis, Visualization, Writing - review & editing. Weilong Zhu: Investigation, Software, Data curation, Writing - original draft. Yajing Shen: Formal analysis, Supervision. Juan Ren: Resources, Validation. Hairong Gu: Resources, Investigation. Xueyong Wei: Writing - review & editing, Supervision, Project administration, Funding acquisition.
+
+# Declaration of Competing Interest
+
+The authors reported no declarations of interest.
+
+# Acknowledgments
+
+This work is financially supported by National Key R & D Program of China (2018YFB2002303) and National Natural Science Foundation of China (Grant No. 52075432). We also appreciate the support of the International Joint Laboratory for Micro/Nano Manufacturing and Measurement Technology.
+
+# References
+
+[1] S. Wang, X. Wei, Y. Zhao, Z. Jiang, Y. Shen, A MEMS resonant accelerometer for low-frequency vibration detection, Sens. Actuators A Phys. 283 (2018) 151-158.   
+[2] H. Ding, Y. Ma, Y. Guan, B.F. Ju, J. Xie, Duplex mode tilt measurements based on a MEMS biaxial resonant accelerometer, Sens. Actuators A Phys. 296 (2019) 222-234.   
+[3] Z. Fang, Y. Yin, X. He, F. Han, Y. Liu, Temperature-drift characterization of a micromachined resonant accelerometer with a low-noise frequency readout, Sens. Actuators A Phys. 300 (2019), 111665.   
+[4] P. Rajai, H. Ahmed, M. Straeten, G. Xereas, M.J. Ahamed, Analytical modeling of n-type doped silicon elastic constants and frequency-compensation of Lamé mode microresonators, Sens. Actuators A Phys. 297 (2019), 111508.   
+[5] Q. Li, D. Xiao, X. Zhou, Y. Xu, M. Zhuo, Z. Hou, et al., 0.04 degree-per-hour MEMS disk resonator gyroscope with high-quality factor (510 k) and long decaying time constant (74.9 s), Microsyst. Nanoeng. 4 (1) (2018) 1-11.   
+[6] L.Q. Nguyen, P.E. Larsen, T. Larsen, S.B. Goswami, L.G. Villanueva, A. Boisen, S.S. Keller, Pyrolytic carbon resonators for micromechanical thermal analysis, Microsyst. Nanoeng. 5 (1) (2019) 1-10.   
+[7] J. He, J. Xie, X. He, L. Du, W. Zhou, Analytical study and compensation for temperature drifts of a bulk silicon MEMS capacitive accelerometer, Sens. Actuators A Phys. 239 (2016) 174-184.   
+[8] Y. Yin, Z. Fang, Y. Liu, F. Han, Temperature-insensitive structure design of micromachined resonant accelerometers, Sensors 19 (7) (2019) 1544.
+
+[9] D. Yang, J.K. Woo, S. Lee, J. Mitchell, A.D. Challoner, K. Najafi, A micro oven-control system for inertial sensors, J. Microelectromechanical Syst. 26 (3) (2017) 507-518.   
+[10] Z. Chen, M. Guo, R. Zhang, B. Zhou, Q. Wei, Measurement and isolation of thermal stress in silicon-on-glass MEMS structures, Sensors 18 (8) (2018) 2603.   
+[11] Y. Hao, W. Yuan, J. Xie, Q. Shen, H. Chang, Design and verification of a structure for isolating packaging stress in SOI MEMS devices, IEEE Sens. J. 17 (5) (2016) 1246-1254.   
+[12] J. Cui, H. Yang, D. Li, Z. Song, Q. Zhao, A silicon resonant accelerometer embedded in an isolation frame with stress relief anchor, Micromachines 10 (9) (2019) 571.   
+[13] Dongsuk D. Shin, Yunhan Chen, Ian B. Flader, Thomas W. Kenny, Epitaxially encapsulated resonant accelerometer with an on-chip micro-oven, in: International Conference on Solid-State Sensors, IEEE, 2017.   
+[14] J.C. Salvia, R. Melamud, S.A. Chandorkar, S.F. Lord, T.W. Kenny, Real-time temperature compensation of MEMS oscillators using an integrated micro-oven and a phase-locked loop, J. Microelectromechanical Syst. 19 (1) (2009) 192–201.   
+[15] A.K. Samarao, F. Ayazi, Temperature compensation of silicon resonators via degenerate doping, IEEE Trans. Electron Devices 59 (1) (2011) 87-93.   
+[16] E.J. Ng, V.A. Hong, Y. Yang, C.H. Ahn, C.L. Everhart, T.W. Kenny, Temperature dependence of the elastic constants of doped silicon, J. Microelectromechanical Syst. 24 (3) (2014) 730-741.   
+[17] R. Tabrizian, G. Casinovi, F. Ayazi, Temperature-stable silicon oxide (SilOx) micromechanical resonators, IEEE Trans. Electron Devices 60 (8) (2013) 2656-2663.   
+[18] S.A. Zotov, B.R. Simon, A.A. Trusov, A.M. Shkel, High quality factor resonant MEMS accelerometer with continuous thermal compensation, IEEE Sens. J. 15 (9) (2015) 5045-5052.   
+[19] M. Defoort, P. Taheri-Tehrani, D.A. Horsley, Exploiting nonlinear amplitude-frequency dependence for temperature compensation in silicon micromechanical resonators, Appl. Phys. Lett. 109 (15) (2016), 153502.   
+[20] Y.X. Wang, Z.H. Li, Temperature compensation of ultrasonic flow measurement based on the neural network, IEEE, November, in: 2009 International Conference on Artificial Intelligence and Computational Intelligence, 3, 2009, pp. 21-24.   
+[21] Y.L. Hsu, P.H. Chou, Y.C. Kuo, Drift modeling and compensation for MEMS-based gyroscope using a Wiener-type recurrent neural network, in: 2017 IEEE International Symposium on Inertial Sensors and Systems (INERTIAL), IEEE, March, 2017, pp. 39-42.   
+[22] J. Du, Y. Guo, Y. Lin, X. Zheng, Z. Jin, A real-time temperature compensation algorithm for a force-rebalanced MEMS capacitive accelerometer based on resonant frequency, in: 2017 IEEE 12th International Conference on Nano/Micro Engineered and Molecular Systems (NEMS), IEEE, April, 2017, pp. 214-217.   
+[23] S. Wang, D. Pu, R. Huan, Z. Jiang, Y. Shen, X. Wei, A MEMS accelerometer based on synchronizing DETF oscillators, in: 2019 IEEE 32nd International Conference on Micro Electro Mechanical Systems (MEMS), January, 2019, pp. 660-663.   
+[24] F. Chen, K. Zhang, Identification for temperature model and the method for temperature compensation of quartz flexible accelerometer, in: 2015 IEEE Advanced Information Technology, Electronic and Automation Control Conference (IAEAC), December, 2015, pp. 841-845.   
+[25] R. Fontanella, D. Accardo, R.S.L. Moriello, L. Angrisani, D. De Simone, MEMS gyros temperature calibration through artificial neural networks, Sens. Actuators A Phys. 279 (2018) 553-565.   
+[26] M. Laghrouche, B. Idjeri, K. Hammouche, M. Tahanout, J. Boussey, S. Ameur, Temperature compensation of micromachined silicon hot wire sensor using ANN technique, Microsyst. Technol. 18 (3) (2012) 237-246.   
+[27] J.C. Esterline, Temperature compensation of crystal oscillators using an artificial neural network, in: 2012 IEEE International Frequency Control Symposium Proceedings, IEEE, May, 2012, pp. 1-7.   
+[28] S. Chong, S. Rui, L. Jie, Z. Xiaoming, T. Jun, S. Yunbo, et al., Temperature drift modeling of MEMS gyroscope based on genetic-Elman neural network, Mech. Syst. Signal Process. 72 (2016) 897–905.   
+[29] Q. Lu, C. Shen, H. Cao, Y. Shi, J. Liu, Fusion Algorithm-Based Temperature Compensation Method for High-G MEMS Accelerometer. Shock and Vibration, 2019, 2019.   
+[30] D. Xu, Z. Yang, H. Zhao, X. Zhou, A temperature compensation method for MEMS accelerometer based on LM_BP neural network, in: 2016 IEEE SENSORS, IEEE, October, 2016, pp. 1-3.   
+[31] D. Chen, Y. Wang, X. Chen, L. Yang, J. Xie, Temperature-frequency drift suppression via electrostatic stiffness softening in MEMS resonator with weakened duffing nonlinearity, Appl. Phys. Lett. 114 (2) (2019), 023502.
+
+[32] L. Xu, S. Wang, Z. Jiang, X. Wei, Programmable synchronization enhanced MEMS resonant accelerometer, Microsyst. Nanoeng. 6 (1) (2020) 1-10.   
+[33] L. Huang, H. Yang, Y. Gao, L. Zhao, J. Liang, Design and implementation of a micromechanical silicon resonant accelerometer, Sensors 13 (11) (2013) 15785-15804.   
+[34] F. Ou, Z. Hou, T. Miao, D. Xiao, X. Wu, A new stress-released structure to improve the temperature stability of the butterfly vibratory gyroscope, Micromachines 10 (2) (2019) 82.   
+[35] S. Wang, W. Zhu, Y. Shen, J. Ren, X. Wei, In-plane dual-axis MEMS resonant accelerometer with a uniform sensitivity, March, 2020 IEEE International Symposium on Inertial Sensors and Systems (INERTIAL) (2020) 1-4.   
+[36] G. Araghi, Temperature compensation model of MEMS inertial sensors based on neural network, April, in: 2018 IEEE/ION Position, Location and Navigation Symposium (PLANS), IEEE, 2018, pp. 301-309.   
+[37] K. Ren, T. Zheng, Z. Qin, X. Liu, Adversarial attacks and defenses in deep learning, Engineering (2020).   
+[38] S. Karsoliya, Approximating number of hidden layer neurons in multiple hidden layer BPNN architecture, Int. J. Eng. Trends Technol. 3 (6) (2012) 714-717.   
+[39] Y. Chen, Y. Xie, L. Song, F. Chen, T. Tang, A survey of accelerator architectures for deep neural networks, Engineering 6 (3) (2020) 264-274.   
+[40] Y. Liu, J.A. Starzyk, Z. Zhu, Optimizing number of hidden neurons in neural networks, EeC 1 (1) (2007) 6.   
+[41] Z. Liu, X. Liu, K. Wang, Z. Liang, J.A. Correia, A.M. De Jesus, GA-BP neural network-based strain prediction in full-scale static testing of wind turbine blades, Energies 12 (6) (2019) 1026.   
+[42] Z. Han, L. Hong, J. Meng, Y. Li, Q. Gao, Temperature drift modeling and compensation of capacitive accelerometer based on AGA-BP neural network, Measurement (2020), 108019.   
+[43] W. Yang, B. Fang, Y.Y. Tang, X. Qin, A temperature compensation model for low cost quartz accelerometers and its application in tilt sensing, Math. Probl. Eng. (2016), 2016.
+
+# Biographies
+
+Shudong Wang received the B.S. degree in Xi'an Jiaotong University. In 2015, he continued to pursue his Ph. D. degree in XJTU, and he is currently in the joint Ph.D. programme offered by XJTU and City University of Hong Kong. His research interests include MEMS resonator, MEMS initial sensors, and micro-assembly.
+
+Weilong Zhu received the B.S. degree in Chang'an University, China in 2018. He is now a Master student in the State Key Laboratory for Mechanical Manufacturing Systems Engineering, Xi'an Jiaotong University. His current research interests include microelectromechanical systems (MEMS) accelerometers and signal processing technique.
+
+Yajing Shen received the B.S. and M.S. degrees in mechanical engineering from Xi'an Jiaotong University, China in 2005 and 2008, respectively. He received the Dr. Eng. degree in Micro-nano Systems Engineering, Nagoya University, Japan in 2012. He is working as an associate professor now in the Department of Biomedical Engineering, City University of Hong Kong. He is interested in the research at the interface of micro-nano engineering and biology.
+
+Juan Ren received her B.S degree (2004) in Xi'an Jiaotong University, M. Phil degree (2007), and Ph.D. degree (2012) in University of Birmingham, respectively. She spent two years on research of SAW pressure sensors in the Xi'an Jiaotong University as a post-doctoral research associate. Currently, she is a lecturer in Chang'an University and her research interests include micromechanical resonators, MEMS sensors, and SAW sensors.
+
+Hairong Gu received his B.S degree, M. Phil degree, and Ph.D. degree in Chang'an University. He joined the faculty of Mechanical Engineering Department at Chang'an University in 2008, where he is presently an associate professor. His current research interests include mechanical engineering and instrument technology.
+
+Xueyong Wei received his M.S. degree in Xi'an Jiaotong University in 2005 and his Ph.D. degree in University of Birmingham in 2009. He then focused on research of micromechanical inertial sensors in the University of Cambridge as a post-doctoral research associate. He joined the faculty of Mechanical Engineering at the Xi'an Jiaotong University in 2012 where he is presently a Professor in Microsystems Technology. His research interests include micromechanical resonators and oscillators, MEMS sensors, and Microfluidics.

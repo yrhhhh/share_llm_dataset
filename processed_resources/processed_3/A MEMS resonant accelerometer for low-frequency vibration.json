@@ -1,0 +1,349 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Shudong Wang  ^{a,b} , Xueyong Wei  ^{a,*} , Yulong Zhao  ^{a} , Zhuangde Jiang  ^{a} , Yajing Shen  ^{b}\n- ^{a}  State Key Laboratory for Manufacturing Systems Engineering, Xi'an Jiaotong University, Xi'an 710049, China\n- <sup>b</sup> City University of Hong Kong, 999077, Hong Kong Special Administrative Region",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Article history:\nReceived 12 July 2018\nReceived in revised form\n23 September 2018\nAccepted 23 September 2018\nAvailable online 28 September 2018\nKeywords:\nMEMS resonant accelerometer\nOscillator\nDynamic test\nLow-frequency",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "According to their inherent characteristics, MEMS resonant accelerometers are suitable for low-frequency, low-   \\mathrm{g}  acceleration measurement. In this paper, we report a MEMS accelerometer based on double-ended-tuning fork resonators. The scale factor of our sensor is   1153.3\\mathrm{Hz / g}  and the bias stability of the oscillator is 58 ppb (parts per billion) for an averaging time of 1 s. The static test showed that the resolution of our sensor was   13.8~\\mu \\mathrm{g} . The dynamic performance was demonstrated by single-frequency and hybrid-frequency vibration tests, and the results showed that our device is suitable for detecting low-frequency vibration   (0.5 - 5\\mathrm{Hz}) . The cross-axis sensitivity is   1.33\\% . Compared with a standard charge accelerometer, our device showed its superiority in mixed acceleration measurement, which makes it a potentially attractive option for geophone or seismometer applications.\n© 2018 Elsevier B.V. All rights reserved.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "In the past few decades, high-precision acceleration measurement has become an important issue of concern due to its broad uses in various industries, such as spacecraft guidance, inertial navigation, and seismic detection. As the silicon-on-insulator (SOI) technology developed, MEMS accelerometers drew more attention because they are small in size and easy to be integrated. Among the all, MEMS resonant accelerometers have been considered more attractive due to their high sensitivity, wide dynamic range [1], and quasi-digital output [2].\nIn 1997, Trey A. Roessig proposed the first surfacemicromachined resonant accelerometer based on double-ended-tuning fork (DETF) [3]. Ashwin A. Seshia introduced a vacuum packaged resonant accelerometer in 2002 [4], and the industrialization of such sensor had begun from then on. Although, biaxial [10], triaxial, or out-of-plane [11] accelerometers are continuously reported, research in this field mainly aimed at further enhancing accelerometer's performance like sensitivity, resolution and robustness. Xudong Zou reported an accelerometer with an scale factor (SF) of   960\\mathrm{Hz} / (\\mathrm{m} / \\mathrm{s}^2)  in 2015 [5], which is the highest at present. Stability of the DETF oscillator is an important parameter that affects the resolution [6] and it is often evaluated by Allan Deviation. MEMS resonant accelerometers also suffer\nfrom long-term drift caused by environmental variations. Utilizing two identical resonators to realize a first order cancellation of temperature drift is an efficient way to boost long-term stability [7]. In practical uses, however, a lock-in phenomenon appears when frequencies of the two resonators become close, resulting in a blind-zone of the accelerometer [8]. Active temperature compensation is another commonly used method [9], but it leads to a complicated electrical system and higher power consumption.\nAll these works contribute to the development of resonant accelerometers. However, most of the reported work only discuss the static characteristics of the accelerometer and neglect its performances in complex dynamic circumstances. In this paper, we reported a resonant accelerometer for low-frequency vibration detection. The principle and design of our resonant accelerometer is introduced first, followed by the static and dynamic performance evaluations. A comparison between it and a standard charge accelerometer showed that it is suitable for low-frequency and hybrid-frequency vibration measurement. Finally, the paper is summarized with a list of performance comparison between this work and reported ones.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_4",
+    "content": "MEMS resonant accelerometers generally consist of a proof mass, several DETFs and micro-levers. The proof mass is usually placed in the center, with the micro-levers and the DETFs sym metrically arrayed around. The variation of acceleration applied to the proof mass will result in frequency shifts of the DETFs. The frequency shift can be expressed as follows:\n$$\n\\Delta f = f _ {0} \\left(\\sqrt {1 + \\frac {0 . 2 9 3 P l ^ {2}}{E t w ^ {3}}} - 1\\right) \\tag {1}\n$$\nwhere,   f_{0}  is the characteristic frequency of the DETF,   l ,   w , and   t  indicate the length, width and thickness of each resonant beam,   P  is the axial force applied on the resonant beam.\nBased on the principle above, the accelerometer is thus proposed as shown in Fig. 1(a). The sensor consists of a proof mass, three double-ended-tuning forks and three pairs of micro-levers. Each micro-lever consists of an input beam, a lever beam, an anchor beam and an output beam [12]. As shown in Fig. 1(a), the input beam is connected to the proof mass and the output beam is connected to the tuning fork. The anchor beam is fixed on the silicon substrate. When subjected to an external in-plane acceleration of any direction, the proof mass displaces inducing tension or compression stress on each input beam of the amplifying lever. Through the lever beam, the stress can be magnified and applied on the DETFs, whose resonant frequencies are tuned accordingly. Therefore, as indicated in Fig. 1(b), axis acceleration   a_{A} ,   a_{B}  and   a_{C}  can be calculated respectively using its frequency variation and scale factor of each DETF. The formula is given as follows:\n$$\na _ {i} = \\frac {\\Delta f _ {i}}{S F _ {i}} \\tag {2}\n$$\nwhere,   a_{i}  is the axial acceleration applied on DETF   i  (  i = A, B, C ),   \\Delta f_{i}  is its frequency shift, and   SF_{i}  is its scale factor. Through the matrix transformation below, the rectangular coordinate system can be restored [13] and the in-plane acceleration vector   [a_{h}; a_{\\nu}]  can be solved. In this work, the sensor is potentially used as a single axis accelerometer to measure the low frequency vertical to the ground. Therefore, the force gauge DETF A is the main sensing axis, while DETF B and DEFT C can be used for differential sensing and temperature compensation. The cross-axis sensitivity of DETF A is characterized in Section 4.\n$$\n\\left( \\begin{array}{c c c} 0 & \\frac {\\sqrt {3}}{2} & - \\frac {\\sqrt {3}}{2} \\\\ 1 & - \\frac {1}{2} & - \\frac {1}{2} \\end{array} \\right) \\left( \\begin{array}{l} a _ {A} \\\\ a _ {B} \\\\ a _ {C} \\end{array} \\right) = \\left( \\begin{array}{l} a _ {h} \\\\ a _ {v} \\end{array} \\right) \\tag {3}\n$$",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b) Fig. 1. (a) Micrograph of the accelerometer and its packaging and (b) restoration of the acceleration vector..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/d63628d439f365fbb5eb59af9bfe2ca7a68ccb477981f7ad8a3c0d6b05de166d.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/5972cf8b6a2b8a1f610e3ec8036f0f75092c835d66cbf4759a7252d7f1b4a901.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "(a). (b) Fig. 1. (a) Micrograph of the accelerometer and its packaging and (b) restoration of the acceleration vector..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/d63628d439f365fbb5eb59af9bfe2ca7a68ccb477981f7ad8a3c0d6b05de166d.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/5972cf8b6a2b8a1f610e3ec8036f0f75092c835d66cbf4759a7252d7f1b4a901.jpg"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "Table 1 The structural dimensions of the device..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/b3f3eb2fcb2acbbbfb66ea4bf05ebe1b6d8cd5b4e73424829f591870b4ff72f1.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The accelerometer device was fabricated using a standard commercial (MEMSCAP®) SOI-MEMS technology, including silicon doping, pad metal liftoff, silicon patterning, substrate patterning, and protection layer removal. The main structure dimensions are shown in Table 1. In the laboratory tests, the frequency data can be detected by a vector network analyser (VNA). While in industrial applications, the DETFs are usually embedded in a self-excited oscillation circuit to realise a real-time frequency output.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1 The structural dimensions of the device..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/b3f3eb2fcb2acbbbfb66ea4bf05ebe1b6d8cd5b4e73424829f591870b4ff72f1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "Based on their principle, the resonant accelerometers have a few critical parameters, such as scale factor (SF), resolution, measurement range, and measurement bandwidth. These factors jointly give a complete evaluation of the sensor. However, these parameters are often contradictory to each other, and it can be very tough to optimise all these parameters at the same time. Application of the resonant accelerometer is thus restricted.\nSF represents the amount of frequency shift caused by per unit acceleration. At first, when Roessig reported his device, SF of the sensor was only   2.4\\mathrm{Hz / g}  [1]. In this small range, SF can be regarded as a constant. However, when this number grew to several thousand, it cannot be treated as before. According to (1), the relation between frequency variation and the acceleration shows as a square root function instead of a linear one. So in a broad measurement range, SF is no longer a steady value. Fig. 2 shows the simulated SF of our resonant sensor [14] under different conditions. As can be seen, SF shrinks distinctly as the total accelerometer increases. For those accelerometers with even larger SF, this 'shrinking' will also occur earlier. In this way, if a constant SF is used, the accumulative error will significantly affect the accuracy of the sensor. There are two ways to eliminate this error, narrowing down the measurement range or utilising a flexible SF for appropriate compensation when the tested acceleration is oversize. In either case, one of the parameters, measuring range or SF, will be reduced.\nBandwidth is another crucial parameter of accelerometers. It indicates the difference between the upper and lower frequencies of acceleration that the sensor can obtain. It is theoretically limited by the parasitic modes of the sensor element [15], while effective sensor bandwidth is restricted by the testing method. Frequency data of the DETF is usually recorded by a frequency counter and it should be sampled at a higher rate in order to adequately restore the acceleration signal. However, when the sampling rate is too high, the frequency counter suffers from excessive intrinsic noise, and small variation of acceleration would be overwhelmed by it [16]. The tradeoff between resolution and bandwidth is therefore necessary. MEMS accelerometers have been demonstrated to provide a relatively flat amplitude and phase frequency response over bandwidths ranging from a few Hz up to 100 Hz [24].\nIn conclusion, compared with capacitive [17] and piezoresistive [18] accelerometers, MEMS resonant accelerometers are more suitable for low-frequency, low-g, and high-precision acceleration measurement applications like geophones and seismometers [19].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Scale factor in different conditions..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/045eaaccb52d0d6214ac0fd507af60b1be0cdc60413f1c3db5480f4618ad1c09.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Fig. 2. Scale factor in different conditions..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/045eaaccb52d0d6214ac0fd507af60b1be0cdc60413f1c3db5480f4618ad1c09.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "The open-loop test can preliminarily evaluate the SF of the sensor. In this experiment, the accelerometer was set up statically in the normal gravitational field. A rotary table was used to reverse the device, and meanwhile, frequencies of the three DETF were recorded. After calculation, the SF of each DETF can be thus indicated. Schematic diagram and experimental setup of the open-loop test is shown in Fig. 3. The sensor chip was bonded in a side-brazed ceramic dual in-line-pin package (DIP) and covered by a resin lid. The pins were jointed with a printed circuit board (PCB). The PCB was rigidly connected with the rotary table through a nylon block. The whole rotary system was placed in a vacuum chamber to reduce the air damping. Through the SMA connectors on the PCB and BNC connectors on the vacuum chamber, the signal can be transmitted outside and hence processed.\nAs shown in Fig. 3(a), in the initial position, the sensor was horizontally placed, and DETF A was towards the left. The proof mass was mainly subjected to Z-axis acceleration. Since the three DETFs are insensitive to the shear stress, the present frequencies of the three are the same as their natural frequencies. When the rotary table rotates   \\theta , the in-plane acceleration will change to   \\sin \\theta g , and its direction is always the same as DETF A. In this way, we can apply   \\pm 1  g acceleration to the sensor and measure its output.\nThe circuit diagram of the open-loop test is demonstrated in Fig. 4. An alternating voltage supplied by the VNA together with a direct voltage offset was used to electrically excite the DETF. On the detecting side, the resonance of the DETF was capacitively sensed and an alternating current was generated, which is called 'motional current'. An operational amplifier (op-amp) was used to magnify this motional current. The output of the op-amp was transmitted back to the VNA, and thus the characteristic frequency of the DETF would be got.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "(a). Fig. 3. Schematic diagram (a) and experimental setup of the open-loop test (b)..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/da262e06b9471859488b7555ed6debcab1f4a83c7fa26cb918c0631333256c76.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/aeead6194a283226282e0cde83c5455447cc6b5363255df96646993d66c7adf9.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Fig. 4. Circuit diagram of the open-loop test..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/9d3c83049a3d722f37def8687a5f3aceb590a1e1bc192993adce97be94ce19ab.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Fig. 4. Circuit diagram of the open-loop test..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/9d3c83049a3d722f37def8687a5f3aceb590a1e1bc192993adce97be94ce19ab.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "(a). Fig. 3. Schematic diagram (a) and experimental setup of the open-loop test (b)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/da262e06b9471859488b7555ed6debcab1f4a83c7fa26cb918c0631333256c76.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/aeead6194a283226282e0cde83c5455447cc6b5363255df96646993d66c7adf9.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "(a). (b). (c). (d) Fig. 5. Results of the open-loop static test..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a6ebcdd3688ae6771c50d29b929febe0dc813bf557fdeda8e0354ff9942c4ff3.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/ec1a72de70de0f157f9798a23da9a13823c8cbd30c5ee3f77e33dd6c569eab17.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/cef4782945e54229fe937e4efbf01631f18ee73b8311e864b6caef6cbc062547.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/67c8b9b01cb7bd0e32df9a01c9876b0371eb540c3d168138950289c6a3da3fd2.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Fig. 5 demonstrates the measured transmission responses of DETF A, B and C when the sensor is tilt in the gravitational field. The step between each measurement was   0.5\\mathrm{g} . As can be seen, SF of DETF A was about   602\\mathrm{Hz / g} . Since the direction of acceleration was the same as the axial direction of DETF A, according to the trigonometric function calculation, DETF B and DETF C are subjected to half of the stress of DETF A. In this way, a method of differential operation can be used to calculate the SF of the whole sensor. The frequency shift of the whole sensor versus acceleration is shown in Fig. 5(d), and SF of such sensor is about   1153.3\\mathrm{Hz / g} . The black spot is the measured data, and the red line is the linear fitting results. Adjusted r-square of this linear operation is close to 1, which means the linearity of the sensor is eligible in this measurement range.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "(a). (b). (c). (d) Fig. 5. Results of the open-loop static test..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a6ebcdd3688ae6771c50d29b929febe0dc813bf557fdeda8e0354ff9942c4ff3.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/ec1a72de70de0f157f9798a23da9a13823c8cbd30c5ee3f77e33dd6c569eab17.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/cef4782945e54229fe937e4efbf01631f18ee73b8311e864b6caef6cbc062547.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/67c8b9b01cb7bd0e32df9a01c9876b0371eb540c3d168138950289c6a3da3fd2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "The open-loop test is only used to preliminary study the feasibility of the sensor. Since it needs complex instruments and long measurement time, it is not suitable for being widely used in practical situations. A general solution is to build a closed-loop oscillator to ensure the self-tracking frequency output of the DETF. The typical circuit of the oscillator is shown in Fig. 6(a), including an op-amp, a band-pass filter, a phase shift, a comparator, and a frequency counter. When the transmission amplitude and phase are adjusted to a proper amount, the self-oscillation of the DETF can be sustained, and its frequency can be recorded continuously.\nIn this static test, the sensor was horizontally placed. The DETF was embedded in the oscillation circuit and its frequency was\nrecorded for   10\\mathrm{min}  with a sampling rate of   5\\mathrm{Hz} . Allan deviation (AD) of the measured data from DETFA is demonstrated in Fig. 6(b). As can be seen, the minimum AD was 58 ppb in an integrated time of 1 s. The short-term AD was mainly influenced by Gaussian noise. Therefore, the Kalman filter (KF) can be used to enhance the short-term stability of the oscillator [20]. When proper parameters are selected, KF can eliminate the Gaussian noise of the signal without distortion [21]. The long-term AD was mainly decided by temperature drift. Since the three DETF was in the same environment, the method of differential compensation was a practical way to eliminate frequency drift caused by temperature. Through the two approaches, a more precise measurement of acceleration can be got.\nAccording to the original data of DETF A, the resolution of it can be calculated [22]:\n$$\n\\text {R e s o l u t i o n} = \\frac {\\text {A l l a n D e v i a t i o n} \\times f _ {0}}{\\text {S c a l e F a c t o r}} = 1 3. 8 \\mu \\mathrm {g} \\tag {4}\n$$\nwhere,   f_{0}  is the characteristic frequency of the DETF. If the frequency output of DETF B and DETFC was also utilised, the resolution of the sensor could be even higher.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "(a). (b)  Fig. 6. Typical circuit of the oscillator (a) and AD of the frequency data (b)..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/076f6b4c477d3cabc9edcb957ad7e04930864831bc99fb861ecf28b0701fb9ce.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/962cf49d5a78f40b56988387ae427d58ab572f7a61acd89bcda5d7782dd6c0c7.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "In this chapter, we will calibrate the dynamic performance of the proposed accelerometer and eventually verify its feasibility as a candidate of the geophone. The vibration source used in this experiment is an electromagnetic vibration exciter (Model No:",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "(a). (b)  Fig. 6. Typical circuit of the oscillator (a) and AD of the frequency data (b)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/076f6b4c477d3cabc9edcb957ad7e04930864831bc99fb861ecf28b0701fb9ce.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/962cf49d5a78f40b56988387ae427d58ab572f7a61acd89bcda5d7782dd6c0c7.jpg"
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Fig. 7. Setup of the testing system..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/4f4867d5cd38e2e3a5788d5de8e921a44c9a415d3f017cc43d4c293cdcfdbeec.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "JZQ-2B). Through feedback control, it can provide adjustable peak-amplitude of acceleration with a vibrating frequency of   0\\mathrm{Hz}  to   3\\mathrm{kHz}  for the equipment mounted on it. The system installation is shown in Fig. 7. Our device was rigidly fixed on the vibration exciter. A Commercial standard accelerometer (Model No: EA-YD-122) was back-to-back connected with our sensor. The signal of the standard accelerometer can be transmitted to the vibration controller outside the vacuum chamber. In this way, the vibration controller can ensure an accurate and stable output acceleration of the exciter. Besides, measured data of the standard accelerometer can be used for comparison with the output of our sensor.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Fig. 7. Setup of the testing system..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/4f4867d5cd38e2e3a5788d5de8e921a44c9a415d3f017cc43d4c293cdcfdbeec.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "After the installation of the experiment system, a single frequency vibration test with different amplitudes was performed. This test was only aimed at DETF A to simplify the testing circuit. A frequency counter was used to record the frequency data with a sampling interval of   15\\mathrm{ms} . According to the Nyquist-Shannon sampling theorem, the measurement bandwidth of the sensor would be   0 - 33.3\\mathrm{Hz} . However, to perfectly restore the acceleration signal, vibration frequency should not be over   6.7\\mathrm{Hz} , as discussed in Section 2.\nIn this experiment, the vibrating frequency was   5\\mathrm{Hz} , and the peak amplitude was   0.05\\mathrm{g} ,   0.1\\mathrm{g} , and   0.15\\mathrm{g}  respectively. The measured frequency data is shown in Fig. 8(a). The different colours indicate different vibration amplitudes. As can be seen, the ratio of the peak-to-peak frequency change in the three experiments is also about 3:2:1. SF of DETF A in the three tests is averagely   617.8\\mathrm{Hz / g} ,   615.1\\mathrm{Hz / g} , and   622\\mathrm{Hz / g} , which coincide with the result\nof the open-loop static evaluation. The relative differences between them may be caused by the systematic error of the installation and the random error of the oscillator.\nThe measured data was further processed by Discrete Fourier Transformation (DFT), and the results are shown in Fig. 8(b). The peaks of the three vertical drop lines all appear at   5\\mathrm{Hz} . There are also little harmonic peaks at   10\\mathrm{Hz}  and   15\\mathrm{Hz} , which is because the measured signals are not perfect sinusoids. The peak ratio is also about 3:2:1. This indicates that when the sampling rate are the same, results got by DFT can simultaneously determine the frequency and amplitude of the vibration.\nFig. 8(c) is the comparison between results got by our sensor and the standard charge accelerometer when the vibration amplitude was   \\pm 0.15\\mathrm{g} . As can be seen, the sampling rate of the charge accelerometer is much higher than that of our device. However, SNR of it is rather low. On the contrary, the output noise of our accelerometer is small, and the repeatability of it is adequate, while the waveform is slightly distorted due to the low sampling rate. Therefore, our device is more capable of high-precision, low-frequency acceleration measurement.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "(a). (b). (c) Fig. 8. The measured frequency data in different acceleration conditions (a), DFT of the frequency shift (b), and comparison between the two accelerometers (c)..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a67e1ff0dd7eb0b3678d17f4c4bf17221608732e20e64b5867a7841ccaae1375.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7a06f22d0763101f710de3c524141e2accdb601f0860fdf26ed3bdf843db3296.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7de61e3210a07b725c0f738a8b54e512aa27ffc51368d31200b697421acac43f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "In practical serving situations of a geophone, including measurement of seismic activities and explosive waves, vibration is often a mixture of multiple frequencies, instead of a single sinusoidal wave. Therefore, we further performed the hybrid frequency vibration test to verify the feasibility of our device in complex situations.\nIn this experiment, the vibration exciter was controlled by two signal generators. The frequencies of the generated sinusoidal waveform were   3\\mathrm{Hz}  and   500\\mathrm{mHz}  respectively, so the excitation platform also worked in a vibration modulated by two frequencies. As shown in Fig. 9(a), the output of DETF A was also a mixture of two sine waves. Fig. 9(b) presents the DFT result of the data. The peak occurs in   500\\mathrm{mHz}  and   3\\mathrm{Hz} , which coincide with the controlling signals. However, this low-frequency vibration cannot be observed in the output of the standard accelerometer. It might\nbecause the vibration amplitude was too weak and thus overwhelmed by the random noise. This experiment proved that the resonant accelerometer is qualified for working in a hybrid frequency vibration, and the detail of the excitation signal can be distinguished. In the future work, more precise seismometers will be utilised as the reference sensors to evaluate our device.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 9",
+        "caption": "(a). (b) Fig. 9. Measured frequency in the hybrid frequency vibration test (a) and DFT of the frequency shift (b)..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a7f5a24bc08914670c6e4cafaafd6e5273a1bbdcf501d697ca2aa8614ea435a6.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7c9b6a3caffda057b69ab9febe2ec361dd8bf90f14adf7ef6903926e91175b2b.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "(a). (b). (c) Fig. 8. The measured frequency data in different acceleration conditions (a), DFT of the frequency shift (b), and comparison between the two accelerometers (c)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a67e1ff0dd7eb0b3678d17f4c4bf17221608732e20e64b5867a7841ccaae1375.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7a06f22d0763101f710de3c524141e2accdb601f0860fdf26ed3bdf843db3296.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7de61e3210a07b725c0f738a8b54e512aa27ffc51368d31200b697421acac43f.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "(a). (b) Fig. 9. Measured frequency in the hybrid frequency vibration test (a) and DFT of the frequency shift (b)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a7f5a24bc08914670c6e4cafaafd6e5273a1bbdcf501d697ca2aa8614ea435a6.jpg",
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7c9b6a3caffda057b69ab9febe2ec361dd8bf90f14adf7ef6903926e91175b2b.jpg"
+    ]
+  },
+  {
+    "id": "doc_24",
+    "content": "Fig. 10. Output results of DETF A and DETFB when the vibration direction is perpendicular to DETF A..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/ed30fb95033f4c2ea8631904b4c15c228fe48617f3ebab73a36068d8622e70fe.jpg"
+    ]
+  },
+  {
+    "id": "doc_25",
+    "content": "Table 2 Comparison between this work and other reported..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/14323157a8a14c3fe8479830542fdb6c6573f7f0dd30df032bc806c486457cac.jpg"
+    ]
+  },
+  {
+    "id": "doc_26",
+    "content": "Cross-axis sensitivity is an important parameter of accelerometers and is usually expressed as a percentage:\n$$\nS _ {C X} = \\frac {\\Delta f _ {p}}{\\Delta f _ {a}} \\times 100 \\% \\tag{5}\n$$\nwhere,   \\Delta f_{p}  is the frequency shift of the DETF when the direction of the acceleration is perpendicular to the axis of DETF, and   \\Delta f_{a}  is that when the two are of the same direction. Ideally, cross-axis sensitivity should be zero. However, the cross-axis effect is introduced due to the structural variations induced in the microfabrication process. Crosstalk will affect the accuracy of the accelerometer output, so it should be minimized or eliminated.\nIn this work, cross-axis sensitivity of DETF A was measured. The device was mounted on the vibration exciter, and vibrated along the direction perpendicular to DETF A. The vibrating frequency was set   5\\mathrm{Hz} , and the peak amplitude was set   0.05\\mathrm{g} ,   0.17\\mathrm{g}  and   0.15\\mathrm{g}  respectively. Axial acceleration component   a_{A}  and   a_{B}  can be got from the output frequency of DETF A and B, according to Eq. (2). As Fig. 10 shows, the peak acceleration measured by DETF A was about   0.002\\mathrm{g}  at the vibration of   0.15\\mathrm{g} . Together with results in Fig. 8, the cross-axis sensitivity can be calculated as:\n$$\nS _ {C X} = \\frac {0.002}{0.15} \\times 100 \\% = 1.33 \\% \\tag{6}\n$$",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 10",
+        "caption": "Fig. 10. Output results of DETF A and DETFB when the vibration direction is perpendicular to DETF A..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/ed30fb95033f4c2ea8631904b4c15c228fe48617f3ebab73a36068d8622e70fe.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "(a). (b). (c) Fig. 8. The measured frequency data in different acceleration conditions (a), DFT of the frequency shift (b), and comparison between the two accelerometers (c)..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/a67e1ff0dd7eb0b3678d17f4c4bf17221608732e20e64b5867a7841ccaae1375.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7a06f22d0763101f710de3c524141e2accdb601f0860fdf26ed3bdf843db3296.jpg",
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/7de61e3210a07b725c0f738a8b54e512aa27ffc51368d31200b697421acac43f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_27",
+    "content": "In this paper, a single-axis high-resolution MEMS resonant accelerometer was demonstrated. Both open-loop and closed-loop static test were performed. After differential calculation, the scale factor is   1153.3\\mathrm{Hz / g} . The bias stability of the oscillator is 58 ppb (parts per billion) for an averaging time of 1 s and the resolution of accelerometer is about   13.8\\mu \\mathrm{g} . The dynamic performance of the sensor was characterized by single and hybrid frequency excitation tests. It is showed that our device is suitable for detecting low-frequency vibration   (0.5 - 5\\mathrm{Hz}) . Cross-axis sensitivity of main\nsensing axis (DETF A) was measured to be   1.33\\% . Compared with a standard commercial accelerometer, our device showed its superiority in mixed acceleration measurement. A comparison of main specifications between our device and reported ones is given in Table 2. Obviously, the accelerometer of this work has a relatively high sensitivity and small size. Its resolution can be further improved by optimizing the performance of DETF oscillator. It is believed that this resonant accelerometer has a big potential for geophone and seismometer applications.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2 Comparison between this work and other reported..",
+        "image_source": [
+          "./text_resources/A MEMS resonant accelerometer for low-frequency vibration/vlm/images/14323157a8a14c3fe8479830542fdb6c6573f7f0dd30df032bc806c486457cac.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_28",
+    "content": "This project is supported by National Natural Science Foundation of China(51575439), Key research and development program of Shaanxi Province (2018ZDCXL-GY-02-03), 111 project (B12016) and RGC General Research Fund (11278716). We also appreciate the support from the International Joint Laboratory for Micro/Nano Manufacturing and Measurement Technologies.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_29",
+    "content": "- [1] D.B. Hicks, Shih-Chia Chang, M.W. Putty, D.S. Eddy, Piezoelectrically Activated Resonant Microbridge Accelerometer, Tech Digest, Solid State Sensors and Actuators Workshop, Hilton Head (June 1994) 225-228.\n- [2] M.A. Meldrum, Application of vibrating beam technology to digital acceleration measurement, Sens. Actuators A: Phys. 21 (1) (1990) 377-380.\n- [3] T.A. Roessig, R.T. Howe, A.P. Pisano, J.H. Smith, Surface-micromachined resonant accelerometer, IEEE 2 (1997) 859-862.\n- [4] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, A vacuum packaged surface micromachined resonant accelerometer, J. Microelectromech. Syst. 11 (6) (2002) 784-793.\n- [5] X. Zou, A.A. Seshia, A high-resolution resonant MEMS accelerometer, Transducers, International Conference on Solid-State Sensors, Actuators and Microsystems (2015) 1247-1250.\n- [6] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, B. Simoni, A resonant microaccelerometer with high sensitivity operating in an oscillating circuit, J. Microelectromech. Syst. 19 (5) (2010) 1140-1152.\n- [7] D. Xiao, Q. Li, Z. Hou, D. Xia, X. Xu, X. Wu, A double differential torsional micro-accelerometer based on v-shape beam, Sens. Actuators A: Phys. 258 (2017).",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_30",
+    "content": "- [8] C. Li, Y. Wen, S. Fan, B. Kan, C. Wang, Design of a new differential silicon resonant accelerometer with dual proofmasses using two-stage microlever, IEEE Sens. (2016) 1-4.\n- [9] D.D. Shin, Y. Chen, I.B. Flader, T.W. Kenny, Epitaxially encapsulated resonant accelerometer with an on-chip micro-oven, International Conference on Solid-state Sensors, Actuators and Microsystems. IEEE (2017) 595-598.\n- [10] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A new biaxial silicon resonant micro accelerometer, International Conference on MICRO Electro Mechanical Systems, vol. 6.IEEE (2011)529-532.\n- [11] C. Corigliano, A. Ghisi, A. Zerbini, et al., A resonant micro accelerometer based on electrostatic stiffness variation, Meccanica 48 (8) (2013) 1893-1900.\n- [12] S. Wang, J. Ren, T. Zhang, Y. Weng, Z. Jiang, X. Wei, A MEMS resonant tilt sensor with high sensitivity maintained in the whole 360 measurement range, IEEE Sens. (2016).\n- [13] P.A. Michael, FPGA implementation of multilevel space vector PWM algorithms, Int. J. Eng. Technol. 1 (3) (2016) 208-212.\n- [14] S. Wang, X. Wei, Y. Weng, Y. Zhao, Z. Jiang, A novel single-axis MEMS tilt sensor with a high sensitivity in the measurement range from 0 to 360, Sensors 18 (2) (2018) 346.\n- [15] L. Aaltonen, K. Halonen, Continuous-time interface for a micromachined capacitive accelerometer with NEA of   4\\mathrm{g}  and bandwidth of   300\\mathrm{Hz} , Sens. Actuators A: Phys. 154 (1) (2009) 46-56.\n- [16] T. Dunker, H. Hauglin, O.P. Ronningen, On temporal correlations in high-resolution frequency counting, European Frequency and Time Forum IEEE (2016) 1-4.\n- [17] A. Aydemir, Y. Terzioglu, T. Akin, A new design and a fabrication approach to realize a high performance three axes capacitive MEMS accelerometer, Sens. Actuators A: Phys. 244 (2016) 324-333.\n- [18] F. Liu, S. Gao, S. Niu, Y. Zhang, Y. Guan, C. Gao, Optimal design of high-g MEMS piezoresistive accelerometer based on Timoshenko beam theory, Microsyst. Technol. 24 (2) (2018) 855-867.\n- [19] T.Y. Hsu, R.C. Yin, Y.M. Wu, Evaluating post-earthquake building safety using economical MEMS seismometers, Sensors 18 (5) (2018).\n- [20] G. Welch, An introduction to the Kalman filter, Course Notes ACM Siggraph 8 (7) (1995) 127-132.\n- [21] Y. Weng, S. Wang, H. Zhang, H. Gu, X. Wei, A high resolution tilt measurement system based on multi-accelerometers, Measurement 109 (2017).\n- [22] X. Zou, P. Thiruvenkatanathan, A.A. Seshia, A high-resolution micro-electro-mechanical resonant tilt sensor, Sens. Actuators A: Phys. 220 (2014) 168-177.\n- [23] C. Li, Y. Zhao, B. Li, R. Cheng, D. Sun, C. Han, et al., A micro-machined differential resonance accelerometer based on silicon on quartz method, Sens. Actuators A: Phys. 253 (2016).\n- [24] X. Zou, P. Thiruvenkatanathan, A.A. Seshia, A seismic-grade resonant MEMS accelerometer, J. Microelectromech. Syst. 23 (4) (2014) 768-770.\n- [25] X. Wang, J. Zhao, Y. Zhao, G.M. Xia, A.P. Qiu, Y. Su, et al., A   0.4\\mu \\mathrm{g}  bias instability and   1.2\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  noise floor MEMS silicon oscillating accelerometer with CMOS readout circuit, IEEE J. Solid-State Circ. 52 (2) (2017) 472-482.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_31",
+    "content": "- [26] A. Caspani, C. Comi, A. Corigliano, G. Langfelder, A. Tocchio, Compact biaxial micromachined resonant accelerometer, J. Micromech. Microeng. 23 (10) (2013) 3210-3216.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_32",
+    "content": "Shudong Wang received his B.S. degree in Xi'an Jiaotong University in 2014. He is currently studying in the State Key Laboratory for Mechanical Manufacturing Systems Engineering, Xi'an Jiaotong University, China, to pursue his Ph.D. degree. His current research interest includes MEMS tilt sensors and accelerometers.\nXueyong Wei received his M.S. degree in Xi'an Jiaotong University in 2005 and his Ph.D. degree in University of Birmingham in 2009. He spent two years on research of micromechanical inertial sensors in the University of Cambridge as a post-doctoral research associate. He joined the faculty of the Mechanical Engineering Department at the Xi'an Jiaotong University in 2012 where he is presently a Professor in Microsystems Technology. His research interests include micromechanical resonators and oscillators, MEMS sensors, and Microfluidics.\nYulong Zhao received his M.S. and Ph.D. degrees in 1999 and 2003, respectively. Dr. Zhao is currently a professor of Xi'an Jiaotong University and the deputy director of State Key Laboratory for Mechanical Manufacturing Systems Engineering, Xi'an Jiaotong University, China. His main research fields include physical sensors, biosensors, precise instrument and Micro-Nano manufacturing technology.\nZhuangde Jiang received his B.S and M.S degrees in Xi'an Jiaotong University in 1977, 1988, respectively. He was elected to be a member of Chinese Academy of Engineering in 2013. His research interest covers MEMS and Nano manufacturing technology, instrument and sensor technology, optical electric measurement technology, ultra-precision manufacturing technology. He published more than 300 academic papers, have 80 authorized invention patents and 15 software copyrights. He serves as Editor for the NPG Journal of Microsystem and Nanoengineering.\nYajing Shen received the B.S. and M.S. degrees in mechanical engineering from Xi'an Jiaotong University, Xi'an, China, in 2005 and 2008, respectively, and received the Dr. Eng. degree in micro-nano systems engineering, Nagoya University, Nagoya, Japan, in 2012. He was a Postdoctoral Researcher at Fukuda Lab, Nagoya University, from 2012 to 2013. He is currently an Assistant Professor in the Mechanical and Biomedical Engineering Department, City University of Hong Kong, Kowloon, Hong Kong. His research interests include micro/nanorobot, in-situ robotic characterization, and biomedical robot. Dr. Shen received the Best Manipulation Paper Award in the IEEE International Conference on Robotics and Automation in 2011, and the IEEE Robotics and Automation Society Japan Chapter Young Award in 2011.",
+    "block_type": "text"
+  }
+]

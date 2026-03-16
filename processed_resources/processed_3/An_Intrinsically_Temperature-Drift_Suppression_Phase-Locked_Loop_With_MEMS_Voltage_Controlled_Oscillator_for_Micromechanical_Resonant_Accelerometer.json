@@ -1,0 +1,643 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Liangbo Ma  ^{\\text{D}} , Jiawei Wang, Zheng Wang, Kunfeng Wang  ^{\\text{D}} , Zhaoyang Zhai, Pengcheng Cai, Xingyin Xiong, and Xudong Zou  ^{\\text{D}}\nAbstract—MEMS resonant accelerometers are robust to electromagnetic interference and have higher sensitivity and resolution. However, they are susceptible to temperature variation, which may limit this type of sensor used in high-end applications. This paper proposes a TDS-PLL with MEMS VCO for MEMS resonant accelerometers to be immune to temperature drift. The theoretical analysis of TDS-PLL MRA demonstrates it can suppress the temperature drift, which is verified by simulation and measurement results. Measurement results of the TDS-PLL MRA show that the bias instability is   13.15\\mu \\mathrm{g}  and the noise level is   7.04\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  with   0.32\\mathrm{g}  full scale at room temperature. The temperature coefficient of bias stability in TDS-PLL MRA achieves   2.21\\mathrm{mg} / ^{\\circ}\\mathrm{C}  in a temperature range of   300\\mathrm{K}  to   360\\mathrm{K} , which is lower 5.5 times than that of the traditional PLL MRA with frequency shift. [2022-0098]\nIndex Terms—MEMS VCO, phase-locked loop (PLL), resonant accelerometers, suppression of temperature drift.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "MEMS accelerometers are widely used in consumer electronics, automobiles, aerospace and so on, due to the advantages of small size, low power consumption and compatibility with integrated circuits [1], [2]. Micromechanical resonant accelerometers (MRA) with frequency modulation signal output are less susceptible to external interference and have higher sensitivity and resolution, which is a good choice for high-precision applications.\nManuscript received 24 May 2022; revised 11 July 2022; accepted 14 August 2022. Date of publication 25 August 2022; date of current version 1 December 2022. This work was supported by the Key Research Program of Frontier Science, CAS, under Grant ZDBS-LY-JSC028. Subject Editor G. Langfelder. (Corresponding authors: Xingyin Xiong; Xudong Zou.)\nLiangbo Ma, Jiawei Wang, Kunfeng Wang, Zhaoyang Zhai, Pengcheng Cai, and Xudong Zou are with the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100190, China, and also with the School of Electronics, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing 100049, China (e-mail: maliangbo19@mails.ucas.ac.cn; zouxd@aircas.ac.cn).\nZheng Wang is with the Qilu Research Institute and The Aerospace Information Research Institute, Chinese Academy of Sciences, Jinan 250132, China (e-mail: wangzheng02@aircas.ac.cn).\nXingyin Xiong is with the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100190, China (e-mail: xyxiong@mail.ie.ac.cn).\nColor versions of one or more figures in this article are available at https://doi.org/10.1109/JMEMS.2022.3199486.\nDigital Object Identifier 10.1109/JMEMS.2022.3199486\nHowever, resonant accelerometers are susceptible to temperature variation, which is caused by temperature-sensitive in Young's modulus and thermal elastic stress of the material and residual stress [3], [4]. For example, temperature drift of Young's modulus in silicon material typically results in   -30\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  temperature coefficient of frequency (TCF) of the resonator. In the cases of MRA devices for navigation application where the scale factor is about   10^{3} - 10^{4}\\mathrm{ppm / g}  [5], [6], [7], such TCF will induce an equivalent acceleration drift of   3 - 30\\mathrm{mg} / {}^{\\circ}\\mathrm{C} . It will introduce errors in some applications. Therefore, the compensation of temperature drift is an indispensable part of the high-performance MEMS resonant accelerometers.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_2",
+    "content": "The methods to suppress the temperature drift of MRA have been widely studied, which can be summarized as follows: novel mechanical structural design, temperature control and numerical compensation. Novel mechanical structural design usually employs passive methods to offset the TCF of the resonator, including introducing a temperature-dependent electrical stiffness design technique to compensate for temperature-induced frequency shifts [8], [9], [10], [11]; adding materials with complementary temperature properties to silicon to counteracts its inherent TCF [12], [13]. The above methods require special device structures or composite materials, and the fabrication process is complicated, while the tolerance of fabrication further reduces the temperature compensation performance. Another approach, namely, temperature control, has been used to provide temperature compensation for quartz crystal oscillators [14], integrated circuits (ICs) [15] and MEMS accelerometers [1], [16], [17], [18], [19]. It can measure the resonator's temperature and control the variation of temperature near the resonator in a small range through the micro-oven. However, the use of the oven needs a longer stability time and higher power consumption. In addition, numerical compensation is also one of the common temperature compensation methods for MRA [20], [21]. For example, a new temperature-sensitive unit is designed to measure the temperature of the resonator, and then the frequency drift caused by the temperature is calculated through the fitting curve [22], [23]; two resonators are designed and calibrated to obtain the relationship\ncurve between the two resonant frequencies and temperature and acceleration, then the acceleration is calculated through the measured two resonant frequencies [24], [25]. However, numerical compensation needs hardware unit for compensation algorithms implementation, which consumes more power and complicates the sensor system; Besides, the asynchronization between temperature measurement and compensation may cause hysteresis of drift compensation, especially in the fast variation of temperature or/and fast real-time compensation applications.\nTo solve the above problems, we propose an intrinsically temperature-drift suppression Phase-Locked Loop (TDS-PLL) with MEMS Voltage Controlled Oscillator (VCO) in this paper. An electrostatic tuning MEMS VCO with a micromechanical resonator, which has the identical geometry as the acceleration sensitive resonator (ASR), is used for locking and tracking ASR's resonant frequency shift induced by acceleration. At the same time, the resonant frequency drifts of both ASR and VCO's resonator (defined as temperature sensing resonator, TSR), resulted from temperature variation, are captured and formed negative feedback to dynamic suppress the temperature drift in TDS-PLL. If the ASR and TSR are in the same temperature field and have the same TCFs, the drift can be eliminated. Since the acceleration sensing, temperature drift capturing and suppressing are integrated into the TDS-PLL control loop, the system is intrinsically immune to temperature drift, which means the system completes temperature drift compensation at capturing acceleration. This characteristic of the TDS-PLL MRA may well work in the harsh environment, such as in fast variation of temperature applications. Besides, the TDS-PLL can directly convert the acceleration modulated frequency to voltage output and then easily digitalized by an ADC, which omit the complex FDC normally required for MRA sensor [26].\nThe rest of the paper is organized as follows. Section II shows the working principle and theoretical analysis of TDS-PLL MRA. Section III presents the system model of TDS-PLL MRA using Simulink and numerical simulations to verify the analysis. Experimental results are presented in Section IV, and the paper concludes in Section V.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "The TDS-PLL MRA consists of five functional blocks: ASR, Phase Detector (PD), Proportional-Integral (PI) controller, MEMS VCO and Phase Shifter as illustrated in Fig.1. The output signal   \\nu_{drv}  generated by MEMS VCO drives the ASR after passing through the phase shifter. PD compares the phase difference between the output signal   \\nu_{sen}  and   \\nu_{drv} , then feeds the error signal   \\nu_{out}  proportional to the phase difference back to the PI controller. The phase detector, loop filter and MEMS VCO constitute a TDS-PLL.\nAccording to the dynamic system theory of the PLL [27], when the resonant frequency of the ASR falls within the pull-in range of the PLL, the system can be locked automatically. Therefore, the system needs to meet the following conditions: (1) the natural frequencies of the ASR and TSR are close. (2) The phase shift around the loop is zero.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "As shown in Fig.2, a PLL is used to track the natural frequency of the TSR [28], [29]. From the resonant frequency expression   \\omega = \\sqrt{\\omega_{b} - k\\nu_{b}^{2}} , it can be seen that the frequency   \\omega  is negatively correlated with the bias voltage   \\nu_{b}  applied to the resonant beam. Therefore, we can control the output frequency by varying the bias voltage   \\nu_{b}  and realize the VCO based on the TSR.\nThe ASR is coupled to a mass by a lever to sense the external acceleration through frequency shifts, and its resonant frequency is affected by acceleration and temperature. The TSR is embedded in an independent loop, and its resonant frequency is affected by the bias voltage and temperature. Ideally, both resonators have the same frequency drift induced by temperature variance, so the error signal   \\nu_{out}  which is proportional to the phase difference is not affected by temperature.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The MEMS resonator used in this work is shown in Fig. 3. It consists of a proof mass, force amplification levers and a resonator. The proof mass converts the acceleration along the sensing-axis into a force that is amplified by levers and loaded onto the resonator. Fig. 3(b) shows a optical image of the MEMS resonator, fabricated using a SOI-based process employing wafer-level vacuum encapsulation. The simulated natural oscillation frequency of   182.211\\mathrm{kHz}  is shown in Fig. 3(c). Fig. 3(d) shows that the relationship between frequency and temperature is about   -6.7\\mathrm{Hz} / {}^{\\circ}",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "(a). Fig. 3. (a) Structural schematic of the ASR. (b) Optical picture of the ASR. (c) FEM simulations of the designed ASR, showing the resonant frequency of   182\\mathrm{kHz} . (d) FEM simulated frequency-temperature relation of ASR..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/485a78f1295da5a1fbfef4183354b60dc53edc1bc471f18b36ab4bd1bb5e8b32.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/e0e0acae3fa2abf17506f8839d4e9bc95bad570667b5b147923f76d1c0af1227.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/832cca6c07d1999d1bc2140295fd155a7ed6721d65ab90389d21bcdd3c5601a8.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/90348ed7e5de3dfd77cda3db455dc2cfbe21e2ba1014e2f1be2a61e73ba50002.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "(a). Fig. 3. (a) Structural schematic of the ASR. (b) Optical picture of the ASR. (c) FEM simulations of the designed ASR, showing the resonant frequency of   182\\mathrm{kHz} . (d) FEM simulated frequency-temperature relation of ASR..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/485a78f1295da5a1fbfef4183354b60dc53edc1bc471f18b36ab4bd1bb5e8b32.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/e0e0acae3fa2abf17506f8839d4e9bc95bad570667b5b147923f76d1c0af1227.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/832cca6c07d1999d1bc2140295fd155a7ed6721d65ab90389d21bcdd3c5601a8.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/90348ed7e5de3dfd77cda3db455dc2cfbe21e2ba1014e2f1be2a61e73ba50002.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "1) Mathematical Model of Nonlinear Resonator: A parallel-plate-driven clamped-clamped (C-C) resonator is used in this paper. It is shown that the micro-resonator can be easily driven to nonlinear region due to its size effect [30], [31]. Therefore, a comprehensive model including nonlinear terms is established [32].\n$$\nm _ {e f f} \\ddot {z} + \\frac {m _ {e f f} \\omega_ {0}}{Q} \\dot {z} + k _ {1} z + k _ {3} z ^ {3} = F _ {a c t} \\tag {1}\n$$\nwhere   z ,   m_{\\mathrm{eff}} ,   Q ,   \\omega_0 ,   k_{1}  and   k_{3}  are the vertical displacement of the beam, effective lumped mass, quality factor, natural oscillation frequency, linear mechanical stiffness, and cubic mechanical stiffness of the system.   F_{\\mathrm{act}}  is the driving force of the parallel-plate actuator, which can be defined as\n$$\nF _ {\\mathrm {a c t}} = \\frac {1}{2} \\frac {C _ {0} d _ {0}}{(d _ {0} - z) ^ {2}} \\left(V _ {b} - V _ {a c} \\cos \\Omega t\\right) ^ {2} - \\frac {1}{2} \\frac {C _ {0} d _ {0}}{(d _ {0} + z) ^ {2}} V _ {b} ^ {2} \\tag {2}\n$$\nwhere   C_0  and   d_0  are initial capacitance and gap of the parallel-plate electrode.   V_{b}  and   V_{ac}  are the bias voltage and drive voltage of the resonator, respectively.   \\Omega  is the frequency of the drive signal.\nDefine the resonance frequency as   \\omega_0 .\n$$\n\\omega_ {0} = \\sqrt {\\frac {k _ {1} - 2 C _ {0} V _ {b} ^ {2} / d _ {0} ^ {2}}{m _ {e f f}}} \\tag {3}\n$$\nBy introducing parameters\n$$\n\\tau = \\omega_ {0} t, \\quad \\omega = \\frac {\\Omega}{\\omega_ {0}}, x = \\frac {z}{d _ {0}}, \\mu = \\frac {1}{Q}, \\gamma = \\frac {C _ {0} V _ {b} ^ {2}}{2 m _ {e f f} \\omega_ {0} ^ {2} d _ {0} ^ {2}},\n$$",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_9",
+    "content": "Fig. 4. Schematic of TDS-PLL MRA..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f10b41e49bd68c307130b9b7b31711bf97c6c2c83aee6077b4d51a4a45dce86f.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "$$\n\\alpha = \\frac {k _ {1}}{m _ {e f f} \\omega_ {0} ^ {2}} - 4 \\gamma , \\beta = \\frac {k _ {3} d _ {0} ^ {2}}{m _ {e f f} \\omega_ {0} ^ {2}} - 8 \\gamma , A = 2 \\gamma \\frac {V _ {a c}}{V _ {b}}\n$$\nwe can obtain the nondimensional equation of the MEMS resonator.\n$$\n\\ddot {x} + \\mu \\dot {x} + a x + \\beta x ^ {3} = A \\cos \\omega \\tau \\tag {4}\n$$\nwhere   \\beta  is a nonlinear term composed of mechanical and electrostatic nonlinearity [31]. The mechanical nonlinearity is related to the structural parameters of the resonator, and the electrostatic nonlinearity is related to   V_{b}  and   V_{ac} . The system can be simplified into a linear model (  \\beta = 0 ) when   V_{b}  and   V_{ac}  are smaller than the certain value.\n2) Frequency Tracking System Model: PLL is essentially a nonlinear oscillator used to generate harmonic oscillations near resonant frequency [28]. PLL locks the phase of the loop to the natural frequency of the ASR. The simplified system structure is shown in Fig. 4. PD detects the phase difference between the input voltage   k_{g}x  and the reference voltage   \\cos\\theta  and generates the voltage signal   u , then PI Controller processes   u  to generate voltage   y .\nMEMS VCO adjusts the resonant frequency of the system through electrostatic stiffness. By defining   k_{v}  as the electrostatic stiffness coefficient, we can obtain the output of MEMS VCO.\n$$\n\\dot {\\theta} = \\sqrt {\\omega_ {v} ^ {2} - k _ {v} (V _ {0} + y) ^ {2}} \\tag {5}\n$$\nwhere   V_{0}  is the initial bias voltage,   \\omega_{v}  and   k_{v}  are defined as\n$$\n\\omega_ {v} ^ {2} = \\frac {k _ {1 , t m p}}{m _ {e f f , t m p}}, k _ {v} = \\frac {2 C _ {0 , t m p}}{m _ {e f f , t m p} d _ {0 , t m p} ^ {2}}\n$$\nNote that the suffix 'tmp' represents the parameters of the TSR.\nThe control voltage of the MEMS VCO is the output of the PI controller, which consists of proportional element and integral element (  k_{p}  and   k_{i} ).\n$$\n\\dot {y} = k _ {p} \\dot {u} + k _ {i} u \\tag {6}\n$$\nPD adopts the structure of a multiplier and a low-pass filter with the following transfer function, where   \\lambda  is the cut-off\nfrequency of the low-pass filter, and   k_{g}  represents the gain of the phase detector.\n$$\n\\dot {u} = \\lambda \\left(k _ {g} x \\cos \\theta - u\\right) \\tag {7}\n$$\nIn summary, the system state equation of the frequency tracking system based on the TDS-PLL is expressed as follows. From (8), we can analyze the overall stability of the system and the working state of each node.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Fig. 4. Schematic of TDS-PLL MRA..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f10b41e49bd68c307130b9b7b31711bf97c6c2c83aee6077b4d51a4a45dce86f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "$$\n\\left\\{ \\begin{array}{l} \\ddot {x} + \\mu \\dot {x} + a x + \\beta x ^ {3} = A \\cos \\theta \\\\ \\dot {\\theta} = \\sqrt {\\omega_ {v} ^ {2} - k _ {v} (V _ {0} + y) ^ {2}} \\\\ \\dot {y} = k _ {p} \\dot {u} + k _ {i} u \\\\ \\dot {u} = \\lambda \\left(k _ {g} x \\cos \\theta - u\\right) \\end{array} \\right. \\tag {8}\n$$",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_12",
+    "content": "To analyze the transient characteristics of the system, the position of the MEMS resonator can be defined as\n$$\nx (t) = a (t) \\cos [ \\theta (t) + \\varphi (t) ] \\tag {9}\n$$\nwhere   a(t)  is amplitude and   [\\theta (t) + \\varphi (t)]  is the instantaneous phase of the resonator. The phase shift of   \\varphi (t)  is generated after the MEMS VCO's output signal passes through the resonator.\nUnder the assumption of the averaging method, it can be considered that the amplitude and phase are slowly changing parameters [29].\n$$\n\\dot {a} \\cos (\\theta + \\varphi) \\equiv a \\dot {\\varphi} \\sin (\\theta + \\varphi) \\tag {10}\n$$\nThus, the velocity equation becomes\n$$\n\\dot {x} = - a \\dot {\\theta} \\sin (\\theta + \\varphi) \\tag {11}\n$$\nThe vibration acceleration of the resonant beam can be expressed as\n$$\n\\ddot {x} = - \\left(\\dot {a} \\dot {\\theta} + a \\ddot {\\theta}\\right) \\sin (\\theta + \\varphi) - a \\dot {\\theta} \\left(\\dot {\\theta} + \\dot {\\varphi}\\right) \\cos (\\theta + \\varphi) \\tag {12}\n$$\nFrom (5)\n$$\n\\ddot {\\theta} = - \\frac {k _ {v} (V _ {0} + y) \\dot {y}}{\\sqrt {\\omega_ {v} ^ {2} - k _ {v} (V _ {0} + y) ^ {2}}} \\tag {13}\n$$\nThen equation (14) can be obtained by substituting Formula (9) (11) (12) into (8) and using the average method to simplify it [29], where the bars denote averaged variables.\n$$\n\\left\\{ \\begin{array}{l} \\dot {\\bar {a}} = - \\frac {1}{2 \\dot {\\theta}} [ \\bar {a} (\\ddot {\\theta} + \\dot {\\theta} \\mu) + A \\sin \\bar {\\varphi} ] \\\\ \\dot {\\bar {\\varphi}} = - \\frac {1}{2 \\dot {\\theta}} [ \\dot {\\theta} ^ {2} - \\alpha - \\frac {3}{4} \\beta \\bar {a} ^ {2} + \\frac {A}{\\bar {a}} \\cos \\bar {\\varphi} ] \\\\ \\dot {\\bar {y}} = - \\frac {\\lambda k _ {p} k _ {g}}{2} \\bar {a} \\cos \\bar {\\varphi} + (k _ {i} - \\lambda k _ {p}) \\bar {u} \\\\ \\dot {\\bar {u}} = \\lambda (- \\frac {1}{2} k _ {g} \\bar {a} \\cos \\bar {\\varphi} - \\bar {u}) \\end{array} \\right. \\tag {14}\n$$\nTo analyze the stability of the higher-order nonlinear system, it needs to be linearized at the equilibrium point. It is known that the equilibrium point of the system is",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_13",
+    "content": "$$\n\\bar {a} = \\frac {A}{\\mu \\omega_ {n}} \\quad \\bar {\\varphi} = - \\frac {\\pi}{2} \\quad \\bar {y} _ {0} = \\sqrt {\\frac {\\omega_ {v} ^ {2} - \\omega_ {n} ^ {2}}{k _ {v}}} - V _ {0} \\quad \\bar {u} = 0 \\tag {15}\n$$\nwhere   \\omega_{n}  is the operating frequency of the nonlinear system.\n$$\n\\omega_ {n} ^ {2} = \\frac {\\alpha \\mu \\pm \\sqrt {\\alpha^ {2} \\mu^ {2} + 3 \\beta A ^ {2}}}{2 \\mu} \\tag {16}\n$$\nThe Jacobian matrix of the nonlinear dynamic system of (14) at equilibrium is\nVf\n$$\n= \\left[ \\begin{array}{c c c c} - \\frac {\\mu}{2} & - \\frac {\\lambda k _ {p} k _ {g} k _ {v} A ^ {2} \\bar {y} _ {0}}{4 \\mu^ {2} \\omega_ {n} ^ {4}} & \\frac {k _ {v} A \\bar {y} _ {0}}{2 \\omega_ {n} ^ {3}} & \\frac {k _ {v} A \\bar {y} _ {0} (k _ {i} - k _ {p} \\lambda)}{2 \\mu \\omega_ {n} ^ {3}} \\\\ \\frac {3 A \\beta}{4 \\mu \\omega_ {n} ^ {2}} & - \\frac {\\mu}{2} & \\frac {k _ {v} \\bar {y} _ {0}}{\\omega_ {n}} & 0 \\\\ 0 & - \\frac {\\lambda k _ {p} k _ {g} A}{2 \\mu \\omega_ {n}} & 0 & k _ {i} - \\lambda k _ {p} \\\\ 0 & - \\frac {\\lambda k _ {g} A}{2 \\mu \\omega_ {n}} & 0 & - \\lambda \\end{array} \\right] \\tag {17}\n$$\nThe characteristic equation of (17) is\n$$\nn _ {0} s ^ {4} + n _ {1} s ^ {3} + n _ {2} s ^ {2} + n _ {3} s + n _ {4} = 0 \\tag {18}\n$$\n$$\nn _ {0} = 1\n$$\n$$\nn _ {1} = \\lambda + \\mu\n$$\n$$\nn _ {2} = \\mu \\lambda + \\frac {1}{4} \\mu^ {2} + M \\cdot k _ {p} \\lambda\n$$\n$$\nn _ {3} = \\frac {1}{4} \\mu^ {2} \\lambda + M \\cdot k _ {i} \\lambda + N \\cdot k _ {p} \\lambda\n$$\n$$\nn _ {4} = N \\cdot k _ {i} \\lambda \\tag {19}\n$$\nThe parameters M and N are as follows.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_14",
+    "content": "$$\nM = \\frac {k _ {v} A \\bar {y} _ {0} k _ {g}}{2 \\mu \\omega_ {n} ^ {2}} + \\frac {3 \\beta k _ {v} A ^ {3} \\bar {y} _ {0} k _ {g}}{1 6 \\mu^ {3} \\omega_ {n} ^ {6}}\n$$\n$$\nN = \\frac {k _ {v} A \\bar {y} _ {0} k _ {g}}{4 \\omega_ {n} ^ {2}} + \\frac {3 \\beta k _ {v} A ^ {3} \\bar {y} _ {0} k _ {g}}{1 6 \\mu^ {2} \\omega_ {n} ^ {6}} \\tag {20}\n$$\nAccording to the Routh-Hurwitz stability criterion, the fourth-order polynomial needs to meet the following Equations (21) and (22) [28]. Under this condition, all the linearized averaged system's eigenvalues are asymptotically stable.\n$$\nn _ {1} n _ {2} - n _ {0} n _ {3} > 0 \\tag {21}\n$$\n$$\n\\left(n _ {1} n _ {2} - n _ {0} n _ {3}\\right) n _ {3} - n _ {1} ^ {2} n _ {4} > 0 \\tag {22}\n$$\nSubstituting (19) into (21) and (22) can obtain the conditions that keep the system stable. When (21) and (22) are satisfied, it can be concluded that the nonlinear average system is asymptotically stable in the neighborhood of the equilibrium point. For a stable system, the initial frequency of the VCO is within a specific range around the natural frequency of the ASR. After the system starts, the TDS-PLL will adjust the excitation frequency to the natural frequency of the ASR.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_15",
+    "content": "Fig. 5. The limit surface of the system where the variable parameters are   \\lambda ,   k_{p}  and   k_{i} ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/b29f62de8373cd25cdc366aa485823784a1a243079308949cf8f2a191d370f15.jpg"
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "Equation (8) shows that the system has multiple parameters, some of these are structure parameters related to the resonator, such as   \\mu ,   a ,   \\omega_{v}  and   k_{v} . Others are variable parameters, which can be adjusted by the circuit to meet (21) and (22), such as   \\beta ,   A ,   k_{g} ,   k_{p} ,   k_{i}  and   \\lambda , where   \\beta  is a nonlinear term related to   V_{b}  and   V_{ac} . For the linear resonator, the parameter   \\beta  equals zero.   A  represents the magnitude of the driving force, which is a constant in the system.   k_{g}  is the gain between the sensing electrode of the resonator and the PD. Increasing   k_{g}  can reduce the system's response time, but it should be noted that the output voltage of the resonator cannot exceed the input range of the PD.   k_{p}  and   k_{i}  are important parameters that can affect the state of the loop and are closely related to the performance of the accelerometer.   \\lambda ,   k_{p}  and   k_{i}  determine the bandwidth of the system.\nThe values of the frequency tracking system's parameters are listed in TABLE I. According to the above analysis,   \\lambda ,   k_{p}  and   k_{i}  are selected as variable parameters, MATLAB is used to draw the stable regions of the control system as shown in Fig.5. It indicates that if the point determined by three parameters is above the limit surface, the system can work stably; otherwise, it is unstable. Note that the bias voltage of the ASR can be adjusted to match the initial frequency of the two resonators.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Fig. 5. The limit surface of the system where the variable parameters are   \\lambda ,   k_{p}  and   k_{i} ..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/b29f62de8373cd25cdc366aa485823784a1a243079308949cf8f2a191d370f15.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI SYSTEM PARAMETERS OF TDS-PLL MRA.",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/7fd7e0c1ff75bfcc859a98d99ccbce331cfc1336e42acb198a337501457e556e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "Fig. 1 shows the structure of the TDS-PLL, which can be divided into an inner loop and an outer loop. The inner loop consists of a TSR and an integrated PLL whose resonant frequency is a function of temperature and voltage. Ignoring the temperature-dependent higher-order terms [23] yields\n$$\n\\omega_ {i n} = \\sqrt {\\omega_ {v} ^ {2} - k _ {v} \\left(V _ {0} + V _ {o u t}\\right) ^ {2}} + \\alpha_ {1} \\Delta T \\tag {23}\n$$\nwhere   \\omega_{in}  is the frequency of the inner loop,   \\alpha_{1}  is the TCF of the TSR,   V_{out} = y  is the voltage output of the system. Note that when   V_{out} > 6V , the resonator enters a nonlinear state and the above equations will no longer exist. The outer loop consists of a ASR, a phase shifter and a TDS-PLL.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "TABLEI SYSTEM PARAMETERS OF TDS-PLL MRA.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/7fd7e0c1ff75bfcc859a98d99ccbce331cfc1336e42acb198a337501457e556e.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "The resonant frequency is a function of temperature and acceleration.\n$$\n\\omega_ {o u t} = \\omega_ {n} + k a + \\alpha_ {2} \\Delta T \\tag {24}\n$$\nwhere   \\omega_{out} ,   \\alpha_{2} ,   a  and   k  are the frequency of the outer loop, TCF of ASR, acceleration and scale factor.\nAssuming that the two resonators are under the same temperature gradient. After the system starts, the frequencies of the two loops are equal   (\\omega_{in} = \\omega_{out}) , so we can get\n$$\nV _ {o u t} = k _ {c} \\sqrt {\\omega_ {v} ^ {2} - \\left[ \\omega_ {n} + k a + \\alpha_ {2} \\left(1 - k _ {a}\\right) \\Delta T \\right] ^ {2}} - V _ {0} \\tag {25}\n$$\nwhere\n$$\nk _ {c} = \\sqrt {\\frac {1}{k _ {v}}}, k _ {\\alpha} = \\frac {\\alpha_ {1}}{\\alpha_ {2}}\n$$\nFig. 6 is calculated from (25), it can be seen that   V_{out}  is related to the TCFs of the two resonators. Ideally, both resonators have the same temperature coefficient (  k_{\\alpha} = 1 ), the system output   V_{out}  is independent of temperature. However, due to tolerance of fabrication, there is an inevitable error between   \\alpha_{1}  and   \\alpha_{2} . A   \\pm 10\\%  error between   \\alpha_{1}  and   \\alpha_{2}  will result in a normalized residual error of   \\pm 0.013^{\\circ}  for the compensation result.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Fig. 6. Residual error of temperature compensated output when relative TCF mismatched   (k_{\\alpha})  varied in   \\pm 10\\% ..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/41125ddea0ff5bcde59483159199d76dbea3fe188df209cd9d4d61d87027815c.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "In order to verify the accuracy of the above theory and the system's stability, we use SIMULINK to simulate the resonator model and system structure numerically.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_21",
+    "content": "Fig. 6. Residual error of temperature compensated output when relative TCF mismatched   (k_{\\alpha})  varied in   \\pm 10\\% ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/41125ddea0ff5bcde59483159199d76dbea3fe188df209cd9d4d61d87027815c.jpg"
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "Fig. 7. System-level simulation model of TDS-PLL MRA based on SIMULINK..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/2879b4d43853d6e98fe52ee781a69addd00b362ebf7b8941bf24fc0bac3d32ea.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "TABLE II THE VALUE OF VARIABLE PARAMETERS.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/0038d554e8d4fd7a095298621df0345279a72048244674b9d1bcb2811bb103b5.jpg"
+    ]
+  },
+  {
+    "id": "doc_24",
+    "content": "The simulation model of the TDS-PLL MRA is shown in Fig. 7. The ASR is modeled according to (1) and the gray part in the figure is the conversion unit from acceleration to stiffness. According to Fig. 5, two points above and below the limit surface are selected to simulate, the parameters are shown in TABLE II.\nThe output signals of each stage of the system in the two states are shown in Fig. 8. When the system is stable, it can be seen that the vibration amplitude remains stable after increasing to a specific value. The control voltage of the MEMS VCO as the system output also tends to be stable within 0.07s. After the simulation start, the system first locks to the initial frequency of the MEMS VCO (181.968 kHz) and then to the natural frequency of the ASR (182.027 kHz). When the system is unstable, the TDS-PLL cannot track the resonant frequency of the ASR. The control voltage and frequency fluctuate greatly.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Fig. 7. System-level simulation model of TDS-PLL MRA based on SIMULINK..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/2879b4d43853d6e98fe52ee781a69addd00b362ebf7b8941bf24fc0bac3d32ea.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Block diagram of the overall system of TDS-PLL MRA.  Fig. 2. Block diagram of MEMS VCO..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/797f73fb6183b33ea82fa3db64633b57febaba1c70b226dc634c58b17b32e44f.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/ac6938ab0750a2cc0c285223c039957c6cf8712056f7474cff2a6c582f1fa712.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Fig. 5. The limit surface of the system where the variable parameters are   \\lambda ,   k_{p}  and   k_{i} ..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/b29f62de8373cd25cdc366aa485823784a1a243079308949cf8f2a191d370f15.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "(a). (b). Fig. 8. Time domain waveform of the dynamic system. (a) the system is stable (b) the system is unstable.  Fig. 9. Simulation model of MEMS VCO based on SIMULINK..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/1c4e74379d181cda90f4df02db4866bd4a99de61382ce09d8b33952a39b88f8d.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/9512612333ce423ec567a7e487ac362c3774ed7bc96b7f70a35ef1ec2dca050e.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/d04d9294984de6a8e2b779846032c1cef7df559b00a31f219d059565ffe3f27d.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/55e20056f5f9b8a238a5019387cbcdbacde184ef3ac00b9d784566bc13a0939a.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/15432311ce1ee822d48a19e9eeae4a74265f8b32a5d84dbcedcdabb0982edd5e.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "TABLE II THE VALUE OF VARIABLE PARAMETERS.",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/0038d554e8d4fd7a095298621df0345279a72048244674b9d1bcb2811bb103b5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_25",
+    "content": "(a). (b). Fig. 8. Time domain waveform of the dynamic system. (a) the system is stable (b) the system is unstable.  Fig. 9. Simulation model of MEMS VCO based on SIMULINK..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/1c4e74379d181cda90f4df02db4866bd4a99de61382ce09d8b33952a39b88f8d.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/9512612333ce423ec567a7e487ac362c3774ed7bc96b7f70a35ef1ec2dca050e.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/d04d9294984de6a8e2b779846032c1cef7df559b00a31f219d059565ffe3f27d.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/55e20056f5f9b8a238a5019387cbcdbacde184ef3ac00b9d784566bc13a0939a.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/15432311ce1ee822d48a19e9eeae4a74265f8b32a5d84dbcedcdabb0982edd5e.jpg"
+    ]
+  },
+  {
+    "id": "doc_26",
+    "content": "As the excitation signal source for temperature sensing and frequency tracking in the system, the performance of the MEMS VCO directly affects the acceleration range, bandwidth and startup time of the accelerometer. Fig. 9 is the SIMULINK model of MEMS VCO, in which the white noise is added to simulate the system's regular operation. The simulation results show that the time for the loop to lock is related to the white noise. The greater the noise, the faster the loop locks, but it will bring frequency fluctuations.\nThe control voltage shown in Fig. 10 (a) is applied to the input of the MEMS VCO, and the output frequency is shown in Fig. 10 (b). When   t < 0.5s , keeping the input voltage equal to zero, it can be seen that the PLL tracks the resonant frequency of the TSR within 0.03s. It directly affects the startup time of the TDS-PLL MRA. Then, by increasing the input voltage, the frequency can be reduced in real-time.\nFig. 11 shows the correspondence between the bias voltage and the frequency of MEMS VCO. Each time the voltage is increased (equivalent to applying a step signal), the output will oscillate for some periods to stabilize. The   f^2 - V^2  curve obtained by fitting the simulation data. It can be seen that   k_{v} = 8.72 \\times 10^{5}Hz^{2} / V^{2}  is similar to the calculation result in TABLE I, then we can use the parameter to design the TDS-PLL.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 9",
+        "caption": "(a). (b). Fig. 8. Time domain waveform of the dynamic system. (a) the system is stable (b) the system is unstable.  Fig. 9. Simulation model of MEMS VCO based on SIMULINK..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/1c4e74379d181cda90f4df02db4866bd4a99de61382ce09d8b33952a39b88f8d.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/9512612333ce423ec567a7e487ac362c3774ed7bc96b7f70a35ef1ec2dca050e.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/d04d9294984de6a8e2b779846032c1cef7df559b00a31f219d059565ffe3f27d.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/55e20056f5f9b8a238a5019387cbcdbacde184ef3ac00b9d784566bc13a0939a.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/15432311ce1ee822d48a19e9eeae4a74265f8b32a5d84dbcedcdabb0982edd5e.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 10",
+        "caption": "Fig. 10. Response curve of MEMS VCO. (a) voltage input (b) frequency output..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/63eeee1a3d8e2943581881cbabf29910715304ec4d3694c2934ed88e8c1d95e7.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/49cbd0c4b9629546a3d94e214c028d4562b16824fd14177aeee6e28cc6510426.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 11",
+        "caption": "Fig. 11. Fitting curve between voltage and frequency of MEMS VCO (change the input voltage by 1V step and record the output frequency)..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/0d51ae7843f495c8e2c9d272793ce48fa76e7e6639604f432562c2e9bd27d990.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI SYSTEM PARAMETERS OF TDS-PLL MRA.",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/7fd7e0c1ff75bfcc859a98d99ccbce331cfc1336e42acb198a337501457e556e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_27",
+    "content": "Fig. 10. Response curve of MEMS VCO. (a) voltage input (b) frequency output..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/63eeee1a3d8e2943581881cbabf29910715304ec4d3694c2934ed88e8c1d95e7.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/49cbd0c4b9629546a3d94e214c028d4562b16824fd14177aeee6e28cc6510426.jpg"
+    ]
+  },
+  {
+    "id": "doc_28",
+    "content": "Fig. 11. Fitting curve between voltage and frequency of MEMS VCO (change the input voltage by 1V step and record the output frequency)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/0d51ae7843f495c8e2c9d272793ce48fa76e7e6639604f432562c2e9bd27d990.jpg"
+    ]
+  },
+  {
+    "id": "doc_29",
+    "content": "Fig. 12. Frequency tracking performance of TDS-PLL..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f77f693a8d4ce8361e7d212d04a6f37a149d0172435774b7f69d3377dfec43f8.jpg"
+    ]
+  },
+  {
+    "id": "doc_30",
+    "content": "The purple part in Fig. 7 shows the simulation model of the TDS-PLL consisted of MEMS VCO, PD and PI controller. The response curve shown in Fig. 12 is obtained by frequency sweep test for TDS-PLL alone. It can be seen that when the input frequency is greater than   182.430\\mathrm{kHz} , the output frequency of TDS-PLL cannot follow the input. It is because the bias voltage of TSR   (V_{b,tmp} = V_{out} + V_0)  is equal to zero. In the actual test, due to the influence of residual air damping in the chip, when   V_{b,tmp} < 8V , the electrostatic driving force generated by the parallel plates is too small to drive the resonator. On the contrary, the TSR enters a strong nonlinear state when   V_{b,tmp} > 20V , which brings some problems, such as temperature compensation performance degradation, system stability degradation, etc. Therefore, the range of the accelerometer is limited by the range of the bias voltage. In order to lock the system to the resonant frequency   \\omega_{n}  of the TSR,   V_{0}  can be adjusted so that the initial frequency   \\omega_{v}  of the MEMS VCO is close to   \\omega_{n} , and the startup time of the system can also be reduced.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Fig. 7. System-level simulation model of TDS-PLL MRA based on SIMULINK..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/2879b4d43853d6e98fe52ee781a69addd00b362ebf7b8941bf24fc0bac3d32ea.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 12",
+        "caption": "Fig. 12. Frequency tracking performance of TDS-PLL..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f77f693a8d4ce8361e7d212d04a6f37a149d0172435774b7f69d3377dfec43f8.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_31",
+    "content": "t(s)  Fig. 13. Voltage and frequency response of the model to the input acceleration. (a) The input acceleration with amplitude   \\pm 0.1\\mathrm{g}  and frequency   2\\mathrm{Hz} . (b) The frequency response. (c) The voltage response..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/b72b9df34f18626425e31c9114c836927ce77badc48f8cadb67a4a32bd5568e6.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f238c2d86e2dfb8b8f1c9a4a66d1cb77fe2e0045697077fa4628d003756e1c23.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/05ba3c624cd47f60bb54ad49b1259ab9ab535d4a0f6889728ffc724869e7412e.jpg"
+    ]
+  },
+  {
+    "id": "doc_32",
+    "content": "When the system is working, the TDS-PLL tracks the frequency change of the ASR caused by the acceleration by adjusting the control voltage. For the acceleration signal shown in Fig. 13(a), the frequency output and voltage output of the system is shown in Fig. 13(b)(c). The system is finally locked and can detect the change of external acceleration in real-time, and the voltage output is negatively correlated with acceleration.\nIt can be seen from (25) that the TDS effect is related to the TCFs of the two resonators. Fig. 14 shows the frequency and voltage drift when the temperature changes from   300\\mathrm{K}  to   360\\mathrm{K} . The frequency drift is only related to the TCF of the ASR. Therefore, no matter how   k_{a}  changes, the relationship between frequency and temperature does not change. If the two resonators have the same TCFs   (k_{a} = 1) , the system output voltage will be independent of temperature. In chip manufacturing, the tolerance of fabrication will lead to the deviation of the TCF.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 13",
+        "caption": "t(s)  Fig. 13. Voltage and frequency response of the model to the input acceleration. (a) The input acceleration with amplitude   \\pm 0.1\\mathrm{g}  and frequency   2\\mathrm{Hz} . (b) The frequency response. (c) The voltage response..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/b72b9df34f18626425e31c9114c836927ce77badc48f8cadb67a4a32bd5568e6.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f238c2d86e2dfb8b8f1c9a4a66d1cb77fe2e0045697077fa4628d003756e1c23.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/05ba3c624cd47f60bb54ad49b1259ab9ab535d4a0f6889728ffc724869e7412e.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 14",
+        "caption": "(a). (b). Fig. 14. (a) The frequency-temperature relationship. (b) The voltage-temperature relationship with different TCFs..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/db70299ecc39c0b1b41fae29ed9b8ca04fb20ed22c61f048b9fbf1c2335afca5.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/d498ed74ea416ce732bda0206a0980a5f2b4ee6080b9c3714675617b5e3dd5c5.jpg",
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/6df6c32eaf83259f71cf0aa2f7fc7236e558f4e2a33733c26127a24121cda292.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_33",
+    "content": "To preliminarily verify the TDS effect of the above system, two MRA with the same structure, same batch and relative resonant frequencies are selected as the TSR and the ASR, respectively. The schematic diagram of the circuit and PCB of the TDS-PLL MRA are shown in Fig. 15. The two resonators are placed orthogonally on the same ceramic carrier to ensure they are in the same temperature range. Rotate around the y-axis for acceleration testing to exclude the effect of acceleration on the temperature-compensated resonator, where MRA01 is the ASR, and MRA02 is the TSR.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 15",
+        "caption": "Fig. 15. Schematic of the circuit and PCB of the overall system..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/4052f33636d7ccdc89c3e77ab3c8ae66aa6b818454b0773978351c368ef87f28.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_34",
+    "content": "(a). (b). Fig. 14. (a) The frequency-temperature relationship. (b) The voltage-temperature relationship with different TCFs..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/db70299ecc39c0b1b41fae29ed9b8ca04fb20ed22c61f048b9fbf1c2335afca5.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/d498ed74ea416ce732bda0206a0980a5f2b4ee6080b9c3714675617b5e3dd5c5.jpg",
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/6df6c32eaf83259f71cf0aa2f7fc7236e558f4e2a33733c26127a24121cda292.jpg"
+    ]
+  },
+  {
+    "id": "doc_35",
+    "content": "Fig. 15. Schematic of the circuit and PCB of the overall system..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/4052f33636d7ccdc89c3e77ab3c8ae66aa6b818454b0773978351c368ef87f28.jpg"
+    ]
+  },
+  {
+    "id": "doc_36",
+    "content": "The MEMS VCO needs to provide a low noise excitation signal and a reasonable frequency tuning range to fulfill the overall acceleration measurement and temperature compensation requirements. Fig. 16 shows the measured voltage-frequency relationship of the MEMS VCO so that we can get Equation (26), where   k_{v} = 8.69 \\times 10^{5}Hz^{2} / V^{2} , which is approximate to the simulation results.\n$$\nf ^ {2} = 3. 3 3 \\times 1 0 ^ {1 0} - 8. 6 9 \\times 1 0 ^ {5} V ^ {2} \\tag {26}\n$$\nThe experimental results show that the electrostatic force generated by the parallel plate is not sufficient to drive the resonator to oscillate at the natural frequency when   V_{b} < 8V . Also, to avoid entering the nonlinear state,   V_{b}  must be less than   20\\mathrm{V} . Therefore, the frequency variation range of MEMS VCO is   181.475\\mathrm{kHz}\\sim 182.277\\mathrm{kHz} , which is the maximum operating frequency range of the system.\nThe scale factor of the MRA is calibrated using a tilt table. The tilt table can precisely tune the tilt angle between   -90^{\\circ}  and   90^{\\circ} . This setup varies the gravitational component of acceleration along the sensitive axis, with the device response varying in proportion to the sinusoidal function of the tilt angle. At each tilt position, the output frequency and voltage are recorded by frequency counter and voltmeter for 30 seconds, and the mean value of the result is recorded.\nFig. 17 shows the voltage and frequency versus acceleration, respectively. The measured scale factor of the output frequency is   776.75\\mathrm{Hz / g} , and the relationship between acceleration and voltage is shown in Equation (27).\n$$\na = \\sqrt {5 . 5 2 \\times 1 0 ^ {4} - 0 . 6 9 \\times (1 4 + V) ^ {2}} - 2 3 4. 2 2 \\tag {27}\n$$",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 16",
+        "caption": "Fig. 16. Measured response of MEMS VCO to bias voltage..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/935154f55c739f376c397cdfbd844e7b1bbb2be7535c50cc3d330bc22f5b45e2.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 17",
+        "caption": "Fig. 17. Measured system's voltage and frequency response to gravitational loading measured using a tile test..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/993fb81905e57ec654e77175e9448b7fad68503ada6cd2b941c94ef26e2099a9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_37",
+    "content": "Fig. 16. Measured response of MEMS VCO to bias voltage..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/935154f55c739f376c397cdfbd844e7b1bbb2be7535c50cc3d330bc22f5b45e2.jpg"
+    ]
+  },
+  {
+    "id": "doc_38",
+    "content": "Fig. 17. Measured system's voltage and frequency response to gravitational loading measured using a tile test..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/993fb81905e57ec654e77175e9448b7fad68503ada6cd2b941c94ef26e2099a9.jpg"
+    ]
+  },
+  {
+    "id": "doc_39",
+    "content": "Fig. 18. Allan Variance of the system..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/8c74cbe694dd58eaed8dd83763dd340f49e6d1e8fd3b33031848d59c63f3a860.jpg"
+    ]
+  },
+  {
+    "id": "doc_40",
+    "content": "Fig. 19. Noise spectral density of system's voltage output..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f2a4feb699ab2f2e4def22a8df69b6b8e1b92f298242d37d0878425ccf939624.jpg"
+    ]
+  },
+  {
+    "id": "doc_41",
+    "content": "Fig. 18 gives the Allan Variance of the MRA for the voltage and frequency output. The system output is recorded for 2 hours without acceleration input using a frequency counter and a voltmeter. The bias instability of frequency output is   12.85\\mu \\mathrm{g}  at an averaging time of 1.6s and the bias instability of voltage output is   13.15\\mu \\mathrm{g}  at an averaging time of 6s. The voltage output noise is greater than the frequency output due to the white noise in a high-frequency band. It takes a long time for voltage output to reach the lowest point, indicating the TDS effect.\nFig. 19 shows the acceleration noise Power Spectral Density (PSD) from the voltage outputs. The self-noise is measured by a Multifunction-DAQ with a sample rate   200\\mathrm{Hz} . An FFT is performed based on the time domain data and converted to a PSD plot. It can be seen that the measured acceleration noise floor is   7.04\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  and the bandwidth of the accelerometer can reach to   100\\mathrm{Hz} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 18",
+        "caption": "Fig. 18. Allan Variance of the system..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/8c74cbe694dd58eaed8dd83763dd340f49e6d1e8fd3b33031848d59c63f3a860.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 19",
+        "caption": "Fig. 19. Noise spectral density of system's voltage output..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/f2a4feb699ab2f2e4def22a8df69b6b8e1b92f298242d37d0878425ccf939624.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_42",
+    "content": "Fig. 20. Measured temperature characteristic of the voltage and frequency during natural cooling..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/cd7a5986b8c0871d4282e5fbc10075de6bd9b40b7548103c8bb066d5494f241a.jpg"
+    ]
+  },
+  {
+    "id": "doc_43",
+    "content": "Fig. 21. Measured temperature characteristic of the voltage and frequency (change the temperature by   10^{\\circ}  step and record the voltage and frequency)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/6f8e9daa71e8512d20c77fb1d93b3dc481aac81cda0da6bef2d7a80866ce99af.jpg"
+    ]
+  },
+  {
+    "id": "doc_44",
+    "content": "To verify the TDS effect of the system, the accelerometer is placed in a temperature-controlled chamber which is heated to   90^{\\circ}\\mathrm{C} , then the power is turned off to let the temperature drop, and the system output is recorded. The temperature drift is shown in Fig. 20. It can be seen that the temperature drift of voltage output   (0.139\\mathrm{g})  is much smaller than that of the frequency output   (0.414\\mathrm{g})  within 3600s. The temperature drift of both frequency output and voltage output is negatively correlated with temperature, because the ASR's TCF is smaller than TSR   (k_{a} > 1) .\nThe accurate temperature drift of voltage and frequency output over the range of   300\\mathrm{K}  to   360\\mathrm{K}  are shown in Fig. 21. The temperature coefficient of bias stability is   \\sim 11.33\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  for the frequency output without compensation and   \\sim 2.03\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  for the voltage output, an improvement of   550\\% . The residual error of voltage output which is nonlinear with temperature, approximating the previous theoretical derivation in (25). The residual error exists for two reasons: a) the difference in temperature coefficients between the two resonators, b) the two resonators are not on the same DIE, so they suffer from temperature gradients and stress.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 20",
+        "caption": "Fig. 20. Measured temperature characteristic of the voltage and frequency during natural cooling..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/cd7a5986b8c0871d4282e5fbc10075de6bd9b40b7548103c8bb066d5494f241a.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 21",
+        "caption": "Fig. 21. Measured temperature characteristic of the voltage and frequency (change the temperature by   10^{\\circ}  step and record the voltage and frequency)..",
+        "image_source": [
+          "./text_resources/An_Intrinsically_Temperature-Drift_Suppression_Phase-Locked_Loop_With_MEMS_Voltage_Controlled_Oscillator_for_Micromechanical_Resonant_Accelerometer/vlm/images/6f8e9daa71e8512d20c77fb1d93b3dc481aac81cda0da6bef2d7a80866ce99af.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_45",
+    "content": "This paper demonstrates a TDS-PLL with MEMS VCO for MEMS resonant accelerometer. The principle and theoretical analysis of TDS-PLL MRA shows it can completely eliminate the temperature drift. If the ASR and TSR are in the same temperature field and have the same TCFs. The influence of mismatch TCFs in ASR and TSR is also discussed. The simulation and measurement results verify the TDS-PLL can be immune to temperature drift. Measurement results of the TDS-PLL MRA show that the bias instability is   13.15\\mathrm{ug}  and the noise level is   7.04\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  with   0.32\\mathrm{g}  full scale at room temperature. The temperature coefficient of bias stability in TDS-PLL MRA achieves   2.21\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  in a temperature range of   300\\mathrm{K}  to   360\\mathrm{K} , which is lower 5.5 times than that of the traditional PLL MRA with frequency shift. Besides, as a universal technique, our method can also compensate for any resonant sensor without affecting its original performance.\nIn the future, the temperature drift can be further suppressed by embedding two resonators on the same die and designing the frequency dividing circuit. In addition, higher efficient frequency tuning methods of the MEMS VCO can increase the full-scale range. For example, add an axial force modulation structure, use piezoelectric materials for frequency modulation, etc.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_46",
+    "content": "- [1] C.-S. Liu, R. Tabrizian, and F. Ayazi, “A ±0.3 ppm oven-controlled MEMS oscillator using structural resistance-based temperature sensing,” IEEE Trans. Ultrason., Ferroelectr., Freq. Control, vol. 65, no. 8, pp. 1492-1499, Aug. 2018, doi: 10.1109/TUFFC.2018.2843781.\n- [2] X. Wang et al., \"A   0.4\\mu g  bias instability and   1.2\\mu g / \\sqrt{\\mathrm{Hz}}  noise floor MEMS silicon oscillating accelerometer with CMOS readout circuit,\" IEEE J. Solid-State Circuits, vol. 52, no. 2, pp. 472-482, Feb. 2017, doi: 10.1109/JSSC.2016.2609385.\n- [3] M. A. Hopcroft, W. D. Nix, and T. W. Kenny, \"What is the Young's modulus of silicon?\" J. Microelectromech. Syst., vol. 19, no. 2, pp. 229-238, Apr. 2010, doi: 10.1109/jmems.2009.2039697.\n- [4] H. Watanabe, N. Yamada, and M. Okaji, \"Linear thermal expansion coefficient of silicon from 293 to   1000\\mathrm{K} ,\" Int. J. Thermophys., vol. 25, no. 1, pp. 221-236, Jan. 2004.\n- [5] C. R. Marra, F. M. Ferrari, G. Langfelder, A. Tocchio, and F. Rizzini, \"Single resonator, time-switched, low offset drift Z-axis FM MEMS accelerometer,\" in Proc. INERTIAL, Mar. 2018, pp. 1-4, doi: 10.1109/ISISS.2018.8358116.\n- [6] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, and B. Simoni, “A new biaxial silicon resonant micro accelerometer,” in Proc. IEEE MEMS, Jan. 2011, pp. 529-532, doi: 10.1109/MEMSYS.2011.5734478.\n- [7] G. Sobreviela-Falces et al., \"A navigation-grade MEMS vibrating beam accelerometer,\" in Proc. IEEE MEMS, Jan. 2022, pp. 782-785.\n- [8] F. Ayazi, R. Tabrizian, and L. Sorenson, \"Compensation, tuning, and trimming of MEMS resonators,\" in Proc. IEEE Int. Freq. Control Symp., May 2012, pp. 1-7, doi: 10.1109/FCS.2012.6243717.\n- [9] G. K. Ho, K. Sundaresan, S. Pourkamali, and F. Ayazi, \"Temperature compensated IBAR reference oscillators,\" in Proc. IEEE MEMS, Jan. 2006, pp. 910-913, doi: 10.1109/MEMSYS.2006.1627948.\n- [10] W.-T. Hsu and C. T.-C. Nguyen, \"Stiffness-compensated temperature-insensitive micromechanical resonators,\" in Proc. IEEE MEMS, Jan. 2002, pp. 731-734, doi: 10.1109/MEMSYS.2002.984374.\n- [11] J. Lee and J. Rhim, \"Temperature compensation method for the resonant frequency of a differential vibrating accelerometer using electrostatic stiffness control,\" J. Micromech. Microeng., vol. 22, no. 9, Sep. 2012, Art. no. 095016.\n- [12] R. Melamud et al., \"Temperature-compensated high-stability silicon resonators,\" Appl. Phys. Lett., vol. 90, no. 24, Jun. 2007, Art. no. 244107, doi: 10.1063/1.2748092.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_47",
+    "content": "- [13] V. A. Thakar, Z. Wu, C. Figueroa, and M. Rais-Zadeh, \"A temperature-stable clock using multiple temperature-compensated micro-resonators,\" in Proc. IFCS, May 2014, pp. 1-4, doi: 10.1109/FCS.2014.6860013.\n- [14] W. Zhou, L. Li, B. Feng, W. Zhang, S. Qin, and W. Wang, \"A study of temperature compensated crystal oscillator based on stress processing,\" in Proc. IFCS, May 2007, pp. 272-274, doi: 10.1109/FREQ.2007.4319079.\n- [15] J. Lim, K. Choi, H. Kim, T. Jackson, and D. Kenny, \"Miniature oven controlled crystal oscillator (OCXO) on a CMOS chip,\" in Proc. IFCS, Jun. 2006, pp. 401-404, doi: 10.1109/FREQ.2006.275418.\n- [16] J. C. Salvia, R. Melamud, S. A. Chandorkar, S. F. Lord, and T. W. Kenny, \"Real-time temperature compensation of MEMS oscillators using an integrated micro-oven and a phase-locked loop,\" J. Microelectromech. Syst., vol. 19, no. 1, pp. 192–201, Feb. 2010, doi: 10.1109/JMEMS.2009.2035932.\n- [17] Z. Wu and M. Rais-Zadeh, \"A temperature-stable MEMS oscillator on an ovenized micro-platform using a PLL-based heater control system,\" in Proc. IEEE MEMS, Jan. 2015, pp. 793-796, doi: 10.1109/MEMSYS.2015.7051078.\n- [18] D. D. Y. Shin Chen, I. B. Flader, and T. W. Kenny, “Epitaxially encapsulated resonant accelerometer with an on-chip micro-oven,” in Proc. TRANSDUCERS, Jun. 2017, pp. 595–598, 2017, doi: 10.1109/ TRANSDUCERS.2017.7994119.\n- [19] W. You, B. Pei, K. Sun, L. Zhang, H. Yang, and X. Li, \"Oven controlled   \\mathbf{N}^{++}  [1 0 0] length-extensional mode silicon resonator with frequency stability of 1 ppm over industrial temperature range,\" J. Micromech. Microeng., vol. 27, no. 9, Oct. 2017, Art. no. 095002, doi: 10.1088/1361-6439/aa7d1c.\n- [20] C. Xu and G. Piazza, \"Artificial neural network based digital temperature compensation method for aluminum nitride MEMS resonators,\" in Proc. IEEE IUS, Sep. 2017, pp. 1-4, doi: 10.1109/ULTSYM.2017.8092537.\n- [21] Q. Lu, C. Shen, H. Cao, Y. Shi, and J. Liu, \"Fusion algorithm-based temperature compensation method for high-G MEMS accelerometer,\" Shock Vib., vol. 2019, Oct. 2019, Art. no. 3154845, doi: 10.1155/2019/3154845.\n- [22] R. Levy et al., \"An integrated resonator-based thermal compensation for vibrating beam accelerometers,\" in Proc. Sensors, Oct. 2012, pp. 1-5.\n- [23] Z. Jing, Q. Anping, S. Qin, B. You, and X. Guoming, \"Research on temperature compensation method of silicon resonant accelerometer based on integrated temperature measurement resonator,\" in Proc. IEEE ICEMI, vol. 3, Jul. 2015, pp. 1577-1581, doi: 10.1109/ICEMI.2015.7494478.\n- [24] Y. Li, J. Wang, Z. Luo, D. Chen, and J. Chen, \"A resonant pressure microsensor capable of self-temperature compensation,\" Sensors, vol. 15, no. 5, pp. 10048-10058, Apr. 2015, doi: 10.3390/s150510048.\n- [25] P. Cai, X. Xiong, K. Wang, J. Wang, and X. Zou, \"An improved difference temperature compensation method for MEMS resonant accelerometers,\" Micromachines, vol. 12, no. 9, p. 1022, Aug. 2021, doi: 10.3390/mi12091022.\n- [26] J. Zhao et al., \"A   0.23\\mu g  bias instability and   1\\mu g / \\sqrt{\\mathrm{Hz}}  acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,\" IEEE J. Solid-State Circuits, vol. 52, no. 4, pp. 1053-1065, Apr. 2017.\n- [27] G. A. Leonov, N. V. Kuznetsov, M. V. Yuldashev, and R. V. Yuldashev, \"Hold-in, pull-in, and lock-in ranges of PLL circuits: Rigorous mathematical definitions and limitations of classical theory,\" IEEE Trans. Circuits Syst. I, Reg. Papers, vol. 62, no. 10, pp. 2454-2464, Oct. 2015, doi: 10.1109/TCSI.2015.2476295.\n- [28] H. Sohanian-Haghighi and A. Davaie-Markazi, “Resonance tracking of nonlinear MEMS resonators,” IEEE/ASME Trans. Mechatronics, vol. 17, no. 4, pp. 617-621, Aug. 2012, doi: 10.1109/TMECH.2011.2111458.\n- [29] X. Sun, R. Horowitz, and K. Komvopoulos, \"Stability and resolution analysis of a phase-locked loop natural frequency tracking system for MEMS fatigue testing,\" J. Dyn. Syst., Meas., Control, vol. 124, no. 4, pp. 599–605, Dec. 2002, doi: 10.1115/1.1514658.\n- [30] D. K. Agrawal, J. Woodhouse, and A. A. Seshia, \"Modeling nonlinearities in MEMS oscillators,\" IEEE Trans. Ultrason., Ferroelectr., Freq. Control, vol. 60, no. 8, pp. 1646-1659, Aug. 2013.\n- [31] M. Agarwal et al., \"Scaling of amplitude-frequency-dependence nonlinearities in electrostatically transduced microresonators,\" J. Appl. Phys., vol. 102, no. 7, Oct. 2007, Art. no. 074903.\n- [32] D. K. Agrawal, J. Woodhouse, and A. A. Seshia, \"Modeling nonlinearities in MEMS oscillators,\" IEEE Trans. Ultrason., Ferroelectr., Freq. Control, vol. 60, no. 8, pp. 1646-1659, Aug. 2013.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_48",
+    "content": "Liangbo Ma received the B.E. degree from the School of Civil and Hydraulic Engineering, Huazhong University, Wuhan, China, in 2019. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Transducer Technology. His current research interests include micromechanical resonant accelerometer, digital closed loop resonator, and MEMS resonator interface circuit.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_49",
+    "content": "Zhaoyang Zhai received the B.E. degree from the School of Electronic and Information Engineering, Hebei University of Technology, Tianjin, China, in 2020. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Beijing, China. His research interests include micro-electromechanical systems (MEMS) and MEMS inertial sensors.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_50",
+    "content": "Jiawei Wang received the B.E. degree from the College of Microelectronics Science and Engineering, Xidian University, Xi'an, China, in 2018. He is currently pursuing the master's degree with the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Beijing, China. His current research interests include micro-electromechanical systems (MEMS), nonlinear dynamical systems, and MEMS resonator interface circuit.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_51",
+    "content": "Pengcheng Cai received the B.E. degree from the College of Microelectronics Science and Engineering, Nankai University, Tianjin, China, in 2016. He is currently pursuing the Ph.D. degree in microelectronics and solid state electronics with the State Key Laboratory of Transducer Technology. His current research interests include the measurement of resonant accelerometer and digital filter.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_52",
+    "content": "Zheng Wang received the B.Sc. degree from the School of Applied Physics, University of Science and Technology of China, in 2016, and the M.S. degree from the School of Microelectronics and Solid State Electronics, University of Chinese Academy of Sciences, in 2019. He was an Assistant Research Fellow with The Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing, China, from 2019 to 2020. Since 2020, he has been an Assistant Research Fellow with the Qilu Aerospace Information Research Institute,\nJinan, China. His research interests include structure design, simulation and test of MEMS accelerometers, and MEMS mode-localized sensors.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_53",
+    "content": "Kunfeng Wang received the B.Eng. degree in measurement and control technology and instrument from Zhengzhou University, Zhengzhou, China, in 2017. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Beijing, China. His current research interests include micro-electromechanical systems (MEMS), resonant tilt sensors, and coupled MEMS resonator.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_54",
+    "content": "Xingyin Xiong received the B.Eng. degree in electronic information science and technology from the Minzu University of China in 2013 and the Ph.D. degree from the University of Chinese Academy of Sciences in 2018. He is currently working as a Research Associate at the State Key Laboratory of Transducer Technology, The Aerospace Information Research Institute, Beijing, China. His research interests are in the areas of analog and mixed mode circuits and systems for MEMS inertial sensors.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_55",
+    "content": "Xudong Zou received the B.Sc. degree in microelectronics from Peking University, China, in 2009, and the Ph.D. degree in mechanics, materials, and design from the University of Cambridge, U.K., in 2013. He was with the Nanoscience Center, Department of Engineering, University of Cambridge, as a Research Associate, and the Churchill College as a Post-Doctoral By-Fellow. He is currently a Professor with the State Key Laboratory of Transducer Technology, Institute of Electronics, Chinese Academy of Sciences and the School of Electronics, Elec\ntrical and Communication Engineering, University of Chinese Academy of Sciences. His main research interests lie in the area of integrated micro and nano-electromechanical systems, with a focus on resonators and inertial sensors, including the design and optimization of high resolution MEMS resonant inertial sensors, studying the nonlinear effects on the noise processes in MEMS oscillators, and the coupled MEMS resonators in sensing applications. He also works on the sensor fusion technologies, such as SLAM and VIO using MEMS sensors for autonomous navigation.",
+    "block_type": "text"
+  }
+]

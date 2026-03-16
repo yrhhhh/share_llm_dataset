@@ -1,0 +1,307 @@
+# Resonant Silicon Accelerometers in Bulk Micromachining Technology—An Approach
+
+Christian Burrer, Jaume Esteve, and Emilio Lora-Tamayo
+
+Abstract- The fabrication and characterization of resonant silicon accelerometers, made in bulk micromachining technology, is presented. The devices consist of a silicon mass, coupled axially to a strain-sensitive vibrating silicon beam. The beam is driven electrothermally and sensed piezoresistively by means of implanted piezoresistors. Two different accelerometer types are shown, differing in the complexity of the respective fabrication processes and in performances. Closed-loop operation of the devices is demonstrated. Also in the closed loop, static and dynamic measurements of prototypes have been performed. The sensor types presented are compared, and the resonant acceleration sensor concept is discussed. [163]
+
+# I. INTRODUCTION
+
+FROM ONE OF THE first vibrating mechanical structures made in silicon [1], up to resonant pressure sensors for high precision measurements with outstanding performances [2], [3], there has been a constant interest in resonant structures in silicon, mainly for sensing applications. As for piezoresistive silicon based mechanical sensors, also for resonant sensors the pressure sensor seems to be the technology leader, as illustrated by the great variety of devices reported [2]-[6]. Resonant force sensors are another field where considerable work has been done [7]-[9]. For acceleration sensors, little interest in resonant silicon devices has been shown so far [10], [11], although there is a commercial market for acceleration sensors that possess the advantages of this measurement principle. The main advantages of the resonant principle are the potential high stability and resolution, making it especially suitable for sensors that have to meet high resolution standards. Also, a frequency output is less affected by noise, and being quasidigital, the interfacing to a digital system is simplified.
+
+This paper presents an approach for resonant silicon accelerometers, fabricated in bulk micromachining technology. The sensing element of these devices is a transversely vibrating silicon beam which is sensitive to axial loads. It is clamped to the frame and to a movable silicon mass. Driving is done electrothermally and sensing piezoresistively [1], [12]. This drive/sense concept is very efficient and simple to implement from the technological point of view for bulk micromachining. Two implanted resistors on the vibrating element serve for excitation and detection.
+
+Manuscript received July 2, 1995; revised February 15, 1996. Subject Editor, W. Benecke. This work was supported in part by Robert Bosch GmbH, Stuttgart, Germany and by the CYCIT project ROB1140/91-C01-01. The authors are with the Centre Nacional de Microelectrònica (CSIC), Campus U.A.B., E-08193 Bellaterra, Barcelona, Spain. Publisher Item Identifier S 1057-7157(96)04630-6.
+
+# II. SENSOR STRUCTURES
+
+A bulk micromachined resonant accelerometer with a vibrating silicon beam as resonant element is based on a mass-spring system: The acceleration must be transformed into a load that acts axially on the beam. To allow for measurements for both positive and negative accelerations, it must either be possible to stretch or to compress the beam. These conditions, together with the desired mechanical properties and the limits of three-dimensional shaping set by the technology, restrict the number of feasible sensor structures. Consequently, the two designs presented are intended to represent a compromise among process cost, simplicity, and mechanical properties. Each of them places special emphasis on one of these aspects. Design one is a very stiff and highly symmetrical beam mass structure, giving a sensor with excellent mechanical performances. With reference to the BESOI (Bond and Etch-back Silicon On Insulator) wafers that are used for fabrication, this design is named hereafter BESOI accelerometer. The second structure, called cantilever type accelerometer, demonstrates that a bulk micromachined resonant accelerometer can be fabricated from a single wafer process, very similar to the one of a piezoresistive accelerometer with two sensing beams.
+
+Fig. 1 shows a schematic view of the BESOI accelerometer [13]. The sensor is made from two bonded wafers. The lower one is a commercial $445 - \mu \mathrm{m}$ -thick BESOI wafer, containing a $20 - \mu \mathrm{m}$ deep buried and $2 - \mu \mathrm{m}$ -thick oxide film. It is indicated in the cross section with a dotted line. The vibrating single beam is situated on the upper side of the wafer sandwich. Four $20 - \mu \mathrm{m}$ -thick hinges, that are angled with respect to the [110] crystal orientation and located at the interface of the bonded wafers, support the seismic mass. Their length is $700\mu \mathrm{m}$ long, and they are—in total— $300\mu \mathrm{m}$ wide. The vibrating beam is also $700\mu \mathrm{m}$ long, $50\mu \mathrm{m}$ wide, and $6\mu \mathrm{m}$ thick. The silicon mass measures $1.4\times 2.1\mathrm{mm}$ on the upper surface, and its total thickness is $745\mu \mathrm{m}$ , leading to a total sensor size of $4\times 4\mathrm{mm}$ . Under an acceleration in the $z$ direction the mass moves, straining the beam. This arrangement allows a sign relevant measurement; depending upon the acceleration, the strain is either positive or negative. The geometries of the two seismic mass parts are dimensioned such that their center of gravity lies within the bending plane of the hinges. Consequently, bending moments caused by lateral accelerations are practically eliminated.
+
+In Fig. 2, a sketch of the cantilever type accelerometer is depicted [14]. The $1.55 \times 2 \times 0.3$ mm large seismic mass is supported by two $350 - \mu \mathrm{m}$ -long, $200 - \mu \mathrm{m}$ -wide, and $22 - \mu \mathrm{m}$ -thick hinges, with the whole structure being similar to that of
+
+![](images/d97e93a2c6fe752575d03e82eb54c2bb263d56215c8343e8b912ad4843152339.jpg)  
+Fig. 1. Schematic view of the BESOI accelerometer.
+
+![](images/012b713db55b0277dc117f39876b7f2ac4ce7c4c3dd314ec8ace7d1e515d9c61.jpg)  
+Fig. 2. Schematic view of the cantilever type accelerometer.
+
+a piezoresistive cantilever type accelerometer. The $700 - \mu \mathrm{m}$ long and $6 - \mu \mathrm{m}$ -thick vibrating beam is located between the hinges. Here, the vibrating beam consists of a triple beam [7]. Its coupling zones at the extremes, where the three beams are joined together, each occupy $7.5\%$ of the total beam length. The quality factor of the fundamental differential resonance mode, where central and outer beams oscillate at a phase of $180^{\circ}$ , is in air a factor two higher than that of a comparable single beam [15]. For reference purposes, another identical vibrating beam is located in the bulk, near the sensor. The hinges are only half the length of the beam, and this increases the stiffness of the structure. For this beam-hinge length ratio, a spring-mass resonance frequency of the sensor of $1500\mathrm{Hz}$ was calculated analytically.
+
+An acceleration perpendicular to the mass surface will move it and bend the hinges. Since the neutral axes of the beam and the hinges are not coplanar due to the thickness difference, the beam gets strained.
+
+The difference between the two designs is obvious. The structure of the BESOI accelerometer has superior mechanical properties over the cantilever type accelerometer, but this is at the cost of a more complex fabrication process. The fabrication process of the cantilever type accelerometer is simpler and has, in a very similar form, already proven CMOS compatibility
+
+[16]. Furthermore, both structures can be simplified to the known beam-under-load-system, allowing a fairly accurate analytical description of performances.
+
+# III. FABRICATION
+
+# A. BESOI Device
+
+The starting material are the reported BESOI wafers and $300 - \mu \mathrm{m}$ -thick standard wafers, both $p$ -type doped and double-sided polished. First, the hinge profiles are dry etched in the BESOI wafer, using the buried oxide layer as an etch stop, as shown in 2) in Fig. 3. After this etching, the future hinges, the mass, and the chip frame at the bond interface stay as $20 - \mu \mathrm{m}$ high silicon volumes on the buried oxide layer 2). Next, the wafer is thermally oxidized to envelop the future hinges in an oxide film 3). Then the two wafers are bonded together by means of silicon fusion bonding 4) [17]. A special PTFE (Polytetrafluoroethylene) chuck was fabricated that allows mating with an angular error smaller than $1^{\circ}$ The mating procedure is preceded by a standard Piranha clean $(\mathrm{H}_2\mathrm{SO}_4:\mathrm{H}_2\mathrm{O}_2)$ to provide optimum adhesion conditions. An 8-h-long bond annealing at $1100^{\circ}\mathrm{C}$ follows. This wafer sandwich goes through the remaining fabrication process.
+
+Next, the wafer backside is recessed in the seismic mass regions by a few microns with a standard $25\%$ wt. tetramethyl ammonium hydroxide solution (TMAH, $(\mathrm{CH}_3)_4\mathrm{NOH}$ ), producing in this way the necessary gap between seismic mass and glass when bonding the device wafer onto a plain glass substrate. Then, an $n$ -well, that forms the etchstop layer during the electrochemical etch stop, is implanted. The $p$ -type drive and sense resistors on the vibrating beam are also made by ion implantation.
+
+The final anisotropic wet etching is carried out partly with a standard KOH solution and a $15\%$ wt. TMAH: $17\%$ vol. IPA solution with a low convex corner undercutting rate, the latter in view to the high etching depth of the wafer sandwich [18].
+
+![](images/aef4e890632feff8b46d9415d175877076c24dd705cbc04ffd913ce74c0230e2.jpg)  
+1
+
+![](images/e324e27e6808a0ff3e0cafd8e01115d12334d0d536968d36570deaf847e79a38.jpg)  
+4
+
+![](images/c45bc6bc57733bde3cb5c25e5a7a23d09d4df95b25d29a79f89a6fbb4d6f8405.jpg)  
+2
+
+![](images/6d4bc0e0030b6c7e913e94300906e454718251fc7567a016a402d9dd54a9837a.jpg)  
+5
+
+![](images/8fa29132aabaff6338e9bc024f073b960c7a1bd0a86c8ed99ec1ba4194051074.jpg)  
+3   
+Fig. 3. Graphic illustration of the hinge fabrication process of the BESOI accelerometer.
+
+![](images/7f9d80e0bc9331c06a41f6822183e7ddc10dadb4ecb1ca58e3927a364c60915d.jpg)  
+Fig. 4. SEM photograph of a BESOI accelerometer chip.
+
+When the etching reaches the buried oxide layer, as in 5), it stops. In the areas where the SOI wafer had been dry etched, a $2\mu \mathrm{m}$ -thick oxide membrane remains. In all processed wafers it was observed that this membrane buckles and breaks. This buckling could be assumed to the high compressive stress in the oxide film. A more probable explanation is that in the air-filled bond cavities, an overpressure is built up during the high temperature bond annealing, which causes the breaking and makes this process independent of the characteristics of the oxide. As a consequence, the etching continues. The hinges are then protected by the surrounding oxide film. To be completely underetched, they must be angled with respect to the crystallographic [110] direction, as shown in Fig. 1. By stopping electrochemically the etching at the $n$ -well, using the four-electrode method [19], membranes with well-defined thicknesses are obtained. They are finally etched through by reactive ion etching (RIE) to obtain the beams. In Fig. 4, a scanning electron microscope (SEM) picture of a device chip is shown. The oxide residues around the hinges, where the etching penetrated the bond interface, are visible.
+
+# B. Cantilever Device
+
+The main feature in the process of the cantilever type sensor is the electrochemical etch stop at a double diffusion for producing nonuniform membranes. For this, about 20-
+
+![](images/efd76b7562c12b514f2742a56b44bd467be4643d8d9f486d982e7fd1c9dbaab9.jpg)  
+Fig. 5. SEM photograph of the backside of a cantilever type accelerometer chip; the mass, the unetched membrane, and the hinge contours are visible.
+
+$\mu \mathrm{m}$ -deep $n^+$ -diffusions are made at the very beginning of the process, using a $\mathrm{POCl}_3$ prediffusion followed by a high temperature drive-in. These $n^+$ -regions form the etch stop layer for the hinges during the final electrochemically controlled wet etching. Then a shallow $n$ -well is implanted and driven in, which is the etch stop layer for the thin vibrating beam. Also the $p$ -type drive and sense resistors are implanted. The final anisotropic wet etching is carried out in a standard $40\%$ wt. KOH solution in combination with the four-electrode etch stop method, creating nonhomogeneous membranes [20]. Finally the membranes are dry etched by RIE. In Fig. 5 a chip backside before the membrane dry etch is shown. The two hinge contours are visible. The membrane profile in Fig. 6, recorded with a Tencor Alphastep 200 profilometer, reveals a height difference of $16~\mu \mathrm{m}$ , corresponding exactly with the depth difference of the two junctions.
+
+The small hillocks close to the hinges originate from the convex corner compensation structures [21], that, when etched away, leave about $1 - \mu \mathrm{m}$ -high traces on the membrane. They do not influence, however, the function of the device. Fig. 7 shows a SEM photograph of a cantilever type device die; both the vibrating beam and the reference beam in the bulk are apparent.
+
+For characterization of the devices, a metallized and patterned planar $1\mathrm{mm}$ thick Pyrex wafer is bonded anodically to the bare silicon backside of the device wafer. In this way, the metalized areas below the seismic mass bottom and the seismic mass itself are at the same potential during the bond process. This prevents sticking of the masses to the glass due to electrostatic attraction [22]. Finally the bonded wafer is diced, and the single chips are glued into standard 24-pin packages.
+
+# IV. OPERATION THEORY AND EXPERIMENTAL RESULTS
+
+# A. Setup for Open- and Closed-Loop Measurements
+
+First, the resonance qualities of the vibrating beams were measured in open loop using a HP4195A Network Analyzer. As the heating effect of a voltage applied to the drive resistor
+
+![](images/c6e9b004e2a67b52ca3bd1fbbca0360132c40b14753468a4c8740695a9b78cfb.jpg)  
+Fig. 6. Surface profile of the membrane of the cantilever type accelerometer with the two hinge contours, measured with a profilometer.
+
+![](images/0bb52a3eaa6dbe7cf696c23b0b1462d798be80e21b75eadfc6396b7e98abd2f9.jpg)  
+Fig. 7. SEM photograph of a cantilever type accelerometer chip.
+
+varies as the square of the voltage, the sinusoidal drive signal from the analyzer was superimposed on a dc bias [12]. By measuring the electrical transfer function between drive and sense resistor, the fundamental resonance frequency is determined, along with the corresponding gain and phase. This data is necessary for dimensioning the electronic circuit for closed-loop operation. In closed loop, two conditions must be fulfilled
+
+$$
+\varphi_ {\text {r e s o n a t o r}} + \varphi_ {\text {c i r c u i t}} = k \cdot 2 \pi \quad k = 1, 2, 3, \dots \tag {1}
+$$
+
+$$
+\left| H (\omega) _ {\text {r e s o n a t o r}} \right| \cdot \left| H (\omega) _ {\text {c i r c u i t}} \right| = 1
+$$
+
+$\varphi$ are the phase angles and $H(\omega)$ the transfer functions of resonator and loop circuit, respectively. The block diagram for a circuit looks as in Fig. 8.
+
+Additionally, bandpass properties are required. This is to cut parasitic low and high frequency components that could affect the desired resonance mode of the beam. In particular, high frequency parts, which are present due to the electrical cross talk of the electrothermally driven and piezoresistively sensed resonator [15], have to be eliminated.
+
+For the prototypes fabricated, a gain of about $-50\mathrm{dB}$ at resonance in open loop was found, together with fundamental resonance mode frequencies between 70 and $90\mathrm{kHz}$ . Based on this, the circuit layout with the different blocks looks as in Fig. 9 [23]. A rectifier and an MOS transistor in the feedback loop of one of the amplifier modules form the loop controller. Trimming resistors allow the adjustment of the required phase compensation at resonance, the dc drive bias, and the oscillation amplitude. RC pairs in the feedback loop of the operational amplifiers produce the desired bandpass properties. The complete circuit was mounted on a printed circuit board (PCB), together with the chip.
+
+A typical dc drive bias of $10\mathrm{V}$ is necessary to drive a beam, resulting in an oscillation amplitude of $1\mathrm{V}$ . Taking into account the $5\mathrm{V}$ applied to the Wheatstone bridge that contains the detection resistor, the total dissipated power in the two beam resistors is in the order of $30~\mathrm{mW}$ .
+
+Although the limited quality factor of about 200 in air of a single beam, a minimum frequency resolution of $1\mathrm{Hz}$ is achieved without problems. For the static measurements, the output frequency is measured directly with a digital counter. Static sensitivity measurements in all axes were made by turning the chip, mounted on a wheel, in the gravitation field. In this way the normal and the lateral sensitivities in the $\pm 1$ g range are directly obtained. For the dynamic measurements, performed with a vibrating table, postprocessing of the modulated sensor output signal was required. The setup for dynamic testing, as in Fig. 10, consisted of a vibrating table, together with the necessary peripheral control equipment. A HP3562A Dynamic Signal Analyzer displayed the spectrum of the sensor output in the range from 0 to $100\mathrm{kHz}$ .
+
+# B. Theoretical Background of Dynamic Operation
+
+In the simplest case of sinusoidal signals only, a phase modulated signal is expressed as
+
+$$
+u _ {\mathrm {P M}} (t) = \hat {u} _ {C} \cdot \cos \left(\omega_ {C} t + \Delta \varphi_ {C} \cdot \cos \omega_ {m} t\right) \tag {2}
+$$
+
+![](images/80d2277a5a0591ad33ce9e0ecd453b32bf419933acdb269900b83c8d6e015293.jpg)  
+Fig. 8. Block diagram of the electronic feedback loop circuit.
+
+![](images/7baca01df58a2d7761381a5902e75ee05cdb3c8ec2e93c38502d8dc0c1b44090.jpg)  
+Fig. 9. Electronic feedback loop circuit.
+
+with the carrier signal $u_{C}(t) = \hat{u}\cdot \cos \omega_{C}t$ and the modulating signal $u_{m}(t) = \hat{u}_{m}\cdot \cos \omega_{m}t$ . $\Delta \varphi_{C}$ is the maximum derivation between the momentary signal phases of modulated and carrier signal. For relating the maximum deviation between modulated and carrier frequency, the frequency deviation $\Delta f_{C}$ , the following fundamental equation is valid [24]
+
+$$
+\Delta f _ {C} = \Delta \varphi_ {C} \cdot f _ {m}. \tag {3}
+$$
+
+$f_{m}$ is the frequency of the modulating signal. In the case of frequency modulation, $\Delta \varphi_{C}$ is the modulation index $M$
+
+$$
+M = \frac {\Delta f _ {C}}{f _ {m}}. \tag {4}
+$$
+
+The derivation of the spectrum of a phase modulated signal $u_{\mathrm{PM}}(t)$ , again for only sinusoidal signals, can be found in the literature [24], [25]. Starting from (2) in complex
+
+representation, the following expression for $u_{\mathrm{PM}}(t)$ is obtained
+
+$$
+\begin{array}{l} \frac {u _ {\mathrm {P M}} (t)}{\hat {u} C} \\ \mathbf {\Sigma} = J _ {0} (\Delta \varphi_ {C}) \cdot \cos \omega_ {C} t \\ - J _ {1} \left(\Delta \varphi_ {C}\right) \cdot \left(\sin \left(\omega_ {C} + \omega_ {m}\right) t + \sin \left(\omega_ {C} - \omega_ {m}\right) t\right) \\ - J _ {2} (\Delta \varphi_ {C}) \cdot (\cos (\omega_ {C} + 2 \cdot \omega_ {m}) t + \cos (\omega_ {C} - 2 \cdot \omega_ {m}) t) \\ + J _ {3} \left(\Delta \varphi_ {C}\right) \cdot \left(\sin \left(\omega_ {C} + 3 \cdot \omega_ {m}\right) t + \sin \left(\omega_ {C} - 3 \cdot \omega_ {m}\right) t\right) \\ + \dots . \tag {5} \\ \end{array}
+$$
+
+$J_{n}$ are the Bessel coefficients
+
+$$
+\begin{array}{l} J _ {n} (x) = 1 - \frac {x ^ {2}}{2 ^ {2} \cdot 1 ! (n + 1)} + \frac {x ^ {4}}{2 ^ {4} \cdot 2 ! (n + 1) (n + 2)} \\ - \frac {x ^ {6}}{2 ^ {6} \cdot 3 ! (n + 1) (n + 2) (n + 3)} + \dots . \tag {6} \\ \end{array}
+$$
+
+The spectrum of the phase modulated signal in (5) contains, apart from the carrier band, symmetrical sidebands at the
+
+![](images/dca7e6fe3614919e53d9b193b4197781cf1aebd38eaab1b0c11eaee20da7ff62.jpg)  
+Fig. 10. Setup for dynamic measurements.
+
+frequencies $f_{C} \pm n \cdot f_{m}, n = 1,2,\dots$ . The amplitudes of the sidebands coincide with the absolute values of the corresponding Bessel functions $J_{n}(\Delta \varphi_{C})$ . For a frequency modulated signal, the modulation index $M$ is the argument of the Bessel functions.
+
+In the case of the output spectrum of a sinusoidally accelerated resonant sensor, the carrier frequency corresponds to the sensor's unloaded resonance frequency $f_{0}$ and the modulating frequency to the table's vibrating frequency $f_{\mathrm{table}}$ . The sidebands of the spectrum have a separation equalling $f_{\mathrm{table}}$ . Their magnitudes correspond to the Bessel functions $J_{n}(M)$ . Then the frequency deviation of the modulated output signal equals the frequency shift of the sensor at maximum acceleration. Therefore the modulation index $M$ is a function of the sensitivity of the sensor $S_{\mathrm{sensor}}$ , defined as $\mathrm{Hz}$ per acceleration unit, and of the maximum acceleration of the vibrating table $a_{\mathrm{table}}$
+
+$$
+M = \frac {\Delta f _ {C}}{f _ {m}} = \frac {S _ {\text {s e n s o r}} \cdot a _ {\text {t a b l e}}}{f _ {\text {t a b l e}}}. \tag {7}
+$$
+
+For calculating the sensitivity, the modulation index needs to be known. It can be obtained by inverting the Bessel functions
+
+$$
+J _ {n} = f (M) \quad \Rightarrow \quad M = f ^ {- 1} \left(J _ {n}\right). \tag {8}
+$$
+
+To avoid this inversion, which involves extended computing, the following recurrence formula was made use of [26]
+
+$$
+J _ {n - 1} (x) + J _ {n + 1} (x) = \frac {2 n}{x} \cdot J _ {n} (x). \tag {9}
+$$
+
+By taking the ratios of the first three Bessel coefficients $J_0$ to $J_{2}$ , which coincide with the magnitude of the carrier frequency band and the first two sidebands, and solving, $M$ is obtained. Fig. 11 plots a power spectrum of a sensor prototype. The indicated modulation index $M$ , calculated from the magnitude ratios of the carrier band and the first two sidebands, leads
+
+![](images/4c1672da00fb1effe2273353bc6d04ab3f8a9beeb73f30dbc6caf842e26ce4ac.jpg)  
+Fig. 11. Measured power spectrum of a cantilever type accelerometer: $a_{\mathrm{table}} = 2\mathrm{g}$ , $f_{\mathrm{table}} = 100\mathrm{Hz}$ .
+
+directly to the sensitivity of the prototype under dynamic conditions.
+
+# C. Results
+
+Static measurements of the BESOI accelerometer confirmed the theoretical considerations, which predicted transversal sensitivities to accelerations in the beam direction of less than $0.65\%$ of the normal sensitivity. The measured normal sensitivity was $260\mathrm{Hz / g}$ . For the cantilever type accelerometer, the normal sensitivity was $180\mathrm{Hz / g}$ . For the cantilever type structures the inherent three-dimensional (3-D) effect is cancelled by inclinating the sensor die by $7.1^{\circ}$ . The same value was found from the theoretical predictions.
+
+Fig. 12 plots the linearity curve of a BESOI accelerometer prototype as a function of the applied sinusoidal acceleration. The latter was swept from 1 to $70\mathrm{g}$ at a constant table frequency of $200\mathrm{Hz}$ . The prototype shows a nonlinearity of only $0.45\%$ F.S., which is a consequence of the dimensioning. The device geometries of this sensor type are designed such
+
+![](images/c32e88c547edae3ccddad942f3de0b0c0a4930ffb594ce1746fabb9a18947f0f.jpg)  
+Fig. 12. Measured linearity of a BESOI accelerometer prototype.
+
+![](images/da25f7bc32a0291ab58cd465cdfa08436420ef94fae6a020ef6b25956912c21a.jpg)  
+Fig. 13. Measured frequency response of a BESOI accelerometer prototype.
+
+that the strain inducing axial load $\sigma$ in the beam is far below the buckling load $\sigma_{B}$ in the $50\mathrm{g}$ acceleration range $(\sigma_{50\mathrm{g}} < 0.2\cdot \sigma_{B})$ . This is responsible for the very linear curve of the load-frequency function.
+
+To measure the frequency responses, the table frequency was swept under a constant acceleration of $2\mathrm{g}$ . The sensor response of a BESOI accelerometer in Fig. 13 is almost flat and exhibits a peak at $2300\mathrm{Hz}$ , corresponding to the system spring-mass resonance frequency. This behavior was expected, as the bottom cap glass wafer alone, with a gap width of some tens of microns, does not provide efficient damping, and the sensors can therefore be considered as undamped.
+
+Table I summarizes the measured parameters of the two accelerometer types. The measurement results of the cantilever type are published in detail elsewhere [14]. It is seen that the BESOI design is the stiffer structure, with a measured higher basic spring-mass resonance frequency.
+
+# V. DISCUSSION OF THE SENSOR CONCEPT
+
+The measurements show that the static and the dynamic behavior of the prototypes fulfils the expectations, i.e., the undamped devices are linear in the operation range, and their frequency responses are flat up to the system's spring-mass resonance.
+
+Therefore, these sensors demonstrate that the resonance principle can well be applied to bulk micromachined accelerometers. These devices combine, for resonant sensors, the unquestioned benefits of a very high resolution and a frequency output.
+
+There are also two drawbacks, however, that are usually not addressed when reporting about resonant accelerometers.
+
+The first one concerns the sensors dynamic properties. A high resolution of the resonating element itself is not equivalent to a high sensor resolution. Evaluation of a frequency output can be done in two ways. Either the frequency is counted directly, conveniently by averaging, or the period of a single or a fixed number of oscillations in measured.
+
+The fabricated cantilever type accelerometer has an approximated resonance frequency of $100\mathrm{kHz}$ at rest and a sensitivity of about $200\mathrm{Hz / g}$ (for simplicity, these numbers are rounded up). The period length of a single oscillation is then $10~\mu \mathrm{s}$ . This requires for detection a clock frequency of at least $100\mathrm{kHz}$ . If a frequency resolution of $10\mathrm{Hz}$ is needed, corresponding to a sensitivity resolution of $50\mathrm{mg}$ , a period length of (100.010) $\mathrm{Hz}^{-1} = 9.999$ $\mu \mathrm{s}$ must be measurable. This means that a change of period length of (10-9.999) $\mu \mathrm{s} = 1$ ns has to be detected, consequently requiring a clock frequency of at least $1\mathrm{GHz}$ .
+
+Alternatively the frequency can be counted directly. A counter averages 100 oscillations, for example. To obtain the same frequency resolution as above, the required sampling frequency is now 100 times lower, ergo $10\mathrm{MHz}$ . The maximum sampling frequency of the counter is $f_{S} = 100\mathrm{kHz} / 100 = 1\mathrm{kHz}$ . Therefore, the temporal resolution and thus the bandwidth $f_{B}$ of the sensor is limited to $f_{S} / 2 = 500\mathrm{Hz}$ , to avoid aliasing. If instead 50 cycles are averaged, the bandwidth increases to $1\mathrm{kHz}$ , however at the cost of a doubled clock frequency of $20\mathrm{MHz}$ .
+
+This short example shows that for evaluation a compromise between frequency resolution and dynamic response of the sensor has to be made. The consequences on the frequency response in Fig. 13 are obvious. If, for evaluation, the counting method is chosen, the suppression of operation frequencies above the aliasing threshold has to be done at sensor level, since the sensor output spectrum cannot be filtered. This means that the mechanical sensor element itself must act as the anti-aliasing filter and the maximum operation frequency is not necessarily restricted by the spring-mass resonance frequency of the mechanical system, but by the performances of the readout circuit. The common rule of a high spring-mass frequency of the mechanical sensing element, has, in the case of resonant accelerometers, only limited validity. This implies that resonant sensors are not the best choice for applications where a high dynamic performance of the sensor is required.
+
+The second drawback is related to the extremely high strain sensitivity of resonant sensors, requiring special attention to encapsulation and packaging. Particularly in the case of electrothermally driven sensors, temperature induced stresses cannot be avoided. Therefore compensation is required. In contrast to other sensor types, for resonant sensors no analogue compensation of the sensing element is possible, i.e., compensation must be performed numerically after frequency conversion [3].
+
+A possibility to reduce temperature effects is the use of a second vibrating beam. By dividing the converted output of the sensing beam by that of an identical reference beam, for example, first-order temperature effects and long-term
+
+TABLEI MEASURED AND CALCULATED [23] (IN PARENTHEsIS) PERFORMANCES OF THE FABRICATED ACCELEROMETERS   
+
+<table><tr><td>Accelerometer type</td><td>Unloaded resonance frequency fo (kHz)</td><td>Static sensitivity (Hz/g)</td><td>Dynamic sensitivity (Hz/g)</td><td>Spring-mass resonance frequency (Hz)</td></tr><tr><td>BESOI accelerometer</td><td>71.7</td><td>260 (240)</td><td>250</td><td>2300 (2300)</td></tr><tr><td>Cantilever type accelerometer</td><td>91.8</td><td>180 (190)</td><td>180</td><td>1540 (1500)</td></tr></table>
+
+drift effects of $f_{0}$ are eliminated. If the sensing beam has a resonance frequency of $f_{\mathrm{acc.}} = f_{0}(T) + \Delta f(\mathrm{acc.,}T)$ and the reference beam $f_{\mathrm{ref.}}(T)$ , the divided signal is
+
+$$
+\frac {f _ {\text {a c c .}}}{f _ {\text {r e f .}}} = 1 + \frac {\Delta f (\text {a c c .} , T)}{f _ {0} (T)}. \tag {10}
+$$
+
+As $\Delta f$ is a function of $f_{0}$ [27], it behaves to a first order as $f_{0}$ .
+
+Instead of the division, subtraction of two beam frequencies has been proposed, i.e., a push-pull arrangement [28]. If subtracting is done at frequency level, however, the sign and so the direction of acceleration is lost. Additionally, the resulting small frequency differences $\Delta f$ , and therefore large period lengths that have to be evaluated, can drastically limit the dynamic characteristics.
+
+We found that the cantilever type prototypes showed a significant, but very linear, temperature coefficient of unloaded resonance frequency (TCF) of $-65\mathrm{Hz} / ^{\circ}\mathrm{C}$ over the measured temperature range from 20 to $80^{\circ}\mathrm{C}$ . This is attributed to the high tensile stress in the sensing beam, caused by the oxide on the hinges that caused a downwards bending of the seismic mass. The reference beam of this design as well as the sensing beams of BESOI prototypes showed a pronounced nonlinear temperature behavior, presumably due to buckling of the beams at higher temperatures.
+
+Therefore, for the sensor concept discussed, the introduction of tensile stress in the sensing beam leads to a linear TCF. A linear TCF facilitates numerical compensation, and the tensile stress can easily be produced at processing level.
+
+These two examples show that the resonance principle also has disadvantages, which are often not mentioned. It must be added that the reported temperature dependency can be enhanced using only crystalline silicon and avoiding other materials, especially on the vibrating beam, such as silicon dioxide or aluminum. The limited dynamics, however, is inherent and restricts the use of resonant accelerometers. In this sense, the developed sensors are not suitable for universal purposes. A potential use are applications, where above all high sensitivities are required and the measurements are limited to the low frequency domain. This is the case for niche applications, such as specific control applications and vibration analysis.
+
+# VI. CONCLUSION
+
+The accelerometer concept shows that the benefits of the resonant principle can be combined with a bulk micromachined sensor structure. Two different sensor types were designed and fabricated. One design stands out because of
+
+its excellent mechanical properties, requiring advanced bulk micromachining processes for fabrication. The fabrication of second design is based on a single wafer process and, by splitting the sensor related steps into pre- and postprocessing, can be integrated in a standard CMOS process.
+
+The chosen electrothermal drive and piezoresistive sense principle in combination with an in-air vibrating silicon beam was found to be very efficient and fast. Closed operation of the prototypes was demonstrated. The sensor and the major part of the electronic loop circuit can be integrated in silicon. A hybrid solution with the two external large capacitors is proposed. The tested prototypes revealed, at constant temperature, excellent stability and a very high resolution. For the BESOI prototype, the sensitivity is $260\mathrm{Hz / g}$ at an unloaded resonance frequency of $72\mathrm{kHz}$ , corresponding to a maximum span of about $13\mathrm{kHz}$ for a 50-g sensor.
+
+# ACKNOWLEDGMENT
+
+The authors thank E. Figueras, S. Ray, and the CNM clean room staff for the wafer processing. They also acknowledge F. Larmer from Robert Bosch GmbH for his support and advice during the project.
+
+# REFERENCES
+
+[1] R. J. Wilfinger, P. H. Bardell, and D. S. Chhabra, "The resonator: A frequency selective device utilizing the mechanical resonance of a silicon substrate," IBM J. Res. Develop., vol. 12, pp. 113-118, 1968.   
+[2] K. Petersen, F. Pourahmadi, J. Brown, P. Parsons, M. Skinner, and J. Tudor, "Resonant beam pressure sensor fabricated with silicon fusion bonding," in Proc. 6th. Int. Conf. Solid-State Sensors and Actuators (Transducers '91), 1991, pp. 664-667.   
+[3] J. Greenwood and T. Wray, "High accuracy pressure measurement with a silicon resonant sensor," Sens. Actuators A, vols. 37-38, pp. 82-85, 1993.   
+[4] T. S. J. Lammerink and W. Wlodarski, "Integrated thermally excited resonant diaphragm pressure sensor," in Proc. 3rd Int. Conf. Solid-State Sensors and Actuators (Transducers '85), 1985, pp. 97-100.   
+[5] E. Stemme and G. Stemme, “A balanced resonant pressure sensor,” Sens. Actuators, vols. A21-23, pp. 346-351, 1990.   
+[6] H. Bartelt and H. Unzeitig, "Design and investigation of micromechanical bridge structures for an optical pressure sensor with temperature compensation," Sens. Actuators A, vols. 37-38, pp. 167-170, 1993.   
+[7] R. G. Kirman, “A vibrating quartz force sensor,” in Proc. Transducer Tempcon Conf., 1983, pp. 97-121.   
+[8] C. J. van Mullem, F. R. Blom, J. H. J. Fluitman, and M. Elwenspoek, "Piezoelectrically driven silicon beam force sensor," Sens. Actuators A, vols. 25-27, pp. 379-383, 1991.   
+[9] Th. Fabula, H.-J. Wagner, B. Schmidt, and S. Bittgenbach, "Triple-beam resonant silicon force sensor based on piezoelectric thin films," Sens. Actuators A, vols. 41-42, pp. 375-380, 1994.   
+[10] D. W. Satchell and J. C. Greenwood, “A thermally-excited silicon accelerometer,” Sens. Actuators, vol. A17, pp. 241-245, 1989.
+
+[11] S. C. Chang, M. W. Putty, D. B. Hicks, C. L. Li, and R. T. Howe, "Resonant-bridge two-axis microaccelerometer," Sens. Actuators, vols. A21-23, pp. 342-345, 1990.   
+[12] M. B. Othman and A. Brunnschweiler, "Electrothermally excited silicon beam mechanical resonators," *Electron. Lett.*, vol. 23, pp. 728-730, 1987.   
+[13] C. Burrer and J. Esteve, "High precision BESOI based resonant accelerometer," Sensors and Actuators A, to be published.   
+[14] “A novel resonant silicon accelerometer in bulk-micromachining technology,” Sens. Actuators, vol. A46, pp. 185-189, 1995.   
+[15] , "Thermally driven micromechanical bridge resonators," Sens. Actuators, vol. A42, pp. 680-684, 1994.   
+[16] C. Cané, F. Campabadal, J. Esteve, A. Götz, J. Santander, C. Burrer, J. A. Plaza, L. Pahun, and S. Marco, "A technology for the monolithic fabrication of a pressure sensor and related circuitry," Sens. Actuators, vol. A46, pp. 133-136, 1995.   
+[17] J. B. Lasky, "Wafer bonding for silicon-on-insulator technologies," Appl. Phys. Lett., vol. 49, pp. 78-80, 1986.   
+[18] A. Merlos, M. C. Acero, M. H. Bao, J. Bausells, and J. Esteve, "A study of the undercutting characteristics in the TMAH:IPA system," J. Micromech. Microeng., vol. 2, pp. 181-183, 1992.   
+[19] B. Kloock, S. D. Colins, N. F. de Rooij, and R. L. Smith, "Study of electrochemical etch-stop for high-precision thickness control of silicon membranes," IEEE Trans. Electron Devices, vol. 36, pp. 663-669, 1989.   
+[20] S. Marco, J. Samitier, J. R. Morante, A. Götz, and J. Esteve, "Three-dimensional structures obtained by double diffusion and electrochemical etch stop," J. Micromech. Microeng., vol. 3, pp. 141-142, 1993.   
+[21] M. Bao, C. Burrer, J. Esteve, J. Bausells, and S. Marco, "Etching front control of $\langle 110\rangle$ strips for corner compensation," Sens. Actuators A, vols. 37-38, pp. 727-732, 1993.   
+[22] G. Wallis and D. I. Pomerantz, “Field assisted glass-metal sealing,” J. Appl. Phys., vol. 40, pp. 3946–3949, 1964.   
+[23] C. Burrer, “Design, fabrication and characterization of resonant silicon accelerometers,” Ph.D. dissertation, Universidad Autónoma de Barcelona, 1995.   
+[24] R. Mäusl, Analoge Modulationsverfahren, vol. 2. Aufl., Heidelberg: Hüthig Verlag, 1992, p. 81ff.   
+[25] E. Prokott, Modulation und Demodulation. Berlin: Elitera Verlag, 1975, p. 40ff.   
+[26] Handbook of Table of Mathematics, 4th ed. Ohio: Chemical Rubber Co., 1970, p. 740.   
+[27] H. A. C. Tilmans, M. Elwenspoek, and J. H. J. Fluitman, "Micro resonant force gauges," Sens. Actuators A, vol. 30, pp. 35-53, 1992.   
+[28] H. A. C. Tilmans, S. Bouwstra, D. J. Ijntema, M. Elwenspoek, and C. F. Klein, "A differential resonator design using a bossed structure for applications in mechanical sensors," Sens. Actuators A, vols. 25-27, pp. 385-393, 1991.
+
+![](images/511a19223c2ab9c744b37b869138070a9f730ec444433d45a4bf89dee1e6b6de.jpg)
+
+Christian Burrer was born in Pfullingen, Germany, in 1967. He received the Dipl. Ing. degree in electrical engineering from the University of Karlsruhe in 1991 and the Ph.D. degree in physics in 1995 from the University Autónoma of Barcelona, Spain.
+
+In 1991 he joined the Centro Nacional de Microelectrónica, Barcelona, Spain, where he worked for three years on the development of resonant silicon accelerometers. In 1995, he joined Siemens AG Munich, Germany, where he is responsible for the product marketing of the Sensor Group.
+
+![](images/6229b09f27845ee9fb34d9c346724e072c7d537f45e0a13630926574075064cb.jpg)
+
+Jaume Esteve was born in Parets del Valles, Spain, in 1961. He received the Ph.D. degree in physical electronics from the University of Barcelona, Spain, in 1988.
+
+In 1984 and 1985 he performed research work in the Applied Physics Department of the University of Barcelona. In 1985 he joined the Centre Nacional de Microelectrónica. In 1989, he was a Visiting Researcher at the Interuniversitat Micro-Elektronic Centrum (IMEC) in Leuven, Belgium. In 1990, he joined CNM's Department of Silicon Technology
+
+and Microsystems as a Senior Researcher Scientist. He is the co-author of more than 40 journal and conference papers in the areas of microsensors and microsystem technologies.
+
+![](images/2c12e0fd64e635781a6847d4eee9a568781f30bcdf06462a2f9327ca3c2fa884.jpg)
+
+Emilio Lora-Tamayo was born in 1950. He received the physics degree in 1972 from the University of Madrid, the DEA from Toulouse in 1973, and the Ph.D. degree in 1977 from the University of Madrid.
+
+From 1975 to 1988 he worked as a permanent Researcher in the CSIC. He was a Visiting Researcher in LAAS (Toulouse) and LETI (Grenoble) for more than four years. He is now Professor of Microelectronics at the Autonomous University of Barcelona and Scientific Director of the CNM,
+
+where he is also Director of the Microsystems Technology Department. He is the author of more than 40 papers and 90 contributions to scientific conferences.

@@ -1,0 +1,4293 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Design, Fabrication, Static Test and Uncertainty Analysis of a Resonant Microaccelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                180,
+                207,
+                815,
+                262
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Young Ho Seo and Young-Ho Cho* "
+                    }
+                ]
+            },
+            "bbox": [
+                332,
+                280,
+                659,
+                299
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines and Microsystems Laboratory, Digital Nanolocomotion Center Korea Advanced Institute of Science and Technology 373-1 Guseong-dong, Yuseon-gu, Daejeon, 305-701, Republic of Korea "
+                    }
+                ]
+            },
+            "bbox": [
+                218,
+                314,
+                775,
+                359
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(Received June 21, 2001; accepted November 1, 2001) "
+                    }
+                ]
+            },
+            "bbox": [
+                302,
+                376,
+                691,
+                390
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Key words: resonant microaccelerometer, bulk-micromachining, surface-micromachining, electrostatic resonator, uncertainty analysis "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                406,
+                845,
+                437
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper investigates a resonant microaccelerometer using a laterally driven micromechanical resonator, whose resonant frequency is changed by the acceleration-induced axial force. In the theoretical study, design equations for the resonant microaccelerometer have been developed, including analytic formulae for the resonant frequency, sensitivity, nonlinearity and maximum stress in the mechanical structures. On this basis, the sizes of the accelerometer are designed for a sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10^{-3}\\mathrm{g / Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " over the bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while satisfying the maximum nonlinearity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the minimum shock endurance of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the detection range of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the size constraints placed by the microfabrication process. A set of resonant accelerometers has been fabricated by the integrated application of bulk-micromachining and surface-micromachining techniques. In the experimental study, we have performed a static test of the cantilever beam resonant accelerometer. The frequency shift of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "860\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been measured for the provided proof-mass deflection of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4.3 \\pm 0.5\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", thereby obtaining the detection sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.92 \\pm 0.11 \\times 10^{-3}\\mathrm{g / Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". From the uncertainty analysis based on the theoretical equations as well as the experimental data, we found that the major uncertainty in the frequency shift output comes from the uncertainties involved in the micromachining error, Young's modulus uncertainty and proof-mass deflection uncertainty. "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                469,
+                847,
+                748
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                150,
+                795,
+                316,
+                812
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromechanical resonant accelerometers measure an acceleration by detecting the change in frequency due to an acceleration-induced axial force in the resonant beam. "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                830,
+                845,
+                864
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) 91-108  \nMYU Tokyo "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                86,
+                527,
+                115
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "S & M 0473 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                131,
+                244,
+                145
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "* Corresponding author, e-mail address: mems@kaist.ac.kr "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                870,
+                569,
+                885
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "91 "
+                    }
+                ]
+            },
+            "bbox": [
+                484,
+                899,
+                509,
+                913
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Compared with conventional accelerometers such as piezoresistive "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(1)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", capacitive "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(2)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and piezoelectric "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(3)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " accelerometers, the resonant accelerometer requires built-in resonant microactuators as well as sophisticated detection circuitry. The resonant accelerometer, however, is more suitable for high-precision measurement applications, because of its high-sensitivity digital-nature output that eliminates noise problems such as the intensity fluctuations associated with analog signals. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                150,
+                841,
+                246
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Research on micromachined resonant accelerometers has been carried out since a bulk-micromachined resonant accelerometer was fabricated by Satchell and Greenwood. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(4)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Table I compares the previous works and present work on resonant accelerometers. The bulk-micromachined accelerometer, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(4)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " whose sensitivity was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.143\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", was based on the electrothermal excitation and piezoresistive detection of a resonant beam motion. A resonant-bridge two-axis microaccelerometer, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(5)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " based on electrostatic excitation in the direction normal to a substrate and capacitive detection methods, has achieved a sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "160\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Another type of resonant microbeam accelerometer, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(6)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " based on electrostatic excitation in the direction normal to a substrate and piezoresistive detection methods, was fabricated by bulk-micromachining and surface-micromachining. Symmetric proof-mass and flexure arrangement was used to minimize cross-axis sensitivity. Hashimoto et al. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(7)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " also proposed a bulk-micromachined resonant accelerometer based on the electrostatic excitation and capacitive detection methods, showing an acceleration sensitivity of 1.5  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{kHz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Roessig et al. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(8)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and Tabata et al. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(9)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " proposed the IC integrated resonant accelerometers whose sensitivities are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "45\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "37\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                150,
+                249,
+                843,
+                492
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the present resonant accelerometer, we use laterally driven interdigitated comb structures "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(10)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as the excitation and detection structures, demonstrating their potential for simple structure, linear force, low damping "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(11)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and high design flexibility of the resonator. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                493,
+                843,
+                541
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/746e72b263af27f32ca05cc7dc9d15bc8e82f5a7ad493aaadac8cc61e01aaf88.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1 Comparison of previous and present works on resonant accelerometers. "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "*normal: micromechanical resonator that is oscillated in the direction normal to a substrate. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "**lateral: micromechanical resonator that is oscillated in the direction lateral to a substrate. "
+                    }
+                ],
+                "html": "<table><tr><td>Case</td><td>Actuation method (direction)</td><td>Detection method</td><td>Sensitivity</td><td>Fabrication process</td></tr><tr><td>Satchell and Greenwood (4)</td><td>Electrothermal (normal*)</td><td>Piezoresistive</td><td>0.143 Hz/g</td><td>Bulk</td></tr><tr><td>Chang et al. (5)</td><td>Electrostatic (normal)</td><td>Capacitive</td><td>160 Hz/g</td><td>Surface</td></tr><tr><td>Burns et al. (6)</td><td>Electrostatic (normal)</td><td>Piezoresistive</td><td>743 Hz/g</td><td>Bulk and Surface</td></tr><tr><td>Hashimoto et al. (7)</td><td>Electrostatic (normal)</td><td>Capacitive</td><td>1500 Hz/g</td><td>Bulk</td></tr><tr><td>T.A. Roessig et al. (8)</td><td>Electrostatic (lateral**)</td><td>Capacitive</td><td>45 Hz/g</td><td>Surface</td></tr><tr><td>O. Tabata et al. (9)</td><td>Electrostatic (lateral)</td><td>Capacitive</td><td>37 Hz/g</td><td>SOI process</td></tr><tr><td>Present work</td><td>Electrostatic (lateral)</td><td>Capacitive</td><td>1100 Hz/g</td><td>Bulk and Surface</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                146,
+                607,
+                845,
+                851
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "92 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                108,
+                172,
+                122
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                519,
+                108,
+                837,
+                122
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Another advantage of the comb structure is its simple fabrication process, where resonant beams and detection and excitation electrodes are defined by a single mask. Compared to those in the previous works,[4,7] where the excitation direction is parallel to the acceleration input direction, the present accelerometer uses the excitation normal to the acceleration input axis, thereby minimizing the coupling effects between the resonant excitation and the proof-mass deflection. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                146,
+                835,
+                242
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, we present the design, fabrication, and static test of the resonant accelerometer. We also analyze the uncertainty in the acceleration sensitivity caused by the micromachining, Young's modulus and dimension errors. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                245,
+                835,
+                294
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Theory and Analysis "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                142,
+                310,
+                378,
+                328
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1 shows the overall structure of the resonant accelerometer, which consists of a proof-mass, a pair of cantilever spring beams, a microresonator, and a set of electrodes on a base plate. The proof-mass is suspended by a pair of cantilever spring beams and the microresonator (Fig. 2), composed of a pair of fixed-fixed resonant beams and a perforated resonant mass, is attached to the proof-mass. A pair of electrostatic comb structures is designed between the resonant mass and the spring beams, for exciting the resonant beams as well as for detecting their motion as modulated by acceleration input. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                344,
+                835,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The working principle of the resonant accelerometer (Fig. 2) is explained as follows. When an external acceleration is applied in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-direction, the spring beams act as a mechanical suspension to support the accelerated proof-mass motion in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-direction (Fig. 3), which, in turn, develops an axial force in the resonant beam excited in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-direction, thus causing a shift in the resonant frequency. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                458,
+                835,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The natural frequency of the accelerometer,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{\\bullet}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", composed of the proof-mass and the spring beams, is obtained as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                541,
+                835,
+                572
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {0} = \\frac {1}{2 \\pi} \\sqrt {\\frac {K _ {e q}}{m _ {p r o o f}}} = \\frac {1}{\\pi} \\sqrt {\\frac {E p t ^ {3}}{8 m _ {p r o o f} L ^ {3}}}, \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ab51253d92570ce67fe5cd8656f7dbc4ac446207fcdda325301766f1cdd4dde8.jpg"
+                }
+            },
+            "bbox": [
+                340,
+                596,
+                833,
+                640
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/85e58129cbecd28132d9d1d4d1a9af765bab8824090ed15838475594feaea5df.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Cantilever-beam type resonant microaccelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                252,
+                686,
+                723,
+                847
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                140,
+                105,
+                460,
+                119
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "93 "
+                    }
+                ]
+            },
+            "bbox": [
+                813,
+                105,
+                837,
+                119
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bdff8ac47e6309c59c5acb15981e9572b783bcc7f22cd8868eacdf1ac6e6acd7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. Cantilever-beam type resonant microaccelerometer:  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, width and thickness of the proof-mass;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, width and thickness of the resonant mass;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, width and thickness of the spring beam; and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, the width and the thickness of the resonant beam, respectively. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                240,
+                160,
+                759,
+                407
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f8604f5b29d9fb918e346b98ab9e26cc05d7f25fb15929c6a4bb1bd5199b95dc.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                268,
+                521,
+                719,
+                586
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5872fe97ef2e6484bae976c5fe948654534b7b782fc7cac33b424379d8f86edc.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. Working principle of the resonant accelerometer: (a) when acceleration is not applied; (b) when acceleration is applied. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                272,
+                651,
+                719,
+                792
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "94 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                115,
+                174,
+                129
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                521,
+                117,
+                839,
+                132
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{proof}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the mass of the accelerometer, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{e\\varphi}, E, p, t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": " indicate the equivalent stiffness, Young's modulus, width, thickness and length of the spring beam, respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                148,
+                837,
+                197
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resonant frequency of the vibrating microstructure is obtained by the Rayleigh method. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(12,13)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " For a vibrating micromechanical beam with an axial preload, the lateral deflection is expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                197,
+                837,
+                245
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "y (x, t) = Y _ {1} (x) e ^ {j \\omega_ {1} t}, \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7e2fdfcdfeca2f20ee94889d403698438ed48df4a0a03d541df9ec5baea9390b.jpg"
+                }
+            },
+            "bbox": [
+                406,
+                267,
+                835,
+                301
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{Y}_1(x)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the fundamental mode shape of the beam vibration. The vibrating beam is subject to a bending moment and a tensile load. The potential energy, stored in the differential segments of the beam, is integrated to obtain the maximum potential energy,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "PE"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                304,
+                837,
+                368
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "P E = \\int_ {0} ^ {L E I} \\frac {\\left[ d ^ {2} Y _ {1} (x) \\right] ^ {2}}{2 d x ^ {2}} d x + \\int_ {0} ^ {L F} \\frac {\\left[ d Y _ {1} (x) \\right] ^ {2}}{2 d x} d x, \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/48ff0de448ec7e38a2b7b6c71394912f046cbcb190227f832565d1ddfc69eed7.jpg"
+                }
+            },
+            "bbox": [
+                300,
+                377,
+                835,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E, I"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the Young's modulus, moment of inertia and tensile load, respectively. The maximum kinetic energy,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "KE"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", occurs when each segment passes through the zero displacement point: "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                441,
+                837,
+                490
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K E = \\omega_ {1} ^ {2} \\left[ \\int_ {\\bullet} ^ {L} \\frac {1}{2} \\rho A _ {S} Y _ {1} ^ {2} (x) d x + \\frac {1}{2} m _ {\\text {r e s o n a n t}} Y _ {1} \\Big | _ {x = L} ^ {2} \\right], \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c5b2320ef591359737f6c956d23e918ccd244c4e11b862d0772d90caf1e5ac8d.jpg"
+                }
+            },
+            "bbox": [
+                300,
+                513,
+                835,
+                551
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho, A_s"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{\\text{resonant}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the density, cross-sectional area of the beam and mass of resonator, respectively. From the Rayleigh method, the maximum potential energy equates the maximum vibrational energy. From eqs. (3) and (4), the first resonant frequency of the beam is obtained as: "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                574,
+                837,
+                641
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\omega_ {1} ^ {2} = \\frac {\\int_ {0} ^ {L} \\frac {E I}{2} \\left[ \\frac {d ^ {2} Y _ {1} (x)}{d x ^ {2}} \\right] ^ {2} d x + \\int_ {0} ^ {L} \\frac {F}{2} \\left[ \\frac {d Y _ {1} (x)}{d x} \\right] ^ {2} d x}{\\left[ \\int_ {0} ^ {L} \\frac {1}{2} \\rho A _ {S} Y _ {1} ^ {2} (x) d x + \\frac {1}{2} m _ {\\text {r e s o n a n t}} Y _ {1} \\right| _ {x = L} ^ {2}}. \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a7ec93fcf210872c2e60a912dcf4a4d2d0ba763c54e74f622cbf9af78fa5a016.jpg"
+                }
+            },
+            "bbox": [
+                300,
+                650,
+                835,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Equation (5) expresses the resonant frequency of the beam as a function of the tensile load. For the tensile load, proportional to the inertial load due to the acceleration input, the resonant frequency is a function of the acceleration input. As shown in eq. (5), the natural frequency of the resonant beam is a function of the axial force,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Therefore, the resonant accelerometer (Fig. 1) generates the natural frequency shift of the resonant beam due to the axial force caused by an external acceleration. However, external acceleration (positive acceleration) induces tensile force in the resonant beam, and external deceleration (negative acceleration) also induces tensile force in the resonant beam. Therefore, the present "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                751,
+                837,
+                882
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                105,
+                462,
+                119
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "95 "
+                    }
+                ]
+            },
+            "bbox": [
+                815,
+                105,
+                839,
+                118
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonant microaccelerometer can measure only the absolute value of the external acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                160,
+                843,
+                188
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Without external force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(F = 0)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the resonant beam, the natural frequency of the microresonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", can be calculated as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                191,
+                843,
+                225
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {n} = \\frac {1}{2 \\pi} \\sqrt {\\frac {4 E t w ^ {3}}{m _ {r e s o n a n t} l ^ {3}}} ， \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5ed21d9a0615ca103d1e910e0ddc8f471d5ceb0621edbff15875ceba5331cf1b.jpg"
+                }
+            },
+            "bbox": [
+                400,
+                246,
+                841,
+                289
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonator mass, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w, t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the width, thickness and length of the resonant beam, respectively. With a tensile force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F(= E\\varepsilon A_{S})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the resonant beam, the resonant frequency of the microresonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{r}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is expressed "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(6,7)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                313,
+                843,
+                366
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {r} = f _ {n} \\left(1 + 1. 2 \\frac {F l ^ {2}}{E t w ^ {3}}\\right) ^ {1 / 2} = f _ {n} \\left(1 + 1. 2 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}\\right) ^ {1 / 2}, \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/dff81853330519fc85c4106acce3ee671a439633a05d3deff394c788fa57c3d4.jpg"
+                }
+            },
+            "bbox": [
+                310,
+                387,
+                841,
+                420
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{r}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency with the tensile load,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the natural frequency without the tensile load, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the strain of the resonant beam. "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                442,
+                843,
+                473
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the acceleration,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is applied to the proof-mass,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the static deflection,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is obtained as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                476,
+                843,
+                507
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "a = \\frac {E p t ^ {3}}{4 m _ {\\text {p r o o f}} L ^ {3}} \\delta \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/35c7ef37ab2fa308ec718a2162fe4eeeb00f3715078ef846eed612848a1f9285.jpg"
+                }
+            },
+            "bbox": [
+                420,
+                530,
+                841,
+                568
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the maximum acceleration,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a_{\\text{max}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is applied to the proof-mass, the maximum deflection of the spring beam is generated as "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                593,
+                841,
+                627
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\delta_ {m} = \\frac {m _ {\\text {p r o o f}} a _ {\\max}}{K _ {e q}} = \\frac {m _ {\\text {p r o o f}} L ^ {3} a _ {\\max}}{4 E p t ^ {3}}, \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/839c30454975382ad06fd2197b4a67ffb8366c861f04d6c8f3bc64e38b71e7f0.jpg"
+                }
+            },
+            "bbox": [
+                358,
+                648,
+                841,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{eq} = 4Ept^3 / L^3"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the stiffness of the spring beams. For the deflection of eq. (9) at the end of the resonant beam, we can approximate the maximum strain generated in the resonant beam, as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                717,
+                843,
+                771
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\varepsilon_ {m} = \\frac {\\sqrt {L ^ {2} + \\delta_ {m} ^ {2}} - L}{L} \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/eb3c8d7e1c29a3ed9304d866579609297fa0b2e8084abeaf45eff42493743dc7.jpg"
+                }
+            },
+            "bbox": [
+                406,
+                792,
+                841,
+                830
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "On the other hand, the maximum stress of the resonant beam is obtained by Hook's law, "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                854,
+                835,
+                871
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "96 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                117,
+                174,
+                132
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                519,
+                117,
+                839,
+                133
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma_ {m} = E \\varepsilon_ {m}. \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b5bdfe03f25fc281032ad0edd5c70eb95da41faf631ec79772b736386dd60553.jpg"
+                }
+            },
+            "bbox": [
+                436,
+                146,
+                837,
+                163
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From eqs. (7) and (10), we estimate the frequency shift of the resonant beam due to the acceleration-induced axial strain. From eqs. (10) and (11), we can evaluate the shock survival of the resonant beams. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                183,
+                839,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resolution and nonlinearity of the resonant microaccelerometer in the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5g"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration range are defined as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                231,
+                839,
+                265
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\text {R e s o l u t i o n} = \\frac {5 g}{f _ {\\max} - f _ {n}}, \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2864a9043c16eb4d1f5c99c1c4171e9f376216282a1362419ab74c12a10a0a8d.jpg"
+                }
+            },
+            "bbox": [
+                388,
+                287,
+                837,
+                322
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\text {Nonlinearity} (\\%) = \\frac {f _ {\\text {linear}} - f _ {\\max}}{f _ {\\max}} \\times 100, \\tag{13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/abcd7b58e729cd37dfa6f065ed300d9e93a910b33d60a96adaab4dc8f12114e2.jpg"
+                }
+            },
+            "bbox": [
+                332,
+                356,
+                837,
+                390
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{\\text{max}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency at 5g and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{\\text{linear}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the linearized function of eq. (7) that can be written as "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                414,
+                839,
+                445
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {\\text {l i n e a r}} = f _ {n} \\left(1 + 0. 6 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}\\right). \\tag {14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/195b51ec1902ec6113ac1d00f752665cff54e0e97a6cba5ff3bd465d435a0cb0.jpg"
+                }
+            },
+            "bbox": [
+                386,
+                452,
+                837,
+                485
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Uncertainty and Micromachining Error Analysis "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                507,
+                639,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We analyze uncertainty in the frequency output of the resonant microaccelerometer. The origin of the uncertainty includes error in fabricated structure size, Young's modulus error and proof-mass deflection. Among the micromachining errors, the effect of beam width is the dominant factor, representing the overall uncertainty due to micromachining. Thus, we examine the effects of the uncertainty in beam width on the frequency of the microresonator, and the uncertainty in the Young's modulus and the proof-mass deflection on that of the microresonator. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                541,
+                839,
+                655
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effect of the micromachining errors in beam width on the resonant frequency of the microresonator is obtained by differentiating eq. (6) with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                657,
+                839,
+                689
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial f _ {n}}{\\partial w} = \\frac {3}{2 \\pi} \\sqrt {\\frac {E t w}{m _ {r e s o h a n t} l ^ {3}}} \\tag {15}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e60777b878f3e509a8912a4f82e447f51331a061eb06636de45222f276079cd5.jpg"
+                }
+            },
+            "bbox": [
+                390,
+                712,
+                837,
+                751
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Then, the effect of micromachining errors of beam width on the frequency shift is obtained by differentiating  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f = |f_r - f_n|"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                775,
+                839,
+                813
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial \\Delta f}{\\partial w} = \\frac {3}{2 \\pi} \\sqrt {\\frac {E t w}{m _ {\\text {r e s o n a n t}} l ^ {3}}} \\left(\\sqrt {1 + 1 . 2 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}} - 1\\right) - \\frac {1 . 2 \\varepsilon}{\\pi} \\sqrt {\\frac {E t l}{m _ {\\text {r e s o n a n t}} w ^ {3}}} \\left(1 + 1. 2 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}\\right) ^ {- \\frac {1}{2}} \\tag {16}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1ff6429250cc6ed97f6743602cc504c268b67e26c29705512277c97c90c2598d.jpg"
+                }
+            },
+            "bbox": [
+                174,
+                840,
+                837,
+                888
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                102,
+                466,
+                117
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "97 "
+                    }
+                ]
+            },
+            "bbox": [
+                817,
+                101,
+                843,
+                115
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effect of deflection measurement errors on the frequency shift is obtained by differentiating with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                153,
+                847,
+                187
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial \\Delta f}{\\partial \\delta} = \\frac {0 . 6 \\delta}{\\pi L} \\sqrt {\\frac {E t l}{m _ {\\text {r e s o n a n t}} w \\left(L ^ {2} + \\delta^ {2}\\right)}} \\left(1 + 1. 2 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}\\right) ^ {- \\frac {1}{2}} \\tag {17}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f55d6f57b0d8426959825562c8eeee101284a41066efcadb4d8cd9de42b9e83e.jpg"
+                }
+            },
+            "bbox": [
+                292,
+                211,
+                845,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effect of Young's modulus measurement errors on the frequency shift is obtained by differentiating  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                282,
+                847,
+                315
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial \\Delta f}{\\partial E} = \\frac {1}{4 \\pi} \\sqrt {\\frac {4 t w ^ {3}}{E m _ {\\text {r e s o n a n t}} l ^ {3}}} \\left(1 + 1. 2 \\varepsilon \\frac {l ^ {2}}{w ^ {2}}\\right) ^ {\\frac {1}{2}} \\tag {18}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e81316be3da6c1facc8e0f8fadb503e5e8ab4affa65a34ad8fd98ccc9c6e7778.jpg"
+                }
+            },
+            "bbox": [
+                332,
+                339,
+                845,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From eqs. (16) and (17), an overall uncertainty,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "U"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of the frequency shift including micromachining error, Young's modulus error and proof-mass deflection error, is expressed as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                410,
+                847,
+                459
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "U = \\sqrt {\\left(\\frac {\\partial \\Delta f}{\\partial w}\\right) ^ {2} \\cdot \\Delta w ^ {2} + \\left(\\frac {\\partial \\Delta f}{\\partial \\delta}\\right) ^ {2} \\cdot \\Delta \\delta^ {2} + \\left(\\frac {\\partial \\Delta f}{\\partial E}\\right) ^ {2} \\cdot \\Delta E ^ {2}}. \\tag {19}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/dbab0d17da934a7accbf5e78ad74f17a1ba3ee2a0ff7932cc164e2ba85b405e7.jpg"
+                }
+            },
+            "bbox": [
+                274,
+                483,
+                845,
+                524
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Design and Fabrication "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                152,
+                565,
+                414,
+                583
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.1 Resonant microaccelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                152,
+                600,
+                458,
+                616
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Design variables for the accelerometer are illustrated in Fig. 2. To determine the design variables, we consider the natural frequency of the accelerometer,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", in the range of 100-500 Hz. The choice of the frequency range is adapted from the specifications of Lucas silicon servo accelerometers "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(14)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " which typically are used in high-reliability guidance systems for missiles, torpedoes, and other related military devices. In typical specifications of Lucas Schaevitz's accelerometer, the range, nominal natural frequency, linearity, resolution and shock survival are ± 5 g, 125 Hz, 0.05% of full range, 0.001% of full range and 100 g -11 msec, respectively. In order to reduce the nonlinearity, the natural frequency of the microresonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is fixed to satisfy  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{n} \\geq 10f_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", but it is not necessary to satisfy this condition accurately. Next, we consider shock survival. The accelerometer is designed such that the maximum strength,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma_{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of the accelerometer is less than a tenth of the yield strength,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma_{y} / 10"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", with consideration of the safety factor of 10. Sensitivity has been designed to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10^{3}\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the detection range of 5 g, while satisfying the maximum nonlinearity of 5% and the minimum shock endurance of 100 g. On this basis, the design variables for the accelerometer are set in order to satisfy the specifications and the above-mentioned constraints, as shown in Table 2. "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                617,
+                849,
+                878
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "98 "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                112,
+                176,
+                126
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                523,
+                112,
+                843,
+                128
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2 Test structures for Young's modulus and residual stress measurement "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                153,
+                789,
+                170
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4 shows an on-chip polysilicon test structure designed for the measurement of Young's modulus. The mass and movable combs are suspended by microbeams. Analysis of the structure yields an expression for the Young's modulus as a function of the resonant frequency and geometrical dimensions. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                172,
+                843,
+                236
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E = (2 \\pi f) ^ {2} \\frac {l ^ {3} m _ {\\text {t e s t}}}{4 8 I}, \\tag {20}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6ce730c8ab7ac35d25b2731810a20c5f31cab232d3fe29db9d030a61fa7ad1d7.jpg"
+                }
+            },
+            "bbox": [
+                398,
+                258,
+                841,
+                293
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency of the test structure,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{test}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant mass, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the moment of inertia and the length of the microbeam, respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                315,
+                841,
+                346
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The microresonators of the resonant accelerometer have long and narrow beams which will deflect and buckle as a result of residual stress. The test specimen for residual stress is "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                346,
+                843,
+                379
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/4ae740191edd0efcd1dda2ba902c15d3337d3109a3450af455b574aff7bb27fa.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2 Resonant microaccelerometer design. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td></td><td>Accelerometer</td><td>Microresonator</td></tr><tr><td>Mass</td><td>6.90 × 10-3μg</td><td>2.58 × 10-4μg</td></tr><tr><td>Stiffness</td><td>0.092 N/m</td><td>1.565 N/m</td></tr><tr><td>Resonant frequency</td><td>0.58 kHz</td><td>12.40 kHz</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                148,
+                462,
+                843,
+                531
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/328a49d61feeb7c630e98d22bec6f883f0859d597a041c134d05ee3b2d69e31e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. Design model of Young's modulus test structure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                568,
+                719,
+                847
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                112,
+                466,
+                126
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "99 "
+                    }
+                ]
+            },
+            "bbox": [
+                819,
+                111,
+                845,
+                126
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "shown in Fig. 5. On the basis of the theory of beam buckling, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{(15)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the critical load equation is expressed. From this equation, we obtain the residual stress for a buckled beam of length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                159,
+                845,
+                208
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma = \\frac {\\pi^ {2} E w ^ {2}}{1 2 L ^ {2}}, \\tag {21}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9fb49484bb60e6f82fa6bb5a8302f7ca00ec42e1c7d94bf9b39d91bbec05fae4.jpg"
+                }
+            },
+            "bbox": [
+                424,
+                232,
+                841,
+                269
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the measured Young's modulus from eq. (20). "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                290,
+                595,
+                308
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.3 Fabrication process "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                322,
+                368,
+                339
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A set of designed micromechanical test structures has been fabricated by a combination of the bulk- and surface-micromachining techniques. The microresonator and the spring beams are fabricated by the surface-micromachining technique, while the proof-mass is formed by the bulk-micromachining technique. The on-chip test structures for Young's modulus (Fig. 4) and residual stress (Fig. 5) measurements are also fabricated by the surface-micromachining technique. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                341,
+                843,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The five-mask process starts with an alignment key definition on a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4^{\\prime \\prime}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (100) silicon wafer of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "600\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thickness. The silicon wafer is cleaned and thermally oxidized to form a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.3 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{SiO}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " film. After the patterning of the oxide etch mask, the wafer is etched in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " KOH solution to transfer the alignment marks to the silicon wafer. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                438,
+                841,
+                504
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6 describes the microfabrication process. In Fig. 6(a), a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick proof-mass is defined by a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1100^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " boron diffusion process using a thermal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{SiO}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " diffusion mask. After the removal of the thermal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{SiO}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{B}_2\\mathrm{O}_5"
+                    },
+                    {
+                        "type": "text",
+                        "content": " films, the wafer is passivated with a 2000- "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathring{\\mathrm{A}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick LPCVD nitride layer, deposited on top of a 2000- "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathring{\\mathrm{A}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick thermal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{SiO}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " layer. A  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2-\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick LPCVD sacrificial PSG layer is deposited, as shown in Fig. 6(b). After the PSG layer is patterned, the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick polysilicon structure layer is then deposited by LPCVD as shown in Fig. 6(c). A  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.5 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-thick PSG layer is deposited on the polysilicon structure layer. An annealing process is performed at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "950^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{N}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for one hour to dope the polysilicon structure layer symmetrically by the diffusion of phosphorus from the top and bottom layers of PSG. An additional annealing process is also performed to control the residual stress in the polysilicon layer. The top PSG layer is patterned and is used as an etch "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                504,
+                845,
+                684
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3d8beadc2a71139c7f498a64f71f61b9bded1a962ca87c494abbf6f2d6d06ac6.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. Residual stress test structure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                290,
+                713,
+                693,
+                851
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "100 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                117,
+                182,
+                132
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                118,
+                839,
+                133
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/718c0a0c6e9725f2133cd1b83d68d37c591162a1ff02853196e7ae7f5fed05bf.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. Fabrication process for the resonant microaccelerometer: a cross-sectional view along X-X of Fig. 1. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                336,
+                156,
+                675,
+                462
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "mask during RIE of the polysilicon layer. Using the RIE process, accelerometer springs as well as the test structures for the Young's modulus and residual stress measurements are fabricated on the same wafer. As shown in Fig.6(d), a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 - \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " -thick sacrificial PSG layer and a 2000-Å-thick LPCVD nitride are deposited, respectively. This nitride layer serves as a mask layer to protect the front surface of the substrate during the back surface silicon etching in EDP (Ethylenediamine : Pyrocatechol : DI water  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "= 1000ml:165g:330ml"
+                    },
+                    {
+                        "type": "text",
+                        "content": " solution. After the back surface patterning of the nitride layer, the bulk silicon is etched in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " EDP solution. The removal of the nitride layer and the PSG layer from the front surface of the substrate completes the microfabrication process as shown in Fig. 6(e). Figures 7 and 8 show a microfabricated cantilever-type resonant accelerometer, with Fig. 8 showing a close-up view of portion A in Fig. 7. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                537,
+                843,
+                715
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Experimental Results and Discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                748,
+                531,
+                765
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1 Frequency shift measurement and uncertainty analysis "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                782,
+                659,
+                799
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to examine the frequency shift output of the fabricated accelerometer, we performed a static test in the atmosphere pressure. Figure 9 shows the experimental setup for the resonant frequency measurement when a static deflection is applied to proof-mass. The applied proof-mass deflection is not caused by the gravitational force, but by a probe tip of the test setup. We measured the frequency shift caused by the applied proof-mass "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                801,
+                843,
+                882
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                112,
+                466,
+                126
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "101 "
+                    }
+                ]
+            },
+            "bbox": [
+                809,
+                112,
+                841,
+                126
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/659779a63e3f3dc0b054ec80d78e5ceb83395068b32b658f19f7eaf906200e22.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. Photograph of microfabricated resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                262,
+                157,
+                727,
+                397
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d217881185c78ab5e2cc914fe9dd16c749761e54b9fbae22a37b64eac384442d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. SEM micrograph of the microresonator: a close-up view of portion A in Fig.7. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                298,
+                473,
+                697,
+                684
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "deflection, instead of the proof-mass deflection due to static acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                755,
+                717,
+                771
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resonant frequency of the microresonator without the deflection of the proof-mass was measured to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "11.0 \\pm 0.6 \\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a DC bias voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "45 \\mathrm{~V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with an AC drive voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "32 \\mathrm{~V}_{\\mathrm{p-p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". For the applied proof-mass deflection of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4.3 \\pm 0.5 \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", corresponding to an acceleration input of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.793 \\pm 0.092 \\mathrm{~g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the resonant frequency of the microresonator has been increased by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "860 \\mathrm{~Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The theoretical resonant frequency and its shift due to the proof-mass deflection are estimated by eq. (6) and (7), respectively. The results, listed in Table 3, include the effect of micromachining errors, uncertainty in the Young's modulus "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                772,
+                845,
+                888
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "102 "
+                    }
+                ]
+            },
+            "bbox": [
+                150,
+                112,
+                184,
+                126
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                112,
+                839,
+                128
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7af31434b1c7187a9dc4cfd915cee120a22083390df11f84d1349782cbd06826.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9. Instrument set-up for the resonant frequency measurement and static deflection test. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                308,
+                157,
+                703,
+                396
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "measurement and the deflection measurement uncertainty, respectively. Considering these three errors, we obtain a theoretically estimated frequency shift of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "571.96 \\pm 672.0\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". From the results, we find that the major portion of the uncertainty in the frequency shift estimation comes from the uncertainty in the Young's modulus measurement. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                461,
+                841,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Using the theoretical equations of (16), (17), (18) and (19), we also analyze the uncertainties in the resonant frequency and frequency shift of the accelerometer, as shown in Table 4. From the theoretical uncertainty analysis (Table 4), the micromachining error and uncertainty in Young's modulus measurement cause the uncertainty of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 560\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 625\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the resonant frequency estimation. The effects of the deflection measurement error and uncertainty in Young's modulus measurement are more dominant than that of the micromachining error in the frequency shift estimation, whose quantitative values are listed in Table 4. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                528,
+                843,
+                655
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Finally, in Table 5, we compare the estimated and measured performance of the resonant microaccelerometer. The estimated values in Table 5 are based on the measured sizes of the fabricated device. The experimental resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "11.0 \\pm 0.6\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " agrees well with the theoretical value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "11.05 \\pm 0.84\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The measured frequency shift of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "860\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is higher than the theoretical value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "571.96 \\pm 672.0\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The discrepancy between the measured and the estimated frequency shifts is mainly due to the uncertainties involved in the proof-mass deflection and Young's modulus. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                658,
+                843,
+                772
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For an accurate prediction of the resonant frequency shift, the micromachining errors, particularly in the resonant beam width, proof-mass deflection and Young's modulus, must be defined accurately. If the Young's modulus of polysilicon is measured within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " error bound, the frequency shift can be estimated within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7.5\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " error bound. For a precise fabrication of the microstructure dimensions, it is recommended that more attention be paid to the photolithography and RIE processes because they define the structures decisively. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                772,
+                843,
+                888
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                111,
+                466,
+                125
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "103 "
+                    }
+                ]
+            },
+            "bbox": [
+                811,
+                110,
+                845,
+                124
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/1331621e5179d6d074e5b3eda41bc10f94ff77ca4faccda069253e4453140033.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3 Uncertainty analysis based on the measured structure sizes and proof-mass deflection. "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "(g:gravitational acceleration.) "
+                    }
+                ],
+                "html": "<table><tr><td>Performance</td><td>Estimated values</td><td colspan=\"4\">Uncertainties</td></tr><tr><td></td><td></td><td>Overall</td><td>Due to micromachining error</td><td>Due to deflection error</td><td>Due to Young&#x27;s modulus error</td></tr><tr><td>Equivalent acceleration (a)</td><td>0.793 g</td><td>±0.092 g</td><td>N/A</td><td>±0.092 g</td><td>N/A</td></tr><tr><td>Resonant frequency (fn)</td><td>11.05 kHz</td><td>±0.84 kHz</td><td>±0.56 kHz</td><td>N/A</td><td>±0.625 kHz</td></tr><tr><td>Frequency shift (Δfn)</td><td>571.96 Hz</td><td>±672.0 Hz</td><td>±9.06 Hz</td><td>±136.38 Hz</td><td>±658.0 Hz</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                144,
+                194,
+                841,
+                348
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/1e66f3ec191194cf259b660fb024e69b7cd7345f3dc0144a0e5772dcb9963b10.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 4 Uncertainty analysis based on the theoretical equations. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td></td><td colspan=\"4\">Uncertainties</td></tr><tr><td></td><td>overall</td><td>due to micromachining error</td><td>due to deflection error</td><td>due to Young&#x27;s modulus error</td></tr><tr><td>Estimated resonant frequency (fn)</td><td>±839 Hz</td><td>±560 Hz</td><td>N/A</td><td>±625 Hz</td></tr><tr><td>Estimated frequency shift (Δfn)</td><td>±670.6 Hz</td><td>±8.7 Hz</td><td>±129.2 Hz</td><td>±658.0 Hz</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                146,
+                421,
+                841,
+                534
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/6897ee0a309bbb7b76b647ee5de1ff710e1607fda7d0e8c548736f62417f1784.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 5 Comparison of the measured and estimated performance of the resonant microaccelerometer. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Performance</td><td>Measured value</td><td>Estimated value</td></tr><tr><td>Resonant frequency (fn)</td><td>11.0 ± 0.6 kHz</td><td>11.05 ± 0.84 kHz</td></tr><tr><td>Frequency shift (Δfn)</td><td>860 Hz</td><td>571.9 ± 670.6 Hz</td></tr><tr><td>Sensitivity</td><td>1.10 ± 0.13 kHz/g</td><td>0.72 ± 0.84 kHz/g</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                146,
+                603,
+                841,
+                685
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6. Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                719,
+                306,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this work, we have designed and fabricated a resonant microaccelerometer utilizing the laterally driven electrostatic excitation and capacitive detection methods, and we have also performed the static test and uncertainty analysis on the resonant microaccelerometer. Microaccelerometers with built-in polysilicon microresonators have been fabricated by the combined use of the bulk-micromachining and surface-micromachining techniques. From the on-chip test structures, the Young's modulus of polysilicon is measured to be in the range of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60 - 100\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The residual stress in the polysilicon layers has been reduced to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "362.1\\mathrm{kPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through annealing, performed for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{N}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " atmosphere. From the "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                751,
+                843,
+                885
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "104 "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                112,
+                180,
+                126
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                112,
+                835,
+                126
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "static test, the fabricated resonant accelerometer shows a frequency shift of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "860\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from the resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "11.0 \\pm 0.6\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", thereby resulting in a sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.1 \\times 10^{3}\\mathrm{Hz}/"
+                    },
+                    {
+                        "type": "text",
+                        "content": " g. From the uncertainty analysis based on the theoretical equations as well as the experimental data, we found that the major uncertainty in the frequency shift output originates in the uncertainties involved in the micromachining error, Young's modulus measurement and proof-mass deflection measurement. "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                150,
+                841,
+                246
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgment "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                416,
+                266,
+                575,
+                284
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work has been supported by the National Creative Research Initiative Programs of the Ministry of Science and Technology (MOST) under the project title, \"Realization of Bio-Analogic Digital Nanoactuators\". "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                301,
+                843,
+                349
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Appendix "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                452,
+                366,
+                541,
+                385
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Young's Modulus Measurement "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                152,
+                403,
+                424,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From the microfabricated on-chip test structure, we measured the Young's modulus of the polysilicon structure layer. For a DC bias voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with an AC drive voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8\\mathrm{V}_{\\mathrm{p - p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", resonant frequencies of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.27\\pm 0.07\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13.13\\pm 0.13\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " were measured for the two test structures shown in Fig. 4. Using the measured dimensions and the resonant frequencies, we can estimate the Young's modulus of the polysilicon layer using eq. (20). Among the size uncertainties in the structure, we considered the micromachining error of the resonant beam size only, because of its major effect on the Young's modulus estimation. In the Young's modulus estimation, therefore, we considered the uncertainties involved in the microbeam size measurement and the frequency measurement. By comparing the effect of these two sources of uncertainty in Table 6, we find that the major portion of the uncertainty in the Young's modulus estimation originates in the micromachining error in the beam size. From Table 6, we finally obtained the Young's modulus of the polysilicon layer as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "84.44\\pm 15.65\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "82.67\\pm 15.38\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for the two polysilicon on-chip test structures. From the measured dimensions and the resonant frequency of the microresonator, we estimate the Young's modulus of polysilicon as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "81.22\\pm 12.56\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", including the uncertainties of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 8.83\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 8.94\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " involved in the size and frequency errors, respectively. The estimated Young's modulus agrees well with those values estimated from the on-chip test structures in the \"Experimental Results and Discussion\" chapter. Thus, we consider the Young's modulus of polysilicon as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "82\\pm 15\\mathrm{GPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                421,
+                843,
+                727
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Residual Stress Measurement and Control "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                152,
+                746,
+                509,
+                763
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 10(a) shows a polysilicon microstructure buckled due to the compressive residual stress. In order to control the residual stress, we have performed process tests with four different annealing time of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a fixed temperature condition of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{N}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " atmosphere. After  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " annealing at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", we still observed the residual stress problem. With annealing of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the residual stress of the polysilicon structures was completely released as shown in Fig. 10(b). Under process conditions with longer annealing times, we observed a PSG reflow problem. From eq. (21), we estimated "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                765,
+                843,
+                878
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                150,
+                111,
+                466,
+                124
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "105 "
+                    }
+                ]
+            },
+            "bbox": [
+                813,
+                108,
+                843,
+                122
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/5644f0ac8250ebd38dc2ebc90aa077a7f53a281292667f0c47aa6af3068b2179.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 6 Young's modulus estimated from the measured test structure sizes and resonant frequencies. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td></td><td></td><td>Test structure A</td><td>Test structure B</td></tr><tr><td>Measured frequency</td><td></td><td>13.27 ± 0.07 kHz</td><td>13.13 ± 0.13 kHz</td></tr><tr><td>Estimated Young&#x27;s modulus</td><td></td><td>84.44 GPa</td><td>82.67 GPa</td></tr><tr><td rowspan=\"3\">Uncertainties in Young&#x27;s modulus</td><td>overall</td><td>±15.65 GPa</td><td>±15.38 GPa</td></tr><tr><td>due to micromachining error</td><td>±15.62 GPa</td><td>±15.29 GPa</td></tr><tr><td>due to frequency error</td><td>±0.89 GPa</td><td>±1.64 GPa</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                146,
+                200,
+                841,
+                338
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0e282a7785872753085ed1412952fbde8958d5688b838a5efba2e5bef3fca4b2.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                314,
+                356,
+                699,
+                510
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/69f1d65ae604cca4e4f8f58e6f3fde33abcbc2416353a45536a81aff27d2ede0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 10. Photographs of buckled and stress released microbeams: (a) buckled microbeam due to residual stress; (b) stress released microbeam. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                314,
+                569,
+                701,
+                720
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "that the compressive residual stress is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "362.1\\mathrm{kPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for the polysilicon layer annealed for  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{h}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". For other annealing conditions, the minimum residual stress of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10.47\\mathrm{MPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was estimated. "
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                832,
+                843,
+                880
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "106 "
+                    }
+                ]
+            },
+            "bbox": [
+                148,
+                117,
+                182,
+                129
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                117,
+                837,
+                132
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                438,
+                153,
+                541,
+                167
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1 K. H. Kim, J. S. Ko, Y.-H. Cho, K. Lee, B. M. Kwak and K. Park: Sensors and Actuators A 50 (1995) 121. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2 W. Kuehnel and S. Sherman: Sensors and Actuators A 45 (1994) 7. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3 P.-L. Chen, R. S. Muller and A. P. Andrews: Sensors and Actuators 5 (1984) 119. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4 D. W. Satchell and J. C. Greenwood: Sensors and Actuators A 17 (1989) 241. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5 S. C. Chang, M. W. Putty, D. B. Hicks and C. H. Li: Sensors and Actuators, A 21 - A 23 (1990) 342. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6 D. W. Burns, R. D. Horning, W. R. Herb, J. D. Zook and H. Guckel: Proc. 8th Int. Conf. Solid-state Sensors and Actuators 2 (Transducer 95) Stockholm, Sweden, June 25-29 (1995) p. 659. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7 H. Hashimoto, K. Minami and M. Esashi: Technical Digest of the 13th Sensor Symposium, (1995) p. 181. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8 T. A. Roseeig, R. T. Howe, A. P. Pisano and J. H. Smith: Proc. 9th Int. Conf. Solid-State Sensors and Actuators (Transducer '97) Chicago, U.S.A., June 16-19 (1997) p. 859. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9 O. Tabata, T. Yamamoto, A. A. Seshia and R. T. Howe: Proc. 10th Int. Conf. Solid-State Sensors and Actuators (Transducer 99) Sendai, Japan, June 7-10 (1999) p. 1538. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10 W. C. Tang, T.-C. H. Nguyen and R.T. Howe: Proc. Micro Electro Mechanical Systems Workshop, Salt Lake City, Utah, U.S.A., February 20-22 (1989) p. 53. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11 Y.-H. Cho: Proc. Int. ISEM Symposium on Advanced Computational and Design Techniques in Applied Electromagnetic Systems (ISEM), Seoul, Korea, June 22-24 (1994) p. 301. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12 M. A. Schmidt and R. T. Howe: Technical Digest, IEEE Solid-State Sensor Workshop, Hilton Head, SC, June 2-5 (1986) p. 94. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13 R. T. Howe: Proc. 4th Int. Conf. Solid-State Sensors and Actuators (Transducers 87) Tokyo, Japan, June 2-5 (1987) p. 843. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14 L. Schaevitz: Linear And Angular Servo Accelerometer, Technical bulletin 4501G. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15 W. C. Young: ROARK's Formulas For Stress & Strain (McGraw-Hill, 6th edition, 1989) p. 670. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                150,
+                187,
+                839,
+                569
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "About the Author "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                408,
+                603,
+                573,
+                619
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Young Ho Seo was born in Pusan, Korea, in 1975. He received the B.S. degree from Pusan National University, Pusan, Korea, in 1998 and the M. S. degree from Korea Advanced Institute of Science and Technology (KAIST), Daejon, Korea, in 2000, and he is currently working as a graduate student toward a Ph.D. degree at KAIST. His research interests include the design, analysis and evaluation of energy conversion mechanisms in biological cells and micro-regions. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                638,
+                839,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Young-Ho Cho received the B.S. degree summa cum laude from Yeungnam University, Taegu, Korea, in 1980, the M.S. Degree from the Korea Advanced Institute of Science and Technology (KAIST), Seoul, Korea, in 1982, and the Ph.D. degree from the University of California at Berkeley for his MEMS work completed in December, 1990. "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                754,
+                839,
+                816
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From 1982 to 1986 he was a Research Scientist of the CAD/CAM Research Laboratory, the Korea Institute of Science and Technology (KIST), Seoul, Korea. During 1987-1991, he worked as a Graduate Student Researcher (1987-1990) and a Post-Doctoral Researcher (1991) of the Berkeley Sensor and Actuator Center at the University of "
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                818,
+                839,
+                882
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                142,
+                111,
+                462,
+                125
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "107 "
+                    }
+                ]
+            },
+            "bbox": [
+                807,
+                110,
+                839,
+                124
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "California at Berkeley. In August 1991, Dr. Cho moved to KAIST, where he is currently an Associate Professor in the Department of Mechanical Engineering and the director of the Digital Nanolocomotion Center in the National Creative Research Programs. "
+                    }
+                ]
+            },
+            "bbox": [
+                156,
+                163,
+                847,
+                212
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dr. Cho's research interests are focused on the development of inertial microsensors, micromechanical actuators, and opto-/thermofluidic-micromechanical components for applications to automotive electronics systems, inertial navigation systems, information and communication systems, and so forth. He has served as the Chair of the Steering Committee for Korea National MEMS Programs as well as a member of the Program Committee for international MEMS conferences, including the IEEE MEMS Conference and the IEEE MOEMS Conference. Dr. Cho is a member of IEEE and ASME. "
+                    }
+                ]
+            },
+            "bbox": [
+                154,
+                214,
+                849,
+                325
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "108 "
+                    }
+                ]
+            },
+            "bbox": [
+                154,
+                122,
+                190,
+                138
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensors and Materials, Vol. 14, No. 2 (2002) "
+                    }
+                ]
+            },
+            "bbox": [
+                523,
+                122,
+                843,
+                136
+            ]
+        }
+    ]
+]

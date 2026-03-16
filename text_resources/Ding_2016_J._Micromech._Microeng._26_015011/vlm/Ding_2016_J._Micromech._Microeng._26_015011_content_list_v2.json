@@ -1,0 +1,4196 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "PAPER "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                131,
+                119,
+                144
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A high-sensitivity biaxial resonant accelerometer with two-stage microleverage mechanisms "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                60,
+                157,
+                643,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To cite this article: Hong Ding et al 2016 J. Micromech. Microeng. 26 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                218,
+                522,
+                233
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "View the article online for updates and enhancements. "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                273,
+                391,
+                287
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "You may also like "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                673,
+                131,
+                836,
+                149
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- A new improved vertical comb type differential capacitive sensing micro accelerometer using silicon-on-insulator wafer technology "
+                    }
+                ]
+            },
+            "bbox": [
+                699,
+                157,
+                919,
+                195
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Manoj Kumar Dounkal, R K Bhan and Navin Kumar "
+                    }
+                ]
+            },
+            "bbox": [
+                707,
+                197,
+                907,
+                214
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SPICE compatible behavioural modelling of resistive sensors "
+                    }
+                ]
+            },
+            "bbox": [
+                699,
+                223,
+                924,
+                243
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Prajit Nandi, Debashis Sahu, Anindya Sundar Dhar et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                707,
+                243,
+                907,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "- A piezoresistive micro-accelerometer with high frequency response and low transverse effect "
+                    }
+                ]
+            },
+            "bbox": [
+                699,
+                270,
+                929,
+                299
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Peng Wang, Yulong Zhao, Bian Tian et al. "
+                    }
+                ]
+            },
+            "bbox": [
+                707,
+                300,
+                929,
+                309
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Journal of "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                43,
+                154,
+                58
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromechanics and "
+                    }
+                ]
+            },
+            "bbox": [
+                62,
+                60,
+                250,
+                74
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Microengineering "
+                    }
+                ]
+            },
+            "bbox": [
+                62,
+                76,
+                220,
+                93
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "中"
+                    }
+                ]
+            },
+            "bbox": [
+                794,
+                43,
+                825,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "PURPOSE-LED "
+                    }
+                ]
+            },
+            "bbox": [
+                828,
+                43,
+                934,
+                55
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "PUBLISH "
+                    }
+                ]
+            },
+            "bbox": [
+                828,
+                55,
+                932,
+                67
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This content was downloaded from IP address 134.58.253.20 on 19/01/2026 at 17:42 "
+                    }
+                ]
+            },
+            "bbox": [
+                242,
+                938,
+                754,
+                950
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A high-sensitivity biaxial resonant accelerometer with two-stage microleverage mechanisms "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                77,
+                97,
+                736,
+                200
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Hong Ding, Jiaxuan Zhao, Bing-Feng Ju and Jin Xie "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                225,
+                532,
+                242
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The State Key Laboratory of Fluid Power Transmission and Control, Zhejiang University, Hangzhou 310027, People's Republic of China "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                253,
+                689,
+                280
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "E-mail: xiejin@zju.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                292,
+                240,
+                305
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received 11 September 2015, revised 4 November 2015  \nAccepted for publication 17 November 2015  \nPublished 11 December 2015 "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                316,
+                420,
+                355
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/402dd87600695904ccb2ffce929bd39f5b6563e89c498bfa1c821dcbc8431b0f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                653,
+                319,
+                712,
+                365
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                369,
+                142,
+                381
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents a design and experimental evaluation of a micro-electro-mechanical system biaxial resonant accelerometer with two-stage microleverage mechanisms. The device incorporates two pairs of double-ended tuning fork resonators coupled to a single proof mass. The two-stage microleverage mechanisms possess a higher amplification factor than single-stage microleverage mechanisms, so that the proposed accelerometer has a high level of sensitivity. In addition, a low level of cross-axis sensitivity is realized because of the decoupling beams. The accelerometer is theoretically analyzed and then simulated in the system level by the finite element method. The device is fabricated in a silicon-on-insulator wafer. The experimental results demonstrate that the average differential sensitivity of the resonant accelerometer is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "275\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "290\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under a polarization voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The measured cross-axis sensitivity is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                382,
+                717,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: resonant accelerometer, MEMS, microleverage, frequency shift "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                549,
+                589,
+                563
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(Some figures may appear in colour only in the online journal) "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                573,
+                505,
+                587
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                621,
+                200,
+                636
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant sensors have been a hot area of research for several years. As the core element of a resonant sensor, the resonator changes its output frequency as a function of a physical parameter. Because the sensor output is 'digital' in the sense that the resonant sensor is basically independent on analog levels and can be coupled to digital circuitry, it can minimize the inaccuracies arising in analog signal generation and transformation to digital form. Therefore, the resonant sensors possess higher accuracy and anti-interference in comparison with traditional analog transducers [1]. Moreover, the resonant sensors are able to avoid the pull-in instability issues of proof mass [2]. Perhaps these issues still exist in resonators to a certain degree, but the resonant sensors can work in a safe range avoiding pull-in by proper design [3]. In addition, the resonant sensors based on frequency shift caused by the stress change have the potential for higher sensitivity than other types of sensors [1, 4]. Based on the principle of "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                649,
+                497,
+                892
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonant sensing, many kinds of sensors such as the electrostatic charge sensor [5], the magnetometer [6], and the gyroscope [7] have been developed. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                623,
+                927,
+                665
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The microresonant accelerometer is a resonant inertial device with many potential applications due to its frequency output, high sensitivity, and large dynamic range [8-10]. A resonant accelerometer consists of a proof mass, one or more resonators, and microleverages. The resonant frequency of the resonator has a shift due to the axial stress generated by the proof mass under external acceleration [11-13]. Therefore, the value of acceleration can be computed from the shift of resonant frequency by a readout circuit [12, 14]. Previous studies have found that the resonant accelerometers integrating with leverage mechanisms possess higher sensitivity. The microleverage can be used to amplify the inertial force generated by the proof mass and improve sensitivity by one order of magnitude [5, 11-13]. Decoupling beams are essential structures in a biaxial resonant accelerometer with a single proof mass. Signals along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axes are "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                665,
+                929,
+                894
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IOP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                174,
+                65
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Journal of Micromechanics and Microengineering "
+                    }
+                ]
+            },
+            "bbox": [
+                667,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 (11pp) "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                70,
+                342,
+                83
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "doi:10.1088/0960-1317/26/1/015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                739,
+                71,
+                927,
+                82
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "0960-1317/16/015011+11$33.00 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                913,
+                248,
+                925
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2016 IOP Publishing Ltd Printed in the UK "
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                913,
+                927,
+                925
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7cd0074e2f51563091ad39ab38b2ef83af996c570d82b7a523097af7bcfb1a2b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Scheme of the biaxial resonant accelerometer with two-stage microleverage mechanisms. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                196,
+                76,
+                811,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "decoupled due to the great difference of stiffness between the decoupling beams along these two orthogonal axes [3, 15, 16]. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                385,
+                492,
+                413
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Uniaxial resonant accelerometers have been widely studied [11-14, 17]. Orthogonally placing two identical uniaxial accelerometers is a way to achieve biaxial sensing, but this method decreases the integration and increases the size of the device [18]. The earlier biaxial resonant accelerometer did not integrate with microleverage mechanisms so that the sensitivity was a little low [19]. Recently, biaxial resonant accelerometers integrating with single-stage microleverages have been demonstrated to possess higher sensitivity [3, 15, 16], but there still is room for improvement in the amplification factor of the microleverage mechanism. According to the previous studies, a two-stage microleverage mechanism is an ideal option in consideration of a trade-off between the force amplification factor, structure compliance, and device size [20-22]. Therefore, a biaxial resonant accelerometer with two-stage microleverage mechanisms is expected to have better performance, but so far no such kind of resonant accelerometer has been reported. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                414,
+                492,
+                669
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, a novel biaxial resonant accelerometer with two-stage microleverage mechanisms is presented. The proposed resonant accelerometer incorporates four double-ended tuning fork (DETF) resonant sensing elements, four pairs of two-stage microleverage mechanisms, and four decoupling beams. The device is fabricated in a silicon-on-insulator (SOI) wafer by micro-electro-mechanical system (MEMS) technology and has an overall area of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1900\\mu \\mathrm{m}\\times 1900\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The biaxial resonant accelerometer shows an average sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "275\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "290\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under a polarization voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In the previously reported biaxial resonant accelerometers integrating with single-stage microleverage mechanisms, the sensitivity is about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "201\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in [15] and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "52\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in [16]. The present biaxial resonant accelerometer possesses higher sensitivity due to the use of two-stage microleverage mechanisms. The measured "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                670,
+                495,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "cross-axis sensitivity is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is limited by the positioning accuracy of the experimental setup. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                385,
+                927,
+                413
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper is organized as follows. Section 2 introduces the device design, the mechanical characterization of the device, and the finite element method (FEM) simulations of the whole structure. The fabrication process is demonstrated in section 3. In section 4, electromechanical characterization and acceleration measurements are carried out to evaluate the performance of the fabricated biaxial resonant accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                414,
+                929,
+                513
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Design, analysis, and simulation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                507,
+                535,
+                794,
+                549
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1. Design of the device "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                507,
+                563,
+                680,
+                576
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The design of the biaxial resonant accelerometer with two-stage microleverage mechanisms is shown in figure 1. This accelerometer consists of a proof mass and four identical sensing structures. Each sensing structure is composed of a decoupling beam, a pair of two-stage microleverages, and a DETF resonator. The DETF resonator has two important low vibration modes: In-phase mode and out-of-phase mode. The out-of-phase mode has higher stability and quality factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(Q)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " than the in-phase mode because the mutual cancellation of the opposing stress waves in the coupling-end of tines leads to lower anchor loss. Capacitive sensing and excitation are used for the frequency response measurement of the resonator. When the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis acceleration is input, the proof mass will move along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis under the action of inertial force. Because of the rigid stiffness of the decoupling beam along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis, the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis leverages will move together with the proof mass and amplify the inertial force, while the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis leverages remain stationary because the stiffness of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis decoupling beam along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-axis is soft. Therefore, the decoupling effect is realized due to the great difference of stiffness between the decoupling beams along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axes. The amplified inertial force is applied to the resonators, "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                585,
+                929,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "2 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ca19fa442cd3cd0ab84c908c5c9353558f770b42945e25a8225b4dace82a747a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Schematic view of the two-stage microleverage mechanism. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                243,
+                73,
+                759,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and the tensile or compressive stress will cause a shift of the resonant frequency of the resonators, and thus the acceleration can be detected by measuring the frequency shift. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                356,
+                495,
+                399
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2. Amplification factor of the microleverage mechanism "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                416,
+                465,
+                430
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Two-stage microleverage mechanisms are used to amplify the inertial force communicated onto the DETF resonators to enhance the sensitivity. As shown in figure 2, the mechanism consists of an input beam, a DETF resonator, stacked two microleverage stages and their respective pivot beam, a connection beam, and fixed anchors. The microleverage stage connected to the output system (DETF resonator) is called the first stage, and the other one connected to the proof mass is the second stage, so the upstream stage is the output system of the downstream stage. The input beam couples the inertial force of proof mass onto the second stage microleverage. According to the previous theory [22], the first stage and the second stage microleverages are designed to be a first-kind and a second-kind leverage, respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                438,
+                492,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the microleverage mechanism is defined as the ratio of the output force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{out}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (the axial loading on the resonator) to the input force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{in}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Using the expression for the amplification factor of a two-stage microleverage mechanism [22], the total amplification factor can be written as the multiplication of the two amplification factors of each stage "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                639,
+                495,
+                724
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A = \\frac {F _ {\\text {o u t}}}{F _ {\\text {i n}}} = A _ {1} A _ {2} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b82bc8745cbffe9c8a281f0cc2e9c89f3f635d56fce5756a149415b79ee92055.jpg"
+                }
+            },
+            "bbox": [
+                223,
+                730,
+                495,
+                762
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A _ {1} = \\frac {\\frac {1}{k _ {\\mathrm {v p} , 1}} \\left(k _ {\\theta \\mathrm {o} , 1} + k _ {\\theta \\mathrm {p} , 1}\\right) - l _ {1} L _ {1}}{\\left(\\frac {1}{k _ {\\mathrm {v o} , 1}} + \\frac {1}{k _ {\\mathrm {v p} , 1}}\\right) \\left(k _ {\\theta \\mathrm {o} , 1} + k _ {\\theta \\mathrm {p} , 1}\\right) + l _ {1} ^ {2}} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a8e5100cc0ec2108011514e83e3c305f5f1b767044b049c0e6c13739a627247c.jpg"
+                }
+            },
+            "bbox": [
+                157,
+                774,
+                495,
+                828
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A _ {2} = \\frac {\\frac {1}{k _ {\\mathrm {v p} , 2}} \\left(k _ {\\theta \\mathrm {o} , 2} + k _ {\\theta \\mathrm {p} , 2}\\right) + l _ {2} L _ {2}}{\\left(\\frac {1}{k _ {\\mathrm {v o} , 2}} + \\frac {1}{k _ {\\mathrm {v p} , 2}}\\right) \\left(k _ {\\theta \\mathrm {o} , 2} + k _ {\\theta \\mathrm {p} , 2}\\right) + l _ {2} ^ {2}} \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/26818a554221006c3b6a4099f9686d32605fc448cb057a773f804d94676bf6b3.jpg"
+                }
+            },
+            "bbox": [
+                154,
+                840,
+                495,
+                892
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the amplification factors of the first and the second stage microleverages, respectively;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{vp},i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta \\mathrm{p},i}"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(i = 1,2)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the axial and rotational spring constants of the pivot beam for the ith stage microleverage, respectively;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{vo},i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta \\mathrm{o},i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the output axial and output rotational spring constants of the ith stage microleverage, respectively;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length between the pivot beam and output system for the ith stage microleverage (resisting arm length); and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length between the pivot beam and input system of the ith stage microleverage (power arm length). "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                355,
+                929,
+                498
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For a resonant accelerometer with single-stage microleverage to achieve a high amplification factor, the lever ratio  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(L / l)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " needs to be large, and thus the leverage has to be very long, which increases the size of the device. The amplification factor of the single-stage microleverage can also be enlarged by narrowing down some certain beams such as the pivot beam, connection beam, and resonator, but such designs affect the structural strength and stability negatively. As a solution, multistage microleverage mechanisms can be used to realize the high amplification factor for a given size of device. However, this does not mean that the higher the stage number of the microleverage, the higher the sensitivity, because for the given device size, increasing the stage number of the microleverage normally causes a smaller proof mass and thus lower sensitivity. Obviously, there is a trade-off between the stage number of the microleverage and device area. Furthermore, regarding the multistage microleverage mechanism as a spring, the increase in the stage number of the microleverage will reduce the spring constant. This is because when the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i"
+                    },
+                    {
+                        "type": "text",
+                        "content": "th-stage microleverage is added at the input of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(i - 1)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "th-stage microleverage, the output axial spring constant of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i"
+                    },
+                    {
+                        "type": "text",
+                        "content": "th-stage microleverage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(k_{\\mathrm{vo},i})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " decreases, and thus the amplification factor and sensitivity decrease according to the equations (2) and (3). Therefore, there is another trade-off between the number of the microleverage stage and the amplification factor. Theoretical analysis shows that the two-stage microleverage mechanism is an ideal option for the overall optimization of the force amplification factor, structure "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                499,
+                929,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "compliance, and device area in the design of the resonant accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                73,
+                494,
+                99
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.3. Sensitivity analysis of the resonant accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                123,
+                445,
+                137
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The sensitivity of the accelerometer can be calculated from the frequency shift of the DETF resonator due to the axial loading. The variation of resonant frequency can be evaluated by an energy analysis as "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                145,
+                494,
+                202
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f = f _ {0} \\sqrt {1 \\pm \\frac {0 . 3 l ^ {2}}{E t w ^ {3}} F _ {\\text {o u t}}} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d3ee0e3b7c4cef148f024153e89c7f22dcdc03984176ed7c0e5e6f5c9470fd13.jpg"
+                }
+            },
+            "bbox": [
+                208,
+                210,
+                495,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                249,
+                105,
+                262
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {0} = \\frac {3 . 5 7}{l ^ {2}} \\sqrt {\\frac {E I}{\\rho t w}} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/601c832dfeaeb56625c73d5be0e235381e1362e7ed42e30adb7a3b02a687967b.jpg"
+                }
+            },
+            "bbox": [
+                223,
+                269,
+                494,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, width, and structural thickness of the vibrating tire of the DETF,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the modulus of elasticity of the material,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the density of the material,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I = tw^3 /12"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the moment of inertia of the DETF, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency of the DETF without axial loading [4]. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                310,
+                492,
+                381
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As shown in figure 1, the proof mass is supported by the decoupling beams with non-zero flexural stiffness on the sensing axis. As a result, the decoupling beams partially offset the inertial force transmitted to the microleverages so that the axial loading on the resonator becomes lower. According to the previous research [17], the effective amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "EA"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of microleverage is put forward and is given by the equation below "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                382,
+                494,
+                481
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E A = \\frac {F _ {\\text {o u t}}}{M _ {\\text {p r o o f}} g} = \\frac {A F _ {\\text {i n}}}{M _ {\\text {p r o o f}} g} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b792ea357c9d290323a4c1497cb3b89d04ce5a0a97862090248dfdcdf30f2af7.jpg"
+                }
+            },
+            "bbox": [
+                196,
+                488,
+                494,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M_{\\mathrm{proof}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the proof mass, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the gravitational acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(9.8\\mathrm{ms}^{-2})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The input force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{in}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be expressed by "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                526,
+                492,
+                555
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {\\mathrm {i n}} = k _ {\\mathrm {v I}, 2} \\delta_ {\\mathrm {I}, 2} \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e46c3ddb573144fa152fe3256cfd66251010fcee7dbe28705c3dd355e944e41d.jpg"
+                }
+            },
+            "bbox": [
+                236,
+                561,
+                494,
+                576
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{vI,2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the input axial spring constant at the second stage microleverage and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta_{\\mathrm{I,2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial displacement at the input of the second stage microleverage. Based on the mechanical relationship, we have "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                582,
+                494,
+                639
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "M _ {\\text {p r o o f}} g = \\left(k _ {\\mathrm {d}} + k _ {\\mathrm {v I}, 2}\\right) \\delta_ {\\mathrm {I}, 2} \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ae63155f53708e9ccf54b2ad95a74a1b0bd7bb28d608c1face7918e8c634b565.jpg"
+                }
+            },
+            "bbox": [
+                200,
+                646,
+                494,
+                662
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{d}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the stiffness of decoupling beam. Substituting equations (7) and (8) into equation (6) gives "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                667,
+                492,
+                696
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E A = \\frac {A k _ {\\mathrm {v I} , 2}}{k _ {\\mathrm {d}} + k _ {\\mathrm {v I} , 2}}. \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0a235af4ed9d74c2846cfe04faa8ff2d81ca5ca65f628996e6343cb48151c2d3.jpg"
+                }
+            },
+            "bbox": [
+                225,
+                702,
+                494,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The input axial spring constant at the second stage microleverage can be expressed by "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                740,
+                492,
+                769
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {\\mathrm {v I}, 2} \\approx \\frac {k _ {\\mathrm {v o} , 1}}{A ^ {2}} = \\frac {k _ {r}}{A ^ {2}} \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fd2301e09584490af6b3eedf5ec5808ac0be8d20f95e4934a7750beda453520f.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                776,
+                494,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{r}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial spring constant of the resonator tine. After substitution of equation (10) into (9), the effective amplification factor can be written as "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                810,
+                494,
+                852
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "E A = \\frac {k _ {r} A}{k _ {\\mathrm {d}} A ^ {2} + k _ {r}} \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/deffdc50325ed341e1fee943de6143c3c1024b6c7b0317decf9d0cb397e61c56.jpg"
+                }
+            },
+            "bbox": [
+                226,
+                860,
+                494,
+                890
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/ddc6429574843b57046593d23689d61b878118f9493c7d10f1488de8c7063933.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. The structure parameters. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameter</td><td>Symbol</td><td>Value</td></tr><tr><td>Structure thickness</td><td>t</td><td>25 μm</td></tr><tr><td>Resonant sine length</td><td>L</td><td>250 μm</td></tr><tr><td>Resonant sine width</td><td>w</td><td>2.5 μm</td></tr><tr><td>Connection beam 1 length</td><td>lcl</td><td>2 μm</td></tr><tr><td>Connection beam 1 width</td><td>wc1</td><td>3 μm</td></tr><tr><td>Pivot beam 1 length</td><td>lp1</td><td>10.5 μm</td></tr><tr><td>Pivot beam 1 width</td><td>wp1</td><td>3 μm</td></tr><tr><td>Power arm 1 length</td><td>L1</td><td>359 μm</td></tr><tr><td>Resisting arm 1 length</td><td>l1</td><td>95 μm</td></tr><tr><td>Connection beam 2 length</td><td>lc2</td><td>100 μm</td></tr><tr><td>Connection beam 2 width</td><td>wc2</td><td>3.5 μm</td></tr><tr><td>Pivot beam 2 length</td><td>lp2</td><td>200 μm</td></tr><tr><td>Pivot beam 2 width</td><td>wp2</td><td>3.5 μm</td></tr><tr><td>Power arm 2 length</td><td>L2</td><td>482.5 μm</td></tr><tr><td>Resisting arm 2 length</td><td>l2</td><td>28 μm</td></tr><tr><td>Proof mass</td><td>Mproof</td><td>5.825 × 10-8kg</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                519,
+                87,
+                917,
+                348
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effective amplification factor equals the amplification factor in an idealized scenario, where the inertial force is fully transmitted to the microleverage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(k_{\\mathrm{d}} = 0)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Therefore, the axial loading on the resonator is expressed by "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                366,
+                927,
+                423
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {\\text {o u t}} = E A \\times M _ {\\text {p r o o f}} g. \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4062b65fb26eadb98d33feb456eaeb710829c63a577a419712b2bfcb2bb40349.jpg"
+                }
+            },
+            "bbox": [
+                647,
+                429,
+                927,
+                445
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.4. Finite element simulations "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                507,
+                472,
+                719,
+                485
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this work, the FEM simulation was carried out in ANSYS software to simulate the resonant frequency shift induced by external acceleration. The interaction between the acceleration and resonant frequency of the mechanical structure was realized through pre-stress modal analysis. In the simulation, an acceleration field was constructed to generate the inertial force. Static analysis with the pre-stress option was performed to calculate the amount of axial stress induced along the resonators. Modal analysis was performed afterwards to calculate the shift of the resonant frequency. In summary, a system-level simulation of the resonant accelerometer was conducted to optimize the design to achieve the maximum shift of the resonant frequency. Meanwhile, the structural strength and stability and the minimum line width of the fabrication capability were also taken into consideration. The optimized structure parameters are summarized in table 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                494,
+                927,
+                721
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As shown in figure 3, the enormous difference in stiffness between decoupling beams along  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axes leads to their different deformation, and thus the decoupling effect is realized. The simulation results show that for the two pairs of decoupled resonators, the resonant frequency in out-of-phase mode are 325.111, 325.196, and 325.196, 325.280kHz, respectively. Based on these simulation results, the resonant accelerometer possesses a differential sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "169\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " around resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "325.196\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". With equations from (1)-(12) and the structure parameters listed in table 1, a differential sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "160\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " around resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "330.3\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be calculated. As we can see, "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                722,
+                929,
+                894
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                63
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "4 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9e9fcb7cf45dd21d0d219a71f7960b67812ba16c7191db1dfbb065cb3ad247b9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                196,
+                74,
+                806,
+                398
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1413659f2aa623b73a5ea38f455b96e15c690fae9084ad12db8a1e1c63c2d7bc.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. FEM simulation of stress and deflection of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X\\& Y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " decoupling beams with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration applied along the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " axis. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                196,
+                436,
+                467,
+                497
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f03b5da47bbdbbee28ef9dd5d57f711612ff12913398553187d1fa3e7d680198.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                541,
+                432,
+                811,
+                497
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/37dd4f0952c129fbd0462dc4a39971e663e8c209115535f2383e5896ec809e34.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                194,
+                525,
+                465,
+                590
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1b4e7fcfa81444a54933455f85244ba549e3af40d0d162cd5a9eb183d387e414.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(d) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                541,
+                525,
+                811,
+                590
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2dfc5ccc9dde43df9e58d293728899251c252b4de8cbc2c01bec687ad914d92d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(e) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                194,
+                618,
+                465,
+                681
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f8ea767b28de202c90c9257a51320cdc4b85063ff44a5615d7234ec9180999eb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(f) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                539,
+                620,
+                811,
+                681
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5efe6f7c503e1b7079417be268252999fe4364220d9e1cba5cbf8b95ece10815.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. SOIMUMPS process flow: (a) Starting wafer, (b)  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "p"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-type doping of top silicon layer, (c) pad metal lift-off, (d) front side DRIE, (e) trench formation and removal of buried oxide, (f) releasing of the protection layer and oxide layer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                147,
+                709,
+                857,
+                733
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the results from the theoretical analysis are very close to the ones from the FEM simulation. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                785,
+                494,
+                813
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Fabrication "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                829,
+                193,
+                841
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The commercial SOIMUMPs process [23] was chosen to fabricate the device. The SOIMUMPs process starts with an SOI wafer consisting of a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " device layer, a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " buried oxide "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                856,
+                494,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "layer, a thick substrate layer and a bottom side oxide layer (figure 4(a)). The top surface of the silicon layer is doped by depositing a phosphosilicate glass (PSG) and annealing in argon to enhance the conductivity of silicon layer. Then the PSG is removed by wet chemical etching (figure 4(b)). A metal stack of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{nm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of chrome and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mathrm{nm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of gold is patterned as pad metals through a lift-off process (figure 4(c)). The pad metal is applied to bond with the golden wire for testing. The "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                785,
+                927,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0cf8ba9104758295f9e33e8ec9996bcb30ede353a218d381d57da8bacb44b7fa.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                196,
+                74,
+                806,
+                451
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2208ceabd8f94d4adaf57b01353b75c37f19f8894d70746a385c418e9b2ff0e5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Optical micrograph of the biaxial resonant accelerometer fabricated by the SOIMUMPs process. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Schematic illustration of the platform used to evaluate the resonator spectral response. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                247,
+                483,
+                759,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "device layer is lithographically patterned and etched via deep reactive ion etching (DRIE) to define the mechanical structures (figure 4(d)). Next, the top surface of the silicon layer is covered with a protection material. The substrate layer is lithographically patterned from the bottom side, and trenches are etched via reactive ion etching (RIE) (figure 4(e)). A wet oxide etch process is then applied to remove the oxide layer in the regions defined by the trench to release the movable structures in the top silicon layer, and the remaining bare oxide "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                771,
+                495,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "layer is removed from the top surface using a vapor hydrogen fluoride (HF) process (figure 4(f)). The fabricated biaxial resonant accelerometer has a size of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1900\\mu \\mathrm{m}\\times 1900\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as shown in figure 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                771,
+                927,
+                828
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Experiments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                843,
+                636,
+                857
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After fabrication, the device is connected to a testing PC board by wire bonding. The device is tested in a custom vacuum "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                870,
+                927,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/638f35d395cbd3979655f5a24b7149e841afa8de4cf2cdd64f4c574921cc1e92.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Measurement setup for evaluation of the resonator spectral response. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                248,
+                76,
+                757,
+                342
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5a822cbf97b47c0dcc349ac9d1f6f3dd764a74bbe6c8a0353b1f53f0185d6d73.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                97,
+                376,
+                489,
+                575
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/475b36d6ca5a438555ae562de36c40f62e6dd0903a7640c84f2031da67bdbadb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8. (a) Magnitude responses and (b) phase responses of the DETF resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{X}_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under different polarization voltages  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                376,
+                902,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "chamber with a pressure level of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7.5\\mathrm{mTorr}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at room temperature. A schematic illustration of the measurement setup is shown in figure 6. The open-loop frequency response of the resonator is recorded by a network analyzer (Agilent E5061B). The motional current  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I_{\\mathrm{out}}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is proportional to the vibration amplitude of the resonator, is converted to voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{out}}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through a low noise transimpedance amplifier (FEMTO, DLPCA-200) with a gain of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10^{6}\\mathrm{VA}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A dc polarization voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied to the anchor of the resonator, and the dc power is decoupled from the ac actuation voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{\\mathrm{in}}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " by an isolation capacitor. The whole measurement setup for evaluation of resonator spectral response is shown in figure 7. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                613,
+                495,
+                785
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.1. Electromechanical characterization "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                804,
+                346,
+                818
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The spectral responses are measured under different polarization voltages  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " when the actuation voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{\\mathrm{in}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is fixed at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.27\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as shown in figure 8(a). The magnitude of the resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " peak increases with the increase in polarization voltage since the transduction factor is enhanced. In the meantime, a "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                827,
+                495,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "reduction in the resonant frequency is a function of the polarization voltage across the electrodes due to electrostatic spring softening. Because of the amplitude-stiffening, as the amplitude of vibration increases, the resonator tines are forced to extend. This extension causes the additional axial force to enhance the structure stiffness. Therefore, the mechanical nonlinearity becomes more obvious in cases of high polarization voltage. The negative peak following the positive peak of resonance is known as the anti-resonance peak, and is caused by feedthrough capacitance placed in parallel to the equivalent RLC circuit representing the DETF resonator. The changes in the polarization voltage also cause variations in the phase response of the resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as shown in figure 8(b). The anti-resonance could be observed and the phase shift is not  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-180^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at resonance due to the feedthrough capacitance. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                613,
+                927,
+                827
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From the measurement results shown in figure 8, a significant reduction in the resonant frequency for increasing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be observed. Figure 9 plots the frequency shift as a function of the polarization voltage for each DETF resonator in the resonant accelerometer. Due to the fabrication tolerances, these "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                828,
+                929,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                922
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/81ebee1783a652f2a0a27ec1283959de3322ced7be2abdd65ed53c69a117c2db.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 9. Resonant frequencies of DETF resonators  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X_{1}, X_{2}, Y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as a function of the polarization voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                243,
+                73,
+                759,
+                355
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3455ae4b1d2972a5405f714525341d0cbd7302513ccbc3741cfbf33bc58789c3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 10. Spectral responses of the DETF resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}} = 15\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under different actuation voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{\\mathrm{in}}"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                243,
+                391,
+                759,
+                652
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5a69184faa33f497286068016f6f99cdb8feb1a94816e208e981fd63a5fd44d1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                102,
+                690,
+                361,
+                873
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/152ae114f9606ddcd6a884390a037d326c7ea7115ee76061a5bed713ffa34a78.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                374,
+                690,
+                631,
+                873
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/27cf797ef6d5539ad7e6cd5a49454d874fe01c524822b924d6bcb6ed13a6f8e8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 11. The rotation table allowing the accelerometer to be subjected to the action of the force of gravity. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                645,
+                690,
+                902,
+                873
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ffc953008bdf625e1446aab73a16606183ef955c4f3aa6e708e871371e90d97f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                99,
+                73,
+                489,
+                275
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c27de74c88b4caa34dfd96112ff62ef677f38fecff71f98845d91bf4e1b101e6.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                514,
+                73,
+                902,
+                275
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0a71b15ab571168caa4f7436dbce2bbc2e9b5a222accebcfd5b3dccf592b6bd0.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                97,
+                279,
+                489,
+                481
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7a5d95e9e29d9b05116e0c065f1277e05c1ee63a358c6c8342be3c3617b91deb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 12. Normalized spectrum response of each single DETF resonator evaluated for applied accelerations of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " along the two axes. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                514,
+                279,
+                904,
+                481
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DETF resonators are not exactly identical, so their resonant frequencies are slightly different. However, this error may be treated as a bias in the sensitivity and consequently calibrated out by appropriate data processing techniques. The effect of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " on the resonant frequency is explained by the presence of the equivalent electrical stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\mathrm{e}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is directly proportional to the square of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                514,
+                495,
+                615
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effect of the actuation voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{\\mathrm{in}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " on the spectral response is shown in figure 10 when  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{p}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is fixed at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". As  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{\\mathrm{in}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " increases, the measured current and thus the dynamic displacement of the beam increase. Therefore, the impact of the nonlinear restoring force on the resonant frequency becomes more serious, and leads the resonator out of the working conditions where the linear approximation of the elastic stiffness can be used for modeling. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                615,
+                495,
+                728
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4.2. Acceleration measurements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                756,
+                299,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The setup for the acceleration measurement is the same as the one for the electromechanical characterization, with the exception that the device is mounted on a custom remote-control rotation table to test the accelerometer under gravity force, as shown in figure 11. The remote controllable rotation table consists of a rotary plate, a servo-motor, and a control circuit. The rotary plate is driven by the servo-motor and controlled by the microcontrol unit (MCU) in the control circuit. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                778,
+                495,
+                892
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/c966a8589d8bf3985dce323ba3f1a20feb2d5d3e3ab332a9bc1319cec47abb05.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2. Comparison of the results from the theoretical analysis, simulation, and experiment. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td></td><td>Theoretical results</td><td>Simulation results</td><td>Experimental results</td></tr><tr><td>Resonator frequency (kHz)</td><td>330.3</td><td>325.196</td><td>290</td></tr><tr><td>Sensitivity (Hz g-1)</td><td>160</td><td>169</td><td>275</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                514,
+                542,
+                922,
+                640
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In addition, there is an infrared controller emitting an infrared signal that is received by the MCU to activate the servo-motor with an angle accuracy of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". During testing, the accelerometer and the rotation table are together put in the vacuum chamber to enable stable operation of the DETF resonators with high quality factor, without the necessity of frequently pumping and venting the chamber for multiple testing of the same device. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                649,
+                927,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resonant frequency measurement as above is repeated for 0 and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration on one axis, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration on the other orthogonal axis by simply controlling the position of the rotation table. The frequency measurement results for all the resonators are plotted in figures 12(a)-(d). It is clear that the two DETFs on the same axis incur an opposite frequency shift for the induced accelerations consequently, validating the differential operation of the resonant accelerometer. At a polarization voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", an average differential mechanical "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                764,
+                929,
+                892
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                52,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9 "
+                    }
+                ]
+            },
+            "bbox": [
+                497,
+                914,
+                507,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/65ae8859d5162ea229adb2c65ce3d7a083a5c515e623089b8aaf66f02f5d95fc.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3. Comparison of the performance of the biaxial resonant micro-accelerometers. "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "equation_inline",
+                        "content": "{}^{a}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Evaluated from the micrograph in the reference. "
+                    }
+                ],
+                "html": "<table><tr><td>Reference</td><td>Device overall area (mm2)</td><td>Proof mass dimensions (μm3)</td><td>Resonators frequency (kHz)</td><td>Sensitivity (Hz g-1)</td></tr><tr><td>[17] Tabata et al</td><td>2.56</td><td>1414 × 1414 × 10</td><td>25</td><td>76</td></tr><tr><td>[14] Caspani et al</td><td>0.6</td><td>525 × 525 × 15</td><td>84</td><td>201</td></tr><tr><td>[15] Yang et ala</td><td>56.25</td><td>5500 × 5500 × 70</td><td>27</td><td>52</td></tr><tr><td>Present work</td><td>3.61</td><td>1000 × 1000 × 25</td><td>290</td><td>275</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                84,
+                89,
+                917,
+                190
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d91592516ead7c8a5b286d3ab9f00d24995dc0590499c939a35870652dc82fda.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                97,
+                214,
+                490,
+                414
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3660eb4a16a6de36ff3ec2a29fee321dab34e857025b4793f7e478ab67f8e420.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                97,
+                419,
+                492,
+                620
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/00c09d22709be1a2aac3a588bf41089b431ef0bd850e2f112d766a229de1bfe4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                509,
+                212,
+                904,
+                414
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b01e17c3270450e9ad925703201e16aefd19d4349d57f591d91e263d39a34542.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 13. Multi-angle tilt testing results of each single DETF resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                419,
+                902,
+                621
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "275\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be estimated around an average resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "290\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity differences are within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{Hzg}^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and can be easily compensated using an initial calibration. As expected in section 2, the average cross-axis sensitivity between the different axes is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is limited by the positioning accuracy of the experimental setup. The residual cross-axis sensitivity can be compensated in the sensor data processing. The results from theoretical calculation, FEM simulation and experiment are summarized in table 2, from which it is found that the experimental results differ a lot from the theoretical calculation and FEM simulation results. The differences can be explained for three reasons. First, the length of the pivot beams may be different from the values used in calculation and simulation, because there is an 'edge-to-edge' bias between the bottom side opening and the fixed boundary of the pivot beams, which causes uncertainty of the effective length of the pivot beams "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                653,
+                495,
+                897
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "[23]. Second, a certain degree of under-cut or notching effect in the DRIE from the front side will result in narrowing down some beams such as pivot beams, connection beams, and resonators, and accordingly result in a smaller resonant frequency but a higher amplification factor and sensitivity. Finally, material properties such as Young's modulus of silicon used in the calculation and simulation may slightly differ from the real values. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                653,
+                927,
+                765
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This performance is compared with other biaxial resonant accelerometers reported in the literature, as shown in table 3. Owing to the use of the two-stage microleverage mechanisms, the device in the present work possesses greater sensitivity than the other biaxial devices, which integrate with or without the single-stage microleverage mechanisms. In our device, certain beams such as pivot beams and connection beams are designed conservatively for consideration of their structural strength and stability, which will reduce the amplification "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                768,
+                927,
+                896
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "10 "
+                    }
+                ]
+            },
+            "bbox": [
+                495,
+                914,
+                510,
+                923
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "factor and the sensitivity. However, the introduced two-stage microleverage mechanism offsets this impact and leads to the good performance of the device. The oscillating circuits can be used in the future, so that the device can be operated with relatively low power consumption and is much simpler to use. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                73,
+                494,
+                145
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 13 shows the device responses to multiple tilt angles for each resonator. It is seen that the two DETFs on the same axis consequently incur an opposite frequency shift for the induced tilt angle. The axial loading is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                145,
+                495,
+                202
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {\\text {o u t}} = E A \\times M _ {\\text {p r o o f}} g \\times \\sin \\theta \\tag {13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5158ef6fe60b81886f59e2adb905ecc506f0390c6356ba90c63691616dae3d85.jpg"
+                }
+            },
+            "bbox": [
+                191,
+                208,
+                492,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\theta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the tilt angle. The output responses of each resonator match well with the sine function of the tilt angle as expected. The error mainly lies within the positioning accuracy of the rotation table. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                229,
+                494,
+                287
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                306,
+                203,
+                319
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A novel biaxial resonant accelerometer with two-stage microleverage mechanisms has been designed, fabricated, and tested. A theoretical model has been used to analyze the device, taking into account the stiffness of the decoupling beams. The theoretical analysis shows that the two-stage microleverage mechanism is an ideal option for overall optimization of the force amplification factor, structure compliance, and device area in the design of the resonant accelerometer. The structural dimensions of the accelerometer are optimized by FEM simulation. The resonant accelerometer is fabricated in an SOI wafer with a device area of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1900\\mu \\mathrm{m}\\times 1900\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The experimental results show the fabricated resonant accelerometer has a high differential sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "275\\mathrm{Hzg^{-1}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The measured cross-axis sensitivity is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Compared with the previous research, the present biaxial resonant accelerometer has greater sensitivity due to the use of two-stage microleverage mechanisms. The two-stage microleverage mechanisms can also be used in the designs of other resonant sensors to amplify axial loading and improve sensitivity. Further work will focus on a combination of the present biaxial resonant accelerometer with a frequency readout circuit to build a complete two-axis in-plane acceleration measurement system. "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                334,
+                497,
+                663
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                681,
+                228,
+                696
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work is supported by the National Natural Science Foundation of China (No. 51475423), the Zhejiang Provincial Natural Science Foundation of China (No. LY14E050018) and the Science Fund for Creative Research Groups of National Natural Science Foundation of China (No. 51221004). "
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                709,
+                494,
+                781
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                75,
+                800,
+                171,
+                814
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] Stemme G 1991 Resonant silicon sensors J. Micromech. Microeng. 1 113-25 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] Nielson G N and Barbastathis G 2006 Dynamic pull-in of parallel-plate and torsional electrostatic MEMS actuators J Microelectromech. Syst. 15 811-21 "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                834,
+                473,
+                894
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Caspani A, Comi C, Corigliano A, Langfelder G and Tocchio A 2013 Compact biaxial micromachined resonant accelerometer J. Micromech. Microeng. 23 105012 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] Bokaian A 1990 Natural frequencies of beams under tensile axial loads J. Sound Vib. 142 481-98 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Zhao J, Ding H and Xie J 2015 Electrostatic charge sensor based on a micromachined resonator with dual micro-levers Appl. Phys. Lett. 106 233505 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] Thompson M J and Horsley D 2009 Resonant MEMS magnetometer with capacitive read-out IEEE Sensors pp 992-5 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] Seshia A A, Howe R T and Montague S 2002 An integrated microelectromechanical resonant output gyroscope 15th IEEE Int. Conf. on Micro Electro Mechanical Systems pp 722-6 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] Roessig T A, Howe R T, Pisano A P and Smith J H 1997 Surface-micromachined resonant accelerometer Int. Conf. on Solid State Sensors and Actuators TRANSDUCERS'97 (Chicago) pp 859-62 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] Aikele M, Bauer K, Ficker W, Neubauer F, Prechtel U, Schalk J and Seidel H 2001 Resonant accelerometer with self-test Sensors and Actuators A 92 161-7 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] Seshia A A, Palaniapan M, Roessig T A, Howe R T, Gooch R W, Schimert T R and Montague S 2002 A vacuum packaged surface micromachined resonant accelerometer J Microelectromech. Syst. 11 784-93 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] Su S X, Yang H S and Agogino A M 2005 A resonant accelerometer with two-stage microleverage mechanisms fabricated by SOI-MEMS technology IEEE Sens. J. 5 1214-23 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] Comi C, Corigliano A, Langfelder G, Longoni A, Tocchio A and Simoni B 2010 A resonant microaccelerometer with high sensitivity operating in an oscillating circuit J Microelectromech. Syst. 19 1140-52 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] Zou X, Thiruvenkatanathan P and Seshia A A 2014 A seismic-grade resonant MEMS accelerometer J Microelectromech. Syst. 23 768-70 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] He L, Xu Y P and Palaniapan M 2008 A CMOS readout circuit for SOI resonant accelerometer with  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "4\\mu \\mathrm{g}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Bias stability and 20  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " resolution IEEE J. Solid-State Circuits 43 1480-90 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] Comi C, Corigliano A, Langfelder G, Longoni A, Tocchio A and Simoni B 2011 A new biaxial silicon resonant micro accelerometer 24th IEEE Int. Conf. on Micro Electro Mechanical Systems pp 529-32 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] Yang B, Zhao H, Dai B and Liu X 2015 A new silicon biaxial decoupled resonant micro-accelerometer Microsyst. Technol. 21 109-15 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[17] Zou X, Thiruvenkatanathan P and Seshia A A 2014 A high-resolution micro-electro-mechanical resonant tilt sensor Sensors Actuators A 220 168-77 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[18] Xie J, Agarwal R, Liu Y, Tsai J M, Ranganathan N and Singh J 2011 Compact electrode design for an in-plane accelerometer on SOI with refilled isolation trench J. Micromech. Microeng. 21 095005 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[19] Tabata O and Yamamoto T 1999 Two-axis detection resonant accelerometer based on rigidity change Sensors Actuators A 75 53-9 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[20] Su S X and Yang H S 2001 Single-stage microleverage mechanism optimization in a resonant accelerometer Struct. Multidiscipl. Optim. 21 246-52 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[21] Su S X and Yang H S 2001 Two-stage compliant microleverage mechanism optimization in a resonant accelerometer Struct. Multidiscipl. Optim. 22 328-34 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[22] Su S X 2001 Compliant Leverage Mechanism Design for MEMS Applications PhD Thesis University of California, Berkeley, CA "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[23] Cowen A, Hames G, Monk D, Wilcenski S and Hardy B 2011 SOIMUMPs Design Handbook (Durham, NC: MEMSCAP Inc) "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                73,
+                927,
+                894
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Micromech. Microeng. 26 (2016) 015011 "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                53,
+                307,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "H Ding et al "
+                    }
+                ]
+            },
+            "bbox": [
+                862,
+                53,
+                927,
+                64
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11 "
+                    }
+                ]
+            },
+            "bbox": [
+                495,
+                914,
+                509,
+                923
+            ]
+        }
+    ]
+]

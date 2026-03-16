@@ -1,0 +1,1885 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Two-stage compliant microleverage mechanism optimization in a resonant accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                115,
+                892,
+                160
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "X.-P.S. Su and H.S. Yang "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                174,
+                290,
+                190
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract Compliant microleverage mechanisms can be used in micro-electro-mechanical systems (MEMS) to transfer an input force/displacement to an output to achieve mechanical/geometrical advantages. By stacking multiple stages of microlevers together, a compound microleverage mechanism is obtained with a higher amplification factor. This paper presents the analysis and optimization of a two-stage microleverage mechanism in a resonant output micro-accelerometer for force amplification. It is found that the compliance of the two-stage mechanism needs to be appropriately distributed in order for both stages to have the desired amplification effect. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                278,
+                480,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Key words resonant accelerometer, leverage mechanism, force amplification, compliant mechanism "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                473,
+                480,
+                503
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1 Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                559,
+                174,
+                586
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Compliant microleverage mechanisms are very useful in micro-electro-mechanical system (MEMS) to transfer an input force/displacement to an output for force or displacement amplification. The feasibility of a single-stage microleverage mechanism to achieve significant mechanical or geometrical advantages has been demonstrated in many applications (Roessig et al. 1995, 1997; William 1999). In a resonant output micro-accelerometer, a single-stage microleverage mechanism with an amplification factor of 8 was designed to amplify the inertial force, increasing the sensitivity from 5 to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "45\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (Roessig et al. 1997). The analysis and optimization of a single-stage microleverage mechanism has been given by the present authors (Su and Yang 2000). "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                603,
+                480,
+                811
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to greatly increase the measurement sensitivity, a compound microleverage mechanism is considered by stacking two single-stage microlevers together. The amplification factor of each individual microlever stage has a multiplying effect with regard to the overall force amplification factor of the compound microlever. In addition, compound microlevers have more effective usage of the chip area as compared with a single-stage microlever with an extremely long lever arm for greater amplification factor. Sniegowski and Smith (1995) from Sandia National Laboratory designed a leverage mechanism with a factor of 17.5 to convert a short-displacement, high-force electrostatic actuation to a long-displacement, medium-force output. Compound levers have been seen in the macro-world, such as weight machines. However, there is only a very limited number of papers in the open literature on compliant compound microleverage mechanism design. This paper presents the design and optimization of a two-stage microleverage mechanism in the resonant accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                278,
+                916,
+                574
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2 General analysis of the amplification factor of a two-stage microlever "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                516,
+                609,
+                859,
+                652
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A SEM photograph of the resonant accelerometer fabricated by the SOI technology is shown in Fig. 1. The SOI-MEMS technology bridges surface and bulk micromachining by integrating 50 micron-thickness MEMS structure with the standard foundry fabricated integrated circuit (Brosnihan 1998). The accelerometer consists of four main parts: "
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                665,
+                916,
+                771
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1. proofmass as the input system, "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2. double-ended tuning fork (DETF) as the output system, "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3. microleverage mechanism for inertial force amplification, and "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4. on-chip trans-resistance amplifier for signal processing. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                778,
+                913,
+                882
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Under acceleration, the proofmass generates an inertial force which is amplified by the leverage mechanism. The resultant output forces act on the two (top "
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                890,
+                916,
+                933
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Struct Multidisc Optim 22, 328-336 © Springer-Verlag 2001 "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                34,
+                918,
+                48
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "June 13, 2000 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                822,
+                176,
+                836
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "X.-P.S. Su<sup>1</sup> and H.S. Yang<sup>2</sup> "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                841,
+                261,
+                856
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Department of Mechanical Engineering, University of California, Berkeley, CA 94720, USA  \ne-mail: xpsu@newton.berkeley.edu "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                865,
+                480,
+                906
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Applied Materials, 3320 Scott Boulevard, M/S 1158, Santa Clara, CA 95054, USA "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                906,
+                480,
+                933
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and bottom) DETF resonators, causing one to be under tension and the other under compression. The tensile/compressive axial loading shifts the resonator natural frequency, with the tensile force increasing it and the compressive force decreasing it. The frequency change is "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                69,
+                482,
+                145
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c074a776472a94bb6c6b9d22e89c832c8e9dd07b0f97deb4ffe38401f74a6157.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                81,
+                174,
+                354,
+                496
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/96c0877deb8d63063a0c6ec37347fa758f2eb099e5510034bd736689e7fa2cd7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 1 SEM of the resonant accelerometer with a two-stage microleverage mechanism fabricated by the SOI technology: (a) overview, (b) two-satge microleverage mechanism "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                80,
+                519,
+                441,
+                870
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bf7c9a307f0d1242a2b1be8bf4529b2846978694449c9374be677b89cc847903.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2 Schematic of the two-stage microleverage mechanism in the resonant accelerometer "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                69,
+                923,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "detected by the capacitance pick-up of the comb-drive circuit. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                516,
+                916,
+                544
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A schematic of a two-stage microleverage mechanism is shown in Fig. 2. The microlever stage connected to the output system is called the first stage, and the other one connected to the proofmass is the second stage. The SOI technology can only provide outside anchors. Therefore, the two stages of the microlever shown in Fig. 2 were both designed to be first-kind lever, i.e. with pivot lying between the input and output. In addition, the pivot and output were at different sides of the second-stage lever arm, but on the same side of the first-stage lever arm. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                547,
+                919,
+                710
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A two-stage microleverage mechanism is formed by stacking two microlever stages together, with the upstream microlever stages being the output system of downstream microlever stages. Analysis of a two-stage microlever provides insights into the design of compound leverage system with more than two stages. Theories on the two-stage microleverage mechanism are applicable to any two adjacent lever stages in a multiple-stage microleverage mechanism. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                711,
+                918,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Using the expression for the force-amplification factor of a single-stage microleverage mechanism (Su and Yang 2000), the total force-amplification factor of a two-stage microleverage mechanism can be written as the multiplication of the two amplification factors of each separate lever stage "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                845,
+                918,
+                935
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "329 "
+                    }
+                ]
+            },
+            "bbox": [
+                888,
+                34,
+                918,
+                47
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} A = A _ {1} A _ {2} = \\\\ \\frac {\\frac {1}{k _ {v v p , 1}} \\left(k _ {\\theta m 0 , 1} + k _ {\\theta m p , 1}\\right) \\pm \\ell_ {1} L _ {1}}{\\left(\\frac {1}{k _ {v v 0 , 1}} + \\frac {1}{k _ {v v p , 1}}\\right) \\left(k _ {\\theta m 0 , 1} + k _ {\\theta m p , 1}\\right) + \\ell_ {1} ^ {2}} \\times \\\\ \\frac {\\frac {1}{k _ {v v p , 2}} \\left(k _ {\\theta m 0 , 2} + k _ {\\theta m p , 2}\\right) \\pm \\ell_ {2} L _ {2}}{\\left(\\frac {1}{k _ {v v 0 , 2}} + \\frac {1}{k _ {v v p , 2}}\\right) \\left(k _ {\\theta m 0 , 2} + k _ {\\theta m p , 2}\\right) + \\ell_ {2} ^ {2}}, \\tag {1} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c53783e3e6b3a7c020dbed25fc4861dc360eefe3ff474020c40782321caca029.jpg"
+                }
+            },
+            "bbox": [
+                81,
+                69,
+                480,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the amplification factors of the first- and second-stage microlevers, respectively;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvp,i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta mp,i}"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(i = 1,2)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the vertical (axial) and rotational spring constants of the pivot for the ith microlever stage, respectively;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvo,i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the output vertical (axial) spring constant of the ith microlever stage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta mo,i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the output rotational spring constant of the ith microlever stage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\ell_i"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length between the pivot and output system for the ith lever arm (positive sign for a second-kind microlever stage, and negative sign for a first-kind lever stage), and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the length between the pivot and input system of the ith lever arm. The calculations of all the spring constants in (1) are given in the following. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                271,
+                483,
+                465
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The equations for calculating the axial and rotational spring constants of the pivot and connection beam of each microlever stage can be found in standard textbooks. The axial/rotational spring constants at the output of the first-stage microlever can be calculated by treating the following two components as two serial-connected springs: (i) the external output system and (ii) the flexure beam connecting the external output system and the first lever arm. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                466,
+                483,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The axial/rotational spring constants at the output of the second-stage microlever can be calculated by treating its \"output system\" as the first stage microlever connected together with the output system, noting that the rotation angle of the first stage microlever caused by the vertical output force of the second-stage microlever is negligible as compared with the rotational angle of the second-stage microlever. Then, an equation can be written for the spring constants of the second-stage microlever "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                600,
+                483,
+                748
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} k _ {v v 0, 2} = \\frac {1}{\\frac {1}{k _ {v v I , 1}} + \\frac {1}{k _ {v m c , 2}}}, \\\\ k _ {\\theta m 0, 2} = \\frac {1}{\\frac {1}{k _ {\\theta m I , 1}} + \\frac {1}{k _ {\\theta m c , 2}}}, \\tag {2} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/510fbba6a91727415aa4cd2422bcabd5dafb028d4e8228c618cc7b581e0f63af.jpg"
+                }
+            },
+            "bbox": [
+                80,
+                761,
+                480,
+                876
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvI,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta mI,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the input axial and rotational spring constants of the first-stage microlever;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvI,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be calculated as "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                889,
+                483,
+                933
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} k _ {v v I, 1} = \\frac {F _ {\\mathrm {i n}}}{L _ {1} \\theta_ {1} + \\delta_ {1}} = \\\\ \\frac {\\left(k _ {v v 0 , 1} + k _ {v v p , 1}\\right) \\left(k _ {\\theta m 0 , 1} + k _ {\\theta m p , 1}\\right) + k _ {v v 0 , 1} k _ {v v p , 1} \\ell_ {1} ^ {2}}{\\left(k _ {\\theta m 0 , 1} + k _ {\\theta m p , 1}\\right) + k _ {v v 0 , 1} \\left(L _ {1} - \\ell_ {1}\\right) + k _ {v v p , 1} k _ {v v p , 1} \\ell_ {1} ^ {2}}, \\tag {3} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5d5bc5722aaa4fd627fce6f20dbc94dd037fff7fc64e2a8ea5d3a1193fb8291d.jpg"
+                }
+            },
+            "bbox": [
+                517,
+                66,
+                916,
+                140
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\theta mI,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (2) is calculated by treating the output system and the first-stage pivot as two parallel-connected springs as far as sustaining a pure bending moment at the input point of the first-stage microlever is concerned. Therefore, "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                149,
+                918,
+                210
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {\\theta m, I, 1} = k _ {\\theta m 0, 1} + k _ {\\theta m p, 1}. \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fd77e23e9362ac8bbd50bf6da765fa4311c886560fa92f8f2d8c2b987a28525c.jpg"
+                }
+            },
+            "bbox": [
+                516,
+                223,
+                916,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting all the spring constants into (1), the overall amplification factor can then obtained. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                251,
+                916,
+                280
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3 Optimization of two-stage microleverage mechanism in a resonant accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                312,
+                911,
+                356
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplification factor of a single-stage microleverage mechanism is dependent not only on the geometry of the lever itself (e.g. pivot length and width, lever arm length), but also on the compliance of the output system (Su and Yang 2000). A too \"soft\" output system connected to the lever may cause a dramatic decrease in the amplification factor. This theory also applies to the second stage microlever in a two-stage microleverage mechanism. The output system spring constant of the second-stage microlever is the spring constant at the input of the first-stage lever. Therefore the first stage microlever must be stiff enough in order for the second-stage microlever to have amplification effect. The input spring constant of the first-stage microlever with an force-amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is approximately equal to the external output-system spring constant reduced by a factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (Su and Yang 2001). "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                367,
+                919,
+                605
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The DETF output system, consisting of flexure beams, can be considered as a \"compound spring\". When the axial force is amplified with a greater amplification factor, the axial displacement of the DETF is proportionally greater. In order for the output system to have amplified force, the mechanism needs to be compliant enough to allow high input energy. While the input force is constant, the mechanism needs to be \"soft\" enough to allow greater input displacement. The energy, or mechanical work during loading, at the input port is equal to the total of the elastic strain energies consumed at the pivot and connection beams of the leverage mechanism plus the output energy. Therefore, the compliance of the mechanism should be appropriately distributed between the first- and second-stage so that each lever stage has an amplification factor much greater than 1. Then, the multiplication of the amplification factors of each microlever stage will give rise to a very high amplification factor of the entire mechanism. More specifically, the geometry of the first-stage pivot and lever arm, second-stage pivot, lever arm and the connection beam need to be properly designed. The effect of critical component geometry on "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                607,
+                919,
+                933
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "330 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                34,
+                109,
+                47
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the amplification factors of the first-stage, second-stage and the entire mechanism is analysed in the following. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                69,
+                480,
+                99
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For the symmetric two-stage microleverage mechanism shown in Fig. 2, and a constant beam thickness,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", we can substitute the following values, if not a variable, into (2)-(4) for calculating the spring constants and finally into (1) for calculating the total amplification factor: modulus of elasticity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E = 1.65\\times 1011\\mathrm{N / m^2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", input force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{\\mathrm{in}} = 1.5\\times 10^{-9}\\mathrm{N}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", DETF length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "200\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", first-stage connection beam (between DETF and the first-stage lever) length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", pivot beam length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", first-stage lever arm - length between pivot and output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", length between pivot and input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "300\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", second-stage connection beam (between first- and second-stage lever) length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "75\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", pivot beam length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "200\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", second-stage lever arm - length between pivot and output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", length between pivot and input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "330\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", width  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                100,
+                480,
+                352
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The calculated amplification factor of individual microlever,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the total amplification factor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the output spring constant of the first- and second-stage microlever,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvo,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvo,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", are shown in Figs. 3-6. FEM simulation is also performed using the SUGAR package (Clark et al. 1998), and the results are included in Figs. 3-6 for comparison with the results from the analytical equations. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                352,
+                480,
+                471
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplification factor of the entire leverage mechanism and each individual lever as a function of the width of the tuning fork is shown in Fig. 3a. The amplification factor of both microlevers 1 and 2 and the total amplification factor increase continuously with increasing tuning fork (T-F) width. This is due to the increase in the spring constant of the overall output system and that of microlever 2 output as the T-F width increases. Figure 3b shows the effect of the T-F length on the amplification factors. As the length of T-F beam increases, the amplification factor of both microlever 1 and 2 decreases because of decreasing axial (vertical) output spring constants,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvo,1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{vvo,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of both microlevers. Comparing Fig. 3a with Fig. 3b, it is seen that the effect of T-F beam length on the amplification factor is less significant than that of the beam width. It should also be noted that tuning fork width and length are major factors influencing the natural frequency of the DETF resonator, which should be taken into account in order to have the maximum overall device sensitivity. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                472,
+                480,
+                769
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4 shows the amplification factor as a function of (a) width and (b) length of the microlever 1 pivot. The amplification factor of microlever 1 and the total amplification factor are almost constant at a pivot width of less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", but decreases rapidly at wider pivot beam. The rapid decrease in the amplification factor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of microlever 1 is mainly due to increased moment bending energy consumed at the microlever 1 pivot beam as its width increases. A width of 2 micron was chosen for the first-stage pivot width in the final design. The sharp decrease of the total amplification factor with increas "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                770,
+                480,
+                933
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5b3c9e8ea9dac5c530278c6100242893a4c1c32085bb11d1d3bf4b8b7d069ff0.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                514,
+                69,
+                916,
+                349
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4acfabaf7dc0ca45b046492fee068780103d2a4c3812c7dc29f7703bd3af6cf5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3 The amplification factor of each microlever stage and total amplification factor of a two-stage microlever as a function of (a) the width, and (b) the length of T-F beam "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                357,
+                916,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ing microlever 1 pivot width is because the decrease in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " overrides the increase in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (noting that the increase in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is due to increased output spring constant at the output of microlever 2). By comparison, the pivot length ranging from 2 to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has little effect on the amplification factors, as shown in Fig. 4b. This is a result of the rotational spring constant being proportional to the cube of the beam width, but reciprocal of the length. In other words, pivot beam width has much more pronounced effect on the amplification factor than the beam length. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                710,
+                916,
+                859
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The effects of the width and length of the connection beam between the first and the second lever stages on the amplification factors are shown in Figs. 5a and 5b, respectively. Increasing the width of the connection beam 2 causes a sharp decrease in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the total amplifica "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                859,
+                918,
+                933
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "331 "
+                    }
+                ]
+            },
+            "bbox": [
+                888,
+                34,
+                916,
+                47
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/602898d012c290e8d1b093785d4f6e16378f5d8c54a67af495ed165a1fea2d8c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                68,
+                480,
+                349
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d0c3c7dacec44f35b89572ebe5d2e00178601763c2e146fa0d761e2d6fc5251a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4 The amplification factor as a function of (a) the width and (b) length of the first stage pivot "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                357,
+                480,
+                639
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tion factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". On the other hand, increasing the length of connection beam 2 leads to rapid increase in both  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the total amplification factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " up to a length of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Above  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the connection beam length has little effect on the amplification factor. It is also noted that there is an insignificant peak in the total amplification factor at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "80\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as shown by the SUGAR data. No such peak is seen in the analytical results. In the final design, the connection beam was 75 micron in length and 2 micron in width, with 2 micron being the minimum width allowed by the SOI-MEMS fabrication process. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                710,
+                482,
+                874
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6 shows the amplification factors as a function of the second stage pivot (a) length and (b) width, respectively. The effect of the pivot beam length of microlever 2 on the amplification factors is very similar to that of "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                874,
+                483,
+                933
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8c82d97423fd13b3fcb915d21bdd4b8df242558b074cd6767ccafe1de3e9c6f9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                69,
+                915,
+                349
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dfb4bf43b2c59057fc1ff923638bee0310f690d5eed64a666f7fb87cc777db48.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5 The amplification factor as a function of (a) the width and (b) length of the connection beam 2 between the two lever stages. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                357,
+                915,
+                640
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the length of connection beam 2. The amplification factor increases continuously with increasing length of the second-stage pivot. Due to the design area constraints, the length of the second-stage pivot length was chosen to be 200 micron in the actual design. The amplification factor decreases dramatically as the second-stage pivot width increases. The narrower the second-stage pivot, the greater is the amplification factor. The same is true for the connection beam. A width of 2 micron for the second-stage pivot and the connection beam between the two lever stages was used in the actual design. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                710,
+                916,
+                874
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The analytical results on the force-amplification factors are slightly higher than the SUGAR simulated results, as shown in Figs. 3-6. The reason why the total amplification factor predicted by analytical equations is "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                874,
+                916,
+                933
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "332 "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                34,
+                107,
+                46
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e1027681258f8ac0ef3b01dc581affb147260525843177c840b85c0898d08be1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                80,
+                68,
+                478,
+                347
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ad0e0eb95ddc4cf4767be07eff42c0d4577eae9716c8a77929fa3b33bc59bd61.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6 The amplification factor as a function of (a) the width and (b) length of the second stage pivot "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                357,
+                480,
+                640
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "always greater than SUGAR data is due to the negligence of the internal horizontal forces in the analytical approach. However, the analytical results do show the general trends of the changes in the amplification factor of the first-stage, the second-stage and the entire mechanism due to the geometrical change of the various flexure beams in the leverage mechanism. The flexure beam width usually has a more significant effect on the amplification factor than the beam length. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                695,
+                480,
+                829
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Based on the above analysis, a two-stage microleverage mechanism has been designed with the optimum dimensions for the SOI-MEMS fabrication. It has an amplification factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 82"
+                    },
+                    {
+                        "type": "text",
+                        "content": " according to SUGAR. The first-stage lever arm has a width of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and is much wider than that of the second-stage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "25\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", in order to increase the stiffness of the first-stage. The lengths of the first "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                831,
+                480,
+                933
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "stage microlever pivot and T-F connection beam are relatively short comparing to those of the second-stage microlever pivot and connection beams. The relatively short length for the first-stage microlever pivot and connection beams makes microlever 1 more stiff, and results in higher output spring constant for microlever 2, ensuring microlever 2 a better amplification factor. The relatively long length for the microlever 2 pivot and connection beams improves energy efficiency of microlever 2 and its amplification factor. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                69,
+                916,
+                216
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SOI-MEMS process offers 50 micron thick MEMS structure. The mechanism is more robust and the accelerometer can sustain greater acceleration before buckling. If the structure thickness of the microleverage mechanism and the output system changes together, the change would have little effect on the amplification factor. The thickness terms are cancelled out in the calculation of the amplification factor. The actual amplification may show slight derivation from the simulated one due to the fact that half of the lever arm structure are holes required for the structure-releasing step. The structure with holes may have a different spring constant comparing to no-hole structure. However, there should be no effect on the analytical simulation since the lever arms are assumed rigid in the analysis. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                218,
+                916,
+                441
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4 Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                517,
+                472,
+                604,
+                500
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents the design and optimization of a two-stage microleverage mechanism in a resonant accelerometer with both analytical and FEM approaches. The amplification factor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", of a two-stage microlever is approximated by the multiplication of the amplification factors of each microlever stage, with the upstream microlever stage being treated as the output for the downstream microlever stage. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                518,
+                916,
+                637
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order for a two-stage microlever to effectively amplify force, the compliance between the two microlevers needs to be properly distributed. More specifically, the axial spring constant of the microlever stage close to output system (microlever 1) has to be significantly greater than that of the microlever stage connected to the input system (microlever 2). The connection and pivot beams in microlever 2 need to be as narrow and as long as possible and those in microlever 1 should be wider and shorter. The structure thickness has no effect on the amplification factor of the mechanism, with a thicker structure being more robust. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                638,
+                916,
+                814
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements The authors thank Prof. R.T. Howe for his suggestion, and Dr. C. Keller and T.A. Roessig for stimulating discussions. Thanks also go to Ms. N. Zhou for discussion on SUGAR simulation. This research is supported by M3S DAPRA contract 1-442427-25316 (F30602-97-2-0266). Ms. Su also acknowledges the support of a NSF graduate research fellowship. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                831,
+                916,
+                933
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "333 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                34,
+                916,
+                46
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                80,
+                69,
+                165,
+                84
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Brosnihan, T.J. 1998: An SOI based, fully integrated fabricated process for high-aspect-ratio microelectromechanical system. Ph.D. Thesis, University of California at Berkeley "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Clark, J.V.; Zhou, N.; Pister, K.S.J. 1998: MEMS simulation using SUGAR v0.7. Solid-State Sensor and Actuator Workshop (held on Hilton-Head Island, SC, June 8–11) "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Roessig, T.A.; Howe, R.T.; Pisano, A.P.; Smith, J.H. 1995: Surface-micromachined resonant force sensor. Proc. ASME Dynamic System and Control Division, DSC-Vol. 57-2. IMECE "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                103,
+                485,
+                263
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Roessig, T.A.; Howe, R.T.; Pisano, A.P.; Smith, J.H. 1997: surface-micromachined resonant accelerometer. Transducer, pp. 849-852 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Sniegowski, J.J.; Smith, C. 1995: An application of mechanical leverage to microactuation. Transducer, 325 PB 9 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Su, X.-P.S.; Yang, H.S. 2000: Single-stage microleverage mechanism optimization in a resonant accelerometer. Struct. Multidisc. Optim. 21, 246-252 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Su, X.-P.S.; Yang, H.S. 2001: Design of compliant microleverage mechanisms. Senors and Actuator A87, 146-156 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "William, K.; 1999: A silicon microvalve for the proportional control of fluids. Transducers'99, pp. 1804-1807 "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                69,
+                916,
+                264
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "334 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                34,
+                107,
+                47
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reproduced with permission of copyright owner. Further reproduction prohibited without permission. "
+                    }
+                ]
+            },
+            "bbox": [
+                96,
+                34,
+                898,
+                89
+            ]
+        }
+    ]
+]

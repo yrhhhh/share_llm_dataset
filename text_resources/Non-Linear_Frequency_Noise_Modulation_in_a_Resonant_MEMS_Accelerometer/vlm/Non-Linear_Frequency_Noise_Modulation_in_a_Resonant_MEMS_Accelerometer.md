@@ -1,0 +1,184 @@
+# Non-Linear Frequency Noise Modulation in a Resonant MEMS Accelerometer
+
+Xudong Zou and Ashwin A. Seshia, Senior Member, IEEE
+
+Abstract—Resonant MEMS accelerometers offer the potential for very high resolution and wide bandwidth measurements over a large input dynamic range. The read-out is implemented by constructing an oscillator with the resonator as the primary frequency determining element. The noise of this oscillator front-end typically determines the resolution of the device, and the noise floor is set by the modulation of operative noise processes by the system dynamics. The resonator element is typically operated in the linear regime to prevent the detrimental impact of resonator non-linearities on noise conversion limiting frequency stability. However, by operating at higher drive power levels it is possible to also increase the signal-to-noise ratio for sufficiently large input frequencies. This paper shows that improved device performance over a wide bandwidth is possible by employing appropriate amplitude and phase feedback schemes to optimally bias the resonator thus enabling both short-term and long-term measurements with an electrically tunable resolution.
+
+Index Terms—MEMS resonator, resonant sensor, oscillator, MEMS sensor interface.
+
+# I. INTRODUCTION
+
+MEMS accelerometers have been applied to a large spectrum of applications ranging from automotive control and safety systems, consumer electronics for mobile phones and gaming consoles and wearable healthcare devices, thanks to the advantages of batch manufacturability, small form factor, low power consumption and the potential for CMOS co-integration. Recently applications demanding higher accuracy have emerged including pedestrian navigation and seismology [1]-[4], motivating the necessity for improvement in inertial measurement accuracy for MEMS accelerometers. While a number of factors impact overall measurement accuracy, noise-limited resolution and bias stability have been widely cited as key comparison metrics for MEMS accelerometers.
+
+A number of techniques for the transduction of inertial forces have been proposed including capacitive, optical, piezoresistive, piezoelectric, electromagnetic and resonant frequency shift based techniques [5]-[9]. The vast majority of commercial off-the-shelf MEMS accelerometers are based on capacitive techniques. One of the primary limitations with
+
+Manuscript received January 27, 2017; revised April 10, 2017; accepted April 23, 2017. Date of publication May 10, 2017; date of current version June 12, 2017. This work was supported in part by Innovate U.K., and in part by the U.K. Natural Environment Research Council. The associate editor coordinating the review of this paper and approving it for publication was Prof. Bhaskar Choubey. (Corresponding author: Ashwin A. Seshia.)
+
+X. Zou is with the Nanoscience Centre, University of Cambridge, Cambridge CB3 0FF, U.K., and also with the Chinese Academy of Sciences, Beijing 100864, China.
+
+A. A. Seshia is with the Nanoscience Centre, University of Cambridge, Cambridge CB3 0FF, U.K. (e-mail: aas41@cam.ac.uk).
+
+Digital Object Identifier 10.1109/JSEN.2017.2703156
+
+capacitive and other displacement measurement techniques applied to accelerometers is that the sensitivity is inversely proportional to the natural frequency squared, and hence increased sensitivity usually results in both decreased dynamic range and measurement bandwidth. Even though closed-loop force-feedback techniques applied to capacitive accelerometers can address the sensitivity-bandwidth to a certain extent [10], such devices still suffer from the significantly reduced robustness to shock and vibration and the low frequency response is typically limited by $1/f$ and higher order parametric noise injected by the measurement interface circuits. As opposed to capacitive techniques, the sensitivity of resonant techniques is impacted by a number of parameters not directly related to mechanical bandwidth and hence allows for designs that can achieve equivalent sensitivities, improved bias stability and low frequency noise performance without sacrificing mechanical robustness. Previous work, including work published by our group has resulted in resonant accelerometers demonstrating sub-μg resolution [11], [12].
+
+It is known that the intrinsic noise limited resolution of a resonant MEMS accelerometer varies for acceleration signals at different frequencies [9]. The front-end for a resonant MEMS accelerometer is usually an oscillator circuit and the phase noise of the oscillator is the primary determinant of the noise performance of the sensor. Non-linear effects operative in the resonator, transducer or associated circuitry can result in low frequency noise up-mixing onto the carrier frequency limiting achievable resolution at lower frequencies. However, this effect has not been systematically studied in the context of a resonant MEMS accelerometer. This paper reports on an experimental study where the driving point of the front end oscillator is varied to operate under varying linear and nonlinear driving conditions for the resonator and examining the consequent impact on the resolution of the sensor. It is shown that optimal driving conditions for optimizing the accelerometer resolution and bias stability exist. Furthermore, it is shown that the choice of the optimal operating point is different, depending on whether the accelerometer is being designed for low input frequency or high input frequency conditions. As the operating point is set by varying the gain/phase conditions within the oscillator loop, it is possible to electrically tune the resolution of the accelerometer and set the operating point dynamically in a practical application.
+
+# II. RESOLUTION OF RESONANT MEMS ACCELEROMETERS
+
+The resonant MEMS accelerometer measures input acceleration from the shift of the resonant frequency of a sensing
+
+1558-1748 © 2017 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. See http://www.ieee.org/publications_standards/publications/rights/index.html for more information.
+
+element (e.g. a double-ended tuning fork resonator). As an effective and elegant solution, the sensing resonator of resonant MEMS accelerometer is embedded in a self-sustained electromechanical oscillator loop. When the sensing resonator is operated in its linear regime, the frequency of oscillator output signal automatically tracks the resonant frequency variations of the sense beam resonator [13] and the input acceleration can be derived by using the pre-calibrated scale factor of the accelerometer. In case of small acceleration input, the scale factor of resonant accelerometer operated in linear region is given by:
+
+$$
+S _ {A x l} = \frac {f _ {L N R} \left(a _ {i n}\right) - f _ {L N R} \left(- a _ {i n}\right)}{2 a _ {i n}} \cong f _ {L N R} (0) S _ {F} M _ {P} A _ {L v r} \tag {1}
+$$
+
+where $S_F$ is the scale factor of linear lateral stiffness on axial force [9], $M_P$ is the proof-mass of accelerometer, $A_{Lvr}$ is the inertial force amplification factor [8], [9] and $a_{in}$ is the input acceleration. The resolution of the resonant MEMS accelerometer can be correlated to the frequency fluctuations of the output signal of the oscillator, and the minimum detectable acceleration can be expressed as:
+
+$$
+a _ {\min } = \left(\frac {\Delta f _ {n}}{f _ {0}}\right) \cdot \frac {\bar {f} _ {0}}{S _ {A x l}} \tag {2}
+$$
+
+where $\left(\Delta f_{n} / f_{0}\right)$ is the minimum measurable fractional frequency variation of the output signal of frequency tracking oscillator without acceleration input, $\bar{f}_0$ is the measured average frequency of the oscillator output signal over a certain period of measurement and $S_{Axl}$ is the scale factor of accelerometer in the unit of $\mathrm{Hz / m / s^2}$ . Since the nonlinear operation of the sensing resonator does not significantly change the scale factor of the resonant accelerometer, the resolution of accelerometer operated in linear and nonlinear region can be directly evaluated by comparing the frequency stability of the oscillator output signal in those cases.
+
+The frequency stability or the phase/frequency noise of linear and nonlinear MEMS oscillators has been studied previously [14], [15]. For a given MEMS resonator operated in linear regime, the frequency stability is limited by vibration amplitude and Q factor. In previous studies [16], [17], it was demonstrated that operating the MEMS resonator at a specific critical bifurcation point can improve the overall phase/frequency noise level of the oscillator compared to operating the resonator in the linear region. Normally, operating MEMS resonator in the nonlinear regime degrades the frequency/phase noise due to undesired amplitude-to-phase, amplitude-to-frequency and phase-to-frequency noise conversion. However, our recent study [18] showed that the frequency noise level of oscillator can be reduced when the MEMS resonator is biased at an optimal phase feedback condition (by choosing a specific value of loop phase shift $\Delta$ ) to minimize the frequency to phase noise conversion for the resonator operated in the non-linear regime with vibration amplitude much larger than the linear threshold. Since unwanted noise conversion in nonlinear operation can be managed, it is possible to benefit from the large vibration amplitude of resonator
+
+![](images/21a4b8bc24e2e54cb6d69807e86d54062b4a10d918ad048e653b21a9630e5add.jpg)  
+Fig. 1. Schematic of the tuneable oscillator circuit.
+
+and increased signal to noise (SNR) within the loop to lower the white frequency noise level on the oscillator output signal.
+
+The frequency stability of oscillators can be characterized in frequency-domain or time-domain and the intrinsic noise limited resolution of the accelerometer can be expressed in two different ways: By using the tool of phase/frequency noise power spectral density (PSD), the minimum detectable input acceleration of the resonant accelerometer is given by [19]:
+
+$$
+a _ {n} ^ {2} (B) = \left(\frac {\bar {v} _ {0} ^ {2}}{S _ {A x l} ^ {2}}\right) \int_ {1 / \tau_ {d}} ^ {B} S _ {y} (f) d f \tag {3}
+$$
+
+where the $\bar{v}_0$ is the measured average frequency (same as $\bar{f}_0$ in Eq. 2), $f$ is the Fourier frequency of the noise power density spectrum, $B$ is the frequency measurement bandwidth for the oscillator output signal, $\tau_d$ is the time scale over which frequency drift needs to be considered, $S_y(f)$ is the fractional frequency noise power density spectrum of the oscillator output without acceleration input or seismic noise. It is clear that the frequency noise power density close to zero determines the resolution of accelerometer for quasi-static input acceleration, whereas the frequency noise power density far from zero determines the resolution of accelerometer for high frequency input acceleration.
+
+In time domain, by using the tool of Allan Variance (AVAR), the minimum detectable input acceleration of the resonant accelerometer is given by:,
+
+$$
+a _ {n} ^ {2} (\tau) = \left(\frac {\bar {v} _ {0} ^ {2}}{S _ {A x l} ^ {2}}\right) \cdot \sigma_ {y} ^ {2} (\tau) \tag {4}
+$$
+
+where the $\tau$ is the averaging time of frequency measurement and $\sigma_{y}(\tau)$ is the Allan Variance of the oscillator output with zero acceleration input. For resonant accelerometer, the optimal averaging time $(\tau_{op})$ to achieve minimum Allan Variance corresponds to the minimum detectable input acceleration ( $a_{min}(\tau_{op})$ ) within a bandwidth of $1/2\tau_{op}$ .
+
+# III. EXPERIMENTAL RESULTS
+
+The topology of oscillator circuit is shown in Figure 1. It consists of a trans-impedance amplifier (TIA), band-pass filter, tunable phase shifter, comparator, tunable potential divider,
+
+![](images/3595aea66067011957d99242f4915d16d04d5d460986046e33b4eb130a0d89d0.jpg)  
+Fig. 2. Schematic of the resonant accelerometer.
+
+TABLEI SUMMARY OF DEVICE DESIGN   
+
+<table><tr><td>Component</td><td>Value</td><td>Unit</td></tr><tr><td>Proof mass</td><td>1.04</td><td>mm3</td></tr><tr><td>Sensing DETF</td><td>280(L)×2.5(W)×40(H)</td><td>μm</td></tr><tr><td>Capacitive gap</td><td>2</td><td>μm</td></tr><tr><td>Lever ratio</td><td>56</td><td>1</td></tr></table>
+
+DC bias to provide a polarisation voltage on the resonator and a buffer amplifier for output. Based on the conventional square-wave MEMS oscillator [20], the tunable potential divider is added to control the mechanical nonlinearity [21] of the DETF resonator by changing the amplitude of the feedback actuation force $(F_{Act})$ , and the tunable phase shifter is added to control the phase feedback $(\Delta)$ .
+
+The mechanical design of this resonant accelerometer has been presented in a previous paper [11] as schematically shown in Figure 2. The resonant accelerometer consists of two identical DETF (Double-Ended Tuning Fork) resonators enabling differential measurement in response to input acceleration. Each sensing DETF resonator is anchored on one side and linked to a proof mass on the other side through a pair of force amplifiers or levers. When the proof mass experiences an external acceleration, the micro-lever amplifies the inertial force coupled axially onto the sensing DETF resonator, modifying its resonant frequency in a form proportional to the input acceleration. A differential frequency output is used to provide for first order cancellation of thermal drift in the oscillator output.
+
+The critical design parameters of the resonant accelerometer are summarized in Table 1. The prototype devices were fabricated in a bonded wafer process employing a wafer-level eutectic bonding process for vacuum encapsulation. A getter is incorporated within the package as well. Resonator characterization conducted over a period of over 24 months indicates a stable vacuum environment within the cavity.
+
+The resonant frequency of the DETF under no external acceleration input is $200.147\mathrm{kHz}$ when the resonator is
+
+![](images/d926f1120579cccb8a4673e8c8f713ec5df5a3151ffb094568844f7359e5f076.jpg)  
+Fig. 3. Measured open-loop linear amplitude and phase frequency response of the DETF resonator sense element.
+
+![](images/8d0af9d1d80205d74278a43d1adc8857eb53c0d55f7ad629132273efc5a0ef46.jpg)  
+Fig. 4. Measured open-loop amplitude and phase frequency response of the DETF resonator with varying AC drive voltage magnitudes.
+
+biased with a 9V DC bias voltage (see Fig. 3.) and the scale factor is approximately $980\mathrm{Hz / m / s^2}$ . The measured quality factor of the DETF is about 29700. Figure 4 shows the electrically measured open-loop amplitude/phase response of the sensing DETF resonator driven by different AC voltage magnitudes and a DC polarisation bias voltage of 9V. For this particular device, the linear excitation threshold of the AC voltage is about $20\mathrm{mV}$ . With increasing excitation voltage, the frequency response of the DETF resonator moves from the linear regime to the nonlinear regime due to the mechanical spring stiffening effect, which can be modelled by the Duffing equation [22], [23],
+
+$$
+M _ {e f f} \ddot {x} + 2 \eta \sqrt {M _ {e f f} k _ {1}} \dot {x} + k _ {1} x + k _ {m 3} x ^ {3} = F _ {A c t} \cos (\omega t) \tag {5}
+$$
+
+where, $k_{1}$ is the linear spring constant including the negative electrostatic spring, $k_{\mathrm{m3}}$ is the cubic spring constant modelling geometric stiffening under large transverse beam displacement, $\eta$ is the linear damping ratio, and $F_{Act} \cos (\omega t)$ is the external actuation force. The measured amplitude/phase response plots shown in Figure 4 is consistent with the above dynamical model. This also demonstrates that the nonlinear response of the sensing resonator can be modified by tuning the magnitude of excitation voltage: The DETF resonator reaches the critical
+
+![](images/c495fd5aa5cbe17a646ad1856bcdd05224e135180fa5de731a49e542f32b6d71.jpg)  
+Fig. 5. PSD analysis of the electronic-noise limited resolution with varying amplitude of actuation force.
+
+bifurcation point when the excitation voltage is increased to approximately $32\mathrm{mV}$ . Further increase in the magnitude of the excitation voltage shift the peak response to higher frequencies and limits the maximum phase shift to 80 degrees. It is also shown that when operated in nonlinear regime, the maximum frequency detuning range $(\mathrm{V}_{\mathrm{Drive}} = 158\mathrm{mV})$ in this study is less than $0.5\mathrm{kHz}$ and results in a decrease of scale factor no larger than $0.25\%$ , which is neglected in this analysis.
+
+Due to the ultra-high sensitivity of the resonant accelerometer, the ambient vibration noise measured from our vibration-isolated calibration platform [10], which is about $3\mu \mathrm{g} / \mathrm{Hz}^{1 / 2}$ is much larger than the intrinsic sensor noise floor. In order to study the sensor resolution limited by intrinsic sensor noise, the DETF resonator of the sample accelerometer was replaced by a DETF resonator on the same chip having identical dimensions but not connected to the proof mass.
+
+The frequencies of the vibration insensitive DETF oscillator were logged in the absence of any active acceleration input by a frequency counter (KEYSIGHT 53230A). The measured frequency fluctuations were then captured and demodulated to acceleration units using the previously calibrated device scale factor. Considering the dummy DETF is less sensitive to ambient vibration, the noise of the uncoupled DETF represents a value nearer the intrinsic sensor noise floor.
+
+Figure 5 plots the different equivalent acceleration noise PSD of the device output while driven by varying AC drive voltage magnitudes (DC Bias is 9V) for various cases when the sensing resonator is operated in the linear and nonlinear regime. The test results in Figure 5 indicate that the sensor resolution can be improved by increasing the amplitude of driving voltage until the resonator working close to the critical nonlinear point ( $V_{\text{Drive}}$ is $32\mathrm{mV}$ for this particular device). Further increase in the amplitude of the drive voltage will move the DETF resonator into the nonlinear regime governed by mechanical non-linearity. As discussed previously, the operating point of the resonator can be set by the phase shift within the feedback loop of the oscillator circuit when the resonator is operated in the nonlinear regime. It is important to examine how the phase shift of the drive voltage with
+
+![](images/4c3d63221cb659bc40e113dd5f7c4bbd0bc12f549bee903f4918b78554a2634f.jpg)  
+Fig. 6. PSD analysis of the electronic-noise limited resolution with varying phase shift of the actuation force.
+
+TABLE II ACCELEROMETER NOISE POWER SPECTRUM DENSITY VS DRIVE VOLTAGE OF THE RESONATOR   
+
+<table><tr><td>Driving Voltage</td><td>Noise PSD at 0.1Hz (μg/Hz1/2)</td><td>Noise PSD at 1Hz (μg/Hz1/2)</td><td>Noise PSD at 10Hz (μg/Hz1/2)</td><td>Noise PSD at 100Hz (μg/Hz1/2)</td></tr><tr><td>35 mV</td><td>1</td><td>0.8</td><td>0.8</td><td>0.6</td></tr><tr><td>125 mV</td><td>10</td><td>0.8</td><td>0.18</td><td>0.08</td></tr><tr><td>155 mV</td><td>11.5</td><td>1.1</td><td>0.28</td><td>0.22</td></tr></table>
+
+respect to the sense response impacts on the sensor resolution. Figure 6 plots the various equivalent acceleration noise PSD of the device output with constant amplitude but for different phase shifts introduced using the tuneable phase shifter in the circuit (see Figure 1). The phase-shift from $\Delta 1$ to $\Delta 7$ is gradually increased where $\Delta 1 \sim 22^{\circ}$ and $\Delta 7 \sim 84^{\circ}$ are the minimum and maximum phase-shift for the nonlinear oscillator to achieve lock-in for a drive voltage amplitude of $107\mathrm{mV}$ . The results shown in Figure 6 indicate that an optimal phase-shift value exists to maximize the overall resolution when the sensing resonator is operated in the nonlinear regime and driven by a constant actuation voltage amplitude. Therefore, the PSD equivalent acceleration noise plots of the device operated in nonlinear regime shown in Figure 6 is shown for the optimized phase-shift of the actuation force in the oscillator loop. Returning to Figure 5, with further increase in the amplitude of driving voltage beyond the nonlinear threshold of sensing resonator, the sensor resolution in response to high frequency acceleration ( $>10\mathrm{Hz}$ ) can be improved but the resolution at lower frequencies ( $<1\mathrm{Hz}$ ) is degraded. When the driving voltage is greater than an optimized value ( $V_{\text{Drive}}$ is $125\mathrm{mV}$ for this particular device), the resolution of the sensor is seen to degrade again at higher frequencies.
+
+Table 2 compares the noise PSD of the sensor at $0.1\mathrm{Hz}$ , $1\mathrm{Hz}$ , $10\mathrm{Hz}$ and $100\mathrm{Hz}$ input frequencies at different drive voltages. Actuating the DETF resonator with a $125\mathrm{mV}$ driving voltage leads to a noise floor of approximately $80\mathrm{ng} / \sqrt{\mathrm{Hz}}$
+
+![](images/0f5645d451f50537f1a9c0644f1d97e4fbf6066751e33b60726b4a70e9ae165f.jpg)  
+Fig. 7. Acceleration Allan Deviation for varying AC drive voltage magnitudes.
+
+TABLE III ACCELERATION ALLAN DEVIATION (AD) OF THE SENSOR FOR DIFFERENT DRIVE VOLTAGES   
+
+<table><tr><td>Driving Voltage</td><td>AD for 0.01s Aver. Time (μg)</td><td>AD for 0.1s Aver. Time (μg)</td><td>AD for 1s Aver. Time (μg)</td><td>AD for 10s Aver. Time (μg)</td><td>Minimum AD (μg)</td></tr><tr><td>35 mV</td><td>3.2</td><td>0.85</td><td>0.37</td><td>0.25</td><td>0.23</td></tr><tr><td>107 mV</td><td>0.56</td><td>0.62</td><td>1.41</td><td>2.87</td><td>0.38</td></tr><tr><td>155 mV</td><td>1.5</td><td>0.87</td><td>1.65</td><td>4.22</td><td>0.71</td></tr></table>
+
+in the frequency range between $20\mathrm{Hz}$ to $100\mathrm{Hz}$ , but the resolution degrades for frequencies below $10\mathrm{Hz}$ . In comparison, actuating the DETF resonator with a $35\mathrm{mV}$ driving voltage leads to a flat noise floor of approximately better than $1\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ in the frequency range from $0.1\mathrm{Hz}$ to $100\mathrm{Hz}$ .
+
+The Allan deviation values of the measured frequency outputs of the oscillator with different driving voltages are plotted in Figure 7. As discussed before, the intrinsic noise limited resolution of the resonant accelerometer can be correlated to the phase noise of the oscillator. For the Allan Variance/Deviation plot, various noise mechanisms underlying the measured response can be distinguished by the different slopes [24]. The measured results demonstrate that the white phase noise and white frequency noise can be reduced with increase in driving voltage due to the improved signal-to-noise ratio seen at the input of the TIA. Meanwhile, the Flicker frequency noise and Random Walk frequency noise were increased when the resonator was actuated in the nonlinear regime (i.e. beyond the bifurcation point) due to the nonlinear noise up-conversion effect [25]. Further increase in the driving voltage results in increased nonlinearity of the resonator, resulting in additional noise pick-up worsening the overall oscillator noise performance. Table 3 summarizes the Allan deviation of the sensor for different drive voltages. Actuating the DETF resonator with a $35\mathrm{mV}$ drive voltage leads to the best case bias stability (Eq.3) of $0.23~\mu \mathrm{g}$ over a 5 second integration time. Actuating the DETF resonator with a $107\mathrm{mV}$
+
+driving voltage leads to the lowest bias stability of $0.38\mu \mathrm{g}$ for 20ms integration time, indicating good sensor resolution over a wide bandwidth.
+
+Therefore, by using the proposed tuneable oscillator circuit, the DETF sensing element in the resonant accelerometer can be tuned to operate at the critical nonlinear point (35 mV for this particular device) in order to optimize for low frequency acceleration measurements or be tuned to operate over a moderate non-linear regime (107-125 mV for this particular device) in order to optimize resolution for wide bandwidth acceleration measurements.
+
+# IV. CONCLUSION
+
+In summary, this paper presents results on the noise performance of a resonant MEMS accelerometer when driven in the linear and non-linear regimes by integrating a front-end phase feedback oscillator circuit employing amplitude control. It is observed that the sensor resolution is a function of the drive amplitude and a specific optimum phase criterion exists to optimally bias the resonator for low noise response in the non-linear regime. The results also point towards a resolution tuning approach for MEMS resonant accelerometer by switching the DETF sensing resonator between the linear and nonlinear regimes in a closed-loop oscillator configuration. Thus, the sensor resolution can be tuned electronically by varying the amplitude and/or phase of the feedback voltage to optimize the response either for precise acceleration measurement in a narrow bandwidth or for wide bandwidth acceleration measurement with a compromised noise floor. Since this tuning approach could be integrated into the front-end electronics by simply varying the amplitude/phase feedback conditions, it is possible for the same device to be tuned for different application requirements by switching between drive modes, particularly as the device scale factor is not significantly varied by operating in the non-linear regime. As the device footprint scales even further and the dimensions of the resonating elements reduces, non-linear effects are unavoidable and the corresponding effects on sensor resolution must be considered alongside the potential increases in sensitivity. The results in this paper should therefore be applicable to resonant accelerometers subject to further miniaturization scaling where the resonator beams demonstrate early onset of non-linear effects.
+
+# REFERENCES
+
+[1] S. Y. Cho and C. G. Park, “MEMS based pedestrian navigation system,” J. Navigat., vol. 59, no. 1, pp. 135–153, 2006.   
+[2] J. Bernstein, R. Miller, W. Kelley, and P. Ward, "Low-noise MEMS vibration sensor for geophysical applications," J. Microelectromech. Syst., vol. 8, no. 4, pp. 433-438, Dec. 1999.   
+[3] J. Laine and D. Mougenot, “Benefits of MEMS based seismic accelerometers for oil exploration,” in Proc. Int. Solid-State Sens., Actuat. Microsyst. Conf. (TRANSDUCERS), Jun. 2007, pp. 1473–1477.   
+[4] R. P. Middlemiss, A. Samarelli, D. J. Paul, J. Hough, S. Rowan, and G. D. Hammond, "Measurement of the earth tides with a MEMS gravimeter," Nature, vol. 531, pp. 614-617, Mar. 2016.   
+[5] J. Wu, G. K. Fedder, and L. R. Carley, "A low-noise low-offset capacitive sensing amplifier for a $50 - \mu \mathrm{g} / \sqrt{Hz}$ monolithic CMOS MEMS accelerometer," IEEE J. Solid-State Circuits, vol. 39, no. 5, pp. 722-730, May 2004.
+
+[6] U. Krishnamoorthy et al., "In-plane MEMS-based nano-g accelerometer with sub-wavelength optical resonant sensor," Sens. Actuators A, Phys., vols. 145-146, pp. 283-290, Jul. 2008.   
+[7] J. P. Lynch, A. Partridge, K. H. Law, T. W. Kenny, A. S. Kiremidjian, and E. Carryer, "Design of piezoresistive MEMS-based accelerometer for integration with wireless sensing unit for structural monitoring," J. Aerosp. Eng., vol. 16, no. 3, pp. 108-114, 2003.   
+[8] F. Gerfers, M. Kohlstadt, H. Bar, M.-Y. He, Y. Manoli, and L.-P. Wang, "Sub- $\mu$ g ultra-low-noise MEMS accelerometers based on CMOS-compatible piezoelectric AlN thin films," in Proc. Int. Solid-State Sens., Actuators Microsyst. Conf. (TRANSDUCERS), Jun. 2007, pp. 1191-1194.   
+[9] A. A. Seshia et al., “A vacuum packaged surface micromachined resonant accelerometer,” J. Microelectromech. Syst., vol. 11, no. 6, pp. 784–793, Dec. 2002.   
+[10] U. Sonmez, H. Kulah, and T. Akin, "A $\Sigma \Delta$ micro accelerometer with 6 $\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution and 130 dB dynamic range," Analog Integr. Circuits Signal Process., vol. 81, no. 2, pp. 471-485, 2014.   
+[11] X. Zou and A. A. Seshia, “A high-resolution resonant MEMS accelerometer,” in Proc. 18th Int. Conf. Solid-State Sens., Actuators Microsyst. (TRANSDUCERS), Jun. 2015, pp. 1247–1250.   
+[12] X. Wang et al., "A $0.4\mu \mathrm{g}$ bias instability and $1.2~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ noise floor MEMS silicon oscillating accelerometer with CMOS readout circuit," IEEE J. Solid-State Circuits, vol. 52, no. 2, pp. 472-482, Feb. 2017.   
+[13] X. Zou, P. Thiruvenkatanathan, and A. A. Seshia, “A seismic-grade resonant MEMS accelerometer,” J. Microelectromech. Syst., vol. 23, no. 4, pp. 768–770, Aug. 2014.   
+[14] X. Zou and A. A. Seshia, “The impact of damping on the frequency stability of nonlinear MEMS oscillators,” J. Microelectromech. Syst., vol. 24, no. 3, pp. 537–544, Jun. 2015.   
+[15] D. K. Agrawal, F. Bizzarri, A. Brambilla, and A. A. Seshia, “Numerical verification of an analytical model for phase noise in MEMS oscillators,” IEEE Trans. Ultrason., Ferroelect., Freq. Control, vol. 63, no. 8, pp. 1204–1207, Aug. 2016.   
+[16] L. G. Villanueva et al., “Surpassing fundamental limits of oscillators using nonlinear resonators,” Phys. Rev. Lett., vol. 110, p. 177208, Apr. 2013.   
+[17] D. Antonio, D. H. Zanette, and D. López, "Frequency stabilization in nonlinear micromechanical oscillators," Nature Commun., vol. 3, p. 806, May 2012.   
+[18] B. Sun et al., "Enhanced frequency stability in a non-linear MEMS oscillator employing phase feedback," in Proc. IEEE 30th Int. Conf. Micro Electro Mech. Syst. (MEMS), Las Vegas, NV, USA, Jun. 2017, pp. 1115-1117.   
+[19] X. Zou, "High resolution resonant accelerometer based on MEMS technology," Ph.D. dissertation, Dept. Eng., Univ. Cambridge, Cambridge, U.K., 2013.   
+[20] J. E.-Y. Lee, B. Bahreyni, Y. Zhu, and A. A. Seshia, “A single-crystal-silicon bulk-acoustic-mode microresonator oscillator,” IEEE Electron Device Lett., vol. 29, no. 7, pp. 701-703, Jul. 2008.   
+[21] D. K. Agrawal, J. Woodhouse, and A. A. Seshia, "Modeling nonlinearities in MEMS oscillators," IEEE Trans. Ultrason., Ferroelect., Freq. Control, vol. 60, no. 8, pp. 1646-1659, Aug. 2013.   
+[22] M. Younis and A. Nayfeh, “A study of the nonlinear response of a resonant microbeam to an electric actuation,” *Nonlinear Dyn.*, vol. 31, pp. 91–117, Jan. 2003.
+
+[23] J. F. Rhoads, S. W. Shaw, and K. L. Turner, "Nonlinear dynamics and its applications in micro- and nanoresonators," J. Dyn. Syst. Meas. Control, vol. 132, no. 2, pp. 1509–1538, 2010.   
+[24] E. Rubiola, Phase Noise and Frequency Stability in Oscillators. Cambridge, U.K.: Cambridge Univ. Press, 2009.   
+[25] V. Kaajakari, J. K. Koskinen, and T. Mattila, “Phase noise in capacitively coupled micromechanical oscillators,” IEEE Trans. Ultrason., Ferroelect., Freq. Control, vol. 52, no. 12, pp. 2322-2331, Dec. 2005.
+
+![](images/bcc55b22a40b974738e9a06622922f719a018c64e31ad15094c7d1d80a118539.jpg)
+
+Xudong Zou received the B.Sc. degree in microelectronics from Peking University, China, in 2009, and the Ph.D. degree in mechanics, materials and design from the University of Cambridge, U.K., in 2013. He was affiliated with the Nanoscience Center, Department of Engineering, University of Cambridge, as a Research Associate, and the Churchill College as a Post-Doctoral By-Fellow. He is currently a Professor with the State Key Laboratory of Transducer Technology, Institute of Electronics, Chinese Academy of Sciences. His main
+
+research interest lies in the area of integrated micro and nano electromechanical systems, with a focus on resonators and inertial sensors, including design and optimization of high resolution MEMS resonant inertial sensors, studying the nonlinear effects on the noise processes in MEMS oscillators, and the coupled MEMS resonators in sensing and signal processing applications.
+
+![](images/e5c2b9935ad2f0a1353abb6d9969f9eab75897a93a54d8ede107e92381d465d2.jpg)
+
+Ashwin A. Seshia (S'99-M'02-SM'10) received the B.Tech. degree in engineering physics from IIT Bombay in 1996, the M.S. and Ph.D. degrees in electrical engineering and computer sciences from the University of California at Berkeley, Berkeley, in 1999 and 2002, respectively, and the M.A. degree from the University of Cambridge in 2008. He joined the Engineering Department, University of Cambridge, in 2002, as a Faculty Member, where he is currently a Professor of Microsystems Technology and a Fellow of Queens' College.
+
+He heads a research group in the area of MEMS-based at the Cambridge University Nanoscience Centre. He is also a Co-Investigator of the Cambridge Centre for Smart Infrastructure and Construction. He has published over 180 peer-reviewed research papers in the area of MEMS and is a co-inventor on 14 granted patents, particularly in areas relating to linear and non-linear resonant microsystems, and applications to sensors and sensor systems. He is a Fellow of the Institute of Physics (IoP) and the Institution of Engineering and Technology. He has served on the editorial boards for the IoP Journal of Micromechanics and Microengineering and the IEEE TRANSACTIONS ON NANOTECHNOLOGY. He serves as an Editor of the IEEE JOURNAL OF MICROELECTROCHEMICAL SYSTEMS and an Associate Editor of the IEEE TRANSACTIONS ON ULTRASONICS, FERROELECTRICS AND FREQUENCY CONTROL.

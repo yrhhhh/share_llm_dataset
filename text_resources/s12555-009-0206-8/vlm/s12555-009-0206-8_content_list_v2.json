@@ -1,0 +1,3253 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Oscillation Amplitude-controlled Resonant Accelerometer Design Using a Reference Tracking Automatic Gain Control "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                169,
+                78,
+                826,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park, Young Jae Lee, and Joon Goo Park "
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                129,
+                811,
+                142
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract: In this paper, it is presented a novel approach for the self-sustained resonant accelerometer design, which takes advantages of an automatic gain control in achieving stabilized oscillation dynamics. Through the proposed system modeling and loop transformation, the feedback controller is designed to maintain uniform oscillation amplitude under dynamic input accelerations. The fabrication process for the mechanical structure is illustrated in brief. Computer simulation and experimental results show the feasibility of the proposed accelerometer design, which is applicable to a control grade inertial sense system. "
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                157,
+                847,
+                251
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: Automatic gain, oscillation, resonant accelerometer, self-sustained. "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                266,
+                684,
+                277
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                211,
+                327,
+                363,
+                338
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With the help of micromachined manufacturing process and technology, various types of MEMS (micro electro-mechanical system) accelerometers have been developed and, among them, resonance type accelerometers are reported to have comparable properties such as large dynamic range and high sensitivity as well as easy interface with digital electronics [1-3]. In particular, the surface micromachined accelerometer in [2] showed good sensitivity with several tens of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", but suffered a relatively strong stiffening-spring effect from its beam spring structure. The good feature of resonant accelerometer is also found at the classical quartz type accelerometers as in [4,5]. Also resonant accelerometers presented in [6-8,12] reported sensor performances of control or tactical navigation grade. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                353,
+                482,
+                557
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The frequency reading, electrically tunable accelerometer has shown certain advantages of an enhanced sensitivity, simple electronics, self-sustained diagnosis, and temperature robustness [6-8]. Yet, owing to its operating and detecting principle, the proposed resonance accelerometer has some shortcomings of limited range and burdensome digital signal processing "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                559,
+                482,
+                654
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "electronics. Specifically, the detection strategy of the resonant accelerometer in [8] is to read out the resonant frequency variation from its oscillation signal under applied accelerations. But this sensing strategy has performance limitation since it does not incorporate any control over the proof mass motion. When a large acceleration is applied, the intermediate gap between the proof mass and sensing electrode gets smaller, which may cause an unstable oscillation. This is because the electrostatic force excited in between the moving mass and sensing electrode is inversely proportional to the square of gap distance; the sensor output may produce distorted resonance characteristics, and thus output nonlinearity in certain high input range. Additionally, the frequency readout circuit involves digital electronics parts resulting in a more complicated and noise susceptible signal conditioning circuitry. Unless the integrated circuit method such as ASIC is chosen for the digital signal processing, it is quite burdensome to incorporate the frequency readout circuitry in analog sensor systems. Hence the previous works present a strong case for introducing a resonance type accelerometer that incorporates an oscillation dynamics control and analog signal readout, which can provide an extended bandwidth and robustness. This paper presents a new detection principle and design approach for the resonant accelerometer, which takes advantages of a reference tracking automatic gain control (AGC) scheme. In Section 2, the operational principle and introduction to the plant dynamics are illustrated. In Section 3, detailed system transformation and loop design for the oscillation control is presented. The fabrication of the resonant accelerometer is presented in Section 4. Finally, computer simulation and experimental results are provided in Section 5, followed by the concluding remarks in Section 6. "
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                326,
+                904,
+                815
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. SYSTEM ILLUSTRATION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                600,
+                832,
+                820,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The working principle of the proposed resonant "
+                    }
+                ]
+            },
+            "bbox": [
+                534,
+                859,
+                904,
+                872
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "International Journal of Control, Automation, and Systems (2009) 7(2):203-210 DOI 10.1007/s12555-009-0206-8 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                43,
+                591,
+                64
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "http://www.springer.com/12555 "
+                    }
+                ]
+            },
+            "bbox": [
+                705,
+                43,
+                904,
+                54
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Manuscript received July 12, 2007; accepted September 18, 2008. Recommended by Editorial Board member Dong Hwan Kim under the direction of Editor Hyun Seok Yang. This work was supported by the BK21 Project ST-IT Fusion Engineering program in Konkuk University, 2008. This work was supported by the Korea Foundation for International Cooperation of Science & Technology(KICOS) through a grant provided by the Korean Ministry of Education, Science & Technology(MEST) in 2008 (No. K20601000001). Authors also thank to Dr. B.-L. Lee for the help in structure manufacturing. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                672,
+                475,
+                788
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park and Young Jae Lee are with the Department of Aerospace Information Engineering, Konkuk University, Seoul 143-701, Korea (e-mails: {sksung, cjkim, parkjk, younglee} @konkuk.ac.kr). "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                789,
+                475,
+                834
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Joon Goo Park is with the School of Electronic Engineering, Kyungpook National University, Daegu, Korea. (e-mail: jgpark@knu.ac.kr). "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                834,
+                475,
+                869
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© ICROS, KIEE and Springer 2009 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                884,
+                299,
+                895
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Springer "
+                    }
+                ]
+            },
+            "bbox": [
+                816,
+                881,
+                904,
+                897
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7b2fb48aa5ec488d0cf8b29a656df5b8d85dd1c0d3e5d56e2388bd92b8129b1a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Schematics of resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                100,
+                73,
+                472,
+                242
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "accelerometer is based on the oscillation dynamics of MEMS parallel plated resonator. By sustaining the proof mass of the resonator with constant oscillation amplitude subject to acceleration-dependent bias position, the applied acceleration is estimated through the control input signal that maintains the constant oscillation dynamics. In this background, it is devised a parallel-plated electrostatic resonator as shown in Fig. 1. By observing the figure, the governing equation for the plant dynamics is obtained as (1). "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                274,
+                485,
+                412
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {a} = m \\ddot {z} + D \\dot {z} + k _ {m} z - \\varepsilon A \\frac {\\left(V _ {D} + v\\right) ^ {2}}{2 \\left(z _ {o} - z\\right) ^ {2}}. \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fefff35a7784fdbc535658d215ecf1f717db7e4113a87558ee097bdaca228d98.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                422,
+                482,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In (1),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the inertial mass while  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "D"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the damping coefficient,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the spring constant,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the permittivity constant,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the driving electrode area,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{D}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the bias voltage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the driving voltage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the applied acceleration,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the equilibrium gap and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the varying displacement. From the equation, it is easily recognized that the displacement of the proof mass can be controlled by the input driving voltage scaled by the driving bias voltage gain. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                467,
+                484,
+                619
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Assuming a small signal to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "z_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{D}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively, the plant dynamics with a zero input acceleration is modeled as a linear form in below, "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                619,
+                484,
+                661
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "G (s) = \\frac {k _ {a}}{s ^ {2} + 2 \\zeta_ {z} \\omega_ {z} s + \\omega_ {z} ^ {2}}, \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/43d61fc7ab1297f1c6068e4c7035431fb6c889870a9f44a46b5669b52d86692c.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                669,
+                482,
+                705
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                713,
+                137,
+                725
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {a} = \\varepsilon A V _ {D} z _ {o} ^ {- 2} \\cdot m ^ {- 1}, \\quad \\omega_ {z} = \\sqrt {(k _ {m} - \\varepsilon A V _ {D} ^ {2} z _ {0} ^ {- 3}) \\cdot m ^ {- 1}}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ca1504492cc31860e4fc3af4f9aa4c2b4e8bbd2d71afa95f129bb53b9c2bf742.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                728,
+                470,
+                750
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\zeta_{z} = D\\cdot (2m\\omega_{z})^{-1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In (2), the higher order perturbation terms are neglected because the plant transfer function  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has a low pass filtering dynamics that mitigates the higher order harmonics effectively. Then by applying a sinusoidal driving signal, the proof mass oscillates around the force balanced position where the applied acceleration and electrostatic force are matched to introduce an equilibrium state. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                755,
+                484,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As observed from Fig. 1 and (1), the gap distance between the parallel plates at the equilibrium point varies "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                869,
+                484,
+                897
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3e86166f0478c05511347fc713967702cb1dd881742bf3b847b173ed51adaa13.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                579,
+                77,
+                842,
+                238
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2ceb2029038c1132962eaccd129e52a5b9e866e538364fabd3f99ef808757a0d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. (a) AGC loop of resonant accelerometer with differentiator inner branch. (b) Modified AGC loop of resonant accelerometer with simple inner branch. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                579,
+                241,
+                836,
+                385
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "as the applied acceleration varies. Therefore, the system gain from the driving signal – usually, a voltage – to the electrostatic force contains nonlinear relation depending on the gap induced by the applied acceleration. Also the oscillation amplitude grows large under high acceleration ranges, which results in a performance limitation. Thus the enhanced sensor performance including linearity and high dynamic range motivates an employment of a stable oscillation control. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                460,
+                905,
+                581
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Considering the dynamical characteristics of the resonant accelerometer yields to a modified automatic gain control loop, which is applied to the system for a stable oscillation around the equilibrium point. In this scheme, the design objective of the control loop is to improve the performance indices of accelerometer, which can include such metrics as dynamic range, output linearity and bandwidth. This objective is accomplished by maintaining the amplitude of oscillation even if there are external accelerations applied. Thus by measuring the control input that suppresses the oscillation amplitude variations, the applied acceleration is computed. In addition, by controlling the oscillation amplitude, the unstable vibration under high acceleration ranges can be effectively avoided. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                583,
+                907,
+                788
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A simple suppression of the oscillation amplitude variation due to the applied accelerations is achieved by introducing an AGC loop configuration as proposed in Fig. 2(a), where the loop purpose is to regulate the amplitude signal to a given reference value,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "r"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then by setting a proper reference value, the control objective is to cancel out any amplitude deviation using a stabilizing controller output. In this scheme, however, the derivative "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                788,
+                910,
+                899
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "204 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                42,
+                119,
+                54
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park, Young Jae Lee, and Joon Goo Park "
+                    }
+                ]
+            },
+            "bbox": [
+                218,
+                41,
+                778,
+                55
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "term in the internal feedback connection complicates the analytic equation development required for further system transformations. Instead, the feedback loop given in Fig. 2(b) is taken for the oscillation dynamics control, which reveals its simplicity in further system transformations. Hence in the following design process, the feedback controller is designed to regulate the oscillation velocity at constant magnitude, which results in constant oscillation amplitude control. In Fig. 2(b),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the oscillation velocity,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{z}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the scaled voltage,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the low pass filter (LPF) output,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the controller output, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u_{\\nu}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " denotes the control input to the plant. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                76,
+                482,
+                254
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "One is also able to observe from the block diagram that the feedback system contains a nonlinear component such as the multiplier and rectifier along with the double-branched feedback connection. Hence it is not easy to design a controller that meets the control objective on the base of conventional control theory. As a breakthrough, a system analysis using the envelope model of the velocity signal is done, and then the resulting controller is applied back to the original nonlinear system. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                255,
+                482,
+                378
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. CONTROL LOOP DESIGN "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                171,
+                391,
+                401,
+                404
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this section, the AGC loop in Section 2 is transformed to achieve a simple feedback connection. An envelope model approximation and state space transformation are applied for the equivalent system development. Using the designed feedback controller, the oscillation velocity is controlled and consequently, the amplitude control is accomplished for the resonant accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                418,
+                482,
+                527
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1. Envelope-based loop transformation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                89,
+                541,
+                371,
+                555
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Fig. 2(b), under the consideration of the harmonic balance property and low-pass filtering dynamics in the loop, the oscillation velocity of the resonant accelerometer can be given in the following; "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                555,
+                482,
+                610
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\eta (t) = a (t) \\sin (\\omega_ {r} t + \\theta (t)), \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/147033a726f5816aa5655536775f891c8ff0784bd5685822f48b9359793d7cd3.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                622,
+                482,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a(t),\\theta (t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the time-varying amplitude and phase, respectively and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{r} = \\omega_{z}\\sqrt{1 - \\zeta_{z}^{2}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency of the oscillation. If we extract only the envelope of the oscillation by substituting the harmonic principal solution in (3) into the governing equation in (2), it is obtained the following differential equation in terms of amplitude and phase. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                650,
+                485,
+                758
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "2 \\dot {a} \\left(\\omega_ {r} + \\dot {\\theta}\\right) + \\left(2 \\zeta_ {z} \\omega_ {z} a - k _ {a} e\\right) \\left(\\omega_ {r} + \\dot {\\theta}\\right) + a \\ddot {\\theta} = 0. \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1d7df9f8de9471330ecea039218c55018604690700694d6df524afaa7378813a.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                770,
+                482,
+                790
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Upon dividing the above equation by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2(\\omega + \\dot{\\theta})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and neglecting the term  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\ddot{\\theta} / 2(\\omega_r + \\dot{\\theta})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the governing equation can be approximated with the following first order differential equation. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                802,
+                482,
+                868
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {a} + \\zeta_ {z} \\omega_ {z} \\cdot a = 0. 5 \\cdot k _ {a} \\cdot e. \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6b6a2acf0f441636bcbfbf72be74f8fc94a6f21baa0db9fda5fa75a70d053623.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                878,
+                482,
+                894
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The removed term,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\ddot{\\theta} / 2(\\omega_r + \\dot{\\theta})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is negligible compared with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\zeta_z\\omega_z"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in most vibratory rate sensors operating in the high resonant frequency range. Hence the plant transfer function in Fig. 2(b) can be approximated into "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                78,
+                905,
+                153
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "G _ {e} (s) = 0. 5 \\cdot k _ {a} / \\left(s + \\zeta_ {z} \\omega_ {z}\\right), \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5c39593b75a4dc6210ab9e6bf40dcfdc9b81ff12a54309760bd1121ed5683650.jpg"
+                }
+            },
+            "bbox": [
+                532,
+                161,
+                905,
+                176
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "which is depicted in Fig. 3(a). Note that the gain of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 / \\pi"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is included due to the gain reduction in the transformed loop, since averaging the absolute value of a sinusoidal signal has a gain of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 / \\pi"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from its maximum amplitude during the envelope detection. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                185,
+                907,
+                257
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lastly, the inner feedback loop is simplified by observing the input-output equation at the plant transfer function. By formulating the solution form of the differential equation, the time varying amplitude can be represented in terms of control input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". After some equation developments, it can be defined a nonlinear function  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h(u)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from the control input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to the envelope  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as in the following equation. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                257,
+                907,
+                366
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} h [ u (t) ] \\triangleq k _ {v} \\exp \\left\\{\\int_ {0} ^ {t} \\left[ \\frac {1}{2} k _ {a} k _ {v} u (\\tau) - \\zeta_ {z} \\omega_ {z} \\right] d \\tau \\right\\} \\tag {7} \\\\ = k _ {v} a (t). \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2d9ee6aba3a1ea863f4fef654d4004c4f3e367c70c75206bc21e4659df15e434.jpg"
+                }
+            },
+            "bbox": [
+                531,
+                377,
+                905,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In (7),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\nu}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the voltage gain and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is given by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\exp \\{ \\int_0^t [0.5 \\cdot k_a k_{\\nu} u(\\tau) - \\zeta_z \\omega_z ] d\\tau \\}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". With this nonlinear function, then the double-branched loop in Fig. 3(a) is transformed into a single loop in Fig. 3(b), since  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " equals to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{\\nu} \\nu_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The detail of the transformation is straightforward using a linear system theory. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                434,
+                907,
+                540
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/02279ebe65415d8097da7fd182d4b8c5297626e75d83166ffa4b41c1e2948f1e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                557,
+                560,
+                860,
+                693
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1e6dd21cdb3d9afc0fdcdaccc6e2897031b48f3cfc3f0f5dac9204723c223e55.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. (a) Envelope-oriented AGC loop of resonant accelerometer. (b) Simple feedback loop realization through a nonlinear functional block. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                581,
+                720,
+                836,
+                832
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Oscillation Amplitude-controlled Resonant Accelerometer Design Using a Reference Tracking Automatic Gain Control "
+                    }
+                ]
+            },
+            "bbox": [
+                109,
+                41,
+                857,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "205 "
+                    }
+                ]
+            },
+            "bbox": [
+                878,
+                42,
+                905,
+                53
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2. Controller design "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                90,
+                76,
+                243,
+                90
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To characterize the desired oscillation dynamics, the feedback controller design needs to resolve a nonlinear reference tracking problem, since the system in Fig. 3(b) contains a nonlinear component in the loop. Considering the frequency rejection feature to realize the envelope detection, we designed the low pass filter as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L(s) = \\gamma / (s + \\lambda)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are filter parameters determining the cutoff frequency. Then from Fig. 3(b), by defining the state variable as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_{1} \\triangleq \\ln(a(t))"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_{2} \\triangleq \\nu_{f}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively, the following nonlinear equation holds. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                91,
+                482,
+                258
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {x} _ {1} = \\frac {1}{2} k _ {v} k _ {d} u (\\tau) - \\zeta_ {z} \\omega_ {z}, \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/db298de257b4942bf2a27b85fac62c78ab1d4de5a897f532f82ee1dc556a6b4a.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                268,
+                482,
+                304
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {x} _ {2} = \\frac {2 \\gamma}{\\pi} k _ {\\nu} e ^ {x _ {1}} - \\lambda x _ {2}.",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f77318e50bf049d4ecdf8b73689824394ed5be2f8d74111e4a3ebac1e131e36f.jpg"
+                }
+            },
+            "bbox": [
+                110,
+                300,
+                252,
+                328
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As mentioned previously, the control objective is to regulate the oscillation amplitude in the loop by controlling the velocity signal, which equals to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in Fig. 3(b). Hence by setting the output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the design goal is to construct a nonlinear feedback tracking system such that the output of the system  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " tracks a reference input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "r"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as time approaches infinity. First, a proportional-integral control employing an output feedback control scheme is taken for the reference tracking performance. A nonlinear system analysis to address the closed loop characteristics is also needed. With this background, the Lyapunov's indirect method is referenced to implement the stable feedback loop [9]. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                340,
+                482,
+                517
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Let us consider a linear feedback control law that contains an integral action such as "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                517,
+                482,
+                546
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "u = - k _ {p} y - k _ {i} \\sigma , \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b76f7fe6e30e35fb3a5351b3debb1fc139d54453453b72474ec3410c4d2cb16d.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                558,
+                482,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sigma \\triangleq \\int_0^t (y - r)d\\tau"
+                    },
+                    {
+                        "type": "text",
+                        "content": " . By applying the control law to the nonlinear state equation in (8), the resulting closed-loop system is derived as "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                587,
+                482,
+                642
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {x} = f (x, u), \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/bc2870dccc8e41b44d7b74d23a41d1a17ba2f394ec69927c0d2b498cc18b7df6.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                650,
+                482,
+                667
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "u = - k _ {p} y - k _ {i} \\sigma , \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/050bcde13ee4ca736504e63600e3c6884ee17630b77764b0161d57eabd9be5d5.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                669,
+                482,
+                686
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\dot {\\sigma} = y - r. \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2f1f966aed8f97654183af42e232a6b8af6989bd2c45eb48b1b014cdff2ac731.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                688,
+                482,
+                704
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At equilibrium points in (10) and (11), the time derivative of sates goes zero, thus  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dot{x} = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dot{\\sigma} = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " hold. Therefore at equilibrium point, the following equations hold, "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                713,
+                482,
+                769
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "0 = f \\left(x _ {e}, u _ {e}\\right),",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/41216ea06288bdd7ad8dd04a8f01bfd210d3fdf5be84447ecca4bcb1db92634d.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                781,
+                206,
+                796
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "u _ {e} = - k _ {p} y _ {e} - k _ {i} \\sigma_ {e}, \\tag {13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e28dfb2f28d0d859bc3a3e5676f7a081663508c62a100dd4fbfb8b571f70e632.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                799,
+                482,
+                815
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "0 = y _ {e} - r.",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a2c039de0aa777190736d6838c824043d648f8e29f3e4d36a09abb05ac7fb682.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                820,
+                184,
+                834
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Under the assumption that the equilibrium points in (10) and (12) have a unique solution pair,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(x_{e},\\sigma_{e})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the domain of interest, the control input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "u_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                847,
+                482,
+                895
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "computed using appropriate control gains,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in (9). Physically, by obtaining the control gains  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that stabilize the equilibrium point  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(x_{e},\\sigma_{e})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the oscillation velocity in the nonlinear feedback system is asymptotically stable around the equilibrium. Consequently, the oscillation amplitude of the resonant accelerometer converges to a constant value, which is determined by the user-defined reference value  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "r"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                76,
+                907,
+                188
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Further details about the stability of the designed feedback loop around the equilibrium point can be shown by using Kalman-Yakubovich-Popov Lemma [10], which provides a proper Lyapunov candidate function for the nonlinear feedback system. Then by showing the stability of the transformed system, the stability of the designed system is guaranteed around the equilibrium. The stability analysis is above the scope of this work and thus not included. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                188,
+                907,
+                312
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. FABRICATION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                638,
+                326,
+                779,
+                339
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fabrication process is basically adapted from [7]. The  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick epitaxially grown polysilicon is used as structural layer and sealing area. With the exception of the chemical mechanical planarization (CMP) process, for smoothing the bonding area, the fabrication processes are simple as the conventional surface micromachining process. Fig. 4 shows the overall process flow to fabricate the proposed accelerometer device. The structural ploysilicon layer was grown on  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\AA"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick seed poly-Si layer in epitaxial reactor at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1,050^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and reduced pressure condition. The measured residual tensile stress was about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{MPa}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the stress gradient is below than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{MPa} / \\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The average roughness of the structural ploysilicon was initially about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4,000\\AA"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", yet the roughness decreases below than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\AA"
+                    },
+                    {
+                        "type": "text",
+                        "content": " after the surface polishing process. In Fig. 5, the left picture shows surface of the structure before CMP process and the right one shows the polished surface which enables the bonding process. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                353,
+                907,
+                612
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The polished  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick layer was etched by using the inductive coupled plasma reactive ion etching (DRIE) method. After that a dichloro-dimethyl-silanes (DDMS) coating process was used for an anti-stiction release [11]. The  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.5\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick tetra-ethyl-ortho-silicate (TEOS) was used for the sacrificial layer and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5\\mu \\mathrm{m}"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                612,
+                905,
+                695
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/aef5aed6d64c0be7ca9e7e25e2a7b8af93052acedfce0e6a3c900e64d02765b1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                718,
+                724,
+                872
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/812f3a0562047152b18b6a048130932d51afc1b66abdb8f72b2aee263db49a9a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. Main fabrication process. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                757,
+                716,
+                900,
+                876
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "206 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                42,
+                119,
+                53
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park, Young Jae Lee, and Joon Goo Park "
+                    }
+                ]
+            },
+            "bbox": [
+                218,
+                42,
+                778,
+                55
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b0bccfb140b75bbcd0246fb5849eed2cdb3370fdfba55876be20b4b7c190bae8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. SEM pictures of the surface to show CMP process for smoothing. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                114,
+                74,
+                453,
+                201
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/76afb4ae12da355ed3dfc2558342130ec5b502efe52d354af6c934f08ee15648.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. SEM picture of the released structure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                117,
+                247,
+                450,
+                409
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "thick poly silicon was used for the bottom electrode. Finally, a glass fabrication process was used for the vacuum packaged device implementation [7]. For the sealing cap, the Pyrex #7740 glass wafer was etched in hydrofluoric acid solution with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Cr / Au}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and PR masking layer, and then anodically bonded with polysilicon wafer at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\times 10^{-5}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Torr ambience pressure. The bonding temperature and voltage were  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "300\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                442,
+                482,
+                566
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6 shows the scanning electron microscope (SEM) picture of the resonant accelerometer mechanical structure. In the figure, the picture in Fig. 6(a) shows whole structure of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\mu \\mathrm{m}\\times 1000\\mu \\mathrm{m}\\times 40\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", before vacuum packaging, which is further processed for a PCB mounted device. Note that etch holes of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mu \\mathrm{m}\\times 5\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are distributed over the whole surface of mass, which reduces the squeeze damping effect. After dicing the bonded wafer, each mechanical device is attached to the ceramic holder and then bonded with Au wires. Using this wire-bonded device, performance test is done. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                566,
+                482,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The squeeze film effect on the system is taken into account. Since the resonant accelerometer is a vertically vibrating sensor, the well-known squeeze film effect can cause a nonlinear damping coefficient. To avoid the nonlinear dynamics of damping term, three ideas are introduced. First, using the vacuum packaged device, a low ambient pressure about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "200 \\times 10^{-3}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Torr was obtained and a high quality factor for the mechanical resonant characteristics. The low pressure in the vacuum packaged device also results in a reduced noise floor caused by Brownian motion. Next, the etch holes over the entire surface of mass reduces the squeeze film effect on the vertical movement of mass. Finally, the vertical "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                718,
+                482,
+                896
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/bdb8931f9051600a27a0d2e4ac3fe8173c245c6ebe21a9f6b1b5b75d39e0c5de.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. Physical parameters of the resonant accelerometer. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>parameter</td><td>value</td><td>unit</td></tr><tr><td>Mass</td><td>8.72 x 10-8</td><td>[kg]</td></tr><tr><td>Mechanical stiffness</td><td>144</td><td>[N/m]</td></tr><tr><td>Damping coefficient</td><td>1.772 x 10-4</td><td>[N-s/m]</td></tr><tr><td>Driving electrode</td><td>2.0 x 10-7</td><td>[m2]</td></tr><tr><td>Initial gap</td><td>2.0 x 10-6</td><td>[m]</td></tr><tr><td>Driving bias voltage</td><td>12</td><td>[Volt]</td></tr><tr><td>Permittivity</td><td>8.854 x 10-12</td><td></td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                515,
+                105,
+                899,
+                238
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "amplitude of electrostatic vibration is designed to be less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the nominal gap. With these techniques, the squeeze film effect was greatly reduced and could regard the damping coefficient as a first order model, which can be calculated by the quality factor. Using the structural dimensions, the physical parameters are summarized in Table. 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                254,
+                905,
+                349
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. SIMULATION AND EXPERIMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                564,
+                363,
+                853,
+                376
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to verify the designed feedback control loop, a numerical simulation was carried out. The effectiveness of the control loop was further tested on a fabricated MEMS vibratory gyroscope in association with signal conditioning electronics. Both sets of results are presented and discussed herein. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                391,
+                905,
+                472
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.1. Loop simulation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                486,
+                660,
+                500
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For a specific application of the developed vibratory gyroscope, the physical parameters listed in Table 1 were utilized. Also the electronics and designed loop parameters are used for the numerical simulation of the proposed AGC loop. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                500,
+                905,
+                568
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Using the accelerometer parameters, the plant transfer function in (6) is given by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G_{e}(s) = 30.5 / (s + 406.4)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The LPF is designed with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda = \\gamma = 300"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", so that the cut-off frequency characteristics with respect to the resonant frequency and system bandwidth are satisfied. The reference value to sustain a uniform oscillation in the vertical direction is designed to guarantee the loop stability under full range of input accelerations. Provisioned that the full input range is about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the reference is set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then by setting the proportional and integral gain as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{p} = 0.5"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{i} = 50"
+                    },
+                    {
+                        "type": "text",
+                        "content": " respectively, the controller transfer function is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                568,
+                905,
+                738
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K (s) = \\frac {0 . 5 (s + 1 0 0)}{s}. \\tag {14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a9a734b1230bfee2dbd3c919f9590e00cdf0948a0137a1ac1242b650a4500be9.jpg"
+                }
+            },
+            "bbox": [
+                532,
+                748,
+                905,
+                779
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fundamental operation of the constructed AGC loop is verified by observing the oscillation displacement. Fig. 7 shows the step response of the oscillation signal when  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration is applied at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathfrak{t} = 0.15"
+                    },
+                    {
+                        "type": "text",
+                        "content": " sec. The mean position of oscillation changes because the mass moves into the new equilibrium point, which results in the change of electrostatic force gain according to (1). After the acceleration is applied, the oscillation dynamics "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                787,
+                907,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Oscillation Amplitude-controlled Resonant Accelerometer Design Using a Reference Tracking Automatic Gain Control "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                41,
+                857,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "207 "
+                    }
+                ]
+            },
+            "bbox": [
+                878,
+                42,
+                905,
+                53
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/02c030da694006a6709cd9496c2c641c36c86ebc3523ca4c2802e7336cb2c957.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. Step response when equivalent acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                109,
+                78,
+                443,
+                264
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "converges rapidly to the steady state amplitude of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.177\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which equals the oscillation amplitude before the acceleration is applied. The simulation showed good result in amplitude regulating with the reference tracking control. Another advantage via the proposed AGC control scheme is that each accelerometer devices have consistently controlled oscillation dynamics while the plant model may have various parameter variations induced by the manufacturing errors. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                318,
+                485,
+                444
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5.2. Experiment "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                90,
+                454,
+                203,
+                467
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Basic experiments were carried out to show the sensor performance. For this, a hybrid system containing electronics and MEMS mechanical structure are implemented in a single printed circuit board (PCB) that has less than 25 square centimeters. Fig. 8 shows the implementation of electronics. In the figure, the velocity signal was derived using an analog differentiator, where the op-amp circuit is applied to implement. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                469,
+                482,
+                578
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After applying the reference voltage and adjusting electric gain, the oscillation loop activates a resonance state with the help of the initial white noises lying in the driving voltage. Fig. 9(a) captures an output of the constructed loop in the frequency domain. The figure shows that the oscillation dynamics has the resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5702\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the Q-factor of 49883, which "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                578,
+                482,
+                675
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a4c9933d4c951fa807bf20e6ba727d787ff7132329476ebc128236b2c178378b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. Feedback loop implementation for resonant accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                95,
+                690,
+                473,
+                865
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/66023af43a692e2cb2658edf03ea87611b17a1f8e01a0e4dd980c882f0381afc.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                526,
+                74,
+                882,
+                256
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8cd2d6073c0903146d569a9636b16af66c392f5bbcee823968ade75a056231ee.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 9. (a) Output characteristics of loop signal in frequency domain. (b) Step response when  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                276,
+                885,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "shows highly stabilized resonance characteristics. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                568,
+                853,
+                583
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9(b) shows the step response of the oscillation amplitude when equivalent acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied using electrical force. For readability, the amplitude output was measured by passing through the DC rejection circuitry and thus shows no change of offset voltage change. Through the AGC control loop, the oscillation amplitude approaches to the steady state in less than 20 msec settling time. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                583,
+                905,
+                692
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A dynamic test was done using a 2-axis rate table, the Acutronics 2000. The rate table is precisely aligned to the earth gravity axis and able to apply static gravity step by step up to the minimum value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.01\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Also accelerations in high range were obtained by the centrifugal force by rotating the rate table. Figure 10 shows the plot of sensor output in association with the applied accelerations. The solid line shows the first order regression model from the measured data. The scale factor is obtained as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.405\\mathrm{V/g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration range. "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                693,
+                905,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In high accelerations ranges over  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 10\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the measured voltage output was slightly deviated from the regressive model and generated a nonlinearity which limits the sensor input range. This nonlinearity is caused by the "
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                843,
+                907,
+                897
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "208 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                42,
+                119,
+                54
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park, Young Jae Lee, and Joon Goo Park "
+                    }
+                ]
+            },
+            "bbox": [
+                220,
+                42,
+                778,
+                55
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bbcc5bec0ebd01a8439caab8d131e0a75217020f32480c53e5715813d6e2cf11.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 10. Acceleration vs. scaled control input signal when dynamic accelerations are applied. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                124,
+                79,
+                433,
+                245
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "excessive electrostatic gain control when oscillation condition is much varied from the nominal operating point. With the constraint of scale factor less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the input range is measured as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "12\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Lastly, the sensor resolution computed by the signal-to-noise ratio (SNR) with the white noise floor is measured below  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A series of more advanced experiments including environmental test and high acceleration test are under way. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                294,
+                482,
+                418
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                218,
+                431,
+                354,
+                444
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents a new detection principle and design approach for resonant accelerometer, which takes advantages of a reference tracking automatic gain control scheme. Using the designed oscillation loop and controller, the applied acceleration is measured in the form of the controller output to the accelerometer. For a simple application, the envelope of the driving velocity is considered to make a proper AGC control loop. The mechanical structure is fabricated using the surface micromachining process and anodic wafer bonding method. The high quality factor required for the oscillating dynamics is achieved by producing a vacuum packaged device. We implement the AGC controlled resonant accelerometer by combining the controller, signaling processing electronics, and manufactured device. Both simulation and experimental results show the feasibility of the designed resonant accelerometer with the presented AGC oscillation control scheme. The scale factor linearity of the proposed accelerometer has shown relatively high nonlinear feature, which requires an advanced compensator design in further research. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                458,
+                482,
+                745
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The proposed resonance type accelerometer can be used to realize an integrated sensor of vibratory gyroscope and resonance-controlled accelerometer simultaneously using the common oscillation dynamics, which is under research presently. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                745,
+                482,
+                814
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                228,
+                828,
+                346,
+                840
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] T. V. Rozhart, H. Jerman, J. Drake, and C. de Cotis, \"An inertial-grade, micromachined vibrating beam accelerometer,\" Proc. of Transducers '95, pp. 659-662, 1995. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                842,
+                482,
+                896
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] T. A. Roessig, R. Howe, A. Pisano and J. Smith, \"Surface-micromachined resonant accelerometer,\" Proc. of Transducers '97, pp. 859-862, 1997. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] M. A. Meldrum, \"Application of vibration beam technology to digital acceleration measurement,\" Sensors and Actuators A; Physical, vol. A21-A23, pp. 377-380, 1990. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] B. L. Norling, \"Superflex: a synergitic combination of vibrating beam and quartz flexure accelerometer,\" J. of the Institute of Navigation, vol. 34, no.4, pp. 337-353, 1988. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] W. C. Albert, \"Vibrating quartz crystal beam accelerometer,\" Proc. of the 28th ISA International Instrumentation Symposium, pp. 33-44, 1982. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] B. L. Lee, C. H. Oh, Y. S. Oh, and K. Chun, “A novel resonant accelerometer: variable electrostatic stiffness type,” Proc. of Transducers '99, pp. 1546-1549, 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] B. L. Lee, C. H. Oh, S. Lee, Y. S. Oh, and K. Chun, \"A vacuum packaged differential resonant accelerometer using gap sensitive electrostatic stiffness changing effect,\" Proc. of the 13th International Conf. on MEMS, pp. 352-357, 2000. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] S. Sung, J. G. Lee, B. Lee, and T. Kang, \"Development of a tunable resonant accelerometer with self-sustained oscillation loop,\" J. of Micromech. Microeng., vol. 13, no. 3, pp. 246-253, 2003. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] H. K. Khalil, Nonlinear Systems, 2nd edition, Prentice-Hall Inc., Upper Saddle River, New Jersey, 1996. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] Ioannou P. A., Sun J., Robust Adaptive Control, 1st edition, Prentice-Hall PTR, 1995. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] B. Kim, C. Oh, K. Chun, T. Chung, J. Byun, and Y. Lee, “A new class of surface modifier for stiction reduction,” Proc. of the 12th Int'l Conf. on MEMS, pp. 189-193, 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] S. K. Sung, C. Hyun, and J. G. Lee, \"Resonant loop design and performance test for a torsional MEMS accelerometer with differential pickoff,\" International Journal of Control, Automation, and Systems, vol. 5, no. 1, pp. 35-42, 2007. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                76,
+                907,
+                636
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/32d580d79689ca5124b5936752ef7313d23ed90e72a669c5735025efac5c07a5.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                650,
+                638,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung is an Assistant Professor of the Department of Aerospace Engineering at Konkuk University, Korea. He received the M.S and Ph.D. degrees in Electrical Engineering from Seoul National University in 1998 and 2003, respectively. His research interests include inertial sensors, avionic system "
+                    }
+                ]
+            },
+            "bbox": [
+                647,
+                649,
+                907,
+                760
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "hardware, navigation filter, and intelligent vehicle systems. "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                760,
+                873,
+                773
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ebf40f9c571ba13600c85f0ec61bf9cc365d92db314cf0a2e9d0aedf3f51dd55.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                514,
+                788,
+                638,
+                891
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Chang-Joo Kim is an Assistant Professor of the Department of Aerospace Engineering at Konkuk University, Korea. He received the Ph.D. degree in Aeronautical Engineering from Seoul National University in 1991. His research interests include nonlinear optimal control, helicopter flight mechanics, and helicopter system design. "
+                    }
+                ]
+            },
+            "bbox": [
+                645,
+                786,
+                907,
+                897
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Oscillation Amplitude-controlled Resonant Accelerometer Design Using a Reference Tracking Automatic Gain Control "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                41,
+                857,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "209 "
+                    }
+                ]
+            },
+            "bbox": [
+                878,
+                42,
+                905,
+                53
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d1a062fb5b8aa4200caf6c804b52355a9500cf93f5529ada2f792589e386d9d8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                90,
+                78,
+                215,
+                182
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Young Jae Lee is a Professor of the Department of Aerospace Engineering at Konkuk University, Korea. He received the Ph.D. degree in Aerospace Engineering from the University of Texas at Austin in 1990. His research interests include integrity monitoring of GNSS signal, GBAS, RTK, attitude determination, orbit determination, and GNSS "
+                    }
+                ]
+            },
+            "bbox": [
+                223,
+                76,
+                482,
+                186
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "related engineering problems. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                186,
+                275,
+                200
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/969b005b0045e4f5acc42ee11934f41aa613cd5eecae45f4f239f4ff61c301d2.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                92,
+                225,
+                215,
+                330
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Jungkeun Park is an Assistant Professor of the Department of Aerospace Engineering at Konkuk University. Dr. Park received the Ph.D. in Electrical Engineering and Computer Science from the Seoul National University in 2004. His current research interests include embedded real-time systems design, real-time operating systems, distributed "
+                    }
+                ]
+            },
+            "bbox": [
+                223,
+                223,
+                482,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "embedded real-time systems and multimedia systems. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                334,
+                421,
+                347
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c803cb56774b2a18065637e625ac36801bedd1358015d1acece4e192da4fba6b.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                92,
+                372,
+                215,
+                477
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Joon Goo Park is an Assistant Professor of the Department of Electronic Engineering at Gyung Book National University, Korea. He received the Ph.D. degree in School of Electrical Engineering from Seoul National University in 2001. His research interests include mobile navigation and adaptive control. "
+                    }
+                ]
+            },
+            "bbox": [
+                223,
+                370,
+                482,
+                470
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "210 "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                42,
+                119,
+                54
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Sangkyung Sung, Chang Joo Kim, Jungkeun Park, Young Jae Lee, and Joon Goo Park "
+                    }
+                ]
+            },
+            "bbox": [
+                220,
+                42,
+                778,
+                55
+            ]
+        }
+    ]
+]

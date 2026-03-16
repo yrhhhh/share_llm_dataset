@@ -1,0 +1,1381 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "An Ultra-Low Power CMOS Readout Circuit for a MEMS Resonant Accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                104,
+                83,
+                890,
+                124
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Yang Zhao "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1*}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Guo-Ming Xia "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Qin Shi "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", An-Ping Qiu "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1*}"
+                    }
+                ]
+            },
+            "bbox": [
+                275,
+                140,
+                722,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>1</sup> School of Mechanical Engineering, Nanjing University of Science and Technology, Nanjing 210094, China * Email: apqiu@njust.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                152,
+                170,
+                880,
+                198
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                92,
+                212,
+                157,
+                224
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents a modified pierce oscillator based ultra-low power CMOS readout circuit for a MEMS resonant accelerometer. Differential topology is adopted to make the readout circuit compatible with the MEMS sensing element and depress the common mode noise from amplitude control circuit and bias current source. A  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated amplitude control strategy is proposed to avoid the MEMS resonator from strong nonlinear region without deteriorating its noise performance. Simulation results indicate the proposed readout circuit only consumes  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a supply of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Interfaced with a MEMS resonant accelerometer, it could realize a noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{g} / \\mathrm{Hz}^{1 / 2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " but with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\sim 10,000\\mathrm{x}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " lower power than published works. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                225,
+                480,
+                416
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                92,
+                432,
+                201,
+                442
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Nowadays, MEMS accelerometer is ubiquity in mobile devices, gaming controller, automobile and inertial navigation systems. Most of published MEMS accelerometers are capacitive, in which the proof mass displacement arises from input acceleration is measured by capacitance change. Such displacement based capacitive accelerometers suffer from inherently trade-off between nonlinearity and full scale, sigma-delta force rebalance loop is usually required to broaden their full scale and provide digitized output. By adopting this technique, capacitive accelerometers have achieved  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias instability. However, due to the complexity of readout circuit, the power consumption of high performance capacitive accelerometers are in the range of 1-100mW [1-3], which prevents them from emerging low power applications, such as the Internet of things (IoT) and wearable devices. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                444,
+                480,
+                674
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant accelerometer based on force sensing is another main kind of MEMS accelerometer. It usually formed by two MEMS oscillators connected to a proof mass. The input acceleration changes the resonant frequencies of the two MEMS oscillators differentially, and their frequency difference is a measure of the input acceleration. Since vacuum packaged MEMS oscillator could achieve very Q-factor (10,000-1,000,000), the required energy and noise contribution of the readout circuit are both greatly reduced. Moreover, the frequency output is a quasi-digital signal, much power could be saved in the digitization process. Consequently, MEMS "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                677,
+                480,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonant accelerometer has greatly potential to achieve better accuracy than capacitive counterpart but with even less power. A very recent work [4] has achieved  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.4\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias-instability and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.2\\mu \\mathrm{g} / \\mathrm{Hz}^{1 / 2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " noise floor, showing great potential on high-end applications. However, although the power consumption has been reduced from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "23\\mathrm{mW}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in an early work [5] to recently  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.5\\mathrm{mW}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", it's still far from acceptable for wearable and portable devices. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                212,
+                902,
+                319
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated pierce oscillator based readout circuit is proposed to lower down its overall power consumption while maintaining the accelerometer's noise floor still dominated by MEMS resonator itself. Section 2 details the system architecture and circuit implementation proposed pierce oscillator. Section 3 presents the system level simulation results and section 4 concludes the paper. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                321,
+                902,
+                430
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. System architecture and circuit implementation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                517,
+                432,
+                877,
+                443
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1 presents the block diagram of proposed  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated pierce oscillator. It consists of two identical channels for the two differential MEMS resonators in MEMS accelerometer. In each channel, the integrator 1 pre-amplifies the motional current of MEMS resonator and integrator 2 amplifies the output current of differential  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A differential to single-end amplifier (D2S) amplifies the drive voltage and feds it to amplitude control circuit (AAC). The  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated AAC adjusts the bias current of differential  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell providing a negative feedback to sustain a stable oscillation amplitude. Besides, an on-chip charge pump provides the high polarization DC voltage for MEMS resonator. "
+                    }
+                ]
+            },
+            "bbox": [
+                517,
+                445,
+                904,
+                620
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c16c4d547265558180ecefd69c687ba1891026b78dde5e06a05eef0bd75a88ac.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Blcok diagram of proposed readout circuit Integrator 1,2 and differential  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell together with MEMS resonator form the conventional pierce oscillation loop, whose model can be described as Figure 2. The two integrators are usually implemented by two "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                537,
+                620,
+                880,
+                774
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Xp "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                965,
+                897,
+                975
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "passive capacitors to save power and reduce the readout circuit noise floor.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Z_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Z_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represent the impedance of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ".  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Z_{3}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the impedance across gate and drain of M1. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                84,
+                480,
+                137
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/37c9529efcf860be2c137b64b0239d3bd5d2433de02c8726004e9b78b3370b7a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                97,
+                141,
+                257,
+                244
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a6c44169ba0c362992424c8772c488388e2b1a6c4b828eb9ac7a4e0c8441e41b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Schematic of Pierce oscillator and its interface circuit equivalent impedance model. The interface circuit impedance can be calculated as "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                265,
+                137,
+                473,
+                244
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "Z _ {c} = \\frac {Z _ {1} Z _ {3} + Z _ {2} Z _ {3} + g _ {m} Z _ {1} Z _ {2} Z _ {3}}{Z _ {1} + Z _ {2} + Z _ {3} + g _ {m} Z _ {1} Z _ {2}} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2204827ded4b81de77937c45a759ea5633320cceddc762fe94cf375ca6c9d536.jpg"
+                }
+            },
+            "bbox": [
+                181,
+                286,
+                480,
+                319
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The oscillation takes place when the real part of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Z_{\\mathrm{c}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " larger than the equivalent resistance of MEMS resonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{R}_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". As shown in Figure 3, the initial value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " shall be between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{ma}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{mb}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the AAC regulates it to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{ma}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to maintain a stable oscillation with minimized imaginary part (phase shift) and power. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                319,
+                482,
+                403
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1f0ea1aa6675ad9b885e8b362ec7fe2ae1a4027ea95e38267fbee56a712a1aa1.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. Complex impedance of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Zc}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with different  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The schematic of differential pierce oscillator and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell is given in Figure 4. The real part can be derived as "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                134,
+                405,
+                433,
+                552
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "R _ {c} (R) = - \\frac {\\mathrm {g} _ {m}}{C _ {1} C _ {2} \\omega_ {0} ^ {2}} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/01a8fd998953077e25063e691b48ba89f16af2dd9085d62dbbb6429f58921964.jpg"
+                }
+            },
+            "bbox": [
+                220,
+                604,
+                480,
+                634
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Obviously, lower power on  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell can be consumed with smaller  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C_1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C_2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for a given  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{R_{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of MEMS resonator. Since the MEMS sensing element and the readout chip are fabricated separately, the minimum value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C_1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C_2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " depends on the parasitic capacitances in I/O pads of both MEMS and IC chips, whose estimated value is around 4pF. For that reason, no more poly capacitors are implemented on chip to save chip area and power. The differential  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell adopts a conventional topology with tail current regulated common mode feedback, which requires no extra transistors and power. The bias current of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell is controlled by AAC, altering its V-I conversion gain. Only  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "150\\mathrm{nA}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " current is consumed due to the simplicity of this design. "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                636,
+                484,
+                841
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a9e050bd887ab63925d61955dbd8d23c52c1ed4b765b2e4a3b0ed953a0d7142f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. Schematic of differential  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                598,
+                79,
+                821,
+                224
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The differential outputs of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell are fed to a D2S amplifier and a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated AAC, whose schematics are shown in Figure 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                237,
+                905,
+                275
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d529ffe23380a4545a6a48f470dccee553b4c64a6bfaeca299da5e2928235f5a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                515,
+                277,
+                694,
+                385
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/581b75f9ca7a644d39f5e5fd16cecd7a820286b235b8c792e9bc1470f2c56bc7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Schematic of D2S amplifier and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated AAC. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                695,
+                277,
+                900,
+                385
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The gain of D2S amplifier can be adjusted by changing the feedback resistor in the second stage. It has a gain of 18x with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bandwidth, which is wider than the resonant frequency of MEMS accelerometer,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                414,
+                905,
+                468
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The converted single ended output is then transferred to AAC, whose core block is a rectifier formed by M13 and M14. M13 is biased in subthreshold, in this way, its conversion gain highly depends on the input signal's immediate amplitude. Consequently, the DC gate voltage of M13 represents the input amplitude. M11 and M12 form a passive high pass filter to block the imbalanced DC voltage from previous stages, and a low pass filter formed by M15 and M16 extracts the DC component from gate voltage of M13. M17 and M18 generate a feedback control voltage to regulate the bias current of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g_m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cell. Figure 6 presents the simulated relationship between bias current of gm cell with the input amplitude of AAC at different bias current of M13. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                468,
+                907,
+                657
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9a2b01a2f104f15bcbde80605282323cbc3c74404517a1b988a52c98ae7229c9.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Simulated relationship between bias current of gm cell with the input amplitude of AAC. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                547,
+                658,
+                875,
+                815
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:04 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To compensate the motional resistance of MEMS resonator, the needed stable current of gm cell is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "54\\mathrm{nA}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The stable oscillation amplitude can be found from Figure 6. Besides, a larger bias current of M13 is helpful to realize a larger stable oscillation amplitude. In this work, 7nA bias current of M13 is chosen to achieve a stable oscillation amplitude of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "120\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                83,
+                480,
+                179
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. System level simulation results "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                90,
+                179,
+                332,
+                192
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To simulate the whole system function and noise floor, the MEMS resonator is modelled as a R-L-C network in series. Figure 7 presents the startup process of D2S output and bias current of the chip. As explained in AAC design, the stable oscillation amplitude is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "120\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the overall bias current reduces from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "840\\mathrm{nA}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mathrm{nA}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the amplitude regulation process. The total power consumption for two identical channels is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " supply. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                192,
+                480,
+                313
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a7dd470d69b255b8aae25f783981b9585aaa3348973159a3bd8efd38cb751542.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Simulated startup process of pierce oscillator. The phase noise of oscillation signal is then simulated using pnoise function in ADE. As shown in Figure 8, the phase noise consists of two components, namely,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 / \\mathrm{f}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " phase noise within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and wideband white phase noise. From the noise contribution analysis, the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 / \\mathrm{f}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " phase noise is dominated the MEMS resonator and the readout circuit only contributes phase noise at wideband. For a MEMS resonant accelerometer with a scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the acceleration noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{g} / \\mathrm{Hz}^{1 / 2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which only depends on the mechanical noise floor of MEMS resonator. This work achieves a comparable accuracy but with the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\sim 10000\\mathrm{x}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " lower power consumption with previous work [4,5]. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                126,
+                315,
+                445,
+                453
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a4eecfef13925f43cdddcd6b2160f468974a69199625a794b6da2788d79e8b2d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8. Simulated phase noise of oscillation signal. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 9 presents the layout of proposed low power readout circuit, its area is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "800\\mu \\mathrm{m}^{*}540\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                131,
+                646,
+                442,
+                790
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3142e2a278635e81ec4a5920a800cfff472384cd690773d2fe14079eafa89f49.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 9. Layout of proposed readout circuit. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                556,
+                82,
+                863,
+                225
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Conclusion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                512,
+                241,
+                616,
+                253
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents an ultra-low power readout circuit for a MEMS resonant accelerometer. Differential pierce oscillator topology is adopted for its simplicity and also to cancel the common mode noise from bias circuit and AAC. A  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{g}_{\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " regulated AAC is proposed to further reduce its power consumption without deteriorating the low frequency range noise floor of MEMS accelerometer. Simulation results indicate the power consumption of proposed readout circuit is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.8\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the noise floor of MEMS accelerometer is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mu \\mathrm{g} / \\mathrm{Hz}^{1 / 2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                254,
+                907,
+                391
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                405,
+                650,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work was supported by the Natural Science Foundation of China, No. 61701236 and also the Fundamental Research Funds for the Central Universities, No. 309171B8810. "
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                418,
+                905,
+                472
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                486,
+                596,
+                498
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] Honglin Xu, et al. \"A Closed-Loop  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\Sigma \\Delta"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Interface for a High-Q Micromechanical Capacitive Accelerometer With 200ng/√Hz Input Noise Density\". Solid-State Circuits, IEEE Journal of, 2015. 50(9): p. 2101-2112. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] Mikail Yucetas, Mika Pulkkinen and Antti Kalanti, et al., \"A High-Resolution Accelerometer With Electrostatic Damping and Improved Supply Sensitivity\". IEEE Journal of Solid-State Circuits, 2012. 47(7): p. 1721-1730. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Zwahlen P., Dong Y. and Mnguyen A., et al. \"Breakthrough in high performance inertial navigation grade Sigma-Delta MEMS accelerometer\". in IEEE/ION Position, Location and Navigation Symposium. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] Xi Wang, Jian Zhao and Yang Zhao, et al., \"A  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0.4\\mu \\mathrm{g}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Bias Instability and  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "1.2\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Noise Floor MEMS Silicon Oscillating Accelerometer With CMOS Readout Circuit\". IEEE Journal of Solid-State Circuits, 2017. 52(2): p. 472-482. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Lin He, Yongping Xu and M Palaniapan, \"A CMOS Readout Circuit for SOI Resonant Accelerometer With 4-μg Bias Stability and 20-μg/Hz Resolution\". Solid-State Circuits, IEEE Journal of, 2008. 43(6): p. 1480-1490. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                499,
+                905,
+                841
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:04 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                897,
+                976
+            ]
+        }
+    ]
+]

@@ -1,0 +1,1165 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "SENSITIVITY ENHANCEMENT OF MEMS RESONANT ACCELEROMETERS BY USING ELECTROSTATIC SPRING "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                109,
+                75,
+                887,
+                176
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Xingyin Xiong "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Wang Zheng "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Kunfeng Wang "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Zhitian Li "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Wuhao Yang "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Xudong Zou "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,2}"
+                    }
+                ]
+            },
+            "bbox": [
+                217,
+                207,
+                776,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Email: {xyxiong, ztli, whyang}  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "@"
+                    },
+                    {
+                        "type": "text",
+                        "content": " mail.ie.ac.cn {wangzheng, zouxd}  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "@"
+                    },
+                    {
+                        "type": "text",
+                        "content": " aircas.ac.cn wangkunfeng17  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "@"
+                    },
+                    {
+                        "type": "text",
+                        "content": " mails.ucas.ac.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                125,
+                222,
+                866,
+                236
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>1</sup>The State Key Laboratory of Transducer Technology, Institute of Electronics Chinese Academy of Sciences, Beijing, CHINA "
+                    }
+                ]
+            },
+            "bbox": [
+                125,
+                237,
+                872,
+                251
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing, CHINA "
+                    }
+                ]
+            },
+            "bbox": [
+                125,
+                252,
+                888,
+                266
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—Resonant accelerometers are very attractive for high-precision measurement applications due to their high sensitivity, frequency output, and large dynamic range. In order to further increase their sensitivity, we propose a novel method to enhance sensitivity of MEMS resonant accelerometer by using electrostatic spring softening effect. The sensitivity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "691\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " boosted up  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " higher than the original sensitivity and the nonlinearity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", comparing to the original nonlinearity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in preliminary tests. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                306,
+                486,
+                425
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords—MEMS, Resonant Accelerometer, Enhance Sensitivity, Electrostatic Spring "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                436,
+                486,
+                465
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                210,
+                481,
+                339,
+                494
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MEMS (Micro-electro-mechanical systems) acceleration sensors have been widely used in the fields of automotive, consumer electronics and aerospace, due to the mature fabrication, low cost and massive production[1-3]. Their sensing principle includes resonance, piezoresistance, capacitance and so on. Among of them, resonant accelerometers, based on the resonant frequency shift of the resonator under axial loading, are very attractive for high precision measurement applications because of their high sensitivity, frequency output, and large dynamic range[1,2]. The sensitivity is one of critical metrics in micromachined resonant acceleration sensors. In order to increase the sensitivity, using the mechanical micro-levers is a well-known method in MEMS resonant accelerometers [1, 3-6], and lower effective spring stiffness of suspension structure on the sensitive axis is preferred for high amplification ratio levers [6]. However, reducing the effective spring stiffness on sensitive axis is restricted in real devices due to the trade-offs for the cross-axis sensitivity, robustness and fabrication yield. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                500,
+                486,
+                763
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to solve this problem and further enhance sensitivity, this paper uses electrostatic spring softening effect to further improve the sensitivity. The prototype device is designed and analysed. Then both of the simulation and experimental results of the prototype device are presented to verify the proposed sensitivity enhancement method. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                768,
+                486,
+                853
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. DESIGN AND SIMULATION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                614,
+                316,
+                813,
+                330
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The schematic view of the sensitivity enhancing structure for resonant accelerometer is shown in Figure 1(a). The proof mass is connected to the resonator by micro-levers to amplify the acceleration induced inertial force and axially apply on the resonators. As a result, the resonant frequencies of the resonators at both sides of the proof mass change differentially due to the axial force changing their stiffness. The difference of these two frequencies is, to the first order, proportional to the input acceleration. Four pairs of back-to-back parallel plate electrostatic actuators on proof mass are used to soften the mass-suspended effective spring in order to further improve the sensitivity, called sensitivity enhancing structure. Four pairs of the comb tuning structures are used to zero the electrostatic force in the case of the parallel plate capacitors are unsymmetrical due to fabrication tolerance, called tuning structure. The structure design parameters of the prototype device are summarized in the table 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                335,
+                928,
+                571
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7fad6d416b3b437eca44f6508234a1194fe5f87e1ff62e328361f37e3328683f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. (a) The schematic view of the sensitivity enhancing structure for resonant accelerometer; (b) The schematic view of the prototype device "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                540,
+                583,
+                890,
+                834
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This work was supported by the National Key Research and Development Program of China, Grant No. 2018YFB2002300 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                910,
+                410,
+                935
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-1-7281e288362600000000000000000000000000000000000000000000000000000000000000000000000000000000000 "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                960,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/123c8fc64749175760a265fbf2a5a4c75809f4a64392ab6236dd841c4617adf5.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE I. THE DESIGN PARAMETERS OF THE PROTOTYPE DEVICE "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameters</td><td>Value</td></tr><tr><td>Total Chip size</td><td>6.9 mm×6.9 mm</td></tr><tr><td>Proof mass</td><td>1.27 mg</td></tr><tr><td>Lever amplification ratio</td><td>23</td></tr><tr><td>CESP</td><td>0.4 pF</td></tr><tr><td>gESP</td><td>4 um</td></tr><tr><td>The resonant frequency</td><td>201.83 kHz</td></tr><tr><td>Scale factor</td><td>440 Hz/g</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                76,
+                82,
+                480,
+                243
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The principle of the sensitivity enhancing structure shown as follows: When the parallel plate capacitors  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(C_{ESP})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are applied to the same bias voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{BP})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the displacement of proof mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(x_{mass})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is much smaller than the gap of the parallel plate actuators  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(g_{ESP})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the net electrostatic force on the proof-mass is cancelled out in the first order, but the effect of the spring softening is doubled. The reduced effective spring stiffness on sensitive axis results in that the acceleration induced inertial force can be more effectively transmit to the resonator to enhance the sensitivity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(S_{ES})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g_{ESP} >> x_{mass}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the amplification ratio of micro-levers is a constant with the range of the input of acceleration, the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{ES}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be derived as (1): "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                246,
+                486,
+                435
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {E S} = \\frac {\\partial \\omega_ {T}}{\\partial A _ {c c}} \\approx S _ {0} \\frac {1}{1 - k _ {e} / k _ {e f f}} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a75eaa6173ce44cce2d6e9dd5230e64611072414df0a2f894218bffbaa59dec5.jpg"
+                }
+            },
+            "bbox": [
+                184,
+                443,
+                486,
+                483
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w_{T}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the resonant frequency of the resonators,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{cc}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the input of acceleration,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the sensitivity without sensitivity enhancing effect, which is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{BP} = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective of the electrostatic spring and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{eff}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective mechanical spring stiffness on proof mass. The sensitivity can be enhanced by increasing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " using sensitivity enhancing structure. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                497,
+                488,
+                585
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bb410700ad8dbacf05d8239843f103797fa1f9f726c4fb0a8dcb06cb6dbe838b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. The Simulink model of the open loop sensor system "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                91,
+                593,
+                475,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The Simulink model of the open loop sensor system is shown in the Figure 2.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H_{ml}(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a transfer function of the proof mass, which is modeled a second-order mass-damper-spring system.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is an electrostatic force generated by the sensitivity enhancing structure, and the nonlinear effect of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is concerned to soften the spring stiffness.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the force amplification ratio of the micro-levers.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H_{m2}(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a transfer function of the resonator, which is also modeled a second-order mass-damper-spring system.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the amplification ratio of the transimpedance amplifier and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a frequency "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                760,
+                488,
+                900
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "measurement unit. The results of the simulation are shown in the Figure 3. The original sensitivity of the accelerometer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{BP} = 0\\mathrm{V})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "438.7\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the nonlinearity of the accelerometer is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.05\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{BP}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applied to the back-to-back parallel plate capacitors, the sensitivity of accelerometer is increased (see Figure 3 inset). For  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{BP} = 60\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applied on the actuator, the sensitivity can be boosted up 3 times higher than original value where the nonlinearity of the accelerometer is slight increased to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.32\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". And further increased voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{BP} = 70\\mathrm{V})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " will obviously sacrifice the linearity of the sensor. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                66,
+                926,
+                205
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b3810cb0608b27308a4c9d21ae3c372457924b5413419b93ab5c708368ee93f3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. Simulation results of resonant frequencies shift with input acceleration vary from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and voltages vary from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; sensitivity variance with different voltages(inset) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                527,
+                220,
+                903,
+                489
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/845c10fdac60545750d3fbd954fe812a16b58f84d8a1848703cbe447b12257b0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. The system block of experimental setup "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                531,
+                553,
+                908,
+                847
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:22:55 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                962,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. EXPERIMENTAL RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                174,
+                66,
+                372,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The prototype device was fabricated using a SOI foundry process and vacuum pakaged in wafer-level, then mounted on a 24-pin DIP ceramic chip carrier (see Figure 1(b)). To calibrate the sensitivity of the prototype accelerometer, tilt table is used to apply  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+/-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " load on the device. The different voltages apply to the four pairs of symmetrical parallel plate capacitors and the resonant frequencies are characterised using network analyser (Keysight E5061B) with a transimpedance amplifier, as shown in Fig.4. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                85,
+                486,
+                212
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The results of the measurement are shown in the Figure 5, presents the resonant frequencies shift with input acceleration vary from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity variance with different voltages is derived from the open-loop test results (see Figure 5 inset). The original sensitivity of the accelerometer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{BP} = 0\\mathrm{V})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "444\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{BP}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applied to the back-to-back parallel plate capacitors, the sensitivity of accelerometer is increased. For  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{BP} = 50\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applied on the actuator, the sensitivity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "691\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " boosted up  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " higher than the original sensitivity and the nonlinearity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.6\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", meanwhile, the original nonlinearity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " due to test tolerance. The experimental measured results agree reasonably well with the simulation results. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                217,
+                486,
+                398
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d24d45b4ed5299491a901a87ffd4b6958b263343fd90315a0cb4227c07b32675.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. Experimental measured results of resonant frequencies shift with input acceleration vary from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "+1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and voltages vary from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; sensitivity variance with different voltages(inset) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                86,
+                412,
+                460,
+                654
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                653,
+                66,
+                772,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper presents a novel method to enhance sensitivity of MEMS resonant accelerometer by using electrostatic spring softening effect. Both simulation and experimental study demonstrated that this method can enhance sensitivity of sensor. In future work, the other metrics of this sensor will be investigated. The close-loop interface circuit of the sensor will be designed and optimized in order to implement a kind of high performance accelerometers. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                85,
+                929,
+                203
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                673,
+                213,
+                764,
+                226
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] J. Zhao, X. Wang, Y. Zhao, G.M. Xia, A.P. Qiu, Y. Su and Y.P. Xu, “A 0.23-μg bias instability and 1-μg/√Hz acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,” J. Solid-State Circuits, vol. 52, no 52, pp. 1053-1065, April 2017 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] M. A. Meldrum, \"Application of vibrating beam technology to digital acceleration measurement,\" Sens. Actuators A, Phys., vol. 21, pp. 377-380, February, 1990. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Y. Zhao, J. Zhao, X. Wang, G.M. Xia, A.P. Qiu, Y. Su and Y.P. Xu, \"A sub-  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu"
+                            },
+                            {
+                                "type": "text",
+                                "content": "g bias-instability mems oscillating accelerometer with an ultra-low-noise read-out circuit in CMOS,\" J. Solid-State Circuits, vol. 50, no 9, pp. 2113-2126, September 2015. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] X.D. Zou and A.A. Seshia, “A high-resolution resonant mems accelerometer,” Transducers 2015, Anchorage, Alaska, 2015, pp. 1247-1250. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, and S. Montague, \"A vacuum packaged surface micromachined resonant accelerometer,\" J. Microelectromech. Syst., vol. 11, no 6, pp. 784-1065, December 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] X.D. Zou, P. Thiruvenkatanathan and A.A. Seshia, “A high-resolution micro-electro-mechanical resonant tilt sensor,” Sens. Actuators A: Phys., vol. 220, pp. 168-177, December 2014. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                231,
+                928,
+                500
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:22:55 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                960,
+                872,
+                974
+            ]
+        }
+    ]
+]

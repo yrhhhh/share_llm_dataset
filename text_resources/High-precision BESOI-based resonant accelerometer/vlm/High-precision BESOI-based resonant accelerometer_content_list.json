@@ -1,0 +1,1118 @@
+[
+    {
+        "type": "text",
+        "text": "High-precision BESOI-based resonant accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            181,
+            182,
+            816,
+            206
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Chr. Burrer, J. Esteve ",
+        "bbox": [
+            397,
+            220,
+            598,
+            238
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Centre Nacional de Microelectrónica (CSIC), Campus UAB, 08193 Bellaterra, Barcelona, Spain ",
+        "bbox": [
+            223,
+            241,
+            772,
+            255
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Received 7 March 1995; revised 11 May 1995; accepted 23 May 1995 ",
+        "bbox": [
+            299,
+            263,
+            697,
+            275
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract ",
+        "text_level": 1,
+        "bbox": [
+            54,
+            316,
+            112,
+            329
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A uniaxial resonant acceleration sensor for high-precision measurements, made in bulk micromachining, is presented. The high symmetry of the device structure eliminates rotational acceleration components and diminishes cross-axis sensitivities. Silicon direct bonding, and the use of commercial BESOI (bond and etch back silicon on insulator) wafers, form the sensor structure, which is a silicon-silicon sandwich. The vibrating element is a silicon beam that is driven electrothermally and sensed piezoresistively. Closed-loop operation of the resonator by means of an electronic feedback circuit is demonstrated. Also in closed-loop operation, static and dynamic measurements of prototypes have been performed, showing the very good mechanical properties of the device. The method employed for dynamic testing of a resonant accelerometer on a vibrating table is described. ",
+        "bbox": [
+            54,
+            344,
+            943,
+            448
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: BESOI wafers; Resonant accelerometers ",
+        "bbox": [
+            54,
+            464,
+            348,
+            477
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction ",
+        "text_level": 1,
+        "bbox": [
+            54,
+            512,
+            172,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One of the main advantages of the resonant principle concerns its potential high stability and resolution, making it suitable for sensors that have to meet high resolution standards. A bulk-micromachined resonant accelerometer, based on a load-sensitive vibrating beam, has been presented recently [1]. The beam of this sensor is driven electrothermally and sensed piezoresistively [2]. This sensor concept offers a very high resolution and a potential application can be in the field of high-precision devices. ",
+        "bbox": [
+            54,
+            547,
+            480,
+            690
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Other crucial aspects for precision measurements are undesired sensitivities due to transversal or rotational acceleration components. In the case of bulk-micromachined accelerometers, a structure usually consists of a silicon mass supported by one or more beams. The beams are located at the wafer surface. The mass gravitation point of the silicon mass, however, is in the midplane of the wafer. For an acceleration in the beam direction, the distance between surface and midplane produces a bending moment, causing a displacement of the mass and bending of the beams. In the case of a piezo-resistive cantilever-type accelerometer, this three-dimensional effect can be of the order of up to $15\\%$ of the normal response. A good solution with respect to small cross-axis sensitivities is a symmetrical structure with the mass suspended by two adjacent pairs of wide beams, and a Wheatstone bridge consisting of eight resistors on the four beams [3]. This advantage has to be paid for by a much lower ",
+        "bbox": [
+            54,
+            692,
+            480,
+            962
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "sensitivity compared to cantilever-type structures. In the case of capacitive accelerometers, a highly symmetrical structure containing the beams on both surfaces of the wafer has been proposed [4]. This was made by direct bonding of two micromachined silicon wafers. If a symmetrical structure cannot be achieved, the designer has to resort to electrical compensation schemes. ",
+        "bbox": [
+            517,
+            509,
+            941,
+            619
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For a bulk-micromachined resonant accelerometer, which is based upon a load-induced strain in a vibrating beam, a design also has to end up in a beam-mass system. Due to the required leverage, a cantilever-like structure is a straightforward solution; however, it involves unwanted sensitivity axes. ",
+        "bbox": [
+            517,
+            620,
+            941,
+            715
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The proposed accelerometer structure combines the resonant principle with a highly symmetrical structure, i.e., a high resolution with low transversal sensitivities. To achieve this, commercially available BESOI (bond and etch back silicon on insulator) wafers together with a silicon to silicon fusion process have been employed. ",
+        "bbox": [
+            517,
+            717,
+            941,
+            812
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Static and dynamic measurements of prototypes operated in a closed loop demonstrate the very good mechanical properties of the sensor concept. ",
+        "bbox": [
+            517,
+            813,
+            941,
+            859
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Sensor structure ",
+        "text_level": 1,
+        "bbox": [
+            519,
+            897,
+            665,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fig. 1 shows a schematic view of the accelerometer. The sensor chip is made from two bonded wafers. The lower one ",
+        "bbox": [
+            519,
+            932,
+            941,
+            961
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "",
+        "bbox": [
+            54,
+            35,
+            153,
+            102
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ELSEVIER ",
+        "bbox": [
+            56,
+            103,
+            153,
+            116
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            380,
+            106,
+            616,
+            117
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "SENSORS AND ACTUATORS A PHYSICAL ",
+        "bbox": [
+            788,
+            33,
+            941,
+            113
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "0924-4247/95/$09.50 © 1995 Elsevier Science S.A. All rights reserved  \nSSDL0924-4247(95)01032-V ",
+        "bbox": [
+            54,
+            977,
+            466,
+            1000
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b30b64ddef13b395467dd2344a0804b92b67ae454ecc0d63e6f83a43ffc9479b.jpg",
+        "image_caption": [
+            "Fig. 1. Schematic view of the sensor structure. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            100,
+            66,
+            415,
+            275
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "is a commercial BESOI wafer, containing a $20~\\mu \\mathrm{m}$ deep buried layer and a $2\\mu \\mathrm{m}$ thick silicon dioxide layer. The buried layer is indicated in the Figure with a dashed line. ",
+        "bbox": [
+            42,
+            316,
+            470,
+            363
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The vibrating beam is situated on the upper side. The seismic mass is supported by the beam and four hinges, located at the interface of the bonded wafers. They are angled with respect to the [110] crystal orientation and their thickness $(20\\mu \\mathrm{m})$ is about four times larger than that of the beam. Under an acceleration in the $z$ -direction, the mass moves, straining the beam. This arrangement allows a sign-relevant measurement: depending upon the acceleration the strain is either positive or negative. Due to the location of the hinges, the centre of mass of the silicon mass is within the bending plane of the hinges, eliminating bending moments caused by lateral accelerations. The lateral three-dimensional effect is therefore virtually zero. ",
+        "bbox": [
+            42,
+            363,
+            470,
+            572
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The fabrication sequence includes a silicon to silicon bonding process [5], which is performed at the very beginning of the sequence. It is shown schematically in Fig. 2. Before bonding, the BESOI wafer is structured by means of dry etching, using the buried oxide layer as an etch stop (2). ",
+        "bbox": [
+            42,
+            574,
+            470,
+            653
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Then the wafer is oxidized (3). In this way the future hinges are covered in an oxide film. Now the two wafers are bonded together, followed by a high-temperature annealing to strengthen the bond (4). ",
+        "bbox": [
+            42,
+            653,
+            470,
+            717
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "After having carried out the standard IC processing on the wafer frontside and the masking on the backside, the wafer can be anisotropically wet etched. When the etching reaches the buried oxide layer, it stops. In the areas where the SOI wafer had been previously dry etched, a $2\\mu \\mathrm{m}$ thick oxide membrane remains. In all processed wafers it was observed that, presumably due to the compressive stress in this film, it buckles and breaks. As a consequence, the etching continues (5). The hinges are then protected by the surrounding oxide film. To be completely underetched, they must be angled with respect to the $\\langle 110\\rangle$ direction. Finally the etching is stopped electrochemically at the p-n junction between the p-substrate and n-well at the upper side of the bonded wafer, leaving a membrane. This is finally etched through to obtain the desired beam structure. The complete process is explained in more ",
+        "bbox": [
+            42,
+            717,
+            473,
+            959
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e24c4484f78bafca8c3ac2eda7e7638482cddc2667b30cf4ccb9b6bcf31a7731.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            547,
+            67,
+            698,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/149270b1033fbdd3906f2ea3dfa4b83051349ed96c1105569c55bcb656ced154.jpg",
+        "image_caption": [
+            "Fig. 2. Graphic illustration of the hinge fabrication process. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            737,
+            68,
+            885,
+            206
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "detail later. The fabrication of the hinges, however, is illustrated here, as it is one of the key steps of the process. ",
+        "bbox": [
+            503,
+            237,
+            929,
+            270
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "On the vibrating beam, two U-shaped resistors located at the extremes are used for excitation and detection of the transversal vibration. By applying a sinusoidal drive voltage superimposed on a d.c. bias to one of the resistors, the power dissipation, proportional to the frequency of the drive voltage, generates a sinusoidal mechanical drive moment [6]. The resulting oscillation of the beam is captured by the second piezoresistive resistor, connected on-chip to a full Wheatstone bridge. With this driving scheme, $Q$ factors of the oscillating beam at resonance of 200 in air together with resonance amplitudes of $0.1\\mu \\mathrm{m}$ at the beam centre are achieved [2]. The beam of the BESOI-based accelerometer measures $700\\mu \\mathrm{m}\\times 50\\mu \\mathrm{m}\\times 5.5\\mu \\mathrm{m}$ , in length, width and thickness, respectively. The four hinges are also $700\\mu \\mathrm{m}$ long, $20\\mu \\mathrm{m}$ thick and, in total, $600\\mu \\mathrm{m}$ wide. Together with a 1.5 mm $\\times 2.1$ mm large mass, a chip size of $4\\mathrm{mm}\\times 4\\mathrm{mm}$ results. These sizes yield a predicted maximum frequency shift of about $10\\%$ of the unloaded resonance frequency within the sensor operation range of $\\pm 50g$ . ",
+        "bbox": [
+            503,
+            270,
+            931,
+            574
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. Fabrication process ",
+        "text_level": 1,
+        "bbox": [
+            505,
+            607,
+            679,
+            625
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The starting materials are $445\\mu \\mathrm{m}$ thick BESOI wafers plus $300\\mu \\mathrm{m}$ thick silicon wafers. Both types are $100\\mathrm{mm}$ in diameter, double-side polished, with a (100)-oriented substrate and boron doped with a resistivity of $12 - 18\\Omega \\mathrm{cm}$ . ",
+        "bbox": [
+            503,
+            642,
+            929,
+            706
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "First, the BESOI wafer is structured by means of dry etching, using a photoresist mask in order to obtain practically vertical profiles. Next, a $1500\\mathrm{nm}$ thick thermal oxide is grown to cover the future hinges. After this, the BESOI and the virgin $300\\mu \\mathrm{m}$ thick wafer are cleaned to provide optimum adhesion conditions. A standard Piranha clean $(\\mathrm{H}_2\\mathrm{SO}_4:\\mathrm{H}_2\\mathrm{O}_2$ 2:1) is used for this. The wafers are then mated and annealed for $8\\mathrm{h}$ at $1100^{\\circ}\\mathrm{C}$ , and during this annealing a field oxide is grown. The angular error during the mating process is less than $1^{\\circ}$ , achieved by flat-to-flat alignment in a PTFE chuck. Next the wafer backside is recessed by a few microns in the seismic mass regions with a TMAH solution, in this way producing the necessary gap between the seismic mass bottom and the glass when bonding the device wafer onto a plain glass substrate. This step is optional; alternatively the bottom glass wafer can be recessed. ",
+        "bbox": [
+            503,
+            706,
+            931,
+            960
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "8 ",
+        "bbox": [
+            45,
+            33,
+            54,
+            43
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            304,
+            31,
+            670,
+            45
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f96042857c5363799f5fd3e18107afa8b30b2ce74d0e7a6b44aeba447f3fed6.jpg",
+        "image_caption": [
+            "Fig. 3. SEM photograph of a BESOI accelerometer chip. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            79,
+            86,
+            443,
+            292
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Next, the n-wells and the p-type drive and sense resistors are produced by ion implantation. Using selective wells instead of an n-epitaxial layer facilitates the electrical connections to the p-substrate, which are needed for the four-electrode electrochemical etch stop [7]. ",
+        "bbox": [
+            47,
+            361,
+            477,
+            441
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "After metallization, the wafers are masked and patterned for the final membrane trench etching, using a passivation oxide. ",
+        "bbox": [
+            47,
+            441,
+            478,
+            487
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The anisotropic etching is performed partially in a TMAH 15 wt.%:IPA 17 vol.% solution and in a standard 40 wt.% KOH solution. An advantage of this TMAH:IPA solution is the convex corner undercutting, which is about three times less than that of the KOH solution [8]. As IPA-diluted TMAH solutions produce rough etch bottoms that cannot be smoothed completely by electrochemical stopping, the final $100\\mu \\mathrm{m}$ have to be etched with the KOH solution. This gives a smooth surface to the bottom of the etched trench. This peculiar etch technique results from the high wafer thickness of almost $750~{\\mu\\mathrm{m}}$ , which would require large, space-consuming convex corner-compensation structures. Therefore, regular compensation structures were designed [9], and instead the undercutting characteristics of the etchant were improved. In spite of this measure, some undercutting still had to be taken into account. ",
+        "bbox": [
+            47,
+            489,
+            478,
+            744
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Finally, the membranes are etched from the frontside by RIE. Fig. 3 shows an SEM photograph of a device chip. The oxide residues, where the etching penetrated the bond interface, are still visible in the photograph. ",
+        "bbox": [
+            49,
+            745,
+            478,
+            809
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For characterization of the sensors, a glass wafer is bonded anodically to the backside of the device wafer, then the bonded wafer is diced and the single chips are glued into packages. ",
+        "bbox": [
+            49,
+            809,
+            480,
+            874
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4. Closed-loop operation of the vibrating beam ",
+        "text_level": 1,
+        "bbox": [
+            51,
+            902,
+            413,
+            919
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For continuous oscillation of the vibrating beam, two conditions must be fulfilled: ",
+        "bbox": [
+            51,
+            933,
+            480,
+            965
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\varphi_ {\\text {r e s o n a t o r}} + \\varphi_ {\\text {c i r c u i t}} = k 2 \\pi \\quad k = 1, 2, 3, \\dots \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            512,
+            84,
+            936,
+            102
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left| H (\\omega) _ {\\text {r e s o n a t o r}} \\right| \\left| H (\\omega) _ {\\text {c i r c u i t}} \\right| = 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            514,
+            108,
+            739,
+            126
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$\\varphi$ are the phase angles and $H(\\omega)$ the transfer functions of resonator and electronic feedback-loop circuit, respectively. At resonance, the circuit must amplify the signal and compensate for its phase shift. A stable oscillation amplitude requires control of the gain. Additionally, bandpass properties are needed for filtering low- and high-frequency interferences, where high-frequency signal components in particular must be eliminated. This is to avoid parasitic or higher-order resonance modes, and to minimize the effect of the electrical cross-talk, which is proportional to $\\omega^2$ and inherent for the beam driving concept with diffused resistors [2]. According to these specifications, the scheme for a feedback-loop circuit looks as in Fig. 4. ",
+        "bbox": [
+            510,
+            139,
+            941,
+            349
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The sense signal, proceeding from the sensing resistor, which itself is connected to the Wheatstone bridge, requires a pre-amplifier with a high-impedance differential input, i.e., an instrumentation amplifier. Next, two modules for amplification and phase shift are incorporated. The gain of the amplifier is loop controlled as shown in Fig. 4. For driving, a d.c. bias is superimposed on the conditioned signal, in order to obtain the required $\\omega$ dependency of the heating power. The gain controller consists of a MOSFET transistor in the feedback loop of the amplifier module, whose channel resistance is adjusted by the applied gate voltage. ",
+        "bbox": [
+            510,
+            349,
+            941,
+            527
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "With respect to sensor operation frequencies of up to approximately $100\\mathrm{kHz}$ , the circuit was designed using operational amplifiers with a wide bandwidth. The amplifier modules were adapted to the sensor's resonant characteristics in order to produce the desired bandpass characteristics. The complete circuit was mounted on a printed circuit board (PCB). Trimming resistors allowed the adjustment of the necessary phase compensation at resonance, the d.c. drive bias and the oscillation amplitude. As the sensor transfer function turned out to be very sensitive to parasitic capacitances, coming from the cables, for example, the chip had to be placed directly on the PCB. A typical d.c. drive bias of $8 - 10\\mathrm{V}$ is necessary to drive the silicon beam, together with an oscillation amplitude of $1\\mathrm{V}$ . With a $5\\mathrm{V}$ Wheatstone bridge supply, the total dissipated power in the two beam resistors is of the order of $20 - 30\\mathrm{mW}$ . ",
+        "bbox": [
+            512,
+            528,
+            943,
+            787
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff72c6d5a1b42e8023961ba7f6b1f11f25360699f1c1c8862d57186af6ceb5a7.jpg",
+        "image_caption": [
+            "Fig. 4. Scheme of the electronic feedback-loop circuit. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            542,
+            805,
+            920,
+            942
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            311,
+            37,
+            677,
+            49
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "9 ",
+        "bbox": [
+            927,
+            35,
+            938,
+            47
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5. Characterization ",
+        "text_level": 1,
+        "bbox": [
+            49,
+            62,
+            205,
+            77
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Static sensitivity measurements, by turning the chip in the gravitation field, allow the sensitivity in the $\\pm 1g$ range in all three axes to be measured directly. Dynamic measurements, however, when performed on a vibrating table, require post-processing of the modulated sensor output signal. ",
+        "bbox": [
+            49,
+            100,
+            473,
+            178
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The set-up for dynamic testing, as seen in Fig. 5, consists of a vibrating table, together with the necessary peripheral equipment. An HP3562A Dynamic Signal Analyzer calculates and records the spectrum of the sensor output in the range $0 - 100\\mathrm{kHz}$ . The spectra are stored on data disc and evaluated on a PC. ",
+        "bbox": [
+            49,
+            180,
+            475,
+            275
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.1. Relation between sensor output spectrum and sensitivity ",
+        "text_level": 1,
+        "bbox": [
+            49,
+            297,
+            411,
+            330
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In the simplest case of sinusoidal signals only, a frequency-modulated signal is characterized by its carrier frequency $f_{\\mathrm{C}}$ , the modulating frequency $f_{\\mathrm{m}}$ and the modulation index $M$ , defined as [10] ",
+        "bbox": [
+            49,
+            351,
+            477,
+            416
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM = \\frac {\\Delta f _ {C}}{f _ {\\mathrm {m}}} \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            51,
+            426,
+            473,
+            462
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\Delta f_{\\mathbb{C}}$ is the maximum frequency deviation between the modulated and carrier signals. ",
+        "bbox": [
+            49,
+            471,
+            475,
+            504
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The spectrum of this FM signal contains, apart from the carrier band, symmetrical sidebands at the frequencies $f_{\\mathbb{C}} \\pm nf_{\\mathfrak{m}}, n = 1,2,\\ldots$ . The amplitudes of the sidebands coincide with the absolute values of the corresponding Bessel functions $J_{n}(M)$ , whose argument is the modulation index. ",
+        "bbox": [
+            49,
+            504,
+            475,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In the case of the output spectrum of a sinusoidally accelerated sensor, the carrier frequency corresponds to the sensor's unloaded resonance frequency, and the modulating frequency to the table's vibrating frequency $f_{\\text{table}}$ . Then the frequency deviation of the modulated output signal equals the frequency shift of the sensor at maximum acceleration. Therefore the modulation index $M$ is a function of the sensitivity of the sensor, in Hz per acceleration unit, and of the maximum acceleration of the vibrating table $acc_{\\text{table}}$ : ",
+        "bbox": [
+            49,
+            584,
+            478,
+            727
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/dee20244d1998134a2319c4df16ee858ffd4f0c28beb28bc4875afaa9914ffec.jpg",
+        "image_caption": [
+            "Fig. 5. Set-up for dynamic measurements. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            84,
+            740,
+            452,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/feb564d9cf4d3e51b6c9f7f823183f783f8765d93e5e3c61df0d0eb3c2f76d09.jpg",
+        "image_caption": [
+            "Fig. 6. Power spectrum of a sensor prototype: $acc_{\\text{tabic}} = 2g, f_{\\text{tabic}} = 100 \\, \\text{Hz}$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            538,
+            62,
+            919,
+            264
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nM = \\frac {\\Delta f _ {C}}{f _ {m}} = \\frac {S _ {\\text {s e n s o r}} a c c _ {\\text {t a b l e}}}{f _ {\\text {t a b l e}}} \\tag {3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            303,
+            934,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "For calculating the sensitivity, the modulation index needs to be known. It is obtained by inverting the Bessel functions: ",
+        "bbox": [
+            510,
+            348,
+            936,
+            381
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nJ _ {n} = f (M) = > M = f ^ {- 1} \\left(J _ {n}\\right) \\tag {4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            386,
+            934,
+            406
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In order to avoid this inversion, which involves extended computing, the following recurrence formula was used [11]: ",
+        "bbox": [
+            510,
+            412,
+            936,
+            445
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nJ _ {n - 1} (x) + J _ {n + 1} (x) = \\frac {2 n}{x} J _ {n} (x) \\tag {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            512,
+            452,
+            934,
+            486
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "By taking the ratios of the first three Bessel coefficients $J_0$ to $J_2$ , which coincide with the magnitude of the carrier frequency band and the first two sidebands, and solving, $M$ is obtained directly. Fig. 6 plots a power spectrum of a sensor prototype. The indicated modulation index $M$ , calculated from the magnitude rations of the carrier band and the first two sidebands (converted from power into voltage spectra), leads directly to the sensitivity of this prototype. ",
+        "bbox": [
+            510,
+            494,
+            938,
+            625
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6. Results ",
+        "text_level": 1,
+        "bbox": [
+            512,
+            653,
+            595,
+            669
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Static measurements by turning the sensor around all three axes confirmed the theoretical considerations, which predicted transversal sensitivities to accelerations in the beam direction of smaller than $0.65\\%$ of the normal sensitivity, and of zero to accelerations perpendicular to the beam direction. The measured normal sensitivity was $260\\mathrm{Hz / g}$ . ",
+        "bbox": [
+            510,
+            685,
+            938,
+            781
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fig. 7 plots the output frequency of a BESOI accelerometer prototype, mounted on the vibrating table, as a function of the applied acceleration. ",
+        "bbox": [
+            512,
+            782,
+            941,
+            828
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The acceleration was swept from 1 to $70g$ at a constant table frequency of $200\\mathrm{Hz}$ . The sensor shows a very linear behaviour. For the device geometries of this prototype, the strain-inducing axial load $\\sigma$ in the beam is far below the buckling load $\\sigma_{\\mathrm{B}}$ in this acceleration range ( $\\sigma_{50g} < 0.2\\sigma_{\\mathrm{B}}$ ), resulting in the straight curve of the load-frequency function. ",
+        "bbox": [
+            512,
+            830,
+            940,
+            925
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In order to measure the frequency response, the frequency of the table was swept under a constant acceleration of $2g$ . ",
+        "bbox": [
+            512,
+            925,
+            941,
+            957
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "10 ",
+        "bbox": [
+            52,
+            30,
+            70,
+            40
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            311,
+            30,
+            677,
+            44
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/274647d07f1e9660748a8916d8dba46dd66ec74047894f6a2dba8d80376e6688.jpg",
+        "image_caption": [
+            "Fig. 7. Linearity of a sensor prototype, $f_{\\mathrm{table}} = 200 \\mathrm{~Hz}$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            91,
+            74,
+            433,
+            214
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c3602915c65107a225089d8b5e6d011c123c95a38ec8e3f2fd2892320e6de361.jpg",
+        "image_caption": [
+            "Fig. 8. Frequency response of a sensor prototype, $acc_{table} = 2g$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            91,
+            245,
+            431,
+            385
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/83ffab6be07bf346dbde75f7fa38b1582da11b8d10d78b59ab094cb352bf0df8.jpg",
+        "table_caption": [
+            "Table 1 Measured and calculated mechanical device characteristics "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Unloaded natural frequency</td><td>71.8 kHz</td></tr><tr><td>Measured static sensitivity (-1 to 1g)</td><td>260 Hz/g</td></tr><tr><td>Measured dynamic sensitivity (±1 to 70g)</td><td>~ 250 Hz/g</td></tr><tr><td>Analytically calculated sensitivity</td><td>~ 240 Hz/g</td></tr><tr><td>Measured fR of spring mass system</td><td>2300 Hz</td></tr></table>",
+        "bbox": [
+            42,
+            446,
+            471,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The curve in Fig. 8 is almost flat and exhibits a peak at 2300 Hz, corresponding to the system's spring mass resonance frequency. This behaviour was expected, as the bottom cap glass wafer alone does not provide efficient damping, and the device can thus be considered as undamped. ",
+        "bbox": [
+            40,
+            546,
+            471,
+            625
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Table 1 summarizes the analytically calculated and the measured parameters of the accelerometer. The analytically found sensitivity is an approximate value, as the mass loss included in the calculations is an estimated value. ",
+        "bbox": [
+            40,
+            625,
+            471,
+            689
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "7. Conclusions ",
+        "text_level": 1,
+        "bbox": [
+            42,
+            727,
+            160,
+            742
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "With the accelerometer concept presented here, it was shown that the benefits of the resonant principle can be combined with a bulk-micromachined structure that is practically insensitive to lateral accelerations. To achieve this, commercial BESOI wafers in combination with a silicon to silicon fusion bonding process have been employed. The result, as demonstrated by static and dynamic measurements, is a uniaxial accelerometer with a semidigital frequency output that features excellent mechanical properties, being especially suitable for measurements where high precision is required. For the prototype shown, the maximum resolution of about $10\\mathrm{Hz}$ at an unloaded resonance frequency of $72\\mathrm{kHz}$ corresponds to a resolution of $50\\mathrm{mg}$ over the $50g$ range. ",
+        "bbox": [
+            40,
+            761,
+            473,
+            969
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements ",
+        "text_level": 1,
+        "bbox": [
+            508,
+            74,
+            658,
+            89
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The authors thank the CNM clean-room staff for the wafer processing and M. Duch and A. Moreno for the post-processing and device encapsulation. The authors also acknowledge F. Larmer from Robert Bosch GmbH for his support and advice during the work. This project has been funded by the CICYT project ROB1140/91-CO1-01. Chr. Burrer is financially supported by Robert Bosch GmbH, Stuttgart, Germany. ",
+        "bbox": [
+            507,
+            104,
+            936,
+            233
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            510,
+            266,
+            595,
+            280
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] Chr. Burrer and J. Esteve, A novel resonant silicon accelerometer in bulk-micromachining technology, Sensors and Actuators A, 46 (1995) 185-189. ",
+            "[2] Chr. Burrer and J. Esteve, Thermally driven micromechanical bridge resonators, Sensors and Actuators A, 42 (1994) 680-684. ",
+            "[3] H. Sandmaier, K. Kuhl and E. Obermeier, A silicon based micromechanical accelerometer with cross acceleration compensation, Tech. Digest, 4th Int. Conf. Solid-State Sensors and Actuators (Transducers '87), Tokyo, Japan, 2-5 June, 1987, pp. 399-402. ",
+            "[4] E. Peeters, S. Vergote, B. Puers and W. Sansen, A combined silicon fusion and glass/silicon anodic bonding process for a uniaxial capacitive accelerometer, MME '92, Leuven, Belgium, 1992, pp. 39-42. ",
+            "[5] J.B. Lasky, Wafer bonding for silicon-on-insulator technologies, Appl. Phys. Lett., 49 (1986) 78-80. ",
+            "[6] M.B. Othman and A. Brunnschweiler, Electrothermally excited silicon beam mechanical resonators, *Electron. Lett.*, 23 (1987) 728-730. ",
+            "[7] B. Kloeck, S.D. Collins, N.F. de Rooij and R.L. Smith, Study of electrochemical etch-stop for high-precision thickness control of silicon membranes, IEEE Trans. Electon Devices, ED-36 (1989) 663-669. ",
+            "[8] A. Merlos, M.C. Acero, M.H. Bao, J. Bausells and J. Esteve, A study of the undercutting characteristics in the TMAH:IPA system, J. Micromech. Microeng., 2 (1992) 181-183. ",
+            "[9] M. Bao, Chr. Burrer, J. Esteve, J. Bausells and S. Marco, Etching front control of (110) strips for corner compensation, Sensors and Actuators A, 37-38 (1993) 727-732. ",
+            "[10] R. Mäusl, Analoge Modulationsverfahren, Hüthig Verlag, Heidelberg, 2nd edn., 1992, p. 81ff. ",
+            "[11] Handbook of Tables of Mathematics, The Chemical Rubber Company, Cleveland, OH, 4th edn., 1970, p. 740. "
+        ],
+        "bbox": [
+            512,
+            296,
+            936,
+            712
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Biographies ",
+        "text_level": 1,
+        "bbox": [
+            508,
+            745,
+            603,
+            761
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Christian Burrer was born in Pfullingen, Germany, in 1967. He recieved his Dipl.-Ing. degree in electrical engineering from the University of Karlsruhe in 1991. During his studies he spent one year each at ESIEE, Paris and at Southampton University, UK. On graduation he joined the Centro Nacional de Microelectrónica (CNM), Barcelona, Spain. Supported by Robert Bosch GmbH, Stuttgart, he worked for three years on the development of resonant silicon accelerometers. In 1995 he was awarded the Ph.D. degree in physics by the University Autónoma of Barcelona. His research interests concentrate on silicon sensor technologies and their application to integrated sensors and actuators. ",
+        "bbox": [
+            505,
+            777,
+            936,
+            969
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            306,
+            40,
+            674,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "11 ",
+        "bbox": [
+            919,
+            42,
+            934,
+            53
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Jaume Esteve was born in Pares del Valles (Barcelona) in 1961. He recieved the Ph.D. degree in physical electronics from the University of Barcelona in 1988. During 1984 and 1985 he performed research work in the Applied Physics Department of the University of Barcelona. In 1985 he joined the CNM, where he worked on metallization processes. Dur ",
+        "bbox": [
+            58,
+            66,
+            482,
+            164
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "ing 1989 he was a visiting researcher at the Interuniversitair Micro-Elektronic Centrum (IMEC) in Leuven, Belgium. In 1990 he joined CNM's Department of Silicon Technology and Microsystems as a senior research scientist. His areas of interest are silicon micromachining technologies and their application to integrated sensors and actuators. ",
+        "bbox": [
+            517,
+            66,
+            943,
+            164
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "12 ",
+        "bbox": [
+            59,
+            34,
+            75,
+            45
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Chr. Burrer, J. Esteve / Sensors and Actuators A 50 (1995) 7-12 ",
+        "bbox": [
+            318,
+            31,
+            681,
+            45
+        ],
+        "page_idx": 5
+    }
+]

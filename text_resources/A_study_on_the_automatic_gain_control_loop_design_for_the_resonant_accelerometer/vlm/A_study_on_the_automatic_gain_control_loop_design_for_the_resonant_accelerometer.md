@@ -1,0 +1,179 @@
+# A study on the automatic gain control loop design for the resonant accelerometer
+
+Suk-Chang Yun<sup>1</sup>, Sangkyung Sung<sup>2</sup>, Taesam Kang<sup>2</sup> and Young Jae Lee<sup>2</sup>
+
+$^{1}$ Department of Aerospace Information Engineering, Konkuk University, Seoul, Korea (Tel: +82-2-458-0614; E-mail: amerisan@konkuk.ac.kr)   
+$^{2}$ Department of Aerospace Information Engineering, Konkuk University, Seoul, Korea (Tel: +82-2-456-6080; E-mail: sksung@konkuk.ac.kr)
+
+Abstract: In this paper, we introduce a new design approach for self-sustained resonant acceleration, that uses an automatic gain control(AGC) to achieve a stabilized oscillation dynamics. Fundamental idea of this acceleration is to maintain uniform amplitude of oscillation. Through system modeling and loop transformation considering the envelope of oscillation, the controller is design to keep up uniform amplitude of oscillation under dynamic input acceleration. The simulation shows the feasibility of the proposed accelerometer design, which is applicable to control grade inertial sensing system in industrial and civil application fields.
+
+Keywords: resonant accelerometer, automatic gain control, oscillation
+
+# 1. INTRODUCTION
+
+There are various types of system MEMS(microelectromechanical system) accelerometers due to the help of micro-machined manufacturing process and technology. Resonance type accelerometers of them are reported to have good properties like large dynamic range and high sensitivity as well as easy interface with digital electronics [1-3]. A resonant sensor has many advantages over the conventional capacitive type: wide dynamic range, quasi-digital nature of the output signal, and the inherent continuous self-test capability. The quartz-based resonant accelerometers have been used for navigation-grade sensing [4-5]. Also resonant accelerometers presented in [6-8] reports a performance result of control and tactical navigation grade.
+
+The accelerometer which has capabilities of reading frequency and electrical tuning has shown some advantages of enhanced sensitivity, simple electronics, self-sustaining and diagnosis, and temperature robustness [6-8]. However the proposed resonance accelerometer has some faults like dynamic range and burdensome digital signal processing electronics because of its operating and detecting principle. For example, the detection strategy of the resonant accelerometer in [8] is by way of reading out the resonant frequency variation of its oscillation signal under applied accelerations. But this sensing strategy has performance limitation since it does not incorporate any control over proof mass movement. When a large acceleration is applied, the gap between proof mass and sensing electrode becomes smaller and this may cause unstable oscillation. Also because the electrostatic force between mass and sensing electrode is inversely proportional to the square of gap, the sensor output may produce distorted resonance characteristics and output nonlinearity in certain input range. Additionally, the frequency readout circuit involves a burdensome digital electronics, which is not necessarily implemented in analog sensor system. Hence according to the application and system characteristics, we require a
+
+resonance type accelerometer that includes analog signal readout and oscillation control scheme, which provides extended bandwidth and robustness to the low frequency disturbance.
+
+In this paper, we propose a new detection principle and design approach for resonant accelerometer, which uses a reference tracking automatic gain control scheme. With the designed controller and transformed oscillation loop considering the envelope of oscillation, we control amplitude of oscillation dynamics and measure the applied acceleration in the form of control input signal to the accelerometer. In section 2, an illustration about the operational principle and brief introduction of plant dynamics of the proposed resonant accelerometer is presented. In section 3, we present a detailed system transformation and loop design for the oscillation dynamics control. In section 4, finally we perform several simulations and remark conclusion in section 5.
+
+# 2. SYSTEM ILLUSTRATION
+
+In this section, we present the operational principle and system dynamics of the proposed resonant accelerometer. Then we briefly introduce a modified automatic gain control (AGC) configuration that achieves the oscillation dynamics control.
+
+The principle of the proposed resonant accelerometer is based on the oscillation dynamics of MEMS resonator. By sustaining the proof mass of the MEMS resonator at constant oscillation amplitude with acceleration-dependent bias position, the applied acceleration is estimated through the control input signal that maintains the constant oscillation dynamics. For this we present a parallel-plated electrostatic resonator as shown in Fig. 1. Observing the figure, the governing equation for the plant dynamics is obtained as
+
+$$
+F _ {a} = m \ddot {z} + D \dot {z} + k _ {m} z - \varepsilon A \frac {\left(V _ {D} + v\right) ^ {2}}{2 \left(z _ {o} - z\right) ^ {2}}, \tag {1}
+$$
+
+![](images/4f608d4521f8ad7ea25a9c93cc2c1c0fa54e8bce1b7a54649de082c3af29d999.jpg)  
+Fig. 1 A simplified structure and working principle of resonant accelerometer.
+
+where $m$ represents for inertial mass, $D$ for damping coefficient, $k_{m}$ for spring constant, $\varepsilon$ for permittivity constant, $A$ for driving electrode area, $V_{D}$ for bias voltage, $\nu$ for driving voltage, $a$ for acceleration, $z_{o}$ for equilibrium gap, and $z$ for varying displacement. Fig. 2 shows the displacement between initial gap and equilibrium gap at the steady state when dynamic accelerations are applied. In the figure, we can find values of displacement are reasonable with respect to initial gap.
+
+![](images/e64a986a4bd5f1eeaf7f927a17fc6100ee8db756e1cc80cebe24f3d8ebb04f1d.jpg)  
+Fig. 2 Acceleration vs. displacement between initial gap and equilibrium gap.
+
+From Eq. (1), it is observed that the displacement of the proof mass can be controlled by the input driving voltage scaled by the driving bias voltage gain. Assuming a small signal of $z$ and $v$ with respect to $z_{o}$ and $V_{D}$ , respectively, the plant dynamics with zero input acceleration is modeled as a linear form in the below,
+
+$$
+G (s) = \frac {k _ {a}}{s ^ {2} + 2 \zeta_ {z} \omega_ {z} s + \omega_ {z} ^ {2}}, \tag {2}
+$$
+
+where $k_{a} = \varepsilon AV_{D}z_{o}^{-2}\cdot m^{-1},\omega_{z} = \sqrt{(k_{m} - \varepsilon AV_{D}^{2}z_{0}^{-3})\cdot m^{-1}}$ and $\zeta_z = D\cdot (2m\omega_z)^{-1}$ . In Eq. (2), the higher order perturbation terms are neglected, as the plant transfer function $G(s)$ has a low pass filtering dynamics that mitigates higher order harmonics. Then by applying a sinusoidal driving signal, the proof mass oscillates around the force balanced position where the applied acceleration and electrostatic force satisfies an equilibrium state. Note that the gap between parallel plates at equilibrium point varies as the applied acceleration varies. Hence the system gain from driving signal to the electrostatic force contains nonlinear relationship depending on the gap induced by the applied acceleration. Also the oscillation amplitude grows large under high acceleration range. This results into the performance limitation, which motivates a stable oscillation control.
+
+For a stable oscillation around the equilibrium point, we apply an oscillation-controlled automatic gain control loop to the resonant accelerometer. In this scheme, design objective of control loop is to improve the performance indices such as dynamic range, output linearity and bandwidth. The design objective is accomplished by way of maintaining the amplitude of oscillation when there are external accelerations applied. Thus by measuring the control input that suppresses the oscillation amplitude change, the applied acceleration is computed.
+
+![](images/137f2acd3084cc3c8316106b8c8527b05349e76994f71ba294e8535c2bcebe5b.jpg)  
+(a)
+
+![](images/2ac919d760494346a9ea10f06e058d053773c5f26f17d5a63e86af4238cc84d4.jpg)  
+(b)   
+Fig. 3 Oscillation control AGC loop configuration for resonant accelerometer: (a) amplitude control loop; (b) oscillation control using velocity signal.
+
+Fig. 3(a) shows that by using an AGC loop configuration, a simple suppression of the oscillation amplitude variation due to accelerations is possible, where the loop purpose is to regulate the amplitude signal to a given reference value, $r$ . Then by setting a proper reference value, the control objective is to cancel out any amplitude deviation using a stabilizing controller output. However the derivative term in the internal feedback connection complicates the analytic development for further system transformation. For this reason, we take a scheme to apply the system block diagram given in Fig. 3(b) to the oscillation dynamics control. Hence in further design process, we design the feedback controller that regulates the oscillation velocity into a uniform state to control the oscillation amplitude with the fixed value. In the figure, $\eta$ denotes the oscillation velocity, $\nu_{z}$ a scaled voltage, $\nu_{f}$
+
+the low pass filter (LPF) output, and $u$ a controller output, respectively.
+
+In the following approach, since we aim to maintain the magnitude of oscillation velocity, a system analysis using the envelope model is used, and then the resulting controller is applied back to the original system.
+
+# 3. LOOP DESIGN FOR OSCILLATION-CONTROLLED ACCELEROMETER
+
+In this section, the AGC loop in section 2 is transformed through a state space approach. Using the designed feedback controller, the oscillation velocity is controlled and consequently the oscillation amplitude control is accomplished for the resonant accelerometer.
+
+# 3.1 Loop transformation for envelope-based approach
+
+In Fig. 3(b), when considering the harmonic balance property and low pass filtering dynamics of the loop, the oscillation velocity of the resonant accelerometer can be given in the form of
+
+$$
+\eta (t) = a (t) \sin \left(\omega_ {r} t + \theta (t)\right), \tag {3}
+$$
+
+where $a(t)$ , $\theta(t)$ are the time-varying amplitude and phase, and $\omega_r = \omega_z \sqrt{1 - \zeta_z^2}$ is the resonant frequency of the oscillation. If we extract only the envelope of the oscillation by substituting the harmonic principal solution in Eq. (3) into the governing equation in Eq. (2), the plant transfer function in Fig. 3(b) can be approximated into
+
+$$
+G _ {e} (s) = 0. 5 \cdot k _ {a} / \left(s + \zeta_ {z} \omega_ {z}\right), \tag {4}
+$$
+
+as depicted in Fig. 4(a). Also note that in the transformed loop the gain of $2 / \pi$ is included due to the gain reduction since the average of the absolute value of a sinusoidal signal is $2 / \pi$ of its amplitude during envelope detection. Finally observing the input-output equation at plant transfer function and solving differential equation, the time varying amplitude can be represented in terms of control input $u$ . After some equation developments, by defining a nonlinear function $h(u)$ as
+
+$$
+\begin{array}{l} h [ u (t) ] \triangleq k _ {v} \exp \left\{\int_ {0} ^ {t} \left[ \frac {1}{2} k _ {a} k _ {v} u (\tau) - \zeta_ {z} \omega_ {z} \right] d \tau \right\}, \tag {5} \\ = k _ {v} a (t) \\ \end{array}
+$$
+
+where $k_{\nu}$ is the voltage gain, then the loop in Fig. 4(a) is transformed into a simpler one in Fig. 4(b), since $\nu_{a}(t)$ equals to $k_{\nu} \cdot a(t)$ . The detail of the transformation is out of scope and thus not be described.
+
+# 3.2 Controller design
+
+Using the nonlinear loop equation in Fig. 4(b), the AGC loop controller is designed to characterize the oscillation dynamics. The transfer function of the low pass filter is designed to have the first order dynamics as $L(s) = \gamma / (s + \lambda)$ , where $\lambda$ and $\gamma$ are filter parameters determined by the cutoff frequency condition. Then by defining the state variable as $x_{1} \triangleq \ln(a(t))$ , and $x_{2} \triangleq v_{f}(t)$ respectively, the following nonlinear equation holds.
+
+$$
+\begin{array}{l} \dot {x} _ {1} = \frac {1}{2} k _ {v} k _ {a} u (\tau) - \zeta_ {z} \omega_ {z}, \tag {6} \\ \dot {x} _ {2} = \frac {2 \gamma}{\pi} k _ {\nu} e ^ {x _ {1}} - \lambda x _ {2}. \\ \end{array}
+$$
+
+![](images/1dc7d799140ecc58e3a70dbb5dba17180d759d3e2aa6d6236e07a12e67273cef.jpg)  
+Fig. 4 Oscillation envelope based AGC loop modeling: (a) approximated model for envelope dynamics; (b) equivalent single-feedback AGC loop.
+
+And finally the system output signal $y$ is given by $x_{2}$ . Since our design goal is that the output of the system $y$ tracks a reference input $r$ by a feedback control such that $y(t) \to r$ as $t \to \infty$ , we use a proportional-integral control that employs an output feedback control scheme, in which the regulation goal will be achieved by stabilizing the system at an equilibrium point, where $y = r$ .
+
+Using the Lyapunov's indirect method [9], let's consider a linear feedback control law that contains an integral action such as
+
+$$
+u = - k _ {p} y - k _ {i} \sigma , \tag {7}
+$$
+
+where $\sigma \triangleq \int_0^t (y - r)d\tau$ . By applying the control law to the nonlinear state equation in Eq. (6), the resulting closed-loop system is derived as
+
+$$
+\begin{array}{l} \dot {x} = f (x, u), \\ u = - k _ {p} y - k _ {i} \sigma , \tag {8} \\ \dot {\sigma} = y - r. \\ \end{array}
+$$
+
+At equilibrium, $\dot{x} = 0$ and $\dot{\sigma} = 0$ hold, therefore at equilibrium point, the following equations hold,
+
+$$
+\begin{array}{l} 0 = f (x _ {e}, u _ {e}), \\ u _ {e} = - k _ {p} y _ {e} - k _ {i} \sigma_ {e}, \tag {9} \\ 0 = y _ {e} - r. \\ \end{array}
+$$
+
+Under the assumption that the equilibrium in Eq. (9) has a unique solution $(x_{e},\sigma_{e})$ in the domain of interest, we can compute the control input $u_{e}$ using appropriate control gains, $k_{p}$ and $k_{i}$ . By obtaining the control gains $k_{p}$ and $k_{i}$ that stabilize the equilibrium point $(x_{e},\sigma_{e})$ , the oscillation velocity in the nonlinear feedback system is asymptotically stable around the equilibrium point, and consequently the oscillation amplitude of the resonant accelerometer converges to a constant value.
+
+Further detail about the stability of the designed feedback loop around the equilibrium point can be shown by using Kalman-Yakubovich-Popov Lemma [10], which provides a proper Lyapunov candidate function for the nonlinear feedback system. Then by showing the stability of the origin-shifted system, the stability of the designed feedback system is guaranteed around equilibrium.
+
+# 4. SIMULATION
+
+In this section, with the designed oscillation control loop and controller, we verify the feasibility and performance characteristics of the designed oscillation control loop via simulation result. Using the structural dimensions, the physical parameters are summarized in Table. 1.
+
+Table 1. Physical parameters of the resonant accelerometer.   
+
+<table><tr><td>parameter</td><td>value</td><td>Unit</td></tr><tr><td>Mass</td><td>8.72 x 10-8</td><td>[kg]</td></tr><tr><td>Mechanical stiffness</td><td>144</td><td>[N/m]</td></tr><tr><td>Damping coefficient</td><td>1.772 x 10-4</td><td>[N-s/m]</td></tr><tr><td>Driving electrode</td><td>2.0 x 10-7</td><td>[m2]</td></tr><tr><td>Initial gap</td><td>2.0 x 10-6</td><td>[m]</td></tr><tr><td>Driving bias voltage</td><td>12</td><td>[Volt]</td></tr><tr><td>Permittivity</td><td>8.854 x 10-12</td><td></td></tr></table>
+
+The proposed AGC loop is designed using the practical accelerometer parameters and electronics gain along with the analytically obtained loop parameters. For the application to MEMS resonant accelerometer, we make use of the physical parameters given in table 1.
+
+Using the accelerometer parameters, the plant transfer function in Eq. (4) is given by $G_{e}(s) = 30.46 / (s + 406.36)$ . The LPF is designed with $\lambda = \gamma = 300$ . The reference value to sustain a uniform oscillation in vertical direction is designed to guarantee the loop stability under full range of input angular rate. Provisioned that the full input range is about $20\mathrm{g}$ , the reference is set to 4 volt. Then by setting the proportional, integral and charge amplifier gain as $k_{p} = 0.5$ , $k_{i} = 12.5$ and $k_{v} = 1600$ respectively, the controller
+
+transfer function is given by
+
+$$
+K (s) = \frac {0 . 5 (s + 2 5)}{s}. \tag {10}
+$$
+
+The fundamental operation of the constructed AGC loop is verified by observing the oscillation displacement. Fig. 5 shows the step response of the oscillation signal when $10\mathrm{g}$ acceleration is applied at $\mathfrak{t} = 0.3$ sec. The bias value of oscillation changes since the mass moves into new equilibrium point due to acceleration. After the acceleration is applied, the oscillation dynamics converges fast to the steady state amplitude of $0.177~{\mu\mathrm{m}}$ which equals to the amplitude before acceleration is applied. And besides it has advantage that the oscillation dynamics can be maintained uniformly under various plant parameter variations induced by the manufacturing errors.
+
+![](images/336a261f3f6a9c9f7c927e3e96de0cf0be5f4ff6792af6d243fc9fa5977464ff.jpg)  
+Fig. 5 Step response of the designed oscillation control loop when equivalent acceleration of $10\mathrm{g}$ is applied.
+
+![](images/05d0b46e4108c2617796385386c3bd8cb2945cbac5ea9ce2fe4fb283bec77b1c.jpg)  
+Fig. 6 Acceleration vs. scaled control input signal when dynamic accelerations are applied.
+
+Fig. 6 shows the plot of sensor output in association with the applied accelerations on simulation. And that shows linearity of the sensor output in input range. The solid line shows the first order regression model. The
+
+scale factor is obtained as $46.3\mathrm{mV / g}$ in $\pm 10\mathrm{g}$ acceleration range after signal process. And nonlinear scale factor error about $0.5\%$ in the dynamic range over $\pm 10\mathrm{g}$ is obtained.
+
+Through the simulation result, we confirm the feasibility and performance characteristics of the designed oscillation control loop.
+
+# 5. CONCLUSION
+
+This paper presents a new detection principle and design approach for resonant accelerometer, which takes advantages of a reference tracking automatic gain control scheme. With the designed controller and oscillation loop, we control the oscillation dynamics and measure the applied acceleration in the form of control input to the accelerometer. For a simple application, the envelope of the driving velocity is considered to make a proper AGC control loop. We implement the AGC controlled resonant accelerometer by combining the controller and signaling processing electronics. The simulation result shows the feasibility of the designed resonant accelerometer with the designed AGC oscillation control scheme. A fabrication process using a surface micromachining method, packaging and experiments using a rate table are under investigation for future work.
+
+The proposed resonance type accelerometer can be used to realize an integrated sensor of vibratory gyroscope and resonance accelerometer at the same time using the common oscillation dynamics, which is under research presently.
+
+# ACKNOWLEDGMENT
+
+This work is supported by BK21 program of ST $\cdot$ IT Fusion in Konkuk University.
+
+# REFERENCES
+
+[1] T. V. Rozhart, et al., “An inertial-grade, micromachined vibrating beam accelerometer,” Proceedings of International Conference on Solid-State Transducers and Actuators (Transducers '95), 1995, pp.659-662   
+[2] T. A. Roessig, et al., "Surface-micromachined resonant accelerometer," Proceedings of International Conference on Solid State Sensors and Actuators (Transducers '97), pp.859-862.   
+[3] M. A. Meldrum, "Application of vibration beam technology to digital acceleration measurement," Sensors and Actuators, Vol. A21-A23, 1990, pp.377-380.   
+[4] B. L. Norling, "Superflex: a synergitic combination of vibrating beam and quartz flexure accelerometer," Journal of the Institute of Navigation, Vol.34, No.4, 1988, pp. 337-353.   
+[5] W. C. Albert, “Vibrating quartz crystal beam accelerometer,” Proceedings of the $28^{th}$ ISA International Instrumentation Symposium, Las Vegas, 1982, pp. 33-44.   
+[6] B. L. Lee, C. H. Oh, Y. S. Oh and K. Chun, “A
+
+novel resonant accelerometer; variable electrostatic stiffness type," Proceedings of International Conference on Solid State Sensors and Actuators (Transducers '99), June 1999, Sendai, pp.1546-1549.   
+[7] B. L. Lee, C. H. Oh, S. Lee, Y. S. Oh and K. Chun, "A vacuum packaged differential resonant accelerometer using gap sensitive electrostatic stiffness changing effect," Proceedings of the 13th International Conference on Micro Electro Mechanical Systems, January 23-27, 2000, Miyazaci, pp.352-357.   
+[8] S. Sung, J. G. Lee, B. Lee and T. Kang, "Development of a tunable resonant accelerometer with self-sustained oscillation loop," Journal of Micromechanics and Microengineering, Vol. 13, 2003, pp.246-253.   
+[9] H. K. Khalil, Nonlinear systems; 2nd edition, Upper Saddle River, New Jersey: Prentice-Hall Inc., 1996.   
+[10] Ioannou P. A., Sun J., 1995, Robust Adaptive Control, 1st edition, Prentice-Hall PTR.

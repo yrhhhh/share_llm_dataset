@@ -1,0 +1,195 @@
+# A new two-beam differential resonant micro accelerometer
+
+Claudia Comi  
+Alberto Corigliano
+
+Giacomo Langfelder Antonio Longoni Alessandro Tocchio
+
+Barbara Simoni
+
+Department of Structural Engineering Politecnico di Milano piazza Leonardo da Vinci 32 - Milano
+
+Electronics and Information Department Politecnico di Milano via Ponzio 34/5 - Milano
+
+MH Division STMicroelectronics via Tolomeo 1, Cornaredo - Milano
+
+Abstract—A novel uniaxial micro-machined resonant accelerometer is presented. The device working principle is based on the stiffness variations of a beam which is fully clamped to the substrate on one side and clamped to a seismic mass on the other side. A movement of the seismic mass, induced by an external acceleration, causes either a compressive or a tensile stress on the beam, inducing a variation of its stiffness. This variation results in a change of the resonance frequency of the beam. The accelerometer is arranged in a differential structure, with two beams built in such a way that their changes in the resonance frequency have opposite sign. This solution allows obtaining a doubled sensitivity with the same area and allows reducing the non linear behavior. First experimental results show that the device has an overall differential sensitivity $\Delta f_{res} / \mathrm{g}\approx 450\mathrm{Hz / g}$ in the linear range of operation, with an overall area occupation lower than $(500~\mu \mathrm{m})^{2}$ .
+
+# I. INTRODUCTION
+
+Micro Electro Mechanical Systems (MEMS) represent the emerging technology for the production of low-cost and low-power inertial sensors. In the last ten years these devices have completed the transition phase from the research to the industrial market [1]–[3]. Most of the available MEMS accelerometers is based on the movement of a seismic mass which forms a set of capacitors with suitably designed constrained parts. An external acceleration directly results in a capacitance variation, which is the electrical signal to be read. These kinds of capacitive accelerometers can be split in two classes depending on how the capacitances are formed, i.e. by means of parallel plates or by means of comb fingers. The quest for low-cost products makes it compulsory to minimize the Silicon area occupied by a device. Both parallel plates and comb fingers capacitive accelerometers suffer from this dimension scaling: parallel plates capacitors are prone to pull-in instability, which gives a limit to the minimum gap dimension between plates, and thus to the miniaturization of the accelerometer [4], [5]; comb-finger capacitors on the contrary do not suffer pull-in problems but need a doubled area to ensure the same sensitivity of parallel plates.
+
+In order to overcome these problems and to design even smaller devices, resonating accelerometers have been
+
+proposed in the scientific literature [6]–[9], [14], [15]. The working principle is different in that an external acceleration causes a variation in the resonance frequency of a suitable micromechanical structure. The change in the resonance frequency is the signal to be read. Resonant sensing, with respect to other sensing principles, has the advantage of an immunity to pull-in instability, a high potential sensitivity and a large dynamic range. To obtain high sensitivity when using very small inertial masses, a particular care should be given to the geometry of the device.
+
+This paper focuses on the analysis and the experimental results of the new uniaxial accelerometer proposed in [10], fabricated using the ThELMA (Thick Epitaxial Layer for Microactuators and Accelerometers) surface micro-machining process of STMicroelectronics [11]. The basic principles on which this sensor works are similar to those of already existing resonant accelerometers, but the geometrical setting and hence the properties of the mechanical part are completely different. The mechanical behavior of the resonating parts and of the whole system are described and a geometrical optimization is performed in order to obtain the highest sensitivity at a certain proof mass.
+
+The sensitivity of the resonant accelerometers is defined as the frequency shift produced by an external acceleration of $1\mathrm{g}$ . The resonant accelerometers obtained through surface micromachining reported in the literature typically have sensitivity ranging from $40\mathrm{Hz / g}$ up to $160\mathrm{Hz / g}$ , for the quite big device proposed in [9]. The optimized new design allows to produce a very small accelerometer: the proof mass has a square shape of $400\mu \mathrm{m}\times 400\mu \mathrm{m}$ . The experimental results show a high sensitivity of more than $430\mathrm{Hz / g}$ in a differential configuration, for devices with a quality factor $Q$ around 200.
+
+# II. ACCELEROMETER DESIGN
+
+The operating scheme of a linear accelerometer can be described as follows. An inertial mass $m$ is attached to a frame by means of a spring of stiffness $k$ and is subject
+
+to damping (mainly in the free molecular flow regime at typical MEMS packaging pressures) represented by a damper of coefficient $b$ . When the reference frame is subjected to an external acceleration $a$ , the oscillation of the inertial mass is governed by the dynamic equilibrium equation:
+
+$$
+m \ddot {x} + b \dot {x} + k x = m a \tag {1}
+$$
+
+If the frequency $\Omega$ of the external acceleration $a(t)$ is well below the resonance, i.e. if $\Omega < f_{res}$ ( $f_{res} = (1/2\pi)\sqrt{k/m}$ being the resonance frequency of the accelerometer) the accelerometer response is quasi-static and $x(t) = (m/k) \cdot a(t)$ . The external acceleration turns out to be proportional to the mass displacement and the sensing can be done by measuring the mass displacement e.g. via the capacitance variation, as in capacitive accelerometers.
+
+In resonant accelerometers on the contrary, the input acceleration is detected as a shift in the resonant frequency of a sensing device coupled to the proof mass. The resonant part can be the proof mass itself or, more frequently, a beam connected to it. The scheme corresponding to this second case is represented in Fig. 1, where the resonant beam is shown horizontally. The operating principle is based on the dependence of the resonant characteristic on the axial force which is present in the resonator. The external acceleration $a$ produces a force $F = ma$ on the inertial mass $m$ . This force produces, in turn, an axial force $N$ in a resonating beam. For a single span beam, the frequency increases in the case of a tensile load and decreases in the case of a compressive load. Denoting by $f_{0}$ the fundamental frequency of the beam, when resonating without any axial load, the resonant frequency $f$ of the axially loaded beam can be expressed as (cfr e.g. [12], [13]):
+
+$$
+f = f _ {0} \cdot \sqrt {1 + \alpha \frac {N \cdot L ^ {2}}{E \cdot I}} \tag {2}
+$$
+
+with
+
+$$
+f _ {0} = \frac {c ^ {2}}{2 \cdot \pi \cdot L ^ {2}} \cdot \sqrt {\frac {E \cdot I}{\rho \cdot A}}
+$$
+
+where $L, A$ and $I$ are the length, the cross area and the inertial momentum of the beam resonator, $E$ is the elastic modulus, $\rho$ is the material density, while $c$ and $\alpha$ are coefficients which depend on the boundary conditions of the resonator (in the approximation of clamped-clamped beam their values are 4.730 and 0.0246 respectively).
+
+Several accelerometers based on this operating principle have been proposed in the literature through bulk micromachining [14], [15] and surface micromachining technologies [6]-[9]. These accelerometers have a different geometry (in particular different position of the resonating beam with respect to the proof mass) which greatly affects the amplification of the axial force and hence the sensitivity of the device.
+
+In the device proposed in [10], the proof mass is suspended by means of two springs which restrain its movement to be a uniaxial translation. The resonating part of the device is
+
+![](images/474e75a2f4fbab618d55795832ae881c3022bdd479fcdc86ef77113135897f54.jpg)  
+Fig. 1. Simplified scheme of a uniaxial resonant accelerometer.
+
+constituted by two very thin beams, attached to the substrate at one end and to the springs at the other end [see Fig. 2(a)]. The position of the resonators with respect to the anchor point of the spring is crucial to obtain high amplification of the axial force as will be discussed in the following.
+
+Driving and sensing of the resonators is made by two parallel plate capacitances formed through electrodes attached to the substrate.
+
+For zero external acceleration the resonators have the same nominal frequency $f_{0}$ . When an external acceleration is applied, one resonator (resonator 1) is subject to a tension and the other (resonator 2) to a compression of the same magnitude, $N_{1} = -N_{2}$ , as shown in Fig. 2(b). The frequency $f_{1}$ of resonator 1 increases while the frequency $f_{2}$ of resonator 2 decreases. Combining the signal of the two resonators, from Eq. (2) linearized around $f_{0}$ , one obtains the following frequencies difference:
+
+$$
+f _ {1} - f _ {2} \approx f _ {0} \cdot \alpha \frac {N \cdot L ^ {2}}{E \cdot I} \tag {3}
+$$
+
+Therefore the presence of two resonators undergoing opposite axial forces has several advantages: (i) the sensitivity can be doubled by measuring the difference between the frequencies of the two resonators instead of the variation of frequency of one resonator, (ii) the linearity of the system is improved, i.e. the accelerometer response can be linearised in a wider range of accelerations, (iii) the skew-symmetric geometry is less sensitive to spurious effects of thermal loading (indeed an inelastic effect causing pre-stress in the resonators is cancelled when considering the difference between the frequencies).
+
+It is important to note that, though the resonator actuation and readout is performed through parallel plate capacitances, the resonator displacements are small compared to the gap between the resonator and the fixed plates. Moreover the effect of very large external accelerations is only a displacement of the proof mass, which results in a change of the resonator stiffness. The driving/sensing capacitances are not driven to pull-in even in this situation (as on the contrary may happen for parallel plate capacitive accelerometers). The relevant parameters of the device tested in this work are summarized in table 1. To allow for the detachment of the moving mass from the substrate, the inertial mass has a pattern of squared holes, so that a reduction coefficient of 0.63 should be considered when computing its effective area. Moreover due to the fabrication process, the surfaces in
+
+![](images/3a4451803b3197f102cb598552b01f558e37e6e02dc28576a4ac3854f8181d0b.jpg)  
+(a)
+
+![](images/ed5cf24fad40ad2dc0a99a1b7c4a4b950c6f6dbba7a0e640f7c0779c831c6b18.jpg)  
+(b)   
+Fig. 2. (a) Scheme of new resonant accelerometer; (b) effect of external acceleration.
+
+the out of plane direction are waved, thus a resonator width slightly reduced with respect to the nominal one should be considered.
+
+The sensitivity of the resonant accelerometer, defined as the resonator frequency variation produced by an acceleration of $1\mathrm{g}$ , increases with the dimension of the moving mass but also strongly depends on the position of the resonating beams with respect to the anchor point of the spring. In order to reduce the device size while keeping a high sensitivity, this position was optimized by means of an analytical approach and of FEM simulations. Fig. 3 shows the sensitivity of the accelerometer, given through equation (3), as a function of the position of the resonator along the spring, normalized with respect to the spring length. One can observe that the optimal position for the resonator is very close to the anchor point of the spring at about one sixtieth of its length. The different curves correspond to different sizes of the inertial mass: the intermediate one corresponds to the tested accelerometer, with a square proof mass with a side of $400\mu \mathrm{m}$ . In the following sections first experimental results both on the mechanical characterization of the resonators and on the sensitivity of the accelerometer will be given.
+
+![](images/aade191b9fb9ad2d90de6790b5c936e6e25c7b9e3255d45c1f06983e68070d64.jpg)  
+Fig. 3. Sensitivity of the accelerometer in terms of frequency variation as a function of the resonator position. Different curves correspond to the mass $m$ of the fabricated accelerometer and of double and half the mass of this device.
+
+TABLEI RESONANT ACCELEROMETER PARAMETERS   
+
+<table><tr><td>Parameter</td><td>Value</td><td>Unity</td></tr><tr><td>Proof mass area</td><td>400 x 400</td><td>μm2</td></tr><tr><td>Resonator length</td><td>400</td><td>μm</td></tr><tr><td>Resonator width</td><td>1.2</td><td>μm</td></tr><tr><td>In plane proof mass 1stmode</td><td>≈ 700</td><td>Hz</td></tr><tr><td>Out of plane proof mass 2ndmode</td><td>≈ 10000</td><td>Hz</td></tr><tr><td>Resonator 1stmode</td><td>≈ 50000</td><td>Hz</td></tr></table>
+
+# III. MECHANICAL CHARACTERIZATION OF THE RESONATORS
+
+The mechanical characterization of the resonant accelerometers has been performed through the low-noise, low-perturbing readout setup for MEMS capacitances described in [16]. The setup uses a signal modulation at a frequency $f_{mod} = 1$ MHz which is far larger than the resonator mechanical bandwidth. The amplitude of the test signal has a value of $\approx 250 \, mV_{eff}$ . Measurements are controlled through Labview programs.
+
+The devices were wafer-wafer packaged at a pressure $p \approx 1$ mbar, and the pads have been wire bonded to an holding board which can be tilted and which is electrically connected to the main, fixed, readout board. The actual resonators have a length $L = 400\mu \mathrm{m}$ , a thickness $t = 15\mu \mathrm{m}$ and a nominal width $h = 1.2\mu \mathrm{m}$ .
+
+# A. Stationary response
+
+Fig. 4 reports experimental results representing the sensed capacitance variation (measured between the sensing plate and the resonator) with respect to a stationary voltage applied between the driving plate and the resonator. As the driving voltage increases, the beam is deflected towards the actuation plate and as a consequence the sensing capacitance decreases
+
+![](images/133164ad80af419c63537505eb85adbcc7822ff632f831a6b3ce34f2eaebd357.jpg)  
+Fig. 4. Sensing capacitance vs driving actuator voltage curves for 4 different resonators belonging to 2 different accelerometers (experimental points and fitting quadratic polynomial). A certain data spreading is the result of the high shrinkage used in the resonator width design. Measurements are performed applying a voltage $V_{A}$ to the driving electrode and measuring the sensing capacitance through a small-amplitude, high frequency signal $V_{S}$ , processed through a custom lock-in type readout electronics.
+
+of $\approx 3$ fF at $5.4\mathrm{V}$ . In the simplified assumption of a parallel plate driving capacitor of area $A_{S}$ and gap $x_0$ , the theoretical relationship between the applied driving voltage $V_{A}$ and the applied electrostatic force $F_{el}$ is a function of the resonator displacement $x$ :
+
+$$
+F _ {e l} \left(V _ {A}, x\right) = \frac {d}{d x} \left[ \frac {V _ {A} ^ {2} \cdot \epsilon_ {0} \cdot A _ {S}}{2 \left(x _ {0} - x\right)} \right] = \frac {V _ {A} ^ {2}}{2} \frac {C _ {0}}{x _ {0}} \cdot \frac {1}{\left(1 - x / x _ {0}\right) ^ {2}} \tag {4}
+$$
+
+being $C_0$ the rest capacitance value (for $x = 0$ ) and $\epsilon_0$ the air permittivity (taken as that of vacuum). For small displacements $(x \to 0)$ the force can be assumed to be independent from the position:
+
+$$
+F _ {e l} (V _ {A}) = \frac {V _ {A} ^ {2}}{2} \frac {C _ {0}}{x _ {0}} \tag {5}
+$$
+
+The beam displacement $x$ is proportional through the elastic stiffness $k_{\text{beam}}$ of the beam to the applied force $F_{el}$ :
+
+$$
+x = F _ {e l} / k _ {\text {b e a m}} \propto V _ {A} ^ {2} \tag {6}
+$$
+
+and the measured sensing capacitance variation $\Delta C_S$ caused by a displacement $x$ is, in the first order approximation of small displacements:
+
+$$
+\Delta C _ {S} (x) = \frac {\epsilon_ {0} A _ {S}}{x _ {0}} - \frac {\epsilon_ {0} A _ {S}}{x _ {0} + x} \approx - C (0) \frac {x}{x _ {0}} \propto - V _ {A} ^ {2} \tag {7}
+$$
+
+being $A_{S}$ the area of the sensing capacitor (which is the same as the area of the driving capacitor in our device).
+
+It is worth noting that in the present case the resonating beam deforms and therefore the gap variation is non-uniform. However the above formula can still be used, with a proper correction coefficient, by interpreting $x$ as the displacement of the beam mid point.
+
+It turns thus out that the sensing capacitance variation, which is proportional to the resonator displacement $x$ , has a square
+
+![](images/42fff6baa9204e3b0ad7a11d9692b48dc489964c5cfcea7d2e2fb5eaca488f05.jpg)  
+(a)
+
+![](images/e0be6f3744cabd038ad603d75c8b0c2524b6652dfac0f9f1b096198dab029d4d.jpg)  
+(b)   
+Fig. 5. (a) Time response to a downward force step (to the rest position) of a single resonator of the accelerometer. (b) Corresponding spectral response derived through the DFT.
+
+dependence from the driving voltage $V_{A}$ for small displacements of the resonator. Indeed parabolic curves in Fig. 4 well fit the experimental points, as the displacements are small with respect to the gap between the resonator and the driving electrode. The results show a non-negligible data spreading, caused by the very reduced width of the resonator, which is thus affected by an unavoidable process dispersion.
+
+# B. Dynamic response
+
+In this subsection the experimental results representing the dynamic response of the resonators are reported. The tests have been carried out in the following way: through a quasi-stationary voltage $V_{A}$ applied between the driving plate and the resonator, the beam is slowly deflected until an established perturbed position. Then the voltage $V_{A}$ is instantaneously set to zero. As a consequence of this downward electrostatic force step, the resonator begins to oscillate around the rest position and through the sensing plate the value of the sensing capacitance $C_S(t)$ is real-time monitored, as reported in Fig. 5 (a).
+
+From this measurement the spectral response of the device can be calculated by means of the Discrete Fourier Transform. Fig. 5 (b) reports a typical result, showing a resonance frequency $f_{0} = 52.21 \mathrm{kHz}$ , with a quality factor $Q \approx 208$ .
+
+![](images/edadcef315c3236ed496c40b165bba0a7b494e983df3e2fae5b67ced29e857ae.jpg)  
+Fig. 6. Peak frequency shift of the resonators of the resonant accelerometer. The dashed curve represents the response at $0\mathrm{g}$ (where a small difference in the resonance frequency is the result of a process data spreading). The solid curves represent the spectral response at different external acceleration in the range $\pm 1\mathrm{g}$ .
+
+# IV. EXPERIMENTAL RESPONSE TO EXTERNAL ACCELERATIONS
+
+The response of the device to external accelerations has been measured in the range $\pm 1\mathrm{g}$ . The variation of the external applied acceleration is simply obtained through different inclinations of the device. The resonance frequency is acquired, as described in section III B, at different tilt angles between $-90^{\circ}$ and $+90^{\circ}$ . To simultaneously acquire the data from both the resonators, the driving and sensing pads of the two resonators have been short circuited. Fig. 6 reports the experimental results obtained acquiring simultaneously the data from the two sensing capacitances. The spectral response presents a typical double peak, due to the fact that the resonance frequencies of the two resonators are not equal, as a consequence of the process spreading already observed in the CV measurements. The results show that when a resonator is compressed (and the other one is at the same time stretched) its resonance frequency decreases (and that of the other resonator increases).
+
+The device linearity (see Eq. 3) is reported in Fig. 8. Being $\Delta f_{0}$ the frequency difference between the resonant peaks of the two resonators at $0\mathrm{g}$ , the experimental points represent the variation of the peak frequency difference $\Delta f - \Delta f_{0}$ as a function of the external acceleration in the range $\pm 1\mathrm{g}$ . A good linearity and an overall differential sensitivity larger than $430\mathrm{Hz / g}$ (at a resonance frequency of both resonators around $50\mathrm{kHz}$ ) is obtained.
+
+Fig. 8 reports a SEM picture of an unpackaged device. A detail of the point where the resonator is attached to the spring is shown in the close up.
+
+![](images/18a74118e52f83ee9794a35526e3de9073e06f07d3a00af43917a3dac1de762f.jpg)  
+Fig. 7. Variation of the peak frequency difference between the resonators $\Delta f - \Delta f_0$ as a function of the external acceleration in the range $\pm 1\mathrm{g}$ . $\Delta f_0$ corresponds to the peak frequency difference at $0\mathrm{g}$ . The device shows a good linearity and a sensitivity higher than $430\mathrm{Hz / g}$ .
+
+![](images/c926f9ea3d5ba7262f17b0d1e90635fc85b85c432eff979a4da8b2001c5aa891.jpg)  
+Fig. 8. Scanning Electron Microscope image of an unpackaged device. The detail shows the point where the resonator is attached to the spring. This point is chosen to have the maximum device sensitivity.
+
+# V. CONCLUSION
+
+First experimental results on an innovative uniaxial resonant accelerometer have been presented. The device has an overall area occupation lower than $(500\mu m^2)$ . Thanks to an optimization of the geometrical parameters, a very high differential sensitivity, close to $500\mathrm{Hz / g}$ (around a resonance frequency of $50\mathrm{kHz}$ ) has been obtained, with a good linearity in the range $\pm 1\mathrm{g}$ . The work in progress includes the redesign of the resonating parts of the accelerometers, to reduce a certain performance spreading caused by an underestimation of the process overetch, and the coupling of the device to a suitable readout electronics. A two dimensional accelerometer based on the same principle is also under development.
+
+# ACKNOWLEDGMENT
+
+Part of the experimental setup used in this work was funded by Fondazione Cariplo in 2007, within the project Dissipative and failure phenomena in Micro and Nano Electro Mechanical Systems.
+
+# REFERENCES
+
+[1] K. Biswas, S. Sen and P. K. Dutta, MEMS Capacitive Accelerometers, Sensor Letters Vol. 5, 471-484, 2007.   
+[2] A. Beliveau, G. T. Spencer, K. A. Thomas and S. L. Roberson, Evaluation of MEMS Capacitive Accelerometers, IEEE Design and Test of computers 48-56, Oct 1999.   
+[3] ST. Microelectronics, LIS244AL MEMS motion sensor, product data-sheet Rev1, June 2007.   
+[4] G. N. Nielson and G. Barbastathis, Dynamic Pull-In of Parallel-Plate and Torsional Electrostatic MEMS Actuators, Journal of Microelectromechanical Systems Vol. 15, n. 4, August 2006.   
+[5] L. A. Rocha, E. Cretu and R. F. Wolfenbuttel, Using Dynamic Voltage Drive in a Parallel-Plate Electrostatic Actuator for Full-Gap Travel Range and Positioning, Journal of Microelectromechanical Systems Vol. 15, n. 1, February 2006.   
+[6] M. Aikele, K. Bauer, W. Ficker, F. Neubauer, U. Prechtel, J. Schalk and H. Seidel, Resonant accelerometer with self-test, Sensors and Actuators A, 92, 161-167, (2001).   
+[7] A. A. Seshia, M. Palaniapan, T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Shimert, S. Montague, A vacuum packaged surface micromachined resonant accelerometer, Journal of Microelectromechanical Systems 11, 784-793, 2002.   
+[8] L. He, Y. P. Xu, A. Qiu, Folded silicon resonant accelerometer with temperature compensation, Proceedings IEEE Sensors 2004 1, 512 - 515, 24-27 Oct. 2004.   
+[9] S. X. P. Su, H. S. Yang, A. M. Agogino, A resonant accelerometer with two-stage microleverage mechanisms fabricated by SOI-MEMS technology, Sensors 5(6), 1214-1223, 2005.   
+[10] C. Comi, A. Corigliano, A. Merassi, B. Simoni, A surface micromachined resonant accelerometer with high resolution, Proceedings 7th Euromech Solid mechanics Conference Lisbon Portugal, Sept. 7-11, 2009.   
+[11] A. Corigliano, B. De Masi, A. Frangi, C. Comi, A. Villa, M. Marchi, Mechanical characterization of epitaxial silicon through on chip tensile tests, Journal of Microelectromechanical Systems 13(2), 200-219, 2004.   
+[12] A. Bokaian, Natural frequencies of beams under tensile axial load, J. of Sound and Vibration 142(3), 481-498, 1990.   
+[13] W. Stokey, Vibration of systems having distributed mass and elasticity, Shock and vibration handbook, C. Harris editor, McGraw-Hill, 1988.   
+[14] V. Ferrari, A. Ghisla, D. Marioli, A. Taroni, Silicon resonant accelerometer with electronic compensation of input-output cross-talk, Sensors and Actuators A 123-124, 258-266 (2005).   
+[15] C. Burrer, J. Esteve, A novel resonant silicon accelerometer in bulk-micromachining technology, Sensors and Actuators A 46-47, 185-189, 1995.   
+[16] G. Langfelder, A. Longoni and F. Zaraga, Low-noise real-time measurement of the position of movable structures in MEMS, Sensors and Actuators A 148 (2008) 401406.

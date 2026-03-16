@@ -1,0 +1,719 @@
+[
+    {
+        "type": "text",
+        "text": "Proceedings of the Eurosensors XXIII conference ",
+        "text_level": 1,
+        "bbox": [
+            275,
+            172,
+            715,
+            188
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A Small and High Sensitivity Resonant Accelerometer ",
+        "text_level": 1,
+        "bbox": [
+            154,
+            208,
+            838,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Pinto, D. Mercier, C. Kharrat, E. Colinet, V. Nguyen, B. Reig, S. Hentz  \nCEA-LETI-MINATEC, 17 rue des Martyrs 38054 Grenoble Cedex 9 France ",
+        "bbox": [
+            185,
+            249,
+            806,
+            281
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract ",
+        "text_level": 1,
+        "bbox": [
+            66,
+            297,
+            128,
+            311
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This abstract presents the design, the fabrication and the measurements of a very small and sensitive resonant accelerometer. The sensor is based on a strain sensitive vibrating beam attached to a mass. The vibration of the beam is electrostatically driven and the detection of the signal is capacitive. ",
+        "bbox": [
+            66,
+            327,
+            926,
+            373
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The sensor is fabricated thanks to potential \"In-IC\" compatible thin SOI-based technologies, allowing the patterning of submicron gaps. The beam dimensions are at the micron scale while the gap used in the capacitive detection is in the nanometer range (750 nm). ",
+        "bbox": [
+            64,
+            374,
+            926,
+            419
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The sensitivity of the accelerometer is measured with a phase lock loop (PLL) built using a lock-in amplifier (LIA) controlled with a computer program. The measured sensitivity is $22\\mathrm{Hz / g}$ and the maximum resolution is smaller than $5\\mathrm{mg}$ (5Hz integration bandwidth). ",
+        "bbox": [
+            64,
+            421,
+            926,
+            466
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The results presented in this paper show that the miniaturization of resonant accelerometers can lead to a good sensitivity and resolution. ",
+        "bbox": [
+            66,
+            467,
+            926,
+            497
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: MEMS, resonant sensing, accelerometer ",
+        "bbox": [
+            66,
+            514,
+            376,
+            526
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction ",
+        "text_level": 1,
+        "bbox": [
+            66,
+            571,
+            183,
+            584
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The resonant sensing technique is highly sensitive, has the potential for large dynamic range, good linearity, low noise and potentially low power. The detection principle is based on frequency change that is induced by rigidity changes in the resonator. The permanent quest for cost cuts has led to the use of potential \"In-IC\" compatible thin SOI-based technologies, which imposes drastic size reduction of the sensors. Combined with the need for in-plane actuation for fabrication and design simplicity, this implies a large reduction in detectability. Moreover nonlinearities occur sooner for small structures which reduces their dynamic range. On the way from MEMS to NEMS, a \"small\" MEMS resonant accelerometer has been fabricated. ",
+        "bbox": [
+            64,
+            602,
+            926,
+            708
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Fabrication Process ",
+        "text_level": 1,
+        "bbox": [
+            66,
+            727,
+            240,
+            742
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The process starts with a SOI wafer. The thickness of the SOI top layer is set at $4\\mu \\mathrm{m}$ and the thickness of the buried oxide $(1\\mu \\mathrm{m})$ was chosen in order to reduce the capacitance between the bulk and the structural layer. The MEMS structure is defined by a deep RIE etching process (Fig.1 (a)). Then, the Si resonant structure is protected by an oxide layer which is locally etched (Fig.1 (b))to define the future metallic bonding pads(Fig.1 (c)). The last step consists in removing the protective oxide and the buried oxide locally by vapour HF (Fig.1 (d)). This step has also been of particular difficulty, as the resonators were designed to be very compliant, in order to enhance the sensitivity. In-plane sticking has then been an issue, solved by the use of an exhaustive experimental campaign leading to the understanding of different parameters, like AC power and chamber temperature. ",
+        "bbox": [
+            64,
+            758,
+            926,
+            882
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "",
+        "bbox": [
+            66,
+            33,
+            165,
+            101
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ELSEVIER ",
+        "bbox": [
+            66,
+            102,
+            165,
+            118
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Available online at www.sciencedirect.com ",
+        "bbox": [
+            325,
+            33,
+            643,
+            47
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ScienceDirect ",
+        "bbox": [
+            352,
+            49,
+            613,
+            83
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Procedia Chemistry 1 (2009) 536-539 ",
+        "bbox": [
+            373,
+            106,
+            601,
+            118
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Procedia Chemistry ",
+        "bbox": [
+            744,
+            30,
+            926,
+            118
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "www.elsevier.com/locate/procedia ",
+        "bbox": [
+            720,
+            129,
+            926,
+            142
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "1876-6196/09 © 2009 Published by Elsevier B.V. Open access under CC BY-NC-ND license. doi:10.1016/j.proche.2009.07.134 ",
+        "bbox": [
+            66,
+            950,
+            689,
+            979
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d86eb69c71e9139b16b24d78ceefb0b2cbfee75af42d8fffc0f1e9ec7d7871a5.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            64,
+            64,
+            492,
+            115
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/71aa467dcd6954d5041e52672d77627e72db1c83c4775ff47ebf5cc22dd29a6f.jpg",
+        "image_caption": [
+            "(b) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            496,
+            67,
+            902,
+            115
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/7f84aa62b68edc0460e7fcd7b2e0ee8d6ebb6c2c1f7fd119b47dda6c41641a6d.jpg",
+        "image_caption": [
+            "(c) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            64,
+            138,
+            496,
+            188
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/326b619e52887c61f91ab612132ecaa6915284474279c457cd257e806ea6ace5.jpg",
+        "image_caption": [
+            "(d) ",
+            "Fig. 1. Sequence of the fabrication process "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            496,
+            138,
+            902,
+            188
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. Operation Principle ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            245,
+            250,
+            262
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The device is presented in Fig. 1 and 2, it consists in a resonant beam anchored to the substrate at one of its ends and anchored to the mobile mass at its other end. The mass is also anchored by one point. When an acceleration is applied to the mass, it moves following the degree of freedom given by its anchor and it changes the strain on the beam. This change in the beam strain causes a resonance frequency shift. To evaluate the sensor capabilities, an actuation electrode is designed close to the mass in order to use the electrostatic force to simulate the acceleration. The beam length is $200\\mu \\mathrm{m}$ , its width is $2\\mu \\mathrm{m}$ and its thickness is $4.2\\mu \\mathrm{m}$ . The gap between the beam and the excitation electrode is $1\\mu \\mathrm{m}$ while it is only $750\\mathrm{nm}$ between the detection electrode and the beam. The width of the excitation electrode is $20\\mu \\mathrm{m}$ , the width of the detection electrode is $112\\mu \\mathrm{m}$ and the mass dimension is $50\\mu \\mathrm{m}$ by $200\\mu \\mathrm{m}$ . The theoretical resonance frequency of the beam is $459\\mathrm{kHz}$ when the stress relaxation of the Si during mass release is taken into account. ",
+        "bbox": [
+            60,
+            277,
+            930,
+            433
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/36944417ddf1393b4a398c6d2ffe2a14f643d405cdb3224979265f8c69ff2c77.jpg",
+        "image_caption": [
+            "Fig. 2. Structure of the sensor ",
+            "Fig. 3. Photography of the accelerometer "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            51,
+            443,
+            944,
+            576
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.1. Measurement principle ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            630,
+            273,
+            648
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The frequency response presented in Fig. 4 is measured with a Lock-in amplifier (LIA). The accelerometer is placed in a chamber where the pressure is lower than $10^{-3}$ mbar at room temperature and the measurements are performed under probes. $\\mathrm{V_{ac}}$ is fed through the drive electrode, the DC voltage is applied on the beam and the detection electrode is connected to the input of the LIA. Considering the very low capacitance variations (a few tens of aF) and the motional resistance $(5.5\\mathrm{M}\\Omega)$ , obtaining a linear peak with high quality factors has required much electrical engineering so as to decrease the noise floor of the measurement scheme. ",
+        "bbox": [
+            60,
+            663,
+            928,
+            760
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "It is well known that the electrostatic force applied on the beam (in the case of small displacement vs the gap) can be written as: ",
+        "bbox": [
+            60,
+            761,
+            928,
+            792
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF = \\frac {1}{2} \\left(V _ {D C} + V _ {a c}\\right) ^ {2} \\frac {C}{g} = \\frac {C}{2 g} \\left[ V _ {D C} ^ {2} + \\frac {V _ {a c} ^ {2}}{2} + 2 V _ {a c} V _ {D C} \\cos (\\omega t) + \\frac {V _ {a c} ^ {2}}{2} \\cos (2 \\omega t) \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            62,
+            796,
+            569,
+            834
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Equation 1 ",
+        "bbox": [
+            856,
+            805,
+            924,
+            820
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $g$ is the electrode-beam gap, $V_{\\mathrm{DC}}$ is the biasing voltage and $V_{\\mathrm{ac}}$ is the actuation voltage. This equation shows that the beam may be driven with a signal at a $\\omega / 2$ frequency to obtain a beam movement at $\\omega$ . ",
+        "bbox": [
+            60,
+            836,
+            926,
+            867
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The results presented in Fig 4 are obtained by using an actuation signal at $\\omega /2$ and a detection signal at $\\omega$ . The use of a different frequency for the actuation and the detection prevents from coupling actuation and detection through ",
+        "bbox": [
+            60,
+            869,
+            928,
+            901
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "D. Pinto et al. / Procedia Chemistry 1 (2009) 536-539 ",
+        "bbox": [
+            336,
+            33,
+            663,
+            45
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "537 ",
+        "bbox": [
+            902,
+            33,
+            930,
+            45
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "parasitic capacitances. This technique allows a large noise floor reduction because the measured current (which represents the beam movement) is at a $\\omega$ frequency while the parasitic current at $\\omega /2$ is filtered by the LIA. ",
+        "bbox": [
+            60,
+            61,
+            928,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/b3e9c35b1a41cbe246a9f870d0e0b6fd4c90c28138ce8ebf0056caf4b688d049.jpg",
+        "image_caption": [
+            "Fig. 4. Measurement of the resonance frequency "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            319,
+            99,
+            693,
+            247
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The measurements are performed with $\\mathrm{V_{dc}} = 1\\mathrm{V}$ and $\\mathrm{V_{ac}} = 75\\mathrm{mV}$ . Fig 4 shows that the measured resonance frequency is $459.152\\mathrm{kHz}$ and the quality factor is around 35000, comparable to the state of the art [1]. The resonance frequency and the quality factor have been extracted by fitting the measurements to a Lorentzian function. ",
+        "bbox": [
+            60,
+            299,
+            930,
+            350
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2. Linearity considerations ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            363,
+            281,
+            380
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One way to build an accelerometer consists in implementing the resonant transducer with an electrical circuit such as a Phase Lock Loop that can automatically detect the frequency shifts due to external stimuli like accelerations. To use the transducer with a PLL the phase should vary continuously close to the resonance and one should avoid phase jump due to non linearity caused by excessive actuation and biasing voltages. A preliminary work consists in checking the limit voltages that can be used before reaching the linearity limits of the transducer as detailed in [3]. ",
+        "bbox": [
+            60,
+            396,
+            928,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Devices with only the beam (no mass) have been measured when the biasing and the actuation voltage were changed. The results presented in Fig 5 show that a jump in amplitude and in phase appear when the actuation voltage becomes too high. For $\\mathrm{V_{dc}} = 5\\mathrm{V}$ the frequency response starts to be non linear when the actuation voltage become higher than $81\\mathrm{mV}$ . The right $\\mathrm{V_{ac}}$ should be chosen to work in the linear regime. ",
+        "bbox": [
+            60,
+            493,
+            928,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/919991af290bb8cad84285f178476acba0dd43a166b903a0524332841232ab77.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            126,
+            561,
+            505,
+            760
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e76ee447533b01b40988a36e4e94adc97cc72eaefd2e6b65f7fefc8c56d5ab6.jpg",
+        "image_caption": [
+            "Fig. 4. Magnitude and phase for an output signal with $\\mathrm{V_{dc}} = 5\\mathrm{V}$ and $\\mathrm{V_{ac}} = 76\\mathrm{mv}$ (red) or $\\mathrm{V_{ac}} = 160\\mathrm{mv}$ (blue) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            518,
+            561,
+            893,
+            758
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.3. Evaluation of sensor capabilities ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            811,
+            347,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "To evaluate the sensor capabilities, a PLL has been built with voltage control oscillator and a phase comparator. It has been arbitrary chosen for convenience of the programming that the output phase of the reference signal would be zero when the MEMS is at the resonance frequency. If the phase at sensor output changes from zero, the VCO ",
+        "bbox": [
+            60,
+            843,
+            930,
+            890
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "538 ",
+        "bbox": [
+            62,
+            32,
+            90,
+            43
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "D. Pinto et al. / Procedia Chemistry 1 (2009) 536-539 ",
+        "bbox": [
+            336,
+            30,
+            663,
+            44
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "will adjust the actuation frequency until the phase comes back to zero (at the resonance frequency). The loop filter of the PLL is designed by $\\mathrm{H\\infty}$ loop shaping technique [5]. It consists on two main stages: 1) Shaping the open-loop frequency response by a pre-compensator to get high robust performances (maximum bandwidth, high-frequency noise reduction ...) and 2) applying $\\mathrm{H\\infty}$ optimization to robustly stabilize the shaped plant near the system bandwidth. The resulting controller is generated by a computer program that also controls the Lock In Amplifier. The LIA is used as a VCO and it measures the phase at the sensor output in real time. The device is placed in a chamber with a pressure smaller than $10^{-3}$ mbar. The actuation voltage $\\mathrm{V_{ac}}$ is $75~\\mathrm{mV}$ and the biasing voltage $\\mathrm{V_{dc}}$ is $1\\mathrm{V}$ . ",
+        "bbox": [
+            60,
+            61,
+            931,
+            183
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fig.6 (a) presents the frequency shift of the beam resonance frequency as a function of the DC voltage applied step by step on the mass. Knowing this voltage, hence the equivalent acceleration and the frequency shift; the sensitivity of the accelerometer is deduced, equal to $22\\mathrm{Hz / g}$ . The minimum acceleration detected by the sensor is evaluated by looking at the smallest $\\mathrm{V_{dc}}$ step on the mass excitation that leads to a measurable frequency shift. The measurements presented in Fig.6 demonstrate that $0.03\\mathrm{V}$ steps are still detectable, equivalent to less than $5\\mathrm{mg}$ acceleration resolution, with $5\\mathrm{Hz}$ integration bandwidth. Knowing that the expected full scale should be around a few tens $\\mathrm{g}$ , the accelerometer class should be around $10^{-4}$ , although this includes the still unmatched sources of noise coming from the device itself, as well as the measurement scheme, and the performances of the PLL, these figures are comparable to the literature results [2], but with a surface reduction of around one order of magnitude?. ",
+        "bbox": [
+            60,
+            185,
+            931,
+            327
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea3d950e0b44722c034555dbf4a89985caea803def20158112a3aa110898072b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            106,
+            332,
+            459,
+            495
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/617a23ae5656b21a6353603bb7ac8c0c7c8c473c0ae02b7d17e3e21259035b8b.jpg",
+        "image_caption": [
+            "Fig. 6. (a) Resonance frequency as a function of DC Voltage applied on the mass excitation (b) Minimum frequency shift measurable "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            470,
+            332,
+            902,
+            495
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4. Conclusion ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            559,
+            174,
+            572
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A small resonant accelerometer based on a strain sensitive vibrating beam has been designed and fabricated using SOI micromachining techniques. Its linearity domain has been studied and the sensor working in the linear regime has been implemented with a PLL to determine its sensitivity. The measurements have shown that the miniaturization can lead to a good sensitivity $(22\\mathrm{Hz / g})$ and good resolution (less than $5\\mathrm{mg}$ ), despite a sensor surface as small as low as around $0.05\\mathrm{mm}^2$ . ",
+        "bbox": [
+            60,
+            590,
+            930,
+            669
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            683,
+            154,
+            696
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] E.P. Quevy, S.A. Bhave, H. Takeuchi, T.-S. King, R.T. Howe, Proc. Solid-State Sensor, Actuator and Microsystems workshop 2004, pp 360-363 ",
+            "[2] Omega Sensors. Technology datasheet. Technical report ",
+            "[3] Kacem N., Hentz S., Pinto D., Reig B., Nguyen V., Non-linear dynamics of micro/nanomechanical beam resonators: improving the performances of NEMS-based sensors, Nanotechnology 20 (2009) 275501 (11pp) ",
+            "[4] G. Claes, R. Van Hoof, B. Du Bois, G. Van Barel, S. Stoffels, S. Decoutere, V. Nguyen, S. Hentz, P. Robert, J.-P. Celis and A. Witvrouw, Processing and characterization of poly-SiGe micromachined resonators and comparison with SOI, Eurosensor XXII, September 2008. ",
+            "[5] C. Kharrat,E. Colinet,A. Voda, H∞ Loop shaping control for PLL-based mechanical resonance tracking in NEMS resonant mass sensors, IEEE Sensors 2008, pp1135 - 1138, Oct. 2008 "
+        ],
+        "bbox": [
+            62,
+            698,
+            928,
+            854
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Corresponding author: Delphine Pinto, CEA-LETI-MINATEC, 17 rue des Martyrs 38054 Grenoble Cedex 9, FRANCE, Tel: +33 (0)4 38 78 91 01, Fax: +33 (0)4 38 78 51 40, E-mail: delphine.pinto@cea.fr ",
+        "bbox": [
+            60,
+            867,
+            930,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "D. Pinto et al. / Procedia Chemistry 1 (2009) 536-539 ",
+        "bbox": [
+            336,
+            33,
+            663,
+            45
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "539 ",
+        "bbox": [
+            902,
+            33,
+            930,
+            45
+        ],
+        "page_idx": 3
+    }
+]

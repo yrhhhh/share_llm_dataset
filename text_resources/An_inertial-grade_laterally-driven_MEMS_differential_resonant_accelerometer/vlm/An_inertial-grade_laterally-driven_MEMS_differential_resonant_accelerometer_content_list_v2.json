@@ -1,0 +1,1251 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "An Inertial-grade laterally-driven MEMS Differential Resonant Accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                117,
+                66,
+                879,
+                112
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Seonho Seok, Hak Kim, and Kukjin Chun "
+                    }
+                ]
+            },
+            "bbox": [
+                305,
+                125,
+                691,
+                143
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Seoul National University, Korea, ssh@mintlab.snu.ac.kr "
+                    }
+                ]
+            },
+            "bbox": [
+                305,
+                151,
+                691,
+                166
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Seoul National University, Korea, kchun@mintlab.snu.ac.kr "
+                    }
+                ]
+            },
+            "bbox": [
+                297,
+                172,
+                699,
+                188
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                239,
+                156,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Inertial-grade laterally-driven differential resonant accelerometer (DRXL) using gap sensitive electrostatic stiffness change effect is designed, fabricated and tested by using the mixed micromachining process based on (111) single crystalline silicon. Resonant accelerometer consists of double ended tuning fork (DETF) and two proof masses in same plane, so it can detect in-plane acceleration. The each pair with a proof mass and resonator is completely isolated, so the coupling of mechanical vibration between them is protected. The fabricated accelerometer shows a sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "64\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per resonator at nominal frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "24,888\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and a bias stability of 5.2 ug. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                253,
+                482,
+                446
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                459,
+                166,
+                474
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accelerometer, resonant, laterally, inertial "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                474,
+                364,
+                489
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                500,
+                212,
+                513
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Resonant sensors have many advantages over the conventional capacitive type: wide dynamic range, quasi-digital nature of the output signal, and the inherent continuous self-test capability. The quartz-based resonant accelerometers have been used for navigation-grade sensing, and recently, some research groups have announced several kinds of MEMS (Micro Electro Mechanical Systems)-based resonant accelerometers [1-3]. The MEMS-based resonant accelerometer can be classified by a fabrication method or operational principle. The principle that is commonly used for the resonant sensors is the resonant frequency shift induced by a change in resonator stress or mass change. The majority of the conventional resonant sensors have feature of force sensing, so it is prone to be affected by an internal residual stress and fabrication error, especially for the case of the polysilicon vibrating structures. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                516,
+                482,
+                767
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Some recent works have focused on bulk or mixed (bulk and surface) micro-machining process to implement the resonant accelerometer. In the viewpoint of fabrication process, the surface micromachining has already proven itself as a manufacturable technology. To increase the performance of the surface micromachined accelerometer, it is advantageous to use thick polysilicon as structural layer. However, the thick polysilicon process has problems of mechanical stress and poor repeatability. Another "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                770,
+                480,
+                905
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "important issue on fabrication of resonant sensor is a vacuum packaging. And from a commercial point of view, it is desirable to package hermetically in wafer level. Because the conventional method of individual packaging is so complicated, it is difficult to miniaturize the device and to reduce the fabrication cost. A gap sensitive electrostatic change effect as the new sensing principle was presented [4]. Mechanical stiffness of the spring is reduced by the electrostatic force, which result in the change of the output frequency. In the previous work, the accelerometer was fabricated by the epi-polysilicon process. The residual and shear stress of the polysilicon may result in the degrade of the performance of the accelerometer. The mismatch of the resonant frequency may demolish the advantages of the differential scheme because of the mechanical resonance characteristics. The differential scheme has inherently the advantages with a wide dynamic range and a good linearity, which is essential to make the high performance accelerometer. So, single-crystal silicon as the structure material was chosen and the micromachining process to use that is developed to implement the device. The process called as a mixed micromachining process makes it possible to use single crystalline silicon as structure layer with a bottom polysilicon layer. In this study, a single-crystal silicon structure was adopted to implement the proposed resonant accelerometer and its wafer level vacuum packaging. The fabricated resonant accelerometer shows  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "128\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of sensitivity,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5.2\\mathrm{uG}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of a bias stability at nominal frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "24.9\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of bandwidth. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                238,
+                913,
+                667
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DESIGN "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                516,
+                678,
+                581,
+                691
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The concept of the proposed x-axis accelerometer is shown in Fig. 2. The DETF resonator is vibrating to the parallel direction of the surface with its natural frequency without external acceleration. The DETF resonator is placed at the center of the two identical proof masses. If acceleration is applied to this accelerometer, the proof masses move to same direction while the DETF resonator is vibrating. The sensing electrodes attached to each clamped-clamped beam of DETF are located in opposite side of proof mass. Therefore, the distance of one sensing gap is narrower and that of the other sensing gap is wider than initial gap. Such a different distance in gaps between resonators and sensing electrodes causes different electrostatic forces generating electrostatic stiffness. So, the one resonant frequency is "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                693,
+                913,
+                902
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "0-7803-8692-2/04/$20.00 ©2004 IEEE. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                938,
+                372,
+                953
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "654 "
+                    }
+                ]
+            },
+            "bbox": [
+                483,
+                938,
+                514,
+                952
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:22:13 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                962,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "higher and the other resonant frequency is lower. The output of the x-axis resonant frequency is taken as subtracted value between output frequencies in each resonator. Differential frequency output scheme between two resonators has advantages of a good linearity, high signal-to-noise (SNR) compared with single frequency output scheme. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                66,
+                482,
+                171
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8817eb4b33d07c5b1a26ad044212982e5c2b64835788b10bcf6c969cbdd7c3ac.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Conceptual Drawing of Laterally-Driven Resonant Silicon Accelerometer "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                109,
+                174,
+                460,
+                361
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Using governing equation based on electrostatic stiffness changing effect, output characteristic of the proposed accelerometer is estimated. The simulation result is shown in Fig. 2. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                419,
+                482,
+                479
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/88f04932e765f2e95ec5b9f9afc5044f5f122164caa02475c00ffa35da31e87f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                89,
+                500,
+                475,
+                694
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "FABRICATION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                741,
+                202,
+                753
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A novel micromachining process is developed to use single crystalline silicon as structure layer because it has better mechanical properties than polysilicon. The process is called mixed micromachining process because it uses surface micromachining process and bulk micromachining process partially. The mixed micromachining process is shown in Fig. 2. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                756,
+                482,
+                859
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/439fa8fe0d1969a576296353c90305b42df5fe16b7b31a1dd9bdd9dd22256519.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                65,
+                705,
+                109
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/16bc6db6a2746dc4c3201a945679f6dd4071cc1f51a2bcd6b2de3f63ba30217d.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                112,
+                705,
+                161
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/df4471bdbfd4da847b671048ae8b5e94564f7b096afc50a5884d698181267454.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                161,
+                705,
+                222
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c72378961aed231362bb84b13d9218011c1f77e411112e95132f0077a29b6bc3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "TEOS "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Nitride "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                222,
+                705,
+                280
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b4b8db6f91aff8a46042e40b9264fe84df7cbf97968f1668ea15ca98bf90c030.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                691,
+                65,
+                908,
+                132
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/445cad38d95b33ceafb58630ab00bfa43ecc5993d8908755111eb1f0e5d31561.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(1)Unite for tneurment htp "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 2 Process sequences for the fabrication of DRXLs. (a) 2 um-thick PECVD oxide & 0.2 um-thick LPCVD nitride patterning, (b) 0.5 um-thick bottom polysilicon patterning, (c) Nitride  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(0.2\\mathrm{um})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " & PECVD oxide  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\mathrm{um})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " deposition, (d) Intermediate polysilicon deposition & CMP, (e) Substrate glass bonding, (f) CMP for structure layer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(40\\mathrm{um})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and (g) Structure layer patterning & Release "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                691,
+                145,
+                908,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The SEM pictures of the fabricated DRXL are shown in Fig.3. "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                441,
+                911,
+                472
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/04c0cfeee1081b25c3aca99167855c01d01c4a79b10717b8aad0ad79b8dbac61.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                547,
+                493,
+                883,
+                650
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/403cc927feb2401ffbdca7ed4d9f1169563166c2e3d7ca495700302f6b5fe5e3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) DRXL "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(b) Resonator (DETF) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. The SEM pictures of the fabricated laterally-driven DRXL "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                545,
+                667,
+                883,
+                825
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "655 "
+                    }
+                ]
+            },
+            "bbox": [
+                483,
+                938,
+                513,
+                952
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:22:13 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                962,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "MEASUREMENTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                66,
+                227,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Signal processing unit for DRXLs consists of sensing parts (charge amplifier, high pass filter, amplifier) and driving parts (phase shifter, rectifier, comparator, amplifier) as shown in Fig. 4. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                85,
+                482,
+                147
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/04bea005d32a23f4892e0e4681f0c307b5f66e55a30f2e6e4916f8801954541e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. Signal-processing unit for DRXL "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                83,
+                162,
+                488,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In sensing parts, the minute signal from the accelerometer is detected and amplified by charge amplifier, the unwanted signal such as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "60\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " noise is rejected in high pass filter and output signal is generated by amplifying the resultant signal. For driving resonator of DRXL, the output signal in sensing parts is used to generate driving signal. The phase shifter and rectifier are adopted for self-oscillation and dc voltage respectively, the comparator is used to make square-wave signal and the amplifier is used to adjust the amplitude of driving signal. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                409,
+                482,
+                556
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fabricated accelerometer is tested by applying the gravitational force of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". One resonator shows sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "64\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at nominal frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "23.4\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the other resonator shows sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "64\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at nominal frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "33.4\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as shown in Fig. 5. Therefore, the differential output between two resonators shows  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "128\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The mechanical quality factor is about 200. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                579,
+                482,
+                696
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7514dffbd9116e62e2f2126adf62c6e0f79fadcae64502e8a4c2f8262c89f53f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. Tumble test result "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                86,
+                718,
+                434,
+                896
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The output frequency fluctuation is important factor to determine the resolution of DRXL, so the Allan variance is measured using SR(Stanford Research)620 frequency counter. The measured result is shown in Fig. 6. The resonant frequency is measured at a different sampling time; 0.01 sec, 0.1 sec, 1 sec, 10 sec. At each sampling time, the frequency is measured 5 times repetitively and averaged. As the sampling time larger, the Allan variance converges a certain value as shown in Fig. 6. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                104,
+                913,
+                238
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f259dcb1f47a08c9b5926d318dd8698e387ee3bb59a634fc3756ff904a15fe0e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. Measured Allan variance "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                526,
+                268,
+                895,
+                477
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The bandwidth of DRXL is also important parameter, so it is measured by applying a step function electrically to proof mass of the accelerometer. The measured output signal for fabricated accelerometer is shown in Fig. 7. The estimated bandwidth is about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "110\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                517,
+                911,
+                590
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f00ed4992a9cebcf453fd295f4ceb6e36e021fb30f23d716c86172eeb8dfc798.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. Measured Bandwidth "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                611,
+                911,
+                800
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "656 "
+                    }
+                ]
+            },
+            "bbox": [
+                483,
+                938,
+                513,
+                952
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:22:13 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                962,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/6b418160a0f537c15f98eac6a50d64c9c513a8bfeb00514527b0e5dcd8dfa9b7.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>Performance Parameter</td><td>Value</td></tr><tr><td>Sensitivity [Hz/G]</td><td>128</td></tr><tr><td>Bias Stability [uG]</td><td>5.2</td></tr><tr><td>Bandwidth [Hz]</td><td>110</td></tr><tr><td>Resonant Frequency [kHz]</td><td>24.9</td></tr><tr><td>Frequency Stability [ppb]</td><td>290</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                76,
+                102,
+                490,
+                224
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CONCLUSIONS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                241,
+                210,
+                255
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A differential resonant accelerometer, which utilizes the electrostatic stiffness changing effect of an electrostatic torsional actuator, was proposed and fabricated using  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "<111>"
+                    },
+                    {
+                        "type": "text",
+                        "content": " single-crystal silicon as the structure material. The mixed-micromachining process was developed using pyrex glass substrate and 40 um-thick single crystal silicon with glass cap for wafer level vacuum packaging. The fabricated accelerometer showed the sensitivity of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "64\\mathrm{Hz / G}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per resonator. The measured bias stability estimated by Allan Variance of accelerometer output showed  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5.2~\\mathrm{uG}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Therefore, the developed accelerometer is suitable for navigational application. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                260,
+                482,
+                438
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGMENTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                467,
+                267,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors sincerely appreciate that the device was fabricated by ISRC(Inter-university Semiconductor Center) and MTEC(Microsystems Technology Center) in Seoul National University, and would like to special thanks to Samsung Electronics Co. and Samsung Advanced Institute of Technology for their contribution. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                482,
+                482,
+                571
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                66,
+                633,
+                80
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] D. W. Burns, R. D. Horning, W. R. Herb, J. D. Zook, and H. Guckel, “Resonant microbeam accelerometer,” The 8th International Conference on Solid-State Sensors and Actuators, and Eurosensors IX (Transducers '95), Stockholm, Sweden, June 25-29, 1995, pp.659-662. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] T. V. Rozhart, H. Jerman, J. Drake, and C. de Cotiis, \"An inertial-grade, micromachined vibrating beam accelerometer,\" \"The 8th International Conference on Solid-State Transducers and Actuators, and Eurosensors IX (Transducers '95), Stockholm, Sweden, June 25-29, 1995, pp.656-658. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] M. Helsel, G. Gassner, M. Robinson and J. Woodruff, \"A Navigation Grade Micro-Machined Silicon Accelerometer,\" IEEE Position Location and Navigation Symposium, April 11-15, 1994, pp.51-58. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] B. L. Lee, C. H. Oh, Y. S. Oh, and K. Chun, “A Novel Resonant Accelerometer: Electrostatic Stiffness Type”, The 10th International Conference on Solid State Sensors and Actuators (Transducer '99), Sendai, Japan, June 7-10, 1999, pp.1546-1549. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] A. A. Seshia, M. Palaniapan, T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, and S. Montague, \"A Vacuum Packaged Surface Micromachined Resonant Accelerometer,\" Journal of Microelectromechanical systems, Vol. 11, No. 6, Dec. 2002, pp.784-793. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] K. H. Han and Y. H. Cho, \"Self-balanced High-resolution Capacitive Microaccelerometers using Branched Finger Electrodes with High-amplitude Sense Voltage,\" IEEE the 5th Annual International Conference on Micro Electro Mechanical System (MEMS '02), Las Vegas, Nevada, USA, Jan. 20-24, 2002, pp.714-717. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                89,
+                916,
+                611
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Measured results are summarized in Table. 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                68,
+                385,
+                80
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "657 "
+                    }
+                ]
+            },
+            "bbox": [
+                483,
+                938,
+                513,
+                952
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:22:13 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                962,
+                870,
+                974
+            ]
+        }
+    ]
+]

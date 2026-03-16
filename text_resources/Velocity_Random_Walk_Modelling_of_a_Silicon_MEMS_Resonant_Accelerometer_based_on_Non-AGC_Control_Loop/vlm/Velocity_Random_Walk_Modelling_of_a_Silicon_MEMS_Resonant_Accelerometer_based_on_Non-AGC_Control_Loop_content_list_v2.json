@@ -1,0 +1,1714 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Velocity Random Walk Modelling of a Silicon MEMS Resonant Accelerometer based on Non-AGC Control Loop "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                134,
+                144,
+                867,
+                192
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dong Li, Qiancheng Zhao and Jian Cui* "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                201,
+                672,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—Automatic gain control (AGC) is widely used in the closed-loop drive circuit of silicon resonant accelerometer, but the non-AGC scheme is rarely reported. In this paper, a simplified velocity random walk model of a non-AGC scheme which uses comparator instead of AGC module is established. Firstly, for linear devices, we construct the phase noise model of the according to the Leeson model. Then, we get the transmission characteristics of the comparator noise by measurement. Finally, we predict that the white frequency noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(2.706\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at output is introduced by the amplifier  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1.754\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the comparator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(2.060\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The predict value is in good agreement with the measurement result of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.818~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This model provides guidance for further optimization of resonant accelerometer performance. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                249,
+                490,
+                425
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                221,
+                429,
+                352,
+                442
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MEMS accelerometers are widely used in industry, military, consumer and other fields because of its low power consumption and compact size.[1] Among them, MEMS silicon resonant accelerometer(SRA) has been widely concerned because of its high precision, quasi digital output and strong anti-interference.[2-5] Generally, the driving circuit of resonant accelerometer includes two types: automatic gain control(AGC) scheme[4,6] and non-AGC scheme[7,8]. AGC module can control the resonance displacement constant, so as to reduce the influence of environment such as temperature on SRA. However, AGC has complex structure, high power consumption and high 1/f noise. Therefore, more researchers focus on the non AGC scheme. The comparator is the most commonly used to replace AGC modular in non-AGC schemes. Using comparator to drive MEMS resonant accelerometer can simplify the circuit structure, reduce the noise introduced by AGC module, and reduce power consumption. Many researchers use comparator instead of AGC module to drive resonant accelerometer and obtain good results [7, 8]. However, as a nonlinear device, it is difficult to analyze the noise characteristics of the comparator systematically, so the influence of the comparator on the performance of the accelerometer is hard to get. "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                450,
+                489,
+                763
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, the velocity random walk noise model of the closed-loop drive circuit including the comparator is constructed by measuring the noise transmission characteristics of the comparator. By analyzing the phase noise model, the white frequency noise of the resonant "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                768,
+                490,
+                836
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "accelerometer is predicted, which is in good agreement with the measurement results. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                245,
+                910,
+                271
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. NOISE MODELING OF RESONANT LOOP "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                559,
+                280,
+                857,
+                293
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Phase Noise Modelling for Liner Modules "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                300,
+                830,
+                315
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5076aa1153d18cb40126ad8d2076c4ce4e53b377fa8587438834008c1755c63f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Example of a figure caption. (figure caption) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                319,
+                910,
+                471
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The phase noise model of linear modules such as amplifiers can be constructed according to the Leeson model[9]. The resonant system is shown in Fig 1. Among them, \"AMPI\", \"AMP2\" and \"Phase Shift\" correspond to preamplifier, differential amplifier and phase shifter respectively, which can be considered as linear module. \"Comparator\" is nonlinear module which is ignored temporarily and only linear devices are considered.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H1(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H2(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "H3(s)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the transfer function of the corresponding module, while  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nl}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{n2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the noise sources. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                500,
+                912,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "First, we analyze the effect of the resonator noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " on the output. The transfer function from resonator noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to the output noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is: "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                650,
+                912,
+                690
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {X (s)}{V _ {v b} (s)} = \\frac {G (s) H _ {1} (s) H _ {2} (s)}{1 - H _ {1} (s) H _ {2} (s) H _ {3} (s) G (s)} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1739a1959376f38cd2848c260dd786a54ccfdc1234698533a66fef7d2d071895.jpg"
+                }
+            },
+            "bbox": [
+                589,
+                698,
+                910,
+                730
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G (s) is the transfer function of the resonator: "
+                    }
+                ]
+            },
+            "bbox": [
+                529,
+                736,
+                836,
+                750
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "G (s) = \\frac {(K / M) s}{s ^ {2} + \\frac {\\omega_ {n}}{Q} s + \\omega_ {n} ^ {2}} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/6fe5e9c5099230353467456f5f3188e47945cc5283de3242a98e3a2675dd0364.jpg"
+                }
+            },
+            "bbox": [
+                628,
+                758,
+                910,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "K"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a constant coefficient, which is determined by the structure and size of the resonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf{M}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the mass of the "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                807,
+                912,
+                834
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "*Resreach supported by ABC Foundation. "
+                    }
+                ]
+            },
+            "bbox": [
+                102,
+                858,
+                329,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dong. Li is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, Peking University, Beijing 100871, P. R. China (corresponding author to e-mail: a67870007a@163.com). "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                869,
+                487,
+                913
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Jian Cui is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                913,
+                487,
+                935
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Peking University, Beijing 100871, P. R. China. (corresponding author to e-mail: eric.cuijian@pku.edu.cn). "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                857,
+                910,
+                880
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Qiancheng. Zhao is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, Peking University, Beijing 100871, P. R. China. (corresponding author to e-mail: zqc@pku.edu.cn). "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                880,
+                910,
+                925
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "2021 IEEE 16th International Conference on Nano/Micro Engineered and Molecular Systems (NEMS) | 978-1-6654-1941-3/21/$31.00 ©2021 IEEE | DOI: 10.1109/NEMS51815.2021.9451527 "
+                    }
+                ]
+            },
+            "bbox": [
+                11,
+                197,
+                31,
+                929
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Proceedings of the 16th Annual IEEE International Conference on Nano/Micro Engineered and Molecular Systems April 25-29, 2021 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                17,
+                403,
+                53
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-0-7381-2429-2/21/$31.00 © 2021 IEEE "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                952,
+                379,
+                964
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1461 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                952,
+                515,
+                963
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:54:24 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                964,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{\\mathrm{n}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is resonant frequency and Q is the quality factor. In the resonant state, by taking equation (2) into equation (1), the transfer function can be obtained as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                122,
+                494,
+                163
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {X (s)}{V _ {n b} (s)} = \\frac {\\omega_ {n} / Q}{H _ {3} (s)} \\times \\frac {s}{s ^ {2} + \\omega_ {n} ^ {2}} \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/df88418e7e862abfa4a35f03153346ee4b42eab512483c05b37b807918fbdf9b.jpg"
+                }
+            },
+            "bbox": [
+                211,
+                171,
+                492,
+                203
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The noise power spectral density of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be obtained by squaring equation (3): "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                207,
+                490,
+                236
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {x _ {-} V n b} (\\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{\\left| H _ {3} (j \\omega_ {n}) \\right| ^ {2} Q ^ {2}} \\left| \\frac {j \\omega \\omega_ {n}}{\\omega_ {n} ^ {2} - \\omega^ {2}} \\right| \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/787f122fc6e4d7bd88bda821e8eda44c866b171c8189268818e8dac6ce312253.jpg"
+                }
+            },
+            "bbox": [
+                166,
+                243,
+                494,
+                280
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Let  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega = \\Delta \\omega +\\omega_{n}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " equation (4) can be written as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                109,
+                286,
+                487,
+                300
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {x _ {-} V n b} (\\Delta \\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{\\left| H _ {3} (j \\omega_ {n}) \\right| ^ {2} Q ^ {2}} \\left(\\frac {\\omega_ {n}}{2 \\Delta \\omega}\\right) ^ {2} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2eb8b166e68b2798aca6a7f6bce5607cecf2854dbb487c166ef3fccd0b714f42.jpg"
+                }
+            },
+            "bbox": [
+                166,
+                309,
+                494,
+                344
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The power spectrum of phase noise at the output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X"
+                    },
+                    {
+                        "type": "text",
+                        "content": " introduced by resonator noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{nb}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is: "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                349,
+                489,
+                377
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {\\varphi_ {-} V n b} (\\Delta \\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{2 C | H _ {3} (j \\omega_ {n}) | ^ {2}} \\left(\\frac {\\omega_ {n}}{2 Q \\Delta \\omega}\\right) ^ {2} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9bd4b665fb42021b6b50b96f55fd942c8a805960b12d2982def52e39018c17fc.jpg"
+                }
+            },
+            "bbox": [
+                166,
+                384,
+                494,
+                419
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the average power of carrier. The influence of other noise sources on the phase noise at the output can also be calculated by the above method. Finally, the total phase noise at the output is as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                423,
+                489,
+                477
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} S _ {\\varphi} (\\Delta \\omega) = b _ {0} + \\frac {b _ {- 2}}{\\Delta \\omega^ {2}} \\\\ = \\frac {1}{2 C} \\left\\{ \\begin{array}{l} {\\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\left[ \\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} \\right.} \\\\ + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\overline {{V _ {n 2} ^ {2}}} + \\left(\\frac {1}{H _ {3}}\\right) ^ {2} \\overline {{V _ {n b} ^ {2}}} ] \\left(\\frac {\\omega_ {n}}{2 Q \\cdot \\Delta \\omega}\\right) ^ {2} \\end{array} \\right\\} \\tag {7} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f02ddec1d09aabd5e57f724bc1a2ec975e72050613b9df910571d797f854e071.jpg"
+                }
+            },
+            "bbox": [
+                121,
+                486,
+                492,
+                578
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Measurement of Noise Transmission Characteristics of Comparator "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                85,
+                584,
+                472,
+                612
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The noise characteristics of the comparator are very complex, and are related to the threshold voltage and the amplitude of the input signal. We have measured the noise characteristics of the comparator at the point of work in closed-loop circuit, which can be seen as linear, as shown in Fig 2. According to the transmission characteristics of comparator noise, the output noise of the comparator can be simplified as the sum of the input noise multiplied by a fixed gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(K_{cmp})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a fixed noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{nc})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " introduced by the comparator, as shown in Fig 1. The noise transfer characteristics of the comparator can be simplified as: "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                614,
+                489,
+                758
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "Y = K _ {c m p} X + V _ {n c} \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d8ba75d0bb0bd24096a4a8c4d2e137be69539a0368eb3a780d550eb23d9c48ab.jpg"
+                }
+            },
+            "bbox": [
+                233,
+                777,
+                477,
+                796
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The modified spectral density equation of phase noise is as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                802,
+                487,
+                828
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2ad10a95ee3bef8d0de925e2708d392c3fd9cb8f8efed32a4d2fd23baa3afb5f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Noise transfer characteristic curve of comparator "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                507,
+                131,
+                902,
+                339
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l}S _ {\\varphi} (\\Delta \\omega) = b _ {0} + \\frac {b _ {- 2}}{\\Delta \\omega^ {2}}\\\\= \\frac {1}{2 C} \\left\\{\\begin{array}{l}\\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\left[ \\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} \\right.\\\\+ H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\overline {{V _ {n 2} ^ {2}}} + \\left(\\frac {1}{K _ {c m p} H _ {3}}\\right) ^ {2} \\left(\\overline {{V _ {n c} ^ {2}}} + \\overline {{V _ {n b} ^ {2}}}\\right)\\left. \\right]\\left(\\frac {\\omega_ {n}}{2 Q \\cdot \\Delta \\omega}\\right) ^ {2}\\end{array}\\right\\}\\end{array}\\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/38cff07e7f4f7c9fade33a1640e254a31f0b83fa291b75b5cc8be596ab3fdc10.jpg"
+                }
+            },
+            "bbox": [
+                507,
+                376,
+                909,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From equation (9), we can see that the white phase noise is mainly affected by the noise of the amplifiers: Amp1 and Amp2, while the white frequency noise is affected by all modules in the resonant loop. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                467,
+                910,
+                522
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. EXPERIMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                653,
+                528,
+                764,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to verify the proposed noise model, we test the noise performance of the SRA which is driven by comparator. Figure 3 shows the structure of SRA that mainly consists of a proof mass, a pair of double-ended tuning forks (DETF)[10], two micro-leverages, four folded beams, and a supporting structure. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                548,
+                910,
+                628
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/016b5150ca396bd252d34c9897c1c84a4140931ee9d43e2c3cb8bad665d59728.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. Optical photos of resonant accelerometer structure "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                512,
+                631,
+                915,
+                889
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1462 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                951,
+                517,
+                961
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:54:24 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cf30ff93941e92dfb97be77c9be0774ab20221314d8daf6dd6ad9f2776bf305e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. Closed loop driving circuit of resonant accelerometer based on comparator "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                87,
+                119,
+                489,
+                331
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4 is the circuit used in the experiment, which uses a comparator to drive the SRA. The circuit consists of four modules: preamplifier, differential amplifier, phase shifter and comparator. "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                375,
+                489,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "First, we will measure the power spectral density of the voltage noise at the output and calculate the white frequency noise according to it. Then, we will measure the SRA output for one hour and calculate its Allan variance. Theoretically, the velocity random walk obtained by Allan variance should be consistent with the white noise frequency calculated previously. "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                434,
+                489,
+                528
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Power Spectrum Noise Measurement and Frequency White Noise Calculation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                533,
+                472,
+                560
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The voltage power spectral density at output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{X}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is shown in Figure 5, where the voltage white noise is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15.9~\\mu \\mathrm{V} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The white phase noise can be calculated by voltage white noise. According to equation (9), if the white phase noise is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the white frequency noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b_{-2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be calculated by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and comparator noise. "
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                562,
+                490,
+                644
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b141f4bced5d58aa4b3400a45acdca6b70bc5211d639f4020419e7dead01624e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Spectral density of voltage noise at output "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                87,
+                656,
+                489,
+                885
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/31d12089819099c6d317fcd4c7baccf0e578ee440fca7a2f4f7765814ea4eb75.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE I. NOISE CALCULATION "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td colspan=\"2\">Frequency noise spectrum</td></tr><tr><td colspan=\"2\">h0(White frequency noise)</td></tr><tr><td>Amplifier contribution</td><td>Comparator contribution</td></tr><tr><td>1.754 μg/√Hz</td><td>2.060 μg/√Hz</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                515,
+                137,
+                904,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to the noise model, the white noise contributed by the comparator is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.060~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the noise of the amplifier is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.754~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                225,
+                910,
+                264
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Time Domain Test and Allan Variance Analysis "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                505,
+                270,
+                858,
+                285
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We use the comparator-driven circuit to drive SRA and measure the output of SRA for one hour. The sampling rate is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The time domain diagram of SRA output is shown in Figure 6. It can be seen in Figure 6 that the output acceleration of SRA has a significant drift due to the influence of temperature. Because the output noise of SRA is obviously less than the drift, the frequency white noise of SRA can not be obtained from the time domain diagram. We use Allan variance to analyze the short-term stability of SRA[11]. Generally, the lowest point of Allan variance represents the flicker noise corresponding to its bias instability, and when  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau = 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", it represents the velocity random walk, which is related to frequency white noise. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                287,
+                912,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7 shows the Allan deviation of the SRA output one hour acceleration. It can be seen that the bias instability is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.93\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the corresponding white noise is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.82\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                461,
+                912,
+                505
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to the relationship between Allan variance and frequency spectral density: "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                509,
+                910,
+                536
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma_ {y} ^ {2} (\\tau) = \\frac {h _ {0}}{2} \\tau^ {- 1} \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f22dad227e0e835415929c949395ba963dd809f7b5303e22ead5a825a52e310a.jpg"
+                }
+            },
+            "bbox": [
+                668,
+                545,
+                910,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We can get that the white frequency noise is 2.818  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is very consistent with the result predicted by our noise model. "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                580,
+                912,
+                619
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e44e08bce81aafd0a90a91cfbe762d3e83a2556cce8713f3bcd2bbedf8d201b7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Time domain diagram of SRA output; measurement time: 1 hour; smpling rate:  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                512,
+                652,
+                904,
+                875
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1463 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                951,
+                517,
+                961
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:54:24 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                899,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b36108c11dbc0ac90bdc4d4351a0e901b664c9efe9738dd33aae8e84839f7792.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Allan deviation of resonant accelerometer driven by comparator, measurement time: 1 hour; smapling rate:  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                89,
+                129,
+                460,
+                334
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                221,
+                375,
+                351,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, the velocity random walk noise model of SRA resonant loop driven by comparator is established. The comparator is regarded as a linear device in the proposed model. We predict the output white frequency noise of SRA by measuring the voltage power spectral density, and the result is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.598~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " which is in good agreement with Allan variance test results(2.818  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). In the future, we can use this noise model to further optimize the driving circuit of SRA, so as to improve the performance of SRA. "
+                    }
+                ]
+            },
+            "bbox": [
+                84,
+                394,
+                490,
+                515
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                240,
+                529,
+                332,
+                541
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] Priyanka Aggarwal; Naser El-Sheimi; Aboelmagd Noureldin; Zainab Syed, MEMS-Based Integrated Navigation, Artech, 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] J. Juillard, P. Prache, P. M. Ferreira and N. Barniol, \"Resolution of phase difference and frequency measurements of mutually injection-locked oscillators for resonant sensing applications,\" 2018 Symposium on Design, Test, Integration & Packaging of MEMS and MOEMS (DTIP), Rome, Italy, 2018, pp. 1-4 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] M. Pandit et al., \"An Ultra-High Resolution Resonant MEMS Accelerometer,\" 2019 IEEE 32nd International Conference on Micro Electro Mechanical Systems (MEMS), Seoul, Korea (South), 2019, pp. 664-667 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] J. Zhao et al., \"A 0.23-  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu"
+                            },
+                            {
+                                "type": "text",
+                                "content": " g bias instability and  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "1 - \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,\" in IEEE Journal of Solid-State Circuits, vol. 52, no. 4, pp. 1053-1065, April 2017 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Y. Yin et al., \"Design and test of a micromachined resonant accelerometer with high scale factor and low noise\", Sensors and Actuators A: Physical, Volume 268, 2017, pp 52-60. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] Suk-Chang Yun, Sangkyung Sung, Taesam Kang and Young Jae Lee, \"A study on the automatic gain control loop design for the resonant accelerometer,\" 2007 International Conference on Control, Automation and Systems, Seoul, Korea (South), 2007, pp. 1378-1382 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, B. Simoni, \"A resonant microaccelerometer with high sensitivity operating in an oscillating circuit,\" J Microelectromech Syst, vol. 19, pp. 1140-1152, May, 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] J. Zhang, A. Qui, Q. Shi, G. Xia, Y. Zhao, “A compact low-power oscillation circuit for the high performance silicon oscillating accelerometer,” in Proc. MSREE 2017 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] D. B. Leeson, \"A simple model of feedback oscillator noise spectrum,\" in Proc. IEEE, vol. 54, no. 2, pp. 329-330, Feb. 1966 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] J. Cui, H. Yang, D. Li, Z. Song, and Q. Zhao, \"A Silicon Resonant Accelerometer Embedded in An Isolation Frame with Stress Relief Anchor,\" Micromachines, vol. 10, no. 9, p. 571, Aug. 2019. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                85,
+                545,
+                490,
+                929
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] Allan D W and Levine J 2016 A Historical Perspective on the Development of the Allan Variances and Their Strengths and Weaknesses. IEEE transactions on ultrasonics, ferroelectrics, and frequency control 63 513-519. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                121,
+                895,
+                166
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "1464 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                952,
+                517,
+                961
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:54:24 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                964,
+                899,
+                976
+            ]
+        }
+    ]
+]

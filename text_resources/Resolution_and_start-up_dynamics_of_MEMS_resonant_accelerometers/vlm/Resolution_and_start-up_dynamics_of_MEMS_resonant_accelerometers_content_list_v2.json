@@ -1,0 +1,1728 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Resolution and Start-up Dynamics of MEMS Resonant Accelerometers "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                102,
+                83,
+                893,
+                107
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Tocchio, A. Caspani, G. Langfelder, A. Longoni "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                146,
+                450,
+                164
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Electronics and Information Technology Department "
+                    }
+                ]
+            },
+            "bbox": [
+                88,
+                165,
+                439,
+                180
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Politecnico di Milano "
+                    }
+                ]
+            },
+            "bbox": [
+                191,
+                180,
+                336,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "via G. Ponzio 34/5, 20133, Milano, Italy "
+                    }
+                ]
+            },
+            "bbox": [
+                129,
+                195,
+                397,
+                209
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tocchio@elet.polimi.it "
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                210,
+                338,
+                223
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "E. Lasalandra "
+                    }
+                ]
+            },
+            "bbox": [
+                681,
+                148,
+                782,
+                161
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MSH Division "
+                    }
+                ]
+            },
+            "bbox": [
+                684,
+                165,
+                782,
+                178
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "STMicroelectronics "
+                    }
+                ]
+            },
+            "bbox": [
+                666,
+                180,
+                799,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "via Tolomeo 1, Cornaredo - Milano "
+                    }
+                ]
+            },
+            "bbox": [
+                614,
+                195,
+                849,
+                208
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract-In this paper it is presented a study on two key parameters of MEMS resonant accelerometers, resolution and start-up dynamics. A uniaxial differential accelerometer, built in the surface micromachining ThELMA process of ST Microelectronics, is used in the tests together with a discrete components readout circuit. The implemented circuit is an oscillator constituted by a Transimpedance stage (TIA) followed by a gain stage and an amplitude-limiting circuit (ALC). In the present work, it is shown how the sensor resolution can be related to the phase noise of the oscillator output signal and how the start-up dynamics depends on the biasing voltage of the resonator. A sensing resolution of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "98\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is demonstrated through experimental measurements and a well-defined relationship between the resonators biasing voltage and the start-up time is observed. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                252,
+                488,
+                449
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                222,
+                467,
+                359,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the last decade, MEMS resonant accelerometers have been proposed as an alternative to their state-of-the-art capacitive counterparts [1]. In resonant accelerometers, micromechanical resonators, showing a resonance frequency dependent on the applied acceleration, are suitably integrated as frequency selective filters inside oscillating circuits. The resulting output signal turns out to be frequency modulated by the acceleration amplitude. Therefore, the measurement of acceleration turns into the measurement of a frequency variation. In order to design such a complex system it is necessary to correctly model the electrical behavior of the resonators. In the literature it is known that MEMS resonators can be modeled by equivalent RLC network, where the equivalent parameters  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are strictly related to the mechanical properties of the resonator. In particular, the equivalent resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " electrically models the dissipative losses that the circuit has to compensate in order to maintain the resonator in oscillation. Different circuit topologies have been implemented to compensate these losses, some examples can be found in [2], [3]. The study of the system resolution coincides with the study of noise propagation at the oscillator output. In the literature on resonant sensing, the Allan deviation is often used to characterize the sensing performance of a fabricated resonant device coupled to its readout circuit [4]. In this paper, the measurement of phase noise is proposed as an alternative method to evaluate the system resolution. In "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                486,
+                488,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "detail, the phase noise  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{\\phi}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is related to the frequency noise density  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " affecting the oscillator output signal, which if integrated on the bandwidth of observance defines the minimum detectable change of the signal frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f_{rms}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Thus, given the sensor sensitivity expressed in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the minimum measurable acceleration in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g_{rms}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be evaluated. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                253,
+                916,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Another crucial point in the design of the readout interface for MEMS accelerometers, especially when tailored for the consumer market, is their low-power operation. A possible strategy is the introduction of an on/off switching technique, which allows a reduction of power consumption [5]. As a consequence, the study of the start-up behavior and recovery time after circuit ignition becomes of paramount importance. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                344,
+                916,
+                441
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The present work is motivated by the importance of the correct modeling of the device resolution and the circuit startup time, and by the strong relation of these two parameters with the circuit power consumption. The paper is organized as follows: in Section II the resonant accelerometer used during the tests is described and its resonating beams are characterized. In Section III, the discrete component oscillator is presented; section IV reports the experimental results. Finally, in section V the conclusions are discussed. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                448,
+                916,
+                571
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. THE RESONANT ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                586,
+                585,
+                846,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the experimental tests a uniaxial resonant accelerometer has been coupled to a discrete component oscillator in order to study the resolution and start-up dynamics of the device. The device, wafer-level packaged at nominal pressure of 1mbar, has been attached and connected through wirebonding to the PCB hosting the electronic circuitry. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                604,
+                916,
+                691
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Description of the device "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                506,
+                710,
+                702,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An improved version of a recently presented [6] uniaxial resonant accelerometer has been used for the experimental measurements. A SEM image of the fabricated sensor is reported in Fig. 1. The device is constituted by a central seismic mass anchored to the substrate by means of two springs and by two resonating beams anchored at one side to the substrate and at the other side to one of the spring. Under external acceleration, the movement of the seismic mass "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                728,
+                916,
+                838
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "9781042441628e34d182606022NINJURVERSITY. Downloaded on January 18,2026 at 21:23:02 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                116,
+                963,
+                870,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c95b755d8ce0d77938ddb3e9b22ba7f58d2481e3f9499ef6cc40264d4524711e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. SEM image of the resonant accelerometer used during the experimental measurements. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                89,
+                77,
+                478,
+                316
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "causes a compressive stress on one beam and a tensile stress on the other one depending on the acceleration direction. This stress results in a differential shift of the beams resonance frequencies. Each resonator is constituted by a central beam and by two electrodes used for driving and sensing. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                366,
+                490,
+                439
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Electrical Model of the Resonator "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                446,
+                336,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The two resonators embedded in the resonant device can be modeled by an RLC circuit. In particular the equivalent resistance for a clamped-clamped beam resonator can be expressed as [6]: "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                465,
+                491,
+                522
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "R _ {e q} = 2 \\pi \\frac {f _ {0} m _ {\\text {e f f}}}{Q \\left(V _ {p} \\frac {d C}{d x}\\right) ^ {2}} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fa10f483651e1c501e0d06085a33aaf72da2207ae65d4db4fd691abc67ce75ef.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                531,
+                486,
+                597
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{\\text{eff}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective beam mass,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the quality factor of the resonator,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_p"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the biasing voltage applied between the central beam and the driving/sensing electrodes and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "dC/dx"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the capacitance variation between the central beam and the sensing electrode. Due to the strong dependency of the quality factor to process spreads and on pressure inside the package, a precise prediction of the equivalent resistance is not trivial. Therefore, the device resonators have been first characterized through spectral measurements using a HP4195 Network Analyzer. A biasing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_p"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been applied to one resonator central beam, the exciting signal of the network analyzer  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{drive}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been applied to the driving electrode, while the current at the sensing electrode has been read by a transimpedance amplifier. The measured spectral responses  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{out}/v_{drive}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", obtained for biasing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_p"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ranging from 2V to 7V are reported in Fig. 2, where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{out}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the output of the amplifier. The equivalent resistances of the resonator for each biasing condition have been evaluated by calculating  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq} = (v_{drive}/v_{out})R_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " being the feedback resistance of the amplifier. The obtained values are reported in the close-up of Fig. 2. "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                604,
+                491,
+                896
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. THE OSCILLATOR CIRCUIT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                607,
+                77,
+                823,
+                90
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Determined the effective values of equivalent resistance of the resonator, a discrete component oscillator based on a transimpedance amplifier stage was designed in order to study: (i) the relation between phase noise and the system resolution and (ii) the start-up dynamics of the system. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                97,
+                919,
+                170
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Description of the Oscillator Readout Circuit "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                188,
+                838,
+                203
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The discrete component readout circuit is a transimpedance based oscillator constituted by a transimpedance gain, a gain stage and by a amplitude reduction stage. The total resistive gain provided by the electronic circuit can be defined as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp} = R_1 \\cdot R_3 / R_2 \\cdot R_5 / (R_4 + R_5)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Based on the data of Fig. 2,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been chosen to be variable, from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in order to ensure a safe start-up of the oscillator. Once the circuit is switched on, the oscillation builds-up from noise until the gain stage saturates between its supply voltages  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm V_{DD}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the third stage reduces the oscillation amplitude at the resonator driving electrode to a value  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{osc,peak} = V_{DD} \\cdot R_5 / (R_4 + R_5)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This value was set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " during the experiments in order to operate the resonator in its linear working region, thus avoiding chaotic behavior due to mechanical nonlinearities of the resonator [7]. "
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                205,
+                916,
+                415
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Phase Noise and Acceleration Resolution "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                426,
+                812,
+                439
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Once a stable oscillation is reached, one can measure the applied acceleration through the monitoring of its frequency variation. In order to study the resolution of such a measuring system, it is important to study how noise affects the frequency of the output signal. Considering a sinusoidal signal at the oscillator output  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{out}(t) = A_{o} \\sin (\\omega_{o} t + \\varphi(t))"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", from its definition the instantaneous frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the time derivative with respect to time of the phase: "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                444,
+                916,
+                561
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f (t) = \\frac {\\omega_ {0}}{2 \\pi} + \\frac {1}{2 \\pi} \\frac {d \\varphi (t)}{d t} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/912b044e390ad516ac28cb883684da3945ad45171873832ab26ca159b3d90285.jpg"
+                }
+            },
+            "bbox": [
+                635,
+                577,
+                915,
+                613
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The second term of (4) can be also written as: "
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                628,
+                808,
+                643
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8c6ff2a37798ab83d0601a1b7382b8053de2210626a7e0fd5911bc3f74f632e0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Spectral responses of the resonator obtained for different biasing voltages  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In the close-up are reported the equivalent resistances  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " evaluated from the corresponding spectral response. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                545,
+                647,
+                875,
+                867
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:23:02 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                960,
+                872,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/99f440e3789bda67f6a82f4beb333b324c40df773f8c8daa739b7c67b1db1557.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. Schematic illustration of the implemented transimpedance readout circuit. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                148,
+                79,
+                433,
+                330
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\Delta f (t) = \\frac {1}{2 \\pi} \\frac {d \\varphi (t)}{d t} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b7a7ddb81f63b855d73401d9e8399a184dae458b7c75a983fbb57fa2156a994f.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                392,
+                488,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a random process modeling the frequency noise [8]. Therefore, the relation between the phase noise and the frequency noise density can be written in the Laplace domain as: "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                431,
+                491,
+                487
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "S _ {f} = f ^ {2} S _ {\\phi} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/04cc69be6eca49adedc980b85be03010f2e4eb826f25062a8570e379d4e0db44.jpg"
+                }
+            },
+            "bbox": [
+                218,
+                489,
+                488,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The important result is that, by measuring the phase noise at the oscillator output, it is possible to evaluate through a simple analytical relation the frequency noise density expressed in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Hz} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Finally, dividing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " by the sensitivity of the device expressed in  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{Hz} / \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " it is straightforward to obtain the acceleration noise density of the whole system formed by the resonant accelerometer and the oscillator circuit. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                513,
+                491,
+                617
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. EXPERIMENTAL RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                181,
+                635,
+                393,
+                648
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the experimental tests, wafer-level packaged devices have been attached and connected through wire-bonding to the PCB hosting the discrete component oscillator. The circuit output signal has been acquired with a PCI-DAS4020/12 data acquisition board and elaborated through a LABVIEW program. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                655,
+                490,
+                743
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Noise Measurements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                78,
+                746,
+                250,
+                760
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The oscillator has been coupled to a single MEMS resonator. The biasing voltage was set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p} = 6\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the electronic gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in order to ensure the circuit start-up. The circuit output signal has been acquired and its spectrum has been evaluated through an FFT algorithm. The phase noise at the oscillator output has been analytically evaluated from the voltage spectrum and the obtained result is reported in Fig. 4a. Using (6), the frequency noise density has been computed and reported in Fig. 4b. The spectral density presents a white behavior at low frequencies "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                763,
+                491,
+                912
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 200\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while it diverges for higher frequencies. In the white region a frequency noise density of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "21\\mathrm{mHz} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is obtained, which, given a sensitivity of the single resonator to acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "220\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (measured with the method reported in [6]), results in an acceleration noise density of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "98\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In order to verify the goodness of the proposed method, the obtained results are compared with the resolution measured by computing the Allan deviation. In particular, the Allan deviation evaluated by the integration of the obtained frequency noise density  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " reported in Fig. 4b with the following relation [4]: "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                77,
+                916,
+                239
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\sigma^ {2} (\\tau) = \\int_ {f _ {1}} ^ {\\infty} S _ {f} \\frac {2 \\sin^ {4} (\\pi f)}{(\\pi f) ^ {2}} d f \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7438e2287e6d295683708a54dc9377f42862b08b56eadd0b6af3ae3765622c9c.jpg"
+                }
+            },
+            "bbox": [
+                578,
+                255,
+                916,
+                301
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "has been compared with the Allan deviation computed by the acquisition of the oscillator output signal with an Agilent 53131A counter. The result of this comparison is reported in Fig. 5, showing good agreement between the two methods. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                316,
+                916,
+                376
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Start-up Time "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                378,
+                632,
+                393
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A common strategy to reduce the power-consumption of MEMS inertial sensors, is to implement a power-cycling technique which continuously switch the circuit on/off. Given a maximum bandwidth BW of the acceleration signals to be "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                396,
+                919,
+                455
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/33051a347ebbb4e3252706ca3d42de02f3f87e5d181a5ec64afe390b54a4462a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                570,
+                464,
+                856,
+                638
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/edbfa0d8b8e68657c625cc97e0a1f45c860387db00041358e49276cbadb86ca4.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 4. (a) Phase noise measurement of the oscillator output signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{osc}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". (b) Frequency noise density obtained analytically through the derivative, in the Laplace domain, of the measured phase noise. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                566,
+                657,
+                856,
+                840
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:23:02 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                960,
+                872,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "measured, the switching procedure has to be performed fast enough to ensure a correct sampling of the acceleration. Thus, from the Nyquist criterion the acceleration sampling has to be performed at least at 2-BW. This means, for the circuit under test in the present work, that the oscillator has to start-up and reach a stable oscillation in less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1/(2\\cdot \\mathrm{BW})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In order to verify the start-up time of the implemented circuit, the oscillation ignition has been controlled through LABVIEW libraries by varying the value of the resonator biasing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the results are reported in Fig. 6. At the beginning,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is set close to 0V, thus the equivalent resistance of the resonator is extremely high, and the oscillator gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", set to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is not sufficient to start the oscillation. At the time instant  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the biasing voltage is set to a positive value ranging from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4.5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The oscillation builds up from noise increasing until the saturation of the gain stage stabilize the oscillation to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". It is observed that for increasing values of the biasing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", decreasing start-up times are obtained. This result can be explained by observing that equivalent resistance of the resonator is in inverse proportion to the square of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as shown in (2) and in Fig. 2. A decrease of the equivalent resistance corresponds to increase of the loop gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp} / R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Therefore, starting from the same noise level, a smaller number of periods are required to reach the regime value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". At  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p} = 6V"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the circuit is ready for acceleration measurement in about 7ms, meaning that power cycling is possible for acceleration signals with frequencies lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                77,
+                488,
+                484
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "V. CONCLUSIONS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                220,
+                489,
+                356,
+                503
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An alternative measuring technique to measure the acceleration noise density of a resonant accelerometer coupled to an oscillator readout circuit. This new method relates between the phase noise measured at the oscillator output to the frequency noise density affecting the acceleration measurement. A discrete component circuit was "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                510,
+                490,
+                598
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a7fd37f664c40142283ab67b323558a31f4de2e8433ad242a32f87134bc5971e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure. 5 Comparison between the Allan Deviation obtained through the Agilent 53131A Counter and the Allan Deviation obtained through the integration of the frequency noise density. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                133,
+                609,
+                423,
+                805
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e88aeb027947fc7d074c5488da6bca2addfebb13f361626ef47c89462a3a23a3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure. 6 Experimental results showing that different start-up times are obtained varying the biasing voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". In the close-up the start-up time is reported as a function of the loop gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{amp} / R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                74,
+                911,
+                297
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "developed to demonstrate the effectiveness of the proposed method and an acceleration noise density of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "98\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was obtained coupling the oscillator to a uniaxial resonant accelerometer. Finally, the feasibility of implementing a power-cycling technique was performed on the same circuit, showing the relation between the start-up time and the oscillator loop gain. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                353,
+                916,
+                455
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                642,
+                467,
+                779,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors wish to thank Fondazione Cariplo for the support in the realization of the test instrumentation within the project Surface Interactions in micro and nano devices. "
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                484,
+                916,
+                529
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                666,
+                540,
+                754,
+                551
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] A. A. Seshia, M. Palaniapan, T. A. Roessig, R. W. Gooch, T. R. Shimert, S. Montague, \"A Vacuum Packaged Surface Micromachined Resonant Accelerometer,\" J. Microelectromech. Syst., vol. 11, no. 6, pp. 784-793, 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] T. A. Roessig, R. T. Howe, A. P. Pisano, J. H. Smith, “Surface-Micromachined Resonant Accelerometers,” IEEE Transducers '97 Chicago, pp. 859-862, 16-19 Jun. 1997. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] C. T.-C. Nguyen, and R. T. Howe, “An integrated CMOS micromechanical resonator high-Q oscillator,” IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 440-445, Apr. 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] J. Rutman, “Characterization of phase and frequency instabilities in precision frequency sources: Fifteen years of progress,” Proc. IEEE, vol. 66, no. 9, pp. 1048-1075, Sep. 1978. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] M. Looney, \"Power Cycling 101: Optimizing Energy Use in Advanced Sensor Products,\" Application note, Analog Dev., 8/3/2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, and B. Simoni, \"A Resonant Microaccelerometer With High Sensitivity Operating in an Oscillating Circuit,\" J. Microelectromech. Syst., vol. 19, no. 5, pp. 1140-1152, Oct. 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] S. Lee, C. T.-C. Nguyen, \"Influence of automatic level control on micromechanical resonator oscillator phase noise,\" in Proc. of the 2003 IEEE International Frequency Control Symposium and PDA Exhibition Jointly with the 17th European Frequency and Time Forum, pp. 341-349, 4-8. May 2003. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                556,
+                916,
+                849
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 21:23:02 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                960,
+                870,
+                974
+            ]
+        }
+    ]
+]

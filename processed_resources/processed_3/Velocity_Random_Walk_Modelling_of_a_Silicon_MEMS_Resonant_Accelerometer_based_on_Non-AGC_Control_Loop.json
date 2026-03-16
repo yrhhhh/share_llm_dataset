@@ -1,0 +1,213 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Dong Li, Qiancheng Zhao and Jian Cui*\nAbstract—Automatic gain control (AGC) is widely used in the closed-loop drive circuit of silicon resonant accelerometer, but the non-AGC scheme is rarely reported. In this paper, a simplified velocity random walk model of a non-AGC scheme which uses comparator instead of AGC module is established. Firstly, for linear devices, we construct the phase noise model of the according to the Leeson model. Then, we get the transmission characteristics of the comparator noise by measurement. Finally, we predict that the white frequency noise   (2.706\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}})  at output is introduced by the amplifier   (1.754\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}})  and the comparator   (2.060\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}) . The predict value is in good agreement with the measurement result of   2.818~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}} . This model provides guidance for further optimization of resonant accelerometer performance.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "MEMS accelerometers are widely used in industry, military, consumer and other fields because of its low power consumption and compact size.[1] Among them, MEMS silicon resonant accelerometer(SRA) has been widely concerned because of its high precision, quasi digital output and strong anti-interference.[2-5] Generally, the driving circuit of resonant accelerometer includes two types: automatic gain control(AGC) scheme[4,6] and non-AGC scheme[7,8]. AGC module can control the resonance displacement constant, so as to reduce the influence of environment such as temperature on SRA. However, AGC has complex structure, high power consumption and high 1/f noise. Therefore, more researchers focus on the non AGC scheme. The comparator is the most commonly used to replace AGC modular in non-AGC schemes. Using comparator to drive MEMS resonant accelerometer can simplify the circuit structure, reduce the noise introduced by AGC module, and reduce power consumption. Many researchers use comparator instead of AGC module to drive resonant accelerometer and obtain good results [7, 8]. However, as a nonlinear device, it is difficult to analyze the noise characteristics of the comparator systematically, so the influence of the comparator on the performance of the accelerometer is hard to get.\nIn this paper, the velocity random walk noise model of the closed-loop drive circuit including the comparator is constructed by measuring the noise transmission characteristics of the comparator. By analyzing the phase noise model, the white frequency noise of the resonant\naccelerometer is predicted, which is in good agreement with the measurement results.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "A. Phase Noise Modelling for Liner Modules",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Figure 1. Example of a figure caption. (figure caption).",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/5076aa1153d18cb40126ad8d2076c4ce4e53b377fa8587438834008c1755c63f.jpg",
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/5076aa1153d18cb40126ad8d2076c4ce4e53b377fa8587438834008c1755c63f.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "The phase noise model of linear modules such as amplifiers can be constructed according to the Leeson model[9]. The resonant system is shown in Fig 1. Among them, \"AMPI\", \"AMP2\" and \"Phase Shift\" correspond to preamplifier, differential amplifier and phase shifter respectively, which can be considered as linear module. \"Comparator\" is nonlinear module which is ignored temporarily and only linear devices are considered.   G(s) ,   H1(s) ,   H2(s)  and   H3(s)  are the transfer function of the corresponding module, while   V_{nb} ,   V_{nl} ,   V_{n2}  and   I_{n}  are the noise sources.\nFirst, we analyze the effect of the resonator noise   V_{nb}  on the output. The transfer function from resonator noise   V_{nb}  to the output noise   X  is:\n$$\n\\frac {X (s)}{V _ {v b} (s)} = \\frac {G (s) H _ {1} (s) H _ {2} (s)}{1 - H _ {1} (s) H _ {2} (s) H _ {3} (s) G (s)} \\tag {1}\n$$\nG (s) is the transfer function of the resonator:\n$$\nG (s) = \\frac {(K / M) s}{s ^ {2} + \\frac {\\omega_ {n}}{Q} s + \\omega_ {n} ^ {2}} \\tag {2}\n$$\nK  is a constant coefficient, which is determined by the structure and size of the resonator,   \\mathbf{M}  is the mass of the\n*Resreach supported by ABC Foundation.\nDong. Li is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, Peking University, Beijing 100871, P. R. China (corresponding author to e-mail: a67870007a@163.com).\nJian Cui is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics,\nPeking University, Beijing 100871, P. R. China. (corresponding author to e-mail: eric.cuijian@pku.edu.cn).\nQiancheng. Zhao is with the National Key Laboratory of Science and Technology on Micro/Nano Fabrication, Institute of Microelectronics, Peking University, Beijing 100871, P. R. China. (corresponding author to e-mail: zqc@pku.edu.cn).\nresonator,   \\omega_{\\mathrm{n}}  is resonant frequency and Q is the quality factor. In the resonant state, by taking equation (2) into equation (1), the transfer function can be obtained as follows:\n$$\n\\frac {X (s)}{V _ {n b} (s)} = \\frac {\\omega_ {n} / Q}{H _ {3} (s)} \\times \\frac {s}{s ^ {2} + \\omega_ {n} ^ {2}} \\tag {3}\n$$\nThe noise power spectral density of   V_{nb}  at the output   X  can be obtained by squaring equation (3):",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1. Example of a figure caption. (figure caption).",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/5076aa1153d18cb40126ad8d2076c4ce4e53b377fa8587438834008c1755c63f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "$$\nS _ {x _ {-} V n b} (\\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{\\left| H _ {3} (j \\omega_ {n}) \\right| ^ {2} Q ^ {2}} \\left| \\frac {j \\omega \\omega_ {n}}{\\omega_ {n} ^ {2} - \\omega^ {2}} \\right| \\tag {4}\n$$\nLet   \\omega = \\Delta \\omega +\\omega_{n}  equation (4) can be written as follows:\n$$\nS _ {x _ {-} V n b} (\\Delta \\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{\\left| H _ {3} (j \\omega_ {n}) \\right| ^ {2} Q ^ {2}} \\left(\\frac {\\omega_ {n}}{2 \\Delta \\omega}\\right) ^ {2} \\tag {5}\n$$\nThe power spectrum of phase noise at the output   X  introduced by resonator noise   V_{nb}  is:\n$$\nS _ {\\varphi_ {-} V n b} (\\Delta \\omega) = \\frac {\\overline {{V _ {n b} ^ {2}}}}{2 C | H _ {3} (j \\omega_ {n}) | ^ {2}} \\left(\\frac {\\omega_ {n}}{2 Q \\Delta \\omega}\\right) ^ {2} \\tag {6}\n$$\nC  is the average power of carrier. The influence of other noise sources on the phase noise at the output can also be calculated by the above method. Finally, the total phase noise at the output is as follows:\n$$\n\\begin{array}{l} S _ {\\varphi} (\\Delta \\omega) = b _ {0} + \\frac {b _ {- 2}}{\\Delta \\omega^ {2}} \\\\ = \\frac {1}{2 C} \\left\\{ \\begin{array}{l} {\\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\left[ \\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} \\right.} \\\\ + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\overline {{V _ {n 2} ^ {2}}} + \\left(\\frac {1}{H _ {3}}\\right) ^ {2} \\overline {{V _ {n b} ^ {2}}} ] \\left(\\frac {\\omega_ {n}}{2 Q \\cdot \\Delta \\omega}\\right) ^ {2} \\end{array} \\right\\} \\tag {7} \\\\ \\end{array}\n$$",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "The noise characteristics of the comparator are very complex, and are related to the threshold voltage and the amplitude of the input signal. We have measured the noise characteristics of the comparator at the point of work in closed-loop circuit, which can be seen as linear, as shown in Fig 2. According to the transmission characteristics of comparator noise, the output noise of the comparator can be simplified as the sum of the input noise multiplied by a fixed gain   (K_{cmp})  and a fixed noise   (V_{nc})  introduced by the comparator, as shown in Fig 1. The noise transfer characteristics of the comparator can be simplified as:\n$$\nY = K _ {c m p} X + V _ {n c} \\tag {8}\n$$\nThe modified spectral density equation of phase noise is as follows:",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Noise transfer characteristic curve of comparator.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/2ad10a95ee3bef8d0de925e2708d392c3fd9cb8f8efed32a4d2fd23baa3afb5f.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1. Example of a figure caption. (figure caption).",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/5076aa1153d18cb40126ad8d2076c4ce4e53b377fa8587438834008c1755c63f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "Figure 2. Noise transfer characteristic curve of comparator.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/2ad10a95ee3bef8d0de925e2708d392c3fd9cb8f8efed32a4d2fd23baa3afb5f.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "$$\n\\begin{array}{l}S _ {\\varphi} (\\Delta \\omega) = b _ {0} + \\frac {b _ {- 2}}{\\Delta \\omega^ {2}}\\\\= \\frac {1}{2 C} \\left\\{\\begin{array}{l}\\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} + H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\left[ \\left(H _ {1} H _ {2}\\right) ^ {2} \\overline {{I _ {n} ^ {2}}} \\right.\\\\+ H _ {2} ^ {2} \\overline {{V _ {n 1} ^ {2}}} + \\overline {{V _ {n 2} ^ {2}}} + \\left(\\frac {1}{K _ {c m p} H _ {3}}\\right) ^ {2} \\left(\\overline {{V _ {n c} ^ {2}}} + \\overline {{V _ {n b} ^ {2}}}\\right)\\left. \\right]\\left(\\frac {\\omega_ {n}}{2 Q \\cdot \\Delta \\omega}\\right) ^ {2}\\end{array}\\right\\}\\end{array}\\tag {9}\n$$\nFrom equation (9), we can see that the white phase noise is mainly affected by the noise of the amplifiers: Amp1 and Amp2, while the white frequency noise is affected by all modules in the resonant loop.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_9",
+    "content": "In order to verify the proposed noise model, we test the noise performance of the SRA which is driven by comparator. Figure 3 shows the structure of SRA that mainly consists of a proof mass, a pair of double-ended tuning forks (DETF)[10], two micro-leverages, four folded beams, and a supporting structure.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3. Optical photos of resonant accelerometer structure.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/016b5150ca396bd252d34c9897c1c84a4140931ee9d43e2c3cb8bad665d59728.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Figure 3. Optical photos of resonant accelerometer structure.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/016b5150ca396bd252d34c9897c1c84a4140931ee9d43e2c3cb8bad665d59728.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Figure 4. Closed loop driving circuit of resonant accelerometer based on comparator.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/cf30ff93941e92dfb97be77c9be0774ab20221314d8daf6dd6ad9f2776bf305e.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "Figure 4 is the circuit used in the experiment, which uses a comparator to drive the SRA. The circuit consists of four modules: preamplifier, differential amplifier, phase shifter and comparator.\nFirst, we will measure the power spectral density of the voltage noise at the output and calculate the white frequency noise according to it. Then, we will measure the SRA output for one hour and calculate its Allan variance. Theoretically, the velocity random walk obtained by Allan variance should be consistent with the white noise frequency calculated previously.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Figure 4. Closed loop driving circuit of resonant accelerometer based on comparator.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/cf30ff93941e92dfb97be77c9be0774ab20221314d8daf6dd6ad9f2776bf305e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "The voltage power spectral density at output   \\mathrm{X}  is shown in Figure 5, where the voltage white noise is   15.9~\\mu \\mathrm{V} / \\sqrt{\\mathrm{Hz}} . The white phase noise can be calculated by voltage white noise. According to equation (9), if the white phase noise is   b_{0} , the white frequency noise   b_{-2}  can be calculated by   b_{0}  and comparator noise.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Figure 5. Spectral density of voltage noise at output.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/b141f4bced5d58aa4b3400a45acdca6b70bc5211d639f4020419e7dead01624e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Figure 5. Spectral density of voltage noise at output.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/b141f4bced5d58aa4b3400a45acdca6b70bc5211d639f4020419e7dead01624e.jpg"
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "TABLE I. NOISE CALCULATION.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/31d12089819099c6d317fcd4c7baccf0e578ee440fca7a2f4f7765814ea4eb75.jpg"
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "According to the noise model, the white noise contributed by the comparator is   2.060~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  and the noise of the amplifier is   1.754~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "We use the comparator-driven circuit to drive SRA and measure the output of SRA for one hour. The sampling rate is   1\\mathrm{Hz} . The time domain diagram of SRA output is shown in Figure 6. It can be seen in Figure 6 that the output acceleration of SRA has a significant drift due to the influence of temperature. Because the output noise of SRA is obviously less than the drift, the frequency white noise of SRA can not be obtained from the time domain diagram. We use Allan variance to analyze the short-term stability of SRA[11]. Generally, the lowest point of Allan variance represents the flicker noise corresponding to its bias instability, and when   \\tau = 1 , it represents the velocity random walk, which is related to frequency white noise.\nFigure 7 shows the Allan deviation of the SRA output one hour acceleration. It can be seen that the bias instability is   1.93\\mu \\mathrm{g}  and the corresponding white noise is   2.82\\mu \\mathrm{g} .\nAccording to the relationship between Allan variance and frequency spectral density:\n$$\n\\sigma_ {y} ^ {2} (\\tau) = \\frac {h _ {0}}{2} \\tau^ {- 1} \\tag {10}\n$$\nWe can get that the white frequency noise is 2.818   \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}} , which is very consistent with the result predicted by our noise model.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6. Time domain diagram of SRA output; measurement time: 1 hour; smpling rate:   1\\mathrm{Hz}.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/e44e08bce81aafd0a90a91cfbe762d3e83a2556cce8713f3bcd2bbedf8d201b7.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Figure 7. Allan deviation of resonant accelerometer driven by comparator, measurement time: 1 hour; smapling rate:   1\\mathrm{Hz}.",
+        "image_source": [
+          "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/b36108c11dbc0ac90bdc4d4351a0e901b664c9efe9738dd33aae8e84839f7792.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Figure 6. Time domain diagram of SRA output; measurement time: 1 hour; smpling rate:   1\\mathrm{Hz}.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/e44e08bce81aafd0a90a91cfbe762d3e83a2556cce8713f3bcd2bbedf8d201b7.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "Figure 7. Allan deviation of resonant accelerometer driven by comparator, measurement time: 1 hour; smapling rate:   1\\mathrm{Hz}.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Velocity_Random_Walk_Modelling_of_a_Silicon_MEMS_Resonant_Accelerometer_based_on_Non-AGC_Control_Loop/vlm/images/b36108c11dbc0ac90bdc4d4351a0e901b664c9efe9738dd33aae8e84839f7792.jpg"
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "In this paper, the velocity random walk noise model of SRA resonant loop driven by comparator is established. The comparator is regarded as a linear device in the proposed model. We predict the output white frequency noise of SRA by measuring the voltage power spectral density, and the result is   2.598~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  which is in good agreement with Allan variance test results(2.818   \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}} ). In the future, we can use this noise model to further optimize the driving circuit of SRA, so as to improve the performance of SRA.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_21",
+    "content": "- [1] Priyanka Aggarwal; Naser El-Sheimi; Aboelmagd Noureldin; Zainab Syed, MEMS-Based Integrated Navigation, Artech, 2010.\n- [2] J. Juillard, P. Prache, P. M. Ferreira and N. Barniol, \"Resolution of phase difference and frequency measurements of mutually injection-locked oscillators for resonant sensing applications,\" 2018 Symposium on Design, Test, Integration & Packaging of MEMS and MOEMS (DTIP), Rome, Italy, 2018, pp. 1-4\n- [3] M. Pandit et al., \"An Ultra-High Resolution Resonant MEMS Accelerometer,\" 2019 IEEE 32nd International Conference on Micro Electro Mechanical Systems (MEMS), Seoul, Korea (South), 2019, pp. 664-667\n- [4] J. Zhao et al., \"A 0.23-   \\mu  g bias instability and   1 - \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,\" in IEEE Journal of Solid-State Circuits, vol. 52, no. 4, pp. 1053-1065, April 2017\n- [5] Y. Yin et al., \"Design and test of a micromachined resonant accelerometer with high scale factor and low noise\", Sensors and Actuators A: Physical, Volume 268, 2017, pp 52-60.\n- [6] Suk-Chang Yun, Sangkyung Sung, Taesam Kang and Young Jae Lee, \"A study on the automatic gain control loop design for the resonant accelerometer,\" 2007 International Conference on Control, Automation and Systems, Seoul, Korea (South), 2007, pp. 1378-1382\n- [7] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, B. Simoni, \"A resonant microaccelerometer with high sensitivity operating in an oscillating circuit,\" J Microelectromech Syst, vol. 19, pp. 1140-1152, May, 2010.\n- [8] J. Zhang, A. Qui, Q. Shi, G. Xia, Y. Zhao, “A compact low-power oscillation circuit for the high performance silicon oscillating accelerometer,” in Proc. MSREE 2017\n- [9] D. B. Leeson, \"A simple model of feedback oscillator noise spectrum,\" in Proc. IEEE, vol. 54, no. 2, pp. 329-330, Feb. 1966\n- [10] J. Cui, H. Yang, D. Li, Z. Song, and Q. Zhao, \"A Silicon Resonant Accelerometer Embedded in An Isolation Frame with Stress Relief Anchor,\" Micromachines, vol. 10, no. 9, p. 571, Aug. 2019.\n- [11] Allan D W and Levine J 2016 A Historical Perspective on the Development of the Allan Variances and Their Strengths and Weaknesses. IEEE transactions on ultrasonics, ferroelectrics, and frequency control 63 513-519.",
+    "block_type": "text"
+  }
+]

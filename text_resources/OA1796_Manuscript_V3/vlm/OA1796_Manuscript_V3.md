@@ -1,0 +1,382 @@
+# A High Resolution Micro-Electro-Mechanical Resonant Tilt Sensor
+
+Xudong Zou, Pradyumna Thiruvenkatanathan and Ashwin A. Seshia
+
+Nanoscience Centre, Department of Engineering, University of Cambridge, United Kingdom
+
+# ABSTRACT
+
+This paper reports on the design and experimental evaluation of a high-resolution Micro-Electro-Mechanical (MEM) tilt sensor based on resonant sensing principles. The sensors incorporate a pair of double-ended tuning fork (DETF) resonant strain gauges, the mechanical resonant frequencies of which shift in proportion to an axial force induced by variations in the component of gravitational acceleration along a specified input axis. An analysis of the structural design of such sensors (using analytical and finite element modelling) is presented, followed by experimental test results from device prototypes fabricated using a silicon-on-insulator (SOI) MEMS technology. This paper reports measurement conducted to quantify sensor scale factor, temperature sensitivity, scale factor linearity and resolution. It is demonstrated that such sensors provide a $\pm 90$ degree dynamic range for tilt measurements with a temperature sensitivity of nearly $500\mathrm{ppb / K}$ (equating to systematic sensitivity error of approximately 0.007 degree/K). When configured as a tilt sensor, it is also shown that the scale factor linearity is better than $1.4\%$ for a $\pm 20^{\circ}$ tilt angle range. The bias stability of a micro-fabricated prototype is below $500\mathrm{ng}$ for an averaging time of 0.8 seconds making these devices a potentially attractive option for numerous precision tilt sensing applications.
+
+# 1. INTRODUCTION
+
+Tilt sensors or inclinometers are widely utilized in a number of applications such as industrial machine alignment, attitude control systems, user interfaces in smart phones, human body motion detection, ground motion and land subsidence detection and several consumer electronics applications [1-8]. A majority of these tilt sensors however, comprise simply of a fixed casing and a movable mass. When the sensor is subjected to a small angular tilt, the mass displaces relative to the fixed casing due to the induced inertial force arising from gravity, the transduction of which allows for an estimation of the angular tilt.
+
+Various methods of proof mass displacement transduction have been reported to date in such tilt sensors. A few methods that have gained visibility in recent years include fibre-optic interferometric displacement sensing, variable resistance or impedance based detection, electrolytic sensing, thermal-convection based sensing, and variable capacitance based displacement transduction [9-15]. MEMS accelerometers have also been shown to operate as tilt sensors with the incorporation of specially designed encoders [16]. Tilt sensing in a MEMS accelerometer is typically achieved by recording the change in the quasi-static response of the device as the sensitive axis is oriented at different angles with respect to earth's gravitational field. As opposed to measurements of dynamically varying acceleration signals, tilt measurement in a MEMS accelerometer is a quasi-static measurement and the response can be decoupled from dynamic loading through low-pass filtering of the resulting signals, either by tailoring the mechanical response of the device or through the external electronics or through a combination of both approaches.
+
+Although many of these methods of displacement transduction allow for accurate angular tilt measurements, the detection range and resolution achievable from such sensors still remain limited [17]. Another limitation for some tilt sensors is their sensitivity to environmental parameters such as temperature and humidity, especially for sensors realized using thermal-convection or variable impedance based sensing principles. In what follows, we report on the design and experimental characterization of a tilt sensor based on resonant sensing principles[17, 18] that not only provides a large detection range but also allows for high resolution and improved environmental (viz. temperature) rejection.
+
+# 2. DESIGN
+
+The micro-machined resonant tilt sensor reported in this work uses a pair of structurally symmetric double-ended tuning fork (DETF) resonant sensing element, the resonant frequencies of which shift proportionally with the applied axial force resulting from any angular tilt applied on the tilt sensor. Additionally, the sensor comprises of two single-stage micro levers that connect the pair of DETFs to a suspended poof mass (supported by four straight beam suspensions).
+
+![](images/44469f0ea08dd67434582579158a6a3a3c1d2eb52764c2a7c0c7b5170dd15083.jpg)  
+Figure 1 Schematic view of the resonant tilt sensor
+
+When the sensor is subjected to angular tilt about the sensing axis (see Fig. 2), the suspended proof-mass displaces, inducing axial tensile and compressive stresses on the two symmetric DETFs attached at the two opposite ends consequently tuning their mechanical resonant frequencies by equal magnitudes but in opposite directions. The differential measurement of frequency enables a first-order cancellation of common-mode effects such as temperature. The out of plane stiffness of suspension beams is designed being significantly higher than the in-plane stiffness to make the axial tensile and compressive forces applied on the DETFs closely relate to the sine of tilt angle. In order to further increase the sensitivity of the tilt sensor, single-stage micro levers are used to linearly amplify the induced axial force communicated onto the tuning fork pairs. The sensor output will hence correspond to a mechanically amplified differential measure of the frequency variations arising from the two tuning fork resonators.
+
+![](images/4780c622424be7e6ce85565b31d5e244fb56993784923409909122812f98983f.jpg)  
+Figure 2 Operation principle of resonant tilt sensor
+
+The scale factor of this tilt sensor, $S_{Tilt}$ , can be estimated by:
+
+$$
+S _ {T i l t} = \frac {\left| \Delta f _ {o u t} \right|}{\sin \theta} \cong S _ {\text {R e s}} \times E A _ {L v r} \times M _ {\text {p r o o f}} g \tag {1}
+$$
+
+where $S_{\mathrm{Res}}$ is the scale factor of resonant sensing element in the unit of 'Hz/N', $EA_{Lvr}$ is the effective amplification factor of micro levers, $M_{\mathrm{Proof}}$ is the proof-mass, $g$ denotes gravitational acceleration, $\theta$ is the tilt angle and $\Delta f_{out}$ is the frequency shift of the tilt sensor. In order to achieve high sensitivity, the parameters on the right side of Eq. 1 should be designed as large as possible. However, simultaneously, impact of design parameters on other performance metrics such as the intrinsic noise floor, dynamic range, bandwidth, mechanical robustness and constraints imposed by fabrication limitations also need to be considered in design.
+
+# 2.1 Design of the resonant element
+
+The MEMS DETF translates the inertial force on the proof mass into a resonant frequency shift and electrostatic transduction is employed to translate the motional response into an electrical format. The design of the DETF therefore directly impacts both scale factor and sensor resolution and both aspects are addressed in this section.
+
+# Scale Factor
+
+The resonant frequency of tuning fork can be shown to vary as a function of the axial force acting on the free end [17, 18]. The variation in the resonant frequency thus induced may be evaluated as[17]:
+
+$$
+S _ {\text {R e} s} = \frac {\Delta f}{F _ {\text {A x i a l}}} \approx \frac {1}{4} S \cdot f _ {c}, \text {w h e r e} S = 0. 2 9 3 \left(\frac {L _ {T} ^ {2}}{E t _ {T} w _ {T} ^ {3}}\right) \tag {2}
+$$
+
+$$
+\text {a n d} f _ {c} = \frac {2}{\pi} \cdot \sqrt {E \left(\frac {w _ {T}}{L _ {T}}\right) ^ {3} \cdot \frac {1}{\rho \left(A _ {\text {E l e}} + 0 . 3 7 5 \cdot L _ {T} w _ {T}\right)}}
+$$
+
+where, $F_{Axial}$ is the axial force applied to the DETF, $f_c$ is the resonant frequency of DETF
+
+without axial force load, $E$ is the modulus of elasticity of the material, $\rho$ is the density of
+
+the material, $A_{Ele}$ is the area of attached electrode and $L_{T}, w_{T}$ and $t_{T}$ are the length, width and structural thickness of the laterally vibrating device. As shown in Eq. 2, the scale factor of the DETF is determined by material properties and beam dimensions. Since the choice of material parameters are often constrained by the fabrication process (and taken to be single-crystal silicon in this paper), optimization of the critical dimensions of the DETF sensing element is considered. The scale factor dependency on the dimensions is derived from Eq. 2 and summarized below:
+
+$$
+S _ {\text {R e s}} \propto \frac {L _ {T} ^ {1 / 2}}{t _ {T} w _ {T} ^ {3 / 2} \left(A _ {\text {E l e}} + 0 . 3 7 5 \cdot L _ {T} w _ {T}\right) ^ {1 / 2}} \tag {3}
+$$
+
+According to the Eq. 3, the scale factor of the DETF can be increased by decreasing the width and thickness of tuning fork tines.
+
+# Nonlinearity of Scale Factor
+
+The above modelling and analysis assumes that the scale factor of DETF sensing element is constant, regardless the direction and magnitude of input force. However, if the input force becomes large, the frequency shift of DETF sensing element will exhibit deviation from linear behaviour. For large tensile input force, the frequency shift will increase whereas for large compressive input force, the frequency shift will decrease. For same input force, the DETF sensing element with thin, narrow tines will exhibit more nonlinearity in the frequency response relative to thick, wider tines. This nonlinear relation between the input force and frequency shift of the DETF sensing element can be studied by numerical simulation (COMSOL® 4.2a) with summary results shown in Fig. 3. Representative dimensions of the single-crystal silicon DETF sensing element used in the simulation are:
+
+$$
+L _ {T} = 3 5 0 \mu \mathrm {m}, w _ {T} = 4 \mu \mathrm {m}, t _ {T} = 3 0 \mu \mathrm {m} \text {a n d} A _ {E l e} = 1 2 5 0 \mu \mathrm {m} ^ {2}
+$$
+
+When the tine width $(w_{T})$ is reduced from $5\mu \mathrm{m}$ to $2\mu \mathrm{m}$ , the frequency shift notably deviated from an expected linear response. The asymmetry of frequency shift between compressive and tensional input force is also evident in the sensing element with narrower
+
+tines. The simulation results also indicate that the $2\mu \mathrm{m}$ tines may potentially buckle under about $2\mathrm{mN}$ compressive input force.
+
+![](images/b9cf194be201c5b5ab3afe4b504007ce8290202f41e18a4df7aaceb04534a616.jpg)  
+Figure 3 FEM simulated frequency-input force relation of DETF sensing element with different beam widths
+
+# Energy Handling
+
+The resonant frequency shift of the DETF is translated into an electric signal for measurement of tilt/acceleration. This is achieved through capacitive actuation of the tines through an externally applied ac voltage excitation and transduction of the motional signal into a capacitive current recorded on an independent pair of electrodes.
+
+Since the DETF is required to work in the linear vibration regime, the maximum mechanical energy can be handled by the DETFs is determined by the mechanical non-linearity limited vibration amplitude of the DETFs tines, which is given by Eq. 4[19]:
+
+$$
+E _ {m} ^ {M a x} = \frac {1}{2} k _ {0} X _ {c} ^ {2}
+$$
+
+$$
+X _ {c} = \frac {2}{\sqrt {3 \sqrt {3} Q \left| \frac {3}{8} k _ {2} - \frac {5}{1 2} k _ {1} ^ {2} \right|}} \tag {4}
+$$
+
+where the $k_{0}$ is the linear, $k_{1}, k_{2}$ are the first- and second- order anharmonic terms of the non-linear spring constant of the DETF and $Q$ is the quality factor of the DETF. Based on a clamped-clamped beam model, the above spring terms can be derived from the dimensions of DETF beams and substituted into the Eq. 4 as:
+
+$$
+E _ {m} ^ {\text {M a x}} \cong 8 \frac {E t w _ {T} ^ {3}}{L _ {T} ^ {3}} \cdot C _ {0} \frac {w _ {T} ^ {2}}{Q} \tag {5}
+$$
+
+where $C_0$ is a constant varying from 1.209[20] to 1.463[21] depending on the nature of the approximation used. Comparing Eq. 3 and Eq.5, it may be seen that the DETF comprising longer and narrower tines possess higher scale factors but smaller critical amplitudes prior to the onset of non-linear behaviour. The limited energy handling capability will lower the signal-to-noise ratio of the DETF output signal, and therefore impact sensor resolution. Therefore, the trade-off between scale factor and energy handling of the DETFs needs to be considered carefully in the design process. Here we use the thermo-mechanical noise [22] as an example to study this design trade-off. In order for the motion of the DETF to be detectable, the energy associated with noise-driven motion of the DETF (for e.g. thermo-mechanical noise) should be less than the value specified by Eq. 5. The energy associated with thermo-mechanical noise driven motion of the DETF at resonance is given by:
+
+$$
+E _ {t h} = \frac {1}{2} k _ {0} \cdot \frac {4 Q \sqrt {M _ {\text {e f f}}}}{k _ {0} ^ {3 / 2}} k _ {B} T \tag {6}
+$$
+
+where $k_{0}$ is the linear spring constant of the DETF, $M_{eff}$ is the effective mass of the DETF $Q$ is the quality factor, $k_{B}$ is the Boltzmann constant and $T$ is the temperature.
+
+# 2.2 Design of Micro-lever Force Amplifier
+
+Micro-levers are used to amplify the axial force communicated onto the DETFs to enhance the sensor scale factor. As shown in Fig. 4, the lever consists of an input beam, lever-beam, pivot beam, pivot anchor and connection beam. The input beam couples the inertial force of proof-mass onto the micro-lever.
+
+![](images/0525126b890ff538317e8851f4cf86b0d16d26a642a134a4979985470366ba35.jpg)  
+Figure 4 Schematic view of single-stage micro-lever force amplifier
+
+Lever Amplification Factor
+
+To evaluate the force amplification characteristics of the micro-lever, the lever amplification factor, $A_{Lvr}$ , is defined as the ratio of output force magnitude by input force magnitude of the micro-lever. It should be distinguished from the effective amplification factor, $EA_{Lvr}$ , in Eq. 1, which considers the design of the proof mass suspension in the analysis. By using a first-order model of single-stage micro-lever [23], the lever amplification factor can be derived as:
+
+$$
+A _ {L v r} = \frac {C _ {1} + \sin \theta \cdot k _ {v p} D _ {-} 1}{C _ {1} \left(1 + \frac {k _ {v p}}{k _ {v c}} + \frac {k _ {v p}}{k _ {v t}}\right) + \sin \theta \cdot k _ {v p} \frac {D _ {-} 1 ^ {2}}{D _ {-} 2}}, \tag {7}
+$$
+
+$$
+\mathrm {w h e r e} C _ {1} = \frac {\theta}{\cos \theta} \left(\frac {k _ {\theta c}}{D _ {-} 1 + D _ {-} 2} + \frac {k _ {\theta p}}{D _ {-} 2}\right) > 0
+$$
+
+where $D_{-1}$ is the distance between output beam and pivot beam, $D_{-2}$ is the distance between input beam and pivot beam, $\theta$ is the rotation angle of the lever beam. As the flexural beams used in micro lever have non-zero rotational stiffness and finite vertical axial stiffness, which is represented by $k_{\theta}$ and $k_{v}$ in Eq. 7, are expressed by Eq. 8 and Eq. 9. The subscripts 'p', 'c' and 't' represent pivot beam, connection beam and tine beam, respectively.
+
+$$
+k _ {v} = \frac {E w _ {B} t _ {B}}{L _ {B}} \tag {8}
+$$
+
+$$
+k _ {\theta} = \frac {4 E I _ {B}}{L _ {B}} = \frac {E t _ {B} w _ {B} ^ {3}}{3 L _ {B}} \tag {9}
+$$
+
+where the $w_{B},t_{B}$ and $L_{B}$ are the width, thickness and length of the flexure beam.
+
+According to Eq. 7, the lever amplification factor can be varied by (1) increasing the lever ratio, D_2/D_1, and (2) decreasing the rotational stiffness. These factors are examined in more detail below.
+
+# Increasing the lever ratio
+
+Similar to a conventional lever, the lever amplification factor will increase while the pivot beam is moved closer to the output beam. However, since the rotational stiffness of connection beam and pivot beam do not equal to zero, it can be shown that the lever amplification factor is always smaller than the ideal lever ratio, $A_{Ideal} = \frac{D - 2}{D - 1}$ as below:
+
+$$
+A _ {L v r} = \frac {C _ {1} + \sin \theta \cdot k _ {v p} D _ {- 1}}{C _ {1} \left(1 + \frac {k _ {v p}}{k _ {v c}} + \frac {k _ {v p}}{k _ {v t}}\right) + \sin \theta \cdot k _ {v p} \frac {D _ {- 1} ^ {2}}{D _ {- 2}}} <   \frac {C _ {1} + \sin \theta \cdot k _ {v p} D _ {- 1}}{C _ {1} + \sin \theta \cdot k _ {v p} \frac {D _ {- 1} ^ {2}}{D _ {- 2}}} \tag {10}
+$$
+
+$$
+\because D _ {-} 1 <   D _ {-} 2 \Rightarrow D _ {-} 1 > \frac {D _ {-} 1 ^ {2}}{D _ {-} 2}
+$$
+
+$$
+\therefore \frac {C _ {1} + \sin \theta \cdot k _ {v p} D _ {- 1}}{C _ {1} + \sin \theta \cdot k _ {v p} \frac {D _ {- 1} ^ {2}}{D _ {- 2}}} <   \frac {\sin \theta \cdot k _ {v p} D _ {- 1}}{\sin \theta \cdot k _ {v p} \frac {D _ {- 1} ^ {2}}{D _ {- 2}}} = \frac {D _ {- 2}}{D _ {- 1}} \tag {11}
+$$
+
+$$
+\therefore A _ {L \nu r} <   A _ {I d e a l}
+$$
+
+Another limitation of this method is that the rotational angle of lever beam, $\angle \theta$ , will increase with the increased ideal lever ratio for the same input force. This implies that $C_1$ in Eq. 7 will also increase and it may partially or even fully cancel the benefit of the increased lever ratio to the lever amplification factor.
+
+Figure 5 shows a comparison of the FEM simulated lever amplification factor to ideal lever ratio when the position of pivot beam changes. The simulation results show that the lever amplification factor, $A_{Lvr}$ , is always smaller than the ideal lever ratio due to the energy loss in the micro-lever as per the analysis presented earlier. Part of the energy loss could result from the non-zero rotational stiffness and finite vertical axial stiffness of the beams,
+
+modelled by Eq. 9. The bending of lever beam and input beam may also result in the energy loss.
+
+![](images/534de4238b5ed85ccddbb1ac7438f43137b7af24b1df5675fd04fe9471fc0b19.jpg)  
+Figure 5 Comparison of the simulated and ideal lever amplification factors for a representative design using Finite Element Analysis (COMSOL® 4.2a).
+
+# Decreasing the rotational stiffness
+
+As shown in Eq. 7, if the rotational stiffness equals zero, the lever amplification factor will approach the ideal lever ratio. Even though the rotational stiffness of the connection beam and the pivot beam are always non-zero, reducing these values will increase the lever amplification factor. Reducing the width of the pivot and connection beams will reduce the rotational stiffness (cubic dependency of width) much more significantly than the vertical axial stiffness (linear dependency of width). As an example, Figure 6 shows the comparison of simulated lever amplification factor of micro-levers with different values of pivot beam width. The minimum beam width in a design is normally limited by constraints imposed by the fabrication process.
+
+![](images/488f43572030e7d89427ca43cce8812f3935934bf8110d6913f9084e14627593.jpg)  
+Figure 6 Simulated amplification factor of levers with different pivot beam width
+
+Effective Amplification Factor
+
+The effective amplification factor of micro lever is given by the equation below:
+
+$$
+E A _ {L v r} = \frac {F _ {L v r \_ o u t}}{M _ {p r o o f} g \cdot \sin \theta} \tag {12}
+$$
+
+The effective amplification factor $(EA_{Lvr})$ equals the lever amplification factor $(A_{Lvr})$ in an idealized scenario where the inertial force of the proof mass is fully coupled to the lever. However, as shown in Figure 1, the proof mass is supported by suspensions with non-zero flexural stiffness on the sensing axis. As a result, the suspensions partially balance the inertial force of proof mass reducing the inertial force transmitted to the micro-lever and lowering the effective amplification factor to a value below that of the lever amplification factor. The effective amplification factor of a micro-lever working with suspensions can be estimated as,
+
+$$
+E A _ {L v r} = \frac {F _ {L v r - o u t}}{M _ {p r o o f} g \cdot \sin \theta} = \frac {A _ {L v r} F _ {L v r - i n}}{M _ {p r o o f} g \cdot \sin \theta} \tag {13}
+$$
+
+where the $A_{Lvr}$ is lever amplification factor of this micro-lever as studied before. By defining the input equivalent stiffness of the micro lever as,
+
+$$
+k _ {L v r \_ i n} = \frac {F _ {L v r \_ i n}}{x _ {L v r \_ i n}} \tag {14}
+$$
+
+where $x_{Lvr\_in}$ is the displacement of the input end of micro-lever. Substituting Eq.14 into Eq.13 and assuming the displacement along sensing axis of proof mass, free end of suspensions and input beam of micro-lever are always the same ( $x_{Lvr\_in}$ can be cancelled out), Eq. 13 can be rewritten:
+
+$$
+E A _ {L v r} = \frac {k _ {L v r \_ i n} \times A _ {L v r}}{k _ {s u s} + k _ {L v r \_ i n}}. \tag {15}
+$$
+
+The input equivalent stiffness of micro lever can be approximated assuming that there is no energy loss in the mechanism:
+
+$$
+k _ {L v r \_ i n} \approx \frac {k _ {v t}}{A _ {L v r} ^ {2}} \tag {16}
+$$
+
+Substituting Eq.16 into Eq. 15, the effective amplification factor and simplifying results in:
+
+$$
+E A _ {L \nu r} \left(A _ {L \nu r}\right) = \frac {k _ {\nu t} A _ {L \nu r}}{k _ {s u s} A _ {L \nu r} ^ {2} + k _ {\nu t}} \tag {17}
+$$
+
+and the maximum of effective amplification factor is:
+
+$$
+M a x \left(E A _ {L v r}\right) = \frac {A _ {L v r}}{2}, \text {w h e n} A _ {L v r} = \sqrt {\frac {k _ {v t}}{k _ {s u s}}} \tag {18}
+$$
+
+As per Eq. 18, the effective amplification factor always smaller than half of the lever amplification factor when the suspensions are considered. Eq. 17 and Eq. 18 also indicate that for a given topology, where $k_{\text{sus}}$ and $k_{\text{vt}}$ are fixed, there is an optimum lever amplification that maximizes the effective amplification factor. Figure 7 compares half of simulated lever amplification factor $(A_{\text{Lvr}} / 2)$ to the effective amplification factor $(EA_{\text{Lvr}})$ of the same micro-lever working with different values of proof mass stiffness. In general, an increase in suspension stiffness will decrease the effective amplification factor of the micro-lever. The simulation results also show that for a certain value of $k_{\text{sus}}$ and $k_{\text{vt}}$ , there is an optimum lever amplification to maximize the effective amplification factor,
+
+approximately equal to half of the lever amplification factor. The simulation results plotted in Figure 7 also indicate the analytical model described in Eq. 17 only can be used when the $A_{Lvr} \approx A_{Ideal}$ .
+
+![](images/5a8eca320281be1801dbd9c22822bcd147783355c8309c7a7ea3cf767b36881f.jpg)  
+Figure 7 Comparison between simulated effective amplification factors with different suspensions stiffnesses and half of the lever amplification factor $(A_{\mathrm{lvr}} / 2)$ .
+
+# 2.3 Design Summary
+
+Two designs with different design trade-offs involving metrics such as scale factor, resonator energy handling and shock robustness are implemented in a foundry SOI-MEMS process provided by MEMSCAP Inc. Design A has a lower scale factor as compared to design B whereas design B integrates resonators with decreased energy handling capability and reduced shock robustness.
+
+The design summary of both designs is provided in Table 1. The scale factor of both designs were evaluated by using pre-stressed eigenfrequency simulation and Figure 8 plots the simulated results for Design A.
+
+![](images/059fea876d69e4d5e78e75b6190cda266e798a39fb4d7a54757091893891c009.jpg)  
+Figure 8 FEM simulation of sensitivity and scale factor of tilt sensor with Design A
+
+The FEA results agree well with the analytical model for differential frequency shift previously presented (see Eq.1). The resonant frequency of two DETFs is seen to vary as a sinusoidal function of the tilt angle. In the regime of small tilt angle ( $\pm 20$ degrees), the scale factor of the sensor is obtained by fitting a line to the differential shift in resonant frequency and is found to be approximately $8.69\mathrm{Hz}$ /degree for Design A and $24.5\mathrm{Hz}$ /degree for Design B. The robustness of such highly sensitive devices under continuous loading and sudden impact is often of interest. FEM simulations are conducted by varying the body force on the proof mass and recording the resulting maximum induced principle stress. For Design A, the in-plane operation is limited by the elastic buckling of the DETFs at a load of over $100\mathrm{g}$ whereas the out-of-plane load limit of the sensor is approximately $500\mathrm{g}$ and is restricted by the stress concentration on suspension beams exceeding the fracture strength for silicon [24]. For Design B, the corresponding in-plane and out-of plane load limits are found to be about $70\mathrm{g}$ and $400\mathrm{g}$ , respectively. These acceleration values indicate the lowest shock limits of the two designs.
+
+Table 1 Summary of dimensions and principle characteristics of two tilt sensor designs   
+
+<table><tr><td></td><td>Design A</td><td>Design B</td></tr><tr><td>Beam width of DETF(w)</td><td>4 μm</td><td>3 μm</td></tr><tr><td>Beam length of DETF(L)</td><td>350 μm</td><td>350 μm</td></tr><tr><td>Beam width of Suspension(wsus)</td><td>4 μm</td><td>3.5 μm</td></tr><tr><td>Beam length of Suspension(Lsus)</td><td>400 μm</td><td>400 μm</td></tr><tr><td>Device thickness(t)</td><td>25 μm</td><td>25 μm</td></tr><tr><td>Proof-mass(MProof)</td><td>408.11 μg</td><td>468.36 μg</td></tr><tr><td>DETF resonant frequency(fc)</td><td>135.25 KHz</td><td>103.62 KHz</td></tr><tr><td>Effective Amplification factor(EA Lvr)</td><td>17</td><td>29</td></tr><tr><td>Simulated Scale Factor (STilt) (±20 degrees)</td><td>8.69 Hz/degree</td><td>24.5Hz/degree</td></tr></table>
+
+# 3. SCALE FACTOR CALIBRATION
+
+# 3.1 Device Fabrication
+
+Both Design A and Design B were fabricated using a commercially available SOI-MEMS process (offered by MEMSCAP Inc., USA). A micrograph of two designs samples is shown in Figure 9.
+
+![](images/f162a3a66248b35e8acd481892d42c68779f50e7ad407403684ae1bb47f9e2e1.jpg)
+
+![](images/b77c99edb9f1af791c3f50d9532883ab6e7d6aadd4dd6e7ac0984d800f52fe08.jpg)  
+Figure 9 Representative optical micrographs of (a) design A and (b) design B.
+
+# 3.2 Open-Loop Calibration
+
+The test setup used for open-loop measurement of the prototypes is shown in Figure 10. The tilt sensor and the tilt stage were integrated within a vacuum chamber to enable high quality factor operation of the DETF resonators. DC source meters were used to provide a DC-bias voltage on each of the DETFs and an Agilent 4396B Network Analyser was used to characterise the frequency responses of the two DETFs.
+
+![](images/93c9c3c1dc185eceafb003dc1d4be188a21394db3fd30dc5b8c4584a0442cf96.jpg)  
+Figure 10 Open-loop tilt test setup
+
+Figure 11 shows the measured transmission responses of two DETFs when subjected to a $\pm$ 90 degree tilt. Figure 11 (a) and (b) depict the outputs measured from the design A prototype whilst Figure 11 (c) and (d) correspond to those measured from the design B prototype. It is clear from Figure 11 that the two DETFs incur opposite frequency shift for induced angular tilts consequently, validating the differential operation of the resonant tilt sensor. However, fabrication tolerances often limit perfect matching of the unperturbed /unloaded resonant frequencies of two DETFs leading to small asymmetries in the magnitude of frequency variations measured from each of the tuning fork resonators. However, this error, being systematic, may be treated as an offset in the effective scale factor and consequently calibrated out using appropriate data processing techniques. The effective scale factor of each of the devices may thus be evaluated by simply subtracting the frequency shifts offered by each of the tuning fork resonators coupled to the opposite ends of the proof mass of each of the devices after compensating for the offset in natural frequency.
+
+![](images/4897a5cb06c8611cdf189c64c9a9df1355818edf0afa432d715b0b45ce91a499.jpg)
+
+![](images/b44d92326d47bada24a18a7fa40055a5bf135db4903d0f41d752cde9e039becc.jpg)
+
+![](images/433c8a5874e0f51674175af2e28dce83770aa804b640a3b02af8a2da31129420.jpg)
+
+![](images/48b0bb6a5fd0141949601bc753bf641fe45d92160577f2cefda798c65d05402b.jpg)  
+Figure 11 Open-loop 90 degree tilt test experimental measurement results of design A (a), (b) and design B (c), (d)
+
+![](images/62141cb896287a13893368994dcf5a73d19a8f2da69591d759bf6617ce1b5e07.jpg)
+
+![](images/5e19d9d92e53322e67624381983e96037115453e0b5c52880a54468a3f38f497.jpg)
+
+![](images/835690a83805d55089e353dd59c1f9344d906f102e2151e4c2ef96d34c79051f.jpg)
+
+![](images/8940078caf7d52bc3ac39b900dc11f4ad1d7f7d5d7858bcc3b7a64dd753fb450.jpg)  
+Figure 12 Open-loop multi-angle tilt test experimental measurement results of the design A (a) and design B (b)
+
+Figure 12 shows device response to multiple tilt angles for both designs A and B. The output responses of both devices match the expected response for sine function of the angular tilt, demonstrating the operation of the resonant tilt sensor with a measurement range of $\pm 90^{\circ}$ . For a $\pm 20^{\circ}$ detection range, the sensitivity of the first and second generation devices are found to be $7.62\mathrm{Hz}$ /degree and $21.93\mathrm{Hz}$ /degree respectively, estimated after fitting the experimental results to a linear fit (shown in Figure 12). These results match well with the simulation results shown in Table 1, which are $8.69\mathrm{Hz}$ /degree for Design A and $24.5\mathrm{Hz}$ /degree for Design B.
+
+# 3.3 Closed-Loop Calibration
+
+The open-loop tests are suitable for characterising the frequency response of the DETFs and allow for preliminary scale factor calibration. A practical implementation of the resonant tilt sensor requires the two DETFs to be embedded in suitable oscillator circuits to sustain operation of each of the DETF sensing element at their resonant frequencies and consequently allow for automatic tracking of the resonant frequency shifts induced by angular tilt.
+
+The sample device for closed-loop testing is mounted onto standard chip carriers and then vacuum packaged using a custom process (carried out in a customized vacuum
+
+chamber with manipulators and a hot-plate). The vacuum packaged sensor chip is co-integrated with frequency tracking oscillator circuits[24] on a single PCB and mounted on a manual tilt table to calibrate the scale factor. The tilt sensor and manual tilt table were placed on a suspended platform which is adjusted parallel to the ground. The frequency of oscillator output signal was measured and recorded using a frequency counter (Agilent 53230A).
+
+Fig. 13 shows the output frequency variation for a prototype corresponding to Design B observed in a $0^{\circ} - 90^{\circ}$ tilt test with $10^{\circ}$ increment for each step. The dashed line provides a fit to the mean frequency shift of the tilt sensor for each calibration point. The output frequency shift of the oscillator is seen to vary as a sinusoidal function of the tilt angle and is in agreement with the analytical model presented in Eq. 1. The tilt test results also indicate that the prototype provides a relatively linear response in the range of $\pm 20^{\circ}$ with a scale factor of approximately $25.04\mathrm{Hz}$ /degree. Similar tests carried on Design A devices and scale factors between $7 - 9\mathrm{Hz}$ /degree were observed. Both of the results match with the open-loop tests. As different chips are used in these experiments, the variation in the scale factor from device-to-device is likely to result from fabrication tolerances.
+
+![](images/0dd6848f0902762ac5698549176d4944a600f6ea2abac1139f8bd5860da9b9e7.jpg)  
+Figure 13 Output frequency shift response versus tilt angle
+
+# 4. TILT RESOLUTION AND OUTPUT STABILITY
+
+Achieving high resolution tilt angle measurement not only requires increasing the scale factor but also optimizing the noise floor. The noise floor may be governed by environmental factors, for instance, external low-frequency vibrations coupling to the sensor response, or noise intrinsic to the tilt sensor. This section only addresses intrinsic sensor noise; however, ambient vibrations may dominate the noise response, if the frequency of the ambient vibration resides within the measurement bandwidth and the external vibration-driven response of the sensor surpasses the inherent noise floor. As the frequency shift of the DETFs induced by tilt angle changes is tracked by an oscillator circuit, the inherent noise floor of the resonant tilt sensor can be derived from the frequency stability of the oscillator output. The noise-limited tilt angle resolution of MEM resonant tilt sensor within the linear tilt angle range is defined as:
+
+$$
+\theta_ {\min } = \left(\frac {\Delta f _ {n}}{f _ {0}}\right) \cdot \frac {\bar {f} _ {0}}{S _ {T i l t}} \tag {19}
+$$
+
+Where the $(\Delta f_{n} / f_{0})$ is the frequency stability of the output signal of frequency tracking oscillator with invariant acceleration input, normally represented in units of ppm (part per million) or ppb (part per billion), $\overline{f}_0$ is the average output frequency of the oscillator over the period of measurement and $S_{Tilt}$ is the scale factor of the tilt sensor.
+
+# 4.1 Voltage-Frequency Noise Conversion
+
+The frequency stability of the electro-mechanical oscillator can be influenced by several factors. The current devices are limited by voltage-to-frequency (V-F) noise conversion impacting on the frequency stability of the oscillator. V-F noise conversion may arise from the nonlinearities in the mechanics and the electrostatic transduction of the DETF sensing element. The mechanical nonlinearity of DETF converts the noise of the driving signal into a corresponding frequency shift [7]. In the oscillator implementation described here, a comparator is employed to limit the amplitude of the drive signal (see Fig.4) and the impact of the AC V-F noise conversion is expected to be small. The parallel-plate electrostatic actuation in the DETF sensing element introduces a frequency pulling effect that is dependent on the magnitude of DC polarization voltage [8]. Due to the non-linearity inherent in electrostatic actuation, low-frequency voltage noise and drift in the DC polarization voltage can result in a shift in the oscillator output frequency. If the fluctuation in the DC polarization voltage is defined as $V_{P}(t) = V_{P0} + \Delta V_{P}(t)$ , the frequency shift induced by the polarization voltage may be expressed as:
+
+$$
+\Delta f _ {0 - D C} ^ {2} (t) \approx \mathrm {G} _ {D C} \left(f _ {0}, V _ {P 0}, g _ {E l c}, t _ {E l c}\right) \cdot \Delta V _ {P} ^ {2} (t) \tag {20}
+$$
+
+where $G_{DC}$ is a coefficient determined by the resonant frequency of DETF, the geometry of the parallel-plate actuator and the level of DC polarization voltage. The DC polarization voltage limited resolution of MEM resonant tilt sensor can then be estimated as:
+
+$$
+\theta_ {\min  _ {D C}} ^ {2} (B) = \left(\frac {f _ {0} ^ {2}}{S _ {T i l t} ^ {2}}\right) \int_ {1 / \tau_ {d}} ^ {B} \left(\frac {1}{f _ {0} ^ {2}}\right) G _ {D C} S _ {D C} (f) d f \tag {21}
+$$
+
+where $S_{DC}(f)$ is the power spectral density of the DC polarization voltage noise, $B$ is the measurement bandwidth which is related to the reciprocal of the counter gate time, $\tau_d$ is the time-scale over which drift starts to impact the output frequency and $f$ is frequency.
+
+# 4.2 Experimental Results
+
+To study the influence of DC polarization voltage on the frequency stability of the sensor output, two successive measurements were made on a tilt sensor (Design B) with the sensitive axis oriented normal to the gravity field. In the first measurement, the DC polarization voltage was supplied by an alkaline battery. In the second measurement, the DC polarization voltage was supplied from a conventional low-noise regulated DC power supply (Agilent E3631A). The magnitude of the polarization voltage was set to be identical in both cases. The oscillator output was logged on a frequency counter and modified Allan deviation calculations were carried out. The results of this calculation are plotted in Figure 14. When the DETF sensing element was polarized by the regulated DC power source, the short-term frequency stability floor of the oscillator is found to be approximately 19.5 ppb for an averaging time of 1.6 seconds. When the DETF sensing element was polarized using a battery, the short-term frequency stability floor of the oscillator is found to be about 6.7 ppb for an averaging time of 0.8 seconds. It is known that batteries usually describe a lower noise level than conventional regulated DC power supplies [9] demonstrating the influence of DC polarization voltage noise on the frequency stability. For the tilt sensor using batteries as the DC polarization source, the equivalent angular resolution is approximately 500 nano-radian.
+
+![](images/473f53102672fcc3843dea2c6db1a7b94db3746107ec140553ed7b91df02fe5e.jpg)  
+Figure 14 Modified Allan deviation results for the frequency tracking oscillator with different DC polarization sources.
+
+# 4.3 Drift
+
+The performance of the tilt sensor is also significantly influenced by drift in the output response. Drift is defined as the non-null change of measured frequency of accelerometer output signal in the absence of input acceleration over a relative long time period. The drift may limit the accuracy for static tilt measurements and the repeatability of tilt measurements over time. Drift can result due to several reasons, such as bias potential variations on the resonator, variations in ambient temperature and pressure, surface adsorption/desorption processes and aging. In this paper, only temperature-induced drift is discussed.
+
+The temperature drift of tilt sensor results due to the dependence of the output response on temperature. The elastic properties of materials are known to be temperature dependent. The temperature dependence of the Young's modulus will impact not only the natural frequency of the DETF sensing element[25], but can also impact the scale factor due to the temperature sensitivity of the stiffness of the suspensions and micro-levers, contributing to the temperature drift as well.
+
+Since a differential measurement is employed, the temperature drift of resonant frequency may be cancelled to first order. The experimental setup used to study this drift cancellation method along with the measured results is shown in Figure 15. The
+
+temperature co-efficient of frequency (TCF) of the two individual DETFs of the Design A prototype were measured to be approximately -28.9 ppm/K and -28.4ppm/K for experiments conducted in the range of 300K to 340K, respectively. However, as the temperature dependence is a common mode effect, the differential topology enables a compensation of these effects to the first order. This indicates a net TCF of the prototype design to be approximately 500 ppb/K after differential compensation, which equals a systematic sensitivity error of nearly 0.007 degree/K.
+
+![](images/9aa67ef8d9f7371aa22c51807b4cf52be7c20c9de33b15ff7990aa0f798611af.jpg)  
+Figure 15 Differential Temperature Drift Cancellation test setting up (a) and experimental test results (b)
+
+# 5. CONCLUSION
+
+This paper presents a new approach to high resolution, wide range tilt sensing based on resonant sensing principles. Two micromechanical tilt sensors were designed and fabricated using an SOI-MEMS foundry fabrication process, the design and characterisation of which are detailed. Open-loop angular tilt tests were performed to evaluate the operation principle and experimentally quantify the scale factors of the two prototypes. These were measured to be about 500 Hz/ 90 degrees and about 1400 Hz/ 90 degrees respectively for the two prototypes described here. Furthermore, closed loop oscillator implementations have also
+
+been reported to study the minimum achievable electronic-noise limited resolutions using off-chip circuit implementations in these devices. Noise analysis and experiments on the implemented off-chip electro-mechanical oscillators indicate an electronic-noise limited resolution of $2.6 \times 10^{-4}$ degrees (Design A) and $2.86 \times 10^{-5}$ degrees (Design B) for an averaging time of 0.6 and 0.8 seconds, respectively. These values compare well with other reported high precision MEMS tilt sensors. Routes to on chip differential compensation and off-line drift cancellation in these devices to minimise temperature drift of these sensors is also discussed.
+
+# ACKNOWLEDGEMENTS
+
+We acknowledge financial support from the UK Technology Strategy Board (Grant Number: TP11/CAT/6/I/BP110G).
+
+# REFERENCES:
+
+[1] G. Tong, T. Wang, Z.-y. Wu, Z. Li, T. Chen, Application of high accuracy inclinometer to deformation measurement for vehicular platform, Opt Precis Eng, 18(2010) 1347-13531353.   
+[2] J. Li, R. Correia, E. Chehura, S. Staines, S.W. James, R.P. Tatam, A fibre Bragg grating based inclinometer system for ground movement measurement, in: J.L. Santos, B. Culshaw, J.M. LopezHiguera, W.N. MacPherson (Eds.), Fourth European Workshop on Optical Fibre Sensors, Spie-Int Soc Optical Engineering, Bellingham, 2010.   
+[3] W. Jian, G. Guowei, L. Penghua, The Study on Lange-angle CANBUS 2-axis Inclinometer of Rotary Drilling Rig, 2010 2nd IEEE International Conference on Information Management and Engineering (ICIME 2010), (2010) 3 pp.- pp. pp.   
+[4] D. Inaudi, B. Glisic, Interferometric inclinometer for structural monitoring, 2002 15th Optical Fiber Sensors Conference Technical Digest OFS 2002(Cat No02EX533), (2002) 391-4 vol.14 vol.1.   
+[5] C. Yang, G.J. Shropshire, C.L. Peterson, Measurement of ground slope and aspect using two inclinometers and GPS, Trans ASAE, 40(1997) 1769-76.   
+[6] R. Bilham, Borehole Inclinometer Monument For Millimeter Horizontal Geodetic Control Accuracy, Geophys Res Lett, 20(1993) 2159-62.   
+[7] I.C. Chun, T. Ming-Han, L. Yu-Chia, S. Chih-Ming, F. Weileun, Design and implementation of an extremely large proof-mass CMOS-MEMS capacitive tilt sensor for sensitivity and resolution improvement, TRANSDUCERS 2011 - 2011 16th International Solid-State Sensors, Actuators and Microsystems Conference, (2011) 1104-11071107.   
+[8] T. Yoshida, K. Ohata, M. Ueba, Highly Accurate Inclinometer Robust to Ultralow-Frequency Acceleration Disturbances and Applications to Autotracking Antenna Systems for Vessels, IEEE T Instrum Meas, 58(2009) 2525-34.   
+[9] L. Che Hsin, K. Shu Ming, Micro-impedance inclinometer with wide-angle measuring capability and no damping effect, Sens Actuators A, Phys, 143(2008).   
+[10] J. Courteaud, P. Combette, N. Crespy, G. Cathebras, A. Giani, Thermal simulation and experimental results of a micromachined thermal inclinometer, Sensor Actuat a-Phys,
+
+141(2008) 307-13.   
+[11] C.H. Lee, S.S. Lee, Asme, Capacitive Tilt Sensor Using Metallic Ball, New York: Amer Soc Mechanical Engineers; 2010.   
+[12] H. Bao, X. Dong, C. Zhao, L.-Y. Shao, C.C. Chan, P. Shum, Temperature-insensitive FBG tilt sensor with a large measurement range, Optics Communications, 283(2010) 968-70.   
+[13] J. Liang, F. Kohsaka, T. Matsuo, X. Li, K. Kunitomo, Development of Highly Integrated Quartz Micro-Electro-Mechanical System Tilt Sensor, Japanese journal of applied physics, 48(2009) 06FK10.   
+[14] J.C. Choi, C.M. Park, J.K. Lee, S.H. Kong, A MEMS-based dual-axis tilt sensor using air medium, International Solid-State Sensors, Actuators and Microsystems Conference, 15th International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers 2009), 2009, 300-3.   
+[15] J. Ho, K. Chang Jin, K. Seong Ho, An optimized MEMS-based electrolytic tilt sensor, Sens Actuators A, Phys, 139(2007) 23-3030.   
+[16] S. Luczak, W. Oleksiuk, M. Bodnicki, Sensing tilt with MEMS accelerometers, IEEE Sensors Journal, 6(2006) 1669-75.   
+[17] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, et al., A vacuum packaged surface micromachined resonant accelerometer, J Microelectromech Syst, 11(2002) 784-93.   
+[18] T.A. Roessig, R.T. Howe, A.P. Pisano, J.H. Smith, Surface-micromachined resonant accelerometer, International conference on solid state sensors and actuators, 1997 (TRANSDUCERS'97), Chicago, 1997, pp. 859-62.   
+[19] V. Kaajakari, T. Mattila, A. Oja, H. Seppa, Nonlinear limits for single-crystal silicon microresonators, J Microelectromech Syst, 13(2004) 715-24.   
+[20] L. Nicu, C. Bergaud, Modeling of a tuning fork biosensor based on the excitation of one particular resonance mode, J Micromech Microeng, 14(2004) 727-36.   
+[21] J. Juillard, A. Bonnoit, E. Avignon, S. Hentz, N. Kacem, E. Colinet, From MEMS to NEMS: Closed-loop actuation of resonant beams beyond the critical Duffing amplitude, Proceedings of the IEEE Sensors conference, 2008, pp. 510-3.   
+[22] T.B. Gabrielson, Mechanical-thermal noise in micromachined acoustic and vibration sensors, IEEE Transactions on Electron Devices, 40(1993) 903-9.   
+[23] X.-P.S. Su, Compliant Leverage Mechanism Design for MEMS Applications, PhD Thesis, University of California, Berkeley 2001.   
+[24] J.-E Y. Lee, B. Bahreyni, Y. Zhu, A.A. Seshia, A single-crystal-silicon bulk-acoustic-mode microresonator oscillator, IEEE Electron Device Letters, 29(2008) 701-3.   
+[25] M.A. Hopcroft, Temperature-Stabilized Silicon Resonators For Frequency References PhD Thesis, Stanford University, 2007.

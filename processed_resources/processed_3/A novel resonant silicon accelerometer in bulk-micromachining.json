@@ -1,0 +1,209 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Chr. Burrer *, J. Esteve\nCentro Nacional de Microelectrónica (CSIC), Campus U.A.B., 08193 Bellaterra, Barcelona, Spain",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "The fabrication and characterization of a resonant accelerometer made in bulk-micromachining technology are reported. The device consists of a silicon seismic mass suspended by two hinges from one side. Between them, a load sensitive silicon beam is located, clamped to the bulk and to the mass. The beam is driven electrothermally and sensed piezoresistively. A double-diffusion electrochemical etch stop process was employed in order to fabricate a sensor structure, permitting elongation and compression of the beam under an out-of-plane load, with a single wafer bulk-micromachining fabrication process. Initial device measurements show a sensitivity of   200\\mathrm{Hz}g^{-1}  to out-of-plane accelerations at a beam oscillation frequency of 90 kHz. Operation of the sensor in a closed-loop circuit with an external automatic gain control circuit was successfully verified.\nKeywords: Accelerometers; Silicon; Bulk micromachining",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "Mechanical structures that rely upon the resonant principle have been known for many years to be an attractive method for measuring physical parameters [1,2]. One of the most commonly found silicon resonators is a string clamped at both ends, which is sensitive to axial loads. This load can be made proportional to physical parameters such as acceleration, force, flow or pressure.\nThe advantages of a resonant sensor over other sensing principles are primarily its high potential sensitivity together with its quasidigital output. The latter implies that electrical drift or noise have only a second order influence on the measurement, moreover the interfacing to a digital system is greatly simplified.\nSeveral principles for driving and sensing a resonant element exist, such as piezoresistive, piezoelectric, electrothermal, capacitive and optical methods. For bulk-micromachined sensors, the couple electrothermal drive and piezoresistive sensing especially, is very attractive [3,4]. Excitation via a periodic heating force is simple and effective, and requires only a power-dissipating resistance on the vibrating element, which can be a diffused, implanted or deposited polysilicon resistor.\nThe same or another resistor is used for piezoresistive detection [5].\nThe accelerometer presented is based on the operation principle above. The device structure is outlined and the fabrication process is explained. Characterization of the device is split into two parts. First, the resonance qualities of the oscillating element, a clamped-clamped silicon beam, are shown. Then the first sensitivity measurements—in static mode—are presented. The results coincide well with the predicted values.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "The photograph in Fig. 1(a) shows a 3D view of the sensor, consisting of a seismic mass suspended by two hinges and one central triple beam. A second matched triple beam is located in the stiff bulk. From the cross sections in Fig. 1(b) it can be seen that the hinges are thicker than the beam, by a factor of four. Under an out-of-plane acceleration, the mass-hinge system moves similar to a cantilever type accelerometer. Since the neutral axis of the beam does not correspond with those of the hinges, either stretching or compression of the beam occurs. The mechanical load is converted into a change of resonance frequency of the beam. A triple beam was chosen, as it benefits from a high-  Q -mode amongst its three basic resonance modes [6]. Beam geometries were determined so that the first-mode basic resonance frequency at zero load applied is about   90\\mathrm{kHz}\nThe resistors for driving and sensing are located at the extremes of the central beam, where, when oscillating, the stress distribution reaches a maximum. The sense resistor is connected on-chip to a Wheatstone bridge, giving a voltage output.\nA second beam in the bulk, insensitive to accelerations, forms a differential pair with the sensing beam. Subtracting the output frequencies of the resonators, and assuming ideal matching, packaging and temperature induced frequency shifts are eliminated to a first order.\nAs seen in Fig. 1, the hinges are shorter than the beam. Fig. 2 plots sensitivity and resonance frequency of the spring-mass system versus hinge-beam length\nratio for a given sensor dimension, calculated analytically. With smaller ratios the increase in frequency is more pronounced than the loss in sensitivity, resulting in the highest sensitivity-frequency product. The chosen ratio of 0.5 leads to a theoretical resonance frequency of   1.9\\mathrm{kHz} .\nOverall dimensions of the chip are   4\\mathrm{mm}\\times 4\\mathrm{mm}\\times 1.3  mm, with mass dimensions of   1.55\\mathrm{mm}\\times 2\\mathrm{mm}  on the upper side, a beam length of   700~\\mu \\mathrm{m}  and a hinge length of   350~\\mu \\mathrm{m} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. (a) SEM photograph of a device chip; (b) schematic cross section of the sensor structure..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/78982654e3ba4728534d4195e771d68be957962475008c81f26bbd7018ef12c1.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/6994106436d38e296dab4035bd4070dcdb140d1e8da778633257c689fe97a2c5.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Analytically calculated sensitivity and resonance frequency of the spring-mass system as a function of the hinge-beam ratio for a given sensor dimension..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/1c6915de5bb30a1279a24f03b43b8f74ceab21faf9a98b47a8e300f304f27f1d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Fig. 1. (a) SEM photograph of a device chip; (b) schematic cross section of the sensor structure..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/78982654e3ba4728534d4195e771d68be957962475008c81f26bbd7018ef12c1.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/6994106436d38e296dab4035bd4070dcdb140d1e8da778633257c689fe97a2c5.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "Fig. 2. Analytically calculated sensitivity and resonance frequency of the spring-mass system as a function of the hinge-beam ratio for a given sensor dimension..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/1c6915de5bb30a1279a24f03b43b8f74ceab21faf9a98b47a8e300f304f27f1d.jpg"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The starting material was   300\\mu \\mathrm{m}  thick (100)-oriented double polished   100~\\mathrm{mm}  p-wafers. First, gaps of a few microns depth were etched with a TMAH solution on the wafer backside in the seismic mass regions. In this way, for packaging, the device wafer can be bonded directly onto a plain glass substrate. This step is optional. Next, deep   \\mathfrak{n}^+  -regions were fabricated by a   \\mathrm{POCl}_3  prediffusion and a subsequent long high-temperature drive-in. These regions formed the etch stop layer for the hinges during the final electrochemically controlled wet etching. Then a shallow n-well was implanted and driven-in, which represented the etch-stop layer for the thin resonating beam. The implant and anneal parameters were taken from a standard CMOS process. Together with this second well drive-in, the   \\mathfrak{n}^+  -regions extended to a junction depth of about   21\\mu \\mathrm{m} . Now the wafer backside was masked for the wet etching. Finally the resistors were implanted and the wafer metallized and passivated.\nTo minimize temperature dependent residual stresses in the beam caused by passivation films, a thin oxide between substrate and metal tracks was selected. The passivation oxide also served as a mask for the final membrane dry etch and the layer thickness was dimensioned so that it would almost be consumed during the dry etch. Instead of the oxide photoresist can also be used as masking for this etch.\nThe final anisotropic wet etching was done in a KOH solution in combination with a four-electrode etch stop method, leaving non-homogeneous membranes [7]. After the anisotropic wet etching the membranes were dry etched from the wafer frontside.\nFig. 3 shows a photo of a chip backside before the membrane etch. The flat membrane with the two hinge contours is clearly visible. The membrane profile in Fig. 4(a) reveals a thickness difference of about   16\\mu \\mathrm{m} , agreeing very well with the depth difference of the two junctions. The small hillocks close to the hinges originate from the compensation structures [8], that, when etched away, leave about   1\\mu \\mathrm{m}  high traces on the membrane surface. However they do not influence the proper function of the device. An enlarged hinge profile in",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 3. SEM photograph of the backside of an accelerometer chip, with the unetched membrane and the hinge contours visible..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2b3f8188427582bed4fa871df157161ed9a6f61c51187a583236924058f636bf.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Fig. 4. (a) Profile of the membrane with the two hinge contours, measured with a profilometer; (b) enlarged profile of a hinge contour..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/5e3ed5c37442942ba25c6e75be9d978c43eef71c79b6821b199af125f7dd65f2.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/06fbd5d025e8dc920f6c3402dad66414d626dd2b06bcd1e819bc4736e7ceb266.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "Fig. 3. SEM photograph of the backside of an accelerometer chip, with the unetched membrane and the hinge contours visible..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2b3f8188427582bed4fa871df157161ed9a6f61c51187a583236924058f636bf.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "Fig. 4(b) indicates that the spatial transition from the thick to thin membrane is about   40~\\mu \\mathrm{m} .\nA future integration of this fabrication process into a standard CMOS process is possible, as a recently fabricated integrated pressure sensor with the same etch stop technology demonstrates [9].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Fig. 4. (a) Profile of the membrane with the two hinge contours, measured with a profilometer; (b) enlarged profile of a hinge contour..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/5e3ed5c37442942ba25c6e75be9d978c43eef71c79b6821b199af125f7dd65f2.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/06fbd5d025e8dc920f6c3402dad66414d626dd2b06bcd1e819bc4736e7ceb266.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "For testing the resonance qualities of the resonator beams, an HP4195 network analyzer was used. It permits the measurement of the transfer function of an oscillating beam, which can be considered as an electrical two-port with the drive resistor corresponding to its input and the sense resistor corresponding to its output. As the heating effect of an electrical voltage applied to a resistor varies as the square of the voltage, the sinusoidal output signal from the analyzer was superimposed on a d.c. bias and then applied to the drive resistor.\nSince the sense resistor formed part of a Wheatstone bridge, its voltage-output signal could be fed directly to the analyzer input. The resonator measurements were performed on the beams that are, as seen in Fig. 1(a), located in the bulk.\nFig. 5(a) presents a Bode plot of a transfer function for a resonator beam. In this case the Wheatstone supply voltage was   5\\mathrm{V}  and the d.c. excitation bias 9",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. (a) SEM photograph of a device chip; (b) schematic cross section of the sensor structure..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/78982654e3ba4728534d4195e771d68be957962475008c81f26bbd7018ef12c1.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/6994106436d38e296dab4035bd4070dcdb140d1e8da778633257c689fe97a2c5.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Fig. 5. (a) Bode plot of the transfer function of a   700\\mu \\mathrm{m}  long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a).. Fig. 5. (a) Bode plot of the transfer function of a   700\\mu \\mathrm{m}  long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a)..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/8946d58827e44e47f150d204a1c749ddf8c41143a387a63c583d6bc04412d3b5.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/658ddbafe2f5b82338eb5bfa07e02ee81d10e87ce82c9f611d9bb4fa2fe7ba28.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2e1bea03bb927023ba87483cab3ee66ab64ccd3961d7e74059ec9b82184d10b0.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Fig. 4. (a) Profile of the membrane with the two hinge contours, measured with a profilometer; (b) enlarged profile of a hinge contour..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/5e3ed5c37442942ba25c6e75be9d978c43eef71c79b6821b199af125f7dd65f2.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/06fbd5d025e8dc920f6c3402dad66414d626dd2b06bcd1e819bc4736e7ceb266.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Fig. 5. (a) Bode plot of the transfer function of a   700\\mu \\mathrm{m}  long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/8946d58827e44e47f150d204a1c749ddf8c41143a387a63c583d6bc04412d3b5.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/658ddbafe2f5b82338eb5bfa07e02ee81d10e87ce82c9f611d9bb4fa2fe7ba28.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2e1bea03bb927023ba87483cab3ee66ab64ccd3961d7e74059ec9b82184d10b0.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/8946d58827e44e47f150d204a1c749ddf8c41143a387a63c583d6bc04412d3b5.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/658ddbafe2f5b82338eb5bfa07e02ee81d10e87ce82c9f611d9bb4fa2fe7ba28.jpg",
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2e1bea03bb927023ba87483cab3ee66ab64ccd3961d7e74059ec9b82184d10b0.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "V, which results in an excitation power of   23\\mathrm{mW} . The three gain peaks correspond to the three basic resonance modes of the triple beam. The first peak goes along with the typical   180^{\\circ}  phase shift. In the other peaks, the phase shift is less pronounced. Fig. 5(b) shows the same curves in a polar diagram representation. It can be observed that the large circle, corresponding to the first peak in Fig. 5(a), passes practically through the origin, while the smaller circles are slightly shifted away and turned. It indicates that the electrical cross-talk, represented by the vector from the origin to the starting and endpoint of the circles, is almost negligible compared to the circle diameter. This was achieved by placing the metal pads, that were found to be a dominant part of the capacitive coupling between drive and sense resistors, close together and by heavily doping the underlying silicon substrate. During operation of the resonator it was grounded.\nThe designed triple beam consists of a central beam and two outer ones, the central one twice as wide as the outer ones. They are joined together via decoupling\nzones, each of them occupying   7.5\\%  of the total beam length. In the resonance mode with the lowest frequency, the common mode, all beams oscillate in phase. The second mode is asymmetrical, the outer beams oscillate in anti-phase and the central beam rests. The differential mode, which corresponds to the highest frequency, is described by a   180^{\\circ}  phase shift oscillation between central and outer beams. It exhibits the highest Q-factor and offers theoretically the highest resolution when used in a sensor. Measurements on various samples yielded a quality factor of about 200 for the common mode, 310 for the asymmetric and 400 for the differential mode.\nHowever, when operating the resonator in closed-loop operation via an off-chip self-oscillating circuit, the oscillation tuned into the common mode frequency. This was expected, since for the characteristics of the electronic circuit used the common mode resonance exhibited the highest gain in the Bode plots.\nThe off-chip circuit consisted basically of a high input-impedance amplifier, required for the on-chip Wheatstone bridge output signal, a second amplifier stage and a phase-shifter. The gain of the second amplifier was controlled automatically (AGC). Gain and phase were adjusted in order to fulfil the two conditions required for continuous oscillation:\n$$\n\\varphi_ {\\text {r e s o n a t o r}} + \\varphi_ {\\text {c i r c u i t}} = k 2 \\pi \\quad k = 1, 2, 3, \\dots\n$$\n$$\n\\left| H (\\omega) _ {\\text {r e s o n a t o r}} \\right| \\left| H (\\omega) _ {\\text {c i r c u i t}} \\right| = 1\n$$\n\\varphi  is the phase angle and   H(\\omega)  is the transfer function of the respective system.\nIn closed-loop operation, the lowest d.c. excitation bias required was   8\\mathrm{V} , corresponding to an excitation power of   18.5\\mathrm{mW} . With this bias value, the a.c. amplitude was maintained at   1\\mathrm{V} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Fig. 5. (a) Bode plot of the transfer function of a   700\\mu \\mathrm{m}  long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a).. Fig. 5. (a) Bode plot of the transfer function of a   700\\mu \\mathrm{m}  long triple beam. The three first basic resonance modes are visible; (b) polar diagram of the transfer function in Fig. 5(a)..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/8946d58827e44e47f150d204a1c749ddf8c41143a387a63c583d6bc04412d3b5.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/658ddbafe2f5b82338eb5bfa07e02ee81d10e87ce82c9f611d9bb4fa2fe7ba28.jpg",
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/2e1bea03bb927023ba87483cab3ee66ab64ccd3961d7e74059ec9b82184d10b0.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "Static sensitivity measurements were performed in closed-loop operation, i.e. the sensor beam was maintained in self-oscillation. The output frequency was measured directly with an HP universal counter.\nBy turning the device in the gravitation field, an acceleration from   +1g (0^{\\circ})  to   -1g (180^{\\circ})  can be simulated. Fig. 6 plots the resonance frequency versus the inclination angle to the horizontal. For comparison the dotted line shows an ideal sine. The small shift of the curve is caused by the non-symmetry of the device structure.\nSeveral devices were measured, sensitivities ranging between 200 and   215\\mathrm{Hz}g^{-1} . The analytically predicted value was   220\\mathrm{Hz}g^{-1} , slightly above the measured one. For a   50\\mathrm{g}  device this corresponds to a   \\Delta f_{\\mathrm{r}}  of   11\\%  at full scale acceleration.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Fig. 6. Measured static sensitivity of a sensor. The device was turned in the gravitation field. An angle of   0^{\\circ}  corresponds to an acceleration of   +1g  and   180^{\\circ}  to   -1g ..",
+        "image_source": [
+          "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/9b1f1f420725259b90d262d4a1f3826ee849adb3fc67d50f7ccf22d0495afb31.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Fig. 6. Measured static sensitivity of a sensor. The device was turned in the gravitation field. An angle of   0^{\\circ}  corresponds to an acceleration of   +1g  and   180^{\\circ}  to   -1g ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A novel resonant silicon accelerometer in bulk-micromachining/vlm/images/9b1f1f420725259b90d262d4a1f3826ee849adb3fc67d50f7ccf22d0495afb31.jpg"
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "A resonant accelerometer in bulk-micromachining has been designed, fabricated and characterized. The fabrication process includes an electrochemical etch stop at a double diffusion, permitting the fabrication of membranes with different thicknesses. This feature was made use of in the design; a resonant sensor structure could be manufactured that combines sensitivity to out-of-plane accelerations with a 'standard' single-wafer bulk micromachining process.\nThe resonant element is a clamped-clamped silicon triple beam, which is driven electrothermally and sensed piezoresistively. Electrical measurements of the beam reveal quality factors from 200 to 400 of the different basic resonance modes. When operating the beam in a closed-loop configuration with an off-chip self-oscillating circuit, the power consumption is about   20\\mathrm{mW} .\nStatic sensitivity measurements of the device give a sensitivity of   200\\mathrm{Hz}g^{-1} , very close to the theoretical value.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_16",
+    "content": "The authors thank the CNM clean room staff for the wafer processing, M. Duch and A. Moreno for the post-processing and device encapsulation. The authors also acknowledge F. Larmer from R. Bosch GmbH for his support and advice during the whole work. This project has been funded by the CICYT project ROB1140/91-C01-01. Chr. Burrer is financially supported by Robert Bosch GmbH, Stuttgart, Germany.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "- [1] R.F. Wilfinger, P.D. Bardell and D.S. Chhabra, The resonistor: a frequency selective device utilizing the mechanical resonance of a silicon substrate, IBM J. Res. Dev., 12 (1968) 113-118.\n- [2] R.M. Langdon, Resonator sensors—a review, J. Phys. E: Sci. Instrum., 18 (1985) 103-115.\n- [3] D.W. Satchell and J.C. Greenwood, A thermally-excited silicon accelerometer, Sensors and Actuators, 17 (1989) 241-245.\n- [4] S. Bouwstra, R. Legtenberg, H.A.C. Tilmans and M. Elwenspoek, Resonating microbridge mass flow sensor, Sensors and Actuators, A21-A23 (1990) 332-335.\n- [5] M.B. Othman and A. Brunnschweiler, Electrothermally excited silicon beam mechanical resonators, *Electron. Lett.*, 23 (14) (1987) 728-730.\n- [6] Chr. Burrer and J. Esteve, Thermally driven micromechanical bridge resonators, Sensors and Actuators A, 41-42 (1994) 680-684.\n- [7] S. Marco, J. Samitier, J.R. Morante, A. Götz and J. Esteve, Three-dimensional structures obtained by double diffusion and electrochemical etch stop, J. Micromech. Microeng., 3 (1993) 141-142.\n- [8] M. Bao, Chr. Burrer, J. Bausells and S. Marco, Etching front control of   < 110>  strips for corner compensation, Sensors and Actuators A, 37-38 (1993) 727-732.\n- [9] C. Cané, F. Campabadal, J. Esteve, M. Lozano, A. Götz, J. Santander, Chr. Burrer, J.A. Plaza, L. Pahun and S. Marco, A technology for the monolithic fabrication of a pressure sensor and related circuitry, Sensors and Actuators A, 46-47 (1995) 133-136.",
+    "block_type": "text"
+  }
+]

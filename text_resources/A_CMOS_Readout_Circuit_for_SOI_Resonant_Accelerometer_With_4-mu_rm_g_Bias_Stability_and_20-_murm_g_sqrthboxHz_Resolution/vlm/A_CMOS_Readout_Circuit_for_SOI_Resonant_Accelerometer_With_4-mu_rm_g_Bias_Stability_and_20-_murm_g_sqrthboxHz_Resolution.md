@@ -1,0 +1,358 @@
+# A CMOS Readout Circuit for SOI Resonant Accelerometer With $4 - \mu \mathrm{g}$ Bias Stability and $20 - \mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ Resolution
+
+Lin He, Student Member, IEEE, Yong Ping Xu, Senior Member, IEEE, and Moorthi Palaniapan
+
+Abstract—A fully differential CMOS readout circuit for SOI resonant accelerometer is reported. The readout circuit is essentially an oscillator, consisting of an oscillator and a low noise automatic amplitude control (AAC) loop. A differential sense resonator is proposed to facilitate fully differential circuit topology and improves the SNR under a 3.3-V supply. A second-order AAC loop filter and a novel chopper stabilized rectifier are employed in the AAC loop to remove the noises, in particular, the $1 / \mathrm{f}$ noise, and to minimize the phase noise caused by the amplitude stiffening effect. The strong driving feedthrough is avoided by separating the drive and sense operation in the time domain, while using the same electrodes. The complete resonant accelerometer operates under a 3.3-V supply and achieves $140\mathrm{-Hz / g}$ scaling factor, $20~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution and $4\mu \mathrm{g}$ bias stability. The readout circuit draws $7\mathrm{mA}$ under 3.3-V supply.
+
+Index Terms—Accelerometer, bias stability, MEMS resonator, oscillator, phase noise.
+
+# I. INTRODUCTION
+
+In THE PAST decade, though different detection mechanisms have been proposed, MEMS accelerometer development has been dominated by capacitive sensing [1]–[3], in which the acceleration is measured by the capacitance change, due to its good dc response, low temperature sensitivity [4]. However, capacitive accelerometers suffer from uncertain drift [5] in the presence of radiation, preventing them from the applications in harsh environment such as space exploration. Compared with capacitive MEMS accelerometers, resonant accelerometers are radiation resistant [6] as they measure the frequency shift of the resonant beams. Furthermore, the resonant beams are axially loaded during operation, which allow large input and wide dynamic range [7]. Historically, quartz resonant accelerometers are favored in high-precision, navigation quality sensors [8]. They are capable of detecting the tidal gravitational pull of the moon (10 s of ng) [9].
+
+Silicon resonant accelerometers (SRA) have been demonstrated using various fabrication processes [10]-[14]. Navigation-grade $(< 50~\mu \mathrm{g})$ performance was reached with a combination of bulk-micromachining and discrete component readout circuit [10], [12], [14]. However, it is difficult to design
+
+a low noise high accuracy monolithic readout circuit for SRA in CMOS process. The first SRA integrated with a CMOS readout circuit reached a $0.8\mathrm{mg}$ bias stability with $45\mathrm{Hz / g}$ sensitivity [13], which is two orders of magnitude away from the navigation-grade performance. Since a surface micromachining process is used and the resonator output is much weaker, the $1 / f$ noise of the readout circuit dominates the poor bias stability.
+
+Bias stability refers to the bias (offset) change during a certain period. Poor bias change can be caused by environmental factors such as temperature or by random factors such as $1 / \mathrm{f}$ noise. Since the temperature effect can be compensated in a number of ways, the ultimate precision of accelerometer is determined by the random bias change. In contrast to white noise, the bias change caused by $1 / \mathrm{f}$ noise can not be reduced by averaging and therefore must be minimized in the readout circuit. In SRA, the $1 / \mathrm{f}$ noise appears as $1 / \mathrm{f}^3$ sideband, known as $1 / \mathrm{f}^3$ phase noise, around the frequency of oscillation and pollutes the frequency reading.
+
+The reduced power supply for integrated readout circuit poses a big challenge in the design of a high purity MEMS oscillator. Under a reduced polarization voltage, the output signal strength is compromised. To maintain the same signal-noise-ratio (SNR), a large oscillation amplitude is preferred, which in turn increases the resonator nonlinearity and the $1/f^3$ phase noise, either through direct aliasing of $1/f$ noise, or through chaotic Duffing behavior [15]. Automatic amplitude control (AAC) loop was introduced to prevent the resonator from entering strong nonlinear region [15], [16]. However, the widely used AAC loop structure [15]–[17] [Fig. 4(b)] does not allow the resonator to oscillate beyond the Duffing bifurcation point [15], otherwise the chaotic behavior will be triggered which abruptly deteriorates the phase noise. Unfortunately, due to the high quality factor achieved in vacuum environment, the bifurcation point of a MEMS resonator is extremely small. This dilemma was solved by the introduction of a different AAC loop structure (Fig. 5), which allows the oscillation amplitude to exceed the bifurcation point without triggering chaotic behavior. However, even with this suitable AAC loop structure, a coarse AAC loop implementation could make the bias stability even worse, as any additive noise introduced in this loop will appear as a noise in the oscillation amplitude and cause an extra phase noise through the amplitude stiffening (A-S) effect [16], which causes the oscillation frequency to change with the oscillation amplitude. In this paper, a low noise automatic amplitude control (AAC) loop with chopper stabilized (CHS) peak detector and error amplifier is introduced
+
+![](images/c95adde3c91b558ad99551cff29686837b475e67c1e617184755d874b9dfb65b.jpg)
+
+![](images/eb7d8fbc683aab7e7d1f83d4e76821eed23a67d284fc7749058495eab978235a.jpg)  
+(a)   
+(b)
+
+![](images/f89e9124ed4432187dbaed7fa5dd1d3e74acfc0be698008ae5293c521dfc260e.jpg)  
+Fig. 1. (a) Schematic diagram of the resonant accelerometer based on SOIMUMPs process and (b) cross-section view of the process.   
+(a)
+
+![](images/3776992c5cbf1d92bb56d1c86c6a05b832cba2672f130d8e86cab7609cc2b0df.jpg)  
+(b)   
+Fig. 2. (a) Double-ended tuning fork for single-ended operation and (b) modified structure for fully differential operation.
+
+to prevent the resonator from entering strong nonlinear region and to minimize the phase noise caused by the A-S effect.
+
+The rest of the paper is organized as follows. Section II briefly describes the operation principle of SRA and introduces our SRA design based on SOI process. Section III reviews the existing oscillation structures of MEMS resonator, and discusses the system-level design of the low noise MEMS oscillator circuit. A detailed analysis of the AAC loop is presented. Section IV describes the details of the circuit implementation. Experimental results are presented in Section V and the paper concludes in Section VI.
+
+# II. SILICON RESONANT ACCELEROMETER
+
+# A. Resonant Accelerometer
+
+A resonant accelerometer is a device that measures the frequency changes of sense elements under applied acceleration. A typical silicon resonant accelerometer has a proof mass and two sense resonators placed at opposite sides along the axis of acceleration. When it is subject to acceleration, the proof mass will axially load the resonant beams and cause change of resonant frequencies. The frequency difference between the two resonant beams is the measure of the acceleration. We chose
+
+![](images/4840080141b7f59e9d2b9d41187a578d06d227bd12d465fa380a55768a5525c9.jpg)
+
+![](images/a5b68d97e7fde72ce39eff4e09bf49bf78d5227c99e30c4f831d3f8da3c893d7.jpg)  
+(a)   
+(b)   
+Fig. 3. Measured sense resonator frequency response (a) at $3.3\mathrm{V}$ polarization voltage and (b) at $25\mathrm{V}$ polarization voltage.
+
+an SOI process for fabrication of the SRA to exploit the super stable mechanical property of single-crystal silicon and the perfect temperature matching between the substrate and the structure layer. Our SRA design is conceptually sketched in Fig. 1(a). The whole structure is released with the through-hole from the backside [Fig. 1(b)] which does not allow the anchors to be placed in the center. Hence the mechanical leverages, which multiply the inertial loads applied to the resonant beams, are redesigned with the anchors placed at the corner. An additional gold layer is deposited on top of the proof mass to further improve the sensitivity. With a load multiplication ratio of 35, the accelerometer achieves a sensitivity of $140\mathrm{Hz / g}$ with a nominal frequency of $135\mathrm{kHz}$ .
+
+# B. Sense Resonator
+
+The sense resonator is a key component in a resonant accelerometer. In the previous work [10]-[12], the sense resonators are made with a double-ended tuning fork (DETF) structure shown in Fig. 2(a). The two beams are excited exactly $180^{\circ}$ out-of-phase during the operation to minimize the acoustic radiation. Although this structure helps achieve a good quality factor $(Q)$ , it favors only single-ended operation. In our
+
+![](images/f956ceaee25cd18f28eef935d6ad733ca344f48299f9158634c57fb541f71f62.jpg)  
+(a)
+
+![](images/506d90b4e3136430f8f23db73b5276972b4522d3b2cb63443b5a3ffc753cbe0d.jpg)  
+(b)   
+Fig. 4. Schematic diagram of (a) direct feedback MEMS oscillator and (b) MEMS oscillator with AAC loop and gain control performed on the sense amplifier.
+
+design, to take advantage of differential operation, a connection is made at the center of DETF, as shown in Fig. 2(b), which forces both beams to move exactly in-phase with each other, resulting in a differential capacitance change. Comb structures are chosen for electromechanical transduction for their good linearity. The sense resonator has a measured $Q$ of 30,000 @ 0.1 m bar [Fig. 3(b)], compared with the $Q$ of DETF resonator in the range of 50,000-100,000. The reduced $Q$ of the new sense resonator is already high enough to bring the motion current above the noise level under a 3.3 V polarization voltage. Another reason to employ a fully differential topology is the strong feedthrough that covers the already-weak resonance signal. As shown in Fig. 3(a), the resonant peak is barely seen at 3.3 V.
+
+# III. MEMS OSCILLATOR
+
+# A. Review of Existing MEMS Oscillator Structures
+
+The readout circuit for SRA is essentially an oscillation circuit with the sense resonator embedded inside the feedback loop, acting as the frequency selection element. A stable and clean oscillation is necessary to accurately measure the resonant frequency of the sense resonator. A simple MEMS oscillator can be constructed using the circuit given in Fig. 4(a) [18]. The resonant beam needs to be polarized at $V_{p}$ . In motion, the resonant beam produces a motion current at one electrode.
+
+![](images/005327ac9d044a4eaebcf2957df9c32f5ff527ac07d927d94e6f8a70bce5cd45.jpg)  
+Fig. 5. Oscillator structure with AAC loop and fixed-gain sense amplifier.
+
+This current is sensed and fed back to the other electrode or through a comparator [19] to generate an electrostatic force. If the gain and phase criterion are satisfied, the resonant beam will oscillate until its amplitude is eventually stabilized by the nonlinearities in the mechanical part or electrical part. The amplitude of this oscillator suffers from temperature and supply voltage variation and thus is limited to the low accuracy arena due to the amplitude caused frequency drift.
+
+Automatic amplitude control (AAC) loop is introduced [15]–[17] to avoid strong nonlinearity, as shown in Fig. 4(b). The gain of the sense amplifier is made variable by replacing the feedback resistor with a MOSFET operating in linear region. The amplitude of the oscillation signal at the sense amplifier output is detected and compared with a preset value. The amplified error signal is used to adjust the resistance of the MOSFET transistor. However, this configuration creates a “chicken/egg” dilemma since the observed amplitude has already been changed by the control signal. As a matter of fact, the oscillation amplitude is not uniquely defined by the preset value but wanders over a range. Therefore, the oscillator exhibits a similar behavior to a nonlinear resonator in open-loop configuration. If the amplitude exceeds the Duffing bifurcation point [15], chaotic behavior is triggered which causes an abrupt phase noise deterioration.
+
+# B. MEMS Oscillator With Modified Automatic Amplitude Control
+
+Fig. 5 shows a simplified oscillator structure in the proposed SRA. The oscillation amplitude can be uniquely defined by a preset value, $\mathrm{V}_{\mathrm{R0}}$ , to avoid chaotic behavior. The gain of the sense amplifier is fixed and the amount of the feedback is adjustable by an additional linear variable-gain amplifier (VGA) following the sense amplifier. The gain of the linear VGA is controlled by the difference between the oscillator amplitude and the present value, $\mathrm{V}_{\mathrm{R0}}$ , which is a filtered output from the error amplifier. The system shown in Fig. 5 is a complicated dynamic system that prevents simple analytical solutions. To analyze this system, the first step is to simply ignore the nonlinearities. The simplified system is shown in Fig. 6(a), with noise sources indicated at each node. The damping $b_{0}$ in the resonator is counteracted by the positive feedback whose gain is represented as $b(t)$ . With the aid of AAC loop, $b(t)$ can be finely adjusted to $b_{0}$ to
+
+![](images/85b3ec4da2f3429f3af715f11dc5a193fb3ee128bd43cbfa7b2a74974a0d15f7.jpg)
+
+![](images/e00ff9106490c724f32191de2c1aecf01e92ec5ffd721cfbf447ecf0772457c2.jpg)  
+(a)   
+(b)   
+Fig. 6. (a) Oscillator model with automatic amplitude control and (b) linear equivalent model of its automatic amplitude control loop.
+
+maintain stable oscillation. The detected amplitude is compared with the preset value $A_0$ , and the difference is amplified and filtered to generate the control signal $b(t)$ . According to the analysis in [20], the transfer function from the gain control signal $b(t)$ to the oscillation amplitude $A(t)$ can be written as
+
+$$
+A (s) = \frac {A _ {0}}{2 s} b (s). \tag {1}
+$$
+
+It is interesting to note in Fig. 6(b) that the automatic amplitude control loop has similarity to the phase-locked loop (PLL). Therefore, the same loop filter design strategy used in PLL can be applied directly to the AAC loop. A second-order loop filter borrowed from the charge-pump PLL [21] is used in our AAC.
+
+Based on the linear equivalent model, the transfer function from various noise sources in the AAC loop to the oscillator amplitude noise is
+
+$$
+\begin{array}{l} N _ {x} (s) = \frac {A _ {0} L (s) / (2 s)}{1 + A _ {0} L (s) / (2 s)} \left[ N _ {E} (s) + N _ {P} (s) + \frac {N _ {b} (s)}{L (s)} \right] \\ \approx N _ {E} (s) + N _ {P} (s) + \frac {N _ {b} (s)}{L (s)} \quad \left(\left| A _ {0} L (s) / (2 s) \right| \gg 1\right) \tag {2} \\ \end{array}
+$$
+
+where $N_{x}$ is the oscillator amplitude noise, $N_{E}$ is the input-referred noise of the error amplifier, $N_{P}$ is the output-referred noise of the peak detector, and $N_{b}$ is the input-referred noise at the gain control node of VGA. Equation (2) indicates that a second-order loop filter in our design helps reduce $N_{b}$ , but not $N_{E}$ and $N_{P}$ . Therefore, after the use of the second-order loop filter, the remaining $1 / \mathrm{f}$ noise sources are the noise at the peak detector and the error amplifier.
+
+# C. Phase Noise
+
+In a MEMS oscillator, the phase noise is a combination of two kinds of noise sources. The first one is caused by the noise inside the oscillation loop. Its spectrum density can be predicted employing the Leeson's phase noise model [22]
+
+$$
+S _ {\phi} (\Delta \omega) = \frac {\omega_ {0} ^ {2}}{2 Q ^ {2}} \frac {P _ {n} \left(\omega_ {0} + \Delta \omega\right)}{P _ {0} \Delta \omega^ {2}} \tag {3}
+$$
+
+![](images/785f92f6f4cdb146a77cdc57a6d0f8a299163d084524bfc0670df4445bacf526.jpg)  
+Fig. 7. Block diagram of the proposed readout circuit with automatic amplitude control.
+
+![](images/83ac5253f0436a04a27c0885719ce6442eb3edb7ba2663742ff9d9198a805a8c.jpg)
+
+![](images/a73ac7881b8603ab8b14643f052df8dd5bd30ab1fca7edf87ea73c6c367456f0.jpg)  
+(a)   
+(b)   
+Fig. 8. (a) Schematic of low-noise capacitive position sense interface and (b) its associated clock diagram.
+
+where $\Delta \omega$ is the frequency offset, $P_0$ is the signal power, $P_{n}$ is the noise power from the sensing interface, and $Q$ is the resonator's quality factor. To minimize this phase noise component, either a high quality factor or a high signal-to-noise ratio is required.
+
+The other noise source is caused by the amplitude fluctuation, through the amplitude stiffening (A-S) effect. If the restoring force of the resonant beam is nonlinear,
+
+$$
+F = k _ {0} x + k _ {2} x ^ {3} \tag {4}
+$$
+
+where $x$ is the displacement, then the oscillation frequency $\omega$ is a function of amplitude [23]
+
+$$
+\omega = \omega_ {0} \left(1 + \frac {3}{8} \frac {k _ {2} X ^ {2}}{k _ {0}}\right) \tag {5}
+$$
+
+where $X$ is the oscillation amplitude, $\omega$ is the oscillation frequency at $X$ , and $\omega_0$ is the nominal frequency without nonlinear terms. Hence a small amplitude fluctuation $\delta X$ results in an oscillation frequency change
+
+$$
+\delta \omega = \frac {3}{4} \frac {k _ {2}}{k _ {0}} \omega_ {0} X \delta X. \tag {6}
+$$
+
+From this observation, the phase noise spectrum caused by the A-S effect is given by
+
+$$
+\begin{array}{l} S _ {\phi} ^ {\prime} (\Delta \omega) = \frac {S _ {\omega} ^ {\prime} (\Delta \omega)}{\Delta \omega^ {2}} = \left[ \frac {3}{4} \frac {k _ {2}}{k _ {0}} \omega_ {0} X N _ {x} (\Delta \omega) \right] ^ {2} / \Delta \omega^ {2} \\ = \frac {9}{1 6} \left(\frac {k _ {2}}{k _ {0}}\right) ^ {2} \frac {\omega_ {0} ^ {2} X ^ {2} N _ {x} ^ {2} (\Delta \omega)}{\Delta \omega^ {2}} \tag {7} \\ \end{array}
+$$
+
+where $\Delta \omega$ is the frequency offset, and $N_{x}^{2}$ is the amplitude noise power. The $1 / \mathrm{f}$ noise in $N_{x}^{2}$ is aliased into $1 / \mathrm{f}^3$ noise by the denominator $\Delta \omega^2$ .
+
+# IV. CIRCUIT IMPLEMENTATION
+
+# A. System Overview
+
+Based on the above analysis, a readout system with a low-noise AAC loop for SRA is proposed and shown in Fig. 7. A switched-cap capacitive sense interface is used to detect the displacement of the resonant beam. A velocity signal is obtained by a differentiator to provide a proper phase shift required for oscillation. The signal is multiplied by a gain control signal and
+
+![](images/d3328b368f2909fbf65772210bc29d8a4a29623460fcdebe00a8e82fb6d4ed2f.jpg)  
+(a)
+
+![](images/66c559ed10ba8e671f1c884ec2eb7da3fc55bd1fa40c38aa8d0bd45b0a6ba788.jpg)  
+(b)
+
+![](images/205f5f57b0c373373a47c57982110fb20b68d809da260a093fdcb20f51008955.jpg)  
+(c)
+
+![](images/5ea9f551315a1ce20e2c7b3c3f18aa1894277ca1fb3cbd9601a90ca1dd12e698.jpg)  
+(d)   
+Fig. 9. Four-phase operation of capacitive sense interface with correlated-double-sampling.
+
+fed back through a buffer to drive the resonator. The gain control signal is automatically set by the AAC loop. Inside the AAC loop, the oscillation signal is pre-amplified by $A_{2}$ before feeding it to the rectifier to ensure its proper operation. An error amplifier is used to amplify the difference between the detected amplitude and a preset value $V_{\mathrm{R0}}$ . To reduce the 1/f noise, chopper stabilization is applied to the rectifier and the error amplifier. The resultant error signal is fed to the loop filter $\mathrm{L(s)}$ whose output controls the gain of the linear VGA (or multiplier). To operate the whole system under a 3.3 V power supply, a driving scheme from [24], [25] is adopted to reject the driving feedthrough by separating the sense and drive operation in the time domain. The same electrodes are reused to maximize the signal.
+
+The sense interface and differentiator are designed to be low noise to highlight the impact of the AAC loop to the noise and bias stability. The noise from the VGA is almost negligible because of the second-order loop filter. The rectifier and error amplifier are the most important noise sources.
+
+# B. Low Noise Capacitive Sense Interface
+
+The motion of the resonator causes a sense capacitance variation at a frequency of $135\mathrm{kHz}$ . This capacitance variation is oversampled by the sense interface at a rate of $5\mathrm{MHz}$ to maintain a near-smooth waveform and to minimize the delay introduced. This sense interface is modified from a switched-cap charge integrator, with correlated double sampling (CDS) performed at the amplifier output to remove the offset and flicker noise [24], [25]. Fig. 8 depicts the proposed capacitive sense interface circuit and its associated clock timing diagram. An additional gain stage is placed after the switched-cap charge integrator.
+
+The operation of this sense interface involves four phases, namely, clear, autozero, sense, and drive. Fig. 9 shows the simplified configurations of the sense amplifier in four respective phases. The clear phase [Fig. 9(a)] resets the input common-mode voltage of the sense interface to $V_{icm}$ to ensure a correct bias point and discharges the capacitors to erase the memory
+
+![](images/815b29da9dfbe3623c6c75d0dab4f13fe90e10de84eb31ed878ed27cb18a1b6b.jpg)  
+Fig. 10. Simplified schematic of fast-settling opamp with feedforward path.
+
+from previous cycle. During the autozero phase [Fig. 9(b)], the amplifier offset and flicker noise are amplified and stored in $\mathrm{C_H}$ and to be subtracted in the subsequent sense phase. The polarization voltage $\mathrm{V}_p$ is kept at $2V_{DD}$ . During the sense phase [Fig. 9(c)], $\mathrm{V}_p$ transits from $2V_{DD}$ to $V_{DD}$ . A small differential charge that is proportional to $\Delta C_s$ is produced and flows onto the integrating capacitor $C_i$ . During the drive phase [Fig. 9(d)], $\mathrm{V}_p$ is reset back to $2V_{DD}$ to improve the voltage-to-force transduction. A fully differential drive voltage $V_d$ is applied to the same electrodes that connect the sense interface. To avoid overdriving OTA1, a pair of capacitors $C_c$ is used to isolate the drive signal from the inputs of OTA1 whose inputs are shorted during the drive phase.
+
+With CDS, at the end of the autozero phase, broadband thermal noise will be sampled onto $C_{\mathrm{H}}$ . The capacitive resolution of this sense block is derived as [26]
+
+$$
+\overline {{C _ {n} ^ {2}}} \approx (\pi f _ {- 3 \mathrm {d B}} T _ {\mathrm {s}} - 1) \left(\frac {C _ {c} + C _ {g}}{C _ {c}}\right) ^ {2} \frac {C _ {T} ^ {2} \overline {{V _ {n} ^ {2}}}}{(\Delta V _ {P}) ^ {2}} \tag {8}
+$$
+
+where $f_{-3\mathrm{dB}}$ is the close-loop $-3\mathrm{dB}$ bandwidth, $T_{s}$ is the length of sensing phase, $C_T = C_s + C_p + C_g + C_i$ is the
+
+![](images/d788014f92c58b82af2e13d3b00210e3a79442471d230475222f7d46fa3cd742.jpg)
+
+![](images/72ed56647f602e473cb3fe856583c59768fdedb4516ecfaa5f2c3edb1eba41c3.jpg)  
+(b)   
+Fig. 11. (a) Schematic of offset-free differentiator and (b) its associated clock diagram (FBND is delayed version of FBN and FBNDD is delayed version of FBND).
+
+total capacitance, $V_{n}$ is the input noise of OTA1, and $\Delta V_{P}$ is the voltage step applied to the common node of capacitive half-bridge. Equation (8) implies that reducing $C_T$ or increasing the sampling rate helps improve the resolution of the sense interface.
+
+In order to reduce the parasitic capacitance at the input of OTA1, input common mode feedback (ICMFB) [24], [25] is not employed. This will cause the input common mode voltage to vary in response to the voltage step $\Delta V_{p}$ and hence any mismatch between the parasitic capacitances will appear as an offset at the output. In our design, this offset can be removed by the following differentiator and thus, it is no longer an issue.
+
+The sampling rate is improved by the following techniques. Firstly, two feedforward fast-settling OTAs, OTA1 and OTA2, are designed by introducing a pair of cross-coupling capacitors $C_{ff}$ between the gates and opposite drains of the differential pair [27], as shown in Fig. 10. Secondly, a pair of compensation resistors $R_{c}$ (Fig. 8) is introduced in the extra gain stage to optimize its setting time. Thirdly, the reset switches of OTA1 and OTA2 are assigned to different clocks, CLR for OTA1 and CLRD for OTA2, to avoid two-stage settling in the autozero phase, which is identified as the settling bottleneck. CLR is only half of CLRD (Fig. 8), which remains high in the whole clear phase. Therefore, at the end of clear phase, the error signal in the first stage is already settled and stored on $C_{A}$ .
+
+# C. Offset-Free Differentiator
+
+The feedback force should be in phase with the velocity of the resonant beam to excite self-oscillation. This velocity signal
+
+![](images/4b82ff415cb19e66847635210e2d813357db220f20ace7a654381181aede2a10.jpg)
+
+![](images/b4cab6530c0513a3650da59fd7cb3785670901774aaaf4ac9977be4265bb9c62.jpg)  
+(a)   
+(b)   
+Fig. 12. Schematic diagram of VGA with TIA as the output buffer.
+
+Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 20:50:44 UTC from IEEE Xplore. Restrictions apply.
+
+![](images/61301ea438e889252a871ecc1b35e87e6f151d316fc598ca60ea73e4f1aee4e4.jpg)  
+Fig. 13. Chopper stabilized peak detector and error amplifier.
+
+![](images/faab6438e4341ad890b09bb0954447022ba61deb9b3f6084b448fbf791ce8818.jpg)  
+Fig. 14. Microphotograph of CMOS readout circuit chip and SOI resonator interconnected.
+
+is obtained by differentiating the sensed position signal, $\Delta C_{s}$ in the $z$ domain. Fig. 11 shows the schematic of the differentiator and its clock timing diagram. The differentiation function is realized by charge redistribution among two capacitors. $C_1$ stores the present signal while $C_2$ and $C_3$ alternatively store the delayed signal. The capacitances of $C_1$ , $C_2$ , and $C_3$ are equal. As the signal at the input of the differentiator is still weak, any low frequency noise from OTA3 could jeopardize the signal. Thus, correlated double sampling (CDS) is applied to remove the DC offset and $1/f$ noise at the input of OTA3. During the drive phase, the charges stored on $C_1$ , $C_2$ or $C_3$ are transferred to $C_5$ and the output becomes valid. During the phase when FBN is high, $C_6$ holds the output signal from the previous period so that OTA3 remains in a closed loop. The differentiator stage also provides $4\times$ voltage gain.
+
+The differentiator output is sampled by a pair of switches and held on the input capacitances of a differential pair amplifier.
+
+# D. Linear VGA and Buffer
+
+The linear VGA is essentially a multiplier implemented as a Gilbert cell. Its differential current output is amplified by a transimpedance amplifier (TIA) [Fig. 12(a)]. The common mode output current from the Gilbert cell is subtracted by the input common mode feedback block. Capacitor $C_f$ is introduced in parallel with $R_f$ for phase compensation. This compensation technique allows us to design an operational amplifier (opamp) with minimum bandwidth. The TIA has to drive the sense resonator periodically in the presence of parasitic capacitance $C_p$ . Since the output of the TIA drives both the capacitive and resistive loads, a variant of the conventional two-stage Miller amplifier is used, as shown in Fig. 12(b). Unlike the conventional two-stage Miller amplifier where the output stage is biased by
+
+a constant current, in our modified version, a push-pull output stage is used, which is able to deliver large output current for a large input signal and hence improves the slew rate. A feed-forward path is also introduced in the bottom differential pair to further speed the linear settling.
+
+# E. CHS Peak Detector and Error Amplifier
+
+The AAC loop consists of a rectifier, an error amplifier, and a loop filter. The rectifier is realized using an alternating-voltage-follower (AVF) (Fig. 13) for its compatibility with standard CMOS and its reduced threshold voltage compared with a diode based rectifier. However, it suffers from $1/f$ noise in the tail current. Thus, a chopper stabilization (CHS) is employed in the rectifier to remove the $1/f$ noise. Two sets of AVFs are used, when one is detecting the amplitude, the other acts as a reference to compensate for the voltage shift of source follower. To modulate the input signal, two switches are added at the inputs of the AVFs (Fig. 13). These two switches periodically exchange the roles of the rectification and the reference AVFs. This novel CHS is easy to implement and consumes little power compared with CDS.
+
+The comparison between the detected amplitude and the preset value $V_{\mathrm{R0}}$ is performed in the current domain by two linearized transconductors, which convert the output voltage of the rectifier to current. An off-chip RC network provides the necessary poles and zeros for the loop filter $L(s)$ . Three sets of choppers are placed around the transconductors to complete the chopper stabilization.
+
+# V. EXPERIMENTAL RESULT
+
+The readout circuit IC was designed twice based on a two-poly four-metal (2P4M) CMOS $0.35\mu \mathrm{m}$ process. In the
+
+![](images/fe8eac5218f80dd06c76959ec1da17b64d1490018ec34dc117d3842aeb2ec163.jpg)  
+Fig. 15. The oscillator phase noise deduced from the measured PLL phase noise.
+
+first run, the circuit chip was characterized with a single sense resonator. These are mounted together on a PCB and interconnected through bond wires, as shown in Fig. 14. The PCB is placed in a vacuum chamber. The oscillation amplitude is set to be $0.15\mu \mathrm{m}$ by the external voltage $\mathrm{V}_{\mathrm{R0}}$ , which is already 3 times the bifurcation point. This corresponds to a capacitance variation of $0.5\mathrm{fF}$ . The resonator has a $113\mathrm{kHz}$ resonant frequency. The AAC loop bandwidth is set around $100\mathrm{Hz}$ to attenuate the ripple introduced in the rectifier. The chopping frequency is set to be $2\mathrm{kHz}$ to facilitate the filter design. To measure the phase noise with the signal source analyzer available (Agilent E5052A), an off-chip phase-locked-loop (PLL) is built to multiply the oscillation frequency by a factor of 420. The chip design allows us to disable the chopper in the AAC loop and replace the second-order AAC loop filter with a 1st order one. The measured phase noises are plotted in Fig. 15. The performance improvement by the CHS can be clearly seen. Secondly, the random bias variation is characterized using Allan variance, a method proposed for clock systems [28]. The definition of Allan variance $\sigma$ is given by
+
+$$
+\sigma_ {y} ^ {2} (\tau) = \frac {1}{2} \left\langle \left(y _ {n + 1} - y _ {n}\right) ^ {2} \right\rangle \tag {14}
+$$
+
+where $y_{n}$ is the average frequency reading over sample period $n$ , and $\tau$ is the time span per sample period. The instantaneous frequency value is read at a rate of $5\mathrm{Hz}$ with a universal counter Agilent E53131A. Fig. 16 shows a sample of measured frequency, from which a slow frequency drift can be observed. This drift is believed to be caused by the temperature drift. To study the random bias variation, the recorded frequency reading was filtered by a $0.5\mathrm{mHz}$ Butterworth high-pass filter to remove the temperature drift. The filtered frequency reading is also plotted in Fig. 16. Allan variance calculation is applied to the filtered frequency reading and plotted in Fig. 17. The Allan variance gradually flattens out as the averaging time increases. The floor is known as the Allan deviation, which indicates the random parts of the bias variation. Allan deviation improves from $8\mathrm{mHz}$ to $3.5\mathrm{mHz}$ with the chopper enabled.
+
+The residue bias instability could be attributed to the $1 / \mathrm{f}$ noise in the bias current of the differential pair in Fig. 11, which modulates the gain of the differential pair and introduces an additive $1 / \mathrm{f}$ amplitude noise. To verify this, the bias current is re
+
+![](images/f31700c128f773aaaeeb59163a75a07e26512911f4262725f88235970e3ea1ff.jpg)  
+Fig. 16. A sample of measured frequency at PLL output versus elapsed time and its compensated result.
+
+![](images/dcae5c07f22c190f36c72c136bd0a1c30ca2c0156f3cf71413e2319e34d8dbb4.jpg)  
+Fig. 17. Measured Allan variance.
+
+![](images/fa730f38e80ffa3bda51b9e75e796ab6a17e580093061f582e942e2c164fa030.jpg)  
+Fig. 18. Microphotograph of the interconnected CMOS readout circuit chip and SOI resonant accelerometer.
+
+placed with a low-noise one, as shown in Fig. 11, in our second chip. The second chip contains two readout channels dedicated to the sense resonators. The second chip is an improved version of the first chip to minimize power consumption and the $1/f$ noise in the bias current. Fig. 18 shows the readout IC interconnected with the accelerometer sensor. The output signals of the two channels are multiplied with each other with an off-chip multiplier to extract their frequency difference. The multiplier output is low-pass filtered to remove the high frequency components. The temperature drift is common mode to both of the
+
+![](images/8b4356f6e3709cfa73cb9ec2642654046a3173f74a21d30085ddeee3f25743ab.jpg)  
+Fig. 19. Measured Allan variance of the resonant accelerometer.
+
+![](images/038753329318562a1e2bc4c291fc71e53078ae524f1f27b25aa0cdc18047946f.jpg)  
+Fig. 20. Static acceleration testing result.
+
+resonators and is therefore rejected to the first order. Fig. 19 plots the Allan variance of the output frequency difference, from which a $3\mathrm{mHz}$ variance at $1\mathrm{s}$ and a $0.6\mathrm{mHz}$ floor is observed, which is about 5 times lower than that of the first design by merely replacing the current source in the differential pair. Due to lack of high precision rotation stage, the sensitivity or the scale factor is characterized by 3 static tests using gravity, that is, $1\mathrm{g}, -1\mathrm{g}$ and zero acceleration. The unloaded frequencies are slightly different from $135\mathrm{kHz}$ , due to a fabrication error. The result is shown in Fig. 20. Based on the measured sensitivity, the measured Allan variance corresponds to $20~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution and $4\mu \mathrm{g}$ bias stability. The $20~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution is mainly determined by the noise of differentiator while the bias stability is determined by the $1 / \mathrm{f}$ noise in the bias current.
+
+This work is compared with the previous capacitive accelerometers in Table I and the previous CMOS readout circuit for SRA in Table II. Although it consumes more power and requires a PLL or high resolution counters for readout, it has a potential to achieve a much higher dynamic range than a conventional capacitive accelerometer.
+
+It seems that the rectifier dominates the noise density while the $1 / \mathrm{f}$ noise in the bias current dominates the bias instability. However, the rectifier noise is mostly caused by the switching
+
+TABLEI COMPARISON OF PREVIOUS CAPACITIVE ACCELEROMETERS WITH THIS WORK   
+
+<table><tr><td></td><td>Supply</td><td>Power</td><td>Full range</td><td>Noise</td></tr><tr><td>[24]</td><td>5-V</td><td>135-mW</td><td>±0.2g</td><td>110μg/√Hz</td></tr><tr><td>[2]</td><td>N.A</td><td>N.A</td><td>±13g</td><td>1m g/√Hz</td></tr><tr><td>[3]</td><td>5-V</td><td>12-mW</td><td>±1g</td><td>1.6μg/√Hz</td></tr><tr><td>This work</td><td>3.3-V</td><td>23-mW</td><td>±20g (design value)</td><td>20μg/√Hz</td></tr></table>
+
+TABLE II COMPARISON OF THE PREVIOUS CMOS READOUT CIRCUITS WITH THIS WORK   
+
+<table><tr><td></td><td></td><td>Vp</td><td>power</td><td>noise</td><td>Bias stability</td></tr><tr><td>[13]</td><td>5-V</td><td>16-V</td><td>N.A</td><td>900μg/√Hz</td><td>0.84mg</td></tr><tr><td>This work</td><td>3.3-V</td><td>3.3-6.4V</td><td>23mW</td><td>20μg/√Hz</td><td>4μg</td></tr></table>
+
+behavior, which converts $1/f$ noise into a wide band noise, a mechanism that is not properly modeled in any tools [29], making it hard to predict. Nevertheless, the result highlights the importance of the low noise AAC loop in the design of the high quality MEMS oscillator.
+
+# VI. CONCLUSION
+
+A fully differential CMOS readout circuit with $3.3\mathrm{V}$ single supply for an SOI resonant accelerometer has been implemented and achieved the bias stability of $4\mu \mathrm{g}$ with a fully differential sense resonator. A low noise AAC loop is implemented to improve phase noise and reduce the effect of sense resonator nonlinearity. The AAC loop with a second-order loop filter and a chopper stabilized rectifier is employed. The fabricated readout chip, tested with SOI resonant accelerometer, achieved $20~\mu \mathrm{g} / \sqrt{\mathrm{Hz}}$ resolution at $1\mathrm{Hz}$ offset and $4\mu \mathrm{g}$ bias stability.
+
+# ACKNOWLEDGMENT
+
+The authors would like to thank National University of Singapore for providing the postgraduate scholarship and Agilent Technologies Singapore Pte Ltd. for the loan of E5052A Signal Source Analyzer, and Dr. W.-K. Wong for the vacuum setup.
+
+# REFERENCES
+
+[1] C. Lu, M. Lemkin, and B. E. Boser, "A monolithic surface micromachined accelerometer with digital output," IEEE J. Solid-State Circuits, vol. 30, no. 12, pp. 1367-1373, Dec. 1995.   
+[2] H. Luo et al., "A post-CMOS micromachined lateral accelerometer," J. Microelectromech. Syst., vol. 11, no. 3, pp. 188-195, Jun 2002.   
+[3] J. Chae, H. Kulah, and K. Najafi, "A monolithic three-axis micro-g micromachined silicon capacitive accelerometer," J. Microelectromech. Syst., vol. 14, no. 2, pp. 235-242, Apr. 2005.   
+[4] N. Yazdi, F. Ayazi, and K. Najafi, "Micromachined inertial sensors," Proc. IEEE, vol. 86, no. 8, pp. 1640-1659, Aug. 1998.
+
+[5] L. D. Edmonds, G. M. Swift, and C. I. Lee, "Radiation response of a MEMS accelerometer: An electrostatic force," IEEE Trans. Nucl. Sci., vol. 45, no. 6, pp. 2779-2788, Dec. 1998.   
+[6] M. S. Weinberg, N. A. St. Michel, D. S. Nokes, and J. T. Borenstein, "Temperature compensated oscillating accelerometer with force multiplier," U.S. Patent, 6,269,696, Aug. 7, 2001.   
+[7] T. A. Roessig, "Integrated MEMS tuning fork oscillators for sensor applications," Ph.D. dissertation, Dept. Mechan. Eng., Univ. of California, Berkeley, 1998.   
+[8] W. C. Albert, "Monolithic quartz structure vibrating beam accelerometer (VBA)," in Proc. IEEE 48th Annu. Symp. Frequency Control, Boston, MA, May 1994, pp. 415-420.   
+[9] B. L. Norling, “Precision gravity measurement utilizing accelerex vibrating beam accelerometer technology,” in IEEE Symp. Position Location and Navigation. A Decade of Excellence in the Navigation Sciences, Las Vegas, NV, Nov. 1990, pp. 509-515.   
+[10] M. Helsel, G. Gassner, M. Robinson, and J. Woodruff, "A navigation grade micro-machined silicon accelerometer," in Proc. 1994 IEEE Position, Location, and Navigation Symp. (PLANS'94), Las Vegas, NV, 1994, pp. 51-58.   
+[11] D. W. Burns et al., “Resonant microbeam accelerometers,” in Proc. Transducers'95, Jun. 1995, pp. 656-658.   
+[12] R. E. Hopkins et al., "The silicon oscillating accelerometer: A MEMS inertial instrument for strategic missile," in Proc. Guidance Missile Sci. Conf., Nov. 2000, pp. 44-51.   
+[13] T. A. Roessig, R. T. Howe, A. P. Pisano, and J. H. Smith, "Surface-micromachined resonant accelerometer," in Proc. Transducers'97, Chicago, IL, Jun. 1997, vol. 2, pp. 859-862.   
+[14] S. Seok, H. Kim, and K. Chun, "An inertial-grade laterally-driven MEMS differential resonant accelerometer," in Proc. IEEE Sensors 2004, Vienna, Austria, Oct. 2004, vol. 1, pp. 654-657.   
+[15] S. Lee and C. T.-C. Nguyen, "Influence of automatic level control on micromechanical resonator oscillator phase noise," in Proc. IEEE Int. Freq. Control Symp., May 2003, pp. 341-349.   
+[16] T. A. Roessig, R. T. Howe, and A. P. Pisano, "Nonlinear mixing in surface micromachined tuning fork oscillators," in Proc. IEEE Int. Freq. Control Symp., May 1997.   
+[17] Y.-W. Lin et al., "Series-resonant VHF micromechanical resonator reference oscillators," IEEE J. Solid-State Circuits, vol. 39, no. 12, pp. 2477-2491, Dec. 2004.   
+[18] S. S. Bedair and G. K. Fedder, “CMOS MEMS oscillator for gas chemical detection,” in Proc. IEEE Sensors 2004, Vienna, Austria, Oct. 2004, vol. 1, pp. 955–958.   
+[19] J. A. Geen, S. J. Sherman, J. F. Chang, and S. R. Lewis, "Single-chip surface micromachined integrated gyroscope with $50^{\circ}/h$ Allan deviation," IEEE J. Solid-State Circuits, vol. 37, no. 12, pp. 1860-1866, Dec. 2002.   
+[20] B. Linares-Barranco and T. Serrano-Gotarredona, "A loss control feedback loop for VCO stable amplitude tuning of RF integrated filters," in Proc. IEEE ISCAS'02, 2002, vol. 1, pp. 521-524.   
+[21] F. M. Gardner, "Charge-pump phase-locked loops," IEEE Trans. Commun., vol. COM-28, no. 11, pp. 1849-1858, Nov. 1980.   
+[22] D. B. Leeson, “A simple model of feedback oscillator noise spectrum,” Proc. IEEE, vol. 54, no. 2, pp. 329–330, Feb. 1966.   
+[23] L. D. Landau and E. M. Lifshitz, “Resonance in nonlinear oscillations,” in Mechanics, 3 ed. Reading, MA: Butterworth-Heinemann, 1982, vol. 1, Course of Theoretical Physics, pp. 87–92.   
+[24] M. Lemkin and B. E. Boser, "A three-axis micromachined accelerometer with a CMOS position-sense interface and digital offset-trim electronics," IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 456-468, Apr. 1999.   
+[25] X. Jiang et al., "A monolithic surface micromachined z-axis gyroscope with digital output," in Tech Dig. VLSI Circuits Symp., 2000, pp. 15-18.   
+[26] C. C. Enz and G. C. Temes, "Circuit techniques for reducing the effects of op-amp imperfections: Autozeroing, correlated double sampling, and chopper stabilization," Proc. IEEE, vol. 84, no. 11, pp. 1584-1614, Nov. 1996.   
+[27] C. Toumazou and S. Setty, “Feedforward compensation techniques for the design of low-voltage opamps and OTAs,” in Proc. IEEE ISCAS'98, May 1998, vol. 1, pp. 464–1367.
+
+[28] D. W. Allan, “Time and frequency (time-domain) characterization, estimation, and prediction of precision clocks and oscillators,” IEEE Trans. Ultrason., Ferroelectr., Freq. Control, vol. UFFC-34, no. 6, pp. 647–654, Nov. 1987.   
+[29] A. P. van der Wel, E. A. M. Klumperink, J. S. Kolhatkar, E. Hoekstra, M. F. Snoeij, C. Salm, H. Wallinga, and B. Nauta, "Low-frequency noise phenomena in switched MOSFETs," IEEE J. Solid-State Circuits, vol. 42, no. 3, pp. 540-550, Mar. 2007.
+
+![](images/21c3e5add00c8f4d82c8fbe60b199091275833adcbb50d99f63d02d893991f97.jpg)
+
+Lin He (S'02) was born in Hunan, China, in September 1977. He received the B.Sc. degree in material science in 1999 and the M.Eng. degree in instrumentation engineering in 2002, both from Southeast University, China. He is currently working part-time towards the Ph.D. degree in electronic engineering at National University of Singapore.
+
+From August 2002 to September 2007, he was with the VLSI and Signal Processing Lab, National University of Singapore, working on the silicon resonant accelerometer and its CMOS readout circuit for
+
+aerospace and inertial navigation application. From Nov 2007 to the present, he has been with the Institute for Micro System Technique (IMTEK), Freiburg, Germany, where he was the project leader for several industry projects on the readout circuit for MEMS vibratory gyroscope. His research interests include CMOS mixed-signal circuits, sensor interface, and MEMS oscillators.
+
+![](images/744bdbde6f8d50b276c46fc473cd6b28b0d4af723f65149898708a912d484cfe.jpg)
+
+Yong Ping Xu (S'90-M'92-SM'01) received the Ph.D. degree in electronics from the University of New South Wales (UNSW), Australia, in 1994.
+
+From 1978 to 1987, he was with Qingdao Semiconductor Research Institute in China, initially as an IC designer and later the Deputy R&D Manager and the Director. From 1993 to 1995, he worked at UNSW on an industry collaboration project with GEC Marconi Pty Ltd. in Sydney, Australia, involved in the design of sigma-delta ADCs. He became a Lecturer at the University of South Australia in
+
+1996. Since 1998, he has been with the Department of Electrical and Computer Engineering, National University of Singapore, where he is now an Associate Professor. His main research interests are in mixed-signal and RF integrated circuits and systems and his current focus is on the applications in wireless communication, biomedical devices and MEMS. He has six granted patents with another eight pending, and has authored or co-authored two book chapters and over 60 technical journal and conference papers, including those at premier solid state circuit conferences, such as ISSCC, VLSI, ASSCC, and CICC.
+
+Dr. Xu is a co-recipient of 2007 DAC/ISSCC Student Design Contest Award and a recipient of 2004 Excellent Teacher Award from National University of Singapore. He was the General Co-Chair of 2002 IEEE Asia Pacific Circuits and Systems and TPC Co-Chair of 2007 IEEE International Workshop on Radio Frequency Integration Technology.
+
+![](images/870a3ab1fb002df926482c79e20dca5a221f7f1b1409e176581f1344b5921b77.jpg)
+
+Moorthi Palaniapan received the B.Eng. (First Class honors) and M.Eng. degrees in electrical engineering from National University of Singapore in 1995 and 1997, respectively. He received the Ph.D. degree in the electrical engineering and computer sciences from the University of California at Berkeley in 2002.
+
+He is currently an Assistant Professor in the Electrical and Computer Engineering Department, National University of Singapore. His research interests include integrated microelectromechanical
+
+sensors, actuators, resonator designs, power electronic circuits, and biosensors.

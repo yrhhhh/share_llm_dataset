@@ -1,0 +1,1375 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A Dual-Axis Resonant Accelerometer Based on Electrostatic Stiffness Modulation in Epi-Seal Process "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                71,
+                69,
+                929,
+                141
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Seungyong Shin "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Haoran Wen "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Hyun-Keun Kwon "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Gabrielle D. Vukasin "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", Thomas W. Kenny "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and Farrokh Ayazi "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "\\\n "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Georgia Institute of Technology, Atlanta, GA, USA\\\n "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Stanford University, Stanford, CA, USA\\\nsshin312@gatech.edu "
+                    }
+                ]
+            },
+            "bbox": [
+                71,
+                180,
+                924,
+                247
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—We report on the implementation of a novel vacuum-encapsulated dual-axis resonant accelerometer utilizing electrostatic stiffness modulation. Novel flexure designs are used to enable fully-decoupled in-plane dual-axis translational motions of the proof-mass to achieve low cross-axis sensitivity with the translational mode frequencies above  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for high bandwidth applications. Differential frequency readout scheme mitigates the temperature effects on frequency stability of resonators and reduces off-axis sensitivity. The fabricated device measures a scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(119\\mathrm{ppm / g})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with low cross-axis sensitivity. The accelerometer demonstrates high performance with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " VRW and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "27\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " BI in ambient environment. Optimization of the oscillator circuits and implementation of chip-level ovenization can further improve the performance of the design, with potentials to reach sub- "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " performance for emerging high-bandwidth application. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                273,
+                488,
+                484
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords—dual-axis resonant accelerometer; wide bandwidth; micro-gravity accelerometer; electrostatic stiffness modulation "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                494,
+                486,
+                522
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                212,
+                539,
+                356,
+                551
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The evolution of MEMS accelerometer technology has enabled a large variety of applications that improve the quality of people's daily lives [1-3]. Recently, the bloom of the IoT has created many emerging applications with a demand for lower noise and wider bandwidth accelerometers such as wearable microsystems for health informatics [4] and machine or structure health monitoring [5]. The most important metrics for such applications are small size, low noise and wide operational bandwidth, which allow the accelerometer to collect wide spectrum body sound information generated by internal organs in a convenient and noninvasive form. Therefore, high-bandwidth single-proof-mass multi-axis accelerometer designs that can deliver high performance with small form factors are desirable. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                556,
+                486,
+                751
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, achieving such goals are challenging due to the tradeoffs between sensitivity, size and bandwidth in a MEMS accelerometer. For a conventional quasi-static capacitive accelerometer with amplitude readout, the performance is typically limited by the electrical noise in the interface circuit, interconnection parasitics and mismatches between differential capacitances [6]. In order to increase sensitivity and signal-to-noise-ratio, low-stiffness large-proof-mass designs are utilized, causing low bandwidth and large sensor size. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                758,
+                486,
+                883
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c482a87a9815e6939d7049fc7982dd1c65bbc837db40ac8505423fce04adf57a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                532,
+                313,
+                723,
+                426
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/518cd46082253b75493b4155e529b9ceb26ce4aaf3501d001abd84d9f5278717.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 1. (a) Schematic of the bi-axial resonant accelerometer, (b) Schematic of gap-changing electrostatic spring softening effect (top view) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                733,
+                295,
+                911,
+                436
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Alternatively, a frequency-output resonant accelerometer can be used to minimize the effects of paracities and instrument noise. Earlier works on resonant accelerometers which utilize mechanical stiffness modulation have demonstrated good electrical noise rejection and high performance [7-11]. However, mechanical stiffness modulation designs require lever-structures to create large acceleration induced stress for high sensitivity, leading to increased sensor size. In addition, their dynamic range is usually limited by the mechanical stiffness nonlinearity of the low stiffness resonators used as the sensing elements. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                462,
+                928,
+                616
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Recently, resonant accelerometers based on electrostatic stiffness modulation have been demonstrated with the potential to achieve low noise, wide bandwidth and extended linear dynamic range through stiff structure and large electrostatic force [12,13]. A disadvantage of these designs is that they only have single-axis sensing capability, making multi degree-of-freedom sensing challenging. Therefore, developing wide bandwidth single proof-mass multi-axis accelerometer designs that can deliver high performance with small form factors are highly desirable. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                619,
+                928,
+                760
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here, we present a dual-axis resonant accelerometer with electrostatically modulated frequency readout, for the first time, implemented using the Epi-Seal process [11], which simultaneously enables wide bandwidth and high resolution. The accelerometer utilizes four resonators for dual-axis differential frequency sensing and a unique two degrees of freedom flexure mechanism which provides mechanically decoupled proof-mass motions along the two sensing axis. Detailed design and characterizations of the accelerometer are presented in the following sections. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                766,
+                929,
+                906
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "This work was supported by the DARPA Microsystems Technology Office, Advanced Inertial Micro Sensors (AIMS) program through contract #N66001-16-1-4064 and in part by the DARPA Precise Robust Inertial Guidance for Munitions Program, managed by Dr. Robert Lutwak and Ron Polcawich, under Contract N66001-16-1-4023. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                909,
+                491,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-Au2016345634600000000000000000000000000000000000000000000000000000000000000000000000 "
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                962,
+                888,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. DUAL AXIS RESONANT ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                130,
+                66,
+                434,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1(a) shows the schematic of dual axis in-plane resonant accelerometer. The design consists of four capacitively transduced in-plane free-free beam resonators surrounding a proof-mass within a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{mm} \\times 2\\mathrm{mm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " footprint. The resonators and proof-mass are biased at different DC voltages during operation, which introduces electrostatic spring softening effect to the resonators through the parallel-plate capacitive gaps between the resonators and the proof-mass. Differential resonator pairs are placed on opposite ends of the proof-mass. When external acceleration is applied, the gap for one resonator becomes smaller and the gap for the other resonator along the same sensing axis becomes larger (Fig.1(b)). Which causes the amount of electrostatic stiffness to change and modulate the resonant frequencies of the two differential resonators. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                85,
+                488,
+                294
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The differential frequency readout scheme provides several benefits. First, the identical resonators have similar frequencies and TCFs. Therefore, frequency fluctuations due to temperature variations can be largely canceled with the differential measurement. Secondly, it also suppresses the first order nonlinear effects in gap-closing stiffness modulation mechanism. Furthermore, the tuning area changes induced by accelerations orthogonal to the sensing axis create same effects on the two resonators, so the frequency difference remains unchanged. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                300,
+                486,
+                441
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For a single-proof-mass dual-axis design, minimizing cross-axis sensitivity is critical. In the proposed design, this is ensured by the flexure design combining doubly folded beam and single beam with mechanically decoupled deformations under accelerations in different directions (Fig.2). "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                446,
+                486,
+                517
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/84ed8055c33bc11eeb787158242225d0fdd4de1f71fbf82814ace667b5e6bec9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                84,
+                545,
+                274,
+                661
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1a91e99441c7fcbb6521a88be822ca79a31e3b2767355076ec83ff2f2270449a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                546,
+                366,
+                662
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/01fc8a1396507006e893c338e1ca96c364bf1a2295eb1fabc1bbb4f460c65798.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Two degrees of freedom flexural structure of the accelerometer. (a) Doubly folded flexure (blue), and beam flexure (yellow). (b) Deformation in x-axis. (c) Deformation in y-axis. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                397,
+                546,
+                454,
+                662
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For example, for the flexure with the orientation shown in Fig. 2(b) and 2(c), the doubly folded beam provides lower stiffness in x-axis and extremely high stiffness in y-axis, which allows the single beam flexure to move along with the proof-mass in x direction with negligible deformation. Similarly, the single beam has lower stiffness in y-axis as shown in Fig. 2(c), allowing proof-mass to move freely in y direction without causing significant deformations in the doubly folded beam structure. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                723,
+                486,
+                848
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The designed resonant characteristics of proof-mass is shown in Fig.3. The in-plane translational modes have resonant frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "21.2\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which will provide wide bandwidth near "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                854,
+                486,
+                898
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cd8b6b09386e761093fe67398679451286817e70fa8ea4346db9ffefa3854cf2.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) x-axis translational mode @ 21.2kHz "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                560,
+                89,
+                689,
+                167
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a7da63d3b0b70217604987dd54d584d5df1cd8d178bc7bb7c068998c61abc58e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) y-axis translational mode @ 21.2kHz "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                754,
+                89,
+                852,
+                167
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/21800a87923e4d9ed4c659f3f1f4ca95b3edaecf36dbc541461a9b39103c9afb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c) In-plane rotational mode @ 20.0kHz "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                584,
+                198,
+                684,
+                277
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f1d5bc4a37ce4794f9e304c17f7bff91be6828f02b2d470d0662162915b797f4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                728,
+                203,
+                875,
+                266
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/39880305d83e32ebb812cbc8a372b1c518b7a2d1d9109d2aa3368c4625cbf240.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(d) Out-of-plane translational mode @ 33.6kHz "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(e) Unbiased free-free beam mode of resonator @ 210kHz "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 3. (a-d) Resonant characteristics of two degrees of freedom proof-mass and (e) free-free beam resonator "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                625,
+                303,
+                826,
+                349
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with proper damping design. The in-plane rotational mode and out-of-plane translational mode also have high resonant frequencies at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20.0\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "33.6\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and frequency shift from such undesired motion can be canceled with the differential readout. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                409,
+                926,
+                479
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The thick free-free beam resonator design provides high translational stiffness which prevents large movement of the resonator due to external acceleration and electrostatic tuning force to reduce pull-in instability with high DC bias voltages. The free-free beam mode is the lowest mode which enables high frequency tunability without spurious modes near the resonant frequency. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                486,
+                928,
+                584
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. EXPERIMENTAL RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                614,
+                599,
+                828,
+                612
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The device was fabricated and wafer-level packaged using DYVI Epi-Seal process with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{mm} \\times 2\\mathrm{mm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " die size. The high vacuum packaging of current Epi-seal process results in an "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                618,
+                926,
+                661
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0b223bdab88c156a8af10bc85c3f3bed17d9fcf1c3850ce5ca11c160ede5f6ee.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. Measured resonant characteristics of a single resonator with different orientation "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                555,
+                674,
+                901,
+                869
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:01 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                102,
+                960,
+                888,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/713352fe6e12ca163afb4aeef01c349a4ca0c7ce5783a2761c47ff58dee9f2c8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                178,
+                74,
+                491,
+                276
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bbf274ce29d2f0b7436d5d57aa702ac6492bd1c8d0921355bf446d078f7103a1.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5 Scale factor measurement result. (a) Response to AC accelerations up to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applied by a shaker table. (b) Scale factor measures  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with cross axis sensitivity less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                504,
+                74,
+                812,
+                284
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "under-damped condition for the proof-mass. Modifications to the process or future designs with added damping electrodes can create a near critically-damped condition to enable stable accelerometer operation over the full bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 20\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The fabricated device was mounted and wirebonded to a PCB with TIAs built by discrete electronics and interfaced with an HF2LI lock-in amplifier with PLL for oscillator implementation. The resonators of the device showed resonant frequencies of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 188\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and Q  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 10\\mathrm{k}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "35\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias voltage and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " drive voltage (Fig.4). "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                320,
+                485,
+                460
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scale factor measurement was done by applying up to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " acceleration at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " using a shaker table. The measurements show  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 22\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " linear scale factor for both axis with a bias voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "35\\mathrm{V},"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and a cross-axis sensitivity less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " limited by the manual alignment accuracy between device and fixture for the skater table (Fig.5). It should be noted that the simulated cross axis sensitivity of the design is near zero. "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                465,
+                486,
+                565
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The noise performance of the accelerometer was measured in ambient environment without temperature control. The long-term frequency fluctuations were observed on both resonators. The fluctuations mainly come from the ambient temperature variations and possibly environmental vibrations, which showed near-identical trend for the differential pair of "
+                    }
+                ]
+            },
+            "bbox": [
+                66,
+                570,
+                486,
+                654
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/474ebb59637230ffb7cab39aa8022d01db214acc32ff07bc1ec2cae1b281be65.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Frequency fluctuation due to ambient temperature variation. The frequency difference shows  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6.5\\mathrm{mHz} / 1\\mathrm{min}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of drift. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                86,
+                666,
+                468,
+                875
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "resonators (Fig.6). The differential frequency output of the same measurement period shows that large fluctuations are cancelled leaving only small linear drift, possibly due to TCF mismatch between the resonators. The ADEV measurement of the differential frequency output showed a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "27\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " BI and a 18  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " VRW (Fig. 7). "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                320,
+                926,
+                405
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                653,
+                422,
+                787,
+                435
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We introduced and demonstrated a wideband dual-axis resonant accelerometer based on electrostatic stiffness modulation effect, fabricated and encapsulated in vacuum using the epi-seal process. A combined flexural structure design was implemented to provide good decoupling between x and y-axis motion. The experimental results showed scale factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "22\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with low cross-axis sensitivity, VRW of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and BI of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "27\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in ambient environment. Improved frequency stability is expected with on-chip ovenization, promising sub-  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " BI. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                440,
+                928,
+                580
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                648,
+                590,
+                787,
+                603
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors wish to thank the Stanford Nanofabrication Facility and the Laurie Nanofabrication Facility at the University of Michigan for help in fabrication. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                608,
+                926,
+                651
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3cc4330a475417509ac93af64341f7ab8e8bb0bee799b86746c726102d4f1f8b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7. ADEV plot measurement showing  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "27\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " bias instability at 1s integration time and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "18\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " velocity random walk "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                568,
+                676,
+                870,
+                875
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:01 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                102,
+                960,
+                888,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                233,
+                68,
+                321,
+                80
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] F. Ayazi, \"Multi-DOF inertial MEMS: From gaming to dead reckoning,\" 16th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), 2011, pp. 2805-2805. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] M. Gowda, et al. \"IoT Platform for Sports Analytics,\" GetMobile: Mobile Computing and Communications 21 (4), 2018, pp. 8-14. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] L. Jayaraj, et al., \"Engineering a Mobile VR Experience with MEMS 9DOF Motion Controller,\" 2018 IEEE Games, Entertainment, Media Conference (GEM). IEEE, 2018, pp. 476-483. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] P. Gupta, et al., \"Precision high-bandwidth out-of-plane accelerometer as microphone for body-worn auscultation devices,\" Solid-State Sensors, Actuators and Microsystems Workshop Hilton Head Island, 2018, pp. 30-33. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Looney, M., 2014. \"An introduction to MEMS vibration monitoring,\" Analog Dialogue, 48(06), pp.1-3. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] Y. Jeong, et al., \"A wide-bandwidth tri-axial pendulum accelerometer with fully-differential nano-gap electrodes,\" J. Micromech. Microeng. 28 (11), 2018, pp. 115007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] X. Zou, et al., \"A high-resolution resonant MEMS accelerometer,\" 18th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), 2015, pp. 1247-1250. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                85,
+                485,
+                345
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] Zhang Jing, et al. \"Microelectromechanical resonant accelerometer designed with a high sensitivity,\" Sensors 15 (12), 2015, pp. 30293-30310. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] A. Caspani, et al., \"Compact biaxial micromachined resonant accelerometer,\" J. Micromech. Microeng. 23 (10), 2013, pp. 105012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] H. Ding, et al., \"A high-sensitivity biaxial resonant accelerometer with two-stage microleverage mechanisms,\" J. Micromech. Microeng. 26 (1), 2015, pp. 015011. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] D.D. Shin, et al., \"Environmentally robust differential resonant accelerometer in a wafer-scale encapsulation process,\" Proceedings 2017 IEEE MEMS, 2017, pp. 17-20. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] Seungyong Shin, et al., \"A piezoelectric resonant accelerometer for above 140 dB linear dynamic range high-g applications,\" 20th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS), 2019, pp. 503-506. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] A. Daruwalla, et al., \"A Piezo-Capacitive BAW Accelerometer with Extended Dynamic Range using a Gap-Changing Moving Electrode,\" PLANS 2018, 2018, pp. 283-287. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                519,
+                66,
+                926,
+                287
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 17:34:01 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                104,
+                962,
+                888,
+                974
+            ]
+        }
+    ]
+]

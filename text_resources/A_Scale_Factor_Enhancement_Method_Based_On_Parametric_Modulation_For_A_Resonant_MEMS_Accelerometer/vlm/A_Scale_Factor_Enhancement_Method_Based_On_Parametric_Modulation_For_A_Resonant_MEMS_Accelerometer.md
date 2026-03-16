@@ -1,0 +1,149 @@
+# A Scale Factor Enhancement Method Based On Parametric Modulation For A Resonant MEMS Accelerometer
+
+Jingqian Xi, Fangzheng Li, Lu  
+Gao, Lei Xu, Yuan Wang, Chun Zhao  
+School of Physics  
+Huazhong University of Science and Technology  
+Wuhan, China
+
+Chengxin Li  
+Department of Electrical Engineering (ESAT), MNS University of Leuven Leuven, Belgium
+
+Kunfeng Wang, Xingyin Xiong, Xudong Zou  
+State Key Laboratory of Transducer Technology, Aerospace Information Research Institute Chinese Academy of Sciences Beijing, China
+
+Abstract—For the first time, a parametric modulation (PM) is exploited to enhance the scale factor (SF) of a resonant MEMS accelerometer. By applying a parametric modulation signal, the effective stiffness of the resonator is periodically modulated, leading to sensitivity transfer between two modes of operation. As a result, an enhancement of the scale factor from $506\mathrm{Hz / g}$ to $834\mathrm{Hz / g}$ is attained. With improved SF, the measured noise floor of the accelerometer is $2.8\mu \mathrm{g} / \mathrm{Hz}^{1 / 2}$ . However, the measurement results suggest that the noise of the sensor is likely to be dominated by ambient vibrations. The fundamental limit of the sensor noise floor with PM is estimated to be approximately $60\mathrm{ng} / \mathrm{Hz}^{1 / 2}$ .
+
+Keywords—scale factor; accelerometer; parametric modulation; resonant
+
+# I. INTRODUCTION
+
+Resonant MEMS accelerometers have attracted extensive interest from the MEMS community [1-4]. Owing to their extraordinary performance, excellent long-term stability in particular, resonant MEMS accelerometers are in great demand, in particular, for the applications of navigation [5], gravimetry [6], and seismometry [7].
+
+In order to achieve high-resolution resonant accelerometers, it is necessary to enhance the scale factor (SF). However, a limited approach exists, other than structure optimizations, to improve the SF and thus resolution of the resonant MEMS accelerometers. One feasible approach is operating the resonator at its high-order modes (HOM) of vibration, which are deemed to have better sensitivity subject to input acceleration [8]. But it is also worth noting that HOM produces a signal with a lower signal-to-noise ratio (SNR), ultimately nullifying the advantage of the higher SF.
+
+Recently, parametric modulation (PM) techniques attracted interests in the community, to manipulate the modal coupling of the resonator [9-11], and the vibration modes of the resonator [12]. As a proof-of-concept, a new scheme based on parametric modulation is proposed to enhance the SF of a resonant thermometer [13]. In this work, originated from a similar principle, as well as introducing a parametric pumping source, an SF enhancement scheme is proposed and verified for a
+
+resonant MEMS accelerometer. The PM method is utilized to transfer the scale factor of the second mode to the first mode, hence improving the sensitivity of the resonant accelerometer. Such an approach can concurrently mitigate the negative effect of the SNR and allow for an enhancement of scale factor from $506\mathrm{Hz / g}$ to $834\mathrm{Hz / g}$ .
+
+# II. STRUCTURE DESIGN AND WORKING PRINCIPLE
+
+An illustrative schematic of the resonant MEMS accelerometer is shown in Fig. 1. The device is composed of two sensing resonators connected to the proof mass via force amplifying levers. A differential sensing scheme can be realized by employing the two opposite resonators. As a result, the sensitivity of the accelerometer can be double, and a first-order cancellation of the frequency shift induced by temperature fluctuations can be attained. The resonator, whose length is $400\mu \mathrm{m}$ , width is $6\mu \mathrm{m}$ , thickness is $50\mu \mathrm{m}$ , is able to be driven in the first two lateral transverse modes. The first two resonant frequencies are $f_{1} = 196.9\mathrm{kHz}$ (Mode I), $f_{2} = 399.6\mathrm{kHz}$ (Mode II). The device is vacuum packaged at the wafer level, with a vacuum level of $0.01\mathrm{Pa}$ . The extracted Q-factors, with respect to the two modes, namely, Mode I and II, are $57\mathrm{k}$ and $36\mathrm{k}$ respectively, as shown in Fig.2a.
+
+The experimental setup is exhibited in Fig. 3. The interface
+
+![](images/55b4e55649443a813b6c02a0cf851b679c19a4dc0d4b6d966160fb71b284d7f8.jpg)  
+Fig. 1. Schematics of the resonant MEMS accelerometer.
+
+![](images/8e27ec8e146e887c5384b458536b8ed4e2a56054cc9b674e30829e476fc732f4.jpg)  
+(a) Frequency responses of both modes
+
+![](images/6ff3f2d7649ddf4b22598cc400c034a83a6c3473323af6cf1c4353a9d21d30f6.jpg)  
+(b) Scale factor of Mode I
+
+![](images/ef424738475ffa15b9d371aa74ba2c0ccd422494be4faba176badf1896d587a7.jpg)  
+(c) Scale factor of Mode II
+
+![](images/f27fac19391eca6c6ec0a2dffa845299255bee6132a1a63bd12caa7948f3a2d5.jpg)  
+Fig. 2. Measured open-loop frequency response, as well as the scale factor (SF) of the resonant accelerometer at its first two modes, without PM.   
+Fig. 3. Experimental setup for the characterizations.
+
+readout circuitry consists of a trans-impedance amplifier to convert the motional current to a voltage signal. The MEMS device, along with the circuitry, are placed on a tilt table. The temperature control system consists of a thermistor and a digital temperature controller (PTC10, Stanford Research Systems), aiming to alleviate the frequency shift caused by the temperature fluctuations. The open-loop frequency sweeps are performed using a lock-in amplifier (MFLI, Zurich Instruments). A polarization voltage $\mathrm{V_{DC}} = 20\mathrm{V}$ is applied to the body of the resonator to facilitate the capacitive transduction, and the actuation voltage is $\nu_{ac} = 800\mu \mathrm{V}$ , ensuring the resonator operates in a linear regime. To characterize the SF of the accelerometer, a digitally-controlled tilt table is employed, to provide an adjustable acceleration for the resonant MEMS accelerometer. The measured SFs of the first two modes are $-506\mathrm{Hz / g}$ and $-840\mathrm{Hz / g}$ respectively, as illustrated in Fig. 2b and 2c.
+
+PM is introduced using a second AC source, with an amplitude of $\nu_{p} = 2\mathrm{V}$ . The electrostatic force generated by the PM periodically modulates the effective stiffness of the resonator, at a frequency equaling the difference between the first two modes, i.e. $f_{p}\approx f_{2} - f_{1}$ . Upon introducing the parametric modulation signal at the frequency of $f_{p}$ , the dynamics of the
+
+first two modes subject to PM can be formulated as follows:
+
+$$
+\begin{array}{l} m _ {1} \ddot {u} _ {1} + c _ {1} \dot {u} _ {1} + k _ {1} u _ {1} = F _ {1} \cos \left(\omega_ {0} t\right) + k _ {e 1} u _ {1} + k _ {c 1} u _ {2} \tag {1} \\ + \lambda_ {1} \cos \left(\omega_ {p} t\right) u _ {1} + \Lambda_ {1} \cos \left(\omega_ {p} t\right) u _ {2} \\ \end{array}
+$$
+
+$$
+\begin{array}{l} m _ {2} \ddot {u} _ {2} + c _ {2} \dot {u} _ {2} + k _ {2} u _ {2} = F _ {2} \cos \left(\omega_ {0} t\right) + k _ {e 2} u _ {2} + k _ {c 2} u _ {1} \tag {2} \\ + \lambda_ {2} \cos (\omega_ {p} t) u _ {2} + \Lambda_ {2} \cos (\omega_ {p} t) u _ {1} \\ \end{array}
+$$
+
+Where $m_{\mathrm{r}}, c_{\mathrm{r}}, k_{\mathrm{r}}, k_{er}, k_{cr}, \lambda_{\mathrm{r}}, \Lambda_{\mathrm{r}}, F_{\mathrm{r}}$ are the effective mass, damping, effective stiffness, electrostatic stiffness, inter-modal coupling stiffness, pumping coefficient, inter-modal pumping coefficient and driving force for the $r$ th mode ( $r = 1, 2$ ), respectively. The transient response $u_{r}$ is also associated with the modes. These equations are based on the Bernoulli-Euler equation but have additional coupling terms, electrostatic forces and pump relevant forces.
+
+Harmonic Balance Method (HBM) [14] is introduced here to solve the numerical solutions, following the expansion of Eqs. 1 and 2, by applying their complex exponential forms with the help of Euler's formula:
+
+$$
+u _ {r} = \frac {1}{2} \left[ A _ {r 1} e ^ {i \omega_ {0} t} + A _ {r 2} e ^ {i (\omega_ {0} + \omega_ {p}) t} + A _ {r 3} e ^ {i (\omega_ {0} - \omega_ {p}) t} \right] \tag {3}
+$$
+
+It should be pointed out that other harmonic terms are neglected due to the negligible nonlinearity. The steady-state solutions of Eqs. 1 and 2 can be numerically solved by substituting Eqs. 3 into Eqs. 1 and 2. From the solutions, it is worth noting that once using $\mathrm{PM}, f_{p} \approx f_{2} - f_{1}$ , where energy is transferred between the two modes, a virtual energy coupling appears between the two modes, leading to a mode splitting occurring near the first mode and also the second mode, as depicted in Fig.4a, in which Mode I splits into Mode I-1 and Mode I-2.
+
+# III. RESULTS
+
+![](images/c76be1b92b187b3d09b97b84369cc85b70179d067dac9b7644e40ef99dc98e58.jpg)
+
+![](images/7594ab1482febcbcb1ed45efacc53c4ef079e02e9de3c52028a0695cae3b6044.jpg)
+
+![](images/460da4cdbd0970e6c0a0d00746d962a400e3705394d5768515aa95513f194f69.jpg)
+
+![](images/0f7baf9c4e151cf34864ce11c08142f34249234f4f6583a7ecdb6ab3c9a5f3cf.jpg)  
+Fig. 4. (a) Measured open-loop frequency response, with PM (black solid) and without PM (red dashed), showing reduced amplitude with PM. Therefore, in noise characterizations, increasing of drive amplitude with PM is necessary to maintain the same amplitude; (b) measured frequency shifts of both Modes I-1 and I-2 with respect to acceleration with PM; (c)-(d) measured SF of Mode I-1 $(S_{I - 1})$ and Mode I-2 $(S_{I - 2})$ in Zone 1 and Zone 3, respectively.
+
+Without applying the parametric modulation signal, i.e. $\nu_{p} = 0\mathrm{V}$ , the open-loop frequency response of the first mode is shown in Fig.4a (red dotted line). The measured modal frequency of Mode-I is $f_{1} = 196.943\mathrm{kHz}$ . The PM is introduced with an amplitude $\nu_{p} = 2\mathrm{V}$ and a frequency $f_{p} \approx f_{2} - f_{1}$ , where the measured modal frequency of Mode-II is $f_{2} = 399.567\mathrm{kHz}$ . It can be observed that two new modes are created near Mode-I due to the mode splitting, which is Mode I-1 and I-2 shown in black solid line in Fig. 4a.
+
+This phenomenon confirms that there is a considerable energy coupling between the split modes that are caused by the PM. On account of the energy transferring between the two modes, it makes sense that the amplitudes of the two modes, Mode I-1 and I-2, are lower than Mode I.
+
+It is also worth mentioning that this energy coupling not only leads to mode splitting but also allows for SFs to be transferred between the two modes [13]. With the presence of PM, the SFs of the device for different modes are extracted and are demonstrated in Fig. 4b.
+
+It can be observed in Fig. 4b that the frequency shift of the Mode I-1 and Mode I-2 with respect to the input accelerations exhibit a nonlinear behaviour, similar to a veering curve in mode-localized sensors [11]. This is in contrast with the linear response of Mode I without PM, as shown in Fig 2b. Under different circumstances, i.e. Zone 1, Zone 3 and the veering zone (near $0\mathrm{g}$ ), the modal frequency shows different SFs to the input accelerations. In Zone 1, the extracted SF of Mode I-2 is $-746\mathrm{Hz / g}$ , which is similar to the SF of Mode II without PM, whereas the SF of mode I-1 is $-435\mathrm{Hz / g}$ , which approximates the SF of Mode I (see Fig. 4c). It is noticeable that Mode I-2 inherits the sensitivity of the second fundamental mode, Mode II, while Mode I-1 inherits the sensitivity of the first fundamental mode, Mode I. In Zone 3, the SF of Mode I-2 decreased to $-500\mathrm{Hz / g}$ , close to the SF of Mode I, and the SF of Mode I-1 improved to $-834\mathrm{Hz / g}$ , near to the SF of Mode II (see Fig. 4d). It affirms that the SF of Mode II is transferred to Mode I-1.
+
+This result proves the fact that the energy coupling between the two modes is created by the PM, allowing energy exchange, as well as the interchange of the SF. This shows that the SF can be enhanced by utilizing the PM approach in a resonant MEMS accelerometer as well.
+
+The output noise floor of the device, both with and without PM, is characterized using a closed-loop configuration of the MFLI based on the embedded Phase-Locked Loop (PLL) function. In order to verify the effect of PM on the noise performance, the measurement bandwidth is set to $10\mathrm{Hz}$ . The experiment is carried out when the device is operating in Zone 1, and the mode of interest is Mode I-2 (SF is shown in Fig. 4c). To maintain the same SNR with/without the PM [13], the drive amplitude is increased to ensure equal amplitudes between Mode I-2 (with PM) and Mode I (without PM), as can be seen in Fig. 5a. Although Mode I-1 exhibits obvious nonlinearity, there is no clear nonlinearity that can be observed in Mode I-2.
+
+![](images/c50a2e7d64710c7b3b872cb29f6b353553d297bb369b1f3bfdfa46b09154a93a.jpg)
+
+![](images/5134d8cec191ad780c263f775d8390e5fb41613d9eb37b6893d3137d04e5c920.jpg)
+
+![](images/59841980c6fd295882df700c39ecf4ec30bc62ad942e694a07e6c5300271dd37.jpg)  
+Fig. 5. (a) Measured frequency response, with PM (red line) and without PM (blue line), after increasing the drive amplitude with PM, to ensure equal amplitudes; (b) measured output frequency PSD, as well as the theoretical limits; (c) estimated input-referred noise PSD of the resonant MEMS accelerometer.
+
+As shown in Fig. 5b, the output noise PSD with PM is relatively higher than that of without PM. However, this is likely due to the enhanced SF of Mode I-2, as it is observed that the input-referred noise PSDs are at very similar levels, both at approximately $2.8\mu \mathrm{g} / \mathrm{Hz}^{1 / 2}$ (see Fig. 5c). This is expected based on our previous observations [13], where the PM does not contribute additional noise to the system. This also suggests that the input-noise of the sensor system is likely to be dominated by the ambient vibrations.
+
+# IV.DISCUSSION
+
+Benefiting from the virtual energy coupling between the two modes that is facilitated by the PM, the sensitivity transfer can be achieved and hence improving the SF of the resonant MEMS accelerometer. The merit of such an approach grants the possibility that the sensing resonator can operate in low-order mode, featuring both higher SNR at the lower-order mode, and the higher sensitivity of the higher-order mode. It is worth pointing out that the PM approach can be applied to other modes of the resonator, not only restricted to the first two in-plane flexural modes reported in this work. Therefrom, higher sensitivity of high-order mode could be transferred to low-order mode with an appropriate device design and configuration.
+
+It is also worth mentioning that, though the SF has been boosted, the PSD of the input-referred noise of the device with/without PM are at very similar levels, both at $2.8\mu \mathrm{g} / \mathrm{Hz}^{1 / 2}$ . The results suggest that the input-noise floor is likely to be dominated by ambient vibrations within the lab. Therefore, it is necessary to further isolate the ambient noise, in order to achieve a low noise floor. Utilizing the noise model proposed
+
+in [15], a theoretical limit of the output frequency noise floor is calculated based on the sensor design. This is shown in green in Fig. 5b. Using the estimated noise floor limits of $50\mu \mathrm{Hz} / \mathrm{Hz}^{1 / 2}$ with the enhanced SF with PM, the input-noise limit could potentially reach $60\mathrm{ng} / \mathrm{Hz}^{1 / 2}$ .
+
+# V. CONCLUSIONS
+
+In this work, the PM scheme is proposed and exploited to enhance the SF of a resonant accelerometer. The experimental results demonstrate the SF of the second mode can be transferred to the first mode, hence boosting the SF of the accelerometer, confirming the effectiveness of the proposed approach. Further, the noise characterization is conducted, denoting the input-referred noise with/without PM has a similar level, both at $2.8\mu \mathrm{g} / \mathrm{Hz}^{1 / 2}$ . It is likely that the current noise performance of the device is limited by the ambient vibrations within the lab, and the fundamental limit of the sensor resolution could reach $60\mathrm{ng} / \mathrm{Hz}^{1 / 2}$ . Future efforts should focus on the reduction of ambient noise and the optimization of noise performance, as well as coupling the fundamental mode and higher-order modes, e.g., third-order flexural mode, with the aim to improve the SF even further.
+
+# ACKNOWLEDGMENTS
+
+This work was supported by the National Key Research and Development Program of China (Grant No. 2018YFB2002300).
+
+# REFERENCES
+
+[1] A. Mustafazade, M. Pandit, C. Zhao, G. Sobreviela, Z. Du, P. Steinmann, X. Zou, R. T. Howe, and A. A. Seshia, "A vibrating beam MEMS accelerometer for gravity and seismic measurements," Sci. Rep., vol. 10, no. 1, pp. 1-8, Dec. 2020.   
+[2] M.Bestetti, and M. Gadola, "Silicon MEMS inertial sensors evolution over a quarter century," J. Micromech. Microeng. vol. 31, no. 8, 2021.   
+[3] C. Zhao, G. Sobreviela, M. Pandit, A. Mustafazade, S. Du, X. Zou, and A. A. Seshia, "A Resonant MEMS Accelerometer Utilizing AC Polarization," 2018 IEEE International Frequency Control Symposium (IFCS), 2018, pp. 1-4.   
+[4] C. Zhao, M. Pandit, G. Sobreviela, P. Steinmann, A. Mustafazade, X. Zou, and A. A. Seshia, "A Resonant MEMS Accelerometer With 56ng Bias Stability and 98ng/Hz1/2 Noise Floor," Journal of Microelectromechanical Systems, vol. 28, no. 3, pp. 324-326, 2019.   
+[5] G. Sobreviela-Falces, M. Pandit, D. Young, C. Pili, J. McIntosh, J. Abbott, G. Brook, M. Reed, P. Steinmann, N. MacCarthy, C. Baker and A. A. Seshia, "A Navigation-Grade Mems Vibrating Beam Accelerometer," 2022 IEEE 35th International Conference on Micro Electro Mechanical Systems Conference (MEMS), pp. 782-785, 2022.   
+[6] Z. Fang, Y. Yin, C. Chen, S. Zhang, Y. Liu, and F. Han. "A sensitive micromachined resonant accelerometer for moving-base gravimetry," Sensors and Actuators A Physical, vol. 325, 2021.   
+[7] X. Zou, P. Thiruvenkatanathan and A. A. Seshia, "A Seismic-Grade Resonant MEMS Accelerometer," Journal of Microelectromechanical Systems, vol. 23, no. 4, pp. 768-770, Aug. 2014.   
+[8] H. Ding, X. Le and J. Xie, "A MEMS Fishbone-Shaped Electrostatic Double-Ended Tuning Fork Resonator With Selectable Higher Modes," Journal of Microelectromechanical Systems, vol. 26, no. 4, pp. 793-801, Aug. 2017.   
+[9] H. Okamoto, A. Gourgout, C. Chang, K. Onomitsu, I. Mahboob, E. Y. Chang, and H. Yamaguchi, "Coherent phonon manipulation in coupled mechanical resonators," Nat. Phys., vol. 9, pp. 480-484, 2013.   
+[10] K. Lu, X. Zhou, Q. Li, X. Wu and D. Xiao, "Coherent Phonon Manipulation in a Disk Resonator Gyroscope with Internal Resonance,"
+
+2020 IEEE International Symposium on Inertial Sensors and Systems (INERTIAL), pp. 1-4, 2020.   
+[11] C. Zhao, X. Zhou, M. Pandit, G. Sobreviela, S. Du, X. Zou, and A. A. Seshia. "Toward High-Resolution Inertial Sensors Employing Parametric Modulation in Coupled Micromechanical Resonators," Phys. Rev. A, Gen. Phys., vol. 12, no. 4, Oct. 2019.   
+[12] X. Zhou, C. Zhao, D. Xiao, J. Sun, Guillermo Sobreviela, Dustin D. Gerrard, Y. Chen, Ian Flader, Thomas W. Kenny, X. Wu, and Ashwin A. Seshia. "Dynamic modulation of modal coupling in microelectromechanical gyroscope ring resonators," Nature Commun., vol. 10, no. 1, p. 4980, Dec. 2019.   
+[13] C. Li, J. Xi, Y. Wang, F. Li, L. Gao, H. Liu, C. Zhao, and L. Tu, "On Enhancing the Sensitivity of Resonant Thermometers Based on Parametric Modulation," Journal of Microelectromechanical Systems, vol. 30, no. 4, pp. 539-549, Aug. 2021.   
+[14] N. Kacem, S. Baguet, S. Hentz, and R. Dufour, "Computational and quasi-analytical models for non-linear vibrations of resonant MEMS and NEMS sensors," Int. J. Non-Linear Mech., vol. 46, no. 3, pp. 532-542, Apr. 2011.   
+[15] P. Ward, and A. Duwel, "Oscillator phase noise: Systematic construction of an analytical model encompassing nonlinearity." IEEE Trans. Ultrason. Ferroelectr. Freq. Control, vol. 58, no. 1, pp. 195-205, Jan. 2011.
+
+# CONTACT
+
+*yuan_wang@hust.edu.cn;
+
+*huafeng.liu@hust.edu.cn;
+
+*chun_zhao@hust.edu.cn

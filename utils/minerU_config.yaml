@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mineru-mcp": {
+      "command": "pips",
+      "args": ["mineru-mcp"],
+      "env": {
+        "MINERU_API_BASE": "https://mineru.net",
+        "MINERU_API_KEY": "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJqdGkiOiIxNjEwMDc4MCIsInJvbCI6IlJPTEVfUkVHSVNURVIiLCJpc3MiOiJPcGVuWExhYiIsImlhdCI6MTc3MDI5NTEzNCwiY2xpZW50SWQiOiJsa3pkeDU3bnZ5MjJqa3BxOXgydyIsInBob25lIjoiIiwib3BlbklkIjpudWxsLCJ1dWlkIjoiZTIzYzkyNGMtNDIzZi00Yzc5LWJhOWEtNDRlNmFjY2UyMzE5IiwiZW1haWwiOiIiLCJleHAiOjE3NzE1MDQ3MzR9.mbO2nAs4JcZNqm-NUHyn02NF5yiGTr6kMSIjW0eYlttoTtqsNnPqTPM-PtrUk_4e-_MPve7J4cuDPqqLLpNgvw",
+        "OUTPUT_DIR": "./text_resources",
+        "USE_LOCAL_API": "true",
+        "LOCAL_MINERU_API_BASE": "http://localhost:8080"
+      }
+    }
+  }
+}

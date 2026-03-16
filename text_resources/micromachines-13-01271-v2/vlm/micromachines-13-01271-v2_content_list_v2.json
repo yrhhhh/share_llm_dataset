@@ -1,0 +1,4225 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Article "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                122,
+                107,
+                136
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Structural Design and Testing of a Micromechanical Resonant Accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                55,
+                137,
+                776,
+                181
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Heng Liu *, Yu Zhang and Jiale Wu "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                195,
+                327,
+                211
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "School of Electronic & Information Engineering, Nanjing University of Information Science & Technology, Nanjing 210044, China "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                236,
+                905,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "* Correspondence: ghost80boy@163.com "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                262,
+                524,
+                275
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract: Micromechanical resonant accelerometers based on electrostatic stiffness have the advantage of it being possible to adjust their sensitivity by changing the detection voltage. However, there is a high-order nonlinear relationship between the output frequency and the induced acceleration, so it is difficult to obtain the theoretical basis to guide the microstructure design. In this study, the dynamic equation for this type of accelerometer was established under the condition of the stiffness of the folded beams being much less than that of the resonant beams. The sensitivity was obtained first, and then silicon-based microstructures were fabricated, for which metal tube-shell vacuum packaging was adopted. The two static driving capacitances were about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.88\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the detection capacitances were about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.38\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the experimental test. The sensitivity was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "44.5\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " when the detection voltage was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while it was greater than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "300\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " when the detection voltage was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". With an increase in the detection and driving voltages, a coupling phenomenon occurred between the vibration amplitude and frequency of the resonant beam. The double-stage folded beam failed at a high detection voltage larger than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Through the experiment, a numerical simulation model for the accelerometer was established, providing the basis for a closed-loop control circuit design. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                291,
+                944,
+                507
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3554b9b6061b38cab1de97e3a1216584197450039e4e4404ed70d156122b9de6.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                55,
+                504,
+                146,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Citation: Liu, H.; Zhang, Y.; Wu, J. Structural Design and Testing of a Micromechanical Resonant "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                531,
+                240,
+                571
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accelerometer. Micromachines 2022, 13, 1271. https://doi.org/10.3390/mi13081271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                574,
+                243,
+                613
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Academic Editors: Nan Wang, Tao Wu, Jicong Zhao and Chen Liu "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                624,
+                240,
+                649
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received: 18 June 2022 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                659,
+                179,
+                671
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted: 27 July 2022 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                674,
+                178,
+                686
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Published: 7 August 2022 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                688,
+                193,
+                700
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Publisher's Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations. "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                709,
+                257,
+                763
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/52c132cfab6c9010ff497a513a60032a2a7a2e5d112c8fdd87e129e84bad195d.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                55,
+                777,
+                154,
+                803
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Copyright: © 2022 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/). "
+                    }
+                ]
+            },
+            "bbox": [
+                53,
+                808,
+                258,
+                919
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: accelerometer; resonant frequency; electrostatic stiffness; sensitivity "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                521,
+                806,
+                536
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                275,
+                580,
+                394,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Electrostatic negative stiffness is widely used in the modal frequency matching of micro-machined gyroscopes and resonant accelerometers [1,2]. After conducting microstructure fabrication, designers can tune the sensitivity of an accelerometer through electrostatic negative stiffness [3]. The magnitude of the electrostatic negative stiffness is related to the parameters of plate capacitance and loading voltage [4]. Electrostatic stiffness resonant accelerometers mainly rely on two types of acceleration—the change in plate facing area [5,6] and plate distance [7,8]. The area change type is an out-of-plane twist of the microstructure beam, while the plate distance change type is an in-plane movement of the microstructure beam; the former is more nonlinear than the latter. When electrostatic negative stiffness is applied to accelerometer design, two movable micromechanical beams are required [9]: one is a resonant frequency-sensitive beam, and the other is a movable micromechanical beam that generates electrostatic negative stiffness. Both micromechanical beams are portable; therefore, calculating the negative electrostatic stiffness directly is difficult. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                598,
+                944,
+                806
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Due to the nonlinear relationship existing between the resonant frequency and the stiffness of the micromechanical beam [10], directly obtaining the sensitivity, which introduces complications in the structural design, is also difficult. As the electrostatic stiffness is generated by the DC voltage loaded on the plate capacitor, a change in acceleration will change the plate distance. An extremely large loading voltage will cause the plate to pull in and cause the microstructure beam to fail [11]. In the design stage, attention should be paid to the pull-in voltage of the plate [5]. The electrostatic stiffness resonant accelerometer "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                808,
+                944,
+                913
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "# "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                57,
+                115,
+                99
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "micromachines "
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                68,
+                273,
+                85
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "MDPI "
+                    }
+                ]
+            },
+            "bbox": [
+                865,
+                64,
+                937,
+                99
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271. https://doi.org/10.3390/mi13081271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                963,
+                455,
+                977
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "https://www.mdpi.com/journal/micromachines "
+                    }
+                ]
+            },
+            "bbox": [
+                640,
+                963,
+                939,
+                977
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "can be used to realize the conversion of the loaded voltage into the electrostatic driving force through the interface capacitance [3,12]. Following driving and detection capacitance design is a necessary part of structural design [13]. Due to the parasitic capacitance between the microstructures [7], the driving electrode directly couples the driving voltage signal to the detection electrode, meaning that an open-loop test cannot be used to directly determine the resonant frequency. On the one hand, modulation and demodulation circuits need to be used; on the other hand, the parasitic capacitance needs to be reduced in the structural design. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                939,
+                230
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This study introduces the principle of a resonant accelerometer based on electrostatic negative stiffness and proposes a structural design principle under the condition of stiffness constraints. Finite element simulation is used to validate the stiffness constraints, and the size of the interface detection capacitance and drive capacitance is obtained simultaneously. Static capacitance tests are conducted on the tape-out and packaged accelerometers, and a frequency sweep test is carried out with a dynamic signal analyzer to validate the effect of the DC voltage on the sensitivity. At the same time, the large detection voltage makes the deformation of the double-stage folded beam irreversible, and the large driving voltage used results in the coupling of the amplitude and the resonant frequency of the resonant beam. With the computer dimension measurement method, the numerical simulation model of the accelerometer is established, which provides the basis for the subsequent design and experimentation of the control circuit. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                231,
+                941,
+                411
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Principle of Accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                273,
+                422,
+                502,
+                436
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The accelerometer structure layer is divided into two identical single-beam resonant accelerometers at the middle symmetry point in the Y-axis direction, as shown in Figure 1. Taking the upper part as an example, the structure layer includes a sensitive proof mass with some damping holes, four folded beams (single or double stage) supporting the suspended proof mass, a detection plate capacitor pair, two fixed-drive comb capacitor pairs, a tuning fork resonant beam, and some fixed anchors(two anchors at the detection end, two anchors for the driving comb, and two anchors for the double-end tuning fork). The Y-axis direction is the drive and detection direction. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                439,
+                941,
+                558
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/70a174f27bebc36753f174aacdbce5719daf744b349e5c478562971f1ea44793.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Structural diagram of an accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                570,
+                581,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The equivalent diagram of one accelerometer (Figure 2) shows that the folded beams are the sensing beams, and the two folded beams are a group. The tuning fork beam is the resonant beam. The flat plates attached to the mass and the flat plates attached to the "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                873,
+                941,
+                917
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "2 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tuning fork beam form detection capacitor pairs, and the driving combs attached to the tuning fork beam and the driving combs attached to the anchor form drive capacitor pairs. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                112,
+                941,
+                143
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0025c82e5c9611c682c50e21d0cca4d2c61ec8d49712f9edac9aacfc6efe817c.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Equivalent diagram of an accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                153,
+                890,
+                375
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Folded beams and proof-mass structural connect with detection voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Both the driving combs and the active tuning fork beam link with a driving voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{d} + V_{a}\\sin \\omega t"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The tuning fork beam potential is 0. The dynamic equation of the resonant beam is [14]: "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                407,
+                941,
+                455
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\ddot {y} + \\xi \\dot {y} + k y = F _ {d} + F _ {e} \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5233830574739ae3d3e8819819729deede8dcbb7c6b5b72af11b652051e1f0e6.jpg"
+                }
+            },
+            "bbox": [
+                514,
+                464,
+                939,
+                482
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formula (1),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the modal displacement of the tuning fork beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{d}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the electrostatic driving force,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective mechanical stiffness of the tuning fork beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the equivalent mass, and the damping coefficient is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\xi"
+                    },
+                    {
+                        "type": "text",
+                        "content": ".  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the electrostatic force of the detection plate capacitance acting on the resonant beam. The total capacitance of the detection plate is: "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                492,
+                941,
+                567
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {s} = \\frac {\\varepsilon N h l}{d _ {0} - y _ {1}} = \\frac {\\varepsilon S}{d _ {0} - y _ {1}} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/864d6f62eccf588ae5c2e1252938d844c1eec32cb49d25165f7556a790a8be2e.jpg"
+                }
+            },
+            "bbox": [
+                514,
+                565,
+                939,
+                596
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formula (2),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the pairs of the parallel plate capacitance,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the initial distance between the two plates of the detection capacitor,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the displacement of the folded beam in the Y-axis direction,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the dielectric constant,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the overlapping thickness of the capacitor plates along the Z-axis direction,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the overlap length of a single capacitor along the Y-axis direction, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "S = Nhl"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the equivalent area of the two plates of the detection capacitor. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                602,
+                941,
+                690
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The electrostatic force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                690,
+                512,
+                706
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {e} = \\sum \\frac {1}{2} \\frac {\\partial C _ {s}}{\\partial y _ {1}} V _ {s} ^ {2} = \\frac {N \\varepsilon l h V _ {s} ^ {2}}{2} \\left(\\frac {1}{d _ {0} ^ {2}} + \\frac {2 y _ {1}}{d _ {0} ^ {3}} + o \\left(y _ {1} ^ {2}\\right)\\right) \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e0a22536e9058fb85c809c5fc551abad9190e9ae9a8127b5f6dc94d2f447e06a.jpg"
+                }
+            },
+            "bbox": [
+                426,
+                715,
+                939,
+                751
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The total capacitance of the drive comb  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                760,
+                645,
+                776
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {d} = \\frac {N _ {0} \\varepsilon h \\left(l _ {0} + y\\right)}{d _ {1}} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fd26b91015b2a0a9b9086789edf98dc464c640f0caba85a78222a9db51587ed2.jpg"
+                }
+            },
+            "bbox": [
+                534,
+                785,
+                939,
+                818
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formula (4),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the pairs of capacitances of the driving comb,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "l_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the overlapping length of combs in the Y-axis direction,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the distance between the comb and the next comb in the X-axis direction,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the DC driving voltage, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_a \\sin \\omega t"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the AC driving voltage. The electrostatic driving force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                827,
+                941,
+                888
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {d} = \\sum \\frac {1}{2} \\frac {\\partial C _ {d}}{\\partial y} \\left(V _ {d} + V _ {a} \\sin \\omega t\\right) ^ {2} = \\frac {1}{2} \\frac {N _ {0} \\varepsilon h}{d _ {1}} \\left(V _ {d} + V _ {a} \\sin \\omega t\\right) ^ {2} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/b99cced33040ec23fe7a6e96d0085196027a3f08d55e4a00644abb59c9b3f0a2.jpg"
+                }
+            },
+            "bbox": [
+                389,
+                898,
+                939,
+                929
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                895,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Substituting Equations (3) and (5) into Equation (1) and ignoring the higher-order terms of the electrostatic force, we have "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                112,
+                941,
+                142
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m \\ddot {y} + \\xi \\dot {y} + k y = \\frac {1}{2} = \\frac {N _ {0} \\varepsilon h}{2 d _ {1}} \\left(V _ {d} + V _ {a} \\sin \\omega t\\right) ^ {2} + \\frac {\\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/10bd0c5a333a22aa5bdb62c182fbad411a274db7f74d3a5fdefddb726fc2a302.jpg"
+                }
+            },
+            "bbox": [
+                411,
+                153,
+                939,
+                187
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formula (6), the equivalent stiffness of the resonant beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{eff}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                309,
+                196,
+                811,
+                212
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {e f f} = k - \\frac {\\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}} \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5358d17edd0ced25e7624c99154d8b908c244aaa3aad83979da78115df815f7f.jpg"
+                }
+            },
+            "bbox": [
+                546,
+                225,
+                939,
+                258
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to Formula (7), under the detection of a plate loaded with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the corresponding resonant frequency decreases when the equivalent stiffness of the resonant beam decreases, and the level of reduction is related to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The resonant accelerometer can be designed by establishing the relationship between the acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the Y-axis direction and the initial distance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                268,
+                941,
+                343
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to Figure 2, the folded beams and the resonant beam were under an acceleration effect, which made the solution for the distance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " more complicated. The equivalent stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was much smaller than the modal stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the detection proof mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was much larger than that of the resonant beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Under the action of the electrostatic driving force, the resonant beam performed high-frequency sinusoidal periodic vibration about the fixed equilibrium position, and the equivalent low-frequency displacement was 0. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                344,
+                941,
+                445
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the acceleration in the Y-axis direction is 0, for the detection capacitance system, "
+                    }
+                ]
+            },
+            "bbox": [
+                309,
+                448,
+                941,
+                462
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {1}{2} \\frac {\\varepsilon S V _ {s} ^ {2}}{\\left(d _ {0} - \\Delta d\\right) ^ {2}} = k _ {s} \\cdot \\Delta d \\tag {8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/07810245f7d87d7084a6d312afc3883d48678b30abb460f77cba71e82a7c919a.jpg"
+                }
+            },
+            "bbox": [
+                527,
+                475,
+                939,
+                508
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the acceleration in the Y-axis direction is not 0, the following holds true: "
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                519,
+                892,
+                533
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {1}{2} \\frac {\\varepsilon S V _ {s} ^ {2}}{\\left(d _ {0} - \\left(y _ {1} + \\Delta d\\right)\\right) ^ {2}} = k _ {s} \\left(y _ {1} + \\Delta d\\right) - m _ {s} \\cdot a \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c6d1ea9a6a4218e2ff4d6e9995a96b22853f7ae52a4b7ab3e3265c0cd35c6acf.jpg"
+                }
+            },
+            "bbox": [
+                453,
+                546,
+                939,
+                580
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Equations (8) and (9),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the displacements of the folded beam and the proof mass in the Y-axis direction when the acceleration is 0 and not 0, respectively. The actual design should consider the pull-in effect of the plate capacitor; that is, the value  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " should be as large as possible, but if it is too large, the detection of the output signal will become difficult. Generally, it will satisfy  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1} + \\Delta d \\ll d_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". After expansion with the Taylor series, the relationship between displacement  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y_{1} + \\Delta d"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be obtained as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                590,
+                941,
+                692
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "y _ {1} + \\Delta d = \\frac {m _ {s} \\cdot a}{k _ {s} - \\frac {\\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}} + \\frac {\\frac {\\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}}}{k _ {s} - \\frac {\\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}} \\tag {10}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5bbc4fefb13a3b170935f30a0719bf12b15b965963ca3ae04c51e327a26666a3.jpg"
+                }
+            },
+            "bbox": [
+                485,
+                692,
+                939,
+                743
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The resonant frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{e}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the resonant beam is: "
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                747,
+                687,
+                763
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f _ {e} = \\frac {1}{2 \\pi} \\sqrt {\\frac {k - \\frac {\\varepsilon S V _ {s} ^ {2}}{\\left(d _ {0} - y _ {1}\\right) ^ {3} \\left(1 - \\frac {- \\Delta d}{d _ {0} - y _ {1}}\\right) ^ {3}}}{m}} \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/14f1c223cd9b0994ae1c9ed814b1654851ea0f404b834e9c49ff2d6e2abf6786.jpg"
+                }
+            },
+            "bbox": [
+                485,
+                776,
+                939,
+                826
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                837,
+                327,
+                850
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\Delta d = \\frac {\\frac {\\varepsilon S V _ {s} ^ {2}}{2 d _ {0} ^ {2}}}{k _ {s} - \\frac {\\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}}, y _ {1} = \\frac {m _ {s} \\cdot a}{k _ {s} - \\frac {\\varepsilon S V _ {s} ^ {2}}{d _ {0} ^ {3}}} \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a11d62c33ad21908d2377b648dd643ae2b88e789d8861ef60c5ea122e27ba2bc.jpg"
+                }
+            },
+            "bbox": [
+                485,
+                848,
+                939,
+                900
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "4 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                895,
+                64,
+                941,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Sensitivity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                309,
+                112,
+                522,
+                128
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "| \\eta | \\approx \\frac {\\delta f _ {e}}{\\delta a} \\approx \\frac {3 \\varepsilon S V _ {s} ^ {2} / 2 \\pi}{\\sqrt {\\left(k d _ {0} ^ {4} - \\varepsilon S V _ {s} ^ {2} d _ {0}\\right) \\cdot m}} \\frac {m _ {s}}{2 k _ {s} d _ {0} ^ {2} - 3 \\varepsilon S V _ {s} ^ {2} / d _ {0}} \\tag {13}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/8a760bf78d950e918dcd678acfb477119876790b8c1f748ab32ce4cdda6bf5ab.jpg"
+                }
+            },
+            "bbox": [
+                413,
+                137,
+                939,
+                180
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where the frequency is related to the structural parameters and the detection voltage. The sensitivity can be improved by adjusting the loading voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", but the sensitivity is nonlinear with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The greater the stiffness of the folded beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is, the smaller the sensitivity will be. It is necessary to configure the parameters reasonably in the structural design. The preceding analysis was conducted under the condition  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s} \\ll k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that is, the influence of the tuning fork beam on the resonant frequency due to the electrostatic force and inertial force can be ignored. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                190,
+                942,
+                296
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Structural Design of Accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                273,
+                306,
+                569,
+                321
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Theoretical analysis shows that when the stiffness of the folded beam is much lower than that of the resonant beam, the influence of the vibration displacement of the resonant beam on the detection capacitance can be ignored, and this constraint should be considered in the structural design. The tuning fork resonant beam and its connecting parts are shown in Figure 3. The dimensions of each key position are marked with symbols, and the stiffness and equivalent mass of the resonant beam corresponding to the operating mode can be calculated. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                324,
+                942,
+                429
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3acec91d7c0b47de5548bfe35e8202dd08b714c4caced6a3fd94431e8edf05c5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. DETF resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                441,
+                680,
+                680
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For a double-ended tuning fork (DETF) beam, the stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and equivalent mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                711,
+                941,
+                741
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k = \\frac {2 5 6 E \\times W ^ {3} \\times h}{1 5 L ^ {3}} \\tag {14}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9c2914ee8913d26ced20a33b6aba28196d87d2acf7b40ebf3a16476634d86bf0.jpg"
+                }
+            },
+            "bbox": [
+                529,
+                740,
+                939,
+                771
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m = \\frac {1 2 8}{3 1 5} \\rho \\times L \\times W \\times h + \\rho \\times A _ {\\text {a c t}} \\times h \\tag {15}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cffcced740cc3107954f27a180d3fb554d49006e7012f680b01f2ff0bcc9fae8.jpg"
+                }
+            },
+            "bbox": [
+                463,
+                775,
+                939,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formula (15), the in-plane effective area of the additional plate  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{act}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                309,
+                808,
+                850,
+                824
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A _ {a c t} = L _ {1} \\times W _ {1} + L _ {2} \\times W _ {2} + n _ {1} \\times L _ {3} \\times W _ {3} + n _ {2} \\times \\left(L _ {4} \\times W _ {4} + n _ {3} \\times L _ {5} \\times W _ {5}\\right) \\tag {16}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/feb6bb0850606c63f8bd5dbe99aeae13886d66a64941351cf11c1b7748255bab.jpg"
+                }
+            },
+            "bbox": [
+                307,
+                835,
+                939,
+                852
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Formulas (14)-(16),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the Young's modulus of silicon,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the density,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A_{act}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the area of the additional structure,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the number of comb capacitors,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the pairs of parallel plate capacitances,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n_3"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the number of parallel plate capacitors, and other parameters are as shown in Figure 3. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                862,
+                941,
+                923
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                895,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the simulation, attention was paid to the influence of the length L and width W of the tuning fork beam on the resonant frequency. Finite element simulation of the resonator structure was performed using CoventorWare software [15]. First, the 3D model was constructed according to the microstructure's ideal process flow, and the resonant beam's anchor points were constrained to be fixed, and then the modal simulation of the resonator structure was carried out. The first-order in-plane mode of the resonant structure is shown in Figure 4. When the length of the tuning fork beam was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "700\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the width was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the theoretically calculated resonant frequency was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "38,296\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the simulated frequency was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "35,136.1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the error was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8.99\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The stiffness of the resonance beam obtained from the simulation was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "153.04\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the theoretically calculated stiffness was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "163.0439\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                275,
+                112,
+                941,
+                261
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1f01b193bb2e756c4605703106bf57e2b8468f0179c9bb38bc7321d9fac82a19.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. Finite element simulation of resonator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                275,
+                746,
+                491
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The detection proof mass system consisted of a sensitive proof mass with damping holes, four folded beams (single-or double-stage), and additional parallel plates. The dimension symbols are shown in Figure 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                524,
+                939,
+                569
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/07e0579cb0355945a1079b45025a91d50cfb59c41016dc61fd0ce5293788f800.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Finite element simulation of sensing structure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                581,
+                764,
+                788
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When the straight beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{6}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is much longer than the connecting beams  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{8}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{X}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", ignoring the influence of the connecting beam, the values of stiffness corresponding to the single-stage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and double-stage folded beams  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                822,
+                941,
+                866
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {s 1} = \\frac {2 \\times E \\times w _ {6} ^ {3} \\times h}{L _ {6} ^ {3}} \\tag {17}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/cee757633072dc5ce5c1c1f4b5ae75889d9610336d697412c73ebbb68a110300.jpg"
+                }
+            },
+            "bbox": [
+                524,
+                878,
+                939,
+                914
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                64,
+                226,
+                74
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                64,
+                941,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "k _ {s 2} = \\frac {E \\times w _ {6} ^ {3} \\times h}{L _ {6} ^ {3}} \\tag {18}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f6bd757943959fa5d418255af98e2daeb9389603c9fe9dc41d65699dc1e7b173.jpg"
+                }
+            },
+            "bbox": [
+                539,
+                109,
+                939,
+                145
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "According to Equations (17) and (18), ignoring the influence of the connecting beams, when the length and width of the straight beams are the same, the stiffness of the double-stage folded beam is half that of the single-stage folded beam. When the length of the single beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "445\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the width is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the stiffness of the single-stage folded beam can be calculated to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10.31\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and that of the corresponding double-stage folded beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5.15\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", making the modal stiffness of the resonant beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " more than 15 times the stiffness of the single-stage folded beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the stiffness of the double-stage folded beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". After completing the 3D modeling of the microstructure in CoventorWare software, the force analysis of the sensing structure was performed to obtain the fold beam's simulation stiffness, and the detection end anchor points were fixed, as shown in Figure 6. Different accelerations in the sensitive direction to simulate the force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " were applied, the displacement  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the sensitive direction was measured, and the expression  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s} = F_{s} / x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " obtained the simulation stiffness of the fold beam  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When the acceleration is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the simulation results are shown in Figure 7. The displacement results obtained after applying different accelerations in the X-axis direction (sensitive direction) are shown in Tables 1 and 2. According to the simulation results, the stiffness of the folded beam under the experiment was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "9.4398\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5.1127\\mathrm{N / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. The relative errors from the theoretical stiffness were  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8.44\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.71\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                149,
+                944,
+                420
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/91dcbac10b38f506fc38805da4881660f9767571425775baa27829b8804e5eec.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. Static force analysis (single-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                432,
+                754,
+                661
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/89f9805f97d80673cb5f3c98372d7d23e98a69606d6d3c21e0707e1ab534878f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                290,
+                696,
+                319,
+                715
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/67e0712c84f29860a57b82b7789a453bf645b42e72d87bcf5e3edd4c908a782a.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "mechDomain "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 7. Displacement (um) of single-stage beam. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td></td><td>Maximum</td><td>Minimum</td></tr><tr><td>Node Displacement</td><td>3.788024 × 10-2</td><td>0</td></tr><tr><td>Node X Displacement</td><td>3.788024 × 10-2</td><td>-1.024025 × 10-5</td></tr><tr><td>Node Y Displacement</td><td>1.540161 × 10-4</td><td>-1.539838 × 10-4</td></tr><tr><td>Node Z Displacement</td><td>3.872837 × 10-6</td><td>-3.873785 × 10-6</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                282,
+                722,
+                786,
+                839
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                895,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/3e48e4a04b6323db426e55c421b9302449ed93b30a8b276ef671aa22356712c0.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. Static force analysis (single-stage beam). "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Acceleration (m/s2)</td><td>Displacement (um)</td><td>Stiffness (N/m)</td></tr><tr><td>2</td><td>0.00773</td><td>9.4398</td></tr><tr><td>4</td><td>0.01546</td><td>9.4398</td></tr><tr><td>6</td><td>0.02319</td><td>9.4398</td></tr><tr><td>8</td><td>0.03092</td><td>9.4398</td></tr><tr><td>9.8</td><td>0.03788</td><td>9.4398</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                275,
+                131,
+                939,
+                227
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a74e2aa31094f137d8bcc1e52f4935f8ef89ba781fc6960b5f106796490da84d.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2. Static force analysis (double-stage beam). "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Acceleration (m/s2)</td><td>Displacement (um)</td><td>Stiffness (N/m)</td></tr><tr><td>2</td><td>0.01427</td><td>5.1127</td></tr><tr><td>4</td><td>0.028544</td><td>5.1127</td></tr><tr><td>6</td><td>0.04282</td><td>5.1127</td></tr><tr><td>8</td><td>0.05709</td><td>5.1127</td></tr><tr><td>9.8</td><td>0.06994</td><td>5.1127</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                275,
+                268,
+                939,
+                363
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The mass of the proof mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is calculated as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                312,
+                379,
+                719,
+                394
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "m _ {s} = \\rho \\times A _ {s} \\times h \\tag {19}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/797d1cfd84e35459cc91667914156b3b8776ed956ad0b0b346f1272df6a82185.jpg"
+                }
+            },
+            "bbox": [
+                547,
+                407,
+                937,
+                422
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} A _ {s} = 4 \\left[ L _ {6} \\times W _ {6} + L _ {8} \\times W _ {8} + \\left(L _ {6} + L _ {x}\\right) \\times W _ {6} \\right] + L _ {7} \\times W _ {7} - n \\times L _ {1 1} \\times W _ {1 1} \\tag {20} \\\\ + n _ {4} \\times L _ {9} \\times W _ {9} + (n _ {4} - 1) \\times n _ {5} \\times L _ {1 0} \\times W _ {1 0} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/85e7e3c41e17c10b0d33d275c0bb917d0f2c1dc290b6242cbd33062abb187df1.jpg"
+                }
+            },
+            "bbox": [
+                324,
+                434,
+                939,
+                464
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To obtain the working mode and modal frequency of the sensing structure, we used the Coventor Ware software to model the single-stage/double-stage fold beam sensing structure in 3D first [16], and the corresponding anchor points were kept stationary, and then modal simulations on the sensing structure were performed, as shown in Figures 8 and 9. According to the analysis, the operating modal frequency of the single-stage folded beam detection system was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2532.74\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the operating modal frequency of the double-stage folded beam detection system was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1864.01\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The stiffness of the double-stage folded beam was confirmed to be 0.5416 of the stiffness of the single-stage folded beam. The modal frequency of the folded beam detection system was much smaller than the modal frequency of the resonant beam, meaning that the influence of the vibration of the resonant beam on the distance between the flat capacitor plates at the detection end can be ignored. "
+                    }
+                ]
+            },
+            "bbox": [
+                275,
+                470,
+                941,
+                634
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5fa8d8c8d825bfff5ab117ff2fc05c1a742c46181722a49fc3282b67948fb6f6.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 8. Finite element simulation of detection structure (single-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                646,
+                803,
+                879
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                65,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                65,
+                939,
+                76
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/30e484c9a8ead42e29b288c9067873f40b0ceca6b95d6d451d0679c2c7f26bad.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 9. Finite element simulation of detection structure (double-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                111,
+                858,
+                355
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Manufacturing and Characterization Testing "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                275,
+                391,
+                636,
+                406
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The structure layer was composed of monocrystalline silicon material doped with concentrated boron to improve the conductivity of the microstructure [13]. The substrate was pyrex 7740 glass, and the anode bonded the microstructure and the substrate [7]. For larger depth and width ratios, three photolithography analyses were conducted with an inductive coupled plasma (ICP) emission spectrometer) [14]. Under the condition of the etching depth being  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "40~{\\mu\\mathrm{m}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " , the metal electrodes were welded after tape-out. The fabricated single-stage and double-stage folded beam accelerometers are shown in Figures 10 and 11. The structure was complete and there was no microstructure fracturing orshort-circuiting. The electrode layer had eight electrodes, as shown in Figure 11, of which the third and seventh electrodes connected to the tuning fork beam were short-circuited. There weretwo groups of driving combs on the upper and lower sides; each group of combs had two electrodes. The second and eighth electrodes were short-circuited and connected with the driving voltage, the same was true of the fourth and sixth electrodes, and the same was true of the first and fifth electrodes. "
+                    }
+                ]
+            },
+            "bbox": [
+                275,
+                410,
+                941,
+                617
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9646feacfbdd5c39c15b7041c6b29161773299cf968437486e3e4b67f2141de3.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 10. Fabricated microstructure (single-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                631,
+                705,
+                878
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                65,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                65,
+                939,
+                76
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/02f67ac1777912a6c67c6595eefabfc2db74aed81ebe5f8bc2a0e89c702fdef7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 11. Fabricated microstructure (double-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                112,
+                690,
+                379
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The estimated quality factor of the microstructure was less than 100 under standard atmospheric pressure packaging. When the AC and DC voltages were both less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the vibration amplitude was small, the detection capacitance changed slightly, and the interface circuit was difficult to detect. To reduce the resonance energy consumption, the core structure was vacuum-encapsulated in a metal tube and shell (20–30 mTorr), and the packaged accelerometer was as shown in Figure 12. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                416,
+                941,
+                506
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5e2e89a9356e517d3cec82a5a61b014d24a2f1ae4832b9127b5e1e35dde798b4.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 12. Metal encapsulated sensor. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                521,
+                682,
+                737
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In selecting driving and detection voltages, we needed to estimate the value of the driving and detection capacitances first, before the driving and detection voltages were finally converted into electrostatic forces through the capacitances. The entire microstructure was symmetrically divided into two equal parts, the top and bottom. The CoventorWare software was used to establish the physical simulation model of the detection capacitance and the driving capacitance. Differing from the previous modal simulation and force analysis, the mesh setting for the microstructure must be performed after the 3D modeling of the equivalent micromechanical resonant accelerometer was completed. The electrostatic field's finite element analysis was selected, the relevant constraints were set on the microstructure, and the capacitance matrix was finally obtained [17]. The finite element simulation results "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                774,
+                944,
+                923
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "10 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "show that the comb capacitance of the left and right parts of the fixed driving comb and the tuning fork beam was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.2748\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; that is, the two driving capacitances were both  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.2748\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The detection capacitance formed by the flat plate on the proof mass and the flat plate on the tuning fork beam was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.6488\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the coupling capacitance between the fixed driving comb and detection plate was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.002426\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The simulation results are shown in Figure 13. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                941,
+                187
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c82dc83dc83396b92c8be454bdb90c3f0fc92812fafd6a5ecc539f067c5497ab.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 13. Interface capacitance simulation. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                202,
+                880,
+                332
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The probe of the LCR measuring instrument was used to clamp the corresponding pins after packaging and adjust the measurement excitation frequency. Figure 14 shows that the driving capacitance values of the single-stage and double-stage folded beam accelerometers were  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.88398\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.87268\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the corresponding detection capacitances were  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.38759\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.39051\\mathrm{pF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively, as shown in Figure 15. Considering the fixture and welding of metal leads and the process manufacturing errors, the test results and simulations were found to be of the same order of magnitude and basically consistent. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                367,
+                941,
+                470
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7ef50fce987a1d2cd685788e18f93e411891faa994af6e30500c754dae695b66.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                483,
+                542,
+                625
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/25dda527318b957242374daf3357a821133215e6a08a09981fc05af09554f9e0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 14. Interface capacitance test (driving capacitance). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                557,
+                482,
+                826,
+                626
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cdce0847bd5bdd0235313ad0174d277be7d79740a883b13544b7b2defa2eac2b.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                664,
+                544,
+                806
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bb480ba65896121581fb04d4aba18c750fbc2e2046f59289012724b0cbc1321b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 15. Interface capacitance test (sensing capacitance). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                564,
+                663,
+                833,
+                807
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To obtain the quality factor and resonant frequency, an Agilent 35670A dynamic signal analyzer was used for the open-loop frequency sweep test. The third and seventh electrodes were connected to an  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "866\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " square wave, and the fourth and sixth electrodes were both connected to DC and AC drive voltages. The DC-regulated power supply provided the DC voltage, and the AC voltage was supplied by the output port of the dynamic signal analyzer. The detection voltage is provided by the manual programmable potentiometer "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                841,
+                941,
+                932
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "divider and was connected to the positive input terminal of the charge amplifier of the interface circuit. The detection capacitor was output through the charge amplifier, DC blocking amplifier, high-pass filter, switch demodulation module, and low-pass filter, and then connected to the input of the dynamic signal analyzer. The circuit schematic is shown in Figure 16. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                939,
+                187
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/92e662100979c820ab9eef81a87fd1f41e1062dc7d1d18726d84804e76230a40.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 16. Open-loop test circuit. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                200,
+                858,
+                362
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Under the condition of the accelerometer being placed flat (the acceleration in the X-axis and Y-axis directions was 0), the frequency sweep range was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30 - 40\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the DC driving voltage was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and the AC voltage amplitude was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A resistor was used to adjust the detection voltage and a general-purpose interface bus (GPIB) cable was used. The test amplitude-frequency characteristic curve showed that both the single-stage and double-stage folded beam accelerometers could change the resonant frequency by changing the detection voltage. However, the adjustment of the double-stage folded beam was more sensitive. The frequency corresponding to the double-stage folded beam changed greatly with the same detection voltage, as shown in Figures 17 and 18. At the same time, the two resonant beams of the same accelerometer were tested, and they showed that the amplitude-frequency curve was asymmetric concerning the center resonant frequency, and that the resonant beam had nonlinear characteristics when the electrostatic force was large. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                393,
+                944,
+                574
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/10b9e5250717550e48bcaf42a7d9b8f88c197909dbb994aac9da5a8e8ae69761.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 17. Amplitude frequency curve (double-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                587,
+                739,
+                851
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "12 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8406b9eee5dc88ee9eed96a20a64d4c502f8916df9a1d8e8e74443c3febc5356.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 18. Amplitude frequency curve (single-stage beam). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                111,
+                823,
+                441
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The self-made rotary slide and dial could achieve a precise adjustment of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.5^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", providing acceleration input from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through gravity decomposition. The test instrument is shown in Figure 19, and the corresponding voltage supply mode remained unchanged. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                476,
+                941,
+                521
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c5f25d5dbc5d9334e968f4f8edd5a23f0f89e43707af2e2f583d9ec6f4121c18.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 19. Experimental circuit. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                533,
+                699,
+                783
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The encoder was adjusted to achieve an angle difference of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of rotation and decompose the acceleration into the corresponding sine components. When the detection voltage changed to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the corresponding acceleration rotation angle was from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-90^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "90^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the relationship between acceleration and resonant frequency was as shown in Figure 20, and the sensitivity was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "44.5\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When the detection voltage was  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the relationship between acceleration and resonant frequency was as shown in Figure 21. A large detection "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                818,
+                944,
+                909
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "13 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "voltage corresponds to a high sensitivity, but the resonant frequency and acceleration have a severely nonlinear relationship. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                939,
+                143
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/60024a4ede87ad46c3078ded629e7602c3c8f3ff94a6d9479b27ce58f97a3065.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 20. Output characteristic test (Vs = 1 V). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                155,
+                707,
+                437
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e7ba3dc2014056a4467b5dd5f2d2a4dea3dd50836980cd188ab8628232ac072f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 21. Output characteristic test (Vs = 3 V). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                475,
+                764,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The amplitude of the AC drive voltage was kept unchanged, and the DC stabilized power supply was adjusted to change the DC drive voltage. When the DC detection voltage is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the amplitude-frequency curve does not jump; when the DC detection voltage is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", there is a jump in the amplitude-frequency curve. See Figure 22 for the curve. The larger the DC driving voltage was, the more the resonant frequency was inclined toward the direction of frequency increase. The analysis showed that the microstructure featured a nonlinear coupling of amplitude and frequency when the driving voltage and detection voltage were large [15]. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                810,
+                941,
+                932
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                74
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "14 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b6dc24b773560b32c8dce6b01b378337e9d845a888fd95e8be52b77164ecd985.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 22. Nonlinear characteristics of the accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                112,
+                877,
+                292
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The microstructure was observed with a microscope. Compared with the situation shown in Figure 11, the double-stage folded beam was irreversibly deformed, as shown in Figure 23; this is partially enlarged in Figure 24. Obviously, if the detection and driving voltages are increased, the double-stage folded beam will be prone to failure, which affects its performance. This aspect should be considered when designing the structure layout of an accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                326,
+                941,
+                416
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ca173d5bb349b7b6149eb3c8b2aed72fc4f4107b0392c35d0c22c28103f28ff5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 23. Deformation of double-stage folded beam. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                430,
+                652,
+                639
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8befe31363fa82d52ba5919bdb698af20c85d55a36260d7f969bc938da0d824f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 24. Deformation of double-stage folded beam (zoomed in). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                675,
+                752,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Before microstructure encapsulation, the computer vision method was used to directly mark the length and width dimensions, as shown in Figure 25. Table 3 shows the structural parameters designed and measured. Combined with the quality factor of the experimental test, the numerical model of the accelerometer (including the interface charge amplifier) was obtained, and the numerical model was established under Matlab/Simulink. The external inputs were acceleration, detection voltage, DC driving voltage, AC driving "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                840,
+                944,
+                932
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "15 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "voltage, and white noise, and the output terminal was the charge amplifier, as shown in Figure 26. The linear analysis tool was used to analyze the amplitude-frequency characteristic curves under different detection voltages, as shown in Figure 27. At  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30 - 40\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the resonant frequency was decreased by changing the detection voltage from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The amplitude-frequency curve was asymmetrical, but the simulated vibration amplitude was slightly smaller than that of the experiment, and the detection voltage corresponding to the frequency reduction was inconsistent. The simulation error was related to the circuit parameters of the interface. As the interface circuit focuses on the frequency measurement [18-20], the effect of the error under small amplitude on the frequency measurement can be ignored. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                944,
+                262
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2d93426d5401111813728adaf4db7335147bdfd256d50eabfd9ac6d0ad1f7f74.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 25. Computer vision measurement of the microstructure size. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                282,
+                274,
+                873,
+                533
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/52ace4d601719169eebdc2c778440bcf82e592bc42dbc018b7ce9948cd8c9dbb.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3. Structure parameters of the accelerometer. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameters</td><td>Units</td><td>Design</td><td>Measurement</td></tr><tr><td>Length of fold beam</td><td>μm</td><td>500</td><td>479</td></tr><tr><td>Width of fold beam</td><td>μm</td><td>8</td><td>7.01</td></tr><tr><td>Spacing of fold beam</td><td>μm</td><td>14</td><td>16.1</td></tr><tr><td>Length of connecting beam</td><td>μm</td><td>160</td><td>149.2</td></tr><tr><td>Width of connecting beam</td><td>μm</td><td>9</td><td>7.6</td></tr><tr><td>Spacing of connecting beam</td><td>μm</td><td>4</td><td>4.93</td></tr><tr><td>Length of drive comb</td><td>μm</td><td>40</td><td>38.5</td></tr><tr><td>Width of drive comb</td><td>μm</td><td>5</td><td>4.78</td></tr><tr><td>Spacing of drive comb</td><td>μm</td><td>2</td><td>2.5</td></tr><tr><td>Pairs of drive comb</td><td>pair</td><td>19</td><td>19</td></tr><tr><td>Length of DETF</td><td>μm</td><td>700</td><td>662.4</td></tr><tr><td>Width of DETF</td><td>μm</td><td>8</td><td>7.4</td></tr><tr><td>Length of detect plate capacitor</td><td>μm</td><td>50</td><td>45.3</td></tr><tr><td>Width of detect plate capacitor</td><td>μm</td><td>6</td><td>4.88</td></tr><tr><td>Spacing of detect capacitor 1</td><td>μm</td><td>2</td><td>2.46</td></tr><tr><td>Spacing of detect capacitor 2</td><td>μm</td><td>10</td><td>10.56</td></tr><tr><td>Total pairs of detect capacitor</td><td></td><td>40</td><td>40</td></tr><tr><td>Length of proof mass</td><td>μm</td><td>620</td><td>609</td></tr><tr><td>Width of proof mass</td><td>μm</td><td>700</td><td>684</td></tr><tr><td>Length of damping hole</td><td>μm</td><td>10</td><td>12.38</td></tr><tr><td>Width of damping hole</td><td>μm</td><td>10</td><td>12.85</td></tr><tr><td>Number of damping hole</td><td></td><td>110</td><td>110</td></tr><tr><td>Structure layer thickness</td><td>μm</td><td>40</td><td>40.3</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                275,
+                593,
+                939,
+                922
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "16 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b78b20ea788c4d4c894f8749d95a3cdf5d4020bbc54b1358421b0dac50abd22d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 26. Numerical simulation model of the accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                278,
+                111,
+                830,
+                313
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/76ddb90cd81b38f1aff78902406a3ee44a08bdfd36448718fec0b240e3c4344d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 27. Amplitude-frequency curve of the simulation model. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                280,
+                349,
+                779,
+                639
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                273,
+                674,
+                391,
+                687
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The present work concerns the operating principles and a thorough experimental characterization of a new polysilicon resonant micro accelerometer based on electrostatic stiffness. The relationship between the stiffness of the folded beam and the stiffness of the resonant beam has to be constrained in order to better realize the controllable design of the sensitivity. When the stiffness of the folded beam is much lower than that of the resonant beam, the influence of the displacement of the resonant beam on the sensitivity can be ignored. The open-loop test was used to validate the relationship between the resonant frequency and the detection voltage, which verified the positive effect of the frequency adjustment of the electrostatic negative stiffness. At the same time, the amplitude-frequency curve was not point-symmetric about the resonant frequency, and a large driving voltage caused a nonlinear coupling of the amplitude and frequency. The large detection voltage also caused the failure of the double-stage folded beam, and the subsequent measurement and control circuit needed to maintain the small-amplitude resonance of the MEMS resonant sensor. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                692,
+                944,
+                902
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "17 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                939,
+                74
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Author Contributions: Design and experiment, H.L. and J.W.; Simulation, Y.Z.; writing—original draft preparation, H.L.; writing—review and editing, Y.Z. All authors have read and agreed to the published version of the manuscript. "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                112,
+                941,
+                156
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Funding: This work was funded by the National Key Research and Development Program (2019YFC1804704) and the Postgraduate Research & Practice Innovation Program of Jiangsu Province (SJCX22_0339). "
+                    }
+                ]
+            },
+            "bbox": [
+                272,
+                161,
+                941,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Institutional Review Board Statement: It does not involve any moral or academic issues. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                210,
+                877,
+                225
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Informed Consent Statement: All authors were informed. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                231,
+                670,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Data Availability Statement: All data are true and reliable. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                252,
+                675,
+                266
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflicts of Interest: The authors declare no conflict of interest. "
+                    }
+                ]
+            },
+            "bbox": [
+                273,
+                273,
+                702,
+                287
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                55,
+                299,
+                144,
+                312
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1. Li, H.; Cao, H.; Ni, Y. Electrostatic stiffness correction for quadrature error in decoupled dual-mass MEMS gyroscope. J. Micro/Nanolithogr. MEMS MOEMS 2014, 13, 033003. [CrossRef] "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2. Liu, H.; Meng, R. Self-oscillation loop design and measurement for an MEMS resonant accelerometer. Int. J. Adapt. Control Sign. Proc. 2013, 27, 859–872. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3. Liu, L.; Nie, Y.; Lei, Y. A Novel Sensor Prototype with enhanced and adaptive sensitivity based on negative stiffness mechanism. Sensors 2020, 20, 4644. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4. Mohammad, M.; Hamed, A.; Reza, M. A high dynamic range closed-loop stiffness-adjustable MEMS force sensor. J. Microelectromechanical Syst. 2020, 29, 397-407. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5. Yang, B.; Wang, X.; Dai, B. A new z-axis resonant micro-accelerometer based on electrostatic stiffness. Sensors 2015, 15, 687-702. [CrossRef] [PubMed] "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6. Comi, C.; Corigliano, A.; Langfelder, G. Sensitivity and temperature behavior of anovel z-axis differential resonant micro accelerometer. J. Micromech. Microeng. 2016, 26, 035006. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7. Wang, S.; Wei, X.; Zhao, Y. A MEMS resonant accelerometer for low-frequency vibration detection. Sens. Actuators A Phys. 2018, 283, 151-158. [CrossRef] "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8. Liu, H.; Zhang, F.T.; Su, W. Structure design and experiment for a resonant accelerometer based on electrostatic stiffness. KEM 2011, 483, 122-127. [CrossRef] "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9. Huang, L.; Li, Q.; Qin, Y. Structural design and optimization of a resonant micro-accelerometer based on electrostatic stiffness by an Improved differential evolution algorithm. Micromachines 2022, 13, 38. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10. Andrew, E.; Stone, K.J.; David, S. Electrostatic frequency reduction: A negative stiffness mechanism for measuring dissipation in a mechanical oscillator at low frequency. Rev. Sci. Instrum. 2020, 92, 015101-015110. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11. Marcel, L.; Hector, G.; Just, H. A review on in situ stiffness adjustment methods in MEMS. J. Micromech. Microeng. 2016, 26, 063001-063021. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12. Yixuan, G.; Zhipeng, M.; Tengfei, Z.; Xudong, Z. A stiffness-tunable MEMS accelerometer. J. Micromechan. Microeng. 2021, 2, 1-13. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13. Peng, B.; Kaiming, H.; Shao, L.; Han, Y. A sensitivity tunable accelerometer based on series-parallel electromechanically coupled resonators using mode localization. J. Microelectromechanical Syst. 2019, 1, 3-13. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14. Ding, H.; Wu, C.; Xie, J. A MEMS resonant accelerometer with high relative sensitivity based on sensing scheme of electrostatically induced stiffness perturbation. J. Microelectromechanical Syst. 2021, 30, 32-40. [CrossRef] "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15. Ahmed, A.Y.; Dennis, J.O.; Saad, M. Design, simulation, modeling and characterization of micromachined microcantilever using CoventorWare software. In Proceedings of the IEEEA sia-Pacific Conference on Circuits and Systems, Kuala Lumpur, Malaysia, 6-9 December 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "16. Nazdrowicz, J.; Napieralski, A. Modelling, Simulations and Performance Analysis of MEMS vibrating Gyroscope in Coventor MEMS + Environment. In Proceedings of the 20th International Conference on Thermal, Mechanical and Multi-Physics Simulation and Experiments in Microelectronics and Microsystems (EuroSimE), Hannover, Germany, 24–27 March 2019. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "17. Khankhua, S.; Ashrf, M.; Tayyaba, S.; Afzulpurkar, N.; Punyasai, C. Simulation of MEMS based micro-gyroscope using CoventorWare. In Proceedings of the 8th Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI) Association of Thailand-Conference 2011, IEEE, KhonKaen, Thailand, 17-19 May 2011. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "18. David, B.; Han, Y.; Georg, S. Linear modeling and control of comb-actuated resonant MEMS mirror with nonlinear dynamics. IEEE Trans. Ind. Transact. 2021, 68, 3315-3323. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "19. Lu, K.; Li, Q.; Zhou, X. Modal coupling effect in a novel nonlinear micro mechanical resonator. Micromachines 2020, 11, 472. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "20. Han, M.; Zhang, Q.; Hao, S. Parametric characteristics and bifurcation analysis of multi-degree-of-freedom micro gyroscope with drive stiffness nonlinearity. Micromachines 2019, 10, 578. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                317,
+                941,
+                879
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromachines 2022, 13, 1271 "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                64,
+                226,
+                76
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "18 of 18 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                64,
+                941,
+                74
+            ]
+        }
+    ]
+]

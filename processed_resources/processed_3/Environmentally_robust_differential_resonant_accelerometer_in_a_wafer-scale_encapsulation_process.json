@@ -1,0 +1,267 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Dongsuk D. Shin<sup>1</sup>, Chae Hyuck Ahn<sup>2</sup>, Yunhan Chen<sup>1</sup>, David L. Christensen<sup>3</sup>, Ian B. Flader<sup>1</sup>, and Thomas W. Kenny<sup>1</sup>\n^{1} Stanford University, Stanford, California, USA\n^{2} InvenSense Incorporated, San Jose, California, USA\n<sup>3</sup>Apple Incorporated, Cupertino, California, USA",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "This work demonstrates a unique temperature-compensated differential resonant accelerometer fabricated in a wafer-scale encapsulation process. By utilizing a pair of ultra-stable, high quality factor (>50,000) resonant beams as a strain gauge, we show differential operation with a scale factor of   427\\mathrm{Hz / g}  and a bias instability of   0.16\\mu \\mathrm{g}  at 21s integration time. Furthermore, matched temperature coefficients of frequency (TCf) of the two beams provide a first order cancellation of temperature drift, resulting in a scale factor stability of   0.38\\%  over the temperature range from   -20^{\\circ}\\mathrm{C}  to   80^{\\circ}\\mathrm{C} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "With the development of micro-electromechanical systems (MEMS), silicon-based MEMS accelerometers have been one of the most widely used sensors across industries, from automotive to consumer electronics. Micromachined accelerometers have employed various sensing schemes—capacitive, piezoresistive, and optical detection, for instance—to measure the proof mass displacement and transduce it to an acceleration signal. While these displacement-based transducers are commonly used, they are often limited with regards to performance, as their dynamic range and sensitivity are constrained by comb finger spacing and gap restrictions. Moreover, the capacitive accelerometer's need for low quality factor (Q) to achieve critical damping makes it an unattractive candidate for single-die integration with other resonant systems such as gyroscopes and MEMS resonator-based clocks.\nOne way to circumvent these issues is to use a resonant sensing scheme. By coupling a resonant sensing system to a proof mass, resonant accelerometers transduce acceleration signals into frequency shifts. This separation of displacement and transduction mechanisms provides key benefits, including increased dynamic range with high sensitivity, compatibility with other resonant systems, and direct frequency signal output.\nHowever, further improvements in stability and in temperature sensitivity are required for high precision applications with external variations, such as temperature and stress coupling [1]. Prior work on resonant accelerometers [2,3] employs differential sensing schemes, but exhibits stress coupling instability from multiple anchor designs. A previously reported single anchor design [4] achieves high sensitivity; however, it does not demonstrate the capability to operate over a wide range of temperature. No previous work has shown to achieve insensitivity to all the relevant sources of error, including temperature, stress, and packaging environment degradation. This paper describes the operation of a single-anchored, differential resonant accelerometer in response to input accelerations across a wide temperature range, as well as the extreme stability of the device.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Figure 1: (a) Cutaway schematic of the accelerometer with large gaps and no etch holes; SEM images of (b) Top view of the device, and (c) Cross-section of the encapsulated device..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/06b2350088cd19d301600458f07a074c97ac5ec72fd308bc55720cef6b957da5.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "The resonant accelerometer design in this work demonstrates high scale factor, isolation from error sources, and inherent stability as a result of the design and hermetic vacuum encapsulation [5]. As shown in Figure 1, the device consists of two resonant beams located symmetrically about the base of a large, wedge-shaped proof mass. In-plane acceleration causes deflection of the proof mass, and the consequent axial loading on the beams creates opposite shifts in resonant frequency of each beam.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1: (a) Cutaway schematic of the accelerometer with large gaps and no etch holes; SEM images of (b) Top view of the device, and (c) Cross-section of the encapsulated device..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/06b2350088cd19d301600458f07a074c97ac5ec72fd308bc55720cef6b957da5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "As demonstrated in previous work [4], the wedge shape of the proof mass is optimized to maximize the device sensitivity and dynamic range within a limited footprint. The proof mass design based upon intersecting logarithmic spirals allows maximum displacement for a fixed gap size. This design is further improved by adding mass along each spiral path, while the absence of etch holes further increases the overall mass.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "Figure 2: SEM image showing the close-up of sensing geometry; with applied acceleration, proof mass pivots around the flexure point (circled in the figure), resulting in opposite axial strains on two beams (highlighted in red and blue)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/8c543ab1b5f484a3f4344a82bff456330d7a1f9e6aa0b867066416fa017706d9.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "Figure 3: (a) Block diagram of the closed-loop experimental setup; (b) Open-loop frequency responses of two beams at   30^{\\circ}C ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/04efbc4b44c3a81246110bf27d90529914797d4c450662ee8ae8366c103b1d98.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/9160958896d37de8bf40086e756607b1d725d7ccac864e9a78e4fcb4d57121d4.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "Unlike previously reported resonant accelerometers [2,3,4], this device adopts a single-point anchor design to eliminate frequency fluctuations due to external and package stress, which may otherwise be dominant error sources. The single anchor is crucial in ensuring that there is no external stress coupled to the resonant beams. Because this work utilizes the resonators as a strain gauge to transduce acceleration signals, any package stress coupled to the structure will cause frequency shifts that cannot be cancelled even with differential measurements.\nTo support the proof mass adequately while limiting any undesired torsional movement, a center support beam is incorporated. This support is designed to be stiff in all directions except bending in the sensing direction, with a notch to define a center of rotation for the proof mass. As shown in Figure 2, the support beam is placed between the two sensing beams, and each resonator is accessed by in-plane electrodes on one side. The drive and sense electrodes are separated along the beam, with the sensing electrode at the center to maximize the output signal.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2: SEM image showing the close-up of sensing geometry; with applied acceleration, proof mass pivots around the flexure point (circled in the figure), resulting in opposite axial strains on two beams (highlighted in red and blue)..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/8c543ab1b5f484a3f4344a82bff456330d7a1f9e6aa0b867066416fa017706d9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Figure 4: (a) Resonant frequency of the two sensing beams as a function of ambient temperature. (b) Maximum fluctuation of the   \\Delta F  signal over the temperature range is about   5\\mathrm{Hz} ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/18b77838ae2485bcb9f5d3300bb8da91d7bebd377c5a156e6d166757c51da78d.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/66244a129cbaaaf09397adc0399395e294a698cfc9c319f2e7e992da97c72097.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Two resonant sensing beams are placed in close proximity to allow for effective differential sensing, which rejects most common errors, such as off-axis acceleration and temperature. The width of the beams is designed to be the minimum feature size allowed by the fabrication process   (3\\mu \\mathrm{m}) , while the length   (159\\mu \\mathrm{m})  is selected to target a resonant frequency of approximately   1\\mathrm{MHz} . The high frequency of these resonant beams minimizes the 1/f environmental noise. As a result of the notched flexure at the mid point between the resonators, the two beams experience axial stress—one tensile and the other compressive depending on the direction of the applied acceleration. The corresponding frequency in each beam is given by:\n$$\nf (\\varepsilon) = f _ {0} \\sqrt {1 + \\frac {2}{7} \\left(\\frac {L _ {b e a m}}{w _ {b e a m}}\\right) ^ {2} \\varepsilon_ {s}} \\qquad (1)\n$$\nwhere   f_{0}  is the original resonant frequency, and   \\varepsilon_{s}  is the longitudinal axial strain in each resonant beam due to acceleration on the proof mass.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_11",
+    "content": "The device in this work is fabricated in a variation of the wafer-level epitaxial silicon encapsulation (epi-seal) process developed by Bosch and Stanford University. Reported in [6], this unified epi-seal process allows for fabrication of wide lateral transduction gaps and large structures without perforation holes. These features are particularly beneficial for this work: large gaps enable more proof mass displacement and thereby increasing the sensor's dynamic range, while having no etch holes provides more proof mass. Furthermore, the high temperature hydrogen bake in an epitaxial reactor removes native oxide and any other contaminants, resulting in devices with extremely pure silicon surfaces in an ultraclean environment. Packaged in a near-vacuum cavity pressure, the devices inherit the demonstrated benefits of extreme long-term resonator stability [7] with no observable aging or fatigue [8]. The devices tested in this work are fabricated in highly doped p-type (111) single crystal silicon (  \\sim 4.34\\mathrm{m}\\Omega -cm resistivity) aligned with   < 110>  crystal orientation.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_12",
+    "content": "Figure 5: Frequency measurements of the two resonant beams as the device is subjected to   180^{\\circ}  with gravity at ambient temperatures from   -20^{\\circ}C  to   80^{\\circ}C  (blue to red)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/ea5fe500f1b6885e6a461696816cef38b4e23c998a8b332b71b3b91dfabdb57a.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "In this work, two beams are driven into resonance simultaneously using two phase-locked-loops (PLL) in a Zurich Instrument digital lock-in amplifier. As shown in Figure 3(a), the outputs from the sense electrodes are then fed into the trans-impedance amplifiers (TIA), and then back into the input ports of the lock-in amplifier.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3: (a) Block diagram of the closed-loop experimental setup; (b) Open-loop frequency responses of two beams at   30^{\\circ}C ..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/04efbc4b44c3a81246110bf27d90529914797d4c450662ee8ae8366c103b1d98.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/9160958896d37de8bf40086e756607b1d725d7ccac864e9a78e4fcb4d57121d4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "The open-loop frequency sweeps at   30^{\\circ}\\mathrm{C}  show the frequencies of   803.95\\mathrm{kHz}  and Q of 55.7k for the first beam, and   801.92\\mathrm{kHz}  and Q of 60.6k for the second beam (Figure 3(b)). High Q of these resonators enables high spectral purity oscillations and consequently better signal-to-noise ratios for the beams.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3: (a) Block diagram of the closed-loop experimental setup; (b) Open-loop frequency responses of two beams at   30^{\\circ}C ..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/04efbc4b44c3a81246110bf27d90529914797d4c450662ee8ae8366c103b1d98.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/9160958896d37de8bf40086e756607b1d725d7ccac864e9a78e4fcb4d57121d4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "Figure 4 shows the resonant frequencies of the two beams over the temperature range, with closely matched temperature coefficients of frequency (TCf) of -23.03 and -23.02ppm/°C, respectively. Here, the differential signal F1-F2, which is critical for zero-g bias and scale factor stability, remains relatively constant with a maximum variation of only 5Hz over the ambient temperature range of -20°C to 80°C. This is in part thanks to the proximity of the resonators, which minimizes any potential temperature gradient between the beams. Accounting for the modest over etch in fabrication, the TCfs of beams fabricated with doped silicon can be predicted by the model developed in previous work [9].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Figure 4: (a) Resonant frequency of the two sensing beams as a function of ambient temperature. (b) Maximum fluctuation of the   \\Delta F  signal over the temperature range is about   5\\mathrm{Hz} ..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/18b77838ae2485bcb9f5d3300bb8da91d7bebd377c5a156e6d166757c51da78d.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/66244a129cbaaaf09397adc0399395e294a698cfc9c319f2e7e992da97c72097.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "To characterize the accelerometer performance, an inclinometer is used to rotate the device from   -90^{\\circ}  to   +90^{\\circ}  (corresponding to   -1\\mathrm{g}  to   1\\mathrm{g}  acceleration) while tracking the resonant frequency of each beam in real-time with PLLs. The tilt tests are carried out for the temperature range from   -20^{\\circ}\\mathrm{C}  to   80^{\\circ}\\mathrm{C} , shown in Figure 5. The temperature is controlled in a convection oven (Test Equity 107), and the inclinometer is contained entirely within the chamber. Good linear correlation between the differential frequency output and acceleration is shown in Figure 6(a). The collapsing lines in the figure show first order cancellation of temperature effects. The calculated sensitivity is   427.1\\mathrm{Hz / g}  with an absolute maximum variation of   \\pm 0.8\\mathrm{Hz / g}  over the entire temperature range, as illustrated in Figure 6(b).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Figure 5: Frequency measurements of the two resonant beams as the device is subjected to   180^{\\circ}  with gravity at ambient temperatures from   -20^{\\circ}C  to   80^{\\circ}C  (blue to red)..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/ea5fe500f1b6885e6a461696816cef38b4e23c998a8b332b71b3b91dfabdb57a.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6: (a) Frequency difference signal as a function of input acceleration from   -1g  to   +1g , measured at different ambient temperatures; (b) Measured scale factors over the temperature range, with   \\pm 0.8Hz/g  variation..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/36af0871196e7772fac7f051f739bf0dd3e739296850b66d6d016f9aa623a8c1.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/6faca17b4710532ffa6d9fd492a343f08da19909a3ac1e6a1c23e07fdb370bc3.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure ",
+        "caption": "Figure 2: SEM image showing the close-up of sensing geometry; with applied acceleration, proof mass pivots around the flexure point (circled in the figure), resulting in opposite axial strains on two beams (highlighted in red and blue)..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/8c543ab1b5f484a3f4344a82bff456330d7a1f9e6aa0b867066416fa017706d9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "Figure 6: (a) Frequency difference signal as a function of input acceleration from   -1g  to   +1g , measured at different ambient temperatures; (b) Measured scale factors over the temperature range, with   \\pm 0.8Hz/g  variation..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/36af0871196e7772fac7f051f739bf0dd3e739296850b66d6d016f9aa623a8c1.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/6faca17b4710532ffa6d9fd492a343f08da19909a3ac1e6a1c23e07fdb370bc3.jpg"
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Figure 7: Real-time measurements at 1s integration over a period of 2.2 hours of (a) Ambient Temperature, (b) Beam 1 frequency, (c) Beam 2 frequency, (d) Frequency difference between the two beams, with a standard deviation of   0.7\\mathrm{mHz} ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/1e75a546385ded99ee1d83a62d9cd7021b408c4e56e15b97cb57863778e423a7.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/87c6441ca0e384810c9f2f790d5f0bee67ba3d3c19fa35abde1ed4499bed6e75.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/13783c9d81c7d50a010ad1e554c30144da45f4c6be4d97ea7d35e1cd7c49ebd3.jpg",
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/2bbe8cc66110a56867b6ee456858577a50bb21b032fea6c2f7f7be8fdfb1f928.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "Because the input acceleration is extracted by frequency measurement of resonators, frequency stability is one of the most crucial parts of a resonant accelerometer design. Using the same setup shown in Figure 3(a), stability measurements of the output frequency signals at 1s integration time are performed for 2.2 hours. The device is mounted at   0\\mathrm{g}  position, and the oven temperature is controlled at   75^{\\circ}\\mathrm{C}  to minimize vibration (Figure 7). The differential signal in Figure 7(d) confirms cancellation of temperature effects on resonant frequencies. A constant output signal with a standard deviation of   0.7\\mathrm{mHz}  is shown over 2.2 hours. There is still some minor dependence on ambient temperature—as can be seen by the correlation between Figure 7(a) and Figure 7(d)—due to the slight difference in TCF of the two beams. Figure 8 shows an Allan deviation curve, which yields a bias instability of   0.16\\mu \\mathrm{g}  at 21s integration time when the device is at   75^{\\circ}\\mathrm{C}  with   \\pm 0.05^{\\circ}\\mathrm{C}  temperature fluctuation over time.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3: (a) Block diagram of the closed-loop experimental setup; (b) Open-loop frequency responses of two beams at   30^{\\circ}C ..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/04efbc4b44c3a81246110bf27d90529914797d4c450662ee8ae8366c103b1d98.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/9160958896d37de8bf40086e756607b1d725d7ccac864e9a78e4fcb4d57121d4.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Figure 7: Real-time measurements at 1s integration over a period of 2.2 hours of (a) Ambient Temperature, (b) Beam 1 frequency, (c) Beam 2 frequency, (d) Frequency difference between the two beams, with a standard deviation of   0.7\\mathrm{mHz} ..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/1e75a546385ded99ee1d83a62d9cd7021b408c4e56e15b97cb57863778e423a7.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/87c6441ca0e384810c9f2f790d5f0bee67ba3d3c19fa35abde1ed4499bed6e75.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/13783c9d81c7d50a010ad1e554c30144da45f4c6be4d97ea7d35e1cd7c49ebd3.jpg",
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/2bbe8cc66110a56867b6ee456858577a50bb21b032fea6c2f7f7be8fdfb1f928.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "Figure 8: Allan deviation measurement showing the bias instability of   0.16\\mu \\mathrm{g}  at 21s integration time..",
+        "image_source": [
+          "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/a564d60ac8640c860a721788df227078875d9c9ed000fe46da597d0a61087c60.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "Figure 8: Allan deviation measurement showing the bias instability of   0.16\\mu \\mathrm{g}  at 21s integration time..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Environmentally_robust_differential_resonant_accelerometer_in_a_wafer-scale_encapsulation_process/vlm/images/a564d60ac8640c860a721788df227078875d9c9ed000fe46da597d0a61087c60.jpg"
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "This work demonstrates a resonant accelerometer with high sensitivity, exceptional stability, and the unique insensitivity to package stress and temperature variations. Preliminary results confirm the effective differential operation over a wide range of temperature. The single anchor design is shown to eliminate any significant offset and drift in the signals that can arise from external stresses. These results show promise towards building high-performance inertial sensors within a wafer-scale encapsulation process. Future work will focus on further minimizing the temperature dependence of the differential signal.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_22",
+    "content": "This work was supported by DARPA grant \"Precise Robust Inertial Guidance for Munitions (PRIGM),\" managed by Dr. Robert Lutwak. Work was performed in part at the Stanford Nanofabrication Facility, supported by the National Science Foundation under Grant ECS-9731293. Substantial support of this project is also provided by the Robert Bosch Research and Technology Center, and we acknowledge many useful technical discussions with Gary Yama and Gary O'Brien.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_23",
+    "content": "- [1] X. Zhang, S. Park, and M.W. Judy, \"Accurate Assessment of Packaging Stress Effects on MEMS Sensors by Measurement and Sensor-Package Interaction Simulations,\" J. Microelectromech. Syst., Vol. 16, No.3, pp.639-649, 2007.\n- [2] C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, and B. Simoni, “A Resonant Microaccelerometer With High Sensitivity Operating in an Oscillating Circuit,” J. Microelectromech. Syst., Vol. 19, No. 5, pp.1140-1152, 2010.\n- [3] U. Park, J. Rhim, J.U. Jeon, and J. Kim, \"A Micromachined Differential Resonant Accelerometer Based on Robust Structural Design,\" Microelectronic Engineering, Vol. 129, pp.5-11, 2014.\n- [4] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, and S. Montague, “A Vacuum Packaged Surface Micromachined Resonant Accelerometer,” J. Microelectromech. Syst., Vol. 11, No. 16, pp.784-793, 2002.\n- [5] D.L. Christensen, C.H. Ahn, V.A. Hong, E.J. Ng, Y. Yang, B.J. Lee, and T.W. Kenny, “Hermetically Encapsulated Differential Resonant Accelerometer,” Transducers, pp. 606-609, 2013.\n- [6] Y. Yang, E.J. Ng, Y. Chen, I.B. Flader, and T.W. Kenny, \"A Unified Epi-Seal Process for Fabrication of High-Stability Microelectromechanical Devices,\" J. Microelectromech. Syst., Vol. 25, No. 3, pp.489-497, 2016.\n- [7] B. Kim, R.N. Candler, M.A. Hopcroft, M. Agarwal, W.T. Park, and T.W. Kenny, “Frequency Stability of Wafer-scale Film Encapsulated Silicon Based MEMS Resonators,” Sensors and Actuators, A: Phys., vol. 136, No.1, pp.125-131, 2007.\n- [8] V.A. Hong, S. Yoneoka, M.W. Messana, A.B. Graham, J.C. Salvia, T.T. Branchflower, E.J. Ng, and T.W. Kenny, “Fatigue Experiments on Single Crystal Silicon in an Oxygen-Free Environment,” J. Microelectromech. Syst., Vol. 24, No. 2, pp.351-359, 2015.\n- [9] E.J. Ng, V.A. Hong, Y. Yang, C.H. Ahn, C.L.M. Everhart, and T.W. Kenny, “Temperature Dependence of the Elastic Constants of Doped Silicon,” J. Microelectromech. Syst., Vol. 24, No. 3, pp.730-741, 2015.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_24",
+    "content": "*D. D. Shin, email: ddshin@mems.stanford.edu",
+    "block_type": "text"
+  }
+]

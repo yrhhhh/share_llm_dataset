@@ -1,0 +1,160 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Xingyin Xiong  ^{1} , Wang Zheng  ^{1} , Kunfeng Wang  ^{1,2} , Zhitian Li  ^{1} , Wuhao Yang  ^{1} , Xudong Zou  ^{1,2}\nEmail: {xyxiong, ztli, whyang}   @  mail.ie.ac.cn {wangzheng, zouxd}   @  aircas.ac.cn wangkunfeng17   @  mails.ucas.ac.cn\n<sup>1</sup>The State Key Laboratory of Transducer Technology, Institute of Electronics Chinese Academy of Sciences, Beijing, CHINA\n^{2} School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing, CHINA\nAbstract—Resonant accelerometers are very attractive for high-precision measurement applications due to their high sensitivity, frequency output, and large dynamic range. In order to further increase their sensitivity, we propose a novel method to enhance sensitivity of MEMS resonant accelerometer by using electrostatic spring softening effect. The sensitivity is   691\\mathrm{Hz / g}  boosted up   60\\%  higher than the original sensitivity and the nonlinearity is   0.5\\% , comparing to the original nonlinearity is   0.4\\%  in preliminary tests.\nKeywords—MEMS, Resonant Accelerometer, Enhance Sensitivity, Electrostatic Spring",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "MEMS (Micro-electro-mechanical systems) acceleration sensors have been widely used in the fields of automotive, consumer electronics and aerospace, due to the mature fabrication, low cost and massive production[1-3]. Their sensing principle includes resonance, piezoresistance, capacitance and so on. Among of them, resonant accelerometers, based on the resonant frequency shift of the resonator under axial loading, are very attractive for high precision measurement applications because of their high sensitivity, frequency output, and large dynamic range[1,2]. The sensitivity is one of critical metrics in micromachined resonant acceleration sensors. In order to increase the sensitivity, using the mechanical micro-levers is a well-known method in MEMS resonant accelerometers [1, 3-6], and lower effective spring stiffness of suspension structure on the sensitive axis is preferred for high amplification ratio levers [6]. However, reducing the effective spring stiffness on sensitive axis is restricted in real devices due to the trade-offs for the cross-axis sensitivity, robustness and fabrication yield.\nIn order to solve this problem and further enhance sensitivity, this paper uses electrostatic spring softening effect to further improve the sensitivity. The prototype device is designed and analysed. Then both of the simulation and experimental results of the prototype device are presented to verify the proposed sensitivity enhancement method.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The schematic view of the sensitivity enhancing structure for resonant accelerometer is shown in Figure 1(a). The proof mass is connected to the resonator by micro-levers to amplify the acceleration induced inertial force and axially apply on the resonators. As a result, the resonant frequencies of the resonators at both sides of the proof mass change differentially due to the axial force changing their stiffness. The difference of these two frequencies is, to the first order, proportional to the input acceleration. Four pairs of back-to-back parallel plate electrostatic actuators on proof mass are used to soften the mass-suspended effective spring in order to further improve the sensitivity, called sensitivity enhancing structure. Four pairs of the comb tuning structures are used to zero the electrostatic force in the case of the parallel plate capacitors are unsymmetrical due to fabrication tolerance, called tuning structure. The structure design parameters of the prototype device are summarized in the table 1.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a)  (b)  Fig. 1. (a) The schematic view of the sensitivity enhancing structure for resonant accelerometer; (b) The schematic view of the prototype device.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/7fad6d416b3b437eca44f6508234a1194fe5f87e1ff62e328361f37e3328683f.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLE I. THE DESIGN PARAMETERS OF THE PROTOTYPE DEVICE.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/123c8fc64749175760a265fbf2a5a4c75809f4a64392ab6236dd841c4617adf5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "(a)  (b)  Fig. 1. (a) The schematic view of the sensitivity enhancing structure for resonant accelerometer; (b) The schematic view of the prototype device.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/7fad6d416b3b437eca44f6508234a1194fe5f87e1ff62e328361f37e3328683f.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "TABLE I. THE DESIGN PARAMETERS OF THE PROTOTYPE DEVICE.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/123c8fc64749175760a265fbf2a5a4c75809f4a64392ab6236dd841c4617adf5.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "The principle of the sensitivity enhancing structure shown as follows: When the parallel plate capacitors   (C_{ESP})  are applied to the same bias voltage   (V_{BP})  and the displacement of proof mass   (x_{mass})  is much smaller than the gap of the parallel plate actuators   (g_{ESP}) , the net electrostatic force on the proof-mass is cancelled out in the first order, but the effect of the spring softening is doubled. The reduced effective spring stiffness on sensitive axis results in that the acceleration induced inertial force can be more effectively transmit to the resonator to enhance the sensitivity   (S_{ES}) . When   g_{ESP} >> x_{mass}  and the amplification ratio of micro-levers is a constant with the range of the input of acceleration, the   S_{ES}  can be derived as (1):\n$$\nS _ {E S} = \\frac {\\partial \\omega_ {T}}{\\partial A _ {c c}} \\approx S _ {0} \\frac {1}{1 - k _ {e} / k _ {e f f}} \\tag {1}\n$$\nwhere the   w_{T}  is the resonant frequency of the resonators,   A_{cc}  is the input of acceleration,   S_{0}  is the sensitivity without sensitivity enhancing effect, which is   V_{BP} = 0 ,   k_{e}  is the effective of the electrostatic spring and   k_{eff}  is the effective mechanical spring stiffness on proof mass. The sensitivity can be enhanced by increasing   k_{e}  using sensitivity enhancing structure.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "Fig. 2. The Simulink model of the open loop sensor system.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/bb410700ad8dbacf05d8239843f103797fa1f9f726c4fb0a8dcb06cb6dbe838b.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The Simulink model of the open loop sensor system is shown in the Figure 2.   H_{ml}(s)  is a transfer function of the proof mass, which is modeled a second-order mass-damper-spring system.   F(s)  is an electrostatic force generated by the sensitivity enhancing structure, and the nonlinear effect of   F(s)  is concerned to soften the spring stiffness.   K_{1}  is the force amplification ratio of the micro-levers.   H_{m2}(s)  is a transfer function of the resonator, which is also modeled a second-order mass-damper-spring system.   K_{2}  is the amplification ratio of the transimpedance amplifier and   f_{n}  is a frequency\nmeasurement unit. The results of the simulation are shown in the Figure 3. The original sensitivity of the accelerometer   (V_{BP} = 0\\mathrm{V})  is about   438.7\\mathrm{Hz / g}  and the nonlinearity of the accelerometer is   0.05\\% . When the   V_{BP}  applied to the back-to-back parallel plate capacitors, the sensitivity of accelerometer is increased (see Figure 3 inset). For   V_{BP} = 60\\mathrm{V}  applied on the actuator, the sensitivity can be boosted up 3 times higher than original value where the nonlinearity of the accelerometer is slight increased to   0.32\\% . And further increased voltage   (V_{BP} = 70\\mathrm{V})  will obviously sacrifice the linearity of the sensor.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. The Simulink model of the open loop sensor system.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/bb410700ad8dbacf05d8239843f103797fa1f9f726c4fb0a8dcb06cb6dbe838b.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 3. Simulation results of resonant frequencies shift with input acceleration vary from   -1\\mathrm{g}  to   +1\\mathrm{g}  and voltages vary from   0\\mathrm{V}  to   70\\mathrm{V} ; sensitivity variance with different voltages(inset).",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/b3810cb0608b27308a4c9d21ae3c372457924b5413419b93ab5c708368ee93f3.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "Fig. 3. Simulation results of resonant frequencies shift with input acceleration vary from   -1\\mathrm{g}  to   +1\\mathrm{g}  and voltages vary from   0\\mathrm{V}  to   70\\mathrm{V} ; sensitivity variance with different voltages(inset).",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/b3810cb0608b27308a4c9d21ae3c372457924b5413419b93ab5c708368ee93f3.jpg"
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Fig. 4. The system block of experimental setup.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/845c10fdac60545750d3fbd954fe812a16b58f84d8a1848703cbe447b12257b0.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "The prototype device was fabricated using a SOI foundry process and vacuum pakaged in wafer-level, then mounted on a 24-pin DIP ceramic chip carrier (see Figure 1(b)). To calibrate the sensitivity of the prototype accelerometer, tilt table is used to apply   +/-1\\mathrm{g}  load on the device. The different voltages apply to the four pairs of symmetrical parallel plate capacitors and the resonant frequencies are characterised using network analyser (Keysight E5061B) with a transimpedance amplifier, as shown in Fig.4.\nThe results of the measurement are shown in the Figure 5, presents the resonant frequencies shift with input acceleration vary from   -1\\mathrm{g}  to   +1\\mathrm{g} . The sensitivity variance with different voltages is derived from the open-loop test results (see Figure 5 inset). The original sensitivity of the accelerometer   (V_{BP} = 0\\mathrm{V})  is about   444\\mathrm{Hz / g} . When the   V_{BP}  applied to the back-to-back parallel plate capacitors, the sensitivity of accelerometer is increased. For   V_{BP} = 50\\mathrm{V}  applied on the actuator, the sensitivity is   691\\mathrm{Hz / g}  boosted up   60\\%  higher than the original sensitivity and the nonlinearity is   0.6\\% , meanwhile, the original nonlinearity is   0.4\\%  due to test tolerance. The experimental measured results agree reasonably well with the simulation results.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a)  (b)  Fig. 1. (a) The schematic view of the sensitivity enhancing structure for resonant accelerometer; (b) The schematic view of the prototype device.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/7fad6d416b3b437eca44f6508234a1194fe5f87e1ff62e328361f37e3328683f.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "Fig. 4. The system block of experimental setup.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/845c10fdac60545750d3fbd954fe812a16b58f84d8a1848703cbe447b12257b0.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "Fig. 5. Experimental measured results of resonant frequencies shift with input acceleration vary from   -1\\mathrm{g}  to   +1\\mathrm{g}  and voltages vary from   0\\mathrm{V}  to   50\\mathrm{V} ; sensitivity variance with different voltages(inset).",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/d24d45b4ed5299491a901a87ffd4b6958b263343fd90315a0cb4227c07b32675.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLE I. THE DESIGN PARAMETERS OF THE PROTOTYPE DEVICE.",
+        "image_source": [
+          "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/123c8fc64749175760a265fbf2a5a4c75809f4a64392ab6236dd841c4617adf5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Fig. 5. Experimental measured results of resonant frequencies shift with input acceleration vary from   -1\\mathrm{g}  to   +1\\mathrm{g}  and voltages vary from   0\\mathrm{V}  to   50\\mathrm{V} ; sensitivity variance with different voltages(inset).",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Sensitivity_Enhancement_of_Mems_Resonant_Accelerometers_by_Using_Electrostatic_Spring/vlm/images/d24d45b4ed5299491a901a87ffd4b6958b263343fd90315a0cb4227c07b32675.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "This paper presents a novel method to enhance sensitivity of MEMS resonant accelerometer by using electrostatic spring softening effect. Both simulation and experimental study demonstrated that this method can enhance sensitivity of sensor. In future work, the other metrics of this sensor will be investigated. The close-loop interface circuit of the sensor will be designed and optimized in order to implement a kind of high performance accelerometers.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_13",
+    "content": "- [1] J. Zhao, X. Wang, Y. Zhao, G.M. Xia, A.P. Qiu, Y. Su and Y.P. Xu, “A 0.23-μg bias instability and 1-μg/√Hz acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,” J. Solid-State Circuits, vol. 52, no 52, pp. 1053-1065, April 2017\n- [2] M. A. Meldrum, \"Application of vibrating beam technology to digital acceleration measurement,\" Sens. Actuators A, Phys., vol. 21, pp. 377-380, February, 1990.\n- [3] Y. Zhao, J. Zhao, X. Wang, G.M. Xia, A.P. Qiu, Y. Su and Y.P. Xu, \"A sub-   \\mu g bias-instability mems oscillating accelerometer with an ultra-low-noise read-out circuit in CMOS,\" J. Solid-State Circuits, vol. 50, no 9, pp. 2113-2126, September 2015.\n- [4] X.D. Zou and A.A. Seshia, “A high-resolution resonant mems accelerometer,” Transducers 2015, Anchorage, Alaska, 2015, pp. 1247-1250.\n- [5] A.A. Seshia, M. Palaniapan, T.A. Roessig, R.T. Howe, R.W. Gooch, T.R. Schimert, and S. Montague, \"A vacuum packaged surface micromachined resonant accelerometer,\" J. Microelectromech. Syst., vol. 11, no 6, pp. 784-1065, December 2002.\n- [6] X.D. Zou, P. Thiruvenkatanathan and A.A. Seshia, “A high-resolution micro-electro-mechanical resonant tilt sensor,” Sens. Actuators A: Phys., vol. 220, pp. 168-177, December 2014.",
+    "block_type": "text"
+  }
+]

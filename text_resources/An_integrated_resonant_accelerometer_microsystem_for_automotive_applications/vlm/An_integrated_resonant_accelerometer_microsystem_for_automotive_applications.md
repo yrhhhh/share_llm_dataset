@@ -1,0 +1,124 @@
+# An Integrated Resonant Accelerometer Microsystem for Automotive Applications
+
+Per Ohlckers*, Reidar Holm*, Henrik Jakobsen*, Terje Kvisteroy*, Gjermund Kittilsland*, Martin Nese*, Svein M. Nilsen* and Alain Ferber**  
+*SensoNor, Knudsrodvn.7, N-3191 Horten, Norway  
+**SINTEF Electronics and Cybernetics, P.O.Box 124, N-0314 Oslo, Norway
+
+# SUMMARY
+
+In the project "IRMA-EU" (IRMA: Integrated Resonant Accelerometer Microsystem for Automotive Applications), a project sponsored by the European Commission under ESPRIT, SensoNor and project partners Autoliv and SINTEF are developing a resonant structure two-chip accelerometer silicon microsystem for automotive applications, the SA30: Crash Sensor for front impacts, with range $\pm 50\mathrm{g}$ . The project is focusing on the development of key process technologies, product designs and manufacture of functional prototypes. The IRMA project is coordinated with other activities performed by the partners to cover all aspects of research and technology development as well establishment of high volume production capabilities needed for successful product innovation of this new generation of crash sensors. The sensing principle is an acceleration sensitive resonant structure, with an ASIC for resonance control and signal conditioning. Prototypes in silicon of both the sensor chip and the ASIC chip have confirmed the feasibility of the concept, and ramp up to high volume production has now started.
+
+Keywords: Crash sensor, resonant structure, silicon microsystem.
+
+# DESIGN AND TECHNOLOGY EVALUATIONS
+
+The existing SA20 air bag sensor from SensoNor is fabricated in a high production volume. This sensor is based on a micromachined silicon beam with a ceramic seismic mass, and the acceleration induced stress is detected by a diffused piezoresistive resistor bridge. Overload protection is handled by oil damping. This sensor had a market share of approximately $70\%$ in Europe in 1996 for automotive crash sensors for air bag safety systems, with more than 7 million units shipped.
+
+Future microsystems for the automotive market have to meet demanding constraints with respect to quality and fabrication costs, and consequently leading to the need for an improved version of the SA20 air bag sensor including features like calibration electronics and self test. In this project the following alternative sensor principles for use in automotive applications were evaluated in a feasibility study with respect to the piezoresistive principle:
+
+- Capacitive element, bulk micromachined   
+- Capacitive element, surface micromachined   
+- Resonating element, bulk or surface micromachined
+
+Table 1: Parameter evaluation of accelerometer principles with respect to the piezoresistive principle. $0$ is equal, $+$ is more and - is less attractive than the piezoresistive principle.   
+
+<table><tr><td>Parameter</td><td>Capacitive bulk</td><td>Capacitive surface</td><td>Reso-nating</td></tr><tr><td>S/N-ratio</td><td>-</td><td>-</td><td>●</td></tr><tr><td>Accuracy</td><td>-</td><td>0</td><td>+</td></tr><tr><td>Frequency range</td><td>0</td><td>+</td><td>+</td></tr><tr><td>Power cons.</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Shock resist.</td><td>-</td><td>-</td><td>++</td></tr><tr><td>Sticking probl.</td><td>-</td><td>--</td><td>+</td></tr><tr><td>Self test</td><td>●</td><td>+</td><td>++</td></tr><tr><td>EMI</td><td>-</td><td>-</td><td>+</td></tr><tr><td>Silicon area</td><td>--</td><td>+</td><td>+</td></tr><tr><td>Process compl.</td><td>+</td><td>-</td><td>0</td></tr><tr><td>ASIC cost</td><td>0</td><td>+/-</td><td>+</td></tr><tr><td>Calibration</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Dicing</td><td>+</td><td>-</td><td>+</td></tr><tr><td>Mounting</td><td>0</td><td>-</td><td>0</td></tr><tr><td>Production cost</td><td>-</td><td>-</td><td>●</td></tr><tr><td>Reliability</td><td>0</td><td>-</td><td>+</td></tr><tr><td>Develop. cost</td><td>+</td><td>--</td><td>-</td></tr></table>
+
+# 3B1.02
+
+Table 1 gives the result of this evaluation, where 0 indicates equal to the piezoresistive principle, + is more and - is less attractive than the piezoresistive principle. Please observe that this is a simplified and subjective presentation of the results of the evaluation process, and that the evaluation was done several years ago. As can be seen from table 1, the resonance principle was regarded superior in almost all aspects regarded important in automotive applications. Therefore, a resonating element was chosen as sensor principle for the next generation of air bag sensor. Of special importance was the following arguments:
+
+- Inherent continuous self test function implemented due to the resonating principle of operation.   
+- A high ratio between the mechanical shock survival limit and the measurement range is obtained without mechanical overload protection.   
+- Low production cost. No need for oil-filling or evacuation of the resonator cavity. The higher order resonant mode to be used will have a Q-factor in the range of 1000 at atmospheric pressure.
+
+# DESIGN
+
+SA30 utilises a small single crystal silicon resonator which shifts its frequency due to change in acceleration. This concept for self-test has been made possible due to the development of a new sensing principle. The sensing element is made by bulk micromachining in silicon to define the centre mass structure suspended in two flexible beams, thus forming the resonator structure.
+
+![](images/bfce10388f47fab0b71d9a6571f3d72a980800954c853362340b7ed1f797e1cb.jpg)  
+Figure 1: Picture of resonating element after anodic bonding.
+
+The resonator is excited thermally by feeding a current pulse into a diffused resistor located in one the beams, and the resonance frequency is detected by piezoresistors diffused into the other beam.
+
+The mass structure lateral dimensions are approximately $800\mu \mathrm{m}$ by $200\mu \mathrm{m}$ , and a thickness of approximately $20\mu \mathrm{m}$ . The lateral dimensions of the beams are approximately $150\mu \mathrm{m}$ by $40\mu \mathrm{m}$ , and a thickness of approximately $3\mu \mathrm{m}$ .
+
+# FABRICATION PROCESS
+
+The resonator chip is based on a double-side polished silicon p-type, (100)-oriented substrate and standard IC-processing to define the conduction lines and diffused resistors.
+
+Wet etching using electrochemical passivation at a reverse biased p-n junction defining the thickness of the plate as the dynamic system consisting of the beam elements and the mass structure. The thickness is controlled within $\pm 0.2\mu \mathrm{m}$
+
+![](images/67c05ceffba6074b81c00b300b64c4616537dacd575add4c6c12b2ee090a7541.jpg)  
+Figure 2: SEM-picture of one of the beam elements after release by RIE.
+
+The beam and mass elements is released by RIE-etching in Cl-plasma after wet etching. This process is optimised to avoid etching and contamination on the substrate backside degrading the anodic bonding process between the silicon substrate and the glass substrate. A SEM-picture of the released spring element is given in figure 3, and by inspection we have not observed contamination or etching effects on the back side of the spring elements after the release process.
+
+Anodic bonding is used to seal the silicon die between two glass plates to obtain a mechanically rigid structure, and a controlled and stable
+
+atmosphere for the resonating structure. The resonator chip after anodic bonding is given in figure 1. A special patented process is developed to minimise electrical effects from the glass substrates on the diffused conductors in the anodic bonding area (feed through).
+
+# ASIC AND INTEGRATION
+
+The resonator sensing element is a part of a closed loop feedback system including an ASIC as shown in figure 7. The ASIC is developed with the following two main functions:
+
+- Actuate the micromachined silicon structure to vibrate at a selected resonance frequency   
+- Sense the acceleration sensitive resonance frequency
+
+The ASIC and the resonator chip will be mounted into a miniature moulded plastic package for surface mount assembly. Chip-and-wire technology will be used to interconnect the two chips as well as from chip pads to the plated terminals on the lead frame. This is made possible due to the anodic bonding forming a closed cavity of the silicon resonator. The outline of the fully integrated SA30 airbag sensor is given in figure 3 [3].
+
+![](images/f99d644ae63720986c3440b17187107dccc0054633c7823804a335d951052086.jpg)  
+Figure 3:SA30 Crash Sensor fully integrated in a surface mount transfer moulded epoxy package.
+
+The output signal can be either PWM (Pulse-Width-Modulated) for innovative system designs, with respect to noise, EMI or A/D conversion, or analog (ratiometric) for traditional interfacing. A threshold signal is available for designers to improve the system reliability and performance. Due to the intrinsic continuous self-test of the sensor, monitoring of a status signal is all that is needed to check the reliability of the sensor signal. This solution makes it possible to check the sensor
+
+at all times, even during a crash without interrupts and loss of information.
+
+![](images/d98229502181fcff6f9ba6a7375e8c219626ad0f998a8a02647769b66a8d065d.jpg)  
+Figure 4: The electrical schematic for the SA30 Crash Sensor.
+
+# RESULTS AND DISCUSSIONS
+
+The thickness of the mass structure and the spring elements are measured after wet etching by FTIR spectroscopy based upon destructive and constructive interference in the plane parallel structure layers. An algorithm is developed from basic interference theory [1,2] to extract the structure thickness from one FTIR transmission spectrum with resolution $1\mathrm{cm}^{-1}$ given by;
+
+$$
+\mathrm {d} = \mathrm {m} / (2 \cdot \mathrm {n} \cdot \Delta \mathrm {v})
+$$
+
+where $m$ is number of observed periods, $n$ is refractive index of the medium, and $\Delta v$ is bandwidth of the number of periods involved.
+
+The accuracy of the thickness measurement is estimated to $\pm 1\%$ . Histogram of thickness for the spring elements and the mass structure is given in figure 5 and 6 respectively.
+
+Standard deviation in the structure thickness given in the histograms are $4\%$ for the beam element and $2\%$ for the mass element. The main reason for these structure variations are process variations for the spring element definition between different prototype batches. Structure thickness after wet etching within one batch, i.e. no process variations, have typical standard deviation of approximately $1\%$ .
+
+![](images/02be020a4dd5530900f349971e690b368b22e4afead000f40c2f7f86116edaf1.jpg)
+
+![](images/f1b153d6e11eaebef166aa34163d61b04dec55e1b48427c9819870654e3b8f8a.jpg)  
+Figure 5: Histogram of the beam element thickness after wet etching.   
+Figure 6: Histogram of the mass element thickness after wet etching.
+
+One important concern regarding the anodic bonding process is contamination from glass in the cavity causing electrical defects. Measurements on MOS-transistors results in a threshold voltage for majority carrier inversion of the silicon surface in the range 6-6.5 V. The breakdown voltages is measured in the range 13-15 V reverse bias for both the excitation bridge and the detection bridge, and the leakage currents are in the range 10-100 pA at 5V reverse bias. Therefore, electrical measurements indicate negligible effects from the glass materials on the electrical characteristics for components in the resonator cavity.
+
+Q-factor higher than 1000 is obtained at atmospheric pressure. The resonance frequency for the micromachined device is 400 to $700\mathrm{kHz}$ . The sensitivity is in the range of $6 - 7\mathrm{Hz / g}$
+
+# FUTURE WORK
+
+The main future action of the project group will be to further characterise and evaluate the prototypes to improve performance within the given cost restrictions. The resulting pilot production prototypes of the SA30 Crash Sensor will then be implemented into air bag systems for automotive applications. Thereafter, we will initiate and ramp up production to several millions per year production volumes of the SA30 microsystems and the associated air bag systems.
+
+In addition, the technology platform developed will be used as input to the development of a new pressure sensor microsystem technology.
+
+The technology development will also in this case be organised by SensoNor as a concerted action with many contributors, of which SINTEF will be among the main collaborators.
+
+# CONCLUSIONS
+
+The SA30 Crash Sensor prototypes development in the IRMA project has successfully demonstrated the feasibility of chosen design for a crash sensing microsystem, using an acceleration sensitive resonant structure, with an ASIC for resonance control and signal conditioning. The developed technology platform will be used in the future to develop new silicon pressure sensing microsystems.
+
+# ACKNOWLEDGEMENT
+
+The development work for the SA 30 Crash Sensor is supported by the ESPRIT Project - Mumber 2176 'IRMA-EU" (IRMA: Integrated Resonant Accelerometer Microsystem for Automotive Applications)
+
+# REFERENCES
+
+1. E. Hetcht, Scaum: “Theory and Problems of Optics”, McGraw-Hill, 1975.   
+2. A. Ferber and K. Aamold: "FTIR Based Thickness Measurements of Silicon Sensors" SINTEF-report, Jan. 1996.   
+3. "Data sheet: SA30 Crash Sensor" SensoNor asa, P.O.Box 196, N-3192 Horten, Norway.

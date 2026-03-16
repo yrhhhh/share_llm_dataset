@@ -1,0 +1,4064 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "RESEARCH ARTICLE | OCTOBER 21 2020 "
+                    }
+                ]
+            },
+            "bbox": [
+                198,
+                86,
+                502,
+                98
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Amplitude-modulated resonant accelerometer employing parametric pump "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                198,
+                103,
+                838,
+                143
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Hemin Zhang ; Dongyang Chen ; Milind Pandit ; Jiangkun Sun ; Chun Zhao ; Ashwin Seshia "
+                    }
+                ]
+            },
+            "bbox": [
+                200,
+                147,
+                872,
+                161
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9ea02ac0f3fbf84695d7689da45ccdce97fd807a186ee0c720d7fb7f919c5348.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                206,
+                168,
+                231,
+                184
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Check for updates "
+                    }
+                ]
+            },
+            "bbox": [
+                233,
+                169,
+                342,
+                182
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl.Phys.Lett.117,163504 (2020) "
+                    }
+                ]
+            },
+            "bbox": [
+                200,
+                190,
+                393,
+                201
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "https://doi.org/10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                200,
+                204,
+                379,
+                214
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/55c0425075d3fd945f101cab2a6cc7a35e7167b0a8cea8252cd492144c02cc25.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "View Online "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                744,
+                235,
+                796,
+                271
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3aaf48d968c3510ee493154c28d0a6e03c9d022917a4eafcc95dbd8586e35cb8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Export Citation "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                818,
+                235,
+                860,
+                271
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Articles You May Be Interested In "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                213,
+                320,
+                495,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Experimental characterization of a mode-localized acceleration sensor integrating electrostatically coupled resonators "
+                    }
+                ]
+            },
+            "bbox": [
+                213,
+                347,
+                860,
+                375
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Appl. Phys. (February 2024) "
+                    }
+                ]
+            },
+            "bbox": [
+                215,
+                382,
+                379,
+                394
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "On the equivalence between mass perturbation and DC voltage bias in coupled MEMS resonators: Theoretical and experimental investigation "
+                    }
+                ]
+            },
+            "bbox": [
+                213,
+                401,
+                815,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "J. Appl. Phys. (July 2022) "
+                    }
+                ]
+            },
+            "bbox": [
+                215,
+                435,
+                352,
+                447
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SQUID-based interferometric accelerometer "
+                    }
+                ]
+            },
+            "bbox": [
+                215,
+                453,
+                485,
+                465
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl.Phys.Lett.(October 2022) "
+                    }
+                ]
+            },
+            "bbox": [
+                215,
+                472,
+                386,
+                484
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "AIP Advances "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                416,
+                775,
+                647,
+                800
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Why Publish With Us? "
+                    }
+                ]
+            },
+            "bbox": [
+                416,
+                809,
+                631,
+                827
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/179be0f166a7820d678b936ef9cf578da25b6430bf926eb1ec00c9a929484182.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "21DAYS average time to 1st decision "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                416,
+                832,
+                470,
+                868
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9106169cb3a5e80464cb9a92f6b1c26fcee28b0304aa4b8fd5da8f90b8bec164.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                569,
+                832,
+                623,
+                865
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "OVER 4 MILLION "
+                    }
+                ]
+            },
+            "bbox": [
+                628,
+                837,
+                757,
+                849
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "views in the last year "
+                    }
+                ]
+            },
+            "bbox": [
+                628,
+                850,
+                741,
+                859
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3436462ac4554b2dd3eb92fa1bbb3100b448db77f3e5568de4f72e3117483bed.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                771,
+                828,
+                825,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "INCLUSIVE "
+                    }
+                ]
+            },
+            "bbox": [
+                830,
+                837,
+                917,
+                849
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "scope "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                850,
+                863,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Learn More "
+                    }
+                ]
+            },
+            "bbox": [
+                418,
+                885,
+                494,
+                896
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/570e39828769133a6979f7e17cd1389f452d8d8ee1167ddbe7bcd57e575ea2d0.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                806,
+                872,
+                835,
+                895
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                838,
+                874,
+                912,
+                896
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                58,
+                119,
+                441
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "会"
+                    }
+                ]
+            },
+            "bbox": [
+                21,
+                872,
+                62,
+                902
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                872,
+                179,
+                903
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                969,
+                456,
+                984,
+                541
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Amplitude-modulated resonant accelerometer employing parametric pump "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                81,
+                118,
+                849,
+                176
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Cite as: Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296  \nSubmitted: 22 June 2020 · Accepted: 12 October 2020  \nPublished Online: 21 October 2020 "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                202,
+                555,
+                247
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dffc8e4ab5fb188ecec9e51cbf70d526775f722fedf39acaa301c3a2998b9451.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "View Online "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                733,
+                205,
+                771,
+                231
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b458fa2d21a2190fdcfe843a4847dd9926c3365289ba05bf228e1bc75337120a.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Export Citation "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                808,
+                206,
+                836,
+                229
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3063e1f9ccc2c8142c03557e25dcb5cac5087a4a338c905fbe709541c067a2c0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "CrossMark "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                874,
+                206,
+                908,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Hemin Zhang, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1,a)}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Dongyang Chen, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Milind Pandit, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Jiangkun Sun, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Chun Zhao, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{3}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and Ashwin Seshia "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                263,
+                913,
+                280
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "AFFILIATIONS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                81,
+                291,
+                187,
+                304
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{1}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Department of Engineering, The Nanoscience Centre, University of Cambridge, Cambridge CB3 0FF, United Kingdom "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{2}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Silicon Microgravity Ltd., Cambridge, Innovation Park, Cambridge CB25 9PB, United Kingdom "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{3}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "MOE Key Laboratory of Fundamental Physical Quantities Measurement and Hubei Key Laboratory of Gravitation and Quantum Physics, PGMF and School of Physics, Huazhong University of Science and Technology, Wuhan 430074, China "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{a)}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "Author to whom correspondence should be addressed: hz358@cam.ac.uk "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                309,
+                888,
+                391
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                81,
+                412,
+                165,
+                426
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper demonstrates a resonant accelerometer employing weakly coupled resonators for inertial force transduction. An ultra-low virtual mode coupling is established by employing the parametric pump in the coupled resonators to enhance the parametric sensitivity. This paper proposes that the amplitude of the driven resonator can be used for monitoring the input acceleration in a limited linear range around the veering point. In addition to the high-sensitivity improvement, the measurement complexity is also considerably reduced compared to the previous amplitude ratio readout sensors. The sensitivity is adjustable by changing the parametric pumping amplitude. The experimental results show that the noise power spectral density is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 230\\mathrm{ng / \\sqrt{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " which is the best reported noise floor for resonant accelerometers based on weakly coupled resonators. "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                431,
+                915,
+                522
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing. https://doi.org/10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                529,
+                535,
+                545
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Micromechanical resonators have attracted significant attention owing to their promise for extensive applications in areas related to timing and frequency control "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and sensing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{2-4}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and for fundamental physical research. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{5,6}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Resonant accelerometers, which transduce the input acceleration to frequency variations, have been extensively studied because of their potential applications in navigation and seismometry. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{7-12}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Resonant transducers based on the vibration mode localization "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{13}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " principle have emerged in recent years due to the demonstrated improvements in parametric sensitivities and passive common-mode rejection. In mode-localized sensors, the ratio of the motional amplitudes of the coupled resonators instead of the conventional frequency has been employed as the output metric. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{14-18}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Previous studies "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{19}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " applying this principle to design accelerometers have demonstrated a noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", benchmarking favorably with respect to other low-g commercial MEMS accelerometers. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                580,
+                485,
+                776
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The classical mode-localized accelerometer consists of a structurally symmetric coupled resonator system, a suspended proof mass, and a lever system for inertial force amplification, as shown in Fig. 1(a). Key parameters of the device can be found in Fig. 1(b). One end of the driven resonator (Res 1) is connected to a proof mass via the lever system, while the other end is coupled via a beam with a secondary resonator (Res 2) whose opposite end is fixed; thus, a fixed "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                777,
+                485,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "mechanical coupling between the resonators is achieved, as shown schematically in Fig. 1(c). Acceleration applied to the proof mass will induce a tensile or compressive axial strain in the resonating beam of Res 1, resulting in stiffness variations and breaking the symmetry of the coupled resonators. Vibration energy confinement "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{13,20}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " then occurs and the ratio of the motional amplitudes (or amplitude ratio, AR) changes so that the applied acceleration can be tracked by monitoring the AR variation. The AR scale factor is defined by the coupling factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\kappa)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ": "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{15}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the stiffness ratio between the coupling beam and the resonating beam, which can be determined by the frequency splitting between the vibration modes. A lower coupling factor results in a higher scale factor "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{21}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and, thus, a higher input-referred noise floor, if electronics noise dominates the resolution; therefore, most of the current attempts have been directed toward decreasing the coupling factor. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{16,22,23}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " However, an ultra-weak mechanical coupling using the traditional flexural coupling beam is difficult to implement from a practical perspective. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{16,19}"
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                580,
+                913,
+                800
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We have recently reported that a parametric pump "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{5,24}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can further reduce the coupling and improve the AR sensitivity by a factor of 183. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{25}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Yet, the complexity of the AR readout increases as precisely demodulating the dynamic Stokes-sideband can be difficult especially when it is positioned several Hz away from its neighboring mode. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                802,
+                913,
+                868
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                943
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                985,
+                543
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/da6243f984110a8f97dfdf4881eb4ddc0f8834fe1639d3e34374fb9fe455f7c2.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 1. Device illustrations and experimental setup. Optical micrograph of the device (a). Key parameters and values of the accelerometer (b). Schematic of the coupled resonators (c) and electrical measurement setup (d). Motional currents of the two resonators are translated to voltages by trans-impedance amplifiers (TIAs) and then filtered by bandpass filters (BPFs). The voltage is monitored by a Zurich UHFLI lock-in amplifier with modules of the phase-locked-loop (PLL), demodulator (DM), and low-pass filter (LPF). PD here is the phase detector, and Amp is the amplitude of a resonator.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the setpoint of the PLL module to enable Res 1 to oscillate in the specified resonant mode. The parametric pump signal ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{para}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") applied to Res 2 and the electrostatic voltage ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{elec}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") applied to the combs for mimicking external accelerations are generated from a signal generator. A bias ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "15\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and an AC drive of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mu\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are applied to capacitively actuate Res 1. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                84,
+                121,
+                485,
+                358
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, instead of using the AR, we only measure the amplitude of the driven resonator (Res 1) to monitor the external acceleration. In addition to demonstrating the high sensitivity and resolution, this method also considerably decreases the detection complexity in comparison with AR-based accelerometers[19,25] as only the amplitude of a single resonator in a specific mode must now be tracked. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                519,
+                486,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The coupled resonators can be modeled as a mass-spring-damper model system as shown in Fig. 2(a). The effective stiffness of Res 1 is modified by the stiffness perturbations resulting from the external acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\Delta k_{a})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the electrostatic tuning perturbation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\Delta k_{pert})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The effective stiffness of Res 2 varies over time due to the additional periodic electrostatic force generated by the pump signal and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This periodic stiffness perturbation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\nabla)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                599,
+                486,
+                694
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\nabla = 2 \\frac {\\varepsilon_ {0} A}{g ^ {3}} V _ {b i a s} V _ {p a r a} \\cos \\left(\\omega_ {p} t\\right) = \\Gamma \\cos \\left(\\omega_ {p} t\\right), \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9aa881f4c02b0c6a2a0cd8ac67a508790f5bc58b5918272f2bf32fbc5cdb3ddb.jpg"
+                }
+            },
+            "bbox": [
+                151,
+                700,
+                485,
+                729
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the effective area of the sensing electrode,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the permittivity,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g = 2\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the electrode gap,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the bias voltage, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{para}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represent the parametric pump strength and frequency, respectively. Normally, the pump frequency is set as the frequency difference of the two fundamental modes, i.e.,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{p} = \\omega_{2,0} - \\omega_{1,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as shown in Fig. 2(b). When assuming the coupled resonators to be initially symmetric (without considering the other perturbations), i.e., with identical stiffness ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k_{1} = k_{2} = k"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), mass ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m_{1} = m_{2} = m"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), and damping ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c_{1} = c_{2} = c"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), the system dynamics are approximated by the following equations: "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                734,
+                486,
+                868
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7f787e0f2481928618f59a2a8a5a6d939b476660b48968d1455eb481a8858ab1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                535,
+                119,
+                883,
+                196
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b0771ce0fa32518280d2b5b3692b637b141d27ae56a32624394e145b6c3c97e0.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                534,
+                200,
+                885,
+                310
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5211a2d62e9c47e4dc7f448a7d6fc5eed22db1a65cf965fbd5e0c5fd2b794f8e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 2. Illustrations of the stiffness modulation and mode coupling. Mass-spring-damper model of the weakly coupled resonators (a).  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta k_{a}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " represents the stiffness perturbation resulting from the external acceleration,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta k_{pert}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the electrostatic stiffness perturbation, while  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta k_{pump}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the periodic stiffness perturbation due to the parametric pump. Schematic spectrum of the fundamental mechanical modes  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\omega_{1,0},\\omega_{2,0})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and their corresponding sidebands  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\omega_{1,p},\\omega_{2,p})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (b). Measured amplitude-frequency responses of the coupled resonators without (upper subfigure) and with the parametric pump (lower subfigure) (c). In this measurement, there is no external acceleration input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\Delta k_{a} = 0)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta k_{pert}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " remains constant using a fixed  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{pert}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The amplitude of Res 1 in the interesting modes  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is monitored as the sensor readout. The pump amplitude and frequency in the lower subfigure are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                537,
+                313,
+                888,
+                508
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\ddot {x} _ {1} + c \\dot {x} _ {1} + \\omega_ {0} ^ {2} (1 + \\kappa + \\Xi) x _ {1} - \\kappa x _ {2} = \\frac {F}{m} \\cos (\\omega_ {d} t + \\phi), \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/413272322290c6cca27f15403966bc241faf852ef5bc8f7e19850b08f480406b.jpg"
+                }
+            },
+            "bbox": [
+                544,
+                679,
+                913,
+                705
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\ddot {x _ {2}} + c \\dot {x _ {2}} + \\omega_ {0} ^ {2} (1 + \\kappa + \\nu) x _ {2} - \\kappa x _ {1} = 0, \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3935924f1fbf5a6aff39721f8237d9c9f93994e329852741517d8128560aa53c.jpg"
+                }
+            },
+            "bbox": [
+                589,
+                709,
+                913,
+                725
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the displacements of the two resonators,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_0 = \\sqrt{k / m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c = m\\omega_0 / Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the damping rate,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\kappa = k_c / k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the mechanical coupling,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Xi = \\delta + \\epsilon = \\Delta k_a / k + \\Delta k_{pert} / k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the normalized stiffness perturbation to Res 1,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu = \\nabla / k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the normalized periodic stiffness modulation to Res 2,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F\\cos(\\omega_d t + \\phi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " the sinusoidal drive force with a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_d"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and amplitude  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F"
+                    },
+                    {
+                        "type": "text",
+                        "content": " generated by the drive AC and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Specifically, for this device,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\epsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is generated by the voltage difference of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{bias} - V_{pert})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and is constant once  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{pert}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is fixed;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is generated by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{bias} - V_{elec})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " when using electrostatic force to mimic the acceleration (see supplementary material Note 1). "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                730,
+                915,
+                868
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                985,
+                543
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                943
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-2 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7ccde02fffe9facfff689b12cc4d14580c7cf981a54a5914025f167700bee0b4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                181,
+                119,
+                372,
+                389
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e786bf2054666600fcd83c193493d93c8624778092521309f4930efc4e558559.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                375,
+                119,
+                609,
+                389
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b2139ceb555f5de5c1a15116d599195b944fc4abeb8c48627292604d8df32e75.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 3. Numerical simulations with the parametric pump. Simulated amplitude-frequency responses of Res 1 with a constant pump frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and different pump strengths (a). Simulated frequency responses of Res 1 with a constant pump amplitude of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", while the stiffness perturbation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\delta)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is variable (b). Simulated amplitudes of Res 1 at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " vs the stiffness perturbations  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\delta)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " under the pump strength of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (c), and the dashed line indicates the amplitude of Res 1 without the pump, i.e.,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{para} = 0\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                609,
+                132,
+                816,
+                388
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The theory of generating the mode coupling can be found in supplementary material Note 2. The amplitudes of the resonators can be theoretically obtained using the rotation-wave approximation method. In this work, the relationship between the vibrational amplitudes of Res  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1(x_{1})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and acceleration-induced stiffness perturbation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\delta)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is experimentally examined with a view toward determining key accelerometer metrics. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                461,
+                486,
+                552
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Without employing the parametric pump signal, there are two fundamental mechanical vibration modes for the two-degree-of-freedom weakly coupled resonator system, i.e., the first mode at a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,0} = 2\\pi \\times 131.160\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the second mode at a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0} = 2\\pi \\times 131.640\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as experimentally observed in the upper subfigure in Fig. 2(c). The frequency difference here is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta \\omega = \\omega_{2,0} - \\omega_{1,0} = 2\\pi \\times 2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which is defined by the coupling factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\kappa)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the stiffness perturbation  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\epsilon)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", when  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Hereafter,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{pert} = 5\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was employed, to keep the frequency difference at a specific value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                552,
+                486,
+                683
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When simultaneously applying the harmonic drive signal and the pump signal with a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{p} = \\Delta \\omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", mode mixing occurs and the second modes split into two modes with frequencies of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p} \\sim \\omega_{1,0} + \\omega_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the idler spectrum peak[26] of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as shown in Fig. 2(b) and experimentally observed in the lower subfigure in Fig. 2(c), either as the first mode. The frequency splitting between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p} - \\omega_{2,0} \\approx 2\\pi \\times 3.2\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") is much lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta \\omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which indicates that an ultra-weak coupling is obtained. This coupling is a virtual coupling because it is a coupling between a fundamental mode ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") and a Stokes sideband ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") of the other fundamental mode ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), in contrast to the direct mechanical coupling between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as shown in Fig. 2(b). "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                684,
+                486,
+                841
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case the stiffness perturbation to Res 1  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\Xi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is constant ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\epsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is fixed and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") while the periodic perturbation to Res 2  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\nu)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                841,
+                486,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "variable, the simulated frequency responses of Res 1 around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are shown in Fig. 3(a). The coupling factor between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is defined by the pump strength, and a larger frequency splitting indicating a higher coupling factor is observed with the increase in the pump strength. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                461,
+                913,
+                526
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case the stiffness perturbation to Res 1  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\Xi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is variable ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\epsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is fixed and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is variable) while the periodic perturbation to Res 2  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\nu)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                526,
+                913,
+                553
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e4329d573898ae0feaf299a8a589c18896ce795a6c853e0a76d9db402fbd8497.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 4. Experimental results of the frequency responses dependent on the pump strength and frequency. (a) Frequency responses of Res 1 around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with different parametric pump amplitudes; (b) frequency responses of Res 1 around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with different parametric pump frequencies and a constant pump strength of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                577,
+                913,
+                812
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                985,
+                543
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                941
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-3 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "constant, the simulated frequency responses of Res 1 around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are shown in Fig. 3(b). The manifestations of mode-localization, i.e., loci-veering (avoided crossing) and energy confinement,[20] appear. Evidently, amplitude changes are observed as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " increases or decreases, and thus, we can apply the amplitude-monitoring method to track the value of the applied acceleration. The resonant amplitudes of the two neighboring split modes  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " cross at the veering point as shown in Fig. 3(c) because the amplitude varying trends of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are opposite (the amplitude of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " decreases, while the amplitude of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " increases with the increase in the stiffness perturbation). There is a region near the veering point that the amplitude is a linear function of the stiffness perturbation. The slope, i.e., derivative of the amplitude sensitivity with respect to the stiffness perturbation, in the linear region with a pump strength of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1000\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is lower than that with a pump strength of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                119,
+                485,
+                317
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The experimentally recorded frequency responses of Res 1 depending on the pump strength  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(V_{para})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\omega_p)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                317,
+                485,
+                346
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "shown in Figs. 4(a) and 4(b). In the experiments, the pump frequency was manually modified as the strength changes to make sure that the measured responses of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " have approximate amplitudes. The frequency splitting when the two modes have equivalent amplitudes reflects the real mode coupling factor. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{15}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " It can be seen that  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " remains almost constant, while  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " rises with a higher pump strength. Energy confinement and avoided-crossing phenomena can also be observed by changing the pump frequency as shown in Fig. 4(b). This provides another way of tuning the initial working point by changing the pump frequency, which is different from the classical method "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^{15,16,19-21}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of electrostatically adjusting  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{pert}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Once the parametric pump strength and frequency are fixed, the vibrational amplitudes at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " will be varying with the external accelerations. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                119,
+                913,
+                291
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The experimentally recorded open-loop frequency responses of Res 1 are plotted in Fig. 5(a). There is a point where the two modes have equivalent amplitudes, which has been named as the veering point as shown in Fig. 5(b). As expected, a linear sensing regime is "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                291,
+                913,
+                344
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e5200a06f65f0b114bf37429034bd2623000cb10e70e66e095b34a6199c7f1a8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                125,
+                360,
+                496,
+                579
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d84ff327f87adc2b92c1aa27cc37fd080737128ee953bb08932586e8a6773a15.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                125,
+                580,
+                488,
+                800
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2e9971a4b25d2da7979d374d93b3fda593d8ffd6fca114c85bb0120e8a7af24f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                504,
+                360,
+                864,
+                579
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/30130d275c376b9937ec3c71716a8c111b434d6baac3b6578e2d181276096a72.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 5. Experimental characterization of the accelerometer. The amplitude-frequency responses of Res 1 around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a pump frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2480\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (a). Amplitudes of Res 1 at the frequencies of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{2,0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " vs the applied acceleration (b). Output amplitude of Res 1 with a sinusoidal input acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (c). Scale factor of the amplitude of Res 1 at the frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\omega_{1,p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", collected from the closed-loop measurements after subtracting the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1400\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " offset (d). The nonlinearity of the scale factor curve is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3.44\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Output amplitude of Res 1 with a triangular-wave acceleration with a peak of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and variable frequencies from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (e). Calculated normalized sensitivity over acceleration frequency and the fitting curve (f). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                500,
+                579,
+                867,
+                798
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                986,
+                543
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                941
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-4 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/05b584f03dba9bd6b412fd52271dd10127f03dbd79ee986eefc203f92d010e02.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                181,
+                119,
+                498,
+                333
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/007df69210c7a286b2bd1db43fa00b077c5909597eab3022f2845249969c9510.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG. 6. The measured input-referred noise power spectral density (a) and the input-referred Allan deviation (b) of the accelerometer.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\tau"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in (b) represents the integration time, and f in (a) is the offset frequency. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                509,
+                142,
+                818,
+                334
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "determined on either side of the veering point. In this open-loop test, the acceleration was generated by a high-resolution tilt platform.[25] "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                383,
+                485,
+                410
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To obtain the detection limit of the accelerometer, closed-loop measurements are mandatory and the effective bandwidth should be carefully studied. In the closed-loop measurement, PLL was used to lock Res 1 in a certain mode by adjusting the phase setpoint  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\varphi)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " until it reaches the same value as that of the resonant peak in the open-loop sweep. We then used the electrostatic force for applying body loads to the proof mass to mimic dynamic acceleration (see supplementary material Note 2). Based on the calibration, it is found that a voltage of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " pp applied to the comb drives corresponds to an acceleration of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (see Fig. S2). Figure 5(c) shows the responses of the closed-loop amplitudes of Res 1 vs a sinusoidal acceleration input with a peak of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The sensitivity curve is obtained and shown in Fig. 5(d) by tuning  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{elec}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 16\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per step in the closed-loop setup and the fitted sensitivity is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 500\\mathrm{V / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                410,
+                486,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, the scale factor is not constant but will change as the frequency of the input acceleration increases, which leads to bandwidth limitations. As shown in Fig. 5(e), the maximum amplitude change (between the peak and the valley) will decrease, i.e., the sensitivity decreases, as the acceleration frequency increases. A fit to the response of the sensitivity vs acceleration frequency can be seen in Fig. 5(f). An estimated bandwidth  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\mathrm{Hz})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is obtained when taking  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-3\\mathrm{dB}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " sensitivity drop as the cutoff frequency. "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                593,
+                486,
+                698
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A recording of the sensor noise floor was conducted in the University Laboratory Environment, where ambient vibrations are inevitable. The input-referred noise power spectral density (NPSD) from a 2-h representative single recording is shown in Fig. 6(a). When an electrostatically mimicked sinusoidal acceleration with a frequency of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied, we can see the peaks at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the sidebands from Fig. 6(a) (red curve). The curve shows clearly a peak around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", resulting from the ambient vibration and a peak around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", indicating the coupling mode [Fig. 2(c)]. The input-referred noise floor of the accelerometer is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "230\\mathrm{ng / \\sqrt{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " within a bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.3\\mathrm{Hz} - 2\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The input-referred bias instability is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "470\\mathrm{ng}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with an integration time of 1 s as shown in Fig. 6(b). The white noise floor[27] of the sensor can also be evaluated from the velocity random walk (VRW) "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                697,
+                486,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "region of the Allan deviation plot, demonstrating good consistency with the NPSD calculation. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                383,
+                913,
+                409
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In summary, this paper reports a high-resolution amplitude-modulated resonant accelerometer based on weakly coupled resonators employing a parametric pump. A noise floor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 230\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is obtained, representing a threefold improvement compared to the previously reported weakly coupled resonant sensors employing a parametric pump[25] and one order of magnitude over the state-of-the-art mode-localized accelerometers,[19] using the same device. However, the linear measurement range is limitedly attributed to the inevitable trade-off with sensitivity in such devices, while the scale factor is adjustable by changing the pumping amplitude. The resolution of the current device is still limited by the electronic noise; thus, the device enables the measurement over a dynamic range less than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70\\mathrm{dB}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which can be further improved to bring this specification into better alignment with other sub- "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mu \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " accelerometers.[28] With further optimization in the input-referred acceleration resolution/instability by decreasing the electronic noise and incorporating temperature control (to suppress fluctuations), the proposed accelerometer has the potential to be applied to seismic measurements,[29] where the measurement range and bandwidth constraints are acceptable. Furthermore, this sensitive transduction technique can also be extended to other resonant sensing application domains with similar requirements. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                409,
+                913,
+                683
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "See the supplementary material for derivations of the mode coupling and the mimicked acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                697,
+                913,
+                723
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Funding from Innovate UK and the Natural Environment Research Council is gratefully acknowledged. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                737,
+                913,
+                763
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DATA AVAILABILITY "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                768,
+                661,
+                782
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The data that support the findings of this study are available from the corresponding author upon reasonable request. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                786,
+                913,
+                814
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                828,
+                614,
+                840
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{1}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "C. T. Nguyen, IEEE Trans. Ultrason., Ferroelectr., Freq. Control 54, 251 (2007). "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                843,
+                913,
+                868
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                941
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-5 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                985,
+                543
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{2}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "R. Middlemiss, A. Samarelli, D. Paul, J. Hough, S. Rowan, and G. Hammond, Nature 531, 614 (2016). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3D. Chen, J. Zhao, Y. Wang, Z. Xu, and J. Xie, Appl. Phys. Lett. 112, 013502 (2018). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{4}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "D. Chen, H. Zhang, J. Sun, M. Pandit, G. Sobreviela, Y. Wang, Q. Zhang, X. Chen, A. Seshia, and J. Xie, Phys. Rev. Appl. 14, 014001 (2020). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5H. Okamoto, A. Gourgout, C. Y. Chang, K. Onomitsu, I. Mahboob, E. Y. Chang, and H. Yamaguchi, \"Coherent phonon manipulation in coupled mechanical resonators,\" Nat. Phys. 9, 480-484 (2013). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{6}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "R. Zhao, L. Li, S. Yang, W. Bao, Y. Xia, P. Ashby, Y. Wang, and X. Zhang, \"Stable Casimir equilibria and quantum trapping,\" Science 364, 984 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7A. A. Seshia, M. Palaniapan, T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, and S. Montague, \"A vacuum packaged surface micromachined resonant accelerometer,\" J. Microelectromech. Syst. 11, 784-793 (2002). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{8}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "J. Zhao, X. Wang, Y. Zhao, G. M. Xia, A. P. Qiu, Y. Su, and Y. P. Xu, \"A 0.23-  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu"
+                            },
+                            {
+                                "type": "text",
+                                "content": "g bias instability and  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "1 - \\mu \\mathrm{g} / \\mathrm{VHz}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " acceleration noise density silicon oscillating accelerometer with embedded frequency-to-digital converter in PLL,\" IEEE J. Solid-State Circuits 52, 1053-1065 (2017). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{9}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "H. Ding, Y. Ma, Y. Guan, B. F. Ju, and J. Xie, \"Duplex mode tilt measurements based on a MEMS biaxial resonant accelerometer,\" Sens. Actuators, A 296, 222-234 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10C. Comi, A. Corigliano, G. Langfelder, A. Longoni, A. Tocchio, and B. Simoni, \"A resonant microaccelerometer with high sensitivity operating in an oscillating circuit,\" J. Microelectromech. Syst. 19, 1140-1152 (2010). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Y. Yin, Z. Fang, F. Han, B. Yan, J. Dong, and Q. Wu, \"Design and test of a micromachined resonant accelerometer with high scale factor and low noise,\" Sens. Actuators, A 268, 52-60 (2017). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "^{12}"
+                            },
+                            {
+                                "type": "text",
+                                "content": "X. Zou, P. Thiruvenkatanathan, and A. A. Seshia, \"A seismic-grade resonant MEMS accelerometer,\" J. Microelectromech. Syst. 23, 768-770 (2014). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13C. Pierre, J. Sound Vib. 126, 485 (1988). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14 M. Spletzer, A. Raman, A. Q. Wu, X. Xu, and R. Reifenberger, Appl. Phys. Lett. 88, 254102 (2006). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15P. Thiruvenkatanathan, J. Yan, J. Woodhouse, and A. A. Seshia, J. Microelectromech. Syst. 18, 1077 (2009). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "16H. Zhang, B. Li, W. Yuan, M. Kraft, and H. Chang, \"An acceleration sensing method based on the mode localization of weakly coupled resonators,\" J. Microelectromech. Syst. 25, 286-296 (2016). "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                119,
+                485,
+                543
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "17M. Pandit, C. Zhao, G. Sobreviela, S. Du, X. Zou, and A. Seshia, \"Utilizing energy localization in weakly coupled nonlinear resonators for sensing applications,\" J. Microelectromech. Syst. 28, 182-188 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "18J. Juillard, A. Mostafa, and P. M. Ferreira, IEEE Trans. Ultrason., Ferroelectr., Freq. Control 66, 1950 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "19M. Pandit, C. Zhao, G. Sobreviela, X. Zou, and A. A. Seshia, \"High resolution differential mode-localized MEMS accelerometer,\" J. Microelectromech. Syst. 28, 782-789 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "20H. Zhang, H. Chang, and W. Yuan, \"Characterization of forced localization of disordered weakly coupled micromechanical resonators,\" Microsyst. Nanoeng. 3, 17023 (2017). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "21C. Zhao, M. Pandit, G. Sobreviela, A. Mustafazade, S. Du, X. Zou, and A. Seshia, \"On the noise optimization of resonant MEMS sensors utilizing vibration mode localization,\" Appl. Phys. Lett. 112, 194103 (2018). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "22H. Zhang, G. Sobreviela, D. Chen, M. Pandit, J. Sun, C. Zhao, and A. Seshia, \"A high-performance mode-localized accelerometer employing a quasi-rigid coupler,\" IEEE Electron Device Lett. 41, 1560 (2020). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "23B. Peng, K. Hu, L. Shao, H. Yan, L. Li, X. Wei, and W. Zhang, \"A sensitivity tunable accelerometer based on series-parallel electromechanically coupled resonators using mode localization,\" J. Microelectromech. Syst. 29, 3 (2020). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "24H. Yamaguchi, \"GaAs-based micro/nanomechanical resonators,\" Semicond. Sci. Technol. 32, 103003 (2017). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "25C. Zhao, X. Zhou, M. Pandit, G. Sobreviela, S. Du, X. Zou, and A. A. Seshia, \"Toward high-resolution inertial sensors employing parametric modulation in coupled micromechanical resonators,\" Phys. Rev. Appl. 12, 044005 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "26X. Zhou, C. Zhao, D. Xiao, J. Sun, G. Sobreviela, D. D. Gerrard, Y. Chen, I. Flader, T. W. Kenny, X. Wu, and A. A. Seshia, \"Dynamic modulation of modal coupling in microelectromechanical gyroscopic ring resonators,\" Nat. Commun. 10, 4980 (2019). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "27M. Sansa, E. Sage, E. C. Bullard, M. Gély, T. Alava, E. Colinet, A. K. Naik, L. G. Villanueva, L. Duraffourg, M. L. Roukes, and G. Jourdan, \"Frequency fluctuations in silicon nanoresonators,\" Nat. Nanotechnol. 11, 552 (2016). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "28C. Wang, F. Chen, Y. Wang, S. Sadeghpour, C. Wang, M. Baijot, R. Esteves, C. Zhao, J. Bai, H. Liu, and M. Kraft, \"Micromachined accelerometers with sub "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " noise floor: A review,\" Sensors 20, 4054 (2020). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "29 A. Mustafazade, M. Pandit, C. Zhao, G. Sobreviela, Z. Du, P. Steinmann, X. Zou, R. T. Howe, and A. A. Seshia, \"A vibrating beam MEMS accelerometer for gravity and seismic measurements,\" Sci. Rep. 10(1), 10415 (2020). "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                119,
+                913,
+                543
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Applied Physics Letters "
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                302,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE "
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                681,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation.org/journal/apl "
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                864,
+                67
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "19 January 2026 18:09:13 "
+                    }
+                ]
+            },
+            "bbox": [
+                970,
+                454,
+                985,
+                543
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Appl. Phys. Lett. 117, 163504 (2020); doi: 10.1063/5.0019296 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                913,
+                352,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under license by AIP Publishing "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                929,
+                263,
+                943
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "117, 163504-6 "
+                    }
+                ]
+            },
+            "bbox": [
+                851,
+                913,
+                921,
+                925
+            ]
+        }
+    ]
+]

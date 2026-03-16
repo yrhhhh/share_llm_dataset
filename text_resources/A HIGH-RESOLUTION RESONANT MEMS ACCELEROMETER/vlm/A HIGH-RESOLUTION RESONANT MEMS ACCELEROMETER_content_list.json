@@ -1,0 +1,468 @@
+[
+    {
+        "type": "text",
+        "text": "ABSTRACT ",
+        "text_level": 1,
+        "bbox": [
+            83,
+            172,
+            194,
+            186
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper reports on a vacuum packaged resonant MEMS accelerometer that demonstrates some of the highest sensitivities reported to-date and a $\\sim 7\\mathrm{x}$ scale factor enhancement relative to a recently reported prototype, benefiting from a larger proof mass and improved leverage amplification factor. The device describes a scale factor of $960\\mathrm{Hz / m / s^2}$ over a dynamic range of approximately $+/-0.5$ $\\mathrm{m / s^2}$ . The experimentally measured intrinsic noise limited resolution of the accelerometer is less than $150\\mathrm{ng / \\sqrt{Hz}}$ in the frequency range from $< 1\\mathrm{Hz}$ up to $50\\mathrm{Hz}$ . ",
+        "bbox": [
+            81,
+            188,
+            486,
+            335
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "KEYWORDS ",
+        "text_level": 1,
+        "bbox": [
+            83,
+            367,
+            205,
+            382
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Microelectromechanical systems (MEMS), Inertial sensors, Resonant sensors ",
+        "bbox": [
+            81,
+            383,
+            450,
+            412
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "INTRODUCTION ",
+        "text_level": 1,
+        "bbox": [
+            83,
+            428,
+            243,
+            441
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MEMS accelerometers have seen significant translation success in a large spectrum of applications ranging from the automotive control and safety systems, consumer electronics for mobile and gaming devices and wearable healthcare devices. The MEMS accelerometers used in most of these applications primarily leverage the advantages of batch manufacturability, small size, low power and CMOS integration. However, the improving the accuracy of inertial measurement in a MEMS device is of interest for a number of potential emerging applications such as pedestrian navigation and seismology [1-3]. ",
+        "bbox": [
+            81,
+            444,
+            486,
+            604
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Previous work on the optimization of capacitive [4, 5] and optical MEMS accelerometers [6] have resulted in devices that offer sub- $\\mu \\mathrm{g}$ resolution, making them potentially attractive for the above applications. Recent work from our group previously reported on a prototype resonant MEMS accelerometer [7] demonstrating the potential of achieving sub- $\\mu \\mathrm{g}$ resolution, with reduced $1 / \\mathrm{f}$ noise limited corner frequency and much smaller volumes comparing to capacitive designs of similar resolution. ",
+        "bbox": [
+            81,
+            604,
+            486,
+            736
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper reports the results of further design optimization work of the resonant MEMS accelerometer. The devices described in this work were fabricated by a foundry process co-integrated with a wafer level vacuum package. The electronic component values of the frequency tracking oscillator were also fine-tuned accordingly to match the characterization of the resonator sensing element with revised dimensions. ",
+        "bbox": [
+            81,
+            737,
+            486,
+            852
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "DESIGN AND FABRICATION ",
+        "text_level": 1,
+        "bbox": [
+            83,
+            868,
+            354,
+            883
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The topology of the resonant accelerometer ",
+        "bbox": [
+            112,
+            883,
+            486,
+            900
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "implemented here is similar to that reported in previous work [7]. As shown in Figure 1, the micromechanical structure consists of a suspended inertial mass connected to double-ended tuning fork (DETF) resonator sensing element through a leverage mechanism providing for a prescribed amplification of the inertial forces. An external acceleration applied to the accelerometer along the sensitive axis will result in a push-pull inertial force that is axially coupled onto the two DETFs enabling differential measurement. The axial force on the DETF changes the resonant frequency. The DETF is integrated with parallel-plate electrostatic transducer and embedded in the feedback loop of an oscillator circuit. The oscillator output frequency is recorded on a frequency counter. When the input acceleration is within the linear range of the accelerometer, the scale factor of the resonant MEMS accelerometer can be described as [7]: ",
+        "bbox": [
+            506,
+            171,
+            913,
+            404
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\Delta f _ {o u t}}{a _ {i n}} = S _ {r e s} \\times E A _ {L v r} \\times M _ {I} \\tag {1.1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            616,
+            405,
+            911,
+            445
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $S_{res}$ is the scale factor of the DETF sensing element in the unit of 'Hz/N', $EA_{Lvr}$ is the effective amplification factor of the micro levers, $M_I$ is the proof mass, $a_{in}$ is the input acceleration along the sensing axis and $\\Delta f_{out}$ is the frequency shift of the output signal of the oscillator. ",
+        "bbox": [
+            506,
+            446,
+            913,
+            521
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9535201abd1d12ebb23d186a4aeaf261cb78e3a4782c28e58e3d7152f799aa9f.jpg",
+        "image_caption": [
+            "Figure 1: Schematic of the resonant accelerometer. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            524,
+            532,
+            901,
+            752
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The design of the micromechanical structure is optimized to increase the scale factor relative to previous work. The design optimization is partly realized by design enhancements made possible by a new fabrication process and in part due to design iterations. This results in the parameters on the right-hand side of equation (1) being optimized to enhance the device scale factor. Table 1 ",
+        "bbox": [
+            506,
+            792,
+            913,
+            896
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "A HIGH-RESOLUTION RESONANT MEMS ACCELEROMETER ",
+        "bbox": [
+            207,
+            66,
+            790,
+            85
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "summaries the critical dimensions for the device presented in this work. ",
+        "bbox": [
+            81,
+            66,
+            485,
+            95
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/e468056f4ddb70d81ff44b23f74220fe19b2547273ff53f66aede4df39c72c45.jpg",
+        "table_caption": [
+            "Table 1: Summary of device design "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Component</td><td>Value</td><td>Unit</td></tr><tr><td>Proof-Mass</td><td>1.04</td><td>mm3</td></tr><tr><td>Sensing DETF</td><td>280(L)×2.5(W)×40(H)</td><td>μm</td></tr><tr><td>Transaction Gap</td><td>2</td><td>μm</td></tr><tr><td>Lever Ratio</td><td>56</td><td>1</td></tr></table>",
+        "bbox": [
+            76,
+            125,
+            495,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The resonant frequency shift of the sensing DETF resulting from the input acceleration along the sensitive axis is tracked by an electromechanical oscillator circuit as shown in Figure 2. The oscillator consists of a DC voltage source, a trans-impedance amplifier, a band-pass filter, a zero-crossing comparator, a potential divider and buffer circuit. The trans-impedance amplifier compensates the motional resistance of the sensing DETF resonator in order to meet the gain criteria for oscillation. The band-pass filter has two functions, (1) to fine-tune the loop phase meet the phase criteria of oscillation, (2) to reject lock-in for spurious modes. The zero-crossing comparator coverts the sinusoidal input signal to a constant magnitude square wave signal of the same frequency, before being fed back to the actuation electrode of the resonator after a through the potential divider[8]. ",
+        "bbox": [
+            81,
+            218,
+            486,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/132547ffe1ed7569bb1bab6fe495e2c24a90a73b43533d826db342da789a90d3.jpg",
+        "image_caption": [
+            "Figure 2: Schematic of electromechanical oscillator circuit "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            116,
+            479,
+            460,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The resonant accelerometer is fabricated using a process that integrates wafer-level vacuum packaging incorporating a getter within the package. The diced chips are mounted and wire-bonded to a 32-pin DIP ceramic chip carrier (Figure 3(a)). The electro-mechanical oscillator circuit is implemented on a PCB (Figure 3(b)). ",
+        "bbox": [
+            81,
+            707,
+            486,
+            795
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9aec2dc67f87e2b141f07806e02d4e319298c6c81a2dace8bb790aa377a0c718.jpg",
+        "image_caption": [
+            "Figure 3: (a) Vacuum packaged RXL chip, (b) PCB assembly showing RXL integrated with electromechanical oscillator circuit. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            535,
+            65,
+            883,
+            306
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "EXPERIMENTAL SETUP ",
+        "text_level": 1,
+        "bbox": [
+            509,
+            380,
+            743,
+            395
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The open-loop response of the DETF resonators are characterized using a Network Analyzer to extract device parameters including the resonant frequency, quality factor, linear actuation threshold and the feedthrough capacitance. These values are then used to define the design of the oscillator circuit. ",
+        "bbox": [
+            506,
+            396,
+            911,
+            482
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The sensing DETF resonator is embedded within the frequency tracking oscillator, the scale factor of resonant accelerometer was then calibrated by using a tilt table. The tilt table can precisely tune the tilt angle in a step of 0.5 degree between 0 and 90 degree. This setup varies the gravitational component of acceleration along the sensitive axis with the device response varying in proportion to the sinusoidal function of the tilt angle. At each tilt position, the output frequency of the oscillator is recorded by the frequency counter for 120 seconds and the mean value of the result is recorded. ",
+        "bbox": [
+            506,
+            483,
+            913,
+            643
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Finally, in order to estimate the intrinsic sensor noise floor, the measurements from the sample device were logged in the absence of any external acceleration input. The sample device was placed on the vibration isolation platform with the intent of reducing the background seismic vibration noise level. ",
+        "bbox": [
+            506,
+            643,
+            913,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "RESULTS AND DISCUSSION ",
+        "text_level": 1,
+        "bbox": [
+            509,
+            746,
+            774,
+            760
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Figure 4 shows the electrically measured open-loop amplitude/phase response of the sensing DETF resonator. The resonant frequency of DETF without acceleration input is $149.52\\mathrm{kHz}$ when the resonator is biased with a 9V DC bias voltage. The open-loop characterization data shows that the linear actuation threshold is about $3\\mathrm{mV}$ and the measured motional resistance of the DETF at resonance is about $105.2\\mathrm{k}\\Omega$ . The measured quality factor of DETF is about 25000 and no measurable degradation in quality factor is seen over a ",
+        "bbox": [
+            506,
+            762,
+            913,
+            893
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "period of approximately 12 months. ",
+        "bbox": [
+            84,
+            66,
+            321,
+            82
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/7c8a4fa5d74e3711f7065eb74cd8850997b78f8c7ec01607e197060890010bdc.jpg",
+        "image_caption": [
+            "Figure 4: Open-loop response of DETF strain gauge. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            102,
+            84,
+            467,
+            281
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The devices are then tested on a precision tilt table to characterize the response. Figure 5 plots the results of calibration of the resonant accelerometer device and compares it to results previously derived from finite element simulation. The sample under test exhibits a linear scale factor about $960\\mathrm{Hz / m / s^2}$ for each double-ended tuning fork in the range of $+/-0.5\\mathrm{m / s^2}$ , in agreement with simulation results. However, significant nonlinearity in the response was observed for input acceleration larger than $1\\mathrm{m / s^2}$ . ",
+        "bbox": [
+            81,
+            311,
+            486,
+            444
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/53f34cffc8692958d9c885e68c9f18f18b859d601d7dbf15e4e28a78a023d9e2.jpg",
+        "image_caption": [
+            "Figure 5: Scale factor calibration for resonant MEMS accelerometer and comparison with FE simulation. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            116,
+            464,
+            464,
+            667
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Even though the sample resonant accelerometer was tested on the vibration isolation table, the measured ambient vibration noise level $(\\sim 31.6~\\mu \\mathrm{m} / \\mathrm{s}^2 /\\sqrt{\\mathrm{Hz}})$ as shown in Fig.6 is still much larger than the intrinsic sensor noise floor - a result confirmed by comparing these measurements to those obtained using a macro-scale seismometer. In order to estimate the intrinsic sensor noise floor, the DETF resonator of the sample accelerometer embedded in the oscillator circuit was replaced by a DETF resonator on the same chip having identical dimensions but not connected to the proof mass. The frequencies of the oscillator were logged in the absence of any active acceleration input. The measured frequency fluctuations were then captured and demodulated ",
+        "bbox": [
+            81,
+            712,
+            488,
+            902
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "into acceleration units using the previously calibrated device scale factor. Considering the dummy DETF is less sensitive to ambient vibration, the noise of the uncoupled DETF represents a value nearer to the intrinsic sensor noise floor. The resolution of this device is seen to be approximately $1.41\\mu \\mathrm{m} / \\mathrm{s}^2 /\\sqrt{\\mathrm{Hz}}$ (144 ng/√Hz) and the noise corner frequency is smaller than 1 Hz. ",
+        "bbox": [
+            509,
+            66,
+            911,
+            169
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/bbbb4c9a4e3ca4e57fe51b366adb7b9f9704d05bd8cb21c913bbbfbcc3514317.jpg",
+        "image_caption": [
+            "Figure 6: PSD analysis of the seismic noise limited response and bounds on the electronic-noise limited resolution. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            527,
+            186,
+            870,
+            375
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The fundamental limits to resolution is determined by the thermal-mechanical noise of the sensing DETF resonator, which is estimated to be about $0.49\\mathrm{ng} / \\sqrt{\\mathrm{Hz}}$ [9] for this device. It is therefore obvious that the resolution of this sample device is limited by other factors. Noise models indicate that the bias voltage to frequency noise conversion due to the electrostatic spring-softening effect associated with parallel-plate transducers [10] sets the observed noise floor. Even though a low noise voltage source (Keysight B2961) with optional ultra low noise filter is used for the DC bias of the oscillator, an analytical estimate indicates that the bias voltage noise limited resolution is approximately 1.31 $\\mu \\mathrm{m} / \\mathrm{s}^2 /\\sqrt{\\mathrm{Hz}}$ based on calculations using the voltage noise figure specified on the datasheet for the voltage source. The open-loop measurement results demonstrate that the linear actuation threshold for the sensing DETF resonator is only 3 mV, close to the background noise floor on the PCB. Therefore, the actuation amplitude was set to $10\\mathrm{mV}$ in the circuit implemented in this work. The increased actuation amplitude will result in the Duffing nonlinearity of the resonator and the resulting amplitude-frequency noise conversion [11] degrades sensor resolution further. ",
+        "bbox": [
+            508,
+            422,
+            913,
+            743
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "CONCLUSION ",
+        "text_level": 1,
+        "bbox": [
+            509,
+            758,
+            648,
+            773
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "This paper introduces a high performance resonant MEMS accelerometer with significant improvements in sensitivity and resolution as compared to a predecessor device. The sample MEMS device is fabricated by a foundry process integrated with wafer-level vacuum package. The Q of the packaged DETF resonator is about 25,000 with no measurable degradation over the course of a year. The MEMS chip was assembled together with electronic components on a PCB to implement the prototype ",
+        "bbox": [
+            508,
+            773,
+            913,
+            906
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "accelerometer, demonstrating a scale factor of $960\\mathrm{Hz / m / s^2}$ in a linear range of $+/- 0.5\\mathrm{m / s^2}$ . Initial characterization of the prototype sensor also shows the environmental noise limited resolution of approximately $31.6\\mu \\mathrm{m} / \\mathrm{s}^2 /\\sqrt{\\mathrm{Hz}}$ and the intrinsic noise limited resolution of approximately $1.41~\\mu \\mathrm{m} / \\mathrm{s}^2 /\\sqrt{\\mathrm{Hz}}$ in the frequency range from $< 1\\mathrm{Hz}$ up to $50\\mathrm{Hz}$ . ",
+        "bbox": [
+            83,
+            64,
+            488,
+            157
+        ],
+        "page_idx": 3
+    }
+]

@@ -1,0 +1,1866 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A HIGH SENSITIVITY UNIAXIAL RESONANT ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                131,
+                100,
+                867,
+                118
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Claudia Comi<sup>1</sup>, Alberto Corigliano<sup>1</sup>, Giacomo Langfelder<sup>1</sup>, Antonio Longoni<sup>1</sup>, Alessandro Tocchio<sup>1</sup>, Barbara Simoni<sup>2</sup>  \n<sup>1</sup>Politecnico di Milano, Italy  \n<sup>2</sup>STMicroelectronics, Italy. "
+                    }
+                ]
+            },
+            "bbox": [
+                257,
+                118,
+                739,
+                186
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                201,
+                228,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A new micro-machined uniaxial silicon resonant accelerometer characterized by a high sensitivity is presented. The geometrical setting is analytically optimized in order to improve the sensitivity and the linearity of the sensor. The high level of sensitivity is obtained at relatively low quality factors and keeping the dimensions very small, thanks to an innovative and optimized geometrical design of the device. The proposed accelerometer has been fabricated and the first experimental measurements are presented in the paper. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                230,
+                489,
+                384
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                115,
+                395,
+                302,
+                410
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MEMS resonant accelerometers are reported in the literature as an alternative to capacitive and piezoresistive accelerometers (see e.g. [1], [2]). In resonant accelerometers the external acceleration produces a recordable shift of the device resonance frequency or of some part of it. Resonant sensing, with respect to other sensing principles, has the advantage of direct frequency output, high potential sensitivity and large dynamic range. Sensing of the stiffness variation of resonating structures, subject to loads caused by external accelerations, was recently reported in [3]-[5]. Nevertheless, the sensitivity of these and previous devices was limited to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10 - 160\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                423,
+                489,
+                616
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A uniaxial resonant accelerometer has been designed, fabricated and tested. An optimization of the geometry allows to obtain reduced dimensions (proof mass of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400 \\times 400 \\mathrm{~m}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), a sensitivity performance close to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "430 \\mathrm{~Hz} / \\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at a packaging pressure around 1 mbar with an initial resonant  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": " factor around 200, considerably lower than values reported in less sensitive devices ([1], [3]). "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                616,
+                489,
+                728
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. DESIGN AND FABRICATION OF THE RESONANT ACCELEROMETER "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                112,
+                739,
+                470,
+                771
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The device working principle is based on the frequency variation of two resonating beams induced by an external acceleration. Figure 1a shows a SEM image of the accelerometer fabricated using the ThELMA surface micromachining process of STMicroelectronics [6]. On one end the resonating beams are constrained to the substrate; on the other "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                786,
+                489,
+                882
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "end each of them is constrained to a spring which holds a seismic mass with an area of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400 \\times 400 \\, \\text{m}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                201,
+                882,
+                229
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7c83a206a949cb3243df6fe41855f15eadcada13abb5dca1a0cea4c3b686848a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                239,
+                875,
+                435
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/25d4fbbf7c5fb57f7201a06c62cc39c73e69c38f1f69aff90b0aa8f7ebf932c5.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 1. (a) SEM picture of the resonant accelerometer. The close up shows the point where the resonating beam is linked to the spring. Critical to the device sensitivity performance is the ratio between the dimensions  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{d}_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the total spring length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\mathrm{d}_{1} + \\mathrm{d}_{2})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". (b) Schematic view of the effect of an external acceleration on the differential device. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                546,
+                467,
+                842,
+                638
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At rest configuration, the two beams have the same nominal resonance frequency. Under an external acceleration, the translation of the seismic mass causes a compressive force in a beam and a tensile force in the other one (Fig. 1b). These axial forces generate a stiffness change of opposite sign for the beams, which results in a separation of their resonance frequencies. The dependence of the resonant frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of a single beam on the axial force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N"
+                    },
+                    {
+                        "type": "text",
+                        "content": " generated by the seismic mass movement can be computed as discussed in [7]: "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                742,
+                884,
+                894
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "978-1-4244-5764-9/10/$26.00 ©2010 IEEE "
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                941,
+                418,
+                954
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "260 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                942,
+                512,
+                956
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:17:08 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                882,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "f = f _ {0} \\sqrt {1 + \\alpha \\frac {N L ^ {2}}{E I}} \\quad \\text {w i t h} \\quad f _ {0} = \\frac {c ^ {2}}{2 \\pi L ^ {2}} \\sqrt {\\frac {E I}{\\rho A}} (1)",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e897f8e41183d77e1309484f214caaa324821582722a3b26c0588f4c4ea32600.jpg"
+                }
+            },
+            "bbox": [
+                147,
+                114,
+                489,
+                154
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{0}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the fundamental frequency of the beam resonating without any axial load,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": ",  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the length, the cross area and the inertial moment of the resonating beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the elastic modulus,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are coefficients depending on the boundary conditions of the resonator. For a doubly clamped resonator  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c = 4.73"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha = 0.0246"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                172,
+                487,
+                273
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Each resonator can be electrically excited through a first driving plate and its displacement can be measured through a second capacitive sensing plate, from which the frequency of the resonating beams can be computed. Critical to the device sensitivity is the position  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (see Fig. 1) of the resonating beams with respect to the anchor points of the spring. Figure 2 shows that, by properly choosing the position  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for a given proof mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a large amplification of the sensitivity can be obtained. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                275,
+                485,
+                410
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9facfd399e82f00d6718fc1e60ba23f14f8a10d115a87e51fa72aee0e0838f35.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. FEM simulation results for the device sensitivity as a function of the position of the linking point between the beam and the spring (Fig. 1a), for different values of the proof mass. For the chosen device layout of mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the optimum point  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " results to be at one sixtieth of the spring length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(d1 + d2)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                124,
+                426,
+                468,
+                592
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. READOUT CIRCUITRY "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                114,
+                685,
+                366,
+                699
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The device was tested using the electronic circuitry reported in Fig. 3a: each beam was embedded inside a positive feedback loop, forming the resonating element of an oscillating circuit. The other circuit components were chosen after a careful identification of the electrical equivalent model representing the single beam, as reported in Fig. 3b. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                714,
+                487,
+                809
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "The electrical model "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                114,
+                824,
+                265,
+                836
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As widely reported in the literature, micromechanical resonators can be modeled by an RLC equivalent circuit. In Fig. 3b a schematic illustration of a single "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                837,
+                487,
+                878
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "beam in operating conditions, represented by a three-port resonating device, is reported. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                100,
+                880,
+                128
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/31699ad190dcecbbe34b3e64a0f6b40e60b7df7a408c0d7bbfc3c2b64753da5f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                135,
+                880,
+                321
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7db18926f3421e4311e4b8950e4c01b57060e325e087ef9cced3fd9f88f0c3a8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                522,
+                324,
+                882,
+                479
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9f0f5444ee32de6c6a66504600d21329b90b17baff2593a5ad32928e6dda3a10.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. (a) oscillating circuit implemented for each of the beams of the accelerometer. (b) Schematic illustration of the electrical model used for the resonating beam. (c) Block scheme of the whole readout circuit. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                576,
+                488,
+                810,
+                604
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The central beam is biased at a voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; a voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is applied to the actuator; the sensing electrode is kept at a virtual ground. In this configuration the resultant forces acting on the central beam can be expressed as: "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                679,
+                882,
+                749
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {t o t} = F _ {2} - F _ {1} = \\frac {1}{2} \\left[ \\frac {d C _ {a}}{d x} V _ {b i a s} ^ {2} - \\frac {d C _ {s}}{d x} \\left(V _ {b i a s} - v _ {a}\\right) ^ {2} \\right] \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/8d4b65d8fc936023ed2bc2e87648d52156d8990c80b12f6ac833dd2ffd0f4c9d.jpg"
+                }
+            },
+            "bbox": [
+                561,
+                763,
+                884,
+                796
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the resultant electrostatic forces between the central beam and, respectively, the driving electrode and the sensing electrode.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_s"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the capacitances formed by the actuating and sensing electrodes with the central beam and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the displacement from the rest position. Under the "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                812,
+                882,
+                896
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "261 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                944,
+                510,
+                956
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:17:08 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                880,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "conditions: (i)  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{a} < V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and (ii) small displacements of the beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{tot}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " results proportional to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{a}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", defined as the efficiency of the resonator: "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                100,
+                487,
+                143
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {t o t} \\cong V _ {\\text {b i a s}} \\frac {d C _ {s}}{d x} v _ {a} = \\eta v _ {a} \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/449c3b6ccaada56754673baee59910f47321c9eef4a9ba56daf5afe94b3bc0dd.jpg"
+                }
+            },
+            "bbox": [
+                228,
+                156,
+                489,
+                185
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Referring to Fig. 3 it is possible to express the current at the sensing electrode as: "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                199,
+                487,
+                226
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "i (t) = \\frac {d (C V)}{d t} = C _ {s} \\frac {d V _ {\\text {b i a s}}}{d t} + V _ {\\text {b i a s}} \\frac {d C _ {s}}{d t} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/198db2b7c0d3060dbe84357b2915ad9165766b69a3ef51c8cd2009e48e14c5b3.jpg"
+                }
+            },
+            "bbox": [
+                174,
+                241,
+                487,
+                279
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first term in Eq. 4 is null since  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is constant, while the second term follows the movement of the beam through the time variation of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_s"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Thus, the motional current is defined as: "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                290,
+                487,
+                347
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "i _ {\\text {m o t i o n}} (t) = V _ {\\text {b i a s}} \\frac {d C _ {s}}{d t} = V _ {\\text {b i a s}} \\frac {d C _ {s}}{d x} \\frac {d x}{d t} = \\eta \\frac {d x}{d t} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/9e0162624a38a3f285be7b2c12832cccfdcf207672eda7270547166048cbc5e1.jpg"
+                }
+            },
+            "bbox": [
+                151,
+                359,
+                489,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the proportional term between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i_{motion}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the velocity of the beam. Substituting (3) and (5) in the motion equation of the beam, approximated as a single d.o.f. oscillator with equivalent mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", damping coefficient  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and elastic stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the following result is obtained: "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                410,
+                487,
+                494
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {m}{\\eta^ {2}} \\frac {d i _ {\\text {m o t i o n}} (t)}{d t} + \\frac {b}{\\eta^ {2}} i _ {\\text {m o t i o n}} (t) + \\frac {k}{\\eta^ {2}} \\int i _ {\\text {m o t i o n}} (t) d t = v _ {a} (t) \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/555f2313592b5ff82c88fa1171ee58c1ec8451d3b515223852f30baf0ec0eb84.jpg"
+                }
+            },
+            "bbox": [
+                115,
+                508,
+                487,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Eq. 6 can be interpreted as the equation describing an electrical RLC circuit, so that the equivalent electrical parameters of the resonator can be evaluated: "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                553,
+                487,
+                596
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "L _ {e q} = \\frac {m}{\\eta^ {2}}, R _ {e q} = \\frac {b}{\\eta^ {2}}, C _ {e q} = \\frac {\\eta^ {2}}{k} \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f750c9f2f16e92fd1f64008ba39bd264e323e0bfe3f796bbd06ce0fd12b1cf60.jpg"
+                }
+            },
+            "bbox": [
+                200,
+                609,
+                489,
+                642
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The knowledge of Eq. 7 allows, for each resonator, the design of the oscillating circuit reported in Fig. 3a, provided that a careful measurement of the mechanical parameters is done, as described in the next section. It is worth noting that  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is directly proportional to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and the electrical parameters in Eq. 7 have a square dependence from it. Therefore, while the resonant frequency is almost independent from  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{bias}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " strongly depends on it. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                657,
+                487,
+                782
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Mechanical characterization "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                114,
+                794,
+                324,
+                807
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The versatile measurement platform presented in [8] has been used to perform the mechanical characterization of the resonating beams. The platform is based on a low-noise, low-perturbing lock-in type readout method, suitable both for static and dynamic analyses of MEMS capacitive devices. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                808,
+                487,
+                891
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The dynamic response of the resonating beams was studied using the following method: while the movable mass was kept at the ground potential, a slow voltage ramp was applied at the actuating electrode in order to slowly deflect the beam up to an established perturbed position. The ramp was followed by an instantaneous downward voltage step (to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") leaving the beam free to oscillate around its rest position. The movement of the resonating beam was real-time monitored through the capacitance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_s(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as reported in Fig. 4. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                100,
+                882,
+                250
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bc300f836c350113fe9c045466d2d62365b944eae62a60f4c0c8e9004b1c82d7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4. Time response of a single beam after a downward force step. The Q factor can be evaluated from the measure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                250,
+                882,
+                391
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "By fitting the experimental results with the characteristic equation describing the step response of a complex conjugate system it is possible to measure the value of the free frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{o}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and of the damping coefficient  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (and thus of the quality factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                439,
+                882,
+                508
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The precise measure of the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": " factor of these devices is of particular importance because it allows evaluating the resistive losses which must be compensated by a suitable gain inside the resonating loop of Fig. 3a. In the present case it is hard to correctly evaluate the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": " factor with methods other than an experimental measure, because the package pressure value and its dispersion are not precisely known. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                508,
+                882,
+                631
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "The oscillating circuit "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                644,
+                670,
+                657
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "After the RLC equivalent of each resonating beam was defined, the readout circuit has been designed. Each beam is embedded in a feedback loop, in such a way that the loop gain is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G_{loop} > 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the start-up and then  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G_{loop}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " equals unity and the oscillation stabilizes. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                659,
+                882,
+                726
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A transimpedance gain stage was chosen in order to read the motional current at the sensing electrode. Because of the high equivalent resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{eq}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the design of this stage is challenging. It is required a high value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{I}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to have both large signal and low noise at the output. A high value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{I}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " imply a low bandwidth as well as stability problems. As the current signal to be amplified is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 50\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the band was limited to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{I} = 1.25\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": " was chosen (limiting the gain of the first amplifier to 0.21) to avoid stability problems of the first stage. For this reason a second gain stage was introduced to obtain a "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                726,
+                882,
+                891
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "262 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                944,
+                512,
+                956
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:17:08 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                882,
+                976
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "better signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{s,l}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the output. A comparator AD8032 was introduced in the loop to limit the amplitude of oscillations. The last stage (OP249) was used to regulate the actuation amplitude of the resonator through a reduction factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a_r"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A summary of the circuit electrical parameters is given in Table 1. "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                100,
+                489,
+                182
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a7b0e1640a65bd7fb4157d3bf94b03618d198bc54010c652c14c90a7f997b06d.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1. Electrical parameters of the resonating circuit "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Parameter</td><td>Value</td><td>Units</td></tr><tr><td>\\( {R}_{eq}\\left\\lbrack  {{\\mathrm{V}}_{\\text{bias }} = 6\\mathrm{\\;V}}\\right\\rbrack \\)</td><td>6</td><td>MΩ</td></tr><tr><td>\\( {L}_{eq}\\left\\lbrack  {{\\mathrm{V}}_{\\text{bias }} = 6\\mathrm{\\;V}}\\right\\rbrack \\)</td><td>4556</td><td>H</td></tr><tr><td>\\( {C}_{eq}\\left\\lbrack  {{\\mathrm{V}}_{\\text{bias }} = 6\\mathrm{\\;V}}\\right\\rbrack \\)</td><td>3.2</td><td>fF</td></tr><tr><td>Transresis tance stage Gain</td><td>1.25</td><td>MΩ</td></tr><tr><td>Second stage Gain, \\( {\\mathrm{a}}_{\\mathrm{v}} \\)</td><td>100</td><td>V/V</td></tr><tr><td>AD8032 supply voltage, \\( {\\mathrm{V}}_{\\mathrm{{dd}}} \\)</td><td>2.5</td><td>V</td></tr><tr><td>Amplitude reduction factor, \\( {\\mathrm{A}}_{r} \\)</td><td>\\( {0.005} \\div  1 \\)</td><td>V/V</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                174,
+                195,
+                425,
+                325
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c63ee370fae55c984c76f9f6b0e7d76a91063c0b998570406755ed3ae9f8db50.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                146,
+                361,
+                453,
+                517
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2721848548a5ad2927cd75725549afb3b81a0045586a7384305d2bbebd6fd2f7.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. (a) Power spectrum of the circuit output signal. The beam frequency shift is around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "215\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; (b) differential frequency variation under accelerations in the range  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                136,
+                543,
+                465,
+                714
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. EXPERIMENTAL RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                114,
+                790,
+                405,
+                806
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The circuit provides a voltage output whose amplitude is proportional to the difference of the measured frequencies and thus to the external acceleration [Fig. 3c]. Figure 5a reports the power spectrum of the voltage signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\nu_{s,l}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", at rest and under accelerations of "
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                819,
+                489,
+                890
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " g: a sensitivity of the single beam around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "215 \\, \\mathrm{Hz/g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", which leads to a differential sensitivity close to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "430 \\, \\mathrm{Hz/g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", is measured. Figure 5b shows the experimental points and a linear fitting of a differential frequency measure showing a good linearity in the range  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " g. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                100,
+                882,
+                185
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. CLOSING REMARKS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                198,
+                739,
+                213
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "An innovative uniaxial resonant accelerometer has been designed and realized. The final device has extremely reduced dimensions and high sensitivity. The readout circuit allows for a careful determination of the frequency shift due to the external acceleration. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                226,
+                880,
+                296
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGEMENTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                509,
+                309,
+                752,
+                324
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Part of the experimental setup used in this work was funded by Fondazione Cariplo in 2007, within the project Dissipative and failure phenomena in Micro and Nano Electro Mechanical Systems. "
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                339,
+                882,
+                394
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                510,
+                409,
+                650,
+                422
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] T. A. Roessig, R. T. Howe, A. Pisano, and J. H. Smith, \"Surface-micromachined resonant accelerometer\" in Proc. Transducers'97, Chicago, IL, June 1997, vol. 2, pp. 859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] M. Aikele, K. Bauer, W. Ficker, F. Neubauer, U. Prechtel, J. Schalk and H. Seidel, \"Resonant accelerometer with self-test\" Sensors and Actuators A, vol. 92, pp. 161-167, 2001. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] L.He, Y.P. Xu, M. Palaniapan, IEEE J. Solid-state Circuits, \"A CMOS readout circuit for SOI resonant accelerometer with 4-μg bias stability and 20-μg/√Hz resolution\" vol. 43, no. 6, pp. 1480-1490, 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] R.H. Olsson, K.E. Wojciechowski, M.S. Baker, M.R. Tuck and J.G. Fleming, \"Post-CMOS-compatible aluminum nitride resonant MEMS accelerometers\" J. Microelectromech. Syst., vol. 18, n. 3, 671-687, 2009. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] S.X.P. Su, H.S. Yang, and A.M. Agogino, “A resonant accelerometer with two-stage microleverage mechanisms fabricated by SOI-MEMS technology” IEEE Sensor J., vol. 5, no. 6, pp. 1214-1223, 2005. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] A. Corigliano, B. De Masi, A. Frangi, C. Comi, A. Villa, M. Marchi, \"Mechanical characterization of epitaxial silicon through on chip tensile tests\", J. Microelectromech. Syst., 13, n. 2, 200-219, 2004. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] C. Comi, On geometrical effects in microresonators. Latin American Journal of Solids and Structures, vol. 6, pp. 73-87, 2009. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] G. Langfelder, A. Longoni and F. Zaraga, \"Low-noise real-time measurement of the position of movable structures in MEMS\", Sensors and Actuators A vol. 148, pp. 401-406, 2008. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                423,
+                882,
+                888
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "263 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                944,
+                510,
+                956
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: TIANJIN UNIVERSITY. Downloaded on January 18,2026 at 22:17:08 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                963,
+                880,
+                976
+            ]
+        }
+    ]
+]

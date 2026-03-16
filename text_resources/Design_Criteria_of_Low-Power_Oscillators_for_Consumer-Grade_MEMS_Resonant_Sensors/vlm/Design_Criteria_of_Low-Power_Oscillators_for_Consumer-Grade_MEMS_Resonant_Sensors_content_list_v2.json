@@ -1,0 +1,3880 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Design Criteria of Low-Power Oscillators for Consumer-Grade MEMS Resonant Sensors "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                127,
+                80,
+                861,
+                148
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Giacomo Langfelder, Alessandro Caspani, and Alessandro Tocchio "
+                    }
+                ]
+            },
+            "bbox": [
+                242,
+                155,
+                742,
+                171
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract—This paper discusses the constraints in the design of circuits for microelectromechanical systems (MEMS) resonant sensors in consumer applications, presents a novel integrated circuit implementation, and shows that this approach can be competitive with respect to the mostly used capacitive readout. From a circuit design perspective, it is shown how the large equivalent resistance typical of MEMS resonators, their operation close to mechanical nonlinearity, and the effect of feedthrough capacitances on the oscillating loop constrain the power requirements of the driving/readout electronics. As a case study, a resonant accelerometer built in an industrial process is coupled to a suitably designed transimpedance amplifier with a low-power \"hard limiter.\" The performance shown in terms of linearity across the measurement range  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\pm 8\\mathrm{g})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", minimum measurable acceleration  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(1\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with a readout bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and power consumption  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(\\approx 100\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per axis) is comparable to those of state-of-the-art capacitive inertial sensors. "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                207,
+                484,
+                421
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Index Terms—Accelerometers, low-power circuits, microelectromechanical systems (MEMS) sensors, resonators, transimpedance amplifier (TIA). "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                429,
+                484,
+                467
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                205,
+                483,
+                338,
+                496
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "THE market of microelectromechanical systems (MEMS) devices for consumer applications is rapidly moving from single-axis single-parameter sensors to multiaxis multiparameter smart systems. State-of-the-art inertial measurement units (IMUs), for instance, incorporate at least a three-axis accelerometer and a three-axis gyroscope made using the same cheap large-volume industrial process [1]. Some recent IMUs also embed a three-axis magnetometer [2], [3]. All these devices are (or can be) read out through a differential capacitive scheme, where the movement of the suspended mass (due to the inertial [4], Coriolis [5]-[7], or Lorentz force [8], [9], respectively) determines a change in the gap between suitably designed parallel-plate cells. The electronics to implement this well-known and very mature readout scheme have progressively scaled down their power dissipation to values that can be, for instance, in the case of accelerometers, as small as a few hundreds of microwatts per axis [10]. This is a critical parameter not only in the case of consumer applications but also, for instance, for implantable medical devices [11]. "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                505,
+                484,
+                791
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Manuscript received September 10, 2012; revised November 29, 2012; accepted January 25, 2013. Date of publication February 13, 2013; date of current version July 18, 2013. "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                811,
+                484,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G. Langfelder and A. Caspani are with the Department of Electronics, Information and Bioengineering, Politecnico di Milano, 20133 Milan, Italy (e-mail: giacomo.langfelder@polimi.it; caspani@elet.polimi.it). "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                845,
+                484,
+                878
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Tocchio is with STMicroelectronics, 20010 Cornaredo, Italy (e-mail: alessandro.tocchio@st.com). "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                878,
+                484,
+                900
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Color versions of one or more of the figures in this paper are available online at http://ieeexplore.ieee.org. "
+                    }
+                ]
+            },
+            "bbox": [
+                60,
+                900,
+                484,
+                922
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Digital Object Identifier 10.1109/TIE.2013.2247233 "
+                    }
+                ]
+            },
+            "bbox": [
+                74,
+                922,
+                356,
+                934
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The early research and industrial investments have thus created an increasingly deeper rift between capacitive sensing and other sensing topologies, whose competitiveness must unavoidably face the problem of power consumption, together with performance and area occupation. Among other possible sensing schemes, one of the most promising and, thus, one of the most investigated is resonant sensing. In this kind of devices, a change in the quantity to be measured determines a change in the resonance frequency of suitably designed resonators usually kept in oscillation through unity-gain zero-phase closed-loop circuits. This frequency change is achieved through a suitable mechanical design. Examples of this approach can be found for accelerometers [12]–[14], gyroscopes [15], and even magnetometers [16]. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                207,
+                927,
+                416
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is the first goal of this paper to revisit the theoretical aspects in the design of an integrated circuit for resonant MEMS sensors, based on the transimpedance amplifier (TIA) configuration [17], by taking into account several practical constraints like the following: 1) the typical industrial package and available pressure (and thus the reachable quality factor); 2) unavoidable parasitic capacitances arising from wire bonding between the MEMS die and the application-specific integrated circuit (ASIC) die; 3) mechanical nonlinearities and their impact on the circuit topology [18]; and 4) the influence of all the points above on power dissipation in order to develop a low-power integrated circuit, which is the second goal of this paper—indeed, previous data were obtained without taking into account power dissipation constraints. This is, on the contrary, a severe parameter when dealing with portable applications. It is therefore of definitive importance to verify whether the proposed system architecture can be pursued also with a low-power approach. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                417,
+                927,
+                688
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The issue is studied for a resonant accelerometer similar to the one presented in [13], which shows competitive performance in terms of intrinsic resolution, linearity, and area occupation. The integrated circuit is codesigned taking into account the constraints described earlier. The system formed by the ASIC, built in a standard 150-nm CMOS process, and the device, built in the STMicroelectronics industrial MEMS process, demonstrates performance in terms of power dissipation on the order of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "115\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per axis with a resolution of about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g = 9.8~\\mathrm{m / s^2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " being the gravitational acceleration unit) on a bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", substantially competitive with those obtainable with mature capacitive readout schemes. "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                689,
+                927,
+                869
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. IDEAL MODEL OF A RESONANT SENSOR "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                558,
+                886,
+                870,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Sample specifications for consumer-grade accelerometers are summarized in Table I. The reported data are a combination "
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                906,
+                927,
+                934
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS, VOL. 61, NO. 1, JANUARY 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                44,
+                543,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "567 "
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                45,
+                927,
+                54
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "0278-0046/$31.00 © 2013 IEEE "
+                    }
+                ]
+            },
+            "bbox": [
+                404,
+                948,
+                582,
+                959
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                963,
+                898,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/48800b9beafe50a7409359adfed1978886e64be8557bee81fe3d55b026263e18.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLEI TARGET SPECIFICATIONS FOR CONSUMER-GRADE ACCELERometers "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Full scale range (FSR)</td><td>±2 – ±20</td><td>g</td><td>typ. selectable</td></tr><tr><td>Accel. noise density</td><td>50 – 200</td><td>μg/√Hz</td><td>eq. white noise</td></tr><tr><td>Bandwidth</td><td>~ 1000</td><td>Hz</td><td>-3 dB</td></tr><tr><td>Linearity</td><td>~ 2</td><td>%</td><td>across the FSR</td></tr><tr><td>Power dissipation</td><td>50 – 200</td><td>μW</td><td>rms, per axis</td></tr><tr><td>Device area</td><td>500 x 500</td><td>(μm)2</td><td>per axis</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                72,
+                114,
+                489,
+                205
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f744c2fa19f427718b8c78e0846c281b3ef31b9df07ed71917f5fbe0089adb5f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                72,
+                218,
+                489,
+                464
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4d2bb04c3fb20355dae3f5265cf95e57d059ba5ee40a943cb1c9a9449aa2aaa1.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 1. Optical and SEM images of the MEMS accelerometer in this work. On the whole, the suspended mass area is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "505 \\times 435 \\mu \\mathrm{m}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The lever effect is optimized by choosing the distance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to the overall spring length  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_1 + d_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as described in [13]. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                75,
+                465,
+                489,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of the authors' knowledge and information available on commercial datasheets (see, e.g., [1] and [10]). An accelerometer can be thus seen as a black box that, regardless of its operating principle, gives the possibility of measuring accelerations up to few gravity units and a few kilohertz of maximum frequency variation, with a minimum resolution on the order of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The MEMS area takes up around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "500\\times 500~\\mu \\mathrm{m}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and it is typically fabricated as a suspended mass with nested parallel-plate cells for capacitive readout (see, e.g., [4] and [19]). The given specifications represent the reference benchmark for any alternative sensing topologies. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                643,
+                493,
+                808
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Before beginning the analysis of the constraints in designing low-power integrated circuits for resonant sensors, a description of the working principle of a generic device and of its modeling is given, taking as a case study the resonant accelerometer shown in the optical and SEM pictures in Fig. 1. Its overall area is comparable to the specification target in Table I. Its basic working principle was presented in a previous work [13] and is summarized in the following. Two thin resonating beams form the sensing system of the device, with each of them being hedged by two electrical ports used for capacitive driving and "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                809,
+                494,
+                960
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a17d30083bfc25c5d3a29cec8f49c6fec2001b7ab095d12123fe86233c0d2b2d.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                513,
+                85,
+                722,
+                256
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2a2544d6191bae15cd75edbfad14bbf00b6a650c3fa3ea029ee4cb2bc2e88154.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 2. (a) Theoretical differential frequency variation under an applied acceleration and (b) related linearity error. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                723,
+                89,
+                932,
+                257
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "sensing of the resonant motion. The beams are clamped to the substrate on one side through anchor points; on the other side, their end is linked to a lever system used to amplify the inertial force acting on the inner inertial mass. Under an external acceleration having a component of modulus  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " in the direction of the arrow in Fig. 1, an inertial force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m \\cdot a"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " being the value of the inertial mass), amplified by the lever factor LF, generates the compression or stretch of the resonant beams, leading to a differential shift  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta f"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from their nominal frequency at rest  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". This shift can be expressed through a first-order linearization to obtain a simplified model for the mechanical sensitivity (here expressed as the frequency change per unit number  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n_g"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of gravity units of external acceleration) "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                321,
+                937,
+                518
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\frac {\\Delta f}{n _ {g}} = \\frac {f _ {0} \\sqrt {1 + \\alpha \\frac {N L ^ {2}}{E I}} - f _ {0} \\sqrt {1 - \\alpha \\frac {N L ^ {2}}{E I}}}{n _ {g}} \\approx \\frac {f _ {0} \\alpha \\frac {N L ^ {2}}{E I}}{n _ {g}} \\\\ = f _ {0} \\alpha \\cdot m g \\cdot \\mathrm {L F} \\frac {L ^ {2}}{E I}. \\tag {1} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/f70e334503e1ce6ee25220ded41a0792859406a7c3d9d41b3ae7da3fb7911b66.jpg"
+                }
+            },
+            "bbox": [
+                538,
+                526,
+                936,
+                599
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In (1),  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "E, I"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the resonator Young modulus, moment of inertia, and length, respectively.  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the axial force on the beam;  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a coefficient that depends on the boundary conditions ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sim 0.0246"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for a clamped-clamped beam, an assumption that holds for this case). A theoretical comparison between the true and linearized formulas (see Fig. 2) reveals that, for the sample case here studied, the linearity error is lower than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " up to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "70\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of external acceleration, much beyond the requirements in Table I. With the dimensions given in Fig. 3, the device has an overall differential nominal mechanical sensitivity around  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "240\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                613,
+                937,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The particular geometry with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-shaped resonators [20] (i.e., ending on one side with the link  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "d_{1}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to the anchor point; see Fig. 1) should guarantee a better immunity from temperature-induced stresses than that with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "I"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-shaped (i.e., clamped-clamped) resonators. Moreover, temperature effects should result in a stress of the same sign applied to both beams, which should therefore be seen as a common-mode signal and, in turn, canceled by the differential readout. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                779,
+                937,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Given the geometrical and mechanical parameters of the resonators, it has been shown (see, e.g., [21]) that an equivalent electrical model can be found, whose resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", capacitance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", and inductance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " values can be related to "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                898,
+                937,
+                960
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "568 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                44,
+                90,
+                54
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS, VOL. 61, NO. 1, JANUARY 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                454,
+                42,
+                937,
+                55
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                960,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d834346016d384db4b69ee16485704b8cf50f9625415bf4e4f03e2bb3849d098.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3. (a) Mechanical and (b) electrical equivalent models of the resonator. Simplified schematic circuits of the oscillator with (c) the \"hard limiter\" limiting technique, (d) the AGC limiting technique, and (e) the proposed clamped limiting technique. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                60,
+                84,
+                486,
+                287
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "their mechanical counterparts, i.e., to the damping coefficient  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}} = b / \\eta^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), the effective mass  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "m"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L_{\\mathrm{eq}} = m / \\eta^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), and the elastic stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k"
+                    },
+                    {
+                        "type": "text",
+                        "content": " ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{\\mathrm{eq}} = \\eta^2 / k"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), respectively. The coupling factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " between these parameters is the proportionality coefficient between the velocity of the central point of the beam and the motional current flowing through the resonator. Its expression is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                354,
+                486,
+                460
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\eta = \\frac {\\epsilon_ {0} A}{x _ {0} ^ {2}} V _ {p} \\cdot \\Gamma . \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c7256b4141ea3bf1de1f061d4b27895d651b88842f7d821ba2eeef5c40adf928.jpg"
+                }
+            },
+            "bbox": [
+                213,
+                467,
+                484,
+                501
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Its value thus depends on the voltage difference  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " between the beam and each electrical port; the corresponding capacitances have an area  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a permittivity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\epsilon_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " taken as that of vacuum, and an air gap at rest  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ".  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Gamma"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is a geometrical factor related to the integral of the beam deformation [13]. Such a resonator can be thus represented as the electrical equivalent model shown in Fig. 3(b) and can be used as the frequency-selective element of a closed-loop oscillating circuit whose loop gain is larger than one at the start-up and stabilizes to one (with a phase shift corresponding to 360) after a turn-on transient. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                508,
+                486,
+                659
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. OSCILLATING LOOP CHARACTERISTICS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                112,
+                681,
+                432,
+                695
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A way to operate a resonant sensor (like but not limited to the one described earlier) is to drive every of its resonators by means of a closed-loop oscillator, where the resonator itself represents the frequency-selective element [22]. On one side, the driving port is used to force the oscillation through an ac voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "; on the other side, the sensing port (kept, for instance, at a virtual ground) is used to measure the displacement through a current signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that can be exploited to close the loop, as described in the following. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                703,
+                486,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The electrostatic force acting on a single MEMS parallel plate biased at a generic voltage can be calculated, for a 1-D model, as the variation of the energy stored in the capacitor due to the motion of one plate along the considered 1-D direction (see, e.g., [23]). From this consideration and from the electromechanical coupling relation introduced by (2), it is possible to relate the force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", exerted on the movable plate by both the fixed ports, to the applied ac voltage when "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                839,
+                486,
+                960
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "the suspended mass (and beams) is kept at a dc voltage  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". A small-displacement assumption ( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x \\ll x_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") is used "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                84,
+                930,
+                114
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} F (t) = \\frac {\\epsilon_ {0} A}{x _ {0} ^ {2}} \\Gamma \\left(\\frac {V _ {p} ^ {2}}{2} + V _ {p} v _ {a} + \\frac {v _ {a} ^ {2}}{2}\\right) - \\frac {\\epsilon_ {0} A}{x _ {0} ^ {2}} \\Gamma \\frac {V _ {p} ^ {2}}{2} \\\\ \\sim \\frac {\\epsilon_ {0} A}{x _ {0} ^ {2}} \\Gamma V _ {p} v _ {a} = \\eta v _ {a}. \\tag {3} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/50694e210d4d1756374e175510f431b31b9892a2f23ddbe39ce4317d8383207d.jpg"
+                }
+            },
+            "bbox": [
+                545,
+                121,
+                927,
+                194
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The coupling factor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta"
+                    },
+                    {
+                        "type": "text",
+                        "content": " also relates the velocity  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the beam and the output current, i.e.,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i(t) = \\eta \\cdot v(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", as explained in [13]. Therefore, if the amplitude of the ac voltage is much lower than that of the dc voltage, the electrostatic driving force and the corresponding current can be assumed to be proportional. The simplified schematic representations of possible oscillator loops are illustrated in Fig. 3(c) and (d). In order to read out the current  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " from the sensing port, it is common to use a TIA; the loop is completed by an electronic nonlinear stage to stabilize the gain of the oscillator to unity. A first possibility [Fig. 3(c)] is to clamp the amplitude of the oscillation signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through a saturator. This solution, although at an extremely low power, allows no control of the signal amplitude at the resonator driving port. Another possibility [Fig. 3(d)] is to adjust the oscillation signal  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " through an amplitude gain control (AGC) circuit acting on a variable-gain amplifier [24]. This solution typically implies larger power dissipation than the previous one. "
+                    }
+                ]
+            },
+            "bbox": [
+                498,
+                202,
+                929,
+                459
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the following, the functional, mechanical, and electrical constraints that must be taken into account in the design of a low-power oscillating circuit are revisited. "
+                    }
+                ]
+            },
+            "bbox": [
+                498,
+                459,
+                930,
+                503
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Equivalent Resistance of the Resonator "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                500,
+                518,
+                794,
+                532
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first constraint is given by the need to have a closed-loop gain initially much larger than unity to ensure a quick start-up of the oscillation. This condition is not trivial to solve because the equivalent resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the micromechanical resonator can be as high as tens to hundreds of megaohms for a typical industrial packaging [25]. Safe margins in the loop design should be used as the quality factor, and in turn,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can change with temperature. The expression of the peak of the motional current at the resonance frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(f_0 = (1 / 2\\pi)\\sqrt{k / m})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " can be rewritten as "
+                    }
+                ]
+            },
+            "bbox": [
+                498,
+                537,
+                929,
+                688
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} i _ {\\max } = \\eta v = \\eta \\omega_ {0} x _ {\\max } = \\eta \\omega_ {0} \\frac {F _ {\\max }}{k} Q = \\eta \\omega_ {0} \\frac {F _ {\\max }}{k} \\frac {\\omega_ {0} m}{b} \\\\ = \\eta \\frac {F _ {\\operatorname* {m a x}}}{b} = \\frac {F _ {\\operatorname* {m a x}}}{\\eta R _ {\\mathrm {e q}}} = \\frac {v _ {a , \\operatorname* {m a x}}}{R _ {\\mathrm {e q}}} \\tag {4} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/3fc105e32dc19a03fd225bccf0016d2be97924fa0150264ea1749a2057ba34fa.jpg"
+                }
+            },
+            "bbox": [
+                518,
+                695,
+                927,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(where the subscript max indicates the peak value of the corresponding quantity). As expected from the resonator model in Fig. 3(b), the motional current is inversely proportional to the equivalent resistance. The gain from the device driving port to the transimpedance output is therefore given by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "G(\\omega_0) = R_f / R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", with  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " being the feedback resistance of the TIA. Due to the practical limitations in implementing large resistances in integrated circuits, it is thus of interest to study the possibility of lowering the resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the mechanical resonator. A lower  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " guarantees a higher signal and a better signal-to-noise ratio (SNR). Instead of improving the SNR, a lower power dissipation can be obtained as the now smaller required resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " turns into a smaller gain-bandwidth "
+                    }
+                ]
+            },
+            "bbox": [
+                498,
+                763,
+                929,
+                960
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "LANGFELDER et al.: DESIGN CRITERIA OF LOW-POWER OSCILLATORS FOR MEMS RESONANT SENSORS "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                42,
+                661,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "569 "
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                44,
+                930,
+                54
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                960,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "product required by the TIA (i.e., a smaller  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "g_{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and, thus, a lower driving current). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                84,
+                494,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The geometrical or electrical quantities that affect the value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are as follows. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                114,
+                494,
+                145
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1) The biasing voltage  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "V_{p}"
+                            },
+                            {
+                                "type": "text",
+                                "content": ". Nevertheless, in order to guarantee a low-voltage operation, the value of  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "V_{p}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " should be kept on the order of few volts only. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2) The area  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "A"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", which depends on the process height  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "h"
+                            },
+                            {
+                                "type": "text",
+                                "content": " (fixed by the technology) and on the beam length  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "L"
+                            },
+                            {
+                                "type": "text",
+                                "content": ". "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3) The factor  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\Gamma"
+                            },
+                            {
+                                "type": "text",
+                                "content": " which results from an integral whose value depends again on the beam length  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "L"
+                            },
+                            {
+                                "type": "text",
+                                "content": " and also on the width  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "W"
+                            },
+                            {
+                                "type": "text",
+                                "content": ". Both these parameters are constrained by the optimization of the frequency change per unit acceleration. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4) The gap value  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "x_0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", which is usually chosen as the minimum one. Indeed, even if the damping coefficient  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "b"
+                            },
+                            {
+                                "type": "text",
+                                "content": " decreases when increasing the gap, this is not enough to compensate for the inverse square dependence on the factor  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\eta"
+                            },
+                            {
+                                "type": "text",
+                                "content": ". "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                82,
+                146,
+                494,
+                357
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Therefore, none of the aforementioned quantities can be easily modified once the technology and the minimum device dimensions are chosen. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                359,
+                494,
+                402
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The adopted packaging thus plays a relevant role as the resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is also directly proportional to the damping coefficient  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". At the typical pressures (e.g., 1 mbar) and gaps (e.g., a few micrometers) that can be obtained using industrial technologies, the linear pressure regime applies: This means that the damping coefficient  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (related mainly to squeeze film damping between the central beams and the fixed electrodes) is in inverse relation with the operative pressure [25]. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                404,
+                494,
+                525
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Therefore, the possibility of lowering the value of the pressure inside the MEMS package turns out to be very important as a direct and effective means to lower the motional resistance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{\\mathrm{eq}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", relaxing the gain requirement of the readout electronics, which is advantageous in terms of power dissipation. The use of getter materials during the bonding between the MEMS and the cap wafers allows holding pressures in the MEMS chamber on the order of fractions of millibars. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                525,
+                494,
+                645
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Mechanical Nonlinearities "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                666,
+                274,
+                681
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Due to the start-up gain requirements, the oscillation amplitude in a circuit like the one shown in Fig. 3(c) rises up from noise until it equals the biasing values  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm V_{\\mathrm{DD}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the resonator input port. This is in contrast with the following: 1) the requirement (described at the beginning of this section) of having an ac amplitude much lower than the dc voltage value  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and 2) the need to avoid mechanical nonlinearities—as explained in previous works, a strong nonlinear behavior leads to a loss of sensitivity to the stress applied on the resonant beam and, thus, to the acceleration. As an example, the resonators of the accelerometer here studied undergo a nonlinear behavior, and thus a severe loss of sensitivity, for driving voltages  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "v_{a}(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as low as  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 60\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " [26]. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                689,
+                494,
+                883
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A way to limit the ac oscillation amplitude at the driving port of the resonator could be to clamp it between two fixed values, chosen within  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm V_{\\mathrm{DD}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The simplest (and lowest power) approach could be the use of a pair of comparators biased at the needed partitioning of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm V_{\\mathrm{DD}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". However, this approach is still "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                885,
+                494,
+                960
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/54f1310ab6c9c33ffbc339a79a1b584927fc16721e15f83ee1b284b6d1e37228.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 4. Simulation of the transfer function of a TIA with the first pole (solid line) at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3\\mathrm{MHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and (dashed line) at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "300\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", in the presence of a feedthrough capacitance of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5\\mathrm{fF}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The resonant peak of the device is assumed at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "81\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                84,
+                934,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "unsatisfactory, as the comparator requires itself at least some hundreds of millivolts for a proper operation. Hence, a different limiting technique that clamps or controls the actuation voltage to a value that preserves the linearity of the resonator is needed. A simplified example here proposed is given in Fig. 3(e), which is a good compromise between Fig. 3(c) and (d). Here, the ac amplitude is first clamped between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm V_{\\mathrm{DD}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (i.e., digitized) and then drastically reduced to the required value through a 1-b digital-to-analog converter (DAC). "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                395,
+                937,
+                531
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In general, the need for amplitude-limiting circuits to limit and/or stabilize the oscillation amplitude represents an unavoidable source of power dissipation. The approach in Fig. 3(e) is a simple strategy here proposed to accomplish the limiting requirements without the typically large power dissipation of AGC-based circuits. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                531,
+                937,
+                621
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "C. Effects of Parasitic Capacitances "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                508,
+                638,
+                760,
+                654
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It is known that the ideal electrical model of the MEMS resonator shown in Fig. 3(b) should include nonideal parasitic elements, the most important among which is a parasitic feedthrough capacitance  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{\\mathrm{ft}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " directly coupling the sensing and driving ports [28]. There are several sources that contribute to the value of the feedthrough capacitance: the resonator geometry, the interconnections and pads on the MEMS die, the connections from it to the ASIC through bonding wires, etc. The analysis of the transfer function (modulus and phase) of the resonator model, coupled to a simulated TIA model, shows that the presence of the feedthrough capacitance significantly changes the modulus and the phase behavior, adding a positive slope (+20 dB/decade) and an antiresonance peak as shown in Fig. 4. The figure sketches two situations where the value of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_{\\mathrm{ft}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has been assumed equal to 5 fF, and two different positions of the first pole of the stage are simulated. In particular, the solid curve remarks that a second point can exist, at a higher frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0'"
+                    },
+                    {
+                        "type": "text",
+                        "content": " with respect to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where the phase transfer is the same as that at resonance (i.e.,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0^\\circ"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") and the gain is larger than one at the start-up; therefore, a second spurious resonance "
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                657,
+                937,
+                960
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "570 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                44,
+                90,
+                55
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS, VOL. 61, NO. 1, JANUARY 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                454,
+                42,
+                937,
+                55
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                960,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/021d297390a95f09533d2b553e5ef0f081bfa2b9dcb69e0b677e5e27eea2a7fd.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 5. Block scheme view of the designed integrated oscillator. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                62,
+                84,
+                479,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "frequency can arise in the oscillator. This frequency is not sensitive to the acceleration, and its oscillation should be avoided. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                277,
+                484,
+                306
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A method to prevent the oscillation start-up at the spurious frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0'"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is to decrease the transfer function modulus at this frequency to values lower than one, through filtering. In the example in Fig. 4 (dashed curves), this is obtained simply by adding a feedback capacitance in the TIA stage. Care should be taken in choosing the position of the low-pass pole as, often, there is less than an order of magnitude between  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0'"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                308,
+                486,
+                414
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. IMPLEMENTATION OF THE CIRCUIT AND EXPERIMENTAL RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                109,
+                433,
+                432,
+                462
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The considerations given in the previous section will be taken into account during the description of the implemented VLSI TIA readout stage. The oscillating loop is based on a transimpedance topology, with a \"hard limiter\" limiting technique to clamp the amplitude of the oscillator based on the simplified scheme in Fig. 3(e). The whole system that holds a single MEMS resonator in oscillation is shown in Fig. 5. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                467,
+                486,
+                571
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first stage is a TIA that converts the motional current  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "i(t)"
+                    },
+                    {
+                        "type": "text",
+                        "content": " into a voltage through the feedback resistor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The second stage is a noninverting amplifier with a gain  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{1} / R_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The third one is a comparator built through a cascade of three inverters (with a threshold voltage carefully tuned to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") to clamp the signal to the voltage supplies. Finally, the last stage is a 1-b DAC that selects the output voltage through switches. The circuit is implemented in the LFoundry GmbH 150-nm standard CMOS technology, with supplies of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{\\mathrm{DD}} = \\pm 0.9\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                574,
+                486,
+                709
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Integrated Circuit Description "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                55,
+                729,
+                289,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The transimpedance is formed by a differential single-stage operational transconductance amplifier, whose transistor-level view is shown in Fig. 6(a). The current consumption of the amplifier is limited to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4.8\\mu \\mathrm{A}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a value that, together with the chosen  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "W / L"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", guarantees a high repeatability from part to part. In order to guarantee a large gain and to limit the area occupation on the die, the feedback resistor  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "R_{f}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is implemented through two MOSFETs operated in the ohmic region, whose resistance can be calibrated in the design phase by setting the gate control voltage close to the subthreshold region. The use of a pair of FETs (one n-channel and one p-channel) allows maintaining an almost constant value of the resistance across the whole oscillation period, without implementing a more complex T-network or a feedback on the gate voltages [17]. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                750,
+                486,
+                960
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/666da2ae65b8f567ba1aa35829fbb186cff6458a841bba3152105764134ace39.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                506,
+                85,
+                713,
+                280
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/9cfb3740cefa726d0c9264d27c90da276541c77108cc51dbe11721cb2a34bdc2.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 6. (a) Transistor-level schematic of the operational amplifier used for the first stage and (b) detail of the TIA with the PMOS+NMOS feedback resistance. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                723,
+                97,
+                925,
+                271
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "On the feedback loop of the TIA, a 200-fF capacitance is added to cut off the bandwidth at about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "320\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (for a feedback resistance of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2.5\\mathrm{M}\\Omega"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), in this way avoiding the dangerous condition of having a second point of oscillation. The second gain stage is added to increase the signal amplitude at the input of the comparator chain, so to minimize the power consumption of the comparators themselves. This comes at the cost of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10.8\\mu \\mathrm{A}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of current consumption for the biasing of the second operational amplifier. The use of a noninverting amplifier for this stage is motivated by the fact that node C in Fig. 5 is extremely sensitive to capacitive loads, since these would directly affect the bandwidth. In the chosen configuration, this capacitance is reduced to a single gate. Such a non-offset-compensated configuration is allowed by the low offset voltage obtained at the output of the first stage, which would otherwise cause a non- "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "50\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " -duty-cycle square wave at the input of the comparators. "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                340,
+                929,
+                582
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The comparator chain clamps the input signal to the biasing voltages with a nominal root-mean-square crossbar current consumption of approximately  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "10\\mu \\mathrm{A}_{\\mathrm{rms}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", occurring when the transistors of the first comparator are both in the ON state (for the following comparators, the power consumption is negligible). "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                583,
+                927,
+                657
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This digital output is used to alternately select the driving voltage of the resonator between two fixed voltage values  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(+45"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-45\\mathrm{mV})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " by means of suitable switches. As these switches also add a  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "180^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " phase shift, an overall  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "360^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " phase shift is obtained on the whole oscillator loop. Finally, a buffer amplifier (with a biasing current of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4.4\\mu \\mathrm{A}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") is added at the output of the DAC to drive the resonator with a low impedance, thus avoiding  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Q"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-loading effects. "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                657,
+                927,
+                779
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The circuit loop gain is designed in such a way that the oscillation can be sustained with a quality factor even twice lower than what is expected. This is a safe strategy with respect to temperature changes: indeed, their main effect is a change in the package pressure and in the thermal Brownian motion of gas molecules, which, in turn, results in quality factor variations. At the typical packaging pressures of consumer applications, the relationship between the quality factor and the temperature can be described by a square-root law (see, e.g., [27]). The safe design mentioned earlier should guarantee the correct operation of the oscillating loop across the temperature range of consumer applications  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(-40^{\\circ}\\mathrm{C} - 85^{\\circ}\\mathrm{C})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The oscillator turn-on time (or "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                779,
+                929,
+                959
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "LANGFELDER et al.: DESIGN CRITERIA OF LOW-POWER OSCILLATORS FOR MEMS RESONANT SENSORS "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                44,
+                659,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "571 "
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                45,
+                927,
+                54
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                960,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5f9866e0b3380b20ef2e5d7b8213b4e2074f423d080b93575dcb870a8eb439bf.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                70,
+                84,
+                491,
+                279
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/47926589055d2589967a5bc1c9b87be74552ed9c5057eb14daad2a79cb2ac098.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 7. Measured waveforms at the output of the comparator chain and after the amplitude reduction stage (DAC), for two resonators of the same MEMS accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                70,
+                295,
+                489,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "start-up time) may be influenced, but this is not an issue as the circuit is designed to operate in continuous mode. An overall nominal current consumption of about  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "30\\mu \\mathrm{A}_{\\mathrm{rms}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " per resonator, plus  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4\\mu \\mathrm{A}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for the biasing networks, turns into an overall power dissipation of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "115~\\mu \\mathrm{W}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " at the used supply of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 0.9\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                565,
+                496,
+                642
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Experimental Results "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                666,
+                239,
+                681
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The fabricated circuit die has been glued on top of the MEMS resonant accelerometer, and the two have been connected by means of metallic wire bonding. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                688,
+                494,
+                733
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 7 reports, for both resonators, the voltage signals at the output of the comparator chain and after the 1-b DAC, showing a good clamping between the supplies and a stable reduction of the amplitude to the desired values of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 45\\mathrm{mV}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The resonators are, in this way, driven close to but below their mechanical nonlinear behavior. The two resonators of the tested accelerometer present resonant frequencies of 80.11 and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "76.48\\mathrm{kHz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively, when the suspended mass is biased at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "V_{p} = 8\\mathrm{V}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                734,
+                494,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To calibrate the device sensitivity to accelerations, the resonant frequency was then evaluated at accelerations of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (simply by carefully tilting the device by  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm 90^{\\circ}"
+                    },
+                    {
+                        "type": "text",
+                        "content": "), acquiring the square wave at the comparator output through a Lecroy 6100A digital oscilloscope. The measured variation for different values of external acceleration turns into sensitivities of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-121"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                869,
+                494,
+                959
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0d885e9934db4a2f901c3a2ab57378343e663eae8f2bb4f926cb295f761d59a8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                516,
+                85,
+                720,
+                263
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/7bebe4137ac058b0863fad6b11beef5bd6d6d545eaa23986698381268bff5d64.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                722,
+                85,
+                934,
+                263
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0635445fe540f4315ca95b554b781c5c5f315b84587642979b4e4f175726ad53.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 8. (a) and (b) Experimental sensitivity of the two resonators and (c) differential sensitivity. The inset shows the percentage linearity error (for accelerations close to zero, i.e., for very small output signals, the points were omitted as noise exceeds the nonlinearity). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                281,
+                924,
+                482
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "119\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for the two resonators, which leads to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "240\\mathrm{Hz / g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for a differential sensing. The difference in the single-ended sensitivities is due to the difference in the resonance frequency caused by process tolerance. To measure the device response under accelerations larger than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the self-test electrostatic actuator was used (see Fig. 1). The equivalent acceleration forced by this system is obtained by cross-checking the theoretical force applied by the parallel plate and the sensitivity measured previously. This allows correcting possible errors caused by under-/overetches with respect to the nominal design. Fig. 8 summarizes the obtained results, reporting the experimental response of each resonator between 0 and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of equivalent acceleration, and the overall differential measurement. Due to pull-in phenomena occurring between the self-test plate and the inertial mass, it was not possible to extend further the measurement interval. Comparing the obtained data with the best linear fitting across  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "8\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the percentage linearity error is calculated. This turns to be below  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\%"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of the full-scale range for almost the whole measured interval, as expected from the theoretical values presented in Section II. "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                566,
+                937,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9 shows the measured Allan deviation for each resonator. The system equivalent white noise density can be found in the following way: Assuming an operating bandwidth of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the Allan deviation graph (Fig. 9) gives a resolution of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.19\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " for a single resonator, corresponding to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0.00158\\mathrm{g}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of acceleration. In terms of the equivalent white noise power "
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                869,
+                937,
+                960
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "572 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                44,
+                90,
+                55
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS, VOL. 61, NO. 1, JANUARY 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                454,
+                42,
+                937,
+                55
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                960,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d0d95e284a209fed79d52ce04f97e8cb7375878b27035dd17601f7579213a4ee.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 9. Allan deviation measured for the two oscillators connected to the resonant beams of the accelerometer. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                60,
+                85,
+                481,
+                311
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/0c00b47f34db730f69fd5fa9d64d95085f59139de4527f91b502818963d6b965.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE II COMPARISON WITH A COMMERCIAL ACCELEROMETER "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>Accelerometer</td><td>Linear Range [g]</td><td>Noise Density [μg/√Hz]</td><td>Power per axis [μW]</td></tr><tr><td>He et al. [24]</td><td>±20</td><td>20</td><td>23000</td></tr><tr><td>Sun et al. [29]</td><td>±11.5</td><td>40</td><td>1000</td></tr><tr><td>Lajevardi et al. [30]</td><td>±9</td><td>220</td><td>3100</td></tr><tr><td>Present Work</td><td>±8</td><td>111</td><td>115</td></tr><tr><td>LIS331DLH [8]</td><td>±2/ ± 8</td><td>218</td><td>218</td></tr><tr><td>ADXL103 [31]</td><td>±2/ ± 18</td><td>110</td><td>1150</td></tr><tr><td>LIS352AR [32]</td><td>±2</td><td>100</td><td>330</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                63,
+                375,
+                479,
+                508
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "spectral density, this turns into  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "158~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". For the full differential configuration, the signal is doubled while the noise is summed up quadratically: As a consequence, the expected equivalent acceleration noise is decreased by a factor of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\sqrt{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and turns into  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "111~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". When filtering at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "100\\mathrm{Hz}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (which corresponds approximately to one order of magnitude below the resonance frequency of the inertial mass), the minimum detectable signal turns out to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1.11\\mathrm{mg}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". From the same measurement and considering the effect of the differential readout, a bias stability of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "233~\\mu \\mathrm{g}_{\\mathrm{rms}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " of measurable acceleration is obtained at  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0.1\\mathrm{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". All these data can be considered from a system-level point of view, assuming that the following stages (frequency to voltage and digitalization) introduce negligible noise and power consumption. Long-term bias instability (random walk) on the single resonator may be affected, e.g., by temperature drifts, which, in principle, should be compensated in the final differential readout implementation. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                520,
+                484,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The obtained results are quite competitive with respect to those of state-of-the-art consumer devices (see Table II), showing that resonant sensing has the theoretical potentiality to grow alongside capacitive sensing, particularly for new processes or applications where this approach becomes significantly advantageous in terms of device area occupation. "
+                    }
+                ]
+            },
+            "bbox": [
+                55,
+                777,
+                486,
+                869
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "V. CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                208,
+                892,
+                333,
+                906
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper has presented the most relevant constraints and the design flow of readout circuits for MEMS resonant sensors suitable for consumer applications. The results obtained in the "
+                    }
+                ]
+            },
+            "bbox": [
+                57,
+                915,
+                486,
+                960
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "paradigmatic case here studied, a microaccelerometer coupled to a transimpedance readout stage, show competitive performance in terms of resolution, linearity, and power dissipation with respect to the widespread capacitive sensing scheme. "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                84,
+                927,
+                145
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The circuit was specifically designed for the device under test, i.e., its dimensioning was based on the following: 1) its electrical oscillator model; 2) the expected feedthrough capacitance; and 3) the nonlinear behavior of the specific resonator. Some tolerance was used as some parameters may vary from what is expected (mainly the feedthrough capacitance). "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                145,
+                929,
+                234
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When dealing with different devices, most of the theoretical considerations still apply, and therefore, in principle, the same circuit implementation can be used for devices resonating in a similar frequency range and with a similar equivalent resistance. "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                234,
+                930,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Further research will focus on the development of circuit topologies with minimum number of transistors, like the Pierce or Colpitts oscillators, to further lower power dissipation. "
+                    }
+                ]
+            },
+            "bbox": [
+                500,
+                311,
+                930,
+                357
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                664,
+                385,
+                764,
+                398
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] LSM330DLC, 3D Accelerometer + 3D Gyroscope Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2011. [Online]. Available: http://www.st.com "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] INEMO-M1, iNemo System-on-Board Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2012. [Online]. Available: http://www.st.com "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] C. M. N. Brigante, N. Abbate, A. Basile, A. C. Faulisi, and S. Sessa, \"Towards miniaturization of a MEMS-based wearable motion capture system,\" IEEE Trans. Ind. Electron., vol. 58, no. 8, pp. 3234-3241, Aug. 2011. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] M. Lemkin and B. E. Boser, \"A three-axis accelerometer with a CMOS position-sense interface and digital offset-trim electronics,\" IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 456-468, Apr. 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] R. N. Dean and A. Luque, \"Applications of microelectromechanical systems in industrial processes and services,\" IEEE Trans. Ind. Electron., vol. 56, no. 4, pp. 913-925, Apr. 2009. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] R. N. Dean, S. T. Castro, G. T. Flowers, G. Roth, A. Ahmed, A. ScottEdward Hodel, B. E. Grantham, D. A. Bittle, and J. P. Brunsch, \"A characterization of the performance of a MEMS gyroscope in acoustically harsh environments,\" IEEE Trans. Ind. Electron., vol. 58, no. 7, pp. 2591-2596, Jul. 2011. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] C. W. Tsai, K. Chen, C. K. Shen, and J. Tsai, “A MEMS doubly decoupled gyroscope with wide driving frequency range,” IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4921–4929, Dec. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] G. Langfelder, C. Buffa, A. Frangi, A. Tocchio, E. Lasalandra, and A. Longoni, “Z-axis magnetometers for MEMS inertial measurement units using an industrial process,” IEEE Trans. Ind. Electron., vol. 60, no. 9, pp. 3983–3990, Sep. 2013. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] M. Li, V. T. Rouf, M. J. Thompson, and D. A. Horsley, \"Three-axis Lorentz-force magnetic sensor for electronic compass applications,\" J. Microelectromech. Syst., vol. 21, no. 4, pp. 1002-1010, Aug. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] LIS331DLH, STMicroelectronics, Geneva, Switzerland, 3D Accelerometer Technical Datasheet, 2009. [Online]. Available: http://www.st.com "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] C. C. Della Santina, “A device to restore balance,” Sci. Amer., vol. 302, pp. 68–71, 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] A. A. Seshia, M. Palaniapan, T. A. Roessig, R. T. Howe, R. W. Gooch, T. R. Schimert, and S. Montague, \"A vacuum packaged surface micromachined resonant accelerometer,\" J. Microelectromech. Syst., vol. 11, no. 6, pp. 784-793, Dec. 2002. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] C. Comi, A. Corigliano, G. Langfelder, G. Longoni, A. Tocchio, and B. Simoni, \"A resonant microaccelerometer with high sensitivity operating in an oscillating circuit,\" J. Microelectromech. Syst., vol. 19, no. 5, pp. 1140-1152, Oct. 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] G. Vigevani, F. T. Goericke, A. P. Pisano, I. I. Izyumin, and B. E. Boser, \"Microleverage DETF aluminum nitride resonating accelerometer,\" in Proc. IEEE IFCS, May 21-24, 2012, pp. 1-4. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] S. A. Zotov, A. A. Trusov, and A. M. Shkel, \"High-range angular rate sensor based on mechanical frequency modulation,\" J. Microelectromech. Syst., vol. 21, no. 2, pp. 398-405, Apr. 2012. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                402,
+                929,
+                959
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "LANGFELDER et al.: DESIGN CRITERIA OF LOW-POWER OSCILLATORS FOR MEMS RESONANT SENSORS "
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                42,
+                661,
+                55
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "573 "
+                    }
+                ]
+            },
+            "bbox": [
+                907,
+                44,
+                927,
+                54
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                962,
+                900,
+                974
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] B. Bahreyni and C. Shafai, \"A resonant micromachined magnetic field sensor,\" IEEE Sensors J., vol. 7, no. 9, pp. 1326-1334, Sep. 2007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[17] A. Sharma, M. F. Zaman, and F. Ayazi, \"A 104-dB dynamic range transimpedance-based CMOS ASIC for tuning fork microgyroscopes,\" IEEE J. Solid-State Circuits, vol. 42, no. 8, pp. 1790-1802, Aug. 2007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[18] V. Kaajakari, T. Mattila, A. Oja, and H. Sepp, \"Nonlinear limits for single-crystal silicon microresonators,\" IEEE J. Microelectromech. Syst., vol. 13, no. 5, pp. 715-724, Oct. 2004. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[19] M. Pastre, M. Kayal, H. Schmid, P. Zwahlen, D. Yufeng, and A. M. Nguyen, \"A navigation-grade MEMS accelerometer based on a versatile front end,\" in Proc. 37th IEEE IECON, Nov. 7-10, 2011, pp. 4038-4043. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[20] C. Comi, “On geometrical effects in micro-resonators,” Latin Amer. J. Solids Struct., vol. 6, no. 1, pp. 73–87, Mar. 2009. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[21] C. T.-C. Nguyen and R. T. Howe, \"An integrated CMOS micromechanical resonator high-Q oscillator,\" IEEE J. Solid-State Circuits, vol. 34, no. 4, pp. 440-455, Apr. 1999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[22] T. A. Roessig, R. T. Howe, A. P. Pisano, and J. H. Smith, \"Surface-micromachined resonant accelerometer,\" in Proc. TRANSDUCERS, Chicago, IL, USA, Jun. 16-19, 1997, vol. 2, pp. 859-862. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[23] G. N. Nielson and G. Barbastathis, \"Dynamic pull-in of parallel-plate and torsional electrostatic MEMS actuators,\" J. Microelectromech. Syst., vol. 15, no. 4, pp. 811-821, Aug. 2006. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[24] L. He, Y. P. Xu, and M. Palaniapan, \"A CMOS readout circuit for SOI resonant accelerometer with  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "4 - \\mu \\mathrm{g}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " bias stability and  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "20 - \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}"
+                            },
+                            {
+                                "type": "text",
+                                "content": " resolution,\" IEEE J. Solid-State Circuits, vol. 43, no. 6, pp. 1480-1490, Jun. 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[25] G. Langfelder, S. Dellea, F. Zaraga, D. Cucchi, and M. A. Urquia, \"The dependence of fatigue in microelectromechanical systems from the environment and the industrial packaging,\" IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4938-4948, Dec. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[26] A. Tocchio, A. Caspani, and G. Langfelder, \"Mechanical and electronic amplitude-limiting techniques in a MEMS resonant accelerometer,\" IEEE Sensors J., vol. 12, no. 6, pp. 1719-1725, Jun. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[27] B. Kim, M. A. Hopcroft, R. N. Candler, C. M. Jha, M. Agarwal, R. Melamud, S. A. Chandorkar, G. Yama, and T. W. Kenny, \"Temperature dependence of quality factor in MEMS resonators,\" J. Microelectromech. Syst., vol. 17, no. 3, pp. 755-766, Jun. 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[28] Y. Xu and J. Lee, \"Single-device and on-chip feedthrough cancellation for hybrid MEMS resonators,\" IEEE Trans. Ind. Electron., vol. 59, no. 12, pp. 4930-4937, Dec. 2012. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[29] H. Sun, D. Fang, K. Jia, F. Maarouf, H. Qu, and H. Xie, \"A low-power low-noise dual-chopper amplifier for capacitive CMOS-MEMS accelerometers,\" IEEE Sensors J., vol. 11, no. 4, pp. 925-933, Apr. 2011. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[30] P. Lajevardi, V. Petkov, and B. Murmann, \"A  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\Delta \\Sigma"
+                            },
+                            {
+                                "type": "text",
+                                "content": " interface for MEMS accelerometers using electrostatic spring-constant modulation for cancellation of bondwire capacitance drift,\" in Proc. IEEE Int. Solid-State Circuits Conf., 2012, pp. 196-198. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[31] ADXL103, Single-Axis Accelerometer Datasheet, Analog Devices, Norwood, MA, USA, 2011. [Online]. Available: http://www.analog.com "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[32] LIS352AR, MEMS Motion Sensor: 3-Axis  "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\pm 2g"
+                            },
+                            {
+                                "type": "text",
+                                "content": " Analog-Output Piccolo Accelerometer Technical Datasheet, STMicroelectronics, Geneva, Switzerland, 2010. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                85,
+                494,
+                688
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6f255ef8fec8fb9d23ee19a5ae8a31f8101f2ceddea83614c48eaf7951bd3b6a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                88,
+                636,
+                204
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Giacomo Langfelder received the Ph.D. degree in information technology from the Politecnico di Milano, Milan, Italy, in 2009. "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                85,
+                937,
+                121
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "He is currently an Assistant Professor with the Department of Electronics, Information and Bioengineering, Politecnico di Milano. He conducts research on radiation detectors and microelectromechanical devices. He is a coinventor of some patents on a newly developed imaging detector and on new methods for white balancing and image processing. He is the author of about 50 publications in refereed "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                121,
+                937,
+                212
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "international scientific journals and conference proceedings. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                212,
+                836,
+                223
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dr. Langfelder was the recipient of the Premio di Laurea Accenture in 2005 and the Premio per la Promozione Della Ricerca Scientifica in 2011 granted by Rotary International—Distretto 2040. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                223,
+                937,
+                257
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5f0acebbbe8dfb9dacb78c75d6f2ac7af6ebb1a3f4bcfac2cc0f7d087be3bc56.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                330,
+                636,
+                449
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Alessandro Caspani received the B.S. and M.S. degrees in electronic engineering from the Politecnico di Milano, Milan, Italy, in 2009 and 2011, respectively, where he is currently working toward the Ph.D. degree in information technology. "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                330,
+                937,
+                388
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "His research interests include microelectromechanical systems, particularly magnetometers, ultrasound transducers, and related low-noise integrated circuit design. He is the author of a number of publications in refereed journals and international conference proceedings in the field. "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                388,
+                937,
+                455
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/39c00b621ff77dfa924909957107515635c336fcfd5c2dc0006ed7f4b37038fe.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                511,
+                531,
+                636,
+                647
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Alessandro Tocchio received the B.S., M.S., and Ph.D. degrees from the Politecnico di Milano, Milan, Italy, in 2006, 2008, and 2012, respectively. His M.S. thesis was entitled Wafer-level packaging of an optical gas sensor, and it was carried out at the Microsystem Technology Group, Royal Institute of Technology, Stockholm, Sweden. "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                529,
+                937,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In July 2012, he moved to STMicroelectronics, Cornaredo, Italy, where he is currently a Senior Microelectromechanical Systems Designer. He is the author of about 15 refereed scientific publications. "
+                    }
+                ]
+            },
+            "bbox": [
+                649,
+                609,
+                937,
+                654
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "His recent research interests include the design and fabrication of novel microelectromechanical sensors and the development of related readout electronics with special focus on low-power low-noise integrated circuit topologies. "
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                654,
+                937,
+                689
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "574 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                45,
+                90,
+                55
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS, VOL. 61, NO. 1, JANUARY 2014 "
+                    }
+                ]
+            },
+            "bbox": [
+                454,
+                44,
+                937,
+                55
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Authorized licensed use limited to: KU Leuven University Library. Downloaded on January 19,2026 at 18:02:05 UTC from IEEE Xplore. Restrictions apply. "
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                962,
+                900,
+                974
+            ]
+        }
+    ]
+]

@@ -1,0 +1,1577 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Folded Silicon Resonant Accelerometer with Temperature Compensation "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                137,
+                66,
+                859,
+                114
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Lin He, Yong-Ping Xu, and Anping Qiu* "
+                    }
+                ]
+            },
+            "bbox": [
+                312,
+                121,
+                683,
+                138
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Dept of Electrical & Computer Engineering, National University of Singapore, "
+                    }
+                ]
+            },
+            "bbox": [
+                235,
+                140,
+                759,
+                154
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4 Engineering Dr 3, Singapore 117576. Email: g0202660@nus.edu.sg and elexuyp@nus.edu.sg "
+                    }
+                ]
+            },
+            "bbox": [
+                181,
+                155,
+                815,
+                169
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "*Dept of Instrument Science & Engineering, Southeast University, Nanjing, P.R.China "
+                    }
+                ]
+            },
+            "bbox": [
+                210,
+                169,
+                785,
+                184
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Email: qiuap@seu.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                411,
+                185,
+                584,
+                199
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                213,
+                156,
+                226
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, a novel folded silicon resonant accelerometer is proposed. The proposed structure is able to release the stress arising from the mismatch of thermal expansion between silicon structure and glass substrate and to compensate the variation of the natural frequency with temperature. The analysis has shown that both bias and scale factor stability can be improved with the proposed structure. The concept is verified by the simulation and the results show that the temperature dependence of common-mode output frequency can be greatly reduced. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                228,
+                482,
+                377
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                386,
+                168,
+                400
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Silicon accelerometer, resonant accelerometer, temperature compensation, MEMS, resonator. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                401,
+                482,
+                431
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "INTRODUCTION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                441,
+                215,
+                455
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The micromachined silicon accelerometers can be divided into two categories. One converts the acceleration into quasi-DC quantities, such as capacitance and resistance[1], while the other, such as resonant type silicon accelerometer, translates the acceleration into a change of the resonant frequency of mechanical resonators[2]. As both are based on the mechanical structures, they are inevitably subject to the effect of temperature, which characterized by the bias and scale factor stability. In some applications, such as the inertial navigation system (INS), the requirements for the above two parameters are very stringent and must be carefully considered in the design of accelerometers. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                455,
+                482,
+                633
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This paper concerns about the design of the silicon resonant accelerometer that is based on a Dissolved Wafer Process [3] which combines boron etch stop with dry reactive ion etch (DRIE) to form the required micro mechanical structure. Its simplicity and ability to achieve high aspect ratio is ideal for silicon inertia sensors. However, one step of this process involves the bonding of the silicon structure to a glass substrate at approximately  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\sim 500^{\\circ}\\mathrm{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Since the glass has larger thermal expansion coefficient than that of silicon, it introduces compressive stress when the device is cooled down to room temperature. The resulting stress can be very large and causes the structure to crack if the accelerometer is badly designed. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                633,
+                482,
+                825
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A silicon resonant accelerometer usually contains two resonators that are placed to have differential load. When the device is under acceleration, one of the resonator increases its natural frequency while the other decreases. This differential design implies that common-mode error sources from "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                825,
+                482,
+                898
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "measurement are cancelled to the first order. However, the extent of cancellation is limited by the mismatch between them and an offset or bias is introduced. In some cases, it is desirable that both offset and scale factor to be as stable as possible. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                213,
+                913,
+                286
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We present a novel folded structure for silicon resonant accelerometer that allows the residue stress to be released through the rotation of the proof mass. This structure also exhibits good bias and scale factor stabilities over wide temperature range. "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                287,
+                913,
+                362
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "PRINCIPLE "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                372,
+                609,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Assuming a small vibration amplitude, the effective stiffness of a fixed-fixed beam is given by[4]: "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                387,
+                911,
+                417
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K _ {\\text {e f f}} = \\frac {E I}{L ^ {3}} \\int_ {0} ^ {1} \\left(\\frac {d ^ {2} \\phi_ {i}}{d \\varepsilon^ {2}}\\right) ^ {2} d \\varepsilon + \\frac {F}{L} \\int_ {0} ^ {1} \\left(\\frac {d \\phi_ {i}}{d \\varepsilon}\\right) ^ {2} d \\varepsilon \\tag {1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/c9e1fb9a9dfc2345397a5157c5c341ad40b28efab9e84c7dea96da20fad78bc4.jpg"
+                }
+            },
+            "bbox": [
+                599,
+                421,
+                911,
+                454
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{E}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is Young's modulus,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{I}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is beam inertia,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{L}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is beam length,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{F}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the force acting on the beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi_{i}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the normalized vibration shape of a specific vibration mode, and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varepsilon"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the normalized location on the beam. For simplicity, "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                459,
+                913,
+                522
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K _ {\\text {e f f}} = C _ {1} \\frac {E I}{L ^ {3}} + C _ {2} \\frac {F}{L} \\tag {2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a7b5a821db83f0b00c8126b1cb8e7be34bba5030f63bfc172f190d67c9ce11e7.jpg"
+                }
+            },
+            "bbox": [
+                647,
+                525,
+                911,
+                558
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are defined as follows: "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                561,
+                782,
+                575
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "C _ {1} = \\int_ {0} ^ {1} \\left(\\frac {d ^ {2} \\phi_ {i}}{d \\varepsilon^ {2}}\\right) ^ {2} d \\varepsilon \\quad C _ {2} = \\int_ {0} ^ {1} \\left(\\frac {d \\phi_ {i}}{d \\varepsilon}\\right) ^ {2} d \\varepsilon",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/96c73d903e24ddfcf7614c8205222dc9c3b5429277f59e16fa2c6e37d6167186.jpg"
+                }
+            },
+            "bbox": [
+                589,
+                580,
+                836,
+                616
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For a given vibration mode, both  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are constant[4]. Note that Young's modulus E, beam length L and beam inertia I are temperature dependent. As a result, for the fixed-fixed beam resonator that is free of any load, its stiffness at temperature T is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                623,
+                911,
+                698
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K _ {0} (T) = C _ {1} \\frac {E (T) I (T)}{L (T) ^ {3}} = \\frac {C _ {1} E (T) w (T) ^ {3} h (T)}{1 2 L (T) ^ {3}} = \\frac {C _ {1} w \\left(T _ {0}\\right) ^ {3}}{1 2 L \\left(T _ {0}\\right) ^ {3}} E (T) h (T) \\tag {3}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/74042389a2ba3b10ebeace5389d905f8bfc088df21aa09b010a37d717319cb43.jpg"
+                }
+            },
+            "bbox": [
+                521,
+                700,
+                911,
+                750
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "w"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the width of resonant beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "h"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the thickness,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "T_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is ambient temperature, and isotropic temperature dependence of the beam dimension is assumed, that is, "
+                    }
+                ]
+            },
+            "bbox": [
+                511,
+                753,
+                913,
+                797
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {w (T) ^ {3}}{L (T) ^ {3}} \\equiv \\frac {w \\left(T _ {0}\\right) ^ {3}}{L \\left(T _ {0}\\right) ^ {3}} \\tag {4}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ecfee49f78e46fd5eec82f7c21d6304a0027d210ad322c289174108e3c4a8c8e.jpg"
+                }
+            },
+            "bbox": [
+                671,
+                801,
+                911,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "since "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                843,
+                555,
+                854
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial w}{w _ {0} \\partial T} \\equiv \\frac {\\partial L}{L _ {0} \\partial T} \\equiv \\frac {\\partial h}{h _ {0} \\partial T} \\tag {5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2e65b03152e1e7c0868b8b54800c3405b53784a55b8fc04f44b30c01e0e86d61.jpg"
+                }
+            },
+            "bbox": [
+                660,
+                859,
+                911,
+                896
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Thus, the temperature dependence of the stiffness can be expressed as "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                66,
+                482,
+                97
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial K _ {0} (T)}{K _ {0} \\left(T _ {0}\\right) \\partial T} = \\frac {\\partial E}{E \\left(T _ {0}\\right) \\partial T} + \\frac {\\partial h}{h \\left(T _ {0}\\right) \\partial T} \\approx \\frac {\\partial E}{E \\left(T _ {0}\\right) \\partial T} \\tag {6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1b1d016592493de3823d372b298ed09931f1be1d61ca0cc4ee400a08c2646931.jpg"
+                }
+            },
+            "bbox": [
+                163,
+                99,
+                480,
+                136
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For single crystal silicon,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial h / h(T_0)\\partial T"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (typically, 2.6ppm) is much smaller than  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\partial E / E(T_0)\\partial T"
+                    },
+                    {
+                        "type": "text",
+                        "content": " (typically, -50ppm) and thus can be neglected. The stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{K}_0"
+                    },
+                    {
+                        "type": "text",
+                        "content": " has a negative temperature coefficient (TC). To compensate this temperature effect, a force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that is common to both resonators, but has a positive TC can be introduced. To facilitate the analysis, we define a common-mode effective stiffness  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{K_c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " as "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                138,
+                482,
+                252
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "K _ {c} = C _ {1} \\frac {E I}{L ^ {3}} + C _ {2} \\frac {F _ {c}}{L} \\tag {7}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/56a3616d39fd9e25d3ad0fe0b98425a3ad5cec5dfac4338dc74c4b5c50d66f84.jpg"
+                }
+            },
+            "bbox": [
+                207,
+                256,
+                480,
+                287
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "and hence "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                292,
+                153,
+                305
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\frac {\\partial K _ {c} (T)}{\\partial T} = \\frac {\\partial \\left[ K _ {0} (T) + C _ {2} \\frac {F _ {c} (T)}{L (T)} \\right]}{\\partial T} \\\\ = \\frac {\\partial K _ {0} (T)}{\\partial T} + C _ {2} \\frac {F _ {c} (T _ {0})}{L (T _ {0})} \\left[ \\frac {\\partial F _ {c} (T)}{F _ {c} (T _ {0}) \\partial T} - \\frac {\\partial L (T)}{L (T _ {0}) \\partial T} \\right] \\\\ \\approx K _ {0} (T) \\frac {\\partial E}{E \\left(T _ {0}\\right) \\partial T} + C _ {2} \\frac {1}{L \\left(T _ {0}\\right)} \\frac {\\partial F _ {c} (T)}{\\partial T} - \\frac {C _ {2} F _ {c} \\left(T _ {0}\\right) \\partial L (T)}{L \\left(T _ {0}\\right) ^ {2} \\partial T} \\tag {8} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/e4eef65c96ebeee474ba05c6ddd216e1d433314c803a4c8ab36ba372de07ff7f.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                309,
+                480,
+                444
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Setting (8) to zero, yield the condition for the effective stiffness to have zero TC "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                448,
+                482,
+                477
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\frac {\\partial F _ {c} (T)}{\\partial T} = - \\frac {K _ {0} (T) L \\left(T _ {0}\\right)}{C _ {2}} \\frac {\\partial E}{E \\left(T _ {0}\\right) \\partial T} + F _ {c} \\left(T _ {0}\\right) \\frac {\\partial L (T)}{L \\left(T _ {0}\\right) \\partial T} \\tag {9}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/58c3228b9bd2f72e561dd2cb9702ce2c8cd2ed52f5a579502a1938e881207f70.jpg"
+                }
+            },
+            "bbox": [
+                142,
+                479,
+                480,
+                517
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As indicated above, if such a common-mode force can be realized, the resonator's effective stiffness can be made independent of temperature. Consequently, the offset frequency, which is defined as the difference between two resonators' frequencies without acceleration load, is also temperature independent. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                520,
+                482,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Now we investigate the temperature stability of scale factor with the compensation method discussed above. Assuming that an acceleration load generates a pair of differential load  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pm F_{\\mathrm{d}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " to the temperature compensated resonators, their differential output is given by: "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                608,
+                482,
+                685
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{l} \\Delta f = \\left(\\frac {C _ {1} \\frac {E I}{L ^ {3}} + C _ {2} \\frac {F _ {c} + F _ {d}}{L}}{m}\\right) ^ {1 / 2} - \\left(\\frac {C _ {1} \\frac {E I}{L ^ {3}} + C _ {2} \\frac {F _ {c} - F _ {d}}{L}}{m}\\right) ^ {1 / 2} \\\\ = \\left(\\frac {K _ {c} + C _ {2} F _ {d} / L}{m}\\right) ^ {1 / 2} - \\left(\\frac {K _ {c} - C _ {2} F _ {d} / L}{m}\\right) ^ {1 / 2} \\\\ = \\left(\\frac {K _ {c}}{m}\\right) ^ {1 / 2} \\left[ \\left(1 + \\frac {C _ {2} F _ {d} / L}{K _ {c}}\\right) ^ {1 / 2} - \\left(1 - \\frac {C _ {2} F _ {d} / L}{K _ {c}}\\right) ^ {1 / 2} \\right] \\\\ \\approx \\left(\\frac {K _ {c}}{m}\\right) ^ {1 / 2} \\cdot \\frac {C _ {2} F _ {d} / L}{K _ {c}} \\\\ = f _ {c} \\frac {C _ {2} F _ {d} / L}{K _ {c}} \\tag {10} \\\\ \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/fa5af7c49ef5f2c7f662c516e5cdf143e0fef84948fd9c9a323a0e07d0c6aef5.jpg"
+                }
+            },
+            "bbox": [
+                109,
+                686,
+                457,
+                864
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3bedab0653a6959770b38187f2c5274c023b3ee1dc374bb964b1be0eb99d9370.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Proposed silicon resonant accelerometer with folded structure. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                522,
+                70,
+                906,
+                362
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{C}_2\\mathrm{F_d} / \\mathrm{L} \\ll \\mathrm{K_c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is assumed. As  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{F_d}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is almost temperature independent and the TC of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{L}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is much smaller than that of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{E}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the above expression indicates that TC of scale factor is closely related to the TC of  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " or common-mode frequency  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "f_{c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". If the common-mode frequency is temperature compensated, both the bias frequency (offset) and the scale factor will be stabilized accordingly. "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                404,
+                913,
+                508
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "The proposed folded resonant accelerometer "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                518,
+                870,
+                534
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The mismatch of thermal expansion between glass and silicon is utilized to realize the common-mode force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{C}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " that has the desired thermal sensitivity given by (9). As the silicon structure is bonded to the glass substrate via anchors, when temperature changes, due to the mismatch of thermal expansion between glass and silicon, the substrate forces the silicon structure to follow its expansion, and introduces a relative displacement that is common to both resonators. Hence a common-mode force  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "F_{c}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " associated with this displacement is generated. "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                534,
+                913,
+                681
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The proposed accelerometer with folded structure is shown in Fig.1. It has two resonators placed off the axis with one folded back. The resonator is connected to the proof mass through a leverage to amplify the force acting on it. The proof mass is supported by two pairs of suspension beam. "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                681,
+                913,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Assuming that the expansion of glass substrate is not affected by the silicon structure on top of it, for the proposed structure shown in Fig.1, the relative displacement is given by "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                756,
+                911,
+                815
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "d (T) = \\left(n X _ {1} - X _ {2}\\right) \\bullet \\left(\\alpha_ {g} - \\alpha_ {s}\\right) \\bullet \\left(T - T _ {b}\\right) \\tag {11}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d14817b64240a80ca472fb49172d74603356ea7d4eaeca550f2b862d9af8a312.jpg"
+                }
+            },
+            "bbox": [
+                580,
+                819,
+                911,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X_{1}, X_{2}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the distances between the anchors as shown in Fig.1,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha_{\\mathrm{g}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha_{\\mathrm{s}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are the thermal expansion coefficient of glass and silicon, respectively,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "T_{b}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the temperature "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                848,
+                913,
+                906
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3f324ed8eda3c05a00f0bd6849c424a69ca38b373a7f2e56e9e44edf5a7da59f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Equivalent model for the proposed accelerometer (only half side is shown, M is the proof mass). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                168,
+                79,
+                395,
+                381
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "under which the bonding process is done,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the force amplification ratio. Fig.2 is an equivalent model of the proposed accelerometer, where  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{L}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the bending stiffness of the leverage that is used for force amplification and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{S}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the bending stiffness of the suspension beam,  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is the proof mass. Taking into account the force amplification effect, the thermally induced force acting on the resonator is given by: "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                429,
+                482,
+                547
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "F _ {c} (T) = n F _ {L} (T) = \\frac {n K _ {s} K _ {L}}{K _ {L} + K _ {s}} d (T) \\tag {12}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/d6a144ef9f064bd9523d2f541c1c1672018cd93f779e6e05b23fe89faa3a0b22.jpg"
+                }
+            },
+            "bbox": [
+                183,
+                551,
+                480,
+                587
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "From (11) and (12), it is obvious that the desired temperature sensitivity can be achieved through adjusting  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(nX_{1} - X_{2})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K_{s}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ]
+            },
+            "bbox": [
+                83,
+                590,
+                482,
+                638
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "SIMULATION RESULTS "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                645,
+                272,
+                659
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The silicon structure is designed to be  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "20\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " thick and its overall size is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2\\times 2\\mathrm{mm}^2"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The suspension beam is  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6\\mu \\mathrm{m}\\times 450\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ".  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{X}_1"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm{X}_2"
+                    },
+                    {
+                        "type": "text",
+                        "content": " are  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "400\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " and  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "950\\mu \\mathrm{m}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", respectively. Force amplification ratio  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is set to be around 9. Finite Element analysis tool ANSYS is used for the simulation, with the values of material property taken from [3]. The frequency change as the function of acceleration input  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(T_0 = 27^{\\circ}\\mathrm{C})"
+                    },
+                    {
+                        "type": "text",
+                        "content": " is shown in Fig.3. Fig.4 is the output of resonant frequency versus temperature at zero acceleration input, which shows that the common-mode output frequency has a TC of -8ppm. Fig.5 is the distribution of residue stress at room temperature, in which the deformation is exaggerated for clear illustration. The SEM photo of the released device is given in Fig.6, which shows good stress releasing. "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                661,
+                482,
+                888
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/013b74cc79f951db1c6b64d130781f08b69c90fa46ab90ccf804640aa07f9da1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                542,
+                70,
+                879,
+                268
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4ac3649a6b98ad2890de1a3cc94fe639d38e4f44bc516fdb798f70ffb6603e34.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3. Simulated resonant freq output (Hz) versus input acceleration (g). "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Figure 4. simulated resonant frequency (Hz) versus temperature  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "(^{\\circ}\\mathrm{C})"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                542,
+                321,
+                880,
+                503
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d13a43507609bd35c34e1a1cabaed6f2148f40d22d61f0040c75fcbc5f92e66c.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5. Simulated residue stress at room temperature (exaggerated view). "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                540,
+                566,
+                887,
+                791
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/db2b2278dbe580f6e851a3e12fbd07225572b6fbabbb2b3ca18972c55cfe296b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6. SEM photo of the released accelerometer.. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                133,
+                65,
+                433,
+                266
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CONCLUSION "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                83,
+                305,
+                199,
+                319
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A novel folded structure is proposed for silicon resonant accelerometers based on the Dissolved Wafer Process. The structure uses the combination of the stress generated by the mismatch of the expansions between the silicon and glass substrate as a common-mode force, and the folded structure to compensate the temperature effect due to the Young's modulus. The folded structure also helps release the residue stress caused by the bonding process. Simulation has verified the proposed concept and shown that for a given condition, the temperature coefficient can be reduced to  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "-8\\mathrm{ppm}"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Thus, good temperature stability for both bias "
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                321,
+                483,
+                484
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "frequency and scale factor can be achieved. "
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                66,
+                805,
+                82
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGEMENT "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                93,
+                699,
+                107
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors would like to thank National University of Singapore for providing the scholarship and financial support under project R-263-000-289-112, and the  "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "13^{\\mathrm{th}}"
+                    },
+                    {
+                        "type": "text",
+                        "content": " Institute of Ministry of Information Industry, China, for fabrication of the accelerometer. "
+                    }
+                ]
+            },
+            "bbox": [
+                513,
+                108,
+                915,
+                183
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                514,
+                196,
+                632,
+                210
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] N.Yazdi, F.Ayazi, and K.Najafi, \"Micromechined Inertial Sensors\", Proc. of IEEE, Vol. 86, No. 8, pp.1640-1659, 1998. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] Helsel, M., et al., \"A navigation grade micromachined silicon accelerometer\", Proc. IEEE Position Location and Navigation Symp., Las Vegas, pp. 51-58, 1994. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] Y. Gianchandani and K. Najafi, “A bulk silicon dissolved wafer process for micro-electro-mechanical devices”, IEEE/ASME J. MEMS, Vol. 1, No. 2, pp. 77-85, 1992. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] Roessig, \"Integrated MEMS Tuning Fork Oscillators for Sensor Application,\" PhD Thesis, University of California, Berkeley, (1998). "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] Petersen, K.E., \"Silicon as a mechanical material\", Proc. IEEE. Vol. 70, No. 5, pp.420-457, 1982. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                212,
+                915,
+                450
+            ]
+        }
+    ]
+]
