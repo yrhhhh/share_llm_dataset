@@ -1,0 +1,226 @@
+[
+  {
+    "id": "doc_0",
+    "content": "To cite this article: C Comi et al 2016 J. Micromech. Microeng. 26 035006",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "- Investigation of electrode pitch on resonant and capacitive characteristics in X-cut   \\mathrm{LiNbO_3}  membrane-based laterally-excited bulk acoustic resonator Jie Zhou, Yuchen Fan, Xin Tong et al.\n- - Precise identification of   <100>  directions on Si(0 0 1) wafer using a novel self-alignment pre-etched technique  \nS S Singh, S Veerla, V Sharma et al.\n- - An automatic contour propagation method to follow parotid gland deformation during head-and-neck cancer tomotherapy  \nE Faggiano, C Fiorino, E Scalco et al.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The present work concerns the operating principle and a thorough experimental characterization of a new polysilicon resonant micro accelerometer for out-of-plane measurements, fabricated using an industrial surface micromachining technique. This device is characterized by differential resonant sensing, obtained from the variation of the electrostatic stiffness of two torsional resonators under the application of an external acceleration. The sensitivity, defined as the differential shift in resonance frequencies per gravity unit   (\\lg = 9.8\\mathrm{ms}^{-2}) , is of about   10\\mathrm{Hzg}^{-1}  when operated at a DC bias of   1.5\\mathrm{V}  only. Over an acceleration range larger than   10\\mathrm{g} , the deviation from linearity is lower than   1\\%  and the cross-axis rejection is larger than   34\\mathrm{dB} . The resonators temperature coefficients of frequency, in the order of   -29\\mathrm{ppm}^{\\circ}\\mathrm{C}^{-1} , are matched within about   0.1\\% , resulting in linear offset drifts against temperature lower than   5\\mathrm{mg}  up to   95^{\\circ}\\mathrm{C}  in absence of any digital compensation.\nKeywords: MEMS, resonant accelerometer, torsional resonators",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Micro-Electro-Mechanical Systems (MEMS) are nowadays largely used for inertial measurements in the consumer and automotive market. Many transduction principles are employed for their operation; among them, capacitive sensing is the most popular and consolidated one. For several kinds of MEMS (see e.g. [1, 2]), resonant sensing has recently been proposed as an alternative way to improve the long-term performance.\nAlso in the case of accelerometers, an alternative to capacitive sensing is represented by resonant micro-devices, which measure the external acceleration through the frequency variation of resonating elements. With respect to capacitive accelerometers, MEMS resonant accelerometers have the advantage of the direct frequency to digital conversion (see [3]).\nFurther, they show a large dynamic range [4] and they are void of 1/f noise issues related to operation without signal\nmodulation. Finally, for similar target performance, the overall area can be smaller than in capacitive solutions [5] where most of the space is usually occupied by parallel-plate stators. One critical issue of resonant accelerometers, often neglected in the literature, is the simultaneous need for a relatively large quality (Q) factor (e.g. several hundred) of the resonating elements, and a small Q factor of the proof mass, to avoid long ring-down times in case of shocks. These ring-down signals occur at the resonance frequency of the proof mass and have a duration directly proportional to the quality factor. They can be electronically filtered, but at the cost of a reduced system bandwidth.\nDifferent operating principles can be exploited to induce a frequency variation in suitable mechanical elements under an external acceleration: in the devices proposed in [4, 6-14], the frequency variation is caused by the presence of axial stresses in resonating elements. In [15] the frequency change of parallel beam resonators is due to the variation of the momentum\nof inertia. In [16-18] the effect of the variation of electrostatic stiffness due to the gap change is used. The in-plane accelerometer proposed in [18] has two masses connected by tuning fork resonators; the anti-phase mode of the coupled tuning fork resonators is modulated by the in-phase displacement of the two masses, which induces an electrostatic softening. A discussion on the relevance of the difference between the Q factor of the in-plane mode of the proof masses and of the resonant mode is also given, yet the value of the proof mass Q factor is not computed. Most of mentioned works relates to in-plane devices, while only a few examples of out-of-plane sensing devices are presented [12, 14-19]: these latter are characterized by proof masses ranging from   60 \\cdot 10^{-9} \\mathrm{~kg}  to   35 \\cdot 10^{-7} \\mathrm{~kg} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_4",
+    "content": "In this work we study and experiment in detail a novel out-of-plane accelerometer, derived after previous works [20, 21]. The device makes use of the gap sensitive variation of the electrostatic stiffness of two torsional resonators and allows for differential sensing. The proof mass mode occurs at about   2.5\\mathrm{kHz} , with the torsional resonators mode occurring one order of magnitude above, at about   25\\mathrm{kHz} . The mass of the device is of about   7.56 \\cdot 10^{-9}\\mathrm{kg}  only, very compact with respect to the aforementioned literature. In this work, we give a complete description of the analytical and experimental characterization of this device, showing simultaneously a Q factor of the resonators of about 850, and a Q factor of the proof mass of about 70, compatible (at the given resonance frequency) with applications requiring bandwidths in the order of   100\\mathrm{Hz} . Tests performed up to   14\\mathrm{g}  reveal a differential sensitivity of about   10\\mathrm{Hz}\\mathrm{g}^{-1} , with a   1\\%  deviation from linear full-scale-range up to   10\\mathrm{g}  after which an unavoidable non-linearity arises because of the nonlinear dependence of the electrostatic softening on the gap distance in parallel plates. Further, the good matching of the resonators frequencies results in almost identical temperature coefficients of frequency for the two resonators, which gives a matched (within about   0.1\\%  up to   95^{\\circ}\\mathrm{C} ) frequency shift under temperature variations, which is thus rejected by the differential readout.\nThe paper is organized as follows: section 2 describes the operation principle and the design of the resonant accelerometer, with particular focus on the effects of the external acceleration on the resonating parts. Section 3 is dedicated to the description of the novel polysilicon micro-accelerometer fabricated through the ThELMA (thick epipoly layer for micro-actuators and accelerometers) surface micromachining technique from ST Microelectronics. Section 4 presents the experimental results and their comparison with the theoretical predictions. Closing remarks and perspectives of coupling with integrated circuits are presented in section 5.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_5",
+    "content": "The proposed accelerometer, schematically shown in figure 1, is composed by a suspended, planar, perforated proof mass   m  of thickness   s , connected to the substrate via a pair of 5-fold torsional springs, and by two torsional resonators. These\nresonators, labeled A and B in figure 1, consist of a plate of in-plane dimensions   L \\times 2b  and of two folded torsional springs attached to the proof mass.\nThe two torsional elements can be kept in resonant oscillation according to their torsional natural mode by the driving electrodes located below them on the substrate. Two further independent electrodes placed on the substrate allow for motional current detection, see figure 1(b). When in the rest position, the mass is nominally at distance   g_{0}  from both the electrodes and the torsional resonators have the same nominal frequency   f_{0} :\n$$\nf _ {0} = \\frac {1}{2 \\pi} \\sqrt {\\frac {K _ {m} - K _ {e}}{\\rho J _ {\\mathrm {m a s s}}}} \\tag {1}\n$$\nwhere   \\rho J_{\\mathrm{mass}}  is the centroidal mass moment of inertia of the rigid mass of the resonators,   \\rho  is the mass density,   K_{m}  is the rotational mechanical stiffness and   K_{e}  is the rotational electrostatic stiffness. The mechanical stiffness is provided by the two folded suspension springs and reads\n$$\nK _ {m} = \\frac {2 G J}{l} f _ {c} \\tag {2}\n$$\nwhere   J  is the torsional momentum of inertia of the springs,   l  is the total length of one of the folded torsional springs,   G  is the equivalent shear elastic modulus of polysilicon, assumed here as linear elastic, homogeneous and isotropic, and   f_{c}  is the corrective factor which takes into account the folds of the beams. The corrective factor is computed through finite element analysis in Comsol Multiphysics and its value is 1.13 for the fabricated device later considered in sections 3 and 4.\nThe electrostatic contribution to the stiffness depends on the actuation scheme, which is shown in figure 2 for resonator B. Both the driving and the sensing electrodes are kept at the constant polarization voltage   V_{p} , while the mass is connected to ground (the opposite situation with a biased mass and grounded or virtually-grounded electrodes would lead to identical results). By applying a variable AC voltage   \\nu_{a}(t)  to each resonator driving electrode, the resonator plate is electrostatically actuated and can dynamically vibrate. The rotation   \\theta(t)  of the resonating plate causes a variation of the gap and hence a variation of the electrostatic force. The resulting torque (positive clockwise) acting on the resonator labeled B is:\n$$\n\\begin{array}{l} T _ {e} = \\int_ {c} ^ {b} \\frac {1}{2} \\frac {\\epsilon_ {0} L}{\\left(g _ {0} - \\theta x\\right) ^ {2}} \\left(V _ {p} + v _ {a}\\right) ^ {2} x d x \\\\ + \\int_ {- b} ^ {- c} \\frac {1}{2} \\frac {\\epsilon_ {0} L}{\\left(g _ {0} - \\theta x\\right) ^ {2}} V _ {p} ^ {2} x d x \\tag {3} \\\\ \\end{array}\n$$ where   \\epsilon_0  is the vacuum dielectric constant and   2c  is the distance between the sensing and driving electrodes as shown in figure 2.\nUnder the assumption of (i) small rotation   \\theta(t)  and (ii) small actuation voltage   v_{a}(t)  with respect to   V_{p} , developing (3) up to the first order gives:\n$$\nT _ {e} \\approx T _ {e 0} + K _ {e} \\theta \\quad \\text {w i t h} \\quad K _ {e} = \\frac {2 \\epsilon_ {0} L}{3 g _ {0} ^ {3}} V _ {p} ^ {2} \\left(b ^ {3} - c ^ {3}\\right) \\tag {4}\n$$ where the electrostatic stiffness   K_{e}  contribution appears. Note that this term quadratically increases with the polarization voltage. We also note here that the resonators will be operated in their linear mechanical regime: for a further description of the behavior of the resonator also in this nonlinear regime, the reader can refer to [22].\nWhen an external out-of-plane acceleration   a_{z}  is applied, the proof mass rotates around the axis   a - a  in figure 1, and the gap between the resonators and the electrodes changes as shown in figure 1(b). The angle of rotation is proportional to the acceleration and it is expressed as:\n$$\n\\beta = - \\frac {3}{2} \\frac {m a _ {z} R _ {\\mathrm {G}}}{G s \\bar {t} ^ {3}} \\bar {l} \\tag {5}\n$$\nwhere   R_{\\mathrm{G}}  is the distance between the   a - a  axis of rotation of a proof mass and the center of gravity of the same mass,   \\bar{l}  is the total length of one folded torsional spring attaching the mass\nto the substrate and   \\bar{t}  is its in-plane thickness. In particular, a first resonator element approaches the substrate and its gap reduces to   g_0 - d\\beta  while the other resonator element moves away from the same substrate and its gap increases to   g_0 + d\\beta ,   d  being the distance between the   a -  a  axis and the rotation axis of the torsional resonator (see figure 1(b)). Therefore, the electrostatic stiffness for resonators A and B changes from equation (4) into, respectively:\n$$\nK _ {e A} = \\frac {2 \\epsilon_ {0} L}{3 (g _ {0} + d \\beta) ^ {3}} V _ {p} ^ {2} \\left(b ^ {3} - c ^ {3}\\right)\n$$\n$$\nK _ {e B} = \\frac {2 \\epsilon_ {0} L}{3 (g _ {0} - d \\beta) ^ {3}} V _ {p} ^ {2} \\left(b ^ {3} - c ^ {3}\\right) \\tag {6}\n$$\nand their resonance frequency obtained by replacing in (1)   K_{e}  with   K_{eA}  and   K_{eB}  respectively, changes in a differential way. Combining the readout   f_{\\mathrm{A}}  and   f_{\\mathrm{B}}  of the two torsional resonators after the application of the external acceleration   a_{z} ,\nlinearized around the natural frequency   f_{0}  expressed in (1), the following expression is finally obtained:\n$$\nf _ {\\mathrm {B}} - f _ {\\mathrm {A}} \\approx - 3 f _ {0} \\frac {K _ {e}}{K _ {m} - K _ {e}} \\frac {\\mathrm {d} \\beta}{g _ {0}} = \\frac {9}{2} f _ {0} \\frac {K _ {e}}{K _ {m} - K _ {e}} \\frac {d m R _ {\\mathrm {G}} \\bar {l}}{g _ {0} G s \\bar {t} ^ {3}} a _ {z} \\tag {7}\n$$ where   K_{e}  is the electrostatic stiffness defined in (4). Note that the sensitivity of the accelerometer increases with the applied polarization voltage and strongly depends on the mechanical design. The latter can be optimized at fixed overall mass   m , for given technological constraints, by changing (i) the resonator distance   d  from the rotation axis and (ii) the gravity center distance of the mass   (R_{\\mathrm{G}})  from the rotation axis. It should be noted, however, that the rotation angle   \\beta  and hence   R_{\\mathrm{G}}  through equation (5) is limited by the maximum out of plane displacement allowed by the gap   g_{0} .",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1. (a) Schematic in-plane view of the proposed resonant accelerometer. (b) Schematic side view of the electrostatically actuated accelerometer, tilted under an external acceleration.. Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage.. Figure 6. Resonance spectra as a function of the oscillation frequency for the torsional resonators labeled A (a) and B (b) in figure 1. Different curves refer to different DC voltages, increasing as indicated by the arrow.. Figure 9. Resonance spectra as a function of the applied acceleration for the torsional resonators labeled A (a) and B (b) in figure 1. Different curves refer to different acceleration values, increasing as indicated by the arrow..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/c42eb7f1badaa8f21965302accb61f1bda7012344ff4c3c3f96c9d9049edd978.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/ae1b5fb8bcfe81b5485479121a982712a6b991bf3a9a460975511120510b91af.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "Figure 1. (a) Schematic in-plane view of the proposed resonant accelerometer. (b) Schematic side view of the electrostatically actuated accelerometer, tilted under an external acceleration..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/c42eb7f1badaa8f21965302accb61f1bda7012344ff4c3c3f96c9d9049edd978.jpg",
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/ae1b5fb8bcfe81b5485479121a982712a6b991bf3a9a460975511120510b91af.jpg",
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The bias voltage appears in the expression of the sensitivity. However, as in operation this voltage is applied between the torsional proof mass and the resonators drive and sense electrodes, pull-in issues should be avoided and a trade-off in the choice of   V_{p}  arises. It is therefore relevant to analyze the electrostatic behavior of the proof mass, by writing the expression of the nominal limit voltage in these conditions, which can be easily derived by solving the torque balance between the applied electrostatic forces and the mechanical reaction forces. In quasi-stationary conditions it reads:\n$$\n\\begin{array}{l} V _ {p} (\\beta) = \\left[ (2 \\bar {K} _ {m} \\beta^ {3}) / \\left(\\epsilon_ {0} L \\left(- \\frac {g _ {0}}{g _ {0} - \\beta (c + d)} + \\frac {g _ {0}}{g _ {0} - \\beta (d + b)} \\right. \\right. \\right. \\\\ - \\frac {g _ {0}}{g _ {0} - \\beta (d - b)} + \\frac {g _ {0}}{g _ {0} + \\beta (c - d)} - \\frac {g _ {0}}{g _ {0} - \\beta (b - d)} \\\\ + \\frac {g _ {0}}{g _ {0} + \\beta (d - c)} + \\frac {g _ {0}}{g _ {0} + \\beta (d + b)} - \\frac {g _ {0}}{g _ {0} + \\beta (d + c)} \\\\ \\left. \\left. + \\log \\left(\\frac {\\left(g _ {0} ^ {2} - \\beta^ {2} (d + b) ^ {2}\\right) \\left(g _ {0} ^ {2} - \\beta^ {2} (c - d) ^ {2}\\right)}{\\left(g _ {0} ^ {2} - \\beta^ {2} (b - d) ^ {2}\\right) \\left(g _ {0} ^ {2} - \\beta^ {2} (c + d) ^ {2}\\right)}\\right)\\right)\\right) \\Bigg ] ^ {\\frac {1}{2}} \\tag {8} \\\\ \\end{array}\n$$\nwhere   \\overline{K}_m = 2G\\overline{J} f_c / \\bar{l}  is the mechanical stiffness provided by the two folded torsional springs that attach the proof mass to the substrate. Note that   \\bar{l}  is the length of these torsional springs and   \\overline{J}  is the torsional momentum of inertia. As discussed in [20], the pull-in voltage and the pull-in angle can be analytically computed by computing the maximum of   V_{p}(\\beta)  in equation (8).",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_8",
+    "content": "The device is fabricated using the THELMA® surface micromachining process developed by STMicroelectronics [23], with an out of plane thickness   s = 22 \\mu \\mathrm{m} . SEM images of the fabricated resonant accelerometer and of one of the two torsional resonators are shown in figure 3. The shape of the proof mass is optimized, with respect to [20], in order to obtain a high sensitivity while simultaneously limiting the out-of-plane displacement of the edge points of the proof mass (see [24] for details concerning optimization). A large out-of-plane displacement of the edge points of the proof mass, in fact, could compromise the operation of the device if stiction problems arise between the mass itself and the substrate.\nThe T-shaped proof mass and the square mass of the two resonators A and B have holes to allow for the complete oxide removal below them. The stopper angular blocks of thick epitaxial polysilicon and parts of the thinner electrodes below the proof mass are also visible.\nFinite-element-method simulations are used to assist the device design: the proof mass is designed to oscillate at about   2.5\\mathrm{kHz}  (see figure 4(a)), which is compatible with an accelerometer bandwidth of a few hundred   \\mathrm{Hz}  after proper electronic filtering. This is a value within common consumer application specifications. The resonators are designed to operate in torsional mode (see figure 4(b)) one order of magnitude above   (25\\mathrm{kHz}) , to maximize the decoupling between the resonator motion and the mass.\nThe values of the material and geometrical data are reported in table 1; note that the in-plane dimensions account for a nominal over etch of   0.35\\mu \\mathrm{m}  with respect to the designed mask of the suspended parts.\nWith the given parameters and under the hypothesis of full symmetry, the nominal pull-in voltage turns out to be   V_{pi} = 3.43\\mathrm{V} , a value which is experimentally verified in section 4.3. To safely avoid critical pull-in instability, the device is therefore biased at   V_{p} = 1.5\\mathrm{V}  in operation.\nThe accelerometers are packaged at low pressure (1 mbar) with a wafer-to-wafer bonding technique and with the use of a getter to compensate degassing in the MEMS cavity, thus limiting fluid damping. In particular, predictions on the resonators quality factor   Q  were done by accounting that (i) at the given package pressure the mean free path of gas molecules equals about   63\\mu \\mathrm{m} , and that (ii) the characteristic length of the flow equals the gap   g_{0} = 1.8\\mu \\mathrm{m} . Under this assumptions, the Knudsen number is larger than 10, and consequently the free molecule flow regime is entered. In this regime, the quality factor of the resonators can be estimated as proposed in [25, 26] for an oscillating rectangular plate without holes. For the actual geometric parameters one obtains   Q = 530 . The presence of holes however reduces the dissipation, and results in a higher quality factor.\nFor a more accurate estimation a numerical analysis is required, as discussed in [27].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3. (a) SEM image of the fabricated   z -axis T-shaped accelerometer with two torsional resonators (A and B), with the   a - a  axis of rotation shown in red; (b) close up view of one of the two torsional resonators..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/e336062960a545ccbc941dbaa538334543c7c56abc60c5558fe22b42285224ed.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/1f40be5127eb784f573f0ea3ba6de99df4a6c7018f9dcbb67981892c912caae0.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "a). b)  Figure 4. Modal analysis of the T-shaped resonant accelerometer, colors represent the contour plot of displacements module. (a) First mode of the proof mass; (b) first mode of the resonators..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/9191a6ad1f82a3a25ac1afd4656a467d6837c66867d1675b9ea1c94221eae816.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/62a5e9e3d5619252c105fd10224fb700ea3928df251ffd9fb1165066f0c99cb3.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Key parameters of the device..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/ff2d53768ce254637a02b18f859c97af9fb63ccff3b04a0cd8553dbbc2d0ff41.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Figure 3. (a) SEM image of the fabricated   z -axis T-shaped accelerometer with two torsional resonators (A and B), with the   a - a  axis of rotation shown in red; (b) close up view of one of the two torsional resonators..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/e336062960a545ccbc941dbaa538334543c7c56abc60c5558fe22b42285224ed.jpg",
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/1f40be5127eb784f573f0ea3ba6de99df4a6c7018f9dcbb67981892c912caae0.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "a). b)  Figure 4. Modal analysis of the T-shaped resonant accelerometer, colors represent the contour plot of displacements module. (a) First mode of the proof mass; (b) first mode of the resonators..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/9191a6ad1f82a3a25ac1afd4656a467d6837c66867d1675b9ea1c94221eae816.jpg",
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/62a5e9e3d5619252c105fd10224fb700ea3928df251ffd9fb1165066f0c99cb3.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "Several experimental measurements have been carried out on the proposed resonant accelerometer to characterize first the electrostatic behavior and the dynamics of the resonating parts, then the sensitivity, linearity and cross-axis rejection, and finally the temperature-dependent behavior.\nFor this purpose, the MEMS is wire-bonded onto a ceramic carrier (figure 5(a)). Characterization is fully done by using a MEMS Characterization Platform (MCP-G by ITmems s.r.l.) for pull-in, step-response and spectral measurements shown in the following. In particular, for the latter measurements (the most frequent ones in the following), the excitation AC voltage signal amplitude is set to   40\\mathrm{mV} . The biasing DC voltage is set to   1.5\\mathrm{V} , unless otherwise specified. For the sensitivity measurements, the device is mounted at one edge of the turning plate of an Acutronic rate table (figure 5(b)), to exploit the centrifugal DC acceleration obtained during a DC rotation. Coupling between the device and the MCP-G occurs in this case through the rate table connectors.\nFinally, for measurements at different temperature the device is placed inside a climatic chamber from Angelantonis.r.l., (figure 5(c)) and again directly coupled to the MCP-G. As no nitrogen control is available inside the chamber, measurements are not performed below   5^{\\circ}\\mathrm{C}  to avoid water vapor condensation on the exposed electrical parts (pads and wire bonding), which may cause short circuits. Note that the device only, and no electronics, is positioned inside the chamber, so that the pure thermo-mechanical behavior is captured.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "Figure 5. Overview of the setups used in this work for the device characterization: (a) detail of the MEMS die, glued and wire bonded to a ceramic carrier, plugged into a socket board. The board can be either mounted on the rate table to apply centrifugal accelerations (b), or put inside the climatic chamber for temperature measurements (C), coupled to the same actuation and readout instrumentation..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "Table 1. Key parameters of the device..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/ff2d53768ce254637a02b18f859c97af9fb63ccff3b04a0cd8553dbbc2d0ff41.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "The frequency response of the resonators was first investigated to accurately identify those parameters that may be subject to process spread during fabrication. These are the actual over-etch (nominally   0.35\\mu \\mathrm{m}  for this process and this value was taken into account during the design), the initial possible offset inclination of the accelerometer proof mass   \\beta_0  due to fabrication imperfections and/or residual stresses (it is nominally zero), and the Q-factor value.\nTo obtain the frequency response of the torsional resonators, the small, sweeping, oscillating AC voltage was applied at one driving electrode and a constant DC voltage   V_{p}  was\napplied to both the driving and sensing electrodes as already discussed in figure 2. Different tests at increasing polarization voltage between   0.5\\mathrm{V}  and   1.75\\mathrm{V}  were performed. The resonant frequency was considered as the peak of the output signal, measured as the corresponding rms capacitance variation of the resonator sense electrode.\nFigures 6(a)-(b) show the measured spectra for the resonators (the visible spikes and noise, in particular for resonator B, are due to the complicated connections that couple to disturbances, as the device was already mounted on the rate table). From such measurements, the quality factor of the resonators was estimated from the full width at   1 / \\sqrt{2}  of the peak value. The resulting values are   Q_{\\mathrm{A}} = 842  and   Q_{\\mathrm{B}} = 837  for resonators A and B respectively. The small difference is within the estimation accuracy.\nFigure 7 summarizes the results: dots represent the experimental resonance frequency values as a function of the applied DC voltage up to   1.6\\mathrm{V} : note that above this value the response for resonator B begins showing pronounced electrostatic nonlinearity.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "Figure 5. Overview of the setups used in this work for the device characterization: (a) detail of the MEMS die, glued and wire bonded to a ceramic carrier, plugged into a socket board. The board can be either mounted on the rate table to apply centrifugal accelerations (b), or put inside the climatic chamber for temperature measurements (C), coupled to the same actuation and readout instrumentation..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "It is evident that frequencies and amplitudes of the two resonators tend to match under no applied voltage and tend to separate under large voltages. This suggests a gradual tilt of the suspended mass under the applied bias, which in turn indicates a non-zero initial offset angle   \\beta_0 .\nThe initial inclination, together with the over etch due to the fabrication process, can be estimated through comparison between experimental data and theoretical prediction. Minimizing the rms error between the theoretical prediction and the experimental values, a value of over etch and of the initial inclination of the proof mass are computed. For this purpose in figure 7(a) theoretical prediction of the frequency variation due to the bias voltage, computed considering the real actuation scheme used during measurements, is superimposed to the experimental data allowing the estimation of the initial offset of the proof mass   (\\beta_0 = 0.0019\\mathrm{rad} = 0.11^{\\circ})  together with the over etch   (oe = 0.30\\mu \\mathrm{m}) .\nThe presence of the initial inclination of the proof mass   (\\beta_0)  of the accelerometer therefore justifies the different trend of the frequency variation with bias voltage amplitudes.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_16",
+    "content": "After the characterization of the torsional resonators, other experimental measurements were performed to characterize the electromechanical behavior of the whole proof mass. In particular, it is of interest to verify the pull-in limit, which represents another possible limitation to   V_{P}  increase, in addition to nonlinearities discussed in the previous section.\nFor the electrostatic characterization, the mass of the accelerometer was swept with a constant incremental voltage   V_{p}  until pull-in occurs. The drive electrodes and the sense electrodes of both resonators were short circuited to a virtual ground for the capacitance measurements between them and the proof mass. The experimental results in terms of capacitance variation versus polarization voltage are shown\nin figure 8(a), the measurements being repeated 8 times. The reader can note a first region where the differential capacitance has a negligible variation with respect to the proof mass voltage, as expected for an ideally symmetrically actuated and sensed differential capacitance. The instability pull-in voltage occurs at about   2.2\\mathrm{V} , slightly anticipated by a small parabolic variation, which is caused by the native tilt angle   \\beta_0  measured above. Thanks to the relatively large stiffness of the suspended mass, pull-out always occurs quite close to the pull-in point, and stiction is never observed. Note that the pull-in value computed under the hypothesis of ideal device through (8) is slightly higher than the experimental one because of the presence of the initial offset of the proof mass   \\beta_0  which was not considered in the theoretical prediction.\nFollowing the presented pull-in measurements, the value used for in-operation tests under accelerations was selected to be   V_{p} = 1.5\\mathrm{V} , safely far from the instability conditions.\nA second interesting point is the proof mass dynamic characterization, performed by applying a quasi-stationary voltage to the short-circuited drive and sense electrodes of resonator A up to a value   V_{\\mathrm{step}} , while the proof mass is kept to ground. In this way the mass is slowly rotated up to an established perturbed position. Then, through a downward voltage step,   V_{\\mathrm{step}} , the mass is instantaneously released. As a result, it starts to vibrate around its rest position and its motion can be detected through the real-time monitoring of the capacitance variation measured at the short-circuited drive and sense electrodes of resonator B.\nFigure 8(b) shows the time response of the device: by fitting the experimental results, it is possible to measure the fundamental natural frequency   f_0 = 2.44\\mathrm{kHz}  and the quality factor   Q = 69 . Note that the quality factor of the proof mass is more than one order of magnitude lower than that of the resonators, thus complying with one of the requirements underlined in the introduction of this work (the corresponding ring-down constant   \\tau_{\\mathrm{rd}} = Q / (\\pi \\cdot f_0)  is compatible with approximately a   100\\mathrm{Hz}  bandwidth).\nFinally, figure 8(c) shows the obtained capacitance variation when the suspended mass is kept biased at   V_{p} = 0\\mathrm{V} , and it is excited in the electrical configuration described by figure 2 with an AC amplitude of   100\\mathrm{mV} . The measured peak frequency drops to about   2.15\\mathrm{kHz}  as a consequence of the electrostatic tuning which unavoidably occurs in operation.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "The results on the resonance frequency are in line both with the modal finite element analysis in Comsol Multiphysics and with the fundamental frequency estimated through the analytical expression (1) substituting   K_{m}  with   \\overline{K}_{m}  and   \\rho J_{\\mathrm{mass}}  with the centroidal mass moment of inertia of the rigid proof mass of the device   \\rho J_{\\mathrm{proofmass}} , which is   f_{0} = 2.46\\mathrm{kHz} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_18",
+    "content": "After the full electro-mechanical characterization of the device, experimental tests with applied external acceleration were performed. As mentioned above, the accelerometer is positioned at a radial distance   r_{\\mathrm{d}} = 7.8  cm from the rotation center of a rate table. Angular rates up to 2400 dps are applied, which result in centrifugal accelerations up to   136.8  m s  ^{-2} , i.e. 13.97 gravity units (g). Figures 9(a)-(b) show the different output spectra for the two torsional resonators labeled A and B as in figure 1 when the accelerometer is subject to accelerations in the given range.\nIn figure 10 the differential response of the two resonators under external acceleration is shown. One can note the efficacy of the differential readout, which turns into a linearity error lower than   1\\%  of the full-scale-range (FSR) up to   10\\mathrm{g}  of acceleration, which becomes of about   4\\%  at   14\\mathrm{g} . The so measured differential sensitivity turns out to be around   9.2\\mathrm{Hz~g}^{-1} , in reasonable agreement with the theoretical predictions (7) for a DC biasing voltage of   1.5\\mathrm{V} , though the initial tilt of the suspended mass. An offset of   29\\mathrm{Hz}  can be seen for no applied accelerations in agreement with the measurements shown in figure 7.\nThe measured differential frequency variation under cross-axis accelerations along   x - and   y -directions is lower than   1\\mathrm{Hz}  for   5.46\\mathrm{g}  of applied acceleration; the corresponding cross-axis\nrejection is thus larger than 34 dB (note that the accuracy in this kind of measurement is limited by the horizontal alignment precision of the board on the rate table).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Figure 1. (a) Schematic in-plane view of the proposed resonant accelerometer. (b) Schematic side view of the electrostatically actuated accelerometer, tilted under an external acceleration.. Figure 2. Side-view scheme of the torsional resonator, labeled B in figure 1, with electrostatic actuation;   V_{p} =  fixed polarization voltage,   \\nu_{a}(t) =  oscillating driving voltage.. Figure 6. Resonance spectra as a function of the oscillation frequency for the torsional resonators labeled A (a) and B (b) in figure 1. Different curves refer to different DC voltages, increasing as indicated by the arrow.. Figure 9. Resonance spectra as a function of the applied acceleration for the torsional resonators labeled A (a) and B (b) in figure 1. Different curves refer to different acceleration values, increasing as indicated by the arrow..",
+        "image_source": [
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/c42eb7f1badaa8f21965302accb61f1bda7012344ff4c3c3f96c9d9049edd978.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/ae1b5fb8bcfe81b5485479121a982712a6b991bf3a9a460975511120510b91af.jpg",
+          "./text_resources/Comi_2016_J._Micromech._Microeng._26_035006/vlm/images/2ab1ddba7802939343d18f38b82172abbeaa9d1b59e830f1f4d096b82cd1bbc4.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "Figure 5. Overview of the setups used in this work for the device characterization: (a) detail of the MEMS die, glued and wire bonded to a ceramic carrier, plugged into a socket board. The board can be either mounted on the rate table to apply centrifugal accelerations (b), or put inside the climatic chamber for temperature measurements (C), coupled to the same actuation and readout instrumentation..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "As a consequence of the initial tilt of the suspended mass, coupled to the unavoidable applied bias voltage   V_{p} , the   0\\mathrm{g}  value of the resonators frequencies differs by about   29\\mathrm{Hz} . As a matter of fact, this results in an offset of about   3\\mathrm{g} . The offset can be compensated through suitable calibration circuits or in the digital domain, provided that it is stable over time and environmental conditions. As offset stability is a key issue for the performance of inertial sensors [28], this subsection analyzes the offset behavior of the presented device as a function of temperature.\nThe device is placed inside the climatic chamber shown in figure 5(c), and operated in the same working conditions as in the previous subsection. The temperature is initially set to   5^{\\circ}\\mathrm{C} , and then swept by increasing steps of   10^{\\circ}\\mathrm{C}  up to   95^{\\circ}\\mathrm{C} . After the climatic chamber reaches the target temperature, an interval of   3\\mathrm{min}  is left before starting the measurements, in order to let the thermal transient of the polysilicon parts occur. Then a spectral response is captured consecutively for the two resonators, with the same methodology used in section 4.4.\nFigure 11(a) reports the obtained results. As expected from the preliminary characterization of section 4.2, as the natural frequency of the two resonators is quite matched, similarly their temperature behavior is quite close and the difference\nbetween the frequencies, i.e. the offset, is almost constant against temperature changes. This is shown by figure 11(b), which reports the values of the measured peak frequencies as a function of the temperature. The linear fitting of the measured data leads to a temperature coefficient of the frequency (TCf) in the order of   -29~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  for both resonators. Such value is typical for polysilicon MEMS (see e.g. [29] and [30]) and the behavior is thus ascribed to the changes of the Young's modulus with temperature [31]. From the linear fittings, the matching of the two resonators TCf is within   0.13\\% . Taking into account the measured sensitivity, over the measured\ntemperature range, this matching results in a offset drift lower than   5\\mathrm{mg} . This small residual value can be even compensated as the offset drift is linear with the temperature, as highlighted in the inset.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_20",
+    "content": "A new out-of-plane resonant accelerometer has been studied, fabricated and experimentally characterized. The experimental results concerning the electromechanical response of the proof mass and of the resonating elements exhibit good agreement with the theory. The measured sensitivity of the considered devices operated at   1.5\\mathrm{V}  is of about   10\\mathrm{Hz~g}^{-1} . The differential readout linearizes the response and enables the correct detection of the external acceleration even in the presence of eigenstresses due e.g. to temperature variations. The new MEMS resonant accelerometer exhibits a sensitive linear response within reduced dimensions, and it appears to be promising for consumer applications. The process compatibility with in-plane single-axis and two-axis resonant accelerometers enables the possibility to design three-axis accelerometers based on resonant sensing.\nAfter this first phase of characterization of the device working principle, a phase of characterization of the device in operation within an oscillating circuit will be implemented to estimate the achievable resolution. Both ultra-low-power oscillators (see e.g. [32]) and ultra-low-power frequency-to-output converters (see e.g. the frequency to digital converter presented in [3]) will be considered as possible solutions to guarantee a resolution in the order of few hundred   \\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}} , as generally required by consumer applications.",
+    "block_type": "text"
+  }
+]

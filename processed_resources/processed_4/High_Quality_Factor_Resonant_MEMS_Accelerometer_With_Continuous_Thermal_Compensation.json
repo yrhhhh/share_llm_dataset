@@ -1,0 +1,283 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—We report a new silicon Microelectromechanical systems (MEMS) accelerometer based on differential frequency modulation (FM) with experimentally demonstrated thermal compensation over a dynamic temperature environment and   \\mu g -level Allan deviation of bias. The sensor architecture is based on resonant frequency tracking in a vacuum packaged silicon-on-insulator (SOI) tuning fork oscillator. To address drift over temperature, the MEMS sensor die incorporates two identical tuning forks with opposing axes of sensitivity. Demodulation of the differential FM output from the two simultaneously operated oscillators eliminates common mode errors and provides an FM output with continuous thermal compensation. The first SOI prototype with quality factor of 350000 was built and characterized over a temperature range between   30^{\\circ}\\mathrm{C}  and   75^{\\circ}\\mathrm{C} . Temperature characterization of the FM accelerometer showed less than a   0.5\\%  scale-factor change throughout a temperature range from   30^{\\circ}\\mathrm{C}  to   75^{\\circ}\\mathrm{C} , without any external compensation. This is enabled by an inherently differential frequency output, which cancels common-mode influences, such as those due to temperature. Allan deviation of the differential FM accelerometer revealed a bias instability of   6\\mu \\mathrm{g}  at   20\\mathrm{s} , along with an elimination of any temperature drift due to increases in averaging time. After comparing the measured bias instability with the designed linear range of   20\\mathrm{g} , the sensor demonstrates a wide dynamic range of   130~\\mathrm{dB} . A second design iteration of the FM accelerometer, vacuum-sealed with getter material, was created to maximize   Q -factor, and thereby frequency resolution. A   Q -factor of 2.4 million was experimentally demonstrated, with a time constant of   >20\\mathrm{min} .\nIndex Terms—MEMS accelerometer, frequency modulation.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "WHILE silicon Microelectromechanical systems (MEMS) accelerometers have found success in a number of commercial applications, high-performance mission-critical applications remain a significant challenge. To meet this challenge, MEMS accelerometers must continue to lower their bias instability for precision\nmeasurement, while maintaining their traditionally large linear range. A few existing MEMS accelerometers have achieved this level of performance for targeting and inertial applications, through the use of temperature postcompensation algorithms. A few examples include Northrop Grumman Corporation's NGC (USA) SiAc [1], Colibrys' (Switzerland) RS9010 [2], [3], Georgia Institute of Technology (USA) [4], University of Southampton, (UK) [5], and Institute for Nanostructures (Portugal), Univ. of the British Columbia (Canada), Delft University of Technology (The Netherlands) [6]. Conventional micromachined pendulous accelerometers rely on Amplitude Modulation (AM) of the input stimulus, where the inertial input produces a proportional change in the sensor output voltage. In other words, the inertial input is amplitude modulated. In this approach, the final output signal of the sensor is proportional to the true input, as well as a number of device parameters, including the stiffness of the springs, pick-up electronics gain, and so on. These additional factors contribute to the bias and scale factor of the sensor and require calibration to eliminate their influence. Variation of these internal parameters with time and environment also produce unpredictable drifts in the sensor output, and as such, these analogue devices typically show poor long term and environmental stability. These types of accelerometers are typically limited in terms of in-run bias stability by temperature drift. To address this temperature sensitivity, modern AM accelerometers use postcompensation algorithms to stabilize bias and scale factor over dynamic temperature environment, which requires additional power consumption, individual temperature sensors, as well as complementary calculation capacity. In this paper we propose the alternative approach based on inherent thermal compensation, as opposed to post-processing.\nDynamic range is another inherent disadvantage of conventional MEMS sensors using amplitude modulated signals, which is limited by the stability of capacitive pick-off electronics [7]. As a best case scenario for an AM capacitive readout device, using carefully selected low-noise electronic components, a dynamic range of   10^{6}  can be achieved. This is due to the fact that commercial available references for AM signals have a stability of about 1 ppm [8], voltage references with   <1  ppm stability impractical for MEMS due to coast and size. This means that achieving a dynamic range larger than   10^{6}  and a stability lower than 1 ppm (a requirement for navigation grade performance) becomes a very difficult task with conventional MEMS sensor architectures. These limitations on the dynamic range and output stability prevent the use of MEMS accelerometers in many important applications.\nAn alternative approach to AM accelerometers which avoids these limitations is through the use of Frequency Modulation (FM), where induced acceleration changes the resonant frequency of the device by modifying the total effective stiffness. In contrast to AM accelerometers, an accelerometer with intrinsic frequency modulation operation could enable signal-to-noise ratio improvements by taking advantage of ultra-high Q mechanical sensor elements without limiting the measurement bandwidth [7]. Another advantage of FM devices is that the output signal of the device does not depend on pick-up electronics gain. At the same time, FM sensor architectures are known to provide inherent robustness against mechanical and electromagnetic interferences [9], [10].\nHistorically, accelerometers with frequency output were developed in the form of string accelerometers [11], [12]; however, with the rapid development of micromachining technology, micro-scale FM accelerometers have been implemented using a similar principle of operation [13], [14].\nPerformance of all FM accelerometers is limited by Q-factors [15] and temperature dependency. The main challenge to overcome in silicon MEMS accelerometers with FM operation is temperature sensitivity of the resonant frequency, caused by the strong temperature dependency of the silicon's Young's modulus [16].\nIn this paper we propose a wide dynamic range, differential FM accelerometer architecture with tunable scale factor and inherent thermal compensation against dynamic environment changes, Figure 1. The differential FM accelerometer approach relies on tracking of the resonant frequencies of two high-Q mechanical MEMS oscillators to produce quasi-digital and decoupled FM measurements of the input acceleration and temperature, Figure 2.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process. Arrows show sensitivity to acceleration and temperature..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/f0c2b3048cfd03383c9a595fa1baab7cb34d41c85a233e09b5e87b77c759000d.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_2",
+    "content": "Fig. 1. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process. Arrows show sensitivity to acceleration and temperature..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/f0c2b3048cfd03383c9a595fa1baab7cb34d41c85a233e09b5e87b77c759000d.jpg"
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "The proposed differential FM accelerometer consists of two identical silicon MEMS tuning fork resonators. Each of the two resonators have two rigid body mechanical degrees of freedoms: in-phase and anti-phase motion of the coupled tines. The anti-phase mode of the resonator is designed to be dynamically balanced to minimize substrate energy dissipation. These balanced structures allow Q-factor to rise to the fundamental thermoelastic limit, which improves precision, stability, and phase noise for the anti-phase vibration [15]. In contrast, the in-phase vibration has a low Q-factor, which is limited by anchor loss [20].\nEach tire includes differential lateral comb electrodes for electrostatic excitation of the anti-phase mode, differential lateral comb electrodes for capacitive detection, and nondifferential parallel plate capacitors for modulation of stiffness by means of the negative electrostatic spring effect, Figure 3. By applying a DC voltage bias on the parallel plates, a negative electrostatic spring is created, the stiffness of which is proportional to the square of the bias voltage and inversely proportional to the cube of the capacitive gap.\nThis makes the anti-phase natural frequency sensitive to the gap between the fixed and moving parallel plate electrodes. In other words, the in-phase displacement of the two tines modulates the resonant frequency of the anti-phase mode. For small deflections of the proof mass and small amplitude of oscillation, the operational frequency,   \\omega  can be expressed as\n$$\n\\omega = \\sqrt {\\frac {k}{m} - \\frac {\\xi A V ^ {2}}{m (d _ {0} - m a / k) ^ {3}}}\n$$\nwhere   m  is the proof mass,   a  is the applied acceleration,   k  is the spring stiffness,   V  is the tuning voltage,   d_0  and   A  are the initial gap and the overall area of the parallel tuning plates.\nThe applied inertial acceleration produces an in-phase shift of the proof masses, Figure 1, 2. This shift is detected by tracking the resonant frequency of the high Q-factor anti-phase mode. The relatively low Q-factor of the in-phase mode provides the short step response, and wide bandwidth of the accelerometer. At the same time, the high Q-factor of the balanced anti-phase mode guarantees high frequency resolution and stability, improving the performance of the accelerometer. The combination of the high Q-factor of the anti-phase mode and the low Q-factor of the in-phase mode eliminates the noise versus bandwidth tradeoff of conventional accelerometers. In addition, FM sensor architectures are known to be robust against mechanical and electromagnetic interferences [9], [10].",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process. Arrows show sensitivity to acceleration and temperature..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/f0c2b3048cfd03383c9a595fa1baab7cb34d41c85a233e09b5e87b77c759000d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "The structural design of the accelerometer was constructed and qualified through the use of Finite Element Modeling (FEM) with Comsol Multiphysics. The design goals were to maximize Q-factor for the anti-phase resonance, while similarly maximizing scale factor. For a discrete resonator limited by thermoelastic damping, Q-factor is inversely proportional to frequency. Similarly, scale factor is inversely proportional to the stiffness of the in-phase displacement. As such, low frequencies for both the anti-phase and in-phase vibratory modes of the resonator were desired. A 2-D model was used for the modeling, consisting of 296,000 triangular mesh elements, which exceeded the value necessary for convergence. The structure was imported from the lithography mask used to create the actual device, Figure 4. Because the device moves only along the x-axis and is fabricated from single crystalline silicon, a uniform Young's Modulus was used with a value of   160\\mathrm{GPa} . The in-phase and anti-phase resonance frequency were chosen to be   0.9\\mathrm{kHz}  and   2.6\\mathrm{kHz} , respectively, in order to minimize these resonances while still ensuring high fabrication yield. Through the suspension system design, the next vibratory mode was pushed to   25\\mathrm{kHz}  in order to minimize cross-axis sensitivity. Thermo-Elastic Damping (TED) [17], [18] was determined based on a 2-D model of the device and resulted in Q-factors of 0.3 million.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(b) In-phase mode shape at   0.9\\mathrm{kHz} .  Fig. 4. Finite element modeling (FEM) results illustrating the (a) anti-phase and (b) in-phase vibratory modes of the FM accelerometer..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/d1820e49b30299f17109981a7a325dfa36fb810e44be8a133d80e97d6c3d7b01.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The proposed approach to thermal compensation takes advantage of the differential design, in which both oscillators have the same sensitivity to temperature but opposite sensitivity to external acceleration, Figure 1, 2. The dependency of frequency on temperature has a well known linear relationship for single crystalline silicon, enabling direct self-sensing of temperature [16]. The differential FM signal processing tracks the frequency difference between the two resonant accelerometers, enabling drift free measurement of acceleration, Figure 1, 2. In this approach, the FM accelerometer provides a quasi-digital measurement of the input acceleration as well as direct measurement of the accelerometer temperature. The sensor becomes its own thermometer, eliminating thermal lags and hysteresis typical in compensation schemes using an external temperature sensor.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process. Arrows show sensitivity to acceleration and temperature..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/f0c2b3048cfd03383c9a595fa1baab7cb34d41c85a233e09b5e87b77c759000d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "(b) In-phase mode shape at   0.9\\mathrm{kHz} .  Fig. 4. Finite element modeling (FEM) results illustrating the (a) anti-phase and (b) in-phase vibratory modes of the FM accelerometer..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/d1820e49b30299f17109981a7a325dfa36fb810e44be8a133d80e97d6c3d7b01.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "The fabrication of prototype FM accelerometers was performed using an in-house, wafer-level, single mask process. Devices were fabricated using Silicon-on-Insulator (SOI) wafers with a   100\\mu m  single crystalline silicon device layer, a   5\\mu m  buried oxide layer, and a   500\\mu m  handle wafer, Figure 3. After wafer fabrication and dicing, sensors were attached to a ceramic DIP-24 package, wirebonded, and vacuum sealed in-house at 1 Torr. In the next fabrication run, accelerometers will be vacuum sealed at   < 0.1\\mathrm{mTorr}  using getter to enable ultra-high Q-factor operation.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "For testing, the packaged accelerometer was mounted on a two stage PCB Figure 5. Top stage of the electronics is comprised of front-end transimpedance amplifiers, while the bottom stage stabilizes input voltages and creates the device excitation signals. All signal processing is performed in real-time using a FPGA-based lock-in amplifier from Zurich Instruments. The sensor motion is actuated electrostatically and detected capacitively using an Electromechanical Amplitude Modulation (EAM) technique, similar to [21].",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_10",
+    "content": "Fig. 6. Block diagram of FM accelerometer signal processing, showing the control loop for a single accelerometer (top)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/77a1e3a15ef12eb90d9b5c654856737b34cb37b333d5a7c64b14a964284c0ef8.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Each accelerometer is capacitively excited into an anti-phase mode of resonance at   2.4\\mathrm{kHz}  using anchored excitation electrodes, Figure 3. The applied forcing signal is a combination of   0.1V_{AC}  with a   0.2V_{DC}  bias. Separation of the useful signal from the feed-through signal is accomplished using electromechanical amplitude modulation, where a carrier voltage of   1\\mathrm{Vrms}  at   52\\mathrm{kHz}  is applied to the proof mass, resulting in the amplitude modulation of the motional signal.\nThe EAM pickup signal is then demodulated at the carrier frequency to extract the motional signal [22]. This motional signal is then fed into a Phase Lock Loop (PLL) and to a second demodulation, where the PLL provides the natural frequency of the anti-phase motion. This frequency is used as the output signal of the accelerometer, while simultaneously being used as an input for closed-loop excitation of the anti-phase resonance. The second demodulation block is used to extract the amplitude of motion of the accelerometer, which is used for Amplitude Gain Control (AGC), Figure 6. The AGC provides a stable amplitude of oscillation for the accelerometer, which reduces the phase noise and aids in stabilizing frequency [23].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Fig. 6. Block diagram of FM accelerometer signal processing, showing the control loop for a single accelerometer (top)..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/77a1e3a15ef12eb90d9b5c654856737b34cb37b333d5a7c64b14a964284c0ef8.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "A standard multi-point tunable test was carried out for a single tuning fork (non-differential) FM accelerometer using an Ideal Aerosmith 2102 Series Two-Axis Position and",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_13",
+    "content": "Rate Table System. The sensor was tested by measuring the change of the anti-phase resonant frequency as a function of inclination angle with   10^{\\circ}  increments. The resonance frequency of the accelerometer was recorded for each orientation within a range from   -\\mathrm{g}  to   \\mathrm{g} . This experiment was performed for three different tuning voltages (28, 25 and   20\\mathrm{V} ), revealing linear response to acceleration with tunable scale factors of 4.4, 2.0 and   1.2\\mathrm{Hz / g} , respectively, Figure 7. It should be noted that while the maximum experimental scale factor was measured to be   4.4\\mathrm{Hz / g} , all further experimental data was derived using a more conservative value of   3.8\\mathrm{Hz / g}  for each tuning fork resonator.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_14",
+    "content": "To evaluate the proposed thermal compensation concept, a differential FM accelerometer with two tuning fork oscillators was paced into a TestEquity 107 temperature chamber. The temperature was set to   70^{\\circ}\\mathrm{C}  for the duration of 3 hours. The temperature control thermal chamber was then turned off and the output signals from both tuning forks were recorded, Figure 8. Each oscillator showed an identical   500\\mathrm{mg}  drift over the temperature change. Differential FM demodulation provided automatic calibration against temperature by canceling common frequency drifts between the two sensors. As shown in Figure 9, the drift over temperature was reduced to approximately   1\\mathrm{mg}  (rms). In the experimental results presented in this paper, an identical tuning voltage magnitude was applied to both proof masses simultaneously.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_15",
+    "content": "TABLEI COMPARATIVE ANALYSIS OF RAW WITH THERMAL COMPENSATED FM ACCELEROMETER PARAMETERS.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/93199ded2cd8fe96fb0c2e9e3aed6c8659d529348e82fcf5dc51bb94d5463415.jpg"
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "Alternatively, an asymmetric tuning voltage could be used for the purpose of dynamically balancing the structure, as described in [19].\nThermal compensation by differential FM also applies to the scale factor. The anti-phase resonant frequencies of both tuning fork oscillators were characterized as functions of applied acceleration at two different temperatures of   30^{\\circ}\\mathrm{C}  and   75^{\\circ}\\mathrm{C} , Figure 10(a). The measured frequency split between the nominally equal modal frequencies was proportional to the input acceleration, Figure 10(b). Without any active temperature compensation, experimental characterization of the FM accelerometer at   30^{\\circ}\\mathrm{C}  and   75^{\\circ}\\mathrm{C}  revealed less than 0.5 percent response fluctuation despite a   4\\mathrm{Hz}  drop of the nominal frequency, Figure 10(b). Quantitative analysis of the improvement due to innate thermal compensation of the FM accelerometer is provided in Table I. The first row presents the raw accelerometer bias of   525~\\mu \\mathrm{g}  (see experimental results from Figure 8) and thermally compensated bias of   3\\mu \\mathrm{g}  (see experimental results from Figure 9). Signifying over two orders of magnitude improvement in performance. The second row presents the raw accelerometer scale factor of   210~\\mathrm{ppm} / ^{\\circ}\\mathrm{C}  (see experimental data from non-differential tunung fork Figure 10(a).) an improvement of approximately   60\\% .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI COMPARATIVE ANALYSIS OF RAW WITH THERMAL COMPENSATED FM ACCELEROMETER PARAMETERS.",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/93199ded2cd8fe96fb0c2e9e3aed6c8659d529348e82fcf5dc51bb94d5463415.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "For further evaluation of the proposed thermal compensation, device performance was monitored throughout multiple cold-starts. A differential FM accelerometer was initially turned on from rest and actuated for 10 seconds with the output signals from both tuning forks recorded over this time. The FM accelerometer was then turned off for 20 seconds, and cycled back on for another 10 seconds. This cycle was then repeated for a total of 13 repetitions. Averaged data from each 10 second run is plotted on Figure 11(a).",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_18",
+    "content": "Since the experiment initially began immediately following a long period of inactivity, the temperature of both resonators increased by   0.3~^\\circ \\mathrm{C}  during the experiment. Temperature measurement was provided by the FM accelerometer, which simultaneously produces both acceleration and temperature detection, Figure 2. This temperature ramp was the cause of each resonators identical drift in output. However, differential FM demodulation demonstrated thermal compensation between multiple runs by canceling common frequency drifts between the two resonators, Figure 11(b). As shown in Figure 11(b), the drift in output between runs was reduced to less than   50~\\mu \\mathrm{g}  rms.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Concept of the differential FM accelerometer with thermal compensation. Arrows show axes of sensitivity to external acceleration and temperature.  Fig. 3. Photograph of a differential FM accelerometer fabricated using an in-house   100\\mu m  SOI process..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/839b76c9422b1dbc0fc6b1a0be834426b172c48445a2233fa0adaa7fd6929f09.jpg",
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/de44500ebecf55b981c1db0255371f5343e22df9956abd3507bd778fb246ee5a.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "Allan deviation analysis of FM accelerometer in-run performance at room temperature is shown in Figure 12. For a single tuning fork (non-differential) FM accelerometer, three regimes are identified: a   -1/2  slope white noise of frequency for time constants of several seconds, a zero slope flicker noise floor, and a   +1  slope temperature ramp at time constants above 10 seconds. Differential FM demodulation using two tuning forks removes the   +1  slope temperature ramp, revealing the bias instability of   6\\mu g  at   20\\mathrm{s} . In combination with the design linear range of   20\\mathrm{g} , the sensor demonstrates a wide dynamic range of   130\\mathrm{dB} .\nAllan deviation analysis was performed on a device at a 1 mTorr pressure level, Q-factor of 350,000 and operational frequency of   2400\\mathrm{Hz} . The result could be improved by using a differential FM accelerometer, vacuum sealed with getter material, along with a low operational frequency in order to provide an ultra-high Q-factor and time-constant.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_20",
+    "content": "Fig. 13. Measurement of vacuum sealed accelerometer Q-factors using ring-down tests revealed time constant over 20 minutes, and Q-factor 2.3 million..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/8e0f31da926b8cd2eb3d31eb58e0a2bd05b613355c6c85e3325a25609c4df4cb.jpg"
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "Maximization of the mechanical quality factors Q-factor is key to improving the performance of micromachined vibratory sensors [24]. With this in mind, a second SOI FM accelerometer prototype was fabricated with a few key differences in the cavity vacuum pressure and device resonance frequencies. While the first generation was sealed under vacuum alone, the second generation accelerometer was vacuum sealed with getter material for a final package pressure   < 0.1mTorr . The natural frequency of both the anti-phase and in-phase resonances were also reduced to   540\\mathrm{Hz}  and   380\\mathrm{Hz} , respectively. To gauge the effects of anchor loss for the given design, a 3-D FEA model was created containing the device, substrate, and a Perfectly Matched Layer (PML). The PML represents an infinite boundary, behaving as an acoustic absorption layer. Acoustic waves that enter the PML attenuate before they can be reflected back into the model, Fig. 4(a). The footprint of the substrate is   4.1\\times 8.1\\mathrm{mm} . In this study, a PML beneath the substrate is chosen to absorb one wavelength of stress, transmitted at the resonant frequency of the vibratory modes. The Q-factor of the anti-phase mode is calculated to be   Q_{Anchor} = 5.67e6 . Also finite element modeling was conducted for the design using COMSOL Multiphysics, revealing a thermoelastic Q-factor of 5.7 million at a low operational frequency of   570\\mathrm{Hz} .\nThe Q-factor of this new prototype was experimentally characterized using ring-down tests, where the device was given an initial impulse and allowed to decay over time. Exponential fits of the time domain amplitude decay data revealed time constants of   1300\\mathrm{s}  (about 22 minutes) for both resonators. Considering the   560\\mathrm{Hz}  frequency of operation, this translates into a Q-factor of 2.3 million, Figure 13. This high decay constant allows the mechanical structure to potentially operate for hours without power.\nAccording to [25], frequency stability of a resonator is inversely proportional to Q-factor, which in turn is limited by thermoelastic damping. Improving the FM accelerometer Q-factor by 7 times allows us to project an improvement in FM performance.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(b) In-phase mode shape at   0.9\\mathrm{kHz} .  Fig. 4. Finite element modeling (FEM) results illustrating the (a) anti-phase and (b) in-phase vibratory modes of the FM accelerometer..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/d1820e49b30299f17109981a7a325dfa36fb810e44be8a133d80e97d6c3d7b01.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 13",
+        "caption": "Fig. 13. Measurement of vacuum sealed accelerometer Q-factors using ring-down tests revealed time constant over 20 minutes, and Q-factor 2.3 million..",
+        "image_source": [
+          "./text_resources/High_Quality_Factor_Resonant_MEMS_Accelerometer_With_Continuous_Thermal_Compensation/vlm/images/8e0f31da926b8cd2eb3d31eb58e0a2bd05b613355c6c85e3325a25609c4df4cb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "A silicon MEMS accelerometer based on voltage controlled Frequency Modulation has been proposed and experimentally validated. The accelerometer employs a pair of two tuning fork oscillators with opposing axes of sensitivity to simultaneously measure the die temperature and external acceleration. Differential demodulation of the two FM outputs provides continuous thermal compensation of the accelerometer against temperature change and other common mode effects. In contrast to conventional MEMS accelerometers, vacuum packaging is beneficial for the FM accelerometer, making it an attractive candidate for single die integration with high performance silicon MEMS Coriolis Vibratory gyroscopes (CVGs). Ultra-high Q-factor accelerometer with FM principle of operation provide low noise with wide dynamic range. Furthermore, single die integration of the FM accelerometer with the recently introduced FM gyroscope [26] is expected to pave the way for a high performance, wide dynamic range MEMS IMU with quasi-digital low power architecture and strong immunity against mechanical and electromagnetic interferences.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_23",
+    "content": "The accelerometers were designed, packaged, and experimentally characterized at the MicroSystems Laboratory, University of California, Irvine. MEMS fabrication was done at the UCI INRF and UCLA NRF.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_24",
+    "content": "MEMS gyroscopes and accelerometers. He is currently a Lead Engineer with the MicroSystems and MicroFluidics Laboratory, General Electric's Global Research Center. He has authored eight peer-reviewed journal articles and 30 international conference papers in inertial MEMS. He holds eight Russian patents, two U.S. patents, and three U.S. patents pending on inertial MEMS. He is a Reviewer of major MEMS journals. He was a recipient of the Gold Medal at the 2004 International Salon of Inventions in Geneva, Switzerland, the Outstanding Paper Award at the 2011 Transducers Conference, and the Best Paper Award at the 2012 IMAPS Device Packaging Conference.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_25",
+    "content": "include full-cycle MEMS sensor development and performance optimization. He was a recipient of the Design Contest Award at the 2011 System-on-Chip Conference.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_26",
+    "content": "and the Department of Biomedical Engineering. He served as a Program Manager of the Microsystems Technology Office at the Defense Advanced Research Projects Agency (DARPA), Arlington, VA, USA, from 2009 to 2013. His professional interests, reflected in over 200 publications and two books, include solid-state sensors and actuators, microelectromechanical systems-based neuroprosthetics, sensor-based intelligence, and control theory. He holds 26 U.S. and worldwide patents. His current interests center on the design, manufacturing, and advanced control of high-precision micromachined gyroscopes. He was a recipient of the 2002 George E. Brown, Jr. Award, the 2005 NSF CAREER Award, the 2006 Best Faculty Research Award, and the IEEE Sensors Council 2009 Technical Achievement Award. He received the Office of the Secretary of Defense Medal for Exceptional Public Service for his work at DARPA as a Program Manager in 2013. He has served on a number of Editorial Boards, most recently, as an Editor of the IEEE/ASME JOURNAL OF MICROELECTROMECHANICAL SYSTEMS and the Founding Chair of the IEEE International Symposium on Inertial Sensors and Systems.",
+    "block_type": "text"
+  }
+]

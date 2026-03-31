@@ -1,0 +1,281 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—This paper theoretically and experimentally demonstrates the temperature drift suppression capability of a mode-localized accelerometer based on three degree of freedom weakly coupled resonators. The theoretical model of the temperature characteristics of the amplitude ratio and frequency of the mode-localized accelerometer under the influence of Young's modulus were established. The effect of the temperature on the input conversion mechanism and weakly coupled resonators are both included in the model. The simulation results show that thermal stress is the main factor affecting the output metric of the mode-localized accelerometer with mechanical coupling beam and, consequently, a stress relief structure is proposed to suppress the\neffect of stress on the output metric. Compared with the mode-localized accelerometer without stress relief structure, the temperature coefficients of sensitivity and two output metrics of the accelerometer with the stress relief structure are both suppressed by one order of magnitude via the simulation and experiment verification from   30^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C} . And the temperature suppression coefficient of amplitude ratio is improved by 43.9 times than that of the frequency which shows that the mode-localized accelerometer based on amplitude ratio has an excellent temperature drift suppression capability.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Index Terms—Mode-localized Accelerometer, amplitude ratio, frequency, temperature drift, stress relief.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "T HE microelectromechanical systems (MEMS) resonant accelerometer, typically a sensor based on a silicon beam, has the advantages of small size, light weight, low power consumption, high measurement accuracy, good stability, batch production, and direct output of quasi-digital quantities. The output metric of most of current MEMS resonant accelerometers [1]-[6] is frequency. Because the Young's modulus of the silicon material is very sensitive to temperature, the MEMS resonant accelerometer is extremely susceptible to temperature change. Some measures were used to improve the temperature stability of the MEMS resonant\naccelerometers, such as the temperature control [7]–[10] or temperature compensation [11]–[15] of the device.\nOver the past few years, the mode-localized sensing paradigm based on weakly coupled resonators (WCRs) has been proved to present ultra-high sensitivity [16]–[22] and the suppression of common mode noises [23]–[27] due to the output metric of the amplitude ratio. Many researchers have experimentally demonstrated the superior temperature suppression capability of WCRs [24]–[27]. It must be noted that the WCRs are not equal to the mode-localized sensors; typically, the latter need a specific mechanism to convert the measured quantity to stiffness or mass perturbation. However, up to now, there is no demonstration on temperature drift suppression of the mode-localized sensors. How the conversion mechanism affects the temperature suppression capability or the mode-localized sensors still own superior temperature drift suppression capability remains unknown.\nIn this paper, the temperature characteristics of the output metrics of the mode-localized accelerometer were theoretically analyzed and experimentally demonstrated for the first time. The effect of temperature on the input conversion mechanism and WCRs are both taken into account. And the theoretical model of the temperature characteristics of the amplitude ratio and frequency of the mode-localized accelerometer based on the stiffness perturbation were established. According to this model the temperature coefficient of amplitude ratio and frequency can be estimated when Young's modulus changes. A stress relief structure is proposed to suppress the temperature drift of the accelerometer, and two mode-localized accelerometers without and with a stress relief structure were experimentally compared.\nThis paper is organized as follows: Section II presents theory analysis and simulation of the temperature characteristics of the mode-localized accelerometers with \"E\" type coupling beam and stress relief structure; Section III describes experimental results of acceleration responses of the amplitude ratio and frequency of the two accelerometers at different temperature; and conclusions are given in Section IV.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "(a). (b） Fig. 1. The schematic diagram of the 3-DoF mode localized accelerometer with \"E\" coupling beam (a) and stress relief beam (b)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/19c98d5e4c4d8cd2aad0206540c2b5386e37a794a3e138051fa49a6001ade4f0.jpg",
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/7bf286eb45673cda214bfcc762874a5a0fd1511a054a6b72889ceaf1425eac59.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "The schematic diagrams of the two types of 3-DoF mode- localized accelerometers in this paper are shown in Figure 1(a) and 1(b) respectively. The only difference of the two accelerometers is the coupling beam structtrue. The weak coupling of two adjacent resonators in Figure 1(a) is realized by the \"E\" type mechanical coupling beam without stress relief while the coupling in Figure 1(b) has stress relief. The comb finger capacitors are used to drive the resonator and differential plate capacitors are used to sense the amplitude of resonator. The tuning electrodes beside the elastic beam are used to change the effective stiffness of the resonator. In addition, two proof masses at sides of two outer resonators are used to sense the acceleration. The electrostatic negative static stiffness related to the acceleration is formed when there is a potential difference between the proof mass and WCRs. The dimensions of the proof mass and resonator are shown in Table I.\nAC voltage and DC bias voltage are applied to the driving electrode and WCRs respectively to make WCRs vibrate at the resonance frequency. Ideally, the amplitudes of the two outer resonators are equal. When acceleration acts on the proof mass, the proof mass will produce a displacement. Then the electrostatic negative stiffness is changed to introduce a stiffness perturbation to the WCRs, so that the WCRs produces the mode localization phenomenon and the vibration energy is no longer distributed evenly. Eventually, the amplitudes of the two outer resonators are unequal. Therefore, the acceleration can be obtained by detecting the amplitude ratio of the two resonators.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b） Fig. 1. The schematic diagram of the 3-DoF mode localized accelerometer with \"E\" coupling beam (a) and stress relief beam (b)..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/19c98d5e4c4d8cd2aad0206540c2b5386e37a794a3e138051fa49a6001ade4f0.jpg",
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/7bf286eb45673cda214bfcc762874a5a0fd1511a054a6b72889ceaf1425eac59.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI DIMENSIONS OF PROOF MASS AND RESONATOR.",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "Fig. 2. Mass-spring-damper system of the 3-DoF WCRs..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/32885220f321fd1d2672c57e6ffc8f96351df8192b3e0dfdee4803968874cb1f.jpg"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "In this work, the 3-DoF mode-localized accelerometers are used to investigate the temperature characteristic of output metrics. The mass-spring-damper model of the 3-DoF WCRs is shown in Figure 2. Three resonators vibrate linearly in one plane and the material of the resonators is isotropic and homogeneous single crystal silicon. The dimension of the resonator is on the order of microns. Because the accelerometer works in\na high vacuum environment, the damping of all resonators of WCRs can be neglected for simplification [28]. The dynamic equations of the 3-DoF WCRs with perturbation are given in Equation (1).\n$$\n\\begin{array}{l} \\left[ \\begin{array}{c c c} m & 0 & 0 \\\\ 0 & m & 0 \\\\ 0 & 0 & m \\end{array} \\right] \\left[ \\begin{array}{c} \\ddot {x} _ {1} \\\\ \\ddot {x} _ {2} \\\\ \\ddot {x} _ {3} \\end{array} \\right] \\\\ + \\left[ \\begin{array}{c c c} k + k _ {c} & - k _ {c} & 0 \\\\ - k _ {c} & k _ {m} + 2 k _ {c} & - k _ {c} \\\\ 0 & - k _ {c} & k + k _ {c} + \\Delta k \\end{array} \\right] \\left[ \\begin{array}{l} x _ {1} \\\\ x _ {2} \\\\ x _ {3} \\end{array} \\right] = \\left[ \\begin{array}{l} 0 \\\\ 0 \\\\ 0 \\end{array} \\right] \\tag {1} \\\\ \\end{array}\n$$\nwhere   x_{\\mathrm{i}}  are the displacements of each resonator; the masses of each resonator are assumed as   m ;   k_{c}  is the coupling stiffness between neighboring resonators;   k  is the initial stiffness of resonators 1 and 3;   k_{m}  is the stiffness of resonator 2; and   \\Delta k  is the stiffness perturbation applied to the WCRs. By solving the eigenvalues and eigenvectors of the dynamic equation (1), the frequencies and amplitude ratios of 3-DoF WCRs at first two working modes (in-phase mode where two outer resonators vibrate in-phase and out-of-phase mode where two outer resonators vibrate out-of-phase [20]) can be obtained as [29]\n$$\n\\begin{array}{l} \\omega_ {1 ^ {\\prime} - 3 D o F} = \\sqrt {\\frac {1}{m} \\left[ k + k _ {c} + \\frac {1}{2} \\left(\\Delta k - \\frac {2}{\\beta} - \\sqrt {\\Delta k ^ {2} + \\left(\\frac {2}{\\beta}\\right) ^ {2}}\\right) \\right]} (2) \\\\ U _ {0} \\approx \\Delta k \\cdot \\frac {k _ {m} - k + k _ {c}}{k _ {c} ^ {2}} (3) \\\\ \\end{array}\n$$",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Mass-spring-damper system of the 3-DoF WCRs..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/32885220f321fd1d2672c57e6ffc8f96351df8192b3e0dfdee4803968874cb1f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "When the temperature changes, the Young's modulus of the silicon material will change, which directly changes the stiffness of the elastic beam, thereby changing the resonance frequency of the accelerometer. On the other hand, the internal stress of the material of the accelerometer mainly consists of the thermal stress caused by the difference in the thermal expansion coefficient between the materials and the residual stress generated in the fabrication process. Both stresses will affect the temperature characteristic of the accelerometer. The stress is difficult to estimate and can be suppressed by special stress relief structures. Therefore, in the case where only Young's modulus of the silicon material is affected by temperature, the amplitude ratio of the 3-DoF mode-localized accelerometer can be expressed as\n$$\nU _ {(T)} = \\Delta k _ {(T)} \\cdot \\frac {k _ {m (T)} - k _ {(T)} + k _ {c (T)}}{k _ {c (T)} ^ {2}} \\tag {4}\n$$\nwhere   U_{(T)}  is the amplitude ratios after the temperature change;   k_{m} ,   k , and   k_{c}  represent the stiffness without temperature change; and   k_{m(T)} ,   k_{(T)} , and   k_{c(T)}  represent the stiffness after temperature change. Thus, the relative change of amplitude ratio of the 3-DoF mode-localized accelerometer caused by temperature can be expressed as\n$$\n\\frac {U _ {(T)} - U _ {0}}{U _ {0}} = \\frac {\\Delta k _ {(T)} \\cdot \\frac {k _ {m (T)} - k _ {(T)} + k _ {c (T)}}{k _ {c (T)} ^ {2}}}{\\Delta k \\cdot \\frac {k _ {m} - k + k _ {c}}{k _ {c} ^ {2}}} - 1 \\tag {5}\n$$\nwhere   \\Delta k  and   \\Delta k_{(T)}  represent the total stiffness perturbation applied to the accelerometer before and after being affected by temperature, respectively.\nThe initial gap of the acceleration-sensitive capacitor will be changed when the acceleration acts on the proof mass, then the acceleration-induced variation of the electrostatic negative stiffness   \\Delta k_{\\mathrm{a}}  between proof mass and WCRs can be obtained as\n$$\n\\Delta k _ {a} = \\frac {- \\varepsilon A V ^ {2}}{\\left(d _ {0} - x\\right) ^ {3}} - \\frac {- \\varepsilon A V ^ {2}}{d _ {0} ^ {3}} \\tag {6}\n$$\nwhere   A, V, x  and   d_0  are the area, potential difference, the displacement of proof masses caused by accelerations and initial gap of the acceleration-sensitive capacitor, respectively. For the mode-localized accelerometer, the conversion mechanism is affected by the temperature because the stiffness of the proof mass will change with the temperature change. Therefore, the   x  will change by the temperature. Finally, the   \\Delta k_{\\mathrm{a}}  is affected by the temperature. The   \\Delta k_{\\mathrm{a}}  after the temperature change can be expressed as\n$$\n\\Delta k _ {a (T)} = \\frac {- \\varepsilon A V ^ {2}}{\\left(d _ {0} - x _ {(T)}\\right) ^ {3}} - \\frac {- \\varepsilon A V ^ {2}}{d _ {0} ^ {3}} \\tag {7}\n$$ where   x_{(T)}  represents the displacement of proof masses caused by acceleration after temperature change. In measurement, a tuning voltage is applied to one of the resonators to select the initial working point. Therefore, the total stiffness perturbation   \\Delta k  includes two parts, namely, the electrostatic negative stiffness change caused by the tuning voltage   (\\Delta k_{t})  and acceleration   (\\Delta k_{a}) . Then the   \\Delta k  before and after the temperature change can be expressed as\n$$\n\\Delta k = \\Delta k _ {t} + \\Delta k _ {a} = \\Delta k _ {t} + \\frac {- \\varepsilon A V ^ {2}}{\\left(d _ {0} - x\\right) ^ {3}} - \\frac {- \\varepsilon A V ^ {2}}{d _ {0} ^ {3}} \\tag {8}\n$$\n$$\n\\Delta k _ {(T)} = \\Delta k _ {t} + \\Delta k _ {a (T)} = \\Delta k _ {t} + \\frac {- \\varepsilon A V ^ {2}}{\\left(d _ {0} - x _ {(T)}\\right) ^ {3}} - \\frac {- \\varepsilon A V ^ {2}}{d _ {0} ^ {3}} \\tag {9}\n$$\nAs the temperature changes, the stiffness of the elastic beam is only affected by the Young's modulus. Therefore,   E_{(T)} / E_0  can be used to represent the temperature coefficient of the stiffness, where   E_0  and   E_{(T)}  are the Young's modulus before and after the temperature change, respectively. Substituting Equations (8) and (9) into Equations (5) gives\n$$\n\\begin{array}{l} \\frac {U _ {(T)} - U _ {0}}{U _ {0}} = \\frac {E _ {0}}{E _ {(T)}} \\cdot \\frac {\\left(d _ {0} - x _ {(T)}\\right) ^ {3} (\\Delta k _ {t} - k _ {e 0}) - \\varepsilon A V ^ {2}}{\\left(d _ {0} - x\\right) ^ {3} (\\Delta k _ {t} - k _ {e 0}) - \\varepsilon A V ^ {2}} \\\\ \\cdot \\frac {\\left(d _ {0} - x\\right) ^ {3}}{\\left(d _ {0} - x _ {(T)}\\right) ^ {3}} - 1 \\tag {10} \\\\ \\end{array}\n$$\nSimilarly, when the temperature changes, the relative change of the frequency can be obtained as (11), shown at the bottom of the next page.\nEquations (10) and (11) can be used to estimate the temperature-induced variation of the amplitude ratio and frequency of the mode-localized accelerometer at different acceleration when only the Young's modulus changes with temperature. The relationship is given as [31]\n$$\nE _ {(T)} = E _ {0} - B T e ^ {\\left(- \\frac {T _ {0}}{T}\\right)} \\tag {12}\n$$ where   E_0 = 170.57\\mathrm{GPa}  is the Young's modulus of silicon material at absolute zero,   B = 15.8\\mathrm{MPa / K} ,   T_0 = 317\\mathrm{K}  and   T  is from absolute zero to high temperature. According to Equation (12), the silicon Young's modulus from   30^{\\circ}\\mathrm{C} - 60^{\\circ}\\mathrm{C}  is shown in Figure 3. The Young's modulus of the silicon decreases linearly, and the temperature coefficient of   -68.91\\mathrm{ppm / }^{\\circ}\\mathrm{C}  is obtained.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_8",
+    "content": "(a)  (b)  Fig. 4. Simulation model of 3-DoF WCRs accelerometer with \"E\" coupling beam (a) and stress relief beam (b)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/137815c48f328eae396d3961eb8493d74d95d921705d4ac2ddc5af9599474f39.jpg",
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/161d704b2f957b51a861686e4078877c4a6c87e349b9009c27b71f861c678a21.jpg"
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "1) Simulation Model and Method: The temperature characteristics of the amplitude ratio and frequency of two accelerometers are simulated using COMSOL software. The accelerometer with \"E\" coupling beam and stress relief beam are shown in Figure 4(a) and 4(b) respectively.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(a)  (b)  Fig. 4. Simulation model of 3-DoF WCRs accelerometer with \"E\" coupling beam (a) and stress relief beam (b)..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/137815c48f328eae396d3961eb8493d74d95d921705d4ac2ddc5af9599474f39.jpg",
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/161d704b2f957b51a861686e4078877c4a6c87e349b9009c27b71f861c678a21.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "TABLE II MATERIAL PROPERTIES OF THE SIMULATION MODEL.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/cb8bf1255aae4b14ed14f893468c7c03d13d39232a36edf455552df305b8ea43.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "The accelerometers are fixed on the ceramic substrate by conductive silver paste. There is a layer of aluminum at the bottom of the model, which is set as a fixed constraint.\nThe Young's modulus of silicon is set as a function of temperature from   30^{\\circ}\\mathrm{C} - 60^{\\circ}\\mathrm{C}  according to Equation (12). The dimensions of the accelerometers and material properties of the simulation model are shown in Table I and II respectively. The thermal expansion module is used to include the effect of the thermal stress on the accelerometer. The drive comb fingers capacitors and the differential plate detection capacitors are both ignored to simplify the model. In order to ensure the accuracy of the simulation, the mass of the capacitors is added to the resonator. The mesh type of the device layer, handle layer and conductive silver paste is free triangle and sweep, and that of the ceramic substrate and aluminum are free tetrahedron.\nThe acceleration   a  from   0 - 1\\mathrm{g}  is applied to both proof masses in the form of boundary load   F = ma  in the same direction, where   m  is the mass of the proof mass. When the acceleration acts on the proof mass, the acceleration-sensitive capacitors gap   d_{\\mathrm{a}}  at different temperature and acceleration was simulated firstly. Then the value of   \\Delta k_{a}  can be obtained according to Equation (10). In the next step the   \\Delta k_{a}  is applied to the WCRs by set the value in the spring basic module of one resonator. Finally, the mode shape of the WCRs is solved by performing the study of eigenfrequency, thus, the amplitude ratio and frequency of the accelerometer at different acceleration and temperature can be obtained.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI DIMENSIONS OF PROOF MASS AND RESONATOR.",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "a) Effect of thermal stress and Young's modulus: When considering the effect of Young's modulus and thermal stress on the accelerometer, the temperature characteristics of   d_{\\mathrm{a}}  are shown in Figure 5. The displacement of the proof mass away from the WCRs is defined as negative, and the displacement close to the WCRs is positive. When the acceleration is   0\\mathrm{g}  and temperature is   60^{\\circ}\\mathrm{C} , the proof mass produces a displacement change   \\Delta x_{p}  of   0.0566\\mu \\mathrm{m}  away from the WCRs due to the\n$$\n\\frac {\\omega_ {(T)} - \\omega_ {0}}{\\omega_ {0}} = \\sqrt {\\frac {\\frac {E _ {(T)}}{E _ {0}} \\left(k + k _ {c}\\right) + \\frac {1}{2} \\left(\\Delta k _ {t} + \\Delta k _ {a (T)} - \\frac {2}{\\beta} \\cdot \\frac {E _ {(T)}}{E _ {0}} - \\sqrt {\\left(\\Delta k _ {t} + \\Delta k _ {a (T)}\\right) ^ {2} + \\left(\\frac {2}{\\beta} \\cdot \\frac {E _ {(T)}}{E _ {0}}\\right) ^ {2}}\\right)}{(k + k _ {c}) + \\frac {1}{2} \\left(\\Delta k _ {t} + \\Delta k _ {a} - \\frac {2}{\\beta} - \\sqrt {\\left(\\Delta k _ {t} + \\Delta k _ {a}\\right) ^ {2} + \\left(\\frac {2}{\\beta}\\right) ^ {2}}\\right)} - 1} \\tag {11}\n$$ thermal expansion caused by the thermal stress shown in Figure 5(a). Thus, the displacement of   0.0566\\mu \\mathrm{m}  away from the WCRs is superimposed on the   d_0  at   60^{\\circ}\\mathrm{C} .\nThe relationship between the WCRs displacement change   \\Delta x_{wcr}  and temperature is shown in Figure 5(b). Since the acceleration is not directly applied to WCRs,   \\Delta x_{wcr}  under different accelerations is the same. When the temperature is   60^{\\circ}\\mathrm{C} , the WCRs produce a displacement of   0.0678\\mu \\mathrm{m}  in the same direction as   \\Delta x_{p} . According to the   \\Delta x_{p}  and   \\Delta x_{wcr} , the relationship between the   d_{\\mathrm{a}}  and temperature is obtained shown in Figure 5(c). The   d_{0}  is   2.5\\mu \\mathrm{m} . At the same temperature, the direction of   \\Delta x_{p}  is the same as that of the   \\Delta x_{wcr}  and   \\Delta x_{p}  is smaller than   \\Delta x_{wcr} . Thus,   d_{\\mathrm{a}}  decreases as the temperature rises. The temperature coefficient of   d_{\\mathrm{a}}  varies from   -150.37\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   -148.54\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  when the acceleration increases from   0\\mathrm{g}  to   1\\mathrm{g} .\nThen the temperature characteristics of the output of the accelerometer withe \"E\" coupling beam is simulated. The acceleration response of the amplitude ratio and frequency in the range of   0 - 1\\mathrm{g}  from   30 - 60^{\\circ}\\mathrm{C}  are shown in the Figure 6. It can be seen from Figure 6(a) that there is a slight difference for the amplitude ratios at different temperature.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_13",
+    "content": "The sensitivity error is   6.81\\%  and the temperature coefficient of sensitivity is   -227.156\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . According to Figure 6(b) it can be seen that the frequency increase as the temperature rises which means that the dominant factor affecting the accelerometer is the thermal stress which owns the positive temperature coefficient of frequency [33]. The sensitivity error of frequency is   7.11\\%  and the temperature coefficient of sensitivity is   -2369.97\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . The temperature coefficient of the amplitude ratio and frequency at different acceleration are shown in Figure 6(c). The max temperature coefficient of the amplitude ratio output is   -2012.54\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and that of the frequency is about   611\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . It can be seen that under the condition that both the thermal stress and Young's modulus are affected by the temperature, the amplitude ratio is more sensitive to temperature than to frequency. This is because the stiffness of the coupling beam will change with thermal stress and the Young's modulus caused by temperature, and the coupling stiffness has a much larger impact on the amplitude ratio than on the frequency.\nb) Effect of Young's modulus: When only the Young's modulus of the accelerometer is affected by temperature, the temperature characteristics of the accelerometer with \"E\" coupling beam are simulated. First, the relationship between the   \\Delta \\mathbf{x}_p  and temperature is simulated and the results are shown in Figure 7(a). Since the proof mass is not affected by the thermal stress, there is no offset displacement at   0\\mathrm{g} . The stiffness of the elastic beam decreases as the temperature rises due to the negative temperature coefficient of the silicon Young's modulus, thus, the   \\Delta \\mathbf{x}_p  increases as the temperature rises. The   \\Delta \\mathbf{x}_{wcr}  is zero as the WCRs is not affected by thermal stress and acceleration. Therefore, the   \\mathrm{d_a}  is dependent on the   \\Delta \\mathbf{x}_p . The relationship between   \\mathrm{d_a}  and temperature are shown in Figure 7(b). The   \\mathrm{d_a}  decreases with the increase of temperature. The temperature coefficient of   \\mathrm{d_a}  is   -0.772\\mathrm{ppm} / ^{\\circ}\\mathrm{C}  at   1\\mathrm{g}  which is much smaller than that in Figure 5(c).\nThe amplitude ratio and frequency in the range of   0 - 1\\mathrm{g}  and   30^{\\circ}\\mathrm{C} - 60^{\\circ}\\mathrm{C}  are shown in Figure 8(a). It can be seen that the response curves of the amplitude ratio are almost coincident, indicating that it is less sensitive to the temperature, i.e., the sensitivity error is only   0.43\\%  and the temperature coefficient of sensitivity is   142.64\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . From Figure 8(b) it can be seen that the frequency decrease as the temperature rises due to the negative temperature coefficient of Young's modulus which reduces the stiffness of the resonator. The sensitivity error of frequency is   0.33\\%  and the temperature coefficient of sensitivity is   110.42\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . These simulation results show that the effect of the temperature on the amplitude ratio and frequency are significantly weakened without considering the effects of thermal stress on the accelerometer.\nThe theoretical and simulated temperature characteristics of amplitude ratio and frequency at different acceleration are compared as shown in Figure 9. When the temperature is increased to   60^{\\circ}\\mathrm{C} , all the errors of amplitude ratio, frequency, and temperature coefficient increase with the acceleration. When the acceleration is   1\\mathrm{g} , the simulated temperature coefficient of the amplitude ratio is   100.22\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , and that of frequency is   -34.66\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . The theoretical and simulated results are basically the same. It can be seen from Figure 7 that under the condition of being affected only by Young's modulus, the temperature coefficient of the amplitude ratio and frequency are significantly reduced. Therefore, thermal stress is the main factor affecting the output metric of the accelerometer.\n- 3) The 3-DoF Mode-Localized Accelerometer With Stress Relief Beam:\n- a) Elimination of thermal stress effect on the resonator: In order to eliminate the effect of thermal stress on the accelerometer, a stress relief structure is designed between the \"E\" coupling beam and anchor as shown in Figure 10. As the temperature increases, the elongation of the device layer is small than the elongation of the glass, because the coefficient of thermal expansion of silicon is small than that of glass. Thus, the thermal stress applied to the resonator is a tensile stress. When the thermal stress is applied to the accelerometer, the anchors expand to outside. For the WCRs without stress relief structure (i.e. \"E\" coupling beam), the stress directly acts on the connection between the coupling beam and the anchor when the anchors expand, then the stress transmitted to the elastic beam of the resonator through the coupling beam.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 9",
+        "caption": "Fig. 9. Temperature coefficient of amplitude ratio (a), and frequency (b).  (a)  Fig. 10. The effect of thermal stress on the resonator: (a) resonator without stress relief beam; (b) resonator with stress relief beam..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/b37229cd5282df96f2422c0f0d36c51d943da84306772202008ae1b13935acb2.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 10",
+        "caption": "Fig. 9. Temperature coefficient of amplitude ratio (a), and frequency (b).  (a)  Fig. 10. The effect of thermal stress on the resonator: (a) resonator without stress relief beam; (b) resonator with stress relief beam..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/b37229cd5282df96f2422c0f0d36c51d943da84306772202008ae1b13935acb2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Fig. 9. Temperature coefficient of amplitude ratio (a), and frequency (b).  (a)  Fig. 10. The effect of thermal stress on the resonator: (a) resonator without stress relief beam; (b) resonator with stress relief beam..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/b37229cd5282df96f2422c0f0d36c51d943da84306772202008ae1b13935acb2.jpg"
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "For the mode-localized accelerometer with a stress relief beam, the stress directly acts on the connection between the stress relief beam and anchor when the anchor on both sides of the resonator shrink. The stress relief beam will deform in the y direction under the action of thermal stress because of the small stiffness in the y direction, which means that the stress does not transmit to the elastic beam of the resonator, thereby driving the resonator to move in the y direction shown in Figure 10(b). Thus, the effect of thermal stress on the resonator can be weakened.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 10",
+        "caption": "Fig. 9. Temperature coefficient of amplitude ratio (a), and frequency (b).  (a)  Fig. 10. The effect of thermal stress on the resonator: (a) resonator without stress relief beam; (b) resonator with stress relief beam..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/b37229cd5282df96f2422c0f0d36c51d943da84306772202008ae1b13935acb2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "b) The temperature characteristics of the acceleration-sensitive capacitor gap: When the accelerometer is affected by thermal stress and Young's modulus, the temperature characteristics of the   d_{\\mathrm{a}}  are simulated firstly and the results are shown in Figure 11.\nSince the dimensions of the proof mass is the same as it of the accelerometer with \"E\" coupling beam, the temperature-induced   \\Delta x_{p}  remains the same shown in Figure 11(a). The   \\Delta x_{wcr}  is reduced to   0.0422\\mu \\mathrm{m}  at   60^{\\circ}\\mathrm{C}  due to the function of the stress relief beam shown in Figure 11(b). The relationship between   \\mathrm{d_a}  and temperature is obtained shown in Figure 11(c). Although the thermal stress-induced   \\Delta x_{wcr}  is reduced, it cannot completely cancel with   \\Delta x_{p}  and is small than   \\Delta x_{p} , thus,   \\mathrm{d_a}  increases as the temperature rises. The temperature coefficient of   \\mathrm{d_a}  changes from   192.218\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   193.607\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  which is slightly larger than that of the accelerometer with \"E\" coupling beam.\nc) The temperature characteristics of output of the accelerometer with stress relief beam: The COMSOL simulation analysis of the accelerometer with stress relief beam is performed.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "(a). (b)  (c)  Fig. 12. Simulated amplitude ratio (a), frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c7baaa6d6e9a0b02581412a7afffe845e9b9ffce6477065fcbb1eb2ba16b5012.jpg"
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Considering the effects of thermal stress and Young's modulus at the same time, the acceleration response and temperature coefficient of the amplitude ratio and frequency within the range of   30^{\\circ}\\mathrm{C} - 60^{\\circ}\\mathrm{C}  and   0 - 1\\mathrm{g}  are shown in Figure 12(a) and 12(b).\nCompared with the accelerometer with \"E\" coupling beam, the sensitivity error of amplitude ratio decreased from   13.12\\%  to   2.01\\%  and that of frequency decreased from   7.11\\%  to   1.8\\% ; the temperature coefficient of amplitude ratio sensitivity has reduced from   -2271.56\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   -669.01\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and that of frequency sensitivity decreased from   -2369.97\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   -600.02\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . The temperature coefficients of the amplitude ratio and frequency under different acceleration are shown in Figure 12(c). The max temperature coefficient of the amplitude ratio is   -504.03\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  while that of accelerometer with \"E\" coupling beam is about   -2012.54\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} ; the temperature coefficient of the frequency reduced from   611\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   44.91\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . From Figure 12(b) it can be seen that the frequency increase as the temperature rises which means that the effect of thermal stress on the accelerometer is not completely eliminated, however, the stress relief beam still significantly weakens the effect of thermal stress on the amplitude ratio and frequency, and greatly reduces the temperature coefficient of sensitivity and output metric of the amplitude ratio and frequency.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 12",
+        "caption": "(a). (b)  (c)  Fig. 12. Simulated amplitude ratio (a), frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c7baaa6d6e9a0b02581412a7afffe845e9b9ffce6477065fcbb1eb2ba16b5012.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "In this work, the temperature characteristics of two type of simulated mode-localized accelerometers with the dimensions in Table I are measured under the closed-loop circumstance. The measurement setup of the temperature characteristic is shown in Figure 13 and includes a DC power source, lock-in amplifier (Zurich Instruments HF2LI), PCB test circuit, turntable and oven. In order to eliminate the effect of temperature on the measurement circuit, the PCB test circuit is placed outside the oven and only the accelerometer fixed to the turntable is placed inside the oven. The accelerometer is tested in the range of   0 - 1\\mathrm{g}  and   30 - 60^{\\circ}\\mathrm{C}  at intervals of   10^{\\circ}\\mathrm{C} . The accelerometer is packaged in a vacuum metal shell, thus, the oven needs to be kept for one hour at every measurement temperature point to make the temperature of the accelerometer stable.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI DIMENSIONS OF PROOF MASS AND RESONATOR.",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_20",
+    "content": "The amplitude ratio and frequency of the accelerometer with \"E\" coupling beam are shown in Figure 14(a) and 14(b). The sensitivity error of amplitude ratio is   4.39\\%  and the temperature coefficient of sensitivity based on amplitude ratio is   -1464.26\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} ; the sensitivity error of frequency is   8.84\\%  and the temperature coefficient of sensitivity based on frequency is   2947.84\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} .\nAccording to the Figure 14(b) the frequency increase as the temperature rises indicating that the accelerometer is more seriously affected by the stress which is the same with the simulation results of the accelerometer with \"E\" coupling beam. The stiffness of resonator and coupling beam are both enhanced by the stress. The amplitude ratio is more affected by the coupling beam stiffness, however, the frequency is more affected by the resonator stiffness. And coupling stiffness and resonator stiffness have opposite effects on amplitude ratio and frequency respectively, thus, the temperature coefficient of the amplitude ratio and frequency are opposite. The temperature coefficient of amplitude ratio and frequency under different acceleration is shown in the Fig. 14(c). The maximum temperature coefficient of the amplitude ratio and frequency are   -5726.41\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and   127.04\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , respectively.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_21",
+    "content": "The amplitude ratio and frequency of the accelerometer with stress relief structure are shown in Figure 15(a) and 15(b). The sensitivity error of the amplitude ratio is   0.94\\% , the temperature coefficient of the sensitivity based on amplitude ratio is   -314.07\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} ; the sensitivity error of frequency is   0.98\\% , and the temperature coefficient of sensitivity based on frequency is   -329.62\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} .\nThe temperature coefficient of amplitude ratio and frequency under different acceleration are shown in Figure 15(c). The maximum temperature coefficient of amplitude ratio and frequency are   -405.77\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and   14.24\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , respectively.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 15",
+        "caption": "(a). (b)  (c)  Fig. 15. Amplitude ratio (a) and frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c5cdbfaca23caefd63f0d37506253a8d5574ae49206875c8dc1ef1ea452d4831.jpg",
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c1a09b294af8d2be40f503ea116632919b82c8f2bd9906398a397e8e6ee53108.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "(a). (b)  (c)  Fig. 15. Amplitude ratio (a) and frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c5cdbfaca23caefd63f0d37506253a8d5574ae49206875c8dc1ef1ea452d4831.jpg",
+      "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c1a09b294af8d2be40f503ea116632919b82c8f2bd9906398a397e8e6ee53108.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "Compared with the accelerometer with \"E\" type coupling beam the influence of temperature on the sensitivity of amplitude ratio and frequency is well suppressed, and the temperature coefficients of sensitivities based on two output metrics are reduced by   78.55\\%  and   88.81\\% , respectively. In addition, the temperature coefficients of the output metric based on amplitude ratio and frequency are also significantly reduced. The maximum temperature coefficients of the amplitude ratio and frequency are reduced by   92.91\\%  and   88.79\\% , respectively. It can be concluded that the thermal stress is still the main factor affecting the accelerometer with the stress relief beam according to the positive temperature coefficient of the frequency from Figure 15(c). In fact, it is difficult to completely eliminate the effect of stress for the WCRs based on the mechanical coupling, but the stress relief beam still weakens the effect of temperature on the accelerometer significantly.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 15",
+        "caption": "(a). (b)  (c)  Fig. 15. Amplitude ratio (a) and frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c5cdbfaca23caefd63f0d37506253a8d5574ae49206875c8dc1ef1ea452d4831.jpg",
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c1a09b294af8d2be40f503ea116632919b82c8f2bd9906398a397e8e6ee53108.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_24",
+    "content": "Although the temperature coefficient of the amplitude ratio is reduced by an order of magnitude, it is still an order of magnitude higher than that of frequency. The effect of temperature on the output of mode-localized accelerometer can be considered as a stiffness perturbation caused by temperature applied to the accelerometer, and the sensitivity of amplitude ratio is much larger than that of frequency, which also leads a significant change of amplitude ratio caused by temperature change. Therefore, a temperature suppression coefficient   \\gamma  is introduced to characterize the temperature drift suppression capability of two output metrics through comprehensively considering the temperature sensitivity   (/^\\circ \\mathrm{C})  and input stiffness sensitivity   (/\\Delta \\mathrm{k / k}) . The temperature suppression coefficient   \\gamma  is defined as\n$$\n\\gamma = \\frac {S _ {T}}{S _ {\\delta}} \\tag {13}\n$$\nwhere   S_{T}  is the temperature sensitivity and   S_{\\delta}  is the stiffness sensitivity. The input acceleration is converted to the corresponding stiffness perturbation, then the sensitivity of the output metric relative to the stiffness at different acceleration is obtained shown in Figure 16(a). It can be seen that the sensitivity of the amplitude ratio increase slightly as the acceleration increases and is stable at higher acceleration. This is due to the variation of the sensitivity of the amplitude ratio at different input [30]. The absolute sensitivity of each output metric relative to the temperature change is shown in Figure 16(b) which shows the opposite effect of the\ntemperature as the same with the temperature coefficient in Figure 15(c). Then the temperature suppression coefficient is obtained by dividing the absolute sensitivity of each output metric relative to the temperature by the sensitivity of the output metric relative to the stiffness shown in Figure 16(c). It can be seen that the temperature suppression coefficients of the amplitude ratio at different amplitude ratio are both less than   1\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and the maximum value is only   0.77\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} . However, the maximum temperature suppression coefficient of frequency reaches   33.81\\mathrm{ppm} / {}^{\\circ}\\mathrm{C} , which is 43.9 times higher than that of the amplitude ratio. The temperature suppression coefficient reflects the input-referred temperature-induced change of output metric and the smaller the temperature suppression coefficient the stronger the capability to suppress temperature noise. Thus, the amplitude ratio with a much lower temperature suppression coefficient has a much better temperature noise suppression capability than does the frequency.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 15",
+        "caption": "(a). (b)  (c)  Fig. 15. Amplitude ratio (a) and frequency (b) and temperature coefficient (c) of the accelerometer with stress relief structure..",
+        "image_source": [
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c5cdbfaca23caefd63f0d37506253a8d5574ae49206875c8dc1ef1ea452d4831.jpg",
+          "./text_resources/A_Mode-Localized_Resonant_Accelerometer_With_Self-Temperature_Drift_Suppression/vlm/images/c1a09b294af8d2be40f503ea116632919b82c8f2bd9906398a397e8e6ee53108.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_25",
+    "content": "In previous work, WCRs were verified to be excellent in temperature drift suppression; however, the conversion mechanism of the mode-localized sensors also affects the temperature characteristic of the mode-localized sensors. In this paper, we show for the first time that the 3-DoF mode-localized accelerometer which the resonator is weakly coupled by the mechanical beam with the function of stress relief still presents excellent temperature drift suppression capability through the simulation and experiment from   30^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C}  even though the conversion mechanism (acceleration to electrostatic negative stiffness) is affected by the temperature.\nIt should be noted that the temperature coefficient of the frequency is almost one order of magnitude lower than that of the amplitude ratio in the two accelerometers in this paper. However, sensitivity based on amplitude ratio is much higher than that based on frequency. Thus, the temperature suppression coefficient, defined as the ratio of temperature sensitivity and input sensitivity, is used to characterize the temperature drift suppression capability of the mode-localized accelerometer. In addition, the temperature suppression coefficient of the amplitude ratio is more than one order of magnitude lower than that of the frequency, indicating that the mode-localized accelerometer based on amplitude ratio has an excellent temperature drift suppression capability compared with that based on the traditional output metric of frequency.\nAlmost all MEMS accelerometers are temperature sensors because they are made of silicon. This paper verifies that mode-localized accelerometers have an excellent temperature drift suppression capability, which provides new options for their application in some harsh environments.",
+    "block_type": "text"
+  }
+]

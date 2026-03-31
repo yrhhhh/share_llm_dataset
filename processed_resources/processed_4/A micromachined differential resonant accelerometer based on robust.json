@@ -1,0 +1,172 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Micromachining\nSilicon-on-insulator (SOI)",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "This paper describes design, fabrication, and testing of a micromachined differential resonant accelerometer (DRA), which is one of the most common solid proof mass accelerometers; it exploits a correlation between acceleration and shifts in the resonant frequency of oscillating beams loaded axially. The effective and simplified structure of the DRA amplifies the induced inertial force resulting from applied acceleration, while retaining structural stability and robustness. Mathematical and numerical analyses were conducted to optimize the detailed structures of the DRA under appropriate operating conditions. An experimentally measured differential scale factor of   188.5\\mathrm{Hz / g}  showed good agreement with the results of the analysis. Utilizing a silicon-on-insulator wafer provided uniform material properties and thickness of the structural layer, resulting in bias stability of   100~\\mu \\mathrm{g}  and a Q factor of   0.37\\times 10^{6} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "A resonant accelerometer is a device that exploits shifts in the resonant frequency of an oscillator to measure linear acceleration [1,2]. The main advantage of a resonant accelerometer is its inherently digitized output; it does not need analog-to-digital conversion, which is a potential source of errors. Because a resonant accelerometer is an open-loop system, it has lower power consumption than a closed-loop accelerometer with a servo system. The proof mass of a resonant accelerometer is always constrained even when unpowered, so resonant accelerometers are rugged and can tolerate high levels of handling and storage shocks [3].\nMicromachining allows miniaturization of traditional electromechanical sensors, including resonant accelerometers. This possibly ensures the advantages of low cost, low power consumption, small size, and high shock tolerance. However, the reduction in size of sensing elements creates challenges for attaining good accuracy. In general, as size decreases, the scale factor   SF  decreases, noise increases, and driving force decreases. Although high-precision\naccelerometers have been already developed, most have not yet been evaluated completely as strategic and navigation grade [2].\nTherefore, resonant accelerometers based on microelectro-mechanical systems (MEMS) have been widely studied to improve their accuracy, and finding ways to increase   SF  has become the priority in many of these research efforts since the feasibility and operations of a MEMS resonant accelerometer have been successfully demonstrated [4].\nSF can be increased by two basic approaches: (1) enlarging the area of a proof mass to increase the inertial force at a given acceleration and (2) narrowing and lengthening oscillating beams to increase their frequency shift at a given inertial force. In addition, another method was used to increase SF even in a device of limited size; micro-levers were designed to amplify an inertial force at a given acceleration. Micro-leverage mechanisms have been adopted in many devices [5-8] and systematically analyzed [9]. To further increase SF, a multistage micro-leverage mechanism has been designed [10].\nHowever, although micro-leverage mechanisms effectively amplified the inertial force in previous research, they increase the complexity of the manufacturing process, and decrease the device's structural stability. Therefore this report proposes a micromachined differential resonant accelerometer (DRA) that does not incorporate complicated leverages, and that maintains its structural stability and robustness. Mathematical and numerical analyses were conducted to optimize the DRA's structures under appropriate operating conditions. A specialized fabrication process developed to realize the proposed accelerometer is presented; this process considers high-aspect-ratio structures for a large area, decreases cross-axis sensitivity, and increases structural stability, robustness, and   SF . Resonance characteristics, the performance and noise characteristics of the fabricated accelerometer were measured and analyzed using numerical simulation.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Fig. 1. Schematic of the proposed accelerometer. Horizontal   \\times  vertical dimensions are in micrometers. (O: fixed points)..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/c33d138398982fa93947f826697005a7f04fe563125eceb1d1bbbb3b2b7d0f77.jpg",
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/e4abcb48a7630cc51ab6982da1b3ce4a9469a0914ca5a54aa72953f05d0d078f.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "The proposed accelerometer is configured with a symmetrical pair of parts that consist of a proof mass and an attached double-ended tuning fork (DETF) oscillator which are driven electrostatically at a resonant frequency (Fig. 1). When accelerated along an input axis, the proof mass applies forces to an oscillator, which causes a change in its resonant frequency. The frequency change is measured to indicate the applied acceleration. A significant feature of our accelerometer is that a proof mass is employed as leverage to amplify an inertial force without the need for additional beams; an amplified axial-load is transferred from the proof mass to the oscillator.\nTo cancel out common mode errors in the accelerometer, such as thermal mismatches, cross-sensitivity and nonlinearity, a differential matched oscillator configuration is used [4,5,7-11]. The separated proof masses for the oscillator on each side can increase\nerror due to imprecision during manufacturing, but decrease feed-though noise between two oscillators and problems from lock-in [11].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Schematic of the proposed accelerometer. Horizontal   \\times  vertical dimensions are in micrometers. (O: fixed points)..",
+        "image_source": [
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/c33d138398982fa93947f826697005a7f04fe563125eceb1d1bbbb3b2b7d0f77.jpg",
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/e4abcb48a7630cc51ab6982da1b3ce4a9469a0914ca5a54aa72953f05d0d078f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "(f). (a). (g) Fig. 3. Fabrication process of the accelerometer. (a) Glass wafer, (b) etch shallow recesses, (c) metallization, (d) SOI wafer, (e) gap formation, (f) bonding, and (g) etch backside of SOI wafer and form detailed structures..",
+    "block_type": "figure",
+    "image_source": [
+      "text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/Fig3.png"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The oscillator consists of three kinds of beams, each of which is related to respective properties of the accelerometer: oscillating beam, base beam and ligament (Fig. 1). The oscillating beam dominantly determines the resonant frequency in an out-of-phase driving mode; this component was designed from the equation of the lateral stiffness   K  of an axially loaded beam [7].",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Schematic of the proposed accelerometer. Horizontal   \\times  vertical dimensions are in micrometers. (O: fixed points)..",
+        "image_source": [
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/c33d138398982fa93947f826697005a7f04fe563125eceb1d1bbbb3b2b7d0f77.jpg",
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/e4abcb48a7630cc51ab6982da1b3ce4a9469a0914ca5a54aa72953f05d0d078f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "(a). (b). (c). (d) Fig. 4. (a) Optical image, and SEM images of the fabricated accelerometer: (b) anchor, (c) oscillator and (d) comb teeth..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/893fea0dc2f7c6cffec93d62175f4fdbaa9e90cd0a8c9a89ccd59dae45d2bc33.jpg",
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/4491e5466422c8abe3c6204d906ef51507c34bc977c802a606bc5d561dbccef0.jpg",
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/6161c85945c7e610277a994108caf9ee57ae8fce5086ce73847674f6a29de8fd.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "$$\nK = \\frac {2 4 \\mathrm {E l}}{l ^ {3}} - \\frac {1 2 P}{5 l};\n$$\nthen the resonant frequency   \\omega  of the oscillator can be expressed as\n$$\n\\begin{array}{l} \\omega = \\sqrt {\\frac {K}{m}} = \\sqrt {\\frac {2 4 \\mathrm {E l}}{m l ^ {3}}} \\sqrt {1 - \\frac {l ^ {2} P}{1 0 \\mathrm {E l}}} = \\omega_ {0} \\sqrt {1 - \\frac {l ^ {2} P}{1 0 \\mathrm {E l}}} \\\\ \\cong \\omega_ {0} \\left(1 + \\frac {1}{2} \\frac {l ^ {2}}{1 0 E I} P\\right), \\\\ \\end{array}\n$$\n$$\n\\mathrm {S F} = \\frac {\\Delta \\omega}{\\Delta a} = = \\omega_ {0} \\frac {1}{4 0} \\frac {l ^ {2} M}{E l} C = \\frac {3 \\sqrt {2}}{1 0} \\sqrt {\\frac {\\rho l}{A _ {0} E w ^ {3}}} A _ {p} c, \\tag {1}\n$$\nl  is the length of the oscillating beam\nE  is Young's Modulus of Elasticity\nP  is the axial compressive load (applied to the oscillating beam by the proof mass)\nm = \\rho A_{0}t  is the oscillator mass\nt  is the thickness of the structure\n\\omega_0 = \\sqrt{\\frac{24\\mathrm{EI}}{m^3}}  is the unloaded resonance frequency of the oscillator\nM = \\rho A_{p}t  is the mass of proof mass\nl = \\frac{tw^3}{12}  is the area moment of inertia of the oscillating beam\n\\rho  is the density of the structure\nA_{o}  is the effective area of the oscillator mass\nA_{p}  is the effective area of the proof mass c  is the amplifying ratio of load   w  is the width of the oscillating beam\nAccording to Eq. (1),   w  dominantly influences   SF ; a narrower beam width allows a higher   SF . Therefore the minimum beam width   w  which can be manufactured with appropriate yield was chosen, then   l  was adjusted to obtain the desired resonant frequency.\nThe base beam and ligament transfer force and anchor the structure on a substrate respectively; these were designed by finite element analysis using commercial software ANSYS ver. 11.0 with consideration of three major design conditions: increasing   SF , decreasing the displacement of oscillators under external acceleration, and enlarging the difference in frequency from one driving mode to another (Fig. 2). Increasing   SF  increases the accelerometer's sensitivity to input acceleration; decreasing the displacement of oscillators increases the uniformity of the oscillating amplitude of the DETF. The frequency difference between the driving mode and the near modes should be set as wide as possible to assure wide dynamic range and stable self-oscillation.\nIterative simulations were used to design the geometries of the proof mass and other anchors to decrease out-of-plane deflection while satisfying the above conditions.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_9",
+    "content": "(a). (b) Fig. 6. (a) Test setup for the open-loop test and (b) changes of resonance frequency from simple tumble test..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/98064c9b42b5cf6e653b71eb615f3469bc3d67c22c000437ebec5766f1ae1b6e.jpg",
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/f5fd3f7baae03093cb10e496f7380c2a00d9752c6331baac13e85b65f520ad97.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "(b) Fig. 7. (a) Test setup for the closed-loop test and (b) the accelerometer with the circuit mounted on the rate table..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/b1fa3493f3f12b70380a56f5bf93fe92de697c56f0d80fc2e63c0274eaaedd07.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "A specialized fabrication process (Fig. 3) that considers high-aspect-ratio structures for a large area was developed to decrease cross-axis sensitivity, and increase structural stability, robustness, and   SF . In addition, the increase of the thickness causes increase in the overlap area in the comb-drive, which means increase of capacitance change at the same oscillator amplitude.\nThe fabrication process begins with a 4-inch Pyrex #7740 wafer   (500\\mu \\mathrm{m}  thick) (Fig. 3a-c), which was selected because its thermal expansion coefficient matches that of silicon, and a silicon-on-insulator (SOI) wafer (device layer   = 50~{\\mu\\mathrm{m}}  buried oxide layer   = 1\\mu \\mathrm{m}  and handling layer   = 500~{\\mu\\mathrm{m}}  thick) (Fig. 3d and e). The SOI wafer is appropriate for fabrication of thick silicon microstructures with high aspect ratio due to the ease of increasing the device layer thickness while maintaining uniform height and mechanical properties. Moreover, the bonded SOI wafer in this fabrication process enables patterning of electrodes under silicon structures, and out-of-plane electrical interconnection [12,13].\nSupport columns were formed under the suspended silicon layer (i.e. the proof mass) in Fig. 3e to decrease its bowing during the bonding step (Fig. 3f) and breakage during the 2nd deep reactive ion etching (DRIE) step (Fig. 3g) caused by the pressure difference when columns were removed. An additional metal shield layer under precise silicon structures (e.g. comb-drive) dramatically decreased notching during the 2nd DRIE step (Fig. 3g) and prevented bonding in undesired areas [14]. In addition, after finishing fabrication, the metal shield layer is connected to a ground electrode and therefore also functions as an electrical noise shield. The fabrication process provided precise structures at micrometer scales (Fig. 4).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "(f). (a). (g) Fig. 3. Fabrication process of the accelerometer. (a) Glass wafer, (b) etch shallow recesses, (c) metallization, (d) SOI wafer, (e) gap formation, (f) bonding, and (g) etch backside of SOI wafer and form detailed structures..",
+        "image_source": [
+          "text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/Fig3.png"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(a). (b). (c). (d) Fig. 4. (a) Optical image, and SEM images of the fabricated accelerometer: (b) anchor, (c) oscillator and (d) comb teeth..",
+        "image_source": [
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/893fea0dc2f7c6cffec93d62175f4fdbaa9e90cd0a8c9a89ccd59dae45d2bc33.jpg",
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/4491e5466422c8abe3c6204d906ef51507c34bc977c802a606bc5d561dbccef0.jpg",
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/6161c85945c7e610277a994108caf9ee57ae8fce5086ce73847674f6a29de8fd.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "The signal processing unit for the self-oscillation of the fabricated DRA consists of the sensing parts and the driving parts (Fig. 5). To decrease feed-through noise from the driving combs (i.e., outer fixing comb) to the sensing comb (i.e., inner fixing comb), the output voltages to driving combs were set to opposite polarity with the same magnitude and ground electrodes guard all signal electrodes in the DRA and the circuit [15].\nFabricated devices that were well-defined mechanically and electrically were selected for further testing. Their resonance frequencies and other resonance characteristics were investigated using a HP Dynamic Signal Analyzer 35670A, dc power supply, and the sensing part of the circuit in Fig. 5 (Fig. 6a).\nDevices of which resonance characteristics and changes of resonance frequency had been confirmed in a simple tumble test (Fig. 6b) were mounted on a metal package and hermetically enclosed for use in further experiments (Fig. 6). To maintain the pressure level in the vacuum cavity, agetter material was deposited on the bottom surface of the lid of the package to absorb outgassed materials.   SF  was measured using a frequency counter with a circuit that included a self-resonating and driving part based on the sensing part (Fig. 5) on a rate table. The driving voltage was set to   10\\mathrm{mV}  with the bias voltage of   2.5\\mathrm{V}  and the sampling rate of the output signal was   10\\mathrm{Hz} . All experiments were conducted in a constant-temperature chamber at room temperature (Fig. 7a and b).\nSF derived from the differential frequency shift output as a function of the applied acceleration (i.e. the linear trend line) was about   188.3\\mathrm{Hz / g}  (adjusted   R^2 = 0.99996  Fig. 8a and   188.5\\mathrm{Hz / g}  (adjusted   R^2 = 0.99997  Fig. 8b). The SF of   188.5\\mathrm{Hz / g}  differed by   6.6\\%  from the FEA result (Table 1). Because the width of the oscillating beam is the factor which has the greatest effect on resonant frequency and SF (Eq.(1)), the major cause of errors in these values was probably imprecise manufacturing, especially during the final DRIE step (Fig. 3g). The proposed device was compared with previously-reported devices (Table 2).\nThe fluctuation (noise) of the output signal without an input acceleration was measured to analyze bias stability of the fabricated DRA. The test setup of the noise test is similar to the test setup of the closed-loop test but the rate table was not rotated because the noise test does not need an input acceleration. Bias stability can be interpreted as drift of the dc component of an output signal and is characterized by the standard deviation   \\sigma  of the output measured periodically for a specified time [16-18]. The measured bias stability was about   100\\mu \\mathrm{g}  with a period of   1\\mathrm{min}  of continuous operation during   1\\mathrm{h} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "(a). (b) Fig. 6. (a) Test setup for the open-loop test and (b) changes of resonance frequency from simple tumble test..",
+        "image_source": [
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/98064c9b42b5cf6e653b71eb615f3469bc3d67c22c000437ebec5766f1ae1b6e.jpg",
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/f5fd3f7baae03093cb10e496f7380c2a00d9752c6331baac13e85b65f520ad97.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "(f). (a). (g) Fig. 3. Fabrication process of the accelerometer. (a) Glass wafer, (b) etch shallow recesses, (c) metallization, (d) SOI wafer, (e) gap formation, (f) bonding, and (g) etch backside of SOI wafer and form detailed structures..",
+        "image_source": [
+          "text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/Fig3.png"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table ",
+        "caption": "(b) Fig. 7. (a) Test setup for the closed-loop test and (b) the accelerometer with the circuit mounted on the rate table..",
+        "image_source": [
+          "./text_resources/A micromachined differential resonant accelerometer based on robust/vlm/images/b1fa3493f3f12b70380a56f5bf93fe92de697c56f0d80fc2e63c0274eaaedd07.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1 Test results and comparisons with the analysis results..",
+        "image_source": []
+      },
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2 Test results and comparisons with the results of the literature..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "In this paper, we introduced design analyses for a proposed accelerometer that we then fabricated; we presented the results of experiments that were conducted using this device. With a driving resonant frequency of   \\sim 26\\mathrm{kHz} , the fabricated accelerometer shows a linear   SF  of   188\\mathrm{Hz / g}  and it shows good with the analysis results. A bias stability of   100~\\mu \\mathrm{g}  and a Q-factor of   0.37\\times 10^{6}  were measured also. These results testify to the DRA's high structural\nand mechanical stability, and its potential to replace conventional macro-electromechanical devices in high-end applications.",
+    "block_type": "text"
+  }
+]

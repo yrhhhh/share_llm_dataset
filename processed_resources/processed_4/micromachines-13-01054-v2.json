@@ -1,0 +1,108 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract: The output of the micromachined silicon resonant accelerometer (MSRA) is prone to drift in a temperature-changing environment. Therefore, it is crucial to adopt an appropriate suppression method for temperature error to improve the performance of the accelerometer. In this study, an improved firefly algorithm-backpropagation (IFA-BP) neural network is proposed in order to realize temperature compensation. IFA can improve a BP neural network's convergence accuracy and robustness in the training process by optimizing the initial weights and thresholds of the BP neural network. Additionally, zero-bias experiments at room temperature and full-temperature experiments were conducted on the MSRA, and the reproducible experimental data were used to train and evaluate the temperature compensation model. Compared with the firefly algorithm-backpropagation (FA-BP) neural network, it was proven that the IFA-BP neural network model has a better temperature compensation performance. The experimental results of the zero-bias experiment at room temperature indicated that the stability of the zero-bias was improved by more than an order of magnitude after compensation by the IFA-BP neural network temperature compensation model. The results of the full-temperature experiment indicated that in the temperature range of   -40^{\\circ}\\mathrm{C} \\sim 60^{\\circ}\\mathrm{C} , the variation of the scale factor at full temperature improved by more than 70 times, and the variation of the bias at full temperature improved by around three orders of magnitude.\nKeywords: micromachined silicon resonant accelerometer; temperature compensation; neural network; firefly algorithm",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Micromachined silicon resonant accelerometers have the advantages of small size, low power consumption, mass production, and quasi-digitalization [1,2]. They have been widely used in aerospace and Earth exploration fields [3,4]. Due to the influence of the materials and fabrication, the output of the MSRA is prone to drift in a temperature-changing environment. The influence of temperature on the accelerometer is mainly reflected in the following aspects: firstly, the Young's modulus of the silicon will change with temperature [5]; secondly, the mismatched thermal expansion coefficient of silicon and the base material will create thermal stress in the resonator; thirdly, the fabricating and packaging process will lead to the generation of residual thermal stress [6-8]. Temperature drift is one of the key factors limiting further improvements in the accuracy of MSRAs, and it needs to be suppressed [9]. At present, the common temperature drift suppression methods mainly include temperature control systems, structural optimization, and temperature compensation models.\nThe temperature control system can make an accelerometer operate at a constant temperature, which effectively avoids the influence of temperature change. In general,\na temperature chamber or an on-chip heating electrode is used to keep the temperature stable; therefore, the temperature control system can theoretically eliminate the influence of temperature across a wide working range. However, the temperature chamber will greatly increase the volume and power of the system, and the on-chip heating electrode method is complicated to control and may introduce additional noise [10-13]. Structural optimization mainly reduces the influence of thermal stress by designing a special structure, such as a differential structure or a stress isolation frame [14-17]. The authors of [18] proposed a differential resonant accelerometer with temperature compensation, in which resonant beams were fixed by a single anchor to eliminate the frequency drift caused by external and package stress. In [19], the authors reported an MSRA embedded in an isolation frame with stress-insensitive anchors, which could protect the resonant beams from thermal stress along the sensitive axis. The method of structural optimization can theoretically reduce the influence of thermal stress effectively. However, due to the limitations of processing technology, it is difficult to achieve complete symmetry in the differential structure, which means that the common-mode error cannot be completely eliminated.\nTemperature drift compensation based on a software algorithm is an efficient method for suppressing temperature drift. Establishing a temperature compensation model can save numerous hardware resources and has great flexibility [20]. The polynomial compensation model is a commonly used temperature compensation model. The authors of [21] used temperature resonators to measure the temperature and established a polynomial temperature compensation model to compensate the frequency output of the accelerometer. The experimental results showed that the temperature coefficients of the bias and scale factor reduced from   3.1\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  and   778~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   0.05\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  and   -9.4\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  after compensation. The authors of [22] proposed a method of self-calibration of the temperature difference ratio and established a temperature compensation model for a resonant accelerometer. A least-squares method which performed regression analysis on the accelerometer's frequency and temperature was applied to obtain the model parameters. The experimental results showed that the frequency drift of the two resonators of the accelerometer reduced from   43.16\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  to   0.83\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  after compensation.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "In recent years, with the development of machine learning technology, neural networks have been widely applied in many fields [23-25], and accelerometer temperature compensation models established by neural networks have also begun to be researched. The authors of [26] proposed a temperature compensation method based on the BP neural network and combined it with the genetic algorithm to optimize the BP neural network model. The experimental results showed that the maximum error of the accelerometer's output was   0.017\\% , which is 173 times better than the traditional polynomial fit over the temperature range from   -10^{\\circ}\\mathrm{C}  to   60^{\\circ}\\mathrm{C} . In [27], the authors proposed a fusion algorithm of EMD (empirical mode decomposition) + wavelet thresholding + GA (genetic algorithm) BP temperature compensation to improve the accuracy of a high-G accelerometer. The experimental results showed that the random walk and zero-bias stability of the accelerometer changed from   1712.66\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}  and   49275\\mathrm{g/h}  to   79.15\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}  and   774.7\\mathrm{g/h} , respectively. The authors of [28] proposed an RBF-NN + GA + KF (radial basis function neural network + genetic algorithm + Kalman filter) fusion algorithm to compensate for the temperature drift of an accelerometer. With this method, the acceleration random drift was reduced from   17130\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}}  to   765.3\\mathrm{g/h} / \\sqrt{\\mathrm{Hz}} , and the bias stability reduced from   4720\\mathrm{g/h}  to   57.27\\mathrm{g/h} .\nTo further improve the performance of the MSRA developed in the laboratory, a method for temperature compensation based on an IFA-BP neural network model is proposed in this study. It optimizes the initial weights and thresholds of the BP neural network by taking advantage of the optimization ability of IFA and then applies the obtained neural network model to perform compensation for the accelerometer to improve the temperature performance of the accelerometer. Finally, a temperature experimental system was established to verify the effect of the IFA-BP neural network compensation model. The results showed that the stability of the zero-bias improved by more than 10 times\nafter compensation in the zero-bias experiment at room temperature. The full-temperature experiment indicated that in the temperature range of   -40^{\\circ}\\mathrm{C} \\sim 60^{\\circ}\\mathrm{C} , the variation of the scale factor at full temperature improved by more than 70 times, and the variation of the bias at full-temperature improved by around 1000 times after compensation.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "The BP neural network is a multilayer feedforward neural network based on error backpropagation, and its learning process includes forward signal propagation and error backpropagation. The BP neural network is composed of an input layer, a hidden layer, and an output layer. When the number of hidden layer neurons is appropriately determined, a three-layer neural network with a single hidden layer can achieve the approximation of an arbitrary nonlinear function [29]. For problems with low complexity, a neural network with one hidden layer is sufficient, and an excessive number of hidden layers may lead to difficulties in convergence. The structure of the three-layer BP neural network is shown in Figure 1. The BP neural network does not need the relational expression between the input and output, and only needs to be trained with a large amount of data to obtain a high-precision model. Therefore, it has the advantages of strong self-adaptation and strong learning and it has been widely used in many fields.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_4",
+    "content": "To conduct the training of the BP neural network, the topology of the neural network should first be established, which involves determining the number of hidden layers and the number of neurons in each layer. The number of input neurons and output neurons is determined by the application. In this study, the input data are the frequency difference and the temperature, so the number of input neurons is   m = 2 . The output data are the corrected acceleration values, so the number of output neurons is   n = 1 . The number of hidden neurons can be determined by the following equation [30]:\n$$\nl = \\sqrt {m + n} + c \\tag {1}\n$$\n$$\ny _ {n} = \\varphi \\left(\\sum_ {i = 1} ^ {l} w _ {l i} \\sigma \\left(\\sum_ {j = 1} ^ {m} w _ {m j} x _ {j} + b _ {j}\\right) + b _ {n}\\right) \\tag {2}\n$$\n$$\nC = \\frac {1}{2 n} \\sum_ {k = 1} ^ {n} \\left\\| \\bar {y _ {k}} - y _ {k} \\right\\| ^ {2} \\tag {3}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_5",
+    "content": "$$\n\\beta = \\beta_ {0} e ^ {- \\gamma r _ {i j} ^ {2}} \\tag {4}\n$$\n$$\nX _ {i} (n + 1) = X _ {i} (n) + \\beta_ {0} e ^ {- \\gamma r _ {i j} ^ {2}} \\left(X _ {j} (n) - X _ {i} (n)\\right) + \\alpha_ {0} \\left(\\xi - \\frac {1}{2}\\right) \\tag {5}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_6",
+    "content": "$$\n\\alpha (n + 1) = k \\cdot \\alpha (n) \\cdot e ^ {\\frac {n}{n - m a x g e n}} \\tag {6}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_7",
+    "content": "$$\nP _ {i} = \\left\\{ \\begin{array}{l l} 1, & C ^ {\\prime} <   C \\\\ \\exp \\left(\\frac {C - C ^ {\\prime}}{T}\\right), & C ^ {\\prime} \\geq C \\end{array} \\right. \\tag {7}\n$$\n$$\nT = \\varepsilon \\cdot (m a x g e n - n) \\tag {8}\n$$\n$$\n\\Delta x = \\cos \\left(\\frac {\\pi}{2} \\cdot \\frac {n}{m a x g e n}\\right) \\cdot \\left(\\xi - \\frac {1}{2}\\right) \\cdot s \\tag {9}\n$$\n$$\nX _ {B} ^ {\\prime} = X _ {B} + \\Delta X \\tag {10}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_8",
+    "content": "$$\nx _ {i} = \\left\\{ \\begin{array}{l l} x _ {\\min }, & x _ {i} <   x _ {\\min } \\\\ x _ {\\max }, & x _ {i} > x _ {\\max } \\end{array} \\right. \\tag {11}\n$$\nwhere   x_{\\mathrm{min}}  and   x_{\\mathrm{max}}  are the boundary values of the search space.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_9",
+    "content": "Determination of the parameters of the neural network model requires numerous accelerometer output data and temperature data for training. Therefore, it was necessary to build a temperature experimental system to conduct a series of temperature experiments on the accelerometer. The temperature experimental system mainly consisted of a high-precision turntable, a temperature chamber and a MSRA prototype. The experimental system is shown in Figure 6.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_10",
+    "content": "The MSRA prototype was used to conduct a zero-bias experiment at room temperature and a full-temperature experiment. The output of the accelerometer and the experimental temperature were collected. The zero-bias experiment was conducted at room temperature with a sampling rate of one time per second for at least an hour and a half when the input acceleration was zero gravity   (0\\mathrm{g}) . The operating temperature of the MSRA in the full-temperature experiment was between   -40^{\\circ}\\mathrm{C}  and   60^{\\circ}\\mathrm{C} , and the test nodes were established at intervals of   20^{\\circ}\\mathrm{C} . After the operating temperature reached the expected value, the temperature was maintained for one hour. Each temperature node collected data for four states of acceleration at   +0\\mathrm{g}, +1\\mathrm{g}, -0\\mathrm{g},  and   -1\\mathrm{g},  and each state was collected for at least 30 s while the time interval for data collection was set to one second. The variations of the scale factor and bias at full temperature were used as the evaluation index in the full-temperature experiment. The variation of the scale factor at full temperature was the standard deviation of the scale factor at different temperature points divided by the mean value. The variation of the bias at full temperature was the standard deviation of the bias at different temperature points, and the bias was calculated as:\n$$\nB _ {0} = \\frac {U _ {+ 0 g} - U _ {- 0 g}}{U _ {+ 1 g} - U _ {- 1 g}} \\cdot g \\tag {12}\n$$\nwhere   U_{+0\\mathrm{g}}, U_{+1\\mathrm{g}}, U_{-0\\mathrm{g}} , and   U_{-1\\mathrm{g}}  are the outputs of the accelerometer at   +0\\mathrm{g}, +1\\mathrm{g}, -0\\mathrm{g} , and   -1\\mathrm{g} , respectively.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_11",
+    "content": "By repeating the zero-bias experiment at room temperature and full temperature experiment, six datasets for the zero-bias experiment at room temperature and five datasets for the full-temperature experiment were obtained, among which four datasets of the zero-bias experiment at room temperature and three datasets of the full-temperature experiment were randomly selected as the training datasets, and the remaining datasets were utilized for evaluation.\nThe FA-BP and IFA-BP neural network temperature compensation models used in the experiments have an input layer, a hidden layer, and an output layer. The number of neurons in the input layer is 2, the number of neurons in the hidden layer is 10, and the number of neurons in the output layer is 1. We used the FA-BP model and IFA-BP model to train the datasets 30 times, and the FA-BP model and IFA-BP model with the smallest RMSE (root mean square error) were selected for comparison. To evaluate the performance of the compensation model for different test datasets, the two test datasets of the zero-bias experiment at room temperature were compensated by the same model, and the two test datasets of the full-temperature experiment were also compensated by the same model.\nFor the zero-bias experiments at room temperature, the original data indicators of the MSRA and the indicators after compensation by the FA-BP model and IFA-BP model are shown in Table 1. According to the table, it can be seen that the zero-bias stability of the accelerometer has been significantly improved by the neural network, and the same compensation model is effective for different test datasets, indicating the applicability of the temperature compensation model based on a neural network. Among them, after compensation by the IFA-BP model, the zero-bias stability after   30\\mathrm{min}  of startup, zero-bias stability after   20\\mathrm{min}  of startup, and zero-start zero-bias stability are better than those of the FA-BP model. A comparison of the MSRA before and after compensation by the IFA-BP is shown in Figure 7. For graphing convenience, a mean value was subtracted from the measured data.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Zero-bias stability at room temperature before and after compensation..",
+        "image_source": [
+          "./text_resources/micromachines-13-01054-v2/vlm/images/a429648a71189a3e97602ec57f0a1788eab6b58ba8864bb453b999bb6e004a86.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "Table 1. Zero-bias stability at room temperature before and after compensation..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/micromachines-13-01054-v2/vlm/images/a429648a71189a3e97602ec57f0a1788eab6b58ba8864bb453b999bb6e004a86.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "The variation of the scale factor and bias at full temperature of two test datasets before and after compensation are shown in Table 2. The comparison results indicate that the IFA-BP model has a better effect in improving the accelerometer's performance at full temperature than the FA-BP model. The variation of the scale factor at full temperature after compensation by the IFA-BP model has improved by more than 70 times, and the variation of the bias at full temperature has improved by around three orders of magnitude. Figure 8 shows a comparison of the frequency output of the MSRA at six temperature points and four states before and after compensation by the IFA-BP model. Figures 9 and 10 show the curves of the accelerometer's output with temperature before and after IFA-BP neural network model compensation at four acceleration states. In these figures, it can be seen that the accelerometer's frequency output before compensation is affected by the temperature and produces frequency drift. After compensation by the IFA-BP model, the temperature performance of accelerometer has improved greatly.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2. The variation of scale factor and bias at full temperature before and after compensation..",
+        "image_source": [
+          "./text_resources/micromachines-13-01054-v2/vlm/images/0aa2fb4c37d9a74d7ddfde35e4bfb5548a17a77a7b0eb1802f6c830e837407a4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Table 2. The variation of scale factor and bias at full temperature before and after compensation..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/micromachines-13-01054-v2/vlm/images/0aa2fb4c37d9a74d7ddfde35e4bfb5548a17a77a7b0eb1802f6c830e837407a4.jpg"
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "In order to improve the temperature performance of MRsAs, an accelerometer temperature compensation method based on an improved firefly algorithm optimized BP neural network was proposed in this study. The IFA was used to optimize the initial values of the BP neural network to improve the convergence accuracy and robustness of the neural network's training. Zero-bias experiments at room temperature and full-temperature experiments were conducted on the MSRA, and temperature compensation models of the FA-BP and IFA-BP neural networks were established. A comparison of the accelerometer's output before and after compensation shows that the proposed IFA-BP neural network temperature compensation model is effective. The zero-bias stability of the accelerometer in the zero-bias experiment at room temperature improved by more than 10 times. The variation of the scale factor at full temperature improved by more than 70 times and the variation of the bias at full temperature improved by around 1000 times. The results indicate that the temperature compensation method based on the IFA-BP neural network is suitable for MRsAs in both zero-bias experiments at room temperature and full-temperature experiments.",
+    "block_type": "text"
+  }
+]

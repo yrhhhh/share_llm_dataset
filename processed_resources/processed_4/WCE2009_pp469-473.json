@@ -1,0 +1,149 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—The structure characteristics and working principle of silicon resonant micro-accelerometer based on electrostatic rigidity are presented. Dynamic characteristics of double-ended tuning fork (DETF) in the sensor are analyzed. Force equilibrium equations of mass and DETF are built respectively for with or without acceleration, through which the relationship between DETF resonant frequency and acceleration is obtained. The influences of folded supporting beams linked with proof mass and gap between capacitive parallel plates on the sensor sensitivity are analyzed, and finally a resonant micro accelerometer with sensitivity of   60\\mathrm{Hz / g}  is designed and fabricated with bulk-silicon dissolved processes.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Resonant principle has been widely used for measuring physical parameters such as mass, acceleration, force, flow or pressure. The main advantage of a resonant sensor over other sensing principles is its quasi-digital output, which implies good resistance to noise or electrical interference and simple interface to a digital system. Resonant accelerometer has been produced and widely used for many years, for example, RBA500 of Honeywell Company. Most resonant accelerometers use quartz material for its excellent piezoelectric performance, but the quartz fabrication is expensive and not compatible with IC (integrated circuits) fabrication technology, which makes it impossible to integrate the sensor and its interface circuits on one chip.\nResonant accelerometers based on the silicon micromachining technology become very attractive due to low cost, small size, compatibility with IC fabrication processes, and potential application in the fields where size and high precision are required. Most silicon resonant accelerometers detect resonant frequency of the vibrating beam subjected to axial loading which relates to inertial force\non the proof mass. The vibrating beam is excited by alternating electrostatic or electrothermal force, and the frequency change is sensed by capacitors or piezoresistive resistors respectively [1-6]. In a relatively new concept of resonant accelerometer, inertial force of the proof mass pushes or pulls one electrode as one part of the proof mass, and changes the gap distance of the parallel-plate capacitor, then the electrostatic force between parallel plate electrodes changes with the gap distance, and equivalently changes the efficient mechanical rigidity of the vibrating beam [7-8]. In the previous work of other research groups, the accelerometer was fabricated and showed excellent performances. But the movement and dynamic characteristics of the vibrating beam were not presented, which is very important for understanding the working principle and the sensor structure design. Therefore, in this study, the movement and dynamic characteristics are analyzed with mechanical dynamic theory. The relationship between resonant frequency of the vibrating beam and acceleration is obtained in theory. Finally, a resonant accelerometer with sensitivity of   60\\mathrm{Hz / g}  is designed and fabricated with bulk-silicon dissolved processes.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The concept of the resonant accelerometer is shown in Fig.1. It consists of double-ended tuning fork (DETF), driving capacitors, sensing capacitors, proof mass, and supporting springs. The fixed comb electrodes of driving capacitors are excited by an AC voltage with DC bias, DETF is connected to ground, and the proof mass including the electrode of sensing capacitor is connected to a DC voltage. In the horizontal plane, each clamped-clamped beam of DETF vibrates   180^{\\circ}  out of phase with its natural frequency to cancel reaction forces at the ends when there is no acceleration. The sensing capacitors can detect the vibrating frequency of DETF through interface circuits. When there is acceleration, the proof mass moves near or away from the electrode of DETF under inertial force and changes the gap distance of sensing capacitor. The electrostatic force between sensing electrodes induces an additional electrostatic rigidity, which results in the variation of DETF resonant frequency with acceleration. Therefore, detecting the resonant frequency of DETF can measure acceleration.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig.1. Principle schematic of a resonant accelerometer.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/8d103cc770f9a6f962332946bb0fad9a969c9111207d4293b0aaa5e384e5a4ab.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "Fig.1. Principle schematic of a resonant accelerometer.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/WCE2009_pp469-473/vlm/images/8d103cc770f9a6f962332946bb0fad9a969c9111207d4293b0aaa5e384e5a4ab.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Due to the symmetry of sensor structure, one half of the structure shown as in Fig.2 is analyzed. The supporting spring in Fig.1 is realized with four folded beams which not only support the proof mass but also make it capable of moving freely along   x  axis. The DC voltage of the proof mass is   V_{\\mathrm{d2}} , the clamped-clamped beam of DETF is connected to GND, and the driving voltage is   V_{\\mathrm{c}} \\times \\sin (\\omega t)  with DC bias voltage   V_{\\mathrm{d1}} . The forces applied to the clamped-clamped beam include inertial force, damping force, elastic force, driving and sensing electrostatic forces. The mechanical dynamic equation of the vibrating beam can be written as\n$$\nm \\ddot {Y} + c \\dot {Y} + \\kappa Y = \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - Y\\right) ^ {2}} - \\frac {N _ {1} \\varepsilon h \\left(V _ {d 1} + V _ {c} \\sin (\\omega t)\\right) ^ {2}}{2 g _ {0}} \\tag {1}\n$$\nWhere   m  is the effective mass of the vibrating beam,   c  damping coefficient,   \\kappa  the effective spring constant of vibrating beam,   \\varepsilon  the permittivity of free space   (8.85 \\times 10^{-12} \\mathrm{F/m}) ,   A  the efficient area of the sensing capacitor,   V_{\\mathrm{d2}}  the sensing voltage,   g_0  the gap distance of driving capacitor and sensing capacitor,   x  and   Y  are respectively the displacement of proof mass or vibrating beam relative to initial position when no voltages are applied, and   N_1  is number of driving comb finger pairs,   h  is the structure thickness,   \\omega  is the frequency of AC voltage. The first part on the right in (1) is sensing electrostatic forces, while the second part is driving electrostatic forces. In (1), it assumes that the damping force is proportional to velocity.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig.2. Schematic of the half structure  From (1), we can see that electrostatic forces of the.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/a688e05f8646c7827013d406965f43ea2c00cda08c88158d75deda620ddff52d.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig.1. Principle schematic of a resonant accelerometer.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/8d103cc770f9a6f962332946bb0fad9a969c9111207d4293b0aaa5e384e5a4ab.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "Fig.2. Schematic of the half structure  From (1), we can see that electrostatic forces of the.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/WCE2009_pp469-473/vlm/images/a688e05f8646c7827013d406965f43ea2c00cda08c88158d75deda620ddff52d.jpg"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "vibrating beam include fixed and alternate parts. We can think that the vibrating beam moves to some position by one fixed electrostatic force and vibrates harmonically about this equilibrium position. So   Y  in (1) can be expressed as   y_{1} + y , and   y = y_0 \\times \\sin (\\omega t + \\varphi) , where   y_{1}  is the displacement of vibrating beam by the fixed electrostatic force and   y_{0}  is the displacement amplitude by harmonic force. If   V_{\\mathrm{d1}} >> V_{\\mathrm{c}} , with Taylor expansion, (1) can be rewritten as\n$$\n\\begin{array}{l} m \\ddot {y} + c \\dot {y} + \\kappa \\left(y _ {1} + y\\right) \\cong \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} \\tag {2} \\\\ + \\frac {\\varepsilon A V _ {d 2} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}} y - \\frac {N _ {1} \\varepsilon h V _ {d 1} ^ {2}}{2 g _ {0}} - \\frac {N _ {1} \\varepsilon h V _ {d 1} V _ {c} \\sin (\\omega t)}{g _ {0}} \\\\ \\end{array}\n$$\n$$\n\\kappa y _ {1} - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} + \\frac {N _ {1} \\varepsilon h V _ {d 1} {} ^ {2}}{2 g _ {0}} = 0 \\tag {3}\n$$\n$$\nm \\ddot {y} + c \\dot {y} + \\left(\\kappa - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}}\\right) y = - \\frac {N _ {1} \\varepsilon h V _ {d 1} V _ {c} \\sin (\\omega t)}{g _ {0}} \\tag {4}\n$$\nEquation (3) describes the displacement of vibrating beam by fixed force. We can see that   y_{1}  is determined by the driving or sensing DC voltage in addition to the sensor structure and size. Equation (4) is the harmonic oscillation equation. It shows that there is an additional force proportional to the vibrating amplitude in (4), equivalently an additional rigidity caused by electrostatic force between parallel plates of sensing capacitor. The rigidity named electrostatic rigidity   \\kappa_{\\mathrm{e}}  can be written as\n$$\n\\kappa_ {e} = \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - x - y _ {1}\\right) ^ {3}} \\tag {5}\n$$\nThen, the resonant frequency of vibrating beam is as follows\n$$\nf _ {n} = \\frac {1}{2 \\pi} \\sqrt {\\frac {\\kappa - \\kappa_ {e}}{m}} \\tag {6}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_7",
+    "content": "When there is acceleration which direction shown as in Fig.2, the displacement of proof mass caused by inertial force is   \\Delta x . The electrostatic force between parallel plates of sensing capacitor will change and result in displacement variation   \\Delta y_{1}  of the electrode on the vibrating beam. Thus, the gap distance of sensing parallel-plate capacitor change   \\Delta x + \\Delta y_{1} . The electrostatic rigidity induced by sensing parallel-plate capacitor will vary and alter resonant frequency of the vibrating beam shown as\n$$\nf _ {n} = \\frac {1}{2 \\pi} \\sqrt {\\frac {\\kappa - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{\\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {3}}}{m}} \\tag {7}\n$$\nDue to that the natural frequency of vibrating beam is greatly higher than that of proof mass-spring system, the electrostatic force frequency applied to the proof mass by beam vibrating is also largely higher than that of proof mass-string system. So the displacement of proof mass caused by beam vibrating can be neglected. When there is no acceleration, the elastic force and electrostatic force applied to the proof mass are equal. We can obtain the force\nequilibrium equation of proof mass as follow\n$$\n\\kappa_ {s} x - \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - x - y _ {1}\\right) ^ {2}} = 0 \\tag {8}\n$$\nWhere   \\kappa_{\\mathrm{s}}  is spring constant of the folded supporting beams linked with proof mass.\nWhen there is acceleration shown as in Fig.2, the gap of sensing capacitor will change, and the elastic force plus inertial force is equal to electrostatic force by sensing capacitor, the force equilibrium equation can be written as\n$$\n\\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {2}} - \\kappa_ {s} (x - \\Delta x) - M a = 0 \\tag {9}\n$$\nHere   M  refers to the mass of the proof mass. As for the vibrating beam, from (3), we can obtain\n$$\n\\begin{array}{l} \\frac {\\varepsilon A V _ {d 2} {} ^ {2}}{2 \\left(g _ {0} - (x - \\Delta x) - \\left(y _ {1} - \\Delta y _ {1}\\right)\\right) ^ {2}} - \\frac {N _ {1} \\varepsilon h V _ {d 1} {} ^ {2}}{2 g _ {0}} \\tag {10} \\\\ + m a - \\kappa \\left(y _ {1} - \\Delta y _ {1}\\right) = 0 \\\\ \\end{array}\n$$\nWhen the sensor structure size, driving and sensing voltage are determined, from (3) (8) (9) (10), we can calculate the value of   x, y_{1}, \\triangle x, \\triangle y_{1} , and substitute them into (7), the relationship between the beam vibrating frequency and acceleration can be obtained, which is important for sensor structure design.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig.2. Schematic of the half structure  From (1), we can see that electrostatic forces of the.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/a688e05f8646c7827013d406965f43ea2c00cda08c88158d75deda620ddff52d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "The accelerometer sensitivity directly affects its precision. The important aspect of sensor structure design is to determine proper structure size to improve the sensor sensitivity when the structure stability is guaranteed. The sensor sensitivity will be calculated at different structure size, driving or sensing voltage, with the above established equations. The vibrating beam is   500\\mu \\mathrm{m}  long and   5\\mu \\mathrm{m}  wide. The sensor structure is   25\\mu \\mathrm{m}  in thickness. The driving AC amplitude is 1V with 15V DC bias. The folded supporting beams are U-shape.\nFig.3a shows the relationship between the sensor sensitivity and sensing voltage when the capacitor gap is   3\\mu \\mathrm{m} , the folded beam is   450\\mu \\mathrm{m}  long and   6\\mu \\mathrm{m}  width. Fig.3b presents the variation of sensitivity with the capacitor gap distance when the folded beam is   450\\mu \\mathrm{m}  long and   6\\mu \\mathrm{m}  wide and sensing voltage is   16\\mathrm{V} . We can see that sensor sensitivity is   70\\mathrm{Hz / g}  or   250\\mathrm{Hz / g}  when sensing voltage is   17\\mathrm{V}  or   18\\mathrm{V}  respectively. Larger sensing voltage and small capacitor gap mean higher sensitivity. The reason is that the sensing capacitor electrostatic force increases when sensing voltage increases and capacitor gap gets narrow, then the variation of electrostatic rigidity at same acceleration become larger and produce larger deviation of vibrating beam resonant frequency. But too large sensing voltage and small capacitor gap may lead to absorption of capacitor plates and structure stability will be ruined.\nFig.3c is the relationship of sensor sensitivity and folded supporting beam width, and Fig.3d shows that of sensor sensitivity and supporting beam length. We can see that narrower and longer supporting beams can improve sensor sensitivity. This is due to that the capacitor gap variation\ncaused by inertial force of the proof mass is larger when the folded beam is narrow and long, and electrostatic rigidity varies greatly. Also, too narrow or long folded beams will affect the strength and resistance to impact, even maybe result in absorption of capacitor plates and destroy the structure stability.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_9",
+    "content": "From above analysis, smaller capacitor gap, longer and narrower supporting beam, and larger sensing voltage are expected to improve the sensor sensitivity. But in the respect\nof stability and strength, they should be controlled properly. So sensitivity and structure stability should be considered at the same time when designing the sensor structure size. The sensor structure size in this study is finally designed as follows: folded supporting beam   450\\mu \\mathrm{m}  long and   6\\mu \\mathrm{m}  wide, capacitor gap   3\\mu \\mathrm{m}  wide, and sensing voltage   17\\mathrm{V} . The relationship between sensor resonant frequency and applied acceleration is shown in Fig.4. We can see that the designed sensor sensitivity is at least   60\\mathrm{Hz / g}  for one clamped-clamped beam of DETF.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_10",
+    "content": "The adopted fabrication process in this study is called bulk-silicon dissolved process. The process sequences are as follows: First, boron is heavily doped into the silicon wafer front side to make the   \\mathrm{P + + }  etch-stop layer which is used as the structure layer and about   25\\mu \\mathrm{m}  thick; anchors for wafer-glass bonding are patterned and etched on the wafer front side with ICP deep etch technology(Fig.5a); then, the sensor structure is patterned and etched with the second ICP deep etching (Fig.5b); aluminum is sputtered on the glass wafer to form electrodes through which different voltage can be subjected to different parts of the sensor (Fig.5c); Finally, bonding silicon wafer and glass wafer together using anodic bonding (Fig.5d)and etch the silicon wafer from backside in KOH etch solution until arriving the etch-stop layer and obtaining the sensor structure(Fig.5e).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 5",
+        "caption": "(e) Wet thinning wafer from backside  Fig.5. Fabrication processes.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/Fig.5. Fabrication processes.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "(e) Wet thinning wafer from backside  Fig.5. Fabrication processes.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/WCE2009_pp469-473/vlm/images/Fig.5. Fabrication processes.png"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "The SEM pictures of the fabricated sensor structure are shown in Fig.6.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "(a) Resonant accelerometer  (b) Resonator  Fig.6 The SEM pictures of the fabricated sensor.",
+        "image_source": [
+          "./text_resources/WCE2009_pp469-473/vlm/images/41143337b07fc30bef2155cfb7babb8b2a99ad18988a6d6a98172cb69c0e45cf.jpg",
+          "./text_resources/WCE2009_pp469-473/vlm/images/b810386a29e235a5669ee1306abc7f53d081891c0483810dab43e3c2031e7c16.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "(a) Resonant accelerometer  (b) Resonator  Fig.6 The SEM pictures of the fabricated sensor.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/WCE2009_pp469-473/vlm/images/41143337b07fc30bef2155cfb7babb8b2a99ad18988a6d6a98172cb69c0e45cf.jpg",
+      "./text_resources/WCE2009_pp469-473/vlm/images/b810386a29e235a5669ee1306abc7f53d081891c0483810dab43e3c2031e7c16.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "In the silicon resonant accelerometer based on electrostatic rigidity, the proof mass will not vibrate when DETF beams vibrate without acceleration. Meanwhile, the proof mass will move away the initial equilibrium position with acceleration, and apply an additional rigidity to the vibrating beam for change the resonant frequency. According to the dynamic equations of proof mass and DETF, the accelerometer resonant frequency can be determined at any acceleration. By analyzing effects of the structure size, sensing voltage on the sensor sensitivity, a sensor structure suitable for actual fabrication condition is designed and fabricated. Future research work will focus on the measurement of the sensor performance.",
+    "block_type": "text"
+  }
+]

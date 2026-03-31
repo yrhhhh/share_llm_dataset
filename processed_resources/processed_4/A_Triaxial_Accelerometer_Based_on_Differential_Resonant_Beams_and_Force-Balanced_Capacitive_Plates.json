@@ -1,0 +1,234 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—This paper presents the design, simulation, fabrication, and experiment of a triaxial accelerometer based on differential resonant beams and force-balanced capacitive plates. The triaxial accelerometer is composed of a proof mass, four bridge resonators with both end clamped and operating in flexure vibration mode, four L-type supporting beams, and a top plate and a bottom plate. The in-plane acceleration is measured by bridge resonators. The gravity center of the proof mass and the neutral layer of L-type supporting beams are located within the same plane to minimize the rotation of the proof mass subjected to in-plane acceleration. The cross-axis sensitivities of X-axis and Y-axis resonant beams under lateral in-plane acceleration are   1.97\\%  and   1.71\\% , respectively. A force-balanced differential plate capacitor composed of a proof mass, a top plate, and a bottom plate is used to detect acceleration along Z-axis. The small displacement of the proof mass in the normal direction of the chip reduces the cross-axis sensitivity of the bridge resonators subjected to acceleration along Z-axis. The complementation of the resonance detection mechanism and the force balance capacitance mode makes the triaxial accelerometer exhibit low cross-axis sensitivity. The simulated and experimental results prove this conclusion.\nIndex Terms—Resonant accelerometer, force-balanced capacitive accelerometer, triaxial accelerometer, cross-axis.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "MICRO-accelerometers have the advantages of light weight, small volume, low power consumption and cost, easy integration and mass production. With regard to detection mechanism, there are piezoresistive [1]–[5], capacitive [6]–[15], piezoelectric [16]–[18], convective [19], [20], tunneling [21]–[23] and resonant accelerometers [24]–[36]. Regarding on the numbers of sensitive axis, there are uniaxial, dual-axis and triaxial accelerometers. The triaxial accelerometers are required for sophisticated motion control systems in wide industrial fields such as the robotics and automotive industries, and civil fields such as the smart phone,\ngames controllers and the pedometer [37]. Early triaxial accelerometers were only the combinations of three uniaxial accelerometers placed orthogonally. The accelerometers have the disadvantages of difficult assembly, large size, high cost, and so on. At present, most of reported and commercial triaxial accelerometers are monolithically integrated. These accelerometers have the advantages of high accuracy of position between axes, low cost, small volume, and so on. According to the number of proof masses, the monolithic integrated triaxial accelerometers can be divided into multiple proof-mass accelerometers and single proof-mass accelerometers. Triaxial accelerometers with multiple proof mass detect acceleration along X, Y and Z-axis through two or three piezoresistive or capacitive sensing units integrated on a sensor chip [5]-[9]. These accelerometers show low cross-axis sensitivity because the structures of different detection unit can be optimized independently. However, these accelerometers generally exhibit a large chip area, such as   11.8 \\times 4.8 \\mathrm{~mm}^2  reported in literature [6], [7],   12 \\times 7 \\mathrm{~mm}^2  in literature [9]. The process compatibility among different detecting units is a key issue should be considered.\nTriaxial accelerometers with single proof mass exhibiting small chip area have been a research topic and development trend. According to the mechanism, accelerometers with single proof-mass can be divided into piezoresistive, capacitive and convective accelerometers. Piezoresistive triaxial accelerometers use PMOS transistors or piezoresistors to detect acceleration along X, Y, Z-axis [1]-[4]. The piezoresistive accelerometers have the advantages of mature fabrication technology, simple interface circuit, low output impedance and easy to realize high-g sensors. However, triaxial piezoresistive accelerometers show the disadvantages of complex detection mechanism and resistor arrangement, large temperature drift, difficult to meet high performance applications.\nCapacitive triaxial accelerometers are the most widely reported triaxial accelerometers [10]–[15]. Their sensing structures include comb-finger capacitors fabricated by surface micromachining technology and flat-plate capacitors fabricated by bulk micromachining technology. The capacitive accelerometer working in open-loop mode has narrow bandwidth, worse linearity and poor dynamic range. An effective solution to this problem is adopting a closed-loop servo system, which applies a feedback force to keep movable plate in the equilibrium position [11]–[15]. Acceleration can be\nmeasured by detecting the feedback voltage. The accelerometers based on the force-balanced mechanism is characterized by good linearity, large dynamic range, small influence of processing error on sensor performances, small temperature coefficients of sensitivity, bandwidth and drift.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The convective triaxial accelerometer consists of a sealed air chamber, a heater and several temperature sensors [19], [20]. It has the advantages of simple fabrication techniques, high compatibility with CMOS process, strong shock-resistance and high reliability. But the accelerometer has the disadvantages of low resolution, slow response and narrow dynamic range, so it is not suitable for high-precision detection.\nDifferent detection mechanisms have their own advantages and disadvantages. Piezoresistive microbeams, torsional capacitors, plate capacitors and resonating beams are suitable for detecting acceleration along Z-axis. Comb-finger capacitor and double-ended tuning fork (DETF) are suitable for detecting in-plane acceleration along X-axis or Y-axis. This paper intends to design a triaxial accelerometer with single proof mass of full-wafer thickness. The in-plane acceleration along X-axis and Y-axis are measured by thin bridge resonators with both end clamped and operating in flexure vibration mode. A differential plate capacitor working in force-balanced mode is used to detect acceleration along Z-axis. The small displacement of the proof mass in the normal direction of the sensor chip reduces the cross-axis sensitivity of bridge resonators subjected to acceleration along Z-axis.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "Previous literatures have reported many manufacturing processes for in-plane resonant accelerometers, such as surface micromachining [24], [25], mixed micromachining [26], SOI technology [27]–[31], deep dry silicon on glass (DDSOG) process [32]. These accelerometers are composed of three parts: a proof mass, microleverages and resonators. The proof mass converts acceleration into inertia force, then the microleverage amplifies the inertia force, and finally thin resonant beams or DETF resonators convert the inertia force into resonance frequency. However, thin and complex structure of microleverage and DETF would decrease the stability and yield. Bulk micromechanical resonant accelerometers used to sense acceleration along Z-axis [33]–[36] feature a high sensitivity because proof mass with full-wafer thickness can be fabricated. However, the proof mass with full-wafer thickness cannot be supported with DETFs. The stiffness of the bridges usually supporting the proof mass for detecting acceleration along Z-axis is too large for detecting in-plane acceleration. How to support the proof mass with full-wafer thickness is a key problem in developing bulk micromechanical in-plane resonant accelerometers.\nIn this paper, a novel triaxial accelerometer based on differential resonant beams and force-balanced capacitive plates is presented. The triaxial accelerometer is schematically shown in Fig. 1. It comprises a top plate, a bottom plate and a sensor chip. The sensor chip consists of a proof mass supported by four L-type supporting beams and four thin bridge resonators.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. (a) Scheme of the triaxial accelerometer, (b) the backside of the top plate, (c) the backside of the bottom plate..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/3965992190493554ee9b8c5b725651dcddc398c60176ceaffd5a9e916ba419f9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Fig. 1. (a) Scheme of the triaxial accelerometer, (b) the backside of the top plate, (c) the backside of the bottom plate..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/3965992190493554ee9b8c5b725651dcddc398c60176ceaffd5a9e916ba419f9.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "Fig. 2. The process flow of the top plates and bottom plates..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/1cee227a69335ec859f61c9945c655109ab36c72672beb782b3e439ce3e13ee9.jpg",
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/d814ec6a4ba44c94f50c7a4b7183cbcde515170766dc6987d36cb29a8f001d62.jpg",
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/6f627ae46b9382f25f2c07f9fea518cc639bcf6ba1ca885ebab1cf287b671d06.jpg",
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/e76b033b9248dbd579ee08fb8dec53c57a85b3820306b1408bec0ceb9d3d878a.jpg",
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/ae0af1d4c3f7133bb855bf09da678f6a3412dc819b6f70e0ddb759f9058b8887.jpg"
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The gravity center of the proof mass and the neutral layer of L-type supporting beams are located within a same plane to minimize the rotation of the proof mass subjected to in-plane acceleration. The axial strain of bridge resonators is mainly determined by the in-plane stiffness of supporting beams. Thin bridge resonators are located at the upper surface of the sensor chip in order to photolithograph resistors and pattern metal lines. The design, simulation, fabrication and experiment of differential resonant beams have been reported previously [38]. This paper only briefly introduces its structure and working principle.\nA force-balanced differential plate capacitor composed of a proof mass, a top plate and a bottom plate is used to detect acceleration along Z-axis. Fixed upper electrode and lower electrode are fabricated on the top plate and the bottom plate, respectively. The gap between the fixed electrodes and movable proof mass is   5\\mu \\mathrm{m} . Blunt silicon tips with a height of   2.5\\mu \\mathrm{m}  stand on the surface of fixed electrodes prevent the proof mass being attached with fixed electrodes.\nFig. 2 (1) - (6) show the fabrication process of the top plate along the A-A' section and the bottom plate along the",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. The process flow of the top plates and bottom plates..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/1cee227a69335ec859f61c9945c655109ab36c72672beb782b3e439ce3e13ee9.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/d814ec6a4ba44c94f50c7a4b7183cbcde515170766dc6987d36cb29a8f001d62.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/6f627ae46b9382f25f2c07f9fea518cc639bcf6ba1ca885ebab1cf287b671d06.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/e76b033b9248dbd579ee08fb8dec53c57a85b3820306b1408bec0ceb9d3d878a.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/ae0af1d4c3f7133bb855bf09da678f6a3412dc819b6f70e0ddb759f9058b8887.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "Fig. 3. The SEM photograph of the sensor chip..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/5de808f1c6e06089e622d5962c8e2b5445dbfcaa2a59030f1aeb7e2847f2e2b8.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "B-B' section in Fig. 1. The fabrication process of the top plate starts with n-type (100) silicon wafers of   389\\mu \\mathrm{m}  thick. Thermal oxide layer of   0.6\\mu \\mathrm{m}  is grown on both sides of wafers at   1100^{\\circ}\\mathrm{C} . Apart from bonding area and eight square masks for etching bumps, the silicon oxide film at the backside of wafers is patterned and removed in BOE solution. The exposed silicon is etched to a depth of   5\\mu \\mathrm{m}  in   40\\%  KOH solution at   60^{\\circ}\\mathrm{C} , the bumps with a height of   2.5\\mu \\mathrm{m}  are formed at the same time to prevent the mass from adhering to the upper electrode. Silicon dioxide is grown again on the surface of silicon as shown in Fig. 2(1). The silicon dioxide film in the center of the chip and the middle of four margins at the front side of wafers are patterned for etching a through hole and exposing pads on the main chip, respectively. The exposed silicon is etched to a depth of   200\\mu \\mathrm{m}  in   40\\%  KOH solution at   80^{\\circ}\\mathrm{C} . Then the silicon oxide film at the backside of wafers is patterned to etch silicon providing space for bridge resonators vibrating and reduce squeeze-film damping, shown in Fig. 2(2). The silicon wafer is etched again in KOH solution until the holes at the center of chips penetrate the back of silicon wafers. At last, Ti/Au film of   240~\\mathrm{nm}  and Al film of   1\\mu \\mathrm{m}  are sputtered on the electrode of backside of the wafer and through hole, respectively. The wafer is annealed at   400^{\\circ}\\mathrm{C}  for 30 minutes to strengthen the adhesion between the metal film and silicon oxide film, shown in Fig. 2(3).\nThe fabrication flow of bumps on the bottom plate is the same as that on the top plate, as is shown in Fig. 2(4). The mask of through hole at the backside of the wafer is wet etched in BOE solution and the silicon is anisotropic etched from the backside of the wafer to form through hole. Shown in Fig. 2(5). Then Ti/Au films are sputtered on the four corners of the front side, the backside and the through holes. Finally, The wafer is annealed at   400^{\\circ}\\mathrm{C}  for 30 minutes, shown in Fig. 2(6). The SEM photograph of the sensor chip is shown in Fig. 3.\nThe amorphous silicon film on the four corners of the front-side and the backside of the sensor chip is eutectically bonded with Au film at the bottom surface of top plate and the upper surface of bottom plate, respectively. The backside of the bottom plate is eutectically bonded on the gold-plated installation area of ceramic tube shell with an Au-Sn solder with the thickness of   50~\\mu \\mathrm{m} . The pads on the chip are connected to the terminals of the package by aluminum wires. The geometry of the triaxial accelerometer is listed in Table I. The final dimension of the sensor chip is   6.0\\mathrm{mm}\\times 5.5\\mathrm{mm}\\times 1.2\\mathrm{mm} (\\mathrm{W}\\times \\mathrm{L}\\times \\mathrm{H})",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. (a) Scheme of the triaxial accelerometer, (b) the backside of the top plate, (c) the backside of the bottom plate..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/3965992190493554ee9b8c5b725651dcddc398c60176ceaffd5a9e916ba419f9.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. The process flow of the top plates and bottom plates..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/1cee227a69335ec859f61c9945c655109ab36c72672beb782b3e439ce3e13ee9.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/d814ec6a4ba44c94f50c7a4b7183cbcde515170766dc6987d36cb29a8f001d62.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/6f627ae46b9382f25f2c07f9fea518cc639bcf6ba1ca885ebab1cf287b671d06.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/e76b033b9248dbd579ee08fb8dec53c57a85b3820306b1408bec0ceb9d3d878a.jpg",
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/ae0af1d4c3f7133bb855bf09da678f6a3412dc819b6f70e0ddb759f9058b8887.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 3. The SEM photograph of the sensor chip..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/5de808f1c6e06089e622d5962c8e2b5445dbfcaa2a59030f1aeb7e2847f2e2b8.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "TABLEI THE GEOMETRY OF THE TRIAXIAL ACCELEROMETER (UNIT:   \\mu \\mathrm{m}  1.",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/840acf011916922c8ea964aa08d714e245f9a2f267c73f75b7c8b9f8c2a1141a.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "TABLEI THE GEOMETRY OF THE TRIAXIAL ACCELEROMETER (UNIT:   \\mu \\mathrm{m}  1.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/840acf011916922c8ea964aa08d714e245f9a2f267c73f75b7c8b9f8c2a1141a.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "A. The Sensitivity of Bridge Resonators for Detecting In-Plane Acceleration\nThe first-order resonant frequency of X-axis bridge resonators is [39]-[41]\n$$\nf _ {x} = 1. 0 2 8 \\frac {h _ {r}}{l ^ {2}} \\sqrt {\\frac {E _ {r}}{\\rho}} \\left(1 + 0. 2 9 5 \\frac {l ^ {2} \\varepsilon_ {x}}{h _ {r} ^ {2}}\\right) ^ {\\frac {1}{2}} \\tag {1}\n$$\nHere   \\rho ,   E_r  are the density and equivalent elastic modulus of the materials composing bridge resonators.   \\varepsilon_x  is the longitudinal strain of X-axis bridge resonators. When X-axis acceleration   (a_x)  is input, the displacement of the proof mass in X axis is\n$$\n\\Delta L _ {x} = \\frac {m a _ {x}}{K _ {x}} \\tag {2}\n$$\n$$\n\\varepsilon_ {x} = \\varepsilon_ {0} \\pm \\frac {\\Delta l _ {x}}{l} = \\varepsilon_ {0} \\pm \\frac {m a _ {x}}{K _ {x} l} \\tag {3}\n$$\nHere   a_{x}  is input acceleration along X-axis.   \\varepsilon_0  is the initial strain of bridge resonators.   K_{x}  is the force elasticity coefficient of the X-axis acceleration detection unit [38], [42].\nThe sensitivity of X-axis bridge resonators under acceleration along X-axis   (a_{x})  can be derived from equations (1) and (2) as\n$$\n\\begin{array}{l} S _ {X} = \\frac {d f _ {x}}{d a _ {x}} \\\\ = \\pm 0. 1 5 2 \\frac {m}{K _ {x} l h _ {r}} \\sqrt {\\frac {E _ {r}}{\\rho}} \\left(1 + 0. 2 9 5 \\frac {K _ {x} l ^ {2} \\varepsilon_ {0} \\pm l m a _ {x}}{K _ {x} h _ {r} ^ {2}}\\right) ^ {- \\frac {1}{2}} \\tag {4} \\\\ \\end{array}\n$$\nSimilarly, the sensitivity of Y-axis bridge resonators under acceleration along Y-axis   (a_{y})  can be derived as\n$$\n\\begin{array}{l} S _ {Y} = \\frac {d f _ {y}}{d a _ {y}} \\\\ = \\pm 0. 1 5 2 \\frac {m}{K _ {y} l h _ {r}} \\sqrt {\\frac {E _ {r}}{\\rho}} \\left(1 + 0. 2 9 5 \\frac {K _ {y} l ^ {2} \\varepsilon_ {0} \\pm l m a _ {y}}{K _ {y} h _ {r} ^ {2}}\\right) ^ {- \\frac {1}{2}} \\tag {5} \\\\ \\end{array}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_11",
+    "content": "Fig. 4 shows the model of the differential plate capacitor for detecting acceleration along Z-axis. In force-balanced mode, an AC voltage   (\\pm u(t))  superimposed on a DC bias voltage   (\\pm U_{d})  is applied to fixed plates in order to detect the variation of capacitance. The feedback voltage   (U_{f})  is applied to the movable plate. The electrostatic force applied to the proof mass is\n$$\nF _ {e} = \\frac {\\varepsilon A}{2} \\left[ (\\frac {U _ {d} + u (t) - U _ {f}}{d - z}) ^ {2} - (\\frac {- U _ {d} - u (t) - U _ {f}}{d + z}) ^ {2} \\right] \\tag {6}\n$$\nHere   A  is the opposing area between the movable electrode and fixed electrodes.   d  is the initial distance between electrodes.   z  is the displacement of the proof mass.\nWhen the differential plate capacitor works in force-balanced mode,   z << d , the electrostatic force is approximately equal to\n$$\nF _ {e} \\approx - \\frac {2 \\varepsilon A}{d ^ {2}} U _ {f} U _ {d} - \\frac {2 \\varepsilon A}{d ^ {2}} U _ {f} u (t) \\tag {7}\n$$\nThe electrostatic force   (F_{e})  includes two terms, the first term is the electrostatic force generated by the bias voltage   (U_{d}) . The second term is the electrostatic force generated by the high frequency AC voltage   (u(t)) . Since the frequency of AC voltage is 2 orders of magnitude higher than the first-order resonance frequency of the accelerometer, the displacement of the movable plate caused by the high frequency electrostatic force is very small and can be reasonably neglected [43]. Thus, the electrostatic force is approximately equal to\n$$\nF _ {e} = - \\frac {2 \\varepsilon A}{d ^ {2}} U _ {f} U _ {d} \\tag {8}\n$$\nIn force-balanced mode, the proof mass tends to be at equilibrium position under the action of electrostatic force, that is,   z \\approx 0 , as a result, the elastic force is also approximately 0. The inertia force is balanced by the electrostatic force, that is,   F_{e} = ma_{z} . Therefore, the feedback voltage   (U_{f})  can be calculated as [44]\n$$\nU _ {f} = - \\frac {m d ^ {2}}{2 \\varepsilon A U _ {d}} a _ {\\mathrm {z}} \\tag {9}\n$$\nThe sensitivity of the force-balanced plate capacitor is\n$$\nS _ {Z} = \\frac {U _ {f}}{a _ {z}} = - \\frac {m d ^ {2}}{2 \\varepsilon A U _ {d}} \\tag {10}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_12",
+    "content": "As can be seen from equation (10), the sensitivity of the plate capacitor for detecting acceleration along Z-axis can be improved significantly with increasing mass   m . Therefore, the differential plate capacitor with proof mass of full-wafer thickness can exhibit high sensitivity. For the fabricated triaxial accelerometer, the mass of proof, the opposing area of electrodes and distance between the movable electrode and fixed electrodes is   1.56 \\times 10^{-6}  kg,   1170 \\mu \\mathrm{m} \\times 1170 \\mu \\mathrm{m}  and   5 \\mu \\mathrm{m}  respectively. The theoretical sensitivity for detecting Z-axis acceleration can be calculated as   -3.496 \\mathrm{~V/g}  by equation (10) under a DC bias voltage   (\\pm U_d)  of   4.5 \\mathrm{~V} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_13",
+    "content": "The measurement range of bridge resonators has been described in detail in the previous literature [38], only the measurement range of the plate capacitor for detecting acceleration along Z-axis is discussed here. In open-loop mode, the simulated result shows that the maximum stress occurs at the clamped ends of L-type supporting beams when acceleration along Z-axis is input. The maximum stress at the clamped ends is   34\\mathrm{MPa}  under   100\\mathrm{g}  acceleration along Z-axis, The stress is less than the bending strength of the monocrystalline silicon. Meanwhile the maximum strain at the Wheatstone bridges on both X-axis and Y-axis bridge resonators is   85~\\mu \\varepsilon  Bumps located on the surface of fixed electrodes limit the movement of the proof mass within half of the original gap from the proof mass to the bottom plate. As can be seen from Fig. 5, the displacement of the proof mass reaches the limit value of   2.5\\mu \\mathrm{m}  when   65\\mathrm{g}  acceleration along Z-axis is input. Therefore the input acceleration along Z-axis should be less than   65\\mathrm{g}  in the open loop mode if the displacement of the proof mass is limited to half of the initial gap from the proof mass to the bottom plate.\nIn the closed-loop mode, the feedback voltage   (U_{f})  is proportional to acceleration along   Z -axis   (a_{z})  as can be seen from equation (9). The proportionality coefficient is related to the bias voltage   U_{d}  applied to the capacitor and the geometry of the accelerometer. Since the feedback voltage   U_{f}  can only be changed between   [-U_{d}, + U_{d}] , the maximum detectable\nacceleration along Z-axis   a_{max}  is\n$$\na _ {m a x} = \\frac {2 \\varepsilon A U _ {d} ^ {2}}{m d ^ {2}} \\tag {11}\n$$\nAs can be seen from equation (11), the maximum detectable Z-axis acceleration of the differential plate capacitor will increase with decreasing mass   m . However, decreasing the mass of the proof will reduce the sensitivity at the same time. The theoretical detectable acceleration of the fabricated differential plate capacitor in force-balanced mode can be calculated as   1.28\\mathrm{g}  under a DC bias voltage   (\\pm U_{d})  of   4.5\\mathrm{V} .",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_14",
+    "content": "The cross-axis sensitivity, defined as the ratio of the output of an accelerometer subjected to lateral acceleration to that of the accelerometer subjected to primary axis, is an important factor for precise applications requiring high accuracy. The cross-axis sensitivity of X-axis bridge resonators subjected to the acceleration along Y-axis is\n$$\n\\delta_ {X Y} = \\frac {S _ {X Y}}{S _ {X X}} \\times 100 \\% \\tag{12}\n$$\nHere   S_{XX}  is the sensitivity of X-axis bridge resonators subjected to the acceleration along X-axis,   S_{XY}  is the sensitivity of X-axis bridge resonators subjected to the acceleration along Y-axis.\nThe simulated resonant frequency shift of X-axis bridge resonators subjected to   1\\mathrm{g}  acceleration along X-axis and Y-axis is   25.5\\mathrm{Hz}  and   0.38\\mathrm{Hz} , respectively. So   \\delta_{XY}  is calculated to be   1.5\\% . The simulated resonant frequency shift of Y-axis bridge resonators subjected to   1\\mathrm{g}  acceleration along Y-axis and X-axis is   15.3\\mathrm{Hz}  and   0.14\\mathrm{Hz} , respectively. So   \\delta_{YX}  is calculated to be   0.9\\% .",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_15",
+    "content": "In the open-loop mode, the simulated resonant frequency shift of X-axis and Y-axis bridge resonators is   0.44\\mathrm{Hz}  subjected to   1\\mathrm{g}  acceleration along Z-axis. So the sensitivity of X-axis and Y-axis bridge resonators subjected to the acceleration along Z-axis is   S_{XZ} = S_{YZ} = 0.44\\mathrm{Hz / g} , the cross-axis sensitivity   (\\delta_{XZ},\\delta_{YZ})  subjected to the acceleration along Z-axis is calculated to be   1.7\\% 2.8\\%  respectively.\nIn the closed-loop force-balanced mode, the proof mass will remain in the equilibrium position due to the feedback voltage. The performances of the sensor system are determined by the feedback loop circuit rather than by the mechanical structure, which is difficult to control. The proof mass in force-balanced mode can be considered to be in the equilibrium position as long as the acceleration does not exceed the feedback force control range. The theoretical and measured cross-axis sensitivity of the bridge resonators subjected to the acceleration along Z-axis is approximately zero.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_16",
+    "content": "Since the area of movable electrodes is slightly smaller than area of fixed electrodes, respectively, the minor translation of the proof mass subjected to in-plane acceleration will neither change the distance between the movable electrode and fixed electrodes nor change the opposite area of the electrodes.\nWhether in open-loop mode or force-balanced mode, the proof mass will rotate a very small angle around Y axis when the acceleration along X-axis is input although the gravity center of the proof mass lies within the neutral plane of L-type supporting beams. However, the differential capacitance will not be changed. The cross-axis sensitivity of the differential capacitor subjected to the acceleration along X-axis can be ignored reasonably. Similarly, the cross-axis sensitivity of the differential capacitor subjected to the acceleration along Y-axis can also be ignored.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "To drive the bridge resonator to self-oscillate, a closed-loop self-exciting circuit based on phase-locked loop is designed and reported in previous literature [45]. A Agilent 34401A   6\\frac{1}{2}  digit multi-meter is used to monitor the output resonant frequency of the closed-loop circuit. A frequency counter based on field-programmable gate array (FPGA) is used to measure the resonant frequency. USB communication line is used for FPGA communication with computer and data can be received through serial debugging assistant.\nThe sensitivity of the developed accelerometer is measured with a rotary indexing table. The table placed parallel to gravitational acceleration is used to simulate the axial acceleration in a range from   -1\\mathrm{g}  to   +1\\mathrm{g} . The sensitivity of the accelerometer is measured by rotating the rotary indexing table and fitted by the least squares method. The measured resonant frequency shifts of a X-axis bridge resonator under different X-axis acceleration and a Y-axis bridge resonator under different Y-axis acceleration are shown in Figures 6 and 7, respectively. The sensitivity of the X-axis bridge resonator   (S_X)  and",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_18",
+    "content": "Y-axis bridge resonator   (S_{Y})  is   21.30\\mathrm{Hz / g}  and   12.24\\mathrm{Hz / g} , respectively.\nThe measured sensitivity is less than theoretical sensitivity of   37.5\\mathrm{Hz / g}  for detecting the acceleration along X-axis determined by equation (4) and   35.0\\mathrm{Hz / g}  for detecting the acceleration along Y-axis determined by equation (5), but close to the simulated sensitivity of   25.5\\mathrm{Hz / g}  for detecting the acceleration along X-axis and   15.3\\mathrm{Hz / g}  for detecting the acceleration along Y-axis. This is mainly because thinner bridge resonators located at the upper surface of the sensor chip increase the asymmetry of the mechanical structure and cause a slight rotation of the proof mass under in-plane acceleration.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_19",
+    "content": "Although the bridge resonators exhibit theoretically low cross sensitivity to lateral in-plane acceleration because the gravity center of the proof mass lies within the neutral plane of L-type supporting beams, it is still necessary to measure the actual value. The measured resonant frequency of the above-mentioned X-axis bridge resonator changes from   63990.48\\mathrm{Hz}  to   63990.06\\mathrm{Hz}  when the acceleration in the Y-axis direction changes from   0\\mathrm{g}  to   1\\mathrm{g} . The lateral sensitivity   (S_{XY})  of the X-axis bridge resonator subjected to the acceleration along Y-axis is calculated as   0.42\\mathrm{Hz / g} . As a result, the cross-axis sensitivity   (\\delta_{XY})  of the X-axis bridge resonator subjected to the acceleration along Y-axis, the ratio of   S_{XY}  to   S_{XX} , is calculated to be   1.97\\% . Similarly, the lateral sensitivity   (S_{YX})  of the Y-axis bridge resonator subjected to the acceleration along X-axis is measured to be   0.21\\mathrm{Hz / g} . The cross-axis sensitivity   (\\delta_{YX})  of the Y-axis bridge resonator subjected to the acceleration along X-axis can be calculated as   1.71\\% .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_20",
+    "content": "The scheme of the closed loop circuit for measuring acceleration along Z-axis is shown in Fig. 8. A DC bias voltage   (\\pm U_{d})  of   4.5\\mathrm{V}  passing through two low-pass filters consisting of   R_{1} ,   C_{3}  and   R_{2} ,   C_{5}  are applied to the top and bottom plate, respectively. Two square wave signals   (\\pm U_{s})  with an amplitude of   2.25\\mathrm{V}  output from a MS3110 chip passing through two high-pass filters consisting of   C_3 ,   R_1  and   C_5 ,   R_2  are used as modulate signals. The square waves superposed on DC bias voltage   (\\pm U_d)  are applied to the top and bottom plate, respectively. The feedback voltage   (U_f)  is applied to the movable proof mass.\nThe measurement setup for measuring Z-axis acceleration is shown in Figure 9. The gravity field reversal method is used to test the feedback voltage of the servo-controlled differential plate capacitor. The amplification factor of the differential amplifier and force feedback generator are set to 5 and 0.9, respectively. The proportional control coefficient   K_{\\mathrm{p}}  and integral control coefficient   K_{\\mathrm{I}}  of PI controller are set to 5 and 10. The feedback voltage subjected to   1\\mathrm{g}  and   -1\\mathrm{g}  acceleration along Z-axis is   -3.487\\mathrm{V}  and   3.195\\mathrm{V} , respectively. Correspondingly, the sensitivity   (S_Z)  of the closed-loop detection system is   -3.341\\mathrm{V/g} . It is slightly less than the theoretical value of   -3.496\\mathrm{V/g} . The slight deviation between theoretical and measured sensitivity originates from the deviation between the parameters   (m,d)  used in theoretical calculation and that of fabricated device.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 8",
+        "caption": "Fig. 8. The scheme of the closed loop circuit for measuring acceleration along Z-axis..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/7e4405d40a2a54fab2884a760542697bb3ef77e6525a887a7b57ced9a611c34a.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 9",
+        "caption": "Fig. 9. The measurement setup for measuring acceleration..",
+        "image_source": [
+          "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/c265b773a1ac380ff5a9673332426381dc3ee380b28596d27ae043c9653b41f0.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_21",
+    "content": "Fig. 8. The scheme of the closed loop circuit for measuring acceleration along Z-axis..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/7e4405d40a2a54fab2884a760542697bb3ef77e6525a887a7b57ced9a611c34a.jpg"
+    ]
+  },
+  {
+    "id": "doc_22",
+    "content": "Fig. 9. The measurement setup for measuring acceleration..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Triaxial_Accelerometer_Based_on_Differential_Resonant_Beams_and_Force-Balanced_Capacitive_Plates/vlm/images/c265b773a1ac380ff5a9673332426381dc3ee380b28596d27ae043c9653b41f0.jpg"
+    ]
+  },
+  {
+    "id": "doc_23",
+    "content": "This paper presents a prototype of triaxial accelerometer with single proof mass to sense X, Y and Z-axis acceleration. The in-plane acceleration along X-axis and Y-axis are detected by flexural bridge resonators. A differential plate capacitor operated in force-balanced mode is used to detect Z-axis acceleration. Since the gravity center of the proof mass and\nthe neutral layer of L-type supporting beams are located on a same plane, the rotation of the proof mass subjected to in-plane acceleration can be reduced. The small displacement of the proof mass in Z-axis reduces the cross-axis sensitivity of the bridge resonators subjected to the acceleration along Z-axis. Three detection units can be optimized independently. The complementation of resonance detection mechanism and the force balance capacitance mode makes the triaxial accelerometer to exhibit low cross-axis sensitivity. The simulated and experimental results prove this conclusion.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_24",
+    "content": "His research interests are in the areas of study on metal thin film materials based on magnetron sputtering.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_25",
+    "content": "Her research interests are in the areas of closed-loop self-excited circuit based on electrostatic excitation/capacitance detection micro-bridge resonator.",
+    "block_type": "text"
+  }
+]

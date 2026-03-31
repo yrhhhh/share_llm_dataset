@@ -11,19 +11,6 @@
   },
   {
     "id": "doc_2",
-    "content": "Fig. 1. Schematic diagram of accelerometer principle (  \\mathbf{k}_1 : effective spring of beams connected proof masses to anchor,   \\mathbf{k}_2 : effective spring of beams for proof masses connection together,   \\mathbf{k}_{\\mathrm{e}} : electrostatic softening spring)..",
-    "block_type": "figure",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/095e42177a7cfc2512e2525b76d2dea08cdfedc84c83b8194220b58041dae6a6.jpg"
-    ]
-  },
-  {
-    "id": "doc_3",
-    "content": "performance and verification of proposed temperature compensation method. Final remarks are proposed in section V.",
-    "block_type": "text"
-  },
-  {
-    "id": "doc_4",
     "content": "The resonant accelerometer consists of two similar silicon MEMS resonators. Each resonator consists of two proof masses for acceleration sensing and some beams for connection. Each mass includes one pair of differential inter-digitated drive combs, one pair of differential inter-digitated sense combs and turning electrode parallel plate capacitors [11]. The schematic diagram of the structure is shown in Figure 2(a). When a DC voltage (V) is applied on the parallel plates (as shown in Figure 2(b)), electrostatic softening spring will be induced for the resonator, whose stiffness is susceptible to the cube of the capacitive gap. While acceleration applied along the X-axis, the two proof masses of the resonator move in the same direction as shown in Figure 2(c) and the capacitive gap   (d_{1}, d_{2})  changes. Consequently, stiffness of electrostatic softening spring changes, which results in the change of anti-phase resonant frequency of resonator as shown in Figure 2(d). The parallel plates of two resonators are placed on the opposite direction (see Figure 2(b)), which means the frequency of two resonators will change towards opposite direction when acceleration applied. Through the frequency difference of two resonators, the acceleration applied can be calculated. As analyzed above, the principle of accelerometer can be simplified in Figure 1.",
     "block_type": "text",
     "linked_items": [
@@ -33,27 +20,15 @@
         "caption": "(a). (b). (c). (d). Fig. 2. (a) Schematic diagram of structure. (b) Close-up view of turning electrode parallel plate capacitors. (c) Two proof masses moves on the same direction. (d) Anti-phase mode of resonator.  Fig. 3. Scale factor as function of the big gap   d_{1} ..",
         "image_source": [
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/ec8acf649b98c38ae2e64e4482689d244503d4c77b7b8fd1d2ea6c70c561953e.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/75689c9fb713b90a13b8f01ff6bf0060975be2d393982208dc8f7cae07597d6d.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/88e6f66ef7d63b11772294f54c295668365abb16ab1ba5f94d7f73bf54901804.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d28ae84cd8a160cf1a46672879fc4136592bbef68ac67c46a584681298aadf25.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bf51ba79b273d81d0a8c23842c4cfab0319d0d30afae595a8f0a029c116772cb.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bdfe9c57b425c2fdb8d037b523ba687049432fac07ce8d9b21cea043e5fcaa2f.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/127b310894979dd9ebff131a4f9c3c08415310c428b006e3dc2174ae66553954.jpg"
-        ]
-      },
-      {
-        "type": "figure",
-        "label": "Figure 1",
-        "caption": "Fig. 1. Schematic diagram of accelerometer principle (  \\mathbf{k}_1 : effective spring of beams connected proof masses to anchor,   \\mathbf{k}_2 : effective spring of beams for proof masses connection together,   \\mathbf{k}_{\\mathrm{e}} : electrostatic softening spring)..",
-        "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/095e42177a7cfc2512e2525b76d2dea08cdfedc84c83b8194220b58041dae6a6.jpg"
+          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg"
         ]
       }
     ]
   },
   {
-    "id": "doc_5",
+    "id": "doc_3",
     "content": "The anti-phase natural frequency of the resonator, computed through finite element analysis, is designed as   3666.1\\mathrm{Hz} . While the minimum frequency of interference mode, a motion along Z-axis, is equal to   8370.1\\mathrm{Hz} . The driving mode is the first order mode, which is beneficial to excite resonator. Large difference between the interference mode and the working mode helps to reduce its influence on the performance of the accelerometer.\nParallel plate capacitors are optimized to maximize the scale factor, which can be expressed as:\n$$\nS F = \\frac {\\omega_ {n 1} - \\omega_ {n 2}}{a} \\tag {1}\n$$ where   SF  is scale factor,   \\omega_{n1}  and   \\omega_{n2}  are the frequencies of two resonators. Take electrostatic spring softening into consideration, the resonant frequency of each resonator is written as:\n$$\n\\omega_ {n} = \\sqrt {\\frac {k - k _ {e}}{m}} \\tag {2}\n$$\nwhere   k  is the mechanical stiffness of resonator,   k_{e}  is the stiffness of electrostatic softening spring,   m  is equivalent mass.   k  and   m  can be obtained through finite element analysis.   k_{e}  is defined as:\n$$\nk _ {e} = \\frac {\\partial F _ {e}}{\\partial x} = 2 \\times N \\varepsilon_ {0} t b V ^ {2} \\left[ \\frac {1}{(d _ {2} + x) ^ {3}} + \\frac {1}{(d _ {1} - x) ^ {3}} \\right] (3)\n$$\nwhere   F_{e}  is static electricity force,   x  is the displacement of proof masses when acceleration applied,   N  is the number of parallel plate capacitors,   \\varepsilon_0  is dielectric constant,   t  is the thickness of structure,   b  is the length of parallel plate capacitors,   V  is the tuning voltage applied on the parallel plate capacitors,   d_{1}, d_{2}  is the gap of parallel plate capacitors (as shown in Figure 2(b)). The displacement of proof masses   x  can be acquired by solving the equation among beam force, static electricity force and inertial force. Among the parameters related to the stiffness of electrostatic softening spring,   t  is 80\\mu \\mathrm{m}  according to fabrication technique and   b  is supposed to as bigger as possible.   N  and   d_{1}, d_{2}  are mutual restraint in a fixed size layout. Considering fabrication technique, the small gap   d_{2}  is chosen to be   6\\mu \\mathrm{m} . Through multiple calculations based on the equations above built in the MATLAB,   d_{1}  is chosen to be   10\\mu \\mathrm{m}  to maximize the scaling factor as shown in Figure 3. The relevant geometric dimensions of each proof mass are reported in Table I.",
     "block_type": "formula",
     "linked_items": [
@@ -63,13 +38,9 @@
         "caption": "(a). (b). (c). (d). Fig. 2. (a) Schematic diagram of structure. (b) Close-up view of turning electrode parallel plate capacitors. (c) Two proof masses moves on the same direction. (d) Anti-phase mode of resonator.  Fig. 3. Scale factor as function of the big gap   d_{1} ..",
         "image_source": [
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/ec8acf649b98c38ae2e64e4482689d244503d4c77b7b8fd1d2ea6c70c561953e.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/75689c9fb713b90a13b8f01ff6bf0060975be2d393982208dc8f7cae07597d6d.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/88e6f66ef7d63b11772294f54c295668365abb16ab1ba5f94d7f73bf54901804.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d28ae84cd8a160cf1a46672879fc4136592bbef68ac67c46a584681298aadf25.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bf51ba79b273d81d0a8c23842c4cfab0319d0d30afae595a8f0a029c116772cb.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bdfe9c57b425c2fdb8d037b523ba687049432fac07ce8d9b21cea043e5fcaa2f.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/127b310894979dd9ebff131a4f9c3c08415310c428b006e3dc2174ae66553954.jpg"
+          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg"
         ]
       },
       {
@@ -78,50 +49,32 @@
         "caption": "(a). (b). (c). (d). Fig. 2. (a) Schematic diagram of structure. (b) Close-up view of turning electrode parallel plate capacitors. (c) Two proof masses moves on the same direction. (d) Anti-phase mode of resonator.  Fig. 3. Scale factor as function of the big gap   d_{1} ..",
         "image_source": [
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/ec8acf649b98c38ae2e64e4482689d244503d4c77b7b8fd1d2ea6c70c561953e.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/75689c9fb713b90a13b8f01ff6bf0060975be2d393982208dc8f7cae07597d6d.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/88e6f66ef7d63b11772294f54c295668365abb16ab1ba5f94d7f73bf54901804.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d28ae84cd8a160cf1a46672879fc4136592bbef68ac67c46a584681298aadf25.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bf51ba79b273d81d0a8c23842c4cfab0319d0d30afae595a8f0a029c116772cb.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bdfe9c57b425c2fdb8d037b523ba687049432fac07ce8d9b21cea043e5fcaa2f.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/127b310894979dd9ebff131a4f9c3c08415310c428b006e3dc2174ae66553954.jpg"
+          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg"
         ]
       },
       {
         "type": "table",
         "label": "Table 1",
         "caption": "TABLEI DESIGNED PARAMETERS FOR EACH PROOF MASS.",
-        "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/1142c45c7bfa6155f67d823f4b83dc22f1b70e139f207930edff8784257fb4af.jpg"
-        ]
+        "image_source": []
       }
     ]
   },
   {
-    "id": "doc_6",
+    "id": "doc_4",
     "content": "(a). (b). (c). (d). Fig. 2. (a) Schematic diagram of structure. (b) Close-up view of turning electrode parallel plate capacitors. (c) Two proof masses moves on the same direction. (d) Anti-phase mode of resonator.  Fig. 3. Scale factor as function of the big gap   d_{1} ..",
     "block_type": "figure",
     "image_source": [
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/ec8acf649b98c38ae2e64e4482689d244503d4c77b7b8fd1d2ea6c70c561953e.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/75689c9fb713b90a13b8f01ff6bf0060975be2d393982208dc8f7cae07597d6d.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/88e6f66ef7d63b11772294f54c295668365abb16ab1ba5f94d7f73bf54901804.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d28ae84cd8a160cf1a46672879fc4136592bbef68ac67c46a584681298aadf25.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bf51ba79b273d81d0a8c23842c4cfab0319d0d30afae595a8f0a029c116772cb.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/bdfe9c57b425c2fdb8d037b523ba687049432fac07ce8d9b21cea043e5fcaa2f.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/127b310894979dd9ebff131a4f9c3c08415310c428b006e3dc2174ae66553954.jpg"
+      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/d22a205ada7f71c87d26f15e9215063ed157aa486dd3c44a001a01018aa3cefc.jpg"
     ]
   },
   {
-    "id": "doc_7",
-    "content": "TABLEI DESIGNED PARAMETERS FOR EACH PROOF MASS.",
-    "block_type": "table",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/1142c45c7bfa6155f67d823f4b83dc22f1b70e139f207930edff8784257fb4af.jpg"
-    ]
-  },
-  {
-    "id": "doc_8",
+    "id": "doc_5",
     "content": "The control circuits consist of analog front-end circuit, digital analog conversion circuit and digital circuit as shown in Figure 4(a). The output of the resonator is amplified by a trans-impedance amplifier and then some common errors are eliminated through differentiator in analog front-end circuit. Digital circuit includes continuous ring-down circuit and quality factor, frequency readout circuit.",
     "block_type": "text",
     "linked_items": [
@@ -130,40 +83,37 @@
         "label": "Figure 4",
         "caption": "Fig. 4. (a) Schematic the control circuits consisting of analog front-end circuit, ADC, DAC and digital circuit. (b) Signals in digital circuit..",
         "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f89f2dff75a2115865031606473929a2ab0b995cb16661372b6c3277ee82b00e.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/eac95687388cc4ded7598da658d703ac9f29e61445ed9e972a1108169afcd13d.jpg"
         ]
       }
     ]
   },
   {
-    "id": "doc_9",
+    "id": "doc_6",
     "content": "Each resonator of accelerometer can be treated as a second order spring-mass-damping system. Quality factor is defined as the energy stored in the system over the energy dissipated per radian, which represents the damping of the system. Various mechanisms contribute to the energy loss of MEMS resonators, such as thermo-elastic dissipation (TED), air-damping, and anchor loss. These mechanisms are susceptible to temperature, thus quality factor varies with temperature [27]–[29]. Consequently, quality factor is an ideal candidate as the temperature indicator for the resonator, which realizes zero-distance temperature measurement. In order to obtain the real temperature continuously and precisely, continuous ring-down technique is proposed to monitor real-time quality factor [32].\nThe s-domain transfer function of resonator can be expressed as:\n$$\nH (s) = K _ {m} \\frac {1}{\\frac {s ^ {2}}{\\omega_ {n} ^ {2}} + \\frac {s}{\\omega_ {n} Q} + 1}, \\quad Q = \\frac {1}{2 \\varsigma} \\tag {4}\n$$\nwhere   K_{m}  is amplification coefficient of resonator,   \\omega_{n}  is angular frequency,   Q  is quality factor and   \\zeta  is damping coefficient. The amplitude function of the resonator can be simplified into [31]:\n$$\nH _ {A m p} (s) = K _ {m} \\omega_ {n} \\frac {1}{s + \\frac {\\omega_ {n}}{2 Q}} \\tag {5}\n$$\nWhen the drive signal   (Dr)  applies on resonator (which is called ring), the resonator begins to vibrate at its resonant frequency, which can be considered as a step response. The vibration amplitude   (Amp)  can be written as:\n$$\nA m p (t) = \\frac {2 K _ {f b} K _ {m} K _ {a} Q}{1 + 2 K _ {f b} K _ {m} K _ {a} Q} \\left(1 - e ^ {- \\left(\\frac {\\omega_ {n}}{2 Q} + K _ {m} K _ {a} K _ {f b} \\omega_ {n}\\right) t}\\right) \\tag {6}\n$$\nwhere   K_{a}  is the amplification coefficient of analog front-end circuit,   K_{fb}  is the amplification coefficient of feedback amplifier. Here two parameters are defined to expressed",
     "block_type": "formula"
   },
   {
-    "id": "doc_10",
+    "id": "doc_7",
     "content": "Fig. 4. (a) Schematic the control circuits consisting of analog front-end circuit, ADC, DAC and digital circuit. (b) Signals in digital circuit..",
     "block_type": "figure",
     "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f89f2dff75a2115865031606473929a2ab0b995cb16661372b6c3277ee82b00e.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/eac95687388cc4ded7598da658d703ac9f29e61445ed9e972a1108169afcd13d.jpg"
     ]
   },
   {
-    "id": "doc_11",
+    "id": "doc_8",
     "content": "(a). (b). (d). (c). (e)  Fig. 5. Sensors Implementation: (a) X-ray photo of the structure. (b) Perspective drawing of the MEMS chip. (c) Process cross-section for three layers of the MEMS chip. (d) Photo of the ceramic cartridge with MEMS chip attached inside. (e) View of the readout circuit implementation..",
     "block_type": "figure",
     "image_source": [
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/53e87522a01d14f0e576e0a2ff744f0bcf88e3d6c290a2d5969c473adeffcaf8.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/166102b202747110deb7990b8dab4fdc9d690fcfc0555263f12591e512b7140f.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/c8ad26508dbe17555407e5b56c06ccd700bfb1834951577bad44fa1328f2a277.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/5bafb73e818315b6f1efb2c1a51d849c96c5499b7b0bf463b9499e3099d3ce97.jpg",
       "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/a56637d9f05dcc4eaa86329db01e35d01259e307889942d3ba5426ee6499231d.jpg"
     ]
   },
   {
-    "id": "doc_12",
+    "id": "doc_9",
     "content": "$$\n\\alpha = \\frac {2 K _ {f b} K _ {m} K _ {a} Q}{1 + 2 K _ {f b} K _ {m} K _ {a} Q} \\beta = \\frac {\\omega_ {n}}{2 Q} + K _ {m} K _ {a} K _ {f b} \\omega_ {n}\n$$\nConsider positive axis, make natural logarithm process and choose two fixed points. Then the period of down   t_{ring}  can be obtained by:\n$$\nt _ {\\text {r i n g}} = \\left(t _ {2} - t _ {1}\\right) = \\frac {\\operatorname {I n} \\left(\\operatorname {A m p} _ {2} - a\\right) - \\operatorname {I n} \\left(\\operatorname {A m p} _ {1} - a\\right)}{\\beta} \\tag {7}\n$$\nWhen drive signal   (Dr)  removes (which is called down), the free vibration of resonator decays due to damping effect. The vibration amplitude   (Amp)  can be written as:\n$$\nA m p (t) = \\pm \\frac {e ^ {- \\varsigma \\omega_ {n} t}}{\\sqrt {1 - \\varsigma^ {2}}}, \\quad \\varsigma = \\frac {1}{2 Q} \\tag {8}\n$$\nConsider positive axis, make natural logarithm process and choose two fixed points. Then the period of down   t_{down}  can be obtained by:\n$$\nt _ {d o w n} = \\left(t _ {2} - t _ {1}\\right) = \\frac {2 Q}{\\omega_ {n}} \\left(\\text {I n A m p} _ {1} - \\text {I n A m p} _ {2}\\right) \\tag {9}\n$$\nConsequently, the frequency of continuous ring-down   \\mathrm{f_Q}  can be repressed as:\n$$\nf _ {Q} = \\frac {1}{t _ {\\text {d o w n}} + t _ {\\text {r i n g}}} \\tag {10}\n$$\nSince the period of ring   t_{ring}  and period of down   t_{down}  are both related to quality factor, frequency of continuous ring-down   f_{Q}  can represent quality factor. The measurement of quality factor is finally translated into the measurement of the frequency of continuous ring-down. In addition, quality factor is frequency modulated with this technique, which increases the robustness against the gain variation in circuit blocks.\nContinuous ring-down circuit is supposed to read the sense signal   (Se)  from ADC and provide drive signal   (Dr)  for DAC. It includes an amplitude detector, a relay, a switch and an amplifier as shown in Figure 4 (a). Relay constantly compares amplitude   (Amp)  obtained from the amplitude detector with the upper limit   (Ul)  and lower limit   (Ll)  and produces a control signal for the switch. The continuous ring-down driving principle works as follows: when the vibration amplitude   (Amp)  of the resonator delays to lower limit, the switch close, switch signal   (Sw)  turns into \"1\", the feedback drive signal   (Dr)  applies on the resonator. While when the vibration amplitude   (Amp)  of the resonator reaches to upper limit, the switch close, switch signal   (Sw)  turns into \"0\", the feedback drive signal   (Dr)  removes. This process repeats constantly and continuous ring-down driving circuits is implemented. When the switch is close, amplifier enhances amplitude of drive signal to ensure sense signal reach the upper limit quickly and steadily. The signals of continuous ring-down show in Figure 4(b). The switch signal   (Sw)  is utilized as input of quality factor readout circuits for quality factor measurement.",
     "block_type": "formula",
     "linked_items": [
@@ -172,14 +122,13 @@
         "label": "Figure 4",
         "caption": "Fig. 4. (a) Schematic the control circuits consisting of analog front-end circuit, ADC, DAC and digital circuit. (b) Signals in digital circuit..",
         "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f89f2dff75a2115865031606473929a2ab0b995cb16661372b6c3277ee82b00e.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/eac95687388cc4ded7598da658d703ac9f29e61445ed9e972a1108169afcd13d.jpg"
         ]
       }
     ]
   },
   {
-    "id": "doc_13",
+    "id": "doc_10",
     "content": "With continuous ring-down technique, quality factor consequently translated into the measurement of the switch signal's frequency. Frequency digital converter (FDC) based on the principle of reset counter is designed for quality factor measurement. Principle of this FDC shows in Figure 4(a) and signals show in Figure 4(b) [32], [33]. Reset counter continuously records the number of crystal oscillator reference clock's (CLK) rising edge. When each rising edge of the switch's signal arrives, difference   (D)  between counter's values and previous value recorded by register will be calculated, which reflects the ratio between frequency of the switch signal and the frequency of reference clock. The frequency of reference clock is known, thus frequency of the switch can be acquired. Through a decimation filter, the digital number   (D)  is decimated to increase resolution. The quantization noise of the FDC is first-order noise-shaped, which means noise floor will be limited in the digital output spectrum at low frequencies. This FDC is quite suitable for quality factor readout as the frequency of switch signal (continuous ring-down) is about   0.5\\mathrm{Hz} . When sense signal   (Se)  goes through a zero-crossing comparator, a square wave   (Sq)  with the same frequency of sense signal generates, which is utilized as an input of frequency readout circuit. Frequency readout circuit is the same as the quality factor readout circuit based on the principle of reset counter.",
     "block_type": "text",
     "linked_items": [
@@ -188,22 +137,13 @@
         "label": "Figure 4",
         "caption": "Fig. 4. (a) Schematic the control circuits consisting of analog front-end circuit, ADC, DAC and digital circuit. (b) Signals in digital circuit..",
         "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f89f2dff75a2115865031606473929a2ab0b995cb16661372b6c3277ee82b00e.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/eac95687388cc4ded7598da658d703ac9f29e61445ed9e972a1108169afcd13d.jpg"
         ]
       }
     ]
   },
   {
-    "id": "doc_14",
-    "content": "Fig. 6. Frequency difference of the resonators for input accelerations in the range of   \\pm 1\\mathrm{g}  with different tuning voltage..",
-    "block_type": "figure",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/26381bab9aec1e394ae4da2f9ef74cfe6291970f2ddd9bfb497c24a962d9e2c7.jpg"
-    ]
-  },
-  {
-    "id": "doc_15",
+    "id": "doc_11",
     "content": "The structure is manufactured using Deep Reactive Ion Etching on SOI wafer with a standard   80\\mu \\mathrm{m}  SOI process, which enhances the scale factor and lower the mechanical Brownian noise level. Photo of the structure shows in Figure 5(a) including resonators in middle and pads around. The actual MEMS chip size is equal to   6.6^{*}6.6^{*}0.6~\\mathrm{mm}^3 . It is realized with three layers including the cover layer, the structure layer and the base layer, whose cross-section shows in Figure 5(c). The cover layer and the structure layer are joined by Au/Si eutectic bonding, forming a hermetic cavity. This process is named as on-wafer-level vacuum packaging technique [34], which is beneficial to maintain the vacuum for the resonator and enhance its quality factor. The MEMS chip including three layers is attached inside a ceramic cartridge with epoxy as shown in Figure 5(d). Each electrode pad is drawn to structure with lead pads on cover layer as shown in Figure 5(b) and connected to the corresponding pins of the ceramic cartridge with gold wires as shown in Figure 5(d). The control circuit is implemented in Figure 5(e). The analog front-end circuit on which packaged MEMS chip is welded and digital analog conversion circuit are printed circuit boards (PCBs). Main chips are chosen from ANALOG DEVICES. The sampling rate of analog-to-digital converter (ADC) and digital-to-analog converter (DAC) is chosen to be   700\\mathrm{kHz}  and their data is in a 16-bit word format. Digital control circuit is implemented in a Diginent Nexys4 DDR board, based on the latest Artix-7 FPGA from Xilinx.",
     "block_type": "text",
     "linked_items": [
@@ -213,7 +153,6 @@
         "caption": "(a). (b). (d). (c). (e)  Fig. 5. Sensors Implementation: (a) X-ray photo of the structure. (b) Perspective drawing of the MEMS chip. (c) Process cross-section for three layers of the MEMS chip. (d) Photo of the ceramic cartridge with MEMS chip attached inside. (e) View of the readout circuit implementation..",
         "image_source": [
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/53e87522a01d14f0e576e0a2ff744f0bcf88e3d6c290a2d5969c473adeffcaf8.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/166102b202747110deb7990b8dab4fdc9d690fcfc0555263f12591e512b7140f.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/c8ad26508dbe17555407e5b56c06ccd700bfb1834951577bad44fa1328f2a277.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/5bafb73e818315b6f1efb2c1a51d849c96c5499b7b0bf463b9499e3099d3ce97.jpg",
           "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/a56637d9f05dcc4eaa86329db01e35d01259e307889942d3ba5426ee6499231d.jpg"
@@ -222,109 +161,61 @@
     ]
   },
   {
-    "id": "doc_16",
-    "content": "The accelerometer was mounted on a horizontal axis rotation table and the frequency differences between two resonators are recorded under different tilt angles. Since the scale factor can be adjusted by tuning the voltage applied on the parallel plate capacitors, this experiment was also repeated with three different tuning voltages (3.9, 5 and 6V). Experiments reveal linear response to acceleration with tunable scale factors of   2.5\\mathrm{Hz / g} ,   5\\mathrm{Hz / g}  and   10.4\\mathrm{Hz / g} , respectively as shown in Figure 6, which corresponds to the theoretical calculation:   2.55\\mathrm{Hz / g} ,   4.94\\mathrm{Hz / g}  and   9.85\\mathrm{Hz / g} , respectively. It should be noted that all the further experimental data was derived using a more conservative value of   5\\mathrm{Hz / g}  in order to obtain a balance between scale factor and its nonlinearity.\nFor evaluation of bias stability of the accelerometer at room temperature, the accelerometer was placed on a stable marble foundation with zero acceleration input and the output is collected for 120 minutes with a sampling rate of   250\\mathrm{Hz}  as shown in Figure 7(a). Then the Allan variance of the data is calculated   4.3\\mu \\mathrm{g}  bias instability as shown in Figure 7(b). In the same circumstance, quality factor is 4231 and 4073 through ring-down testing for two resonators respectively. Table II summarizes the measured performance of the accelerometer and the comparison with the previously reported resonant accelerometers.",
+    "id": "doc_12",
+    "content": "Fig. 7. (a) Output of the accelerometer collected for two hours. (b) Allan variance of output of the accelerometer.  Fig. 8. Set-up for temperature experiments of accelerometers..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/cb518498c47d6e6af8ce0e729b504a177a31d0287b863b697fa33aef7c4701a2.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "resonators are recorded under different tilt angles. Since the scale factor can be adjusted by tuning the voltage applied on the parallel plate capacitors, this experiment was also repeated with three different tuning voltages (3.9, 5 and 6V). Experiments reveal linear response to acceleration with tunable scale factors of   2.5\\mathrm{Hz / g} ,   5\\mathrm{Hz / g}  and   10.4\\mathrm{Hz / g} , respectively as shown in Figure 6, which corresponds to the theoretical calculation:   2.55\\mathrm{Hz / g} ,   4.94\\mathrm{Hz / g}  and   9.85\\mathrm{Hz / g} , respectively. It should be noted that all the further experimental data was derived using a more conservative value of   5\\mathrm{Hz / g}  in order to obtain a balance between scale factor and its nonlinearity.\nFor evaluation of bias stability of the accelerometer at room temperature, the accelerometer was placed on a stable marble foundation with zero acceleration input and the output is collected for 120 minutes with a sampling rate of   250\\mathrm{Hz}  as shown in Figure 7(a). Then the Allan variance of the data is calculated   4.3\\mu \\mathrm{g}  bias instability as shown in Figure 7(b). In the same circumstance, quality factor is 4231 and 4073 through ring-down testing for two resonators respectively. Table II summarizes the measured performance of the accelerometer and the comparison with the previously reported resonant accelerometers.",
     "block_type": "text",
     "linked_items": [
       {
         "type": "figure",
-        "label": "Figure 6",
-        "caption": "Fig. 6. Frequency difference of the resonators for input accelerations in the range of   \\pm 1\\mathrm{g}  with different tuning voltage..",
+        "label": "Figure 7",
+        "caption": "Fig. 7. (a) Output of the accelerometer collected for two hours. (b) Allan variance of output of the accelerometer.  Fig. 8. Set-up for temperature experiments of accelerometers..",
         "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/26381bab9aec1e394ae4da2f9ef74cfe6291970f2ddd9bfb497c24a962d9e2c7.jpg"
+          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/cb518498c47d6e6af8ce0e729b504a177a31d0287b863b697fa33aef7c4701a2.jpg"
         ]
       },
       {
         "type": "table",
         "label": "Table 2",
         "caption": "TABLE II PERFORMANCE COMPARISON BETWEEN THE PROPOSED NRA AND PREVIOUSLY REPORTED RESONANT ACCELERometers.",
-        "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/777fd6fd50f4bb43ba19eb8261de02aef93d0993f23bacb35d27f9d1dc204c5c.jpg"
-        ]
+        "image_source": []
       }
     ]
   },
   {
-    "id": "doc_17",
-    "content": "Fig. 9. (a) TCF of NRA1 (SF:   5\\mathrm{Hz / g} ). (b) TCF of NRA1 (SF:   10.4\\mathrm{Hz / g} ). (c) TCF of NRA2. (d) TCF of VBA1. (e) TCF of VBA2. (f) TCF of VBA3..",
-    "block_type": "figure",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/195ed55be73872c085e357becc74a5463595c6ec30dac525b1e777c4f0c9e475.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/068f9efe9cee2e96c7ea398a2dbb4d784dd796090ae96c889843b129a992855b.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/829bd08e0bd10ded3e0f3351c4eb7c4aac74bcf22ddf00e3166e2aa45914f6b0.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/8b56f1cf7f741eecdfe7afccee70a1b716d79e19a1b06d4822fbb38b48f3e0df.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/30a33ec6105c017fe43612fdaf1ff50fb3e2376cc3112549e79c501ca0c21374.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/abd6a076622f78bf8ccef23eb1b77ce8dc22a9045b4df2e0d59965684f808092.jpg"
-    ]
-  },
-  {
-    "id": "doc_18",
-    "content": "Fig. 10. Results of temperature cycling experiments: (a) Collection of frequencies, quality factors and temperature. (b) Sense signal at   40^{\\circ}\\mathrm{C}  and   -40^{\\circ}\\mathrm{C} . (c) Relationship between frequency difference, quality factor and temperature. (d) Acceleration output comparison..",
-    "block_type": "figure",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f2e32b64d13123008496c657955bd5e9e615a7cb95f8120cc25f05dbc3742d22.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/4a05c5a8858229f9c02ed3321ffb119f6f2156ca7049e0d9fab1aef236623325.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/8a58e5409b1f2028e961c31069d8bceaf31b550166619228ebc08b75e33804e6.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/3c6f44c9a857ee4c99d3bcd277810f50f177eacb8452f8245b6669f6f7960bcb.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/b7489fce7a16512304d4a45518a5eb558a89d091c28655c0707b1d5928542762.jpg",
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/85d8de7b33e88c1b18b2a09d7daa7e44d4f21df001dbc38cbb74e2b8fa6ac3eb.jpg"
-    ]
-  },
-  {
-    "id": "doc_19",
+    "id": "doc_14",
     "content": "In order to evaluate the performance of temperature of the accelerometer, we compare the proposed accelerometer (NRA) and a vibration beam resonant accelerometer (VBA) [11] in the following testing. The resonant frequency and scale factor of this vibration beam resonant accelerometer are   25567\\mathrm{Hz}  and   31.56\\mathrm{Hz / g}  respectively. Experimental systems are built in Figure 8. Analog front-end circuits on which packaged MEMS chips are welded and a thermometer were put in the temperature chamber and installed on a horizontal axis turntable. Temperature is set at different points and stays for two hours at each point to ensure uniformity. Frequencies of the accelerometers and temperature were recorded. Based on\nthe data collected, temperature coefficient of frequency (TCF) defined as frequency change over temperature change is calculated as shown in Figure 9.\nThe TCF of NRA is closed to the TCF of silicon resonant systems typically   -30~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  as shown in Figure 9(a), (b), (c). As to VBA, TCF is deviated from   -30~\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  and changes drastically varying temperature as shown in Figure 9 (d), (e), (f). Besides the temperature coefficient of the silicon properties, package stress also plays a huge role, which causes the TCF of VBA changing drastically varying temperature. These two resonant accelerometers were fabricated with the same standard SOI process and packaged with the same technique. Both accelerometers have not deliberately designed to ensure package-stress isolated. It is obvious to find that",
     "block_type": "text",
     "linked_items": [
       {
         "type": "figure",
-        "label": "Figure 9",
-        "caption": "Fig. 9. (a) TCF of NRA1 (SF:   5\\mathrm{Hz / g} ). (b) TCF of NRA1 (SF:   10.4\\mathrm{Hz / g} ). (c) TCF of NRA2. (d) TCF of VBA1. (e) TCF of VBA2. (f) TCF of VBA3..",
+        "label": "Figure 8",
+        "caption": "Fig. 7. (a) Output of the accelerometer collected for two hours. (b) Allan variance of output of the accelerometer.  Fig. 8. Set-up for temperature experiments of accelerometers..",
         "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/195ed55be73872c085e357becc74a5463595c6ec30dac525b1e777c4f0c9e475.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/068f9efe9cee2e96c7ea398a2dbb4d784dd796090ae96c889843b129a992855b.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/829bd08e0bd10ded3e0f3351c4eb7c4aac74bcf22ddf00e3166e2aa45914f6b0.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/8b56f1cf7f741eecdfe7afccee70a1b716d79e19a1b06d4822fbb38b48f3e0df.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/30a33ec6105c017fe43612fdaf1ff50fb3e2376cc3112549e79c501ca0c21374.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/abd6a076622f78bf8ccef23eb1b77ce8dc22a9045b4df2e0d59965684f808092.jpg"
+          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/cb518498c47d6e6af8ce0e729b504a177a31d0287b863b697fa33aef7c4701a2.jpg"
         ]
       }
     ]
   },
   {
-    "id": "doc_20",
-    "content": "TABLE II PERFORMANCE COMPARISON BETWEEN THE PROPOSED NRA AND PREVIOUSLY REPORTED RESONANT ACCELERometers.",
-    "block_type": "table",
-    "image_source": [
-      "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/777fd6fd50f4bb43ba19eb8261de02aef93d0993f23bacb35d27f9d1dc204c5c.jpg"
-    ]
-  },
-  {
-    "id": "doc_21",
+    "id": "doc_15",
     "content": "VB: vibration beams, ES: electrostatic spring.\nthe NRA is insensitive to stress compared with VBA thinks to its principle as mentioned in the abstract. In most cases, the frequency difference between two differential resonators reflects the input acceleration, while the common mode errors such as temperature effect can be efficiently cancelled, and scale factor can also be doubled. TCF of frequency difference is decreased to   1.4\\mathrm{ppm} / {}^{\\circ}\\mathrm{C}  for NRA.",
     "block_type": "text"
   },
   {
-    "id": "doc_22",
+    "id": "doc_16",
     "content": "For verification of temperature compensation based on real-time quality factor via continuous ring-down technique, temperature cycling experiments were conducted. The temperature of thermal chamber was set to change from   -40^{\\circ}\\mathrm{C}  to   40^{\\circ}\\mathrm{C}  on cycles and data is collected by upper computer as shown in Figure 10(a). The waveforms of the sense signal of Resonator 1 at two different temperatures are recorded and shows in Figure 10(b). The frequency of continuous ring-down is different at different temperature, through which quality factor can be acquired.\nFigure10(c) shows that quality factor (average value of two resonators) has a better correlation with frequency difference, while the relationship between frequency difference and temperature measured by thermometer has hysteresis. Finally, frequency difference (acceleration output) is compensated with linear compensation by quality factor and temperature. The acceleration output attains high stability relatively after quality factor compensation, while acceleration output after temperature compensation is still unstable due to hysteresis as shown in Figure 10(d). The bias stability of acceleration   (1\\sigma  value) is improved from   35.2\\mathrm{mg}  to   0.08\\mathrm{mg}  after compensation over   -40^{\\circ}\\mathrm{C}  to   40^{\\circ}\\mathrm{C} , which is   36\\times  better than that based on external thermometer.",
-    "block_type": "text",
-    "linked_items": [
-      {
-        "type": "figure",
-        "label": "Figure 10",
-        "caption": "Fig. 10. Results of temperature cycling experiments: (a) Collection of frequencies, quality factors and temperature. (b) Sense signal at   40^{\\circ}\\mathrm{C}  and   -40^{\\circ}\\mathrm{C} . (c) Relationship between frequency difference, quality factor and temperature. (d) Acceleration output comparison..",
-        "image_source": [
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/f2e32b64d13123008496c657955bd5e9e615a7cb95f8120cc25f05dbc3742d22.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/4a05c5a8858229f9c02ed3321ffb119f6f2156ca7049e0d9fab1aef236623325.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/8a58e5409b1f2028e961c31069d8bceaf31b550166619228ebc08b75e33804e6.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/3c6f44c9a857ee4c99d3bcd277810f50f177eacb8452f8245b6669f6f7960bcb.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/b7489fce7a16512304d4a45518a5eb558a89d091c28655c0707b1d5928542762.jpg",
-          "./text_resources/A_MEMS_Resonant_Accelerometer_With_High_Performance_of_Temperature_Based_on_Electrostatic_Spring_Softening_and_Continuous_Ring-Down_Technique/vlm/images/85d8de7b33e88c1b18b2a09d7daa7e44d4f21df001dbc38cbb74e2b8fa6ac3eb.jpg"
-        ]
-      }
-    ]
+    "block_type": "text"
   },
   {
-    "id": "doc_23",
+    "id": "doc_17",
     "content": "In this paper, a resonant MEMS accelerometer based on electrostatic spring softening effect and continuous ring-down technique has been implemented. Through electrostatic softening spring, the displacement of proof masses caused by external acceleration is modulated on the frequency of resonator's anti-phase modal without any stress transmission. In control circuit, a method of temperature compensation based on the measurement of real-time quality factor via continuous\nring-down is proposed, which attenuates measuring hysteresis and improves the precision of temperature compensation. The key specifications of this accelerometer were tested such as measuring range, scale factor, Allan variance and quality factor. Experimental results show that this accelerometer has a better performance of temperature compared with vibration beam resonant accelerometer. The stability of acceleration output was improved from   35.2\\mathrm{mg}  to   0.08\\mathrm{mg}  with quality factor compensation ranging from   -40^{\\circ}\\mathrm{C}  to   +40^{\\circ}\\mathrm{C} , which is   36\\times  better than that based on external thermometer.",
     "block_type": "text"
   }

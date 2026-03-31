@@ -1,0 +1,219 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Phase noise is an essential performance indicator for microelectromechanical system (MEMS) resonant accelerometers. The optimal resolution achievable is limited by the close-to-the carrier phase noise resulting from the modulation of noise sources by the mechanical resonator and driving circuit. Compared with the frequently used automatic gain control (AGC) circuit, the non-AGC scheme is more concise and can avoid the additional frequency flicker noise and   1/f^5  phase noise introduced by the AGC module. Although the mechanisms of these two kinds of control loops are well-known by the communities, the phase noise modelling study on the non-AGC loop, especially compared with that of AGC loop is insufficient. This paper established a phase noise model for the AGC and non-AGC closed loop circuit of MEMS resonant accelerometer. The model includes the effects of resonator thermal noise, random loading noise of proof masses, front-circuit noise, comparator noise, AGC noise and amplitude stiffness coupling on the output noise spectrum of the resonant accelerometer. This paper carries the noise analysis through a behaviour level simulation with Simulink. The measured frequency power spectral density and Allan variance are very close to the theoretical predictions, which verifies the effectiveness of the phase noise model. The test results show that the white noise and the bias instability of the silicon resonant accelerometer are   837\\mathrm{ng}(\\sqrt{\\mathrm{Hz}})^{-1}  and   140\\mathrm{ng}  respectively, which are in good agreement with the model prediction results.\nKeywords: MEMS, resonant accelerometer, non-AGC-driven, phase noise modelling",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Microelectromechanical system (MEMS) resonant accelerometer [1-8] is widely used in ballistic missile guidance, unmanned air vehicle (UAV) navigation, autopilot etc due to its high precision, wide dynamic range and quasi-digital output characteristics. Phase noise is an essential performance indicator for MEMS resonant accelerometers. The optimal resolution achievable is limited by the close-to-the-carrier phase noise resulting from the modulation of noise sources by the mechanical resonator and driving circuit. Automatic\ngain control (AGC) and non-AGC schemes are two common methods to drive MEMS resonant accelerometers. AGC driving can keep the vibrating amplitude of the resonator constant [1, 2, 9, 10] even if the quality factor of the device changes due to the temperature variations. However, AGC control requires at least five circuit modules such as a preamplifier, a full wave rectifier, a low-pass filter, a proportional-integral (PI) controller and a modulator, which make the circuit complex and increase the power consumption. Moreover, it inevitably introduces additional flicker noise by modulation [11]. Compared with the AGC loop, the non-AGC scheme is highly concise in that it only needs a preamplifier and a comparator to achieve the closed-loop driving [4]. It can also avoid the\nadditional frequency flicker noise and   1/f^5  phase noise introduced by the AGC module. Noting that the AGC and non-AGC schemes mentioned above refer to the self-oscillating loop but not include a phase locked loop. Although AGC plus phase locked loop (PLL) control is currently a standard configuration for MEMS gyroscopes [12], it seems to be more complex and expensive in the design. In addition, thanks to the high vacuum packaging technology [13], the structural damping has become the main factor of the energy loss mechanism of a micro resonators. The thermal induced quality factor variation of a ultra-high vacuum-sealed resonator is less than that of the low quality factor devices [14]. Therefore, selecting an appropriate driving voltage can achieve the normal operation of the resonant accelerometer without AGC control under varied temperature conditions. The non-AGC has been successfully adopted in the resonant accelerometer development [4, 9, 15–17]. Although the mechanisms of these two control loops are well-known by the communities, there is no previous work on the phase noise model for a non-AGC resonant accelerometer to the authors' knowledge. In this paper, system level phase noise models are established for the non-AGC and AGC driving circuits of the resonant accelerometer. The simulation results indicate that noise performance of the non-AGC driving is superior to the that of the AGC driving. The models show the contribution of each noise source and can predict the noise performance accurately, which enables a quantitative noise analysis and optimization for the non-AGC scheme.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The working principle of a resonant accelerometer driven by non-AGC scheme is shown in figure 1. The variation capacitance signal of the accelerometer is transformed into voltage signal by a C/V converter. The amplified voltage signal is compensated by a phase shifter to meet the phase condition of oscillation. Then, the signal is converted into a square wave signal with a fixed amplitude through a comparator. The counting method is used to measure the frequency of the square wave signal. At the same time, the differential square wave signal is used to drive the resonant accelerometer to realize closed-loop control.\nFigure 2 shows the block diagram of the non-AGC scheme.   G(s), H_{\\mathrm{amp}}(s), H_{\\mathrm{ps}}(s)  and   H_{\\mathrm{cmp}}(s)  represent the transfer functions of the accelerometer, the preamplifier, the phase shifter and the comparator in the loop respectively.   K_{\\mathrm{div}}  represents the coefficient of amplitude reduction.   V_{\\mathrm{drv}}, I, V_{\\mathrm{amp}}  and   V_{\\mathrm{ps}}  are the driving voltage, the output current signal, the preamplifier output voltage and the phase shifter output voltage.   \\overline{V_{\\mathrm{n\\_mach}}^2} ,   \\overline{V_{\\mathrm{n\\_amp}}^2}, \\overline{V_{\\mathrm{n\\_ps}}^2}  and   \\overline{V_{\\mathrm{n\\_cmp}}^2}  are the equivalent voltage noise of mechanical noise, the preamplifier, the phase shifter and the comparator respectively.\nAccording to the Leeson model [18], the influences of the noise introduced by different modules on the phase noise of the output signal can be calculated separately. Considering the preamplifier alone, the noise transfer function from the amplifier noise to the output in the resonant loop can be obtained as,\n$$\nN _ {\\text {n o u t} \\_ \\text {a m p}} (s) = \\left| \\frac {H _ {\\mathrm {p s}} (s) H _ {\\mathrm {c m p}} (s)}{1 - G (s) H _ {\\mathrm {a m p}} (s) H _ {\\mathrm {p s}} (s) H _ {\\mathrm {c m p}} (s) K _ {\\mathrm {d i v}}} \\right| ^ {2} \\overline {{V _ {\\mathrm {n} \\_ \\text {a m p}} ^ {2}}}. \\tag {1}\n$$\nThe resonator   G(s)  can be viewed as a second-order mass-spring-damping system\n$$\nG (s) = \\frac {K _ {\\mathrm {V F}} K _ {\\mathrm {X I}}}{m} \\frac {s}{s ^ {2} + (\\omega_ {0} / Q) s + \\omega_ {0} ^ {2}}. \\tag {2}\n$$\nwhere   m ,   \\omega_0 ,   Q  are the mass, resonant frequency and quality factor of one double-ended tuning forks (DETF).   K_{\\mathrm{VF}}  and   K_{\\mathrm{XI}}  are the gain from the driving voltage to the force and from the displacement to the current, respectively. Substituting   G(s)  to the noise transfer function above and noting that the loop gain is 1 when the loop is in resonance, we can get,\n$$\nN _ {\\text {n o u t} \\text {a m p}} (\\omega) = \\left| H _ {\\mathrm {p s}} (j \\omega) H _ {\\mathrm {c m p}} (j \\omega) \\right| ^ {2} \\left| 1 + \\frac {\\left(j \\frac {\\omega_ {0} \\omega}{Q}\\right)}{\\omega_ {0} ^ {2} - \\omega^ {2}} \\right| ^ {2} \\overline {{V _ {\\mathrm {n} \\text {a m p}} ^ {2}}}. \\tag {3}\n$$\nLet   \\omega = \\Delta \\omega +\\omega_0  , then the phase noise can be written as follows,\n$$\n\\begin{array}{l} S _ {\\text {n o u t} \\_ \\text {a m p}} (\\Delta \\omega) = \\frac {\\left| H _ {\\mathrm {p s}} (j \\omega_ {0}) H _ {\\mathrm {c m p}} (j \\omega_ {0}) \\right| ^ {2}}{C} \\\\ \\left[ 1 + \\left(\\frac {\\omega_ {0}}{2 Q \\Delta \\omega}\\right) ^ {2} \\right] \\overline {{V _ {\\mathrm {n} _ {-} \\mathrm {a m p}} ^ {2}}} \\tag {4} \\\\ \\end{array}\n$$ where,   C  is the carrier power,   \\omega_0  is the resonant frequency of the resonator and   \\Delta \\omega  is the offset from the resonant frequency.   H_{\\mathrm{ps}}(j\\omega_0)  and   H_{\\mathrm{cmp}}(j\\omega_0)  represent the transfer functions of the phase shifter and the comparator at resonant frequency respectively. Similarly, the effect of resonator thermal noise on the phase noise of the output signal can be derived as (5)\n$$\nS _ {\\text {n o u t} \\text {m a c h}} (\\Delta \\omega) = \\frac {\\overline {{V _ {\\mathrm {n} \\text {m a c h}} ^ {2}}} ^ {2}}{C K _ {\\mathrm {d i v}} ^ {2}} \\left(\\frac {\\omega_ {0}}{2 Q \\Delta \\omega}\\right) ^ {2}. \\tag {5}\n$$\nThe noise introduced by the phase shifter can be ignored since the first-stage amplifier has the largest noise contribution in the signal chain. The noise of the comparator can be approximated as linear transmission [19], and its influence on the phase noise of the output signal is written as (6)\n$$\nS _ {\\text {n o u t} \\_ \\text {c m p}} (s) = \\frac {\\overline {{V _ {\\mathrm {n} \\_ \\text {c m p}} ^ {2}}} ^ {2}}{C} \\left(\\frac {\\omega_ {0}}{2 Q \\Delta \\omega}\\right) ^ {2}. \\tag {6}\n$$\nDue to the coupling effect between the amplitude and stiffness (A-S effect) of the resonator [20], the amplitude noise of the resonator also affects the phase noise in that the resonant frequency of the DETF that operating in the nonlinear region is determined by the vibration amplitude. Based on the nonlinear phase noise analysis [11], the amplitude stiffness coupling effect on the phase noise of the output signal can be obtained as (7)",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_3",
+    "content": "Table 1. Expressions of phase noise coefficients for non-AGC driving scheme..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/a06dfe898f3cdb7fbadcc1d757675eabf4fd1d01ffd0bb32279f79db55cd06a2.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "$$\n\\begin{array}{l} S _ {\\varphi_ {\\text {n o u t} \\mathrm {A} - \\mathrm {S}}} (f) \\\\ = \\frac {1 4 4 k _ {3} ^ {2}}{k _ {1} ^ {6}} \\frac {\\omega_ {0} ^ {2} (Q n \\varepsilon h V _ {\\mathrm {A C}})}{d ^ {4}} ^ {4} V _ {\\mathrm {D C}} ^ {2} \\frac {\\left| H _ {\\mathrm {p s}} (j \\omega_ {0}) \\right| ^ {2} \\left(K _ {\\mathrm {c m p}}\\right) ^ {2} \\overline {{V _ {\\mathrm {n} _ {\\mathrm {a m p}}} ^ {2}}}}{C K _ {\\mathrm {d i v}} ^ {2} f ^ {2}} \\\\ + \\frac {1 4 4 k _ {3} ^ {2}}{k _ {1} ^ {6}} \\frac {\\omega_ {0} ^ {2} (Q n \\varepsilon h V _ {\\mathrm {A C}}) ^ {4}}{d ^ {4}} V _ {\\mathrm {D C}} ^ {2} \\frac {\\left| H _ {\\mathrm {p s}} (j \\omega_ {0}) \\right| ^ {2} \\left(K _ {\\mathrm {c m p}}\\right) ^ {2} f _ {\\mathrm {c l}} \\overline {{V _ {\\mathrm {n} - \\mathrm {a m p}} ^ {2}}} ^ {2}}{C K _ {\\mathrm {d i v}} ^ {2} f ^ {3}}. \\tag {7} \\\\ \\end{array}\n$$\nwhere,   k_{l}  is the equivalent stiffness of the resonator.   k_{3}  is the third-order nonlinear stiffness coefficient.   n ,   h ,   d  are the number of combs fingers, combs height and gap.   \\varepsilon  is the vacuum dielectric constant.   V_{\\mathrm{AC}}  is the AC voltage applied to the fixed combs.   V_{\\mathrm{DC}}  is the DC bias voltage applied to the proof mass of the resonator.   f_{c1}  is the corner\nfrequency of white noise and flicker noise introduced by the preamplifier.   K_{\\mathrm{cmp}}  is the noise transfer coefficient of the comparator.\nConsidering the four kinds of noise above and the random loading noise of the proof mass   a_{m} , the phase noise spectral density of the output signal can be expressed by equation (8)\n$$\nS _ {\\varphi_ {-} \\text {n o u t}} (f) = b _ {0} + b _ {- 2} \\frac {1}{f ^ {2}} + b _ {- 3} \\frac {1}{f ^ {3}}. \\tag {8}\n$$\nwhere,   b_{0}, b_{-2}  and   b_{-3}  represent the white phase noise coefficient, white frequency noise coefficient   (1/f^{2})  phase noise coefficient) and flicker frequency noise coefficient   (1/f^{3})  phase noise coefficient) respectively. The expressions and sources of the coefficients are listed in table 1.   S_{F}  is the scale factor.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Expressions of phase noise coefficients for non-AGC driving scheme..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/a06dfe898f3cdb7fbadcc1d757675eabf4fd1d01ffd0bb32279f79db55cd06a2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "An AGC module is utilized to stabilize the vibration amplitude of the resonant accelerometer in a closed loop when the external temperature changes. It can prevent the resonator from entering the nonlinear region or ceasing vibrating. However, compared to the comparator driving scheme, the AGC closed-loop control scheme introduces additional flicker frequency noise, which deteriorates the bias instability of the accelerometer. The simplified model of the AGC controlled resonant accelerometer loop is shown in figure 3.\nH_{\\mathrm{agc}}(s)  represent the transfer function of the AGC module. The symbols of the equivalent noise of mechanical noise, the preamplifier, the phase shifter and the comparator are the same as those of the non-AGC control scheme. The noise analysis of the AGC loop is almost the same as the non-AGC loop except for adding an AGC module which usually consists of a full-wave rectifier, a low-pass filter and a PI controller to adjust the high level of the comparator output to maintain the vibration displacement of the resonator constant. Here we just give the complex expression of the overall phase noise for the brevity according to the AGC scheme as shown in figure 3. The lengthy deduction of the phase noise of the AGC loop can be seen in [11]. The phase noise of the AGC module at the output is obtained as follows\n$$\n\\begin{array}{l} S _ {\\mathrm {n} \\_ \\text {o u t} \\_ \\mathrm {A G C}} (\\triangle \\omega) \\\\ = \\frac {\\left| H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathbf {C}} \\left[ 1 + \\left(\\frac {\\omega_ {0}}{2 \\mathrm {Q} \\Delta \\omega}\\right) ^ {2} \\right] \\frac {I ^ {2} f _ {c 3} \\overline {{V _ {\\text {n a g c w h i t e}} ^ {2}}} ^ {2}}{f ^ {3}} \\cdot | V _ {p s} | ^ {2}. \\tag {9} \\\\ \\end{array}\n$$\nwhere,   \\overline{V_{\\mathrm{nagc\\_white}}^2}  is the white noise of the PI controller.   f_{c3}  is the corner point frequency of the white noise and flicker noise.   I  is the integral coefficient. For the AGC controlled resonant loop, due to the addition of the AGC module, the power spectral density of the preamplifier noise at the output can be rewritten as equation (10)",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Figure 3. Working principle of resonant accelerometer driven by AGC scheme..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/c1fc760ef0412ee1dfd333a334f00945160dfe9a56a1a8003c00f8ccd3d3924e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "$$\n\\begin{array}{l} S _ {\\mathrm {n o u t}} (\\Delta \\omega) \\\\ = \\frac {\\left| H _ {\\mathrm {p s}} \\left(j \\omega_ {0}\\right) H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathrm {C}} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p} _ {\\text {w h i t e}}} ^ {2}}}} + \\frac {\\left(\\frac {4 k T R _ {\\mathrm {e q}}}{K _ {\\mathrm {d i v}} {} ^ {2}} + \\overline {{V _ {\\mathrm {n} _ {\\text {c m p}}} ^ {2}}} + \\left| H _ {\\mathrm {p s}} \\left(j \\omega_ {0}\\right) H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p} _ {\\text {w h i t e}}} ^ {2}}}}\\right)}{\\mathrm {C}} \\left(\\frac {\\omega_ {0}}{2 Q \\Delta \\omega}\\right) ^ {2} \\\\ + \\frac {\\left| H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathbf {C}} \\frac {I ^ {2} f _ {\\mathrm {c} 3} \\overline {{V _ {\\mathrm {n} _ {\\text {a g c} _ {\\text {w h i t e}}}} ^ {2}}}}{(2 \\pi) ^ {3}} \\left| V _ {\\mathrm {p s}} \\right| ^ {2} \\cdot \\frac {1}{(\\Delta \\omega) ^ {3}} + \\frac {\\left| H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathbf {C}} \\frac {I ^ {2} f _ {\\mathrm {c} 3} \\overline {{V _ {\\mathrm {n} _ {\\text {a g c} _ {\\text {w h i t e}}}} ^ {2}}}}{(2 \\pi) ^ {3} \\cdot} \\cdot \\left| V _ {\\mathrm {p s}} \\right| ^ {2} \\left(\\frac {\\omega_ {0}}{2 \\mathbf {Q}}\\right) ^ {2} \\cdot \\frac {1}{(\\Delta \\omega) ^ {5}}. \\tag {10} \\\\ \\end{array}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_7",
+    "content": "$$\n\\begin{array}{l} S _ {\\varphi_ {\\text {n o u t} \\text {a g c}}} (f) \\\\ = \\frac {\\left| H _ {\\mathrm {p s}} \\left(j \\omega_ {0}\\right) H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathbf {C}} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p} _ {\\text {w h i t e}}} ^ {2}}}} + \\left( \\begin{array}{l} \\frac {1 4 4 k _ {3} ^ {2}}{k _ {1} ^ {6}} \\frac {\\omega_ {0} ^ {2} \\left(Q n \\varepsilon h V _ {\\mathrm {A C}}\\right) ^ {4}}{d ^ {4}} V _ {\\mathrm {D C}} ^ {2} \\frac {\\left| H _ {\\mathrm {p s}} \\left(j \\omega_ {0}\\right) \\right| ^ {2} \\left(K _ {\\mathrm {c m p}}\\right) ^ {2} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p} _ {\\text {w h i t e}}} ^ {2}}}}}{C K _ {\\mathrm {d i v}} ^ {2}} + \\\\ \\frac {\\left(\\frac {4 k T R _ {\\mathrm {e q}}}{K _ {\\mathrm {d i v}} ^ {2}} + \\overline {{V _ {\\mathrm {n} _ {\\text {c m p}}} ^ {2}}} + \\left| H _ {\\mathrm {p s}} \\left(j \\omega_ {0}\\right) H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p} _ {\\text {w h i t e}}} ^ {2}}}}\\right) f _ {0} ^ {2}}{4 Q ^ {2} C} + a _ {\\mathrm {m}} S _ {\\mathrm {F}} \\end{array} \\right) \\frac {1}{f ^ {2}} \\\\ + \\left( \\begin{array}{c} \\frac {1 4 4 k _ {3} ^ {2}}{k _ {1} ^ {6}} \\frac {\\omega_ {0} ^ {2} (Q n \\varepsilon h V _ {\\mathrm {A C}})}{d ^ {4}} ^ {4} V _ {\\mathrm {D C}} ^ {2} \\frac {\\left| H _ {\\mathrm {p s}} (j \\omega_ {0}) \\right| ^ {2} \\left(K _ {\\mathrm {c m p}}\\right) ^ {2} f _ {\\mathrm {c l}} \\overline {{V _ {\\mathrm {n} _ {\\text {a m p}}} ^ {2} \\text {w h i t e}}} ^ {2}}{C K _ {\\mathrm {d i v}} ^ {2}} \\\\ + \\frac {\\left| H _ {\\mathrm {c m p}} (j \\omega_ {0}) \\right| ^ {2} I ^ {2} f _ {\\mathrm {c 3}} \\overline {{V _ {\\mathrm {n} _ {\\text {a g c}}} ^ {2} \\text {w h i t e}}} ^ {2}}{\\mathbf {C}} | V _ {\\mathrm {p s}} | ^ {2} \\end{array} \\right) \\frac {1}{f ^ {3}} \\\\ + \\frac {\\left| H _ {\\mathrm {c m p}} \\left(j \\omega_ {0}\\right) \\right| ^ {2}}{\\mathbf {C}} \\frac {I ^ {2} f _ {\\mathrm {c} 3} \\overline {{V _ {\\mathrm {n} _ {\\mathrm {a g c} _ {\\mathrm {w h i t e}}} ^ {2}}}}}{\\left(2 \\pi\\right) ^ {3}} \\cdot \\left| V _ {\\mathrm {p s}} \\right| ^ {2} \\left(\\frac {f _ {0}}{2 \\mathbf {Q}}\\right) ^ {2} \\frac {1}{f ^ {5}}. \\tag {11} \\\\ \\end{array}\n$$",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_8",
+    "content": "Considering the noise caused by A-S effect, the total noise can be given as equation (11). The phase noise spectral density of the AGC scheme output signal can be expressed by equation (12)\n$$\n\\begin{array}{l} S _ {\\varphi_ {-} \\text {n o u t} \\_ \\mathrm {A G C}} (f) = b _ {0 \\_ \\mathrm {A G C}} + b _ {- 2 \\_ \\mathrm {A G C}} \\frac {1}{f ^ {2}} + b _ {- 3 \\_ \\mathrm {A G C}} \\frac {1}{f ^ {3}} \\\\ + b _ {- 5 \\_ \\mathrm {A G C}} \\frac {1}{f ^ {5}}. \\tag {12} \\\\ \\end{array}\n$$\nwhere   b_{0\\_ \\mathrm{AGC}} ,   b_{-2\\_ \\mathrm{AGC}} ,   b_{-3\\_ \\mathrm{AGC}}  and   b_{-5\\_ \\mathrm{AGC}}  are the coefficients of white phase noise, white frequency noise   (1/f^2  phase noise), flicker frequency noise   (1/f^3  phase noise) and   1/f^5  phase noise at the output of the AGC control scheme. These coefficients are listed in table 2.\nEquation (4) indicates that white phase noise, white frequency noise   (1/f^{2}  phase noise), and flicker frequency noise   (1/f^{3}  phase noise) are existed in the non-AGC control scheme. Among them, the white phase noise is mainly introduced by the preamplifier. The white frequency noise   (1/f^{2}  phase noise) is caused by the resonator thermal noise, preamplifier noise, comparator noise, and amplitude stiffness coupling. The flicker frequency noise   (1/f^{3}  phase noise) results from the coupling effect of amplitude stiffness.\nFor the AGC control scheme, in addition to white phase noise, white frequency noise   (1 / f^2  phase noise) and flicker frequency noise   (1 / f^{3}  phase noise),   1 / f^{5}  phase noise appears at the output. In terms of noise composition, the white phase noise and white frequency noise   (1 / f^{2}  phase noise) of the AGC control scheme are basically the same as those of the non-AGC control scheme. In the AGC control scheme, the flicker frequency noise   (1/f^3  phase noise) is caused by the amplitude stiffness coupling effect and the AGC module. The   1/f^5  phase noise is led by the AGC module noise alone. Therefore, compared with the non-AGC control scheme, the AGC control scheme additionally introduces flicker frequency noise   (1/f^3  phase noise) and   1/f^5  phase noise.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2. Expressions of phase noise coefficients for AGC driving scheme..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/3c8c6568df911562f156d5dacaea81b864af6f119d108c29741897cf94395f23.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "Figure 3. Working principle of resonant accelerometer driven by AGC scheme..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/c1fc760ef0412ee1dfd333a334f00945160dfe9a56a1a8003c00f8ccd3d3924e.jpg"
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "Table 2. Expressions of phase noise coefficients for AGC driving scheme..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/3c8c6568df911562f156d5dacaea81b864af6f119d108c29741897cf94395f23.jpg"
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "Simulink is used to perform the behaviour-level simulations of the non-AGC drive circuit and the AGC amplitude control circuit respectively to verify the above mentioned system-level phase noise model. Through the power spectral density of the simulated waveform, the noise composition of the non-AGC and the AGC loop are analysed and compared with the theoretical equations in sections 2 and 3. The parameters in the simulations are listed in table 3. Noting that these parameters are determined by experiments. For example, the mechanical parameters including nonlinear parameters can be characterized by frequency swept testing. The different circuit noise sources are measured by noise spectrum analysis. The driving voltage should be determined by the nonlinear characteristics of a specific structure and the circuit configurations.\nFigure 4 shows the simulated phase noise of the resonant accelerometer with non-AGC and the AGC loop. It can be seen that the   1/f^5  phase noise is introduced by the AGC module in the AGC loop. As the frequency continues to increase, both the flicker frequency noise of the AGC and non-AGC appear. According to equations (4) and (8), the flicker noise of the non-AGC loop is caused by the A-S effect. However, for the AGC loop, the AGC module also introduces the flicker noise in addition to the amplitude stiffness coupling. Therefore, the flicker noise of the AGC loop is larger than that of the non-AGC loop. As the frequency further increases, white frequency noise both dominate the noise spectrum.\nThe simulated noise distribution of the non-AGC scheme and the AGC drive scheme basically conforms to the prediction of the formula in sections 2 and 3. Because the AGC scheme additionally introduces the flicker frequency noise, the bias instability of the accelerometer is deteriorated. Consequently, the non-AGC drive circuit is the priority selection for the silicon resonant accelerometer in this work. It should be noted that to save the simulation time under the limitation of computing hardware resources, the simulation step is set to be   1\\mu \\mathrm{s} , which indicates the delay inversion time of the comparator is greater than or equal to   1\\mu \\mathrm{s} . The actual comparator noise delay time is only   7.6~\\mathrm{ns} , which is far less than   1\\mu \\mathrm{s}  in the simulation. We found that the longer the delay time, the greater the noise introduced by the comparator in the simulation. Therefore, the simulated   1 / f^3  and   1 / f^5  phase noise will be much larger than the actual measured values, which results in a non-negligible effect of these noise sources within the simulation frequency range. Considering the actual noise curve is plotted by superimposing the different noise sources and the AGC control scheme introduced extra   1 / f^3  and   1 / f^5  phase noise, the white frequency noise of the AGC control scheme seems to be a bit larger than that of the non-AGC loop. However, we think the white frequency noises of these two schemes are at the same level based on the equations of tables 1 and 2.\nTo investigate the compositions of the white frequency noise, we make statistics on the contribution of each noise source according to the noise model as shown in figure 5. The result indicates that the first two dominant noise sources are resonator thermal noise and preamplifier noise. The resonator thermal noise can be effectively decreased by enhancing the quality factor. The preamplifier noise reduction is realized by increasing the carrier power and optimizing the noise performance of the amplifier itself [12] as illustrated in equation (1). Noting that this noise model calculating is based on the practical parameters, which ensures good consistency with the measured results.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 3",
+        "caption": "Table 3. Parameters of resonant accelerometer and circuit..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/255bfd5208353568b775f7e512338ef741aab13c5b0498b7966a81046a691598.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Expressions of phase noise coefficients for non-AGC driving scheme..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/a06dfe898f3cdb7fbadcc1d757675eabf4fd1d01ffd0bb32279f79db55cd06a2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "Table 3. Parameters of resonant accelerometer and circuit..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/255bfd5208353568b775f7e512338ef741aab13c5b0498b7966a81046a691598.jpg"
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "Figure 6. The SEM picture of a resonant accelerometer and control circuit of non-AGC driving scheme..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/1b4ac494afbc40b344e30bb250f30ff58128929123eb6aa5657df391b8d8d323.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "The non-AGC driving circuit is applied to a custom-designed silicon resonant accelerometer [21]. The structure of accelerometer utilizes a proof mass and a pair of double-ended tuning forks (DETF) to sense the external acceleration input. A micro-leverage is utilized to further enhance the sensitivity of the accelerometer. To improve the frequency stability, the DETFs are embedded in an isolation frame with stress insensitive anchor. The device is fabricated with the simple 3 masks silicon-on-glass processing and is vacuum-sealed in a metal packaging. The SEM picture of the silicon resonant accelerometer and non-AGC driving circuit used in this paper are shown in figure 6. The non-AGC circuit is rather simple that only includes a quad-operational amplifier and a comparator. The measured nominal resonant frequency and the quality factor of the device are   \\sim 38.7\\mathrm{kHz}  and   14.4\\mathrm{k} .\nThe scale factor should be first determined to demonstrate the functionality of the resonant accelerometer. A precise motor-controlled rotating platform is designed to hold the fixture and the accelerometer. The testing setup is installed on a rate table to isolate the environmental vibration disturbances as shown in figure 7. By rotating the device with the stepper motor from   0^{\\circ}  to   180^{\\circ}  (corresponding to   -1\\mathrm{g}  to   1\\mathrm{g}  acceleration), the scale factor can be obtained. All the frequency measurements in the experiments are obtained by the counting method implemented with a custom designed FPGA circuit [22]. The scale factor of the resonant accelerometer is   \\sim 186\\mathrm{Hz~g}^{-1}  with the nonlinearity   1.76\\%  as shown in figure 8, which is very close to the   186.2\\mathrm{Hz~g}^{-1}  measured by FFT method using NI USB-6366. Thus, the relative sensitivity is calculated to be   \\sim 4806\\mathrm{ppm~g}^{-1} .\nThe repeatability of the scale factor is also tested for three times with power-off intervals for   30\\mathrm{min} . The measurement data time at each point is   30~\\mathrm{s} , and the average value is taken as listed in table 4. Then, the repeatability of the scale factor is calculated to be   \\sim 43  ppm.\nThe resonant accelerometer driven by non-AGC scheme is sampled for   1\\mathrm{h}  with   1\\mathrm{Hz}  sampling rate as shown in figure 9. The test results show that the peak to peak acceleration of   1\\mathrm{h}  is less than   6\\mu \\mathrm{g}  and the bias stability is   0.88\\mu \\mathrm{g}(1\\sigma) . Due to the limit our vibration platform, the sensor bandwidth is tested up to only   50\\mathrm{Hz} . We think the actual bandwidth of our device can beyond   100\\mathrm{Hz} .\nThe power spectral density is calculated as shown in figure 10 based on the adopted data. The results predicted by the model are also plotted. At low frequencies, due to the influence of low frequency noise   (1 / f^6  phase noise), the actual test results are far greater than the theoretical predictions. As the frequency value increases, the noise effect of   1/f^6  phase noise decreases, and flicker frequency noise (  1/f^3  phase noise) and white frequency noise (  1/f^2 ) appear successively. The theoretical and measured values of flicker frequency noise and white frequency noise are very consistent. The accelerometer noise values predicted by the proposed model and actually measured are listed in table 5. The white noise density of the silicon resonant accelerometer is   \\sim 837 \\, \\mathrm{ng}(\\sqrt{\\mathrm{Hz}})^{-1}  within   0.5 \\, \\mathrm{Hz}  measurement bandwidth. Since the noise figure of the actual comparator is smaller, the corresponding introduced   1/f^3  and   1/f^5  noises are at a low level, which is the reason that the measurement results are different from the simulation results.\nThe measured Allan variance and the model prediction results calculated using the parameters in table 3 of the bias output are exhibited in figure 11. It shows that when average time   \\tau  is small, the prediction curve is basically consistent with the actual measurement curve. The bias instability of the accelerometer is   \\sim 140\\mathrm{ng} . As the cluster time beyond   100\\mathrm{s} , the tested curve shows an obvious deviation from the theoretical\none. It is believed that bias output is affected by the environmental temperature variation which is not included in our current model.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Figure 6. The SEM picture of a resonant accelerometer and control circuit of non-AGC driving scheme..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/1b4ac494afbc40b344e30bb250f30ff58128929123eb6aa5657df391b8d8d323.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Figure 7. Test setup for the scale factor..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/c9839eb803689e346f1aae00dc2ecdf106151c3b0301277f65d4face0f42d4f9.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 4",
+        "caption": "Table 4. The repeatability test of the scale factor..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/dfdee2e7e3aaedf92faae03318ffd21754603af34c07fe6579eccfc5f296a81d.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 5",
+        "caption": "Table 5. Comparison of the measured results with the model predicted..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/0c42f12bf960812abe21c6d38c33676ca97050d558f6c48a2688d8837b7e573b.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 3",
+        "caption": "Table 3. Parameters of resonant accelerometer and circuit..",
+        "image_source": [
+          "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/255bfd5208353568b775f7e512338ef741aab13c5b0498b7966a81046a691598.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_15",
+    "content": "Figure 7. Test setup for the scale factor..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/c9839eb803689e346f1aae00dc2ecdf106151c3b0301277f65d4face0f42d4f9.jpg"
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "Table 4. The repeatability test of the scale factor..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/dfdee2e7e3aaedf92faae03318ffd21754603af34c07fe6579eccfc5f296a81d.jpg"
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "Table 5. Comparison of the measured results with the model predicted..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/0c42f12bf960812abe21c6d38c33676ca97050d558f6c48a2688d8837b7e573b.jpg"
+    ]
+  },
+  {
+    "id": "doc_18",
+    "content": "Table 6. Performance comparison with previous work..",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/Li_2022_J._Micromech._Microeng._32_064001/vlm/images/f171804e0bc207aa9bf14309a1f232b4581c0af9e7f4eb29400d061444badbc4.jpg"
+    ]
+  },
+  {
+    "id": "doc_19",
+    "content": "In this paper, the phase noise model of resonant accelerometer loop driven by non-AGC and AGC scheme are established, and the influence of noise introduced by different modules on the output phase noise is analysed. The prediction results of the model are in good agreement with the actual test results, which verifies the accuracy of the model. The accelerometer performance test results show that the bias stability is   0.88\\mu \\mathrm{g} . The bias instability is   \\sim 140\\mathrm{ng}  with the noise density   \\sim 837\\mathrm{ng}(\\sqrt{\\mathrm{Hz}})^{-1} . Future work will focus on the evaluation of the temperature performance of the silicon resonant accelerometer with non-AGC driving loop.",
+    "block_type": "text"
+  }
+]

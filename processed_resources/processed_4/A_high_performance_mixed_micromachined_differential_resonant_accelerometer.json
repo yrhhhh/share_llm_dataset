@@ -1,0 +1,169 @@
+[
+  {
+    "id": "doc_0",
+    "content": "The vacuum packaged differential resonant accelerometer(DRXL) using gap sensitive electrostatic change effect is proposed by using the reverse surface micromachining(RSM) process based on the single crystal silicon. The differential frequency output is achieved by subtracting the resonant frequency between the two independent resonators, which has advantages with the wide input range and the good linearity. But the resonant accelerometer is fabricated using the epi-polysilicon surface micromachining process in the previous work. The residual and shear stress of the polysilicon result in the mismatch of the mechanical resonant frequency. The mismatch of the resonant frequency may demolish the advantages of the differential scheme because of the mechanical resonance characteristics. So, the single-crystal silicon was chosen for the accelerometer structure material because it has more excellent mechanical properties than the polysilicon. The fabricated resonant accelerometer shows the nominal frequency of   6928\\mathrm{Hz}  and the sensitivity is about   10\\mathrm{Hz}  in the   \\pm 10\\mathrm{G}  range. The bandwidth is more than   100\\mathrm{Hz} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "Resonant, accelerometer, differential, vacuum packaging",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "A resonant sensors have many advantages over the conventional capacitive type: wide dynamic range, quasi-digital nature of the output signal, and the inherent continuous self-test capability. The quartz-based resonant accelerometers have been used for navigation-grade sensing [1], and recently, some research groups have announced several kinds of MEMS (Micro Electro Mechanical Systems)-based resonant accelerometers [2, 3].\nThe MEMS-based resonant accelerometer can be classified by a fabrication method or operational principle. The principle that is commonly used for the resonant sensors is the resonant frequency shift induced by a change in resonator stress or mass change. The majority of the conventional resonant sensors have feature of force sensing, so it is prone to be affected by an internal residual\nstress and fabrication error, especially for the case of the ploysilicon vibrating structures.\nSome recent works have focused on bulk or mixed (bulk and surface) micro-machining process to implement the resonant accelerometer. In the viewpoint of fabrication process, the surface micro-machining has already proven itself as a manufacturable technology. To increase the performance of the surface micro-machined accelerometer, it is advantageous to use thick ploysilicon as structural layer. However, the thick ploysilicon process has problems of mechanical stress and poor repeatability. Another important issue on fabrication of resonant sensor is a vacuum packaging. And from a commercial point of view, it is desirable to package hermetically in wafer level. Because the conventional method of individual packaging is so complicated, it is difficult to miniaturize the device and to reduce the fabrication cost.\nA gap sensitive electrostatic change effect as the new sensing principle was presented [4]. Mechanical stiffness of the spring is reduced by the electrostatic force, which result in the change of the output frequency. In the previous work, the accelerometer was fabricated by the epipolsilicon process. The residual and shear stress of the polysilicon may result in the degrade of the performance of the accelerometer. The mismatch of the resonant frequency may demolish the advantages of the differential scheme because of the mechanical resonance characteristics. The differential scheme has inherently the advantages with a wide dynamic range and a good linearity, which is essential to make the high performance accelerometer. So, a single-crystal silicon as the structure material was chosen and the mixed micromachining process is developed to implement the device.\nIn this study, a single-crystal silicon structure was applied to the proposed resonant accelerometer and its wafer level vacuum packaging. The sensor structure, mechanical design, fabrication process, and characterization of the proposed device are reported.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_3",
+    "content": "A resonant accelerometer, which utilizes an electrostatic stiffness changing effect, has special features of high sensitivity, electrical tunability, and mixed micromachining fabrication process. But this kind of parallel plate resonant structure has some drawbacks of non-linearity, and difficulty in controlling the resonant vibration mode within the stable region, because the vibrating mode is parallel to the input acceleration axis.\nDe-coupled the G-sensitive structure and gap sensitive resonator using separate torsion beams is proposed as shown in fig. 1. The two identical torsional resonators are connected to the outer gimbals, which have asymmetric mass distribution.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_4",
+    "content": "For MEMS based resonant accelerometer, the vacuum packaging is definitely necessary to reduce the air damping for sustaining the resonant vibration mode. Because it is very difficult and expensive process, some research groups have announced several kinds of wafer level vacuum packaging processes until now.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_5",
+    "content": "For the wafer level vacuum packaging of surface micromachined devices, we adapted anodic bonding with glass sealing cap wafer. But there should be some step change and roughness on the single-crystal silicon surface, and these could affect the hermetic sealing level of the anodic bonding. So CMP process for smoothing the surface of the single-crystal silicon structures is adopted. The sealing structure and bonding area around the suspended structures are shown in fig. 2. And the gettering material(Ti metal) is used to enhance the long term stability of the vacuum packaging.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "The conceptual operating principle of the proposed DRXL is illustrated in figure 3. The basic idea is based on a fact that the effective stiffness (keffx) of this electromechanically-biased resonator can be changed by a variable gap (dx).",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 3",
+        "caption": "Fig. 3. Operating principle of the proposed differential resonant accelerometer(DRXL).",
+        "image_source": [
+          "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/1b37b4304db7508c5d64763f470567498a225bc0d457faf20aefda821ce5127c.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "$$\nf _ {r _ {x}} = \\frac {1}{2 \\pi} \\cdot \\sqrt {\\frac {k _ {e f f _ {x}}}{I _ {x}}}, \\tau_ {m _ {x}} = \\theta_ {x} \\cdot k _ {m _ {x}}, \\tau_ {e _ {x}} = R _ {s} \\cdot \\left(F _ {e _ {s 1}} - F _ {e _ {s 2}} \\right.\n$$\n$$\nk _ {e f f _ {x}} = \\frac {\\partial \\tau_ {e f f _ {x}}}{\\partial \\theta_ {x}} = \\frac {\\partial \\left(\\tau_ {m _ {x}} - \\tau_ {e _ {x}}\\right)}{\\partial \\theta_ {x}} = k _ {m _ {x}} - \\frac {2 R _ {S} ^ {2} \\cdot \\varepsilon \\cdot A _ {S} \\cdot V _ {S} ^ {2}}{d _ {x} ^ {3}}\n$$\n(a) inner resonator structure",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_8",
+    "content": "Fig. 3. Operating principle of the proposed differential resonant accelerometer(DRXL).",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/1b37b4304db7508c5d64763f470567498a225bc0d457faf20aefda821ce5127c.jpg"
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "$$\n\\tau_ {G} = F _ {G} \\cdot R _ {G} = \\left(M _ {1} + M _ {2}\\right) \\cdot G \\cdot R _ {G}\n$$\n$$\n\\theta_ {y} = \\frac {\\tau_ {G}}{k _ {e f f _ {y}}} = \\frac {(M _ {1} + M _ {2}) \\cdot G \\cdot R _ {G}}{k _ {m _ {y}} - \\frac {2 R _ {T} ^ {2} \\cdot \\varepsilon \\cdot A _ {T} \\cdot V _ {T} ^ {2}}{d _ {o} ^ {3}}}\n$$\n(b) outer gimbal sturcture\nIn this scheme, the external acceleration(G) produces the average gap variation(δ) between the resonant vibrating mass(Mr) and the bottom electrodes because of the asymmetric mass(M1, M2) distribution. And these gap variation (dx) changes the effective stiffness (keffx) of the resonator and the resultant resonant frequency (frx) as well. Because of the complementary gap variations(δ) of the two resonators, the resultant resonant frequency outputs are differential.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_10",
+    "content": "In previous work, the torsional mode resonator was proposed for the higher Q compared with the vertical mode resonator at the same ambient pressure level [4]. The torsional mode resonator is also adopted because of the high Q characteristic.\nANSYS simulaiton was performed to estimate the resonant mode and the frequency. The simulation results is shown in Fig. 4.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 4",
+        "caption": "(b)   \\mathrm{fr} = 13.5\\mathrm{kHz} Fig. 4. The ANSYS simulation result : modal simulation.",
+        "image_source": [
+          "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/5486d6bb35aa675b592754792481fb1febcf5d60c6b10189de402044e3442052.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "(b)   \\mathrm{fr} = 13.5\\mathrm{kHz} Fig. 4. The ANSYS simulation result : modal simulation.",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/5486d6bb35aa675b592754792481fb1febcf5d60c6b10189de402044e3442052.jpg"
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "The design parameter of the differential resonant accelerometer(DRXL) is summarized in Table. 1. As mentioned above, the proposed accelerometer is composed of two inner resonators and one outer gimbal. The resonant frequency of the outer gimbal is related with the sensitivity of the accelerometer and the frequency of the inner resoantor is related with the bandwidth and the resolution of the accelerometer. So, the accelerometer is designed to increase the sensitivity and the bandwidth making the resonant frequency of the outer gimbal lower and making the resonant frequency of the inner resonator higher. The\nThe matlab simulation was performed to predict the sensitivity of the gravity. The simulation result is shown in Fig. 5. As shown below, the characteristic of the single resoantor becomes non-linear in high gravity range. But the differential characteristic of the accelerometer is linearized in that range. This electrostatic stiffness changing effect has a merit of an electrical tunability, so we can finely adjust the sensitivity of the resonant accelerometer at the final stage. And this is a very useful method for removing the effect of the fabrication error.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. Design parameters of the proposed DRXL.",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "The designed accelerometer is fabricated using mixed micromachining process which is composed of a silicon-glass bonding process and conventional surface micromachining process. The thickness of the structure is designed with   40~\\mathrm{um}  to increase the sensitivity of the accelerometer. The fabrication process flow is shown in Fig. 6.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_14",
+    "content": "TEOS",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_15",
+    "content": "Fig. 6. The fabrication process flow: mixed micromachining process\nThe 1um-thick sacrificial TEOS(tetra-ethyl-ortho-silicate) is deposited and patterned on   <111>  single crystal silicon wafer. To protect the bottom electrode, a 3000 Å LPCVD nitide is deposited and patterned. A 5000 Å LPCVD polysilicon for bottom electrode is deposited and POCL3 doping is performed. The passivation layers which are composed of 5000 Å LPCVD nitide and 1 um TEOS is continuously deposited to isolate the bottom electrode from the substrate. The 6 um-thick LPCVD polysilicon is deposited as a bonding layer with the pyrex #7740 glass. To smoth the surface of the polysillicon for the silicon-glass bonding, CMP(Chemical Mechanical Polishing) process is performed and then the pyrex substrate is bonded with the wafer. The CMP process is also performed to make the 40 um-thick single-crystal silicon for the accelerometer structure. And then, Cr/Au metal pad is defined by lift-off process. The silicon structure is etched by Deep silicon etching. Finally, the accelerometer is released by HF wet etching and DDMS(dichlorodimethylsilane) coating is done to prevent the stiction of the structtrue[5]. The SEM picture of the fabricated DRXL is shown in Fig. 7. To make the DRXL vacuum sealed, a pyrex #7740 glass is fabricated using the HF wet etching with 1000 Å polysilicon etch mask. The glass wet etching to make sealing cavity and pad feedthrough is performed is simultaneously to reduce the process time and cost.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Fig. 7. The SEM picture of the fabricated differential resonant accelerometer(DRXL).",
+        "image_source": [
+          "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/a1a2bfdf81fa48e7ebeeac7836e0cf277e51a8c30f68b33156d279d9b66f4b0e.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "Fig. 7. The SEM picture of the fabricated differential resonant accelerometer(DRXL).",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_high_performance_mixed_micromachined_differential_resonant_accelerometer/vlm/images/a1a2bfdf81fa48e7ebeeac7836e0cf277e51a8c30f68b33156d279d9b66f4b0e.jpg"
+    ]
+  },
+  {
+    "id": "doc_17",
+    "content": "For the vacuum sealing of the fabricated DRXL, the silicon wafer and a glass sealing cap is anodically bonded in 350   ^\\circ \\mathrm{C} , 650 V condition. The wafer level bonded DRXL and a enlarged view of the DRXL are shown in Fig. 8.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_18",
+    "content": "After dicing the bonded wafer, each vacuum packaged DRXL is mounted on the 12 pin PCB and then bonded Au wire. The charge amplifier circuit was used to convert the change of a capacitance to the voltage. The DRXL mounted on the PCB is shown in Fig. 9.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_19",
+    "content": "The overall block diagram to estimate the performance of the DRXL is shown in Fig. 10. For a self-start and a self-sustained oscillation of the resonator, the driving circuit and the resonator form a feedback control loop. The resonant frequency change of the accelerometer can be precisely measured by using an over frequency sampling technique.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_20",
+    "content": "The DRXL with self-sustained oscillator loop is tested for the input gravity of   \\pm 10\\mathrm{G}  range. The DRXL shows the   8.125\\mathrm{Hz} / 1\\mathrm{G}  at the   6928\\mathrm{Hz}  resonant frequency. The sensitivity can be increased to   16.7\\mathrm{Hz}/\\mathrm{G}  making the nominal frequency   6508\\mathrm{Hz} . The output frequency\ncharacteristics according to the input gravity is shown in Fig. 11.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_21",
+    "content": "The bandwidth of the DRXL is measured applying to the input of the accelerometer with the unit step signal. The estimated bandwidth is more than   112\\mathrm{Hz} . The measured result is shown in Fig. 12.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_22",
+    "content": "The repeatability is also estimated. The output frequency is measured and the power is off for   50\\mathrm{min}  and then the output frequency is measured. This measurement sequence is repeated in several times. The measured result is shown in Fig. 13. The equivalent gravity for the repeatability is   14.4\\mathrm{mG} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_23",
+    "content": "A differential resonant accelerometer, which utilizes the electrostatic stiffness changing effect of an electrostatic torsional actuator, was proposed using   <111>  single-crystal silicon as the structure material. The mixed-micromachining process is developed using pyrex glass substrate and 40 um-thick single crystal silicon with glass cap.\nThe fabricated differential resonant accelerometer(DRXL) shows the about sensitivity of   8\\mathrm{Hz / G}  in the range of   \\pm 10\\mathrm{G} , bandwidth of   100\\mathrm{Hz} , repeatability of   14.4\\mathrm{mG}  and bias stability of   2.76\\mathrm{mG} .\nThe performance of the DRXL can be enhanced if the footing effect of the Deep RIE, which results in the mass reduction and the spring constant. These side effects make the performance of the accelerometer degraded. The research are undergone to reduce the these side effects and the estimation of the accelerometer is under way.",
+    "block_type": "text"
+  }
+]

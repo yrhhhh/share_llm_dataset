@@ -1,0 +1,173 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—A low-power very compact Pierce oscillator for resonant accelerometers is presented in this paper. The resonator of a surface micro-machined uniaxial resonant accelerometer is embedded in the oscillating loop as a frequency selective filter. External accelerations cause a shift of the resonator resonance frequency resulting in the frequency modulation of the oscillator output signal. The proposed circuit exploits two sub-threshold operated FETs as the amplitude limiting control (ALC) network, capable of driving the resonator in its linear region of operation. The low power dissipation and the very compact 5 transistor (5T) architecture are the clear advantages of this oscillator. Experimental results demonstrate that the oscillation amplitude can be effectively limited to a desired value and that consumer grade performance can be achieved: an acceleration noise density of   360\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  for a power dissipation of   21.6\\mu \\mathrm{W}  is demonstrated.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "MEMS resonant accelerometers have been recently proposed as an alternative to their state-of-the-art capacitive counterparts [1]. The design of low power front-end for such devices represents a key point to enable their market breakthrough, especially for what concerns consumer applications. In the literature, readout circuits for MEMS resonant sensors are generally realized by embedding the resonator inside oscillating circuits as a frequency selective filter [2]. The main issues to be addressed in the circuit design are: (i) compensation of the large equivalent resistance   \\mathbf{R}_{\\mathrm{eq}}  typical of MEMS resonators (i.e. from   100\\mathrm{k}\\Omega  to   10\\mathrm{M}\\Omega ); (ii) limitation of the oscillation amplitude to values from tens to hundreds of mV, in order to avoid a nonlinear behavior of the mechanical resonator, which can occur under large displacements [3]; (iii) ensure a low power operation of the device. Therefore, the oscillators are usually composed by gain stages coupled to suitable ALC/AGC networks. Recently, He et al. presented in [4] a switched capacitor based oscillator including an AGC stage for amplitude limitation. The circuit, tested on a SOI resonant accelerometer, ensured an acceleration noise density of   20~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  and a bias instability of   4\\mu \\mathrm{g}  thanks to a chopper stabilization technique.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "(a). (b)  Fig. 1 (a) SEM image of the uniaxial resonant accelerometer tested (b) RLC equivalent circuit of the micromechanical resonator..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/6e9d879e928f609f38c0b6a325ffc702a83d4d1c86d21a253d1edf6d985fbce6.jpg",
+      "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/(b) RLC.png"
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "$$\nL _ {e q} = \\frac {m}{\\eta^ {2}} \\quad C _ {e q} = \\frac {\\eta^ {2}}{k _ {1}}\n$$\n$$\nR _ {e q} = \\frac {\\omega_ {0} m}{Q \\eta^ {2}} \\quad \\eta = V _ {p} \\frac {d C _ {s}}{d x}\n$$\nThese performances were achieved at the cost of   7\\mathrm{mA}  of current consumption for a supply voltage of   3.3V . The present paper revisits the Pierce topology (first tested on resonant accelerometers by Seshia et al. [5]), combining it with a smart ALC technique, as the key architecture to reduce power dissipation, area occupation and circuit complexity. The proposed circuit exploits one NMOS and one PMOS operated in sub-threshold as the amplitude-limiting network, enabling the tuning of the oscillator output signal between   25mV  and   150mV , by simply varying the gate voltages of the sub\nthreshold transistors. The oscillator fabricated in   150~\\mathrm{nm}  standard CMOS process is tested and characterized on a surface micromachined uniaxial resonant accelerometer built in the industrial ThELMA process from STMicroelectronics.",
+    "block_type": "formula"
+  },
+  {
+    "id": "doc_4",
+    "content": "The device tested in this paper is a uniaxial resonant accelerometer featuring a   15\\mu m  thick epitaxial Silicon seismic mass anchored to the substrate by means of two springs mechanically coupled to two resonators placed at the sides of the device. The whole accelerometer occupies an inplane area of   500\\mu m\\times 500\\mu m , comprising the on-chip self-test actuators, see Fig. 1a.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b)  Fig. 1 (a) SEM image of the uniaxial resonant accelerometer tested (b) RLC equivalent circuit of the micromechanical resonator.. (a)  (b)  Fig. 4 (a) Normalized Nyquist plot of the circuit of Fig. 2. The region between   l / \\mathbf{g}_{m,\\min}  and   l / \\mathbf{g}_{m,\\max}  is evidenced as the Correct Bias Region. (b) biasing current limits required for circuit start-up as a function of   C_{l,2}  values. In figure it is also highlighted the biasing point of the implemented circuit..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/6e9d879e928f609f38c0b6a325ffc702a83d4d1c86d21a253d1edf6d985fbce6.jpg",
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/(b) RLC.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "When the seismic mass undergoes an external acceleration in the direction indicated by the arrow in Fig. 1a, a stress of opposite sign is exerted on the two resonators through the springs, causing a differential shift in their resonance frequencies. The expression for the device sensitivity, defined as the frequency variation per unit of external acceleration   (Hz / g) , was reported in [6] and can be written as:\n$$\n\\frac {\\Delta f}{\\Delta g} = f _ {0} m _ {s} A _ {L} S \\tag {1}\n$$\nin which   f_{0}  is the nominal resonance frequency of the two resonators (for no acceleration applied),   m_{s}  is the seismic mass,   A_{L}  is the lever amplification factor that results from the geometrical setting of the device and   S  is a parameter dependent on the geometrical dimensions and on the material properties of the resonators.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b)  Fig. 1 (a) SEM image of the uniaxial resonant accelerometer tested (b) RLC equivalent circuit of the micromechanical resonator.. (a)  (b)  Fig. 4 (a) Normalized Nyquist plot of the circuit of Fig. 2. The region between   l / \\mathbf{g}_{m,\\min}  and   l / \\mathbf{g}_{m,\\max}  is evidenced as the Correct Bias Region. (b) biasing current limits required for circuit start-up as a function of   C_{l,2}  values. In figure it is also highlighted the biasing point of the implemented circuit..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/6e9d879e928f609f38c0b6a325ffc702a83d4d1c86d21a253d1edf6d985fbce6.jpg",
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/(b) RLC.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_6",
+    "content": "The two resonators can be approximated at first order to clamped-clamped beams with parallel-plate capacitive actuation and sensing electrodes. The mechanical behavior of each resonator can be described through the following 1 degree of freedom motion equation [7]:\n$$\nm \\ddot {x} + b \\dot {x} + k _ {1} x + k _ {3} x ^ {3} = F _ {d} \\tag {2}\n$$\nwhere   m ,   b ,   k_{1}  and   k_{3}  are the beam effective mass, the damping coefficient, the first order and the third order elastic stiffness terms respectively;   F_{d}  represents the electrostatic driving force that maintains the beam in oscillation and   x  the beam displacement. Under small signal approximation (  k_{1}x >> k_{3}x^{3} ), the electrical behavior of each resonator can be modeled through an equivalent RLC series network in parallel to a feedthrough capacitance   C_{f} , as represented in Fig. 1b. For the devices under analysis, this linear approximation holds for actuation voltages lower than   150 - 200 \\mathrm{mV} , as studied in [8]. For higher voltages, a bifurcation of the resonator frequency response has been observed.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b)  Fig. 1 (a) SEM image of the uniaxial resonant accelerometer tested (b) RLC equivalent circuit of the micromechanical resonator.. (a)  (b)  Fig. 4 (a) Normalized Nyquist plot of the circuit of Fig. 2. The region between   l / \\mathbf{g}_{m,\\min}  and   l / \\mathbf{g}_{m,\\max}  is evidenced as the Correct Bias Region. (b) biasing current limits required for circuit start-up as a function of   C_{l,2}  values. In figure it is also highlighted the biasing point of the implemented circuit..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/6e9d879e928f609f38c0b6a325ffc702a83d4d1c86d21a253d1edf6d985fbce6.jpg",
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/(b) RLC.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "The readout scheme consists in embedding the two resonators as frequency selective filters inside two separated oscillator circuits in such a way that, if a stress is applied to the resonators, the oscillators outputs track the changes in the resonators natural frequencies. The circuit studied in this work is a Pierce oscillator with a compact amplitude-limiting network, capable of driving the resonators in their linear region without adding any power dissipation. In the following, the analytical approach followed to study and correctly design the oscillator is presented.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_8",
+    "content": "(a). (b)  Fig. 2 (a) Schematic of the realized Pierce oscillator (b) Small-signal model of the oscillator circuit..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/ee98cf49735f95647eb75368d7ca7d061e3498cffcadcdc4e052ff66bff1b5b7.jpg",
+      "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/835ed9ec6eff080954f94bba6e1e58d492218bb845908f3657f97b1dff1c9425.jpg"
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "A schematic representation of the circuit under analysis is presented in Fig. 2a. The core of the oscillator is constituted by the gain transistor   M_{1} , one of the two resonators, the capacitances   C_{1}  and   C_{2}  (loading the MEMS-to-ASIC connection nodes A and B) and by the parallel of the two FETs   \\mathrm{M_N} ,   \\mathrm{M_P} . This pair of transistors acts both as the biasing resistor for the gate of   M_{1}  and as the amplitude-limiting network. Transistors   M_{2,3,4,5}  form an enhanced current mirror, implemented to bias correctly   M_{1}  with a high impedance current source. In order to study the working principle of the Pierce oscillator, it is useful to consider its small-signal model reported in Fig. 2b, accounting for all the relevant circuit parameter.   M_{1}  is modeled by the current controlled source   g_{m1} \\nu_{l} , where   g_{m1}  is the device transconductance and   \\nu_{l}  is the voltage drop on the transistor gate-source junction.   R_{2}  represents the total resistance seen at node A.   R_{eq} ,   C_{eq}  and   L_{eq}  model the MEMS resonator under small-displacement approximation. The capacitance   C_{3}  is the sum of the gate-to-drain capacitance of   M_{l}  and the feedthrough capacitance of the resonator. The sub-threshold FETs   M_{N,P}  are represented, only for the start-up analysis, by the resistor   R_{3} . By breaking the circuit at the output of the controlled current generator of Fig. 2b and by introducing a test signal in parallel to   R_{2}  and   C_{2} , it is possible to evaluate the loop gain of the circuit:\n$$\n\\begin{array}{l} G _ {\\text {l o o p}} (s) = \\frac {g _ {m 1} v _ {1}}{i _ {t}} \\tag {3} \\\\ = \\frac {g _ {m 1} R _ {2}}{s C _ {1} \\left(1 + s C _ {2} R _ {2}\\right) Z (s) + \\left(1 + s \\left(C _ {1} + C _ {2}\\right) R _ {2}\\right)} \\\\ \\end{array}\n$$\n$$\nZ (s) = \\frac {1}{s C _ {3}} \\| R _ {3} \\| \\left(R _ {e q} + s L _ {e q} + \\frac {1}{s C _ {e q}}\\right) \\tag {4}\n$$\nis the impedance seen across the gate-drain junction of   \\mathbf{M}_1 . Observing (3) it can be noted that the loop transfer function   G_{loop}(s)  is characterized by complex poles and zeros pairs, plus two negative real poles and one negative real zero. The root-locus plot is a first qualitative approach to study how the Pierce oscillator works. The plot in Fig. 3 reports the root-locus, computed through a Matlab code, of the circuit of Fig. 2. The open-loop poles are identified by crosses, the open-loop zeros by circles, while the dotted curves represent the trajectories of the closed-loop poles obtained by solving the equation   I - G_{loop}(s) = 0  for increasing value of   g_{m1} . In the close-up of Fig. 3, it is reported a zoomed area of the root locus around one complex pole-zero pair: for a minimum value of   g_{m1} = g_{m,\\min} , the closed-loop poles cross the imaginary axis moving into the right-half plane, thus ensuring the oscillation start-up. For finite value of the biasing resistor   R_{3} , there exist also a maximum value of   g_{m1} = g_{m,max}  that should not be exceeded. Indeed, for higher trasconductance values the closed-loop poles would cross again the imaginary axis back into the left half-plane heading towards the zeros, avoiding the oscillation ignition.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "(a). (b)  Fig. 2 (a) Schematic of the realized Pierce oscillator (b) Small-signal model of the oscillator circuit.. (a)  (b)  Fig. 4 (a) Normalized Nyquist plot of the circuit of Fig. 2. The region between   l / \\mathbf{g}_{m,\\min}  and   l / \\mathbf{g}_{m,\\max}  is evidenced as the Correct Bias Region. (b) biasing current limits required for circuit start-up as a function of   C_{l,2}  values. In figure it is also highlighted the biasing point of the implemented circuit..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/ee98cf49735f95647eb75368d7ca7d061e3498cffcadcdc4e052ff66bff1b5b7.jpg",
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/835ed9ec6eff080954f94bba6e1e58d492218bb845908f3657f97b1dff1c9425.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "While the root-locus helps to study how the start-up conditions change with relevant circuit parameters, it is not a practical method to effectively design the circuit. Unkrich and Meyer in 1982 [9], proposed a clever way to identify the transconductance boundaries   g_{m,\\min}  and   g_{m,\\max}  and thus to choose the correct circuit biasing by introducing the normalized Nyquist plot method. This method consists in analyzing the Nyquist plot of the loop gain normalized with respect to   g_{m} :   G_{loop,n}(s) = -G_{loop}(s) / g_{m} = -v_{1} / i_{t} . The result is a circle-like plot in which the   x -axis has the dimensions of   -1 / g_{m} . The conditions for the circuit start-up are verified if the plot encircles the point   (-1 / g_{m1},0) .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_11",
+    "content": "In Fig. 4a, it is reported the normalized Nyquist plot for the circuit under examination. The points at which the circle crosses the real axis correspond to   -1 / g_{m,\\min}  and   -1 / g_{m,\\max}  and the region of the   x -axis in between can be defined as the Correct Bias Region. The advantage of this method is that the designer has a direct quantitative idea of the correct value to choose for   g_{m1} . For the particular case studied in this work, where the Pierce oscillator has to be connected to a MEMS device, it is important to study the dependence of the bias region on the value of capacitances   C_1  and   C_2 . Fig. 4a shows how the biasing boundaries, related to   g_{m,\\min}  and   g_{m,\\max} , shift rightwards as the capacitances are increased. Assuming that   \\mathbf{M}_1  is operated in saturation, this would result in a higher current demand (  g_{m1} \\propto I_{bias} ). Fig. 4b reports the biasing currents boundaries for the circuit under analysis as a function of   C_1 = C_2 . The higher is the value of the two capacitors the higher is the current required for a safe startup. Thus, minimizing   C_1  and   C_2  represents a key point to achieve a low power operation. In the present work, wire bonding is used to connect the MEMS to the ASIC, and the value of   C_{l,2}  is limited by the bonding pad dimensions.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_12",
+    "content": "As demonstrated in [8], realizing an oscillator based on MEMS resonator for sensing application requires a driving voltage low enough to ensure the operation of the resonator in its linear region, or at list before the bifurcation point. Indeed, for large actuation voltages, the resonance frequency of the resonator becomes a function of the oscillation amplitude, compromising the device sensitivity to external acceleration. For this reason, it is necessary to implement an electronic amplitude limiting mechanism to ensure a correct functioning of the accelerometer. Transistors   M_{n}  and   M_{p} , if operated in sub-threshold, present a double behavior: at startup, when the oscillation amplitude is very small (few mV) they work as a biasing resistor equal to the FETs source-to-drain resistances parallel; as the amplitude at the output node A increases over\na certain value these resistances are alternately decreased as a consequence of the variation of the voltage drop across the gates and the implanted junctions. The result, in average, is to have a resistor between nodes A and B (see Fig. 2), which is an inverse function of the oscillation amplitude. It can be verified that, depending on the biasing point of the subthreshold pair, the oscillation amplitude is effectively limited between two well-defined voltages. This limiting effect can be better understood again through the analysis of the circuit root-locus: Fig. 5 reports the closed-loop branches for the two biasing resistance values   R_{3} = 50M\\Omega  and   R_{3} = 100M\\Omega . Let us consider that the circuit is biased on the branch corresponding to   R_{3} = 100M\\Omega  at the oscillation starting point indicated in Fig. 5. As the oscillation amplitude starts to increase, diminishing the value of   R_{3} , the closed-loop poles move back on the imaginary axis and stabilizing the oscillation amplitude. Compared to standard Pierce oscillators, in which the amplitude is limited through AGC acting on the transconductance gain, the present implementation works with a fixed   g_{m}  and biasing current. Thus, the total power dissipation is given by the oscillator core only, without need of additional stages.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "(a). (b)  Fig. 2 (a) Schematic of the realized Pierce oscillator (b) Small-signal model of the oscillator circuit.. (a)  (b)  Fig. 4 (a) Normalized Nyquist plot of the circuit of Fig. 2. The region between   l / \\mathbf{g}_{m,\\min}  and   l / \\mathbf{g}_{m,\\max}  is evidenced as the Correct Bias Region. (b) biasing current limits required for circuit start-up as a function of   C_{l,2}  values. In figure it is also highlighted the biasing point of the implemented circuit..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/ee98cf49735f95647eb75368d7ca7d061e3498cffcadcdc4e052ff66bff1b5b7.jpg",
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/835ed9ec6eff080954f94bba6e1e58d492218bb845908f3657f97b1dff1c9425.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "Fig. 6 (a) Output signal of the Pierce oscillator for different biasing voltages   V_{N}, V_{P} ; the oscillation amplitude can be tuned between   \\pm 25\\mathrm{mV}  and   \\pm 150\\mathrm{mV} . (b) Output signal frequency variation as a function of the applied acceleration in the range   \\pm 1\\mathrm{g} ..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/7424868450707a968812dbed159c878aa032d2d657f26be7b451ef9bba843c90.jpg"
+    ]
+  },
+  {
+    "id": "doc_14",
+    "content": "Based on the design rules described in the previous sections a Pierce oscillator for resonant accelerometers readout has been\ndesigned and fabricated in   150~\\mathrm{nm}  CMOS technology. The oscillator core is biased with a current   I_{bias} = 4\\mu A  for a supply voltage of   1.8V . The current value has been chosen to take into account possible variations of   C_1  and   C_2  due to parasitics, as shown in Fig. 4b. The ASIC die was glued on top of the resonant accelerometer packaged at wafer-level and connected via wire-bonding. This stacked compound was placed on a standard DIP ceramic package and connected to a biasing board providing the supply voltages required. The final active area occupied on silicon for what concern the Pierce Oscillator, excluding pads, is roughly of   65\\mu m \\times 65\\mu m , significantly small compared to the sensor.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_15",
+    "content": "Once the supply voltages are switched on and the subthreshold pair   M_{n,p}  is correctly biased, the oscillation actually builds up reaching stable oscillation amplitude as reported Fig. 6a, which shows the output signal acquired through a digital oscilloscope. By varying the voltages   V_{N}  and   V_{P} , oscillation amplitudes ranging from   25~\\mathrm{mV}  to   150~\\mathrm{mV}  have been obtained. Over   150~\\mathrm{mV}  of driving voltage the oscillation unlocks, most probably because the resonator overcomes the bifurcation points. After the verification of the circuit operation, the sensitivity of the system Pierce Oscillator-MEMS to the external acceleration has been tested. The circuit output has been acquired with a PCI DAS4020/12 data acquisition board and elaborated through a LABVIEW program. The power spectrum of the output signal has been computed in order to monitor the frequency of the oscillation. In detail, the signal is acquired at 3 MSample/s for 1 s resulting in a frequency resolution in the evaluation of the FFT spectrum of   1Hz . Different acceleration in the   \\pm 1g  range have been applied to the PCB hosting the ASIC and MEMS dies and the sensitivity obtained for different oscillation amplitudes are reported in Fig. 6b. The sensitivity to acceleration is evaluated to be   128~Hz / g  for   50mV  of oscillation amplitude for a single resonator, leading to a differential sensitivity of   256~Hz / g , considering both resonators.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 6",
+        "caption": "Fig. 6 (a) Output signal of the Pierce oscillator for different biasing voltages   V_{N}, V_{P} ; the oscillation amplitude can be tuned between   \\pm 25\\mathrm{mV}  and   \\pm 150\\mathrm{mV} . (b) Output signal frequency variation as a function of the applied acceleration in the range   \\pm 1\\mathrm{g} ..",
+        "image_source": [
+          "./text_resources/A_Pierce_oscillator_for_MEMS_resonant_accelerometer_with_a_novel_low-power_amplitude_limiting_technique/vlm/images/7424868450707a968812dbed159c878aa032d2d657f26be7b451ef9bba843c90.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_16",
+    "content": "The FFT algorithm has been used also to evaluate the phase noise affecting the oscillator output. In figure 7a, the phase noise for two driving amplitudes is reported together with the theoretical expectations evaluated through the Leeson's model [10]. The noise of the system is limited, for what concern the white noise, by the   4k_{B}TR_{3}  associated to the sub-threshold transistors   M_{n,p}  and by the   1 / \\mathrm{f}  noise of the gain transistor   M_{l}  at low frequency offset from the carrier. Computing the Allan deviation, reported in Fig. 7b, a deviation of   0.65\\mathrm{Hz}  is obtained for an averaging time   t = 10  ms, resulting in equivalent acceleration noise density of   507~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  (white noise approximation) for the single resonator and   360~\\mu \\mathrm{g} / \\sqrt{\\mathrm{Hz}}  considering the differential architecture of the device. The   1 / \\mathrm{f}  noise modulated around the carrier (  1 / \\mathrm{f}^3  trend in Fig. 7a) limits the bias instability of the resonant accelerometer to   \\sim 2~\\mathrm{mg} . The modulation of the   1 / \\mathrm{f}  noise around the carrier is probably due to the shift of the biasing points of nodes A and B; this results in a change in the effective biasing voltage of the resonator and indeed in its resonance frequency due to the well-known \"electrostatic stiffness effect\" affecting parallel-plate devices [11]. This topic will be object of future investigations.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_17",
+    "content": "In this work a renewed Pierce oscillator has been proposed to be adopted as a low power readout circuit for resonant sensors. The theoretical procedure followed for the correct design of the oscillator has been first presented and then validated through experimental tests performed on a uniaxial resonant accelerometer. The novel amplitude-limiting technique, based on sub-threshold operated FETs, allows the design of an oscillator characterized by a 5T core architecture. This very compact topology could potentially find its application not only for single resonant devices, but most likely as the analog front-end in arrays or matrix of resonant sensors (e.g. chemical sensors, pressure sensors etc.).",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_18",
+    "content": "- [7] A. Tocchio, C. Comi, G. Langfelder, A. Corigliano, A. Longoni, \"Enhancing the Linear Range of MEMS Resonators for Sensing Applications,\" Sensors Journal, IEEE, vol.11, no.12, pp.3202-3210, Dec. 2011.\n- [8] A. Tocchio, A. Caspani, G. Langfelder, \"Mechanical and Electronic Amplitude-Limiting Techniques in a MEMS Resonant Accelerometer,\" Sensors Journal, IEEE, vol.12, no.6, pp.1719-1725, June 2012.\n- [9] M. A. Unkrich and R. G. Meyer, \"Conditions for start-up in crystal oscillators,\" IEEE J. Solid-State Circuits, vol. 17, pp. 87 - 90, Feb. 1982.\n- [10] D. B. Leeson, \"A simple model of feedback oscillator noise spectrum,\" Proceedings of the IEEE, vol.54, no.2, pp. 329-330, Feb. 1966.\n- [11] G. Langfelder, T. Frizzi, A. Longoni, A. Tocchio, D. Manelli, E. Lasalandra, Readout of MEMS capacitive sensors beyond the condition of pull-in instability, Sensors and Actuators A: Physical, Volume 167, Issue 2, June 2011, Pages 374-384 Annual Conf. Magnetics Japan, p. 301, 1982.",
+    "block_type": "text"
+  }
+]

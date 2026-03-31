@@ -1,0 +1,91 @@
+[
+  {
+    "id": "doc_0",
+    "content": "Abstract—This letter presents a high-performance resonant MEMS accelerometer comprising of a single force-sensitive vibrating beam element sandwiched between two inertial masses. The accelerometer demonstrates a noise floor of   98\\mathrm{ng / Hz}^{1 / 2}  and a bias stability of   56~\\mathrm{ng}  under ambient conditions, corresponding to a frequency noise floor of   0.77~\\mathrm{ppb / Hz}^{1 / 2}  and a frequency bias stability of   0.43~\\mathrm{ppb} . These are the best results achieved for a MEMS accelerometer employing the resonant sensing paradigm to-date. [2018-0255]\nIndex Terms—MEMS resonant accelerometer, noise floor, bias stability.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "HIG-HPERFORMANCE MEMS accelerometers have a number of potential applications, including inertial navigation [1], seismometry [2], and gravimetry [3]. Silicon MEMS resonant accelerometers have been researched for several decades in this context [4]–[8]. As opposed to more common capacitive techniques, resonant sensing methodologies provide the potential for excellent near-DC measurements of inertial forces, supported by the recent advances in wafer-level vacuum packaging and temperature compensation for MEMS resonators [9]. However, the reported practical performance of resonant MEMS accelerometers has not substantially advanced the stabilities reported for capacitive sensing to-date.\nThis letter reports a distinctive topology for a resonant MEMS accelerometer, comprising of a single resonant detector beam, sandwiched between two inertial masses. Results of measurements conducted on a vacuum-packaged MEMS device demonstrate a bias stability of   56\\mathrm{ng}  and a noise floor of   98\\mathrm{ng / Hz}^{1 / 2} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "A schematic view of the silicon MEMS device is shown in Fig. 1a. The device consists of two suspended silicon proof masses linked via an arrangement of force-amplifying levers to a single vibrating resonator beam. The single-beam sensing resonator (length is   700\\mu \\mathrm{m} , width is   7\\mu \\mathrm{m} , thickness is   40\\mu \\mathrm{m} ) is manufactured within the device layer of a SOI wafer [10]. The estimated thermo-mechanical noise limited resolution is approximately   50\\mathrm{ng} / \\sqrt{\\mathrm{Hz}} . Two inverting and matched levers are connected to both sides of the resonator, which are designed to amplify the inertial forces, and exert equal and opposing forces axially onto the resonator beam. The beam is driven in the second lateral transverse mode, schematically illustrated in Fig. 1c. The advantages using the second mode include: (1) implementation of a differential drive/sense configuration; (2) higher sensitivity and (3) higher critical linear amplitude. However, the Q-factor of the second mode (  \\sim 30,000 ) is lower than that of the first mode (  \\sim 45,000 ). The entire device is vacuum packaged at the wafer-level.\nA particular feature of this design is the single resonator differential sensing scheme. Typical differential designs have two resonators placed on two ends of the proof mass [10]. However, this could potentially result in the two resonators being mechanically coupled, potentially limiting operation, particularly when the resonant frequencies are very closely matched. With the single resonator design with inverting levers, this issue does not exist and hence issues relating to oscillator cross-talk or undesired locking are avoided.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b). (c)  Fig. 1. Overview of the MEMS accelerometer and schematics of front-end: (a) Schematics of the resonant accelerometer, (b) detailed 3D schematics of the sensing resonator (resonator beam highlighted in blue) and (c) oscillator electronics, the TIA has a gain of   4.5\\mathrm{M}\\Omega  and the INA has a gain of 10.. Fig. 2. Measured open-loop response of the resonant sensing element, with drive signal applied at node B and output measured at node A (both nodes are shown in Fig. 1c)..",
+        "image_source": [
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/caf94354a4e2e5b738b7fc8bbd0b327762f11e36a4231e15a3f7eae55d970e3d.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/d5427a44ba0c46c24749d63f82b024c166d2de305b59c61595d959042c6549e1.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/2db91c20dbe943416c2797b21f3b86ebb8d42c0ac1b633b57019b247e7561abc.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "(a). (b). (c)  Fig. 1. Overview of the MEMS accelerometer and schematics of front-end: (a) Schematics of the resonant accelerometer, (b) detailed 3D schematics of the sensing resonator (resonator beam highlighted in blue) and (c) oscillator electronics, the TIA has a gain of   4.5\\mathrm{M}\\Omega  and the INA has a gain of 10..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/caf94354a4e2e5b738b7fc8bbd0b327762f11e36a4231e15a3f7eae55d970e3d.jpg",
+      "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/d5427a44ba0c46c24749d63f82b024c166d2de305b59c61595d959042c6549e1.jpg",
+      "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/2db91c20dbe943416c2797b21f3b86ebb8d42c0ac1b633b57019b247e7561abc.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "A differential drive/sense approach is used to optimize the signal-to-noise ratio, and suppress common mode signals. The electronics for the MEMS resonant accelerometer consists of two major parts: (1) the front-end amplifier, which is a transimpedance amplifier (TIA); and (2) the feedback electronics consisting of a soft-limiter and phase shifter. The schematics is shown in Fig. 1c. A discrete-JFET-based TIA is employed here mainly because of its low noise. However, JFET-based TIA has a higher temperature dependence than integrated op-amps, which contributes to temperature induced frequency swings. The soft-limiter is employed here also because of its low noise, whereas the main disadvantage is the temperature dependence of the diodes. A phase shifter is employed to compensate the inevitable phase modifications in the previous stages.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b). (c)  Fig. 1. Overview of the MEMS accelerometer and schematics of front-end: (a) Schematics of the resonant accelerometer, (b) detailed 3D schematics of the sensing resonator (resonator beam highlighted in blue) and (c) oscillator electronics, the TIA has a gain of   4.5\\mathrm{M}\\Omega  and the INA has a gain of 10.. Fig. 2. Measured open-loop response of the resonant sensing element, with drive signal applied at node B and output measured at node A (both nodes are shown in Fig. 1c)..",
+        "image_source": [
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/caf94354a4e2e5b738b7fc8bbd0b327762f11e36a4231e15a3f7eae55d970e3d.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/d5427a44ba0c46c24749d63f82b024c166d2de305b59c61595d959042c6549e1.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/2db91c20dbe943416c2797b21f3b86ebb8d42c0ac1b633b57019b247e7561abc.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "The open-loop frequency response of the sensing resonator at the output is shown in Fig. 2. The extracted Q-factor of the resonator is approximately 30, 160. With a differential drive of   10\\mathrm{mV}_{\\mathrm{p - p}} , the resonator output response is linear with a measured amplitude of   957\\mathrm{mV}_{\\mathrm{rms}} . From the open-loop response shown in Fig. 2, which can be fitted to a Lorentzian function, the resonator can be considered as operating in its linear regime. The nominal   0\\mathrm{g}  value of the resonance frequency is   352.2\\mathrm{kHz} .",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "- 1) Linear Resonator Verification: The closed-loop measurement setup is shown in Fig. 1c. The loop phase is calibrated using the phase shifter, while ensuring that the Barkhausen phase criteria is satisfied. The output waveform measured at node A using the closed-loop configuration is shown in Fig. 3, consistent with driving the resonator in the linear regime.\n- 2) Scale Factor: The scale factor of the SADM sensor is measured using a standard tilt test with the closed-loop configuration [11]. A scale factor of   2752\\mathrm{Hz / g}  is extracted (see Fig. 4(a)). The sensor is placed in the lab for approximately 24 hours, covering noisy day times (white areas) and relatively quieter hours in the night (yellow shaded area, from approximately 22:30 - 7:30 next day). It can be clearly seen that the ambient vibrations (e.g. human activities) are picked up during the day, showing the operation of the sensor (see Fig. 4(b)). The large frequency swings during the measurement hours is likely due to the ambient temperature fluctuations, which affect both the resonator and the electronics, and the total sensitivity to the temperature is approximately   -14.8\\mathrm{Hz / K} (-42\\mathrm{ppm / K})\n- 3) Noise Floor Analysis: The signal at node A (the waveform of which is shown in Fig. 3) is measured using a Zurich Instruments lock-in amplifier (LIA). The frequency measurement is performed using the PLL function of the LIA with a measurement bandwidth of   5\\mathrm{Hz} , filtering the undesired components outside of the measurement bandwidth. Using fast-Fourier transform (FFT), the measured data obtained overnight can be further processed, revealing an acceleration noise floor of   98\\mathrm{ng / Hz}^{1 / 2}  (equivalent to   270\\mu \\mathrm{Hz / Hz}^{1 / 2}  in frequency, or   0.77\\mathrm{ppb / Hz}^{1 / 2}  in normalized frequency). This is by far the lowest noise floor reported to-date for MEMS resonant accelerometers. The bump in the PSD between   1.5 - 4\\mathrm{Hz}  is likely due to the vibration caused by the equipment in operation in a lab nearby, showing the operation of the sensor. The improvement in noise performance is mainly due to noise optimized electronics and higher scale factor of the accelerometer. Potentially the noise floor can be further improved by operating the sensor in a low ambient vibration environment.\n- 4) Bias Stability: Modified Allan deviation of the same data is processed, and an input bias stability of 56ng (equivalent to   153\\mu \\mathrm{Hz} , or 0.43ppb) at 3.2s integration time has been achieved. This is also by far the best bias stability reported to-date in resonant MEMS accelerometers. However, further improvement can be achieved, as it is likely that ambient environment related effects (e.g. temperature change induced Young's modulus variations, as well as its effect on the electronics) dominate the long term frequency stability. Therefore, bias drift can be further enhanced",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "(a). (b). (c)  Fig. 1. Overview of the MEMS accelerometer and schematics of front-end: (a) Schematics of the resonant accelerometer, (b) detailed 3D schematics of the sensing resonator (resonator beam highlighted in blue) and (c) oscillator electronics, the TIA has a gain of   4.5\\mathrm{M}\\Omega  and the INA has a gain of 10.. Fig. 2. Measured open-loop response of the resonant sensing element, with drive signal applied at node B and output measured at node A (both nodes are shown in Fig. 1c)..",
+        "image_source": [
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/caf94354a4e2e5b738b7fc8bbd0b327762f11e36a4231e15a3f7eae55d970e3d.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/d5427a44ba0c46c24749d63f82b024c166d2de305b59c61595d959042c6549e1.jpg",
+          "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/2db91c20dbe943416c2797b21f3b86ebb8d42c0ac1b633b57019b247e7561abc.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "TABLEI COMPARISONS OF NOISE FLOOR AND BIAS STABILITY.",
+    "block_type": "table",
+    "image_source": [
+      "./text_resources/A_Resonant_MEMS_Accelerometer_With_56ng_Bias_Stability_and_98ng_Hz1_2_Noise_Floor/vlm/images/e5f2faf1fde737a745a3e27863cbe97f8fa88e6ea1132bedce56d3a218617b54.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "In this work, a high performance resonant accelerometer with a single sensing element is presented. A noise floor of   98\\mathrm{ng / Hz}^{1 / 2}  and a bias stability of   56\\mathrm{ng}  is achieved, representing the best results obtained by using a MEMS resonant accelerometer. Further work should focus on designing high performance chip level and board level temperature controllers to minimize the temperature effect on the device, as well as the electronics.",
+    "block_type": "text"
+  }
+]

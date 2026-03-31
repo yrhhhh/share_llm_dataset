@@ -1,0 +1,155 @@
+[
+  {
+    "id": "doc_0",
+    "content": "<sup>1</sup> Key Laboratory of Micro-Inertial Instrument and Advanced Navigation Technology, Ministry of Education, Nanjing 210096, China\nAbstract: Micromechanical silicon resonant accelerometer (MSRA) is a popular research topic in the field of high-precision micromechanical accelerometers because it outputs frequency signal that has strong anti-interference ability, high stability, and resolution. The principal component of a MSRA is the resonator. In this study, a comparative analysis is performed on single-beam and double-beam MSRAs that are structurally similar. The simulation and experimental results show that even though the single-beam MSRA has a higher scale factor compared to the double-beam MSRA, its performance is inferior in terms of bias stability and temperature characteristics. Copyright © 2013 IFSA.\nKeywords: Resonant accelerometer, Micro electro mechanical system (MEMS), Structural design, Single-beam, Double-beam.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_1",
+    "content": "A micromechanical silicon resonant accelerometer (MSRA) is a typical micro electro mechanical system (MEMS) inertial device. Its basic operating principle is based on the force-frequency characteristics of the resonant beam. The changes in the beam's resonant frequency can be used to determine the value of input acceleration. As the output signal of the MSRA is a frequency signal, it is less prone to the interference of environmental noise and errors during transmission and processing, making high-precise measurement feasible. Consequently, MSRA has become an important development direction in the field of micromechanical accelerometers.\nThe principal component of an MSRA is the resonator, which is the sensitive element. Generally, in terms of their structure forms, resonators can comprise either a single-beam form, double-beam form (or called double-ended tuning fork, DETF), or triple-beam form. Given the structural complexity of the triple-beam resonator, it is rarely used in practical applications. In the comparison of single-beam and DETF resonators, the latter exhibits a higher quality factor, as it comprises a pair of parallel beams that are amalgamated at the base. When appropriate excitation modes are used to generate in-plane antiphase vibrations of the two resonant beams, the force and torque produced at the base of the resonant beams (the amalgamation zone) offset each other. Thus, there is minimal energy coupling between the external environment and the entire structure. As a\nCompared with the single-beam structure, the DETF structure has higher processing requirement. This is because the two beams of the DETF structure must be perfectly symmetrical in order to maximize their advantages during operation.\nS. P. Beeby and M. J. Tudor utilized ANSYS simulation to compare energy loss during vibration at the bases of several widely used single-beam, DETF, and triple-beam resonators [1].\nReference [16] performed a comparison between single-beam and DETF MSRAs by using theoretical analyses, finite element simulations, and experimental validation. The findings showed that the scale factor for the single-beam structure was greater than that of the DETF structure. With the increase in environmental pressure during operation, the quality factor Q of the DETF structure gradually converged with that of the single-beam structure. Owing to the limitations of existing domestic microprocessing technologies, a certain degree of error in the resonant frequencies of the two processed DETF beams increased difficulty in the design of the peripheral circuits.\nAlthough the studies mentioned above have made a reasonable number of comparisons between the single-beam and DETF structures, they are not comprehensive. In particular, there has been no comparison made from the perspective of system performance and a clear conclusion could not be arrived.\nIn this study, a single-beam and a DETF MSRA are designed. The two accelerometers are compared through simulation analysis and testing of system performance.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_2",
+    "content": "The structure of an MSRA comprises resonators, proof mass, lever amplification mechanisms, and support beams. A differential structure is applied in the overall structure. Two resonators of identical dimensions are placed in a symmetrical arrangement. Under the effect of acceleration, the proof mass converts the acceleration to an inertial force, which then acts on the input beam of the lever. After amplification by the lever, the force acts on the\nresonator. When one resonator is under pressure, its resonant frequency is reduced. Meanwhile tensile force is exerted on the other resonator, thereby increasing its resonant frequency. The difference in frequencies between the two resonators can then be used to calculate the magnitude of the input acceleration.\nAll the structural components of the two accelerometers, except the resonators, are identical. The schematic diagrams of the single-beam and DETF MSRAs are shown in Fig.1 and Fig.2, respectively. The thickness of the entire structural layer is   60~\\mu \\mathrm{m}  and the height of the anchor is   20~\\mu \\mathrm{m} . The critical dimensions of the two accelerometers are listed in Table 1.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 1",
+        "caption": "Fig. 1. Schematic diagram of single-beam MSRA..",
+        "image_source": [
+          "./text_resources/out/vlm/images/9e5b8a0ea416de9acf92b8374781e87d42d7ba8166f77a65cfdf913ae4a81282.jpg"
+        ]
+      },
+      {
+        "type": "figure",
+        "label": "Figure 2",
+        "caption": "Fig. 2. Schematic diagram of DETF MSRA..",
+        "image_source": [
+          "./text_resources/out/vlm/images/cde913ade4cf121ccaea069ae9376803721251d61409f9c191553db89052e62c.jpg"
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Table 1",
+        "caption": "Table 1. The parameters of the accelerometers..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_3",
+    "content": "Fig. 1. Schematic diagram of single-beam MSRA..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/out/vlm/images/9e5b8a0ea416de9acf92b8374781e87d42d7ba8166f77a65cfdf913ae4a81282.jpg"
+    ]
+  },
+  {
+    "id": "doc_4",
+    "content": "Fig. 2. Schematic diagram of DETF MSRA..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/out/vlm/images/cde913ade4cf121ccaea069ae9376803721251d61409f9c191553db89052e62c.jpg"
+    ]
+  },
+  {
+    "id": "doc_5",
+    "content": "ANSYS is used to perform mode analysis of the two accelerometer structures. The working modes of the resonators of the single-beam and DETF MSRAs are shown in Fig. 3 and Fig. 4, respectively. The operating frequencies of the upper and lower\nresonators of the single-beam MSRA are   41917\\mathrm{Hz}  and   41910\\mathrm{Hz} , whereas those of the DETF MSRA are   41926\\mathrm{Hz}  and   41915\\mathrm{Hz} , respectively. The negligible difference between the operating frequencies of the upper and lower resonators in both the accelerometers is caused by cumulative calculation errors.",
+    "block_type": "text"
+  },
+  {
+    "id": "doc_6",
+    "content": "Different accelerations are applied to the accelerometers to obtain their frequency changes under various input accelerations in order to calculate of their scale factors. The scale factors of the single-beam and DETF MSRAs are   144.86\\mathrm{Hz / g}  and   80.922\\mathrm{Hz / g} , respectively. When the dimensions of the resonant beam, comb structure, and leverage mechanism are identical, the scale factor of the single-beam MSRA is evidently much higher than that of the DETF MSRA.\nIdeally, the differential structure of the accelerometer should eliminate the common-mode errors caused by temperature. However, the effect of the differential structure is weakened when processing errors cause the upper and lower\nresonators within the structure to be imperfectly symmetrical. The analysis is finished in batches of accelerometer structures and the result reveals that there are negligible differences between the two DETF beams. However, there are perceptible differences between the resonant frequencies of the upper and lower resonators for the majority of those structures.\nThe MSRA is fabricated by silicon-on-glass (SOG) technology. In the process, anodic bonding technology is used to bind the silicon and glass wafers. The silicon and glass wafers act as the structural and substrate layers, respectively, of the MEMS device. Because of the mismatching thermal expansion coefficients of silicon and glass, thermal stress will be produced when temperature changes.\nIt is assumed that the beam of the upper resonator is over-etched by   0.05\\mu \\mathrm{m} . In this state, the working frequencies of the two resonators of the single-beam MSRA become   41673\\mathrm{Hz}  and   41914\\mathrm{Hz} , respectively. For the DETF MSRA, the working frequencies of the two resonators become   41695\\mathrm{Hz}  and   41928\\mathrm{Hz} , respectively. Thermal simulation analyses are separately performed on the two accelerometers. The respective thermal analysis models are shown in Fig. 5. The silicon structural layer, which is   60\\mu \\mathrm{m}  thick, is represented by the pale blue portion. The glass layer, which is   500\\mu \\mathrm{m}  thick, is represented by the dark blue portion. Fig. 6 shows the stress distributions of the two accelerometers when the ambient temperature decreases from room temperature to   -40^{\\circ}\\mathrm{C} . Fig. 7 is the stress distributions of the two accelerometers when the ambient temperature increases from room temperature to   +60^{\\circ}\\mathrm{C} .",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "figure",
+        "label": "Figure 7",
+        "caption": "Fig. 7 (a). The stress distributions of the two accelerometers when the ambient temperature increases from room temperature to   +60^{\\circ}\\mathrm{C} : single-beam MSRA.. Fig. 7 (b). The stress distributions of the two accelerometers when the ambient temperature increases from room temperature to   +60^{\\circ}\\mathrm{C} : DETF MSRA..",
+        "image_source": [
+          "./text_resources/out/vlm/images/1c485ff76ad9ace639125d767cddc99cc4000e82b1eadfd44679a135272becc9.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doc_7",
+    "content": "Fig. 7 (a). The stress distributions of the two accelerometers when the ambient temperature increases from room temperature to   +60^{\\circ}\\mathrm{C} : single-beam MSRA..",
+    "block_type": "figure",
+    "image_source": [
+      "./text_resources/out/vlm/images/1c485ff76ad9ace639125d767cddc99cc4000e82b1eadfd44679a135272becc9.jpg"
+    ]
+  },
+  {
+    "id": "doc_8",
+    "content": "The thermal stress is imposed on the structure as pre-stress, and a structural dynamic analysis is performed on the structure. The working frequencies\nof the resonator in the single-beam and DETF structures at different temperatures are listed in Tables 2 and 3, respectively. It can be observed from these two tables that when the dimensions of the upper and lower resonators are asymmetrical, their differential outputs vary with changes in temperature. Across the entire range of temperatures, the differential outputs of the single-beam and DETF MSRAs vary by   107\\mathrm{Hz}  and   15\\mathrm{Hz} , and their temperature coefficients are   7.3864\\mathrm{mg} / {}^{\\circ}\\mathrm{C}  and   1.8536\\mathrm{mg} / {}^{\\circ}\\mathrm{C} , respectively. The simulation results show that when the upper and lower resonators asymmetrical, the effect of temperature on the DETF MSRA is less than that on the single-beam MSRA.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 2",
+        "caption": "Table 2. Resonant frequency of the single-beam accelerometer at different temperatures..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_9",
+    "content": "The MSRAs are fabricated by using the SOG technique. Fig. 8 shows that the local structures of the two accelerometers under the 3D video microscope. The accelerometer structures are encapsulated using ceramic vacuum packaging. Three structures are selected from each of the two types of packaged accelerometers used for experimental purposes. Open-loop tests are conducted on the six accelerometers. The test data are displayed in Table 4 (S1, S2 and S3 are single-beam accelerometers; D1, D2 and D3 are DETF accelerometers).\nThe prototypes of both types of accelerometers are assembled using the same circuit. Testing results of the accelerometers are as following.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 4",
+        "caption": "Table 4. Open-loop test results of accelerometer structures..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_10",
+    "content": "The accelerometer is installed on the precision dividing head at room temperature. First, the accelerometer is electrically pre-heated. After that there is an input of   \\pm 1\\mathrm{g}  into the accelerometer. The output data of the accelerometer is recorded at a sampling frequency of   1\\mathrm{Hz} . The measurement time at each point does not exceed 30 s. The measurements are averaged. The scale factor   K_{1}  is calculated according to Equation (1):\n$$\nK _ {1} = \\frac {U _ {+ 1 g} - U _ {- 1 g}}{2} \\tag {1}\n$$\nwhere   U_{+lg}  and   U_{-lg}  are the output of the accelerometer when the acceleration input is   +1 \\, \\mathrm{g}  and   -1 \\, \\mathrm{g} , respectively. The Scale factors of accelerometers are shown in Table 5.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 5",
+        "caption": "Table 5. Scale factors of accelerometers..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_11",
+    "content": "The accelerometer is installed on the precision dividing head. The input shaft of the accelerometer is in the horizontal position, which is nearly   0\\mathrm{g} . After the accelerometer is electrically pre-heated for 20 min at room temperature, the prototype is tested for 60 min at a sampling rate of   1\\mathrm{Hz} . The standard deviation   (1\\sigma)  is calculated as the stability index. Figs. 9-14 show the bias stability measurement curves of different accelerometers. The values of the Bias stability are listed in Table 6.",
+    "block_type": "text",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 6",
+        "caption": "Table 6. Bias stability of accelerometers..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_12",
+    "content": "The accelerometer is placed in a temperature-controlled oven, where the temperature is maintained at   -40^{\\circ}\\mathrm{C}, -20^{\\circ}\\mathrm{C}, 0^{\\circ}\\mathrm{C}, +20^{\\circ}\\mathrm{C}, +40^{\\circ}\\mathrm{C}  and   +60^{\\circ}\\mathrm{C} , each for   1\\mathrm{h} . Then, the differential frequency of the accelerometer at each temperature is measured. The output data is recorded at a sampling frequency of   1\\mathrm{Hz} . The measurement time at each temperature is   30\\mathrm{s} . The average value of 30 samples is considered the output at each temperature.\nThe bias temperature coefficient,   B_{t} , is defined as\n$$\nB _ {t} = \\frac {B _ {\\text {m a x}} - B _ {\\text {m i n}}}{1 0 0}, \\tag {2}\n$$\nwhere   B_{\\text{max}}  and   B_{\\text{min}}  are the maximum and minimum differential output values, respectively, during the entire process of varying the temperature. The   B_{t}  of the six accelerometers are listed in Table 7.",
+    "block_type": "formula",
+    "linked_items": [
+      {
+        "type": "table",
+        "label": "Table 7",
+        "caption": "Table 7. Bias temperature coefficient of accelerometers..",
+        "image_source": []
+      }
+    ]
+  },
+  {
+    "id": "doc_13",
+    "content": "In this study, a comparative analysis is performed on single-beam and DETF MSRAs that are structurally similar. It can be concluded from the simulation analyses that in the case when the critical dimensions are identical, the scale factor of the single-beam MSRA is significantly higher than that of the DETF MSRA. When the upper and lower resonators are not completely symmetrical, the effect of temperature on the DETF MSRA is less than that on the single-beam MSRA. The experimental test results of the two accelerometer prototypes show that even though the scale factor of the single-ended MSRA is significantly higher than that of the DETF MSRA, the performance of the former is lower than that of the latter in full temperature experiment. In addition, the bias stability of the single-beam MSRA is also not as good as that of the DETF MSRA.",
+    "block_type": "text"
+  }
+]
